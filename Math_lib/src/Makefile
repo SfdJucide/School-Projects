@@ -27,7 +27,7 @@ test: s21_math.a test.c
 
 gcov_report: test
 	./run_tests
-	mkdir report
+	mkdir -p report
 	gcov -f *.gcno
 	gcovr -r . --html --html-details -o report/report.html
 

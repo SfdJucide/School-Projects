@@ -30,3 +30,7 @@ To run math tests with check.h run (you need to install check.h before this step
 `make test`
 
 There are a lot of tests for each function, even with **inf** and **NaN** cases.
+
+You also can create html-report to see covering functions with tests:
+
+`make gcov_report`

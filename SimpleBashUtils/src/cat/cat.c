@@ -1,32 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#define N 1000
+#include "cat.h"
 
-void clean(char *str);
-void cat(char *file_name, char *flags[10], int flags_count);
-void get_flags(char *flags[10], int flags_count, int *e, int *n, int *b, int *t, int *s,
-               int *v);
-void get_args(int argc, char *argv[argc], char *flags[10], char *files[100],
-              int *flags_counter, int *files_counter);
-void squeeze_blank(char *file_out, int *empty_flag);
-void replace_char(char *file_out, char symb);
-void add_numering(char *file_out, int *str_num, char mode);
-void show_nonprinting(char *file_out);
-
-int main(int argc, char *argv[])
-{
-  char *flags[10];
-  char *files[100];
-  int flags_counter = 0;
-  int files_counter = 0;
-  get_args(argc, argv, flags, files, &flags_counter, &files_counter);
-
-  for (int i = 0; i < files_counter; i++) {
-    cat(files[i], flags, flags_counter);
-  }
-  return 0;
-}
 
 void cat(char *file_name, char *flags[10], int flags_count) {
   int e = 0;

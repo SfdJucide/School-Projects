@@ -1,44 +1,5 @@
-#include <ctype.h>
-#include <regex.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#define N 1000
+#include "grep.h"
 
-void get_args(int argc, char *argv[argc], char flags[100], char *patterns[100],
-              char *files[100], int *j, int *k, int *l, int *free_arr,
-              int *arr_idx);
-void grep(char *file_name, char *pattern[100], char flags[100], int j,
-          int n_files, int ptrns);
-void flag_o(char *find_str, char *pattern[100], char *file_name, int i, int n,
-            int h, int num_of_str, int ptrns, int n_files);
-int find_regex(char *file_out, char *pattern, int i);
-void clean(char *var);
-
-int main(int argc, char *argv[]) {
-  char flags[100];
-  char *patterns[100];
-  char *files[100];
-  int j = 0;  // flags
-  int k = 0;  // patterns
-  int l = 0;  // files
-
-  int *arr = (int *)malloc(sizeof(int) * 100);
-  int yo = 0;
-  get_args(argc, argv, flags, patterns, files, &j, &k, &l, arr, &yo);
-
-  for (int i = 0; i < l; i++) {
-    grep(files[i], patterns, flags, j, l, k);
-  }
-
-  for (int i = 0; i < yo; i++) {
-    free(patterns[arr[i]]);
-  }
-
-  free(arr);
-
-  return 0;
-}
 
 void grep(char *file_name, char *pattern[100], char flags[100], int j,
           int n_files, int ptrns) {
@@ -227,12 +188,6 @@ void get_args(int argc, char *argv[argc], char flags[100], char *patterns[100],
       }
     }
   }
-  // for (int i = 0; i < *l; i++) printf("%s ", files[i]);
-  // printf("\n");
-  // for (int i = 0; i < *k; i++) printf("%s ", patterns[i]);
-  // printf("\n");
-  // for (int i = 0; i < *j; i++) printf("%c ", flags[i]);
-  // printf("\n");
 }
 
 int find_regex(char *file_out, char *pattern, int i) {

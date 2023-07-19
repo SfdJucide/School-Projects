@@ -1,0 +1,582 @@
+\hypertarget{class_q_c_p_bars_group}{}\doxysection{Класс QCPBars\+Group}
+\label{class_q_c_p_bars_group}\index{QCPBarsGroup@{QCPBarsGroup}}
+
+
+Groups multiple \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} together so they appear side by side.  
+
+
+
+
+{\ttfamily \#include $<$qcustomplot.\+h$>$}
+
+Граф наследования\+:QCPBars\+Group\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_c_p_bars_group}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые типы}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_q_c_p_bars_group_a4c0521120a97e60bbca37677a37075b6}{Spacing\+Type}} \{ \mbox{\hyperlink{class_q_c_p_bars_group_a4c0521120a97e60bbca37677a37075b6ab53fa3efaf14867dd0f14d41d64e42ac}{st\+Absolute}}
+, \mbox{\hyperlink{class_q_c_p_bars_group_a4c0521120a97e60bbca37677a37075b6ae94b05c27bc985dcdd8b1e1b7f163d26}{st\+Axis\+Rect\+Ratio}}
+, \mbox{\hyperlink{class_q_c_p_bars_group_a4c0521120a97e60bbca37677a37075b6ad369cee6287e0a86e8c2b643a3168c54}{st\+Plot\+Coords}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_c_p_bars_group_aa4e043b9a22c6c5ea0f93740aca063e1}{QCPBars\+Group}} (\mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} $\ast$parent\+Plot)
+\item 
+virtual \mbox{\hyperlink{class_q_c_p_bars_group_adb9475bcb6a5f18c8918e17d939d8dbd}{$\sim$\+QCPBars\+Group}} ()
+\item 
+\mbox{\hyperlink{class_q_c_p_bars_group_a4c0521120a97e60bbca37677a37075b6}{Spacing\+Type}} \mbox{\hyperlink{class_q_c_p_bars_group_a894a77c45325aad2e742d936bc1f8aea}{spacing\+Type}} () const
+\item 
+double \mbox{\hyperlink{class_q_c_p_bars_group_a314d09aeb2ad209518b9183ca7ffe662}{spacing}} () const
+\item 
+void \mbox{\hyperlink{class_q_c_p_bars_group_a2c7e2d61b10594a4555b615e1fcaf49e}{set\+Spacing\+Type}} (\mbox{\hyperlink{class_q_c_p_bars_group_a4c0521120a97e60bbca37677a37075b6}{Spacing\+Type}} \mbox{\hyperlink{class_q_c_p_bars_group_a894a77c45325aad2e742d936bc1f8aea}{spacing\+Type}})
+\item 
+void \mbox{\hyperlink{class_q_c_p_bars_group_aa553d327479d72a0c3dafcc724a190e2}{set\+Spacing}} (double \mbox{\hyperlink{class_q_c_p_bars_group_a314d09aeb2ad209518b9183ca7ffe662}{spacing}})
+\item 
+QList$<$ \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} $\ast$ $>$ \mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}} () const
+\item 
+\mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} $\ast$ \mbox{\hyperlink{class_q_c_p_bars_group_a0754d659a020aa7fddfe81e657ce2d92}{bars}} (int index) const
+\item 
+int \mbox{\hyperlink{class_q_c_p_bars_group_a3780ec77919cb00840207ec7a0f00dd5}{size}} () const
+\item 
+bool \mbox{\hyperlink{class_q_c_p_bars_group_aac959e79e852e8ef9aea6e0449ad000a}{is\+Empty}} () const
+\item 
+void \mbox{\hyperlink{class_q_c_p_bars_group_a3ddf23928c6cd89530bd34ab7ba7b177}{clear}} ()
+\item 
+bool \mbox{\hyperlink{class_q_c_p_bars_group_ae26da07a23553052a178fb3fae90d0dc}{contains}} (\mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} $\ast$\mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}}) const
+\item 
+void \mbox{\hyperlink{class_q_c_p_bars_group_a809ed63cc4ff7cd5b0b8c96b470163d3}{append}} (\mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} $\ast$\mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}})
+\item 
+void \mbox{\hyperlink{class_q_c_p_bars_group_a309a5f7233db189f3ea9c2d04ece6c13}{insert}} (int i, \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} $\ast$\mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}})
+\item 
+void \mbox{\hyperlink{class_q_c_p_bars_group_a215e28a5944f1159013a0e19169220e7}{remove}} (\mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} $\ast$\mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_q_c_p_bars_group_a7b00514f19ad58d0bb3fd5246a67fae2}{register\+Bars}} (\mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} $\ast$\mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}})
+\item 
+void \mbox{\hyperlink{class_q_c_p_bars_group_ac7073cdd7b1a40c6cb4b5f908145f8c4}{unregister\+Bars}} (\mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} $\ast$\mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}})
+\item 
+double \mbox{\hyperlink{class_q_c_p_bars_group_a8e2ca6002e7bab49670144d048a2bcc9}{key\+Pixel\+Offset}} (const \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} $\ast$\mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}}, double key\+Coord)
+\item 
+double \mbox{\hyperlink{class_q_c_p_bars_group_a0beccd41bc3841a4c5b284823bc7d2de}{get\+Pixel\+Spacing}} (const \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} $\ast$\mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}}, double key\+Coord)
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} $\ast$ \mbox{\hyperlink{class_q_c_p_bars_group_a973d408cfbf88db95115aec71877f9e7}{m\+Parent\+Plot}}
+\item 
+\mbox{\hyperlink{class_q_c_p_bars_group_a4c0521120a97e60bbca37677a37075b6}{Spacing\+Type}} \mbox{\hyperlink{class_q_c_p_bars_group_a6794ee1a9c81864d627bff6a4b2d64ec}{m\+Spacing\+Type}}
+\item 
+double \mbox{\hyperlink{class_q_c_p_bars_group_a56471d7f548ca6141b7a5bf9629f7ece}{m\+Spacing}}
+\item 
+QList$<$ \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} $\ast$ $>$ \mbox{\hyperlink{class_q_c_p_bars_group_aa5affa0639c13e05bda9d23f16dd1393}{m\+Bars}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Друзья}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_q_c_p_bars_group_a721b87c7cdb8e83a90d77fc8a22e7195}{QCPBars}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Groups multiple \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} together so they appear side by side. 
+
+
+
+When showing multiple \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} in one plot which have bars at identical keys, it may be desirable to have them appearing next to each other at each key. This is what adding the respective \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} plottables to a \mbox{\hyperlink{class_q_c_p_bars_group}{QCPBars\+Group}} achieves. (An alternative approach is to stack them on top of each other, see \mbox{\hyperlink{class_q_c_p_bars_ac22e00a6a41509538c21b04f0a57318c}{QCPBars\+::move\+Above}}.)\hypertarget{class_q_c_p_bars_group_qcpbarsgroup-usage}{}\doxysubsection{Usage}\label{class_q_c_p_bars_group_qcpbarsgroup-usage}
+To add a \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} plottable to the group, create a new group and then add the respective bars intances\+: 
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+Alternatively to appending to the group like shown above, you can also set the group on the \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} plottable via \mbox{\hyperlink{class_q_c_p_bars_aedd1709061f0b307c47ddb45e172ef9a}{QCPBars\+::set\+Bars\+Group}}.
+
+The spacing between the bars can be configured via \mbox{\hyperlink{class_q_c_p_bars_group_a2c7e2d61b10594a4555b615e1fcaf49e}{set\+Spacing\+Type}} and \mbox{\hyperlink{class_q_c_p_bars_group_aa553d327479d72a0c3dafcc724a190e2}{set\+Spacing}}. The bars in this group appear in the plot in the order they were appended. To insert a bars plottable at a certain index position, or to reposition a bars plottable which is already in the group, use \mbox{\hyperlink{class_q_c_p_bars_group_a309a5f7233db189f3ea9c2d04ece6c13}{insert}}.
+
+To remove specific bars from the group, use either \mbox{\hyperlink{class_q_c_p_bars_group_a215e28a5944f1159013a0e19169220e7}{remove}} or call \mbox{\hyperlink{class_q_c_p_bars_aedd1709061f0b307c47ddb45e172ef9a}{QCPBars\+::set\+Bars\+Group(0)}} on the respective bars plottable.
+
+To clear the entire group, call \mbox{\hyperlink{class_q_c_p_bars_group_a3ddf23928c6cd89530bd34ab7ba7b177}{clear}}, or simply delete the group.\hypertarget{class_q_c_p_bars_group_qcpbarsgroup-example}{}\doxysubsection{Example}\label{class_q_c_p_bars_group_qcpbarsgroup-example}
+The image above is generated with the following code\+: 
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+
+
+\doxysubsection{Перечисления}
+\mbox{\Hypertarget{class_q_c_p_bars_group_a4c0521120a97e60bbca37677a37075b6}\label{class_q_c_p_bars_group_a4c0521120a97e60bbca37677a37075b6}} 
+\index{QCPBarsGroup@{QCPBarsGroup}!SpacingType@{SpacingType}}
+\index{SpacingType@{SpacingType}!QCPBarsGroup@{QCPBarsGroup}}
+\doxysubsubsection{\texorpdfstring{SpacingType}{SpacingType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_q_c_p_bars_group_a4c0521120a97e60bbca37677a37075b6}{QCPBars\+Group\+::\+Spacing\+Type}}}
+
+Defines the ways the spacing between bars in the group can be specified. Thus it defines what the number passed to \mbox{\hyperlink{class_q_c_p_bars_group_aa553d327479d72a0c3dafcc724a190e2}{set\+Spacing}} actually means.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_bars_group_a2c7e2d61b10594a4555b615e1fcaf49e}{set\+Spacing\+Type}}, \mbox{\hyperlink{class_q_c_p_bars_group_aa553d327479d72a0c3dafcc724a190e2}{set\+Spacing}} 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Элементы перечислений}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{stAbsolute@{stAbsolute}!QCPBarsGroup@{QCPBarsGroup}}\index{QCPBarsGroup@{QCPBarsGroup}!stAbsolute@{stAbsolute}}}\mbox{\Hypertarget{class_q_c_p_bars_group_a4c0521120a97e60bbca37677a37075b6ab53fa3efaf14867dd0f14d41d64e42ac}\label{class_q_c_p_bars_group_a4c0521120a97e60bbca37677a37075b6ab53fa3efaf14867dd0f14d41d64e42ac}} 
+st\+Absolute&Bar spacing is in absolute pixels. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{stAxisRectRatio@{stAxisRectRatio}!QCPBarsGroup@{QCPBarsGroup}}\index{QCPBarsGroup@{QCPBarsGroup}!stAxisRectRatio@{stAxisRectRatio}}}\mbox{\Hypertarget{class_q_c_p_bars_group_a4c0521120a97e60bbca37677a37075b6ae94b05c27bc985dcdd8b1e1b7f163d26}\label{class_q_c_p_bars_group_a4c0521120a97e60bbca37677a37075b6ae94b05c27bc985dcdd8b1e1b7f163d26}} 
+st\+Axis\+Rect\+Ratio&Bar spacing is given by a fraction of the axis rect size \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{stPlotCoords@{stPlotCoords}!QCPBarsGroup@{QCPBarsGroup}}\index{QCPBarsGroup@{QCPBarsGroup}!stPlotCoords@{stPlotCoords}}}\mbox{\Hypertarget{class_q_c_p_bars_group_a4c0521120a97e60bbca37677a37075b6ad369cee6287e0a86e8c2b643a3168c54}\label{class_q_c_p_bars_group_a4c0521120a97e60bbca37677a37075b6ad369cee6287e0a86e8c2b643a3168c54}} 
+st\+Plot\+Coords&Bar spacing is in key coordinates and thus scales with the key axis range \\
+\hline
+
+\end{DoxyEnumFields}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6440                    \{}
+\DoxyCodeLine{6441     \mbox{\hyperlink{class_q_c_p_bars_group_a4c0521120a97e60bbca37677a37075b6ab53fa3efaf14867dd0f14d41d64e42ac}{stAbsolute}}  }
+\DoxyCodeLine{6442     ,}
+\DoxyCodeLine{6443     \mbox{\hyperlink{class_q_c_p_bars_group_a4c0521120a97e60bbca37677a37075b6ae94b05c27bc985dcdd8b1e1b7f163d26}{stAxisRectRatio}}  }
+\DoxyCodeLine{6445     ,}
+\DoxyCodeLine{6446     \mbox{\hyperlink{class_q_c_p_bars_group_a4c0521120a97e60bbca37677a37075b6ad369cee6287e0a86e8c2b643a3168c54}{stPlotCoords}}  }
+\DoxyCodeLine{6448   \};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_q_c_p_bars_group_aa4e043b9a22c6c5ea0f93740aca063e1}\label{class_q_c_p_bars_group_aa4e043b9a22c6c5ea0f93740aca063e1}} 
+\index{QCPBarsGroup@{QCPBarsGroup}!QCPBarsGroup@{QCPBarsGroup}}
+\index{QCPBarsGroup@{QCPBarsGroup}!QCPBarsGroup@{QCPBarsGroup}}
+\doxysubsubsection{\texorpdfstring{QCPBarsGroup()}{QCPBarsGroup()}}
+{\footnotesize\ttfamily QCPBars\+Group\+::\+QCPBars\+Group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} $\ast$}]{parent\+Plot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructs a new bars group for the specified \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} instance. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25123     : QObject(parentPlot),}
+\DoxyCodeLine{25124       \mbox{\hyperlink{class_q_c_p_bars_group_a973d408cfbf88db95115aec71877f9e7}{mParentPlot}}(parentPlot),}
+\DoxyCodeLine{25125       \mbox{\hyperlink{class_q_c_p_bars_group_a6794ee1a9c81864d627bff6a4b2d64ec}{mSpacingType}}(\mbox{\hyperlink{class_q_c_p_bars_group_a4c0521120a97e60bbca37677a37075b6ab53fa3efaf14867dd0f14d41d64e42ac}{stAbsolute}}),}
+\DoxyCodeLine{25126       \mbox{\hyperlink{class_q_c_p_bars_group_a56471d7f548ca6141b7a5bf9629f7ece}{mSpacing}}(4) \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_bars_group_adb9475bcb6a5f18c8918e17d939d8dbd}\label{class_q_c_p_bars_group_adb9475bcb6a5f18c8918e17d939d8dbd}} 
+\index{QCPBarsGroup@{QCPBarsGroup}!````~QCPBarsGroup@{$\sim$QCPBarsGroup}}
+\index{````~QCPBarsGroup@{$\sim$QCPBarsGroup}!QCPBarsGroup@{QCPBarsGroup}}
+\doxysubsubsection{\texorpdfstring{$\sim$QCPBarsGroup()}{~QCPBarsGroup()}}
+{\footnotesize\ttfamily QCPBars\+Group\+::$\sim$\+QCPBars\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25128 \{ \mbox{\hyperlink{class_q_c_p_bars_group_a3ddf23928c6cd89530bd34ab7ba7b177}{clear}}(); \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_q_c_p_bars_group_a809ed63cc4ff7cd5b0b8c96b470163d3}\label{class_q_c_p_bars_group_a809ed63cc4ff7cd5b0b8c96b470163d3}} 
+\index{QCPBarsGroup@{QCPBarsGroup}!append@{append}}
+\index{append@{append}!QCPBarsGroup@{QCPBarsGroup}}
+\doxysubsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily void QCPBars\+Group\+::append (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} $\ast$}]{bars }\end{DoxyParamCaption})}
+
+Adds the specified {\itshape bars} plottable to this group. Alternatively, you can also use \mbox{\hyperlink{class_q_c_p_bars_aedd1709061f0b307c47ddb45e172ef9a}{QCPBars\+::set\+Bars\+Group}} on the {\itshape bars} instance.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_bars_group_a309a5f7233db189f3ea9c2d04ece6c13}{insert}}, \mbox{\hyperlink{class_q_c_p_bars_group_a215e28a5944f1159013a0e19169220e7}{remove}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25183                                        \{}
+\DoxyCodeLine{25184   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}}) \{}
+\DoxyCodeLine{25185     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}bars is 0"{}};}
+\DoxyCodeLine{25186     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{25187   \}}
+\DoxyCodeLine{25188 }
+\DoxyCodeLine{25189   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_bars_group_aa5affa0639c13e05bda9d23f16dd1393}{mBars}}.contains(\mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}}))}
+\DoxyCodeLine{25190     \mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}}-\/>setBarsGroup(\textcolor{keyword}{this});}
+\DoxyCodeLine{25191   \textcolor{keywordflow}{else}}
+\DoxyCodeLine{25192     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}bars plottable is already in this bars group:"{}}}
+\DoxyCodeLine{25193              << \textcolor{keyword}{reinterpret\_cast<}quintptr\textcolor{keyword}{>}(\mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}});}
+\DoxyCodeLine{25194 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}\label{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}} 
+\index{QCPBarsGroup@{QCPBarsGroup}!bars@{bars}}
+\index{bars@{bars}!QCPBarsGroup@{QCPBarsGroup}}
+\doxysubsubsection{\texorpdfstring{bars()}{bars()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily QList$<$ \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} $\ast$ $>$ QCPBars\+Group\+::bars (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns all bars currently in this group.
+
+\begin{DoxySeeAlso}{См. также}
+bars(int index) 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6463 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_bars_group_aa5affa0639c13e05bda9d23f16dd1393}{mBars}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_bars_group_a0754d659a020aa7fddfe81e657ce2d92}\label{class_q_c_p_bars_group_a0754d659a020aa7fddfe81e657ce2d92}} 
+\index{QCPBarsGroup@{QCPBarsGroup}!bars@{bars}}
+\index{bars@{bars}!QCPBarsGroup@{QCPBarsGroup}}
+\doxysubsubsection{\texorpdfstring{bars()}{bars()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} $\ast$ QCPBars\+Group\+::bars (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const}
+
+Returns the \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} instance with the specified {\itshape index} in this group. If no such \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} exists, returns {\ttfamily nullptr}.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars()}}, \mbox{\hyperlink{class_q_c_p_bars_group_a3780ec77919cb00840207ec7a0f00dd5}{size}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25157                                            \{}
+\DoxyCodeLine{25158   \textcolor{keywordflow}{if} (index >= 0 \&\& index < \mbox{\hyperlink{class_q_c_p_bars_group_aa5affa0639c13e05bda9d23f16dd1393}{mBars}}.size()) \{}
+\DoxyCodeLine{25159     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_bars_group_aa5affa0639c13e05bda9d23f16dd1393}{mBars}}.at(index);}
+\DoxyCodeLine{25160   \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{25161     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}index out of bounds:"{}} << index;}
+\DoxyCodeLine{25162     \textcolor{keywordflow}{return} \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{25163   \}}
+\DoxyCodeLine{25164 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_bars_group_a3ddf23928c6cd89530bd34ab7ba7b177}\label{class_q_c_p_bars_group_a3ddf23928c6cd89530bd34ab7ba7b177}} 
+\index{QCPBarsGroup@{QCPBarsGroup}!clear@{clear}}
+\index{clear@{clear}!QCPBarsGroup@{QCPBarsGroup}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void QCPBars\+Group\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Removes all \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} plottables from this group.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_bars_group_aac959e79e852e8ef9aea6e0449ad000a}{is\+Empty}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25171                          \{}
+\DoxyCodeLine{25172   \textcolor{keyword}{const} QList<QCPBars *> oldBars = \mbox{\hyperlink{class_q_c_p_bars_group_aa5affa0639c13e05bda9d23f16dd1393}{mBars}};}
+\DoxyCodeLine{25173   \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} *\mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}}, oldBars)}
+\DoxyCodeLine{25174     \mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}}-\/>setBarsGroup(\textcolor{keyword}{nullptr});  \textcolor{comment}{// removes itself from mBars via removeBars}}
+\DoxyCodeLine{25175 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_bars_group_ae26da07a23553052a178fb3fae90d0dc}\label{class_q_c_p_bars_group_ae26da07a23553052a178fb3fae90d0dc}} 
+\index{QCPBarsGroup@{QCPBarsGroup}!contains@{contains}}
+\index{contains@{contains}!QCPBarsGroup@{QCPBarsGroup}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily bool QCPBars\+Group\+::contains (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} $\ast$}]{bars }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether the specified {\itshape bars} plottable is part of this group. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6468 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_bars_group_aa5affa0639c13e05bda9d23f16dd1393}{mBars}}.contains(\mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}}); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_bars_group_a0beccd41bc3841a4c5b284823bc7d2de}\label{class_q_c_p_bars_group_a0beccd41bc3841a4c5b284823bc7d2de}} 
+\index{QCPBarsGroup@{QCPBarsGroup}!getPixelSpacing@{getPixelSpacing}}
+\index{getPixelSpacing@{getPixelSpacing}!QCPBarsGroup@{QCPBarsGroup}}
+\doxysubsubsection{\texorpdfstring{getPixelSpacing()}{getPixelSpacing()}}
+{\footnotesize\ttfamily double QCPBars\+Group\+::get\+Pixel\+Spacing (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} $\ast$}]{bars,  }\item[{double}]{key\+Coord }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25335                                                                          \{}
+\DoxyCodeLine{25336   \textcolor{keywordflow}{switch} (\mbox{\hyperlink{class_q_c_p_bars_group_a6794ee1a9c81864d627bff6a4b2d64ec}{mSpacingType}}) \{}
+\DoxyCodeLine{25337     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_bars_group_a4c0521120a97e60bbca37677a37075b6ab53fa3efaf14867dd0f14d41d64e42ac}{stAbsolute}}: \{}
+\DoxyCodeLine{25338       \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_bars_group_a56471d7f548ca6141b7a5bf9629f7ece}{mSpacing}};}
+\DoxyCodeLine{25339     \}}
+\DoxyCodeLine{25340     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_bars_group_a4c0521120a97e60bbca37677a37075b6ae94b05c27bc985dcdd8b1e1b7f163d26}{stAxisRectRatio}}: \{}
+\DoxyCodeLine{25341       \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}}-\/>keyAxis()-\/>orientation() == Qt::Horizontal)}
+\DoxyCodeLine{25342         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}}-\/>keyAxis()-\/>axisRect()-\/>width() * \mbox{\hyperlink{class_q_c_p_bars_group_a56471d7f548ca6141b7a5bf9629f7ece}{mSpacing}};}
+\DoxyCodeLine{25343       \textcolor{keywordflow}{else}}
+\DoxyCodeLine{25344         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}}-\/>keyAxis()-\/>axisRect()-\/>height() * \mbox{\hyperlink{class_q_c_p_bars_group_a56471d7f548ca6141b7a5bf9629f7ece}{mSpacing}};}
+\DoxyCodeLine{25345     \}}
+\DoxyCodeLine{25346     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_bars_group_a4c0521120a97e60bbca37677a37075b6ad369cee6287e0a86e8c2b643a3168c54}{stPlotCoords}}: \{}
+\DoxyCodeLine{25347       \textcolor{keywordtype}{double} keyPixel = \mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}}-\/>keyAxis()-\/>coordToPixel(keyCoord);}
+\DoxyCodeLine{25348       \textcolor{keywordflow}{return} qAbs(\mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}}-\/>keyAxis()-\/>coordToPixel(keyCoord + \mbox{\hyperlink{class_q_c_p_bars_group_a56471d7f548ca6141b7a5bf9629f7ece}{mSpacing}}) -\/}
+\DoxyCodeLine{25349                   keyPixel);}
+\DoxyCodeLine{25350     \}}
+\DoxyCodeLine{25351   \}}
+\DoxyCodeLine{25352   \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{25353 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_bars_group_a309a5f7233db189f3ea9c2d04ece6c13}\label{class_q_c_p_bars_group_a309a5f7233db189f3ea9c2d04ece6c13}} 
+\index{QCPBarsGroup@{QCPBarsGroup}!insert@{insert}}
+\index{insert@{insert}!QCPBarsGroup@{QCPBarsGroup}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void QCPBars\+Group\+::insert (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{\mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} $\ast$}]{bars }\end{DoxyParamCaption})}
+
+Inserts the specified {\itshape bars} plottable into this group at the specified index position {\itshape i}. This gives you full control over the ordering of the bars.
+
+{\itshape bars} may already be part of this group. In that case, {\itshape bars} is just moved to the new index position.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_bars_group_a809ed63cc4ff7cd5b0b8c96b470163d3}{append}}, \mbox{\hyperlink{class_q_c_p_bars_group_a215e28a5944f1159013a0e19169220e7}{remove}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25205                                               \{}
+\DoxyCodeLine{25206   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}}) \{}
+\DoxyCodeLine{25207     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}bars is 0"{}};}
+\DoxyCodeLine{25208     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{25209   \}}
+\DoxyCodeLine{25210 }
+\DoxyCodeLine{25211   \textcolor{comment}{// first append to bars list normally:}}
+\DoxyCodeLine{25212   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_bars_group_aa5affa0639c13e05bda9d23f16dd1393}{mBars}}.contains(\mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}})) \mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}}-\/>setBarsGroup(\textcolor{keyword}{this});}
+\DoxyCodeLine{25213   \textcolor{comment}{// then move to according position:}}
+\DoxyCodeLine{25214   \mbox{\hyperlink{class_q_c_p_bars_group_aa5affa0639c13e05bda9d23f16dd1393}{mBars}}.move(\mbox{\hyperlink{class_q_c_p_bars_group_aa5affa0639c13e05bda9d23f16dd1393}{mBars}}.indexOf(\mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}}), qBound(0, i, \mbox{\hyperlink{class_q_c_p_bars_group_aa5affa0639c13e05bda9d23f16dd1393}{mBars}}.size() -\/ 1));}
+\DoxyCodeLine{25215 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_bars_group_aac959e79e852e8ef9aea6e0449ad000a}\label{class_q_c_p_bars_group_aac959e79e852e8ef9aea6e0449ad000a}} 
+\index{QCPBarsGroup@{QCPBarsGroup}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!QCPBarsGroup@{QCPBarsGroup}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily bool QCPBars\+Group\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether this bars group is empty.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_bars_group_a3780ec77919cb00840207ec7a0f00dd5}{size}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6466 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_bars_group_aa5affa0639c13e05bda9d23f16dd1393}{mBars}}.isEmpty(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_bars_group_a8e2ca6002e7bab49670144d048a2bcc9}\label{class_q_c_p_bars_group_a8e2ca6002e7bab49670144d048a2bcc9}} 
+\index{QCPBarsGroup@{QCPBarsGroup}!keyPixelOffset@{keyPixelOffset}}
+\index{keyPixelOffset@{keyPixelOffset}!QCPBarsGroup@{QCPBarsGroup}}
+\doxysubsubsection{\texorpdfstring{keyPixelOffset()}{keyPixelOffset()}}
+{\footnotesize\ttfamily double QCPBars\+Group\+::key\+Pixel\+Offset (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} $\ast$}]{bars,  }\item[{double}]{key\+Coord }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25261                                                                         \{}
+\DoxyCodeLine{25262   \textcolor{comment}{// find list of all base bars in case some mBars are stacked:}}
+\DoxyCodeLine{25263   QList<const QCPBars *> baseBars;}
+\DoxyCodeLine{25264   \textcolor{keywordflow}{foreach} (\textcolor{keyword}{const} \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} *b, \mbox{\hyperlink{class_q_c_p_bars_group_aa5affa0639c13e05bda9d23f16dd1393}{mBars}}) \{}
+\DoxyCodeLine{25265     \textcolor{keywordflow}{while} (b-\/>\mbox{\hyperlink{class_q_c_p_bars_a1b58664864b141f45e02044a855b3213}{barBelow}}()) b = b-\/>\mbox{\hyperlink{class_q_c_p_bars_a1b58664864b141f45e02044a855b3213}{barBelow}}();}
+\DoxyCodeLine{25266     \textcolor{keywordflow}{if} (!baseBars.contains(b)) baseBars.append(b);}
+\DoxyCodeLine{25267   \}}
+\DoxyCodeLine{25268   \textcolor{comment}{// find base bar this "{}bars"{} is stacked on:}}
+\DoxyCodeLine{25269   \textcolor{keyword}{const} \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} *thisBase = \mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}};}
+\DoxyCodeLine{25270   \textcolor{keywordflow}{while} (thisBase-\/>\mbox{\hyperlink{class_q_c_p_bars_a1b58664864b141f45e02044a855b3213}{barBelow}}()) thisBase = thisBase-\/>\mbox{\hyperlink{class_q_c_p_bars_a1b58664864b141f45e02044a855b3213}{barBelow}}();}
+\DoxyCodeLine{25271 }
+\DoxyCodeLine{25272   \textcolor{comment}{// determine key pixel offset of this base bars considering all other base}}
+\DoxyCodeLine{25273   \textcolor{comment}{// bars in this barsgroup:}}
+\DoxyCodeLine{25274   \textcolor{keywordtype}{double} result = 0;}
+\DoxyCodeLine{25275   \textcolor{keywordtype}{int} index = baseBars.indexOf(thisBase);}
+\DoxyCodeLine{25276   \textcolor{keywordflow}{if} (index >= 0) \{}
+\DoxyCodeLine{25277     \textcolor{keywordflow}{if} (baseBars.size() \% 2 == 1 \&\&}
+\DoxyCodeLine{25278         index == (baseBars.size() -\/ 1) /}
+\DoxyCodeLine{25279                      2)  \textcolor{comment}{// is center bar (int division on purpose)}}
+\DoxyCodeLine{25280     \{}
+\DoxyCodeLine{25281       \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{25282     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{25283       \textcolor{keywordtype}{double} lowerPixelWidth, upperPixelWidth;}
+\DoxyCodeLine{25284       \textcolor{keywordtype}{int} startIndex;}
+\DoxyCodeLine{25285       \textcolor{keywordtype}{int} dir = (index <= (baseBars.size() -\/ 1) / 2)}
+\DoxyCodeLine{25286                     ? -\/1}
+\DoxyCodeLine{25287                     : 1;  \textcolor{comment}{// if bar is to lower keys of center, dir is negative}}
+\DoxyCodeLine{25288       \textcolor{keywordflow}{if} (baseBars.size() \% 2 == 0)  \textcolor{comment}{// even number of bars}}
+\DoxyCodeLine{25289       \{}
+\DoxyCodeLine{25290         startIndex = baseBars.size() / 2 + (dir < 0 ? -\/1 : 0);}
+\DoxyCodeLine{25291         result += \mbox{\hyperlink{class_q_c_p_bars_group_a0beccd41bc3841a4c5b284823bc7d2de}{getPixelSpacing}}(baseBars.at(startIndex), keyCoord) *}
+\DoxyCodeLine{25292                   0.5;  \textcolor{comment}{// half of middle spacing}}
+\DoxyCodeLine{25293       \} \textcolor{keywordflow}{else}            \textcolor{comment}{// uneven number of bars}}
+\DoxyCodeLine{25294       \{}
+\DoxyCodeLine{25295         startIndex = (baseBars.size() -\/ 1) / 2 + dir;}
+\DoxyCodeLine{25296         baseBars.at((baseBars.size() -\/ 1) / 2)}
+\DoxyCodeLine{25297             -\/>getPixelWidth(keyCoord, lowerPixelWidth, upperPixelWidth);}
+\DoxyCodeLine{25298         result += qAbs(upperPixelWidth -\/ lowerPixelWidth) *}
+\DoxyCodeLine{25299                   0.5;  \textcolor{comment}{// half of center bar}}
+\DoxyCodeLine{25300         result += \mbox{\hyperlink{class_q_c_p_bars_group_a0beccd41bc3841a4c5b284823bc7d2de}{getPixelSpacing}}(baseBars.at((baseBars.size() -\/ 1) / 2),}
+\DoxyCodeLine{25301                                   keyCoord);  \textcolor{comment}{// center bar spacing}}
+\DoxyCodeLine{25302       \}}
+\DoxyCodeLine{25303       \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = startIndex; i != index;}
+\DoxyCodeLine{25304            i += dir)  \textcolor{comment}{// add widths and spacings of bars in between center and}}
+\DoxyCodeLine{25305                       \textcolor{comment}{// our bars}}
+\DoxyCodeLine{25306       \{}
+\DoxyCodeLine{25307         baseBars.at(i)-\/>getPixelWidth(keyCoord, lowerPixelWidth,}
+\DoxyCodeLine{25308                                       upperPixelWidth);}
+\DoxyCodeLine{25309         result += qAbs(upperPixelWidth -\/ lowerPixelWidth);}
+\DoxyCodeLine{25310         result += \mbox{\hyperlink{class_q_c_p_bars_group_a0beccd41bc3841a4c5b284823bc7d2de}{getPixelSpacing}}(baseBars.at(i), keyCoord);}
+\DoxyCodeLine{25311       \}}
+\DoxyCodeLine{25312       \textcolor{comment}{// finally half of our bars width:}}
+\DoxyCodeLine{25313       baseBars.at(index)-\/>getPixelWidth(keyCoord, lowerPixelWidth,}
+\DoxyCodeLine{25314                                         upperPixelWidth);}
+\DoxyCodeLine{25315       result += qAbs(upperPixelWidth -\/ lowerPixelWidth) * 0.5;}
+\DoxyCodeLine{25316       \textcolor{comment}{// correct sign of result depending on orientation and direction of key}}
+\DoxyCodeLine{25317       \textcolor{comment}{// axis:}}
+\DoxyCodeLine{25318       result *= dir * thisBase-\/>\mbox{\hyperlink{class_q_c_p_abstract_plottable_a2cdd6f0dd5e9a979037f86b4000d9cfe}{keyAxis}}()-\/>\mbox{\hyperlink{class_q_c_p_axis_a45c45bed7e5666683b8d56afa66fa51f}{pixelOrientation}}();}
+\DoxyCodeLine{25319     \}}
+\DoxyCodeLine{25320   \}}
+\DoxyCodeLine{25321   \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{25322 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_bars_group_a7b00514f19ad58d0bb3fd5246a67fae2}\label{class_q_c_p_bars_group_a7b00514f19ad58d0bb3fd5246a67fae2}} 
+\index{QCPBarsGroup@{QCPBarsGroup}!registerBars@{registerBars}}
+\index{registerBars@{registerBars}!QCPBarsGroup@{QCPBarsGroup}}
+\doxysubsubsection{\texorpdfstring{registerBars()}{registerBars()}}
+{\footnotesize\ttfamily void QCPBars\+Group\+::register\+Bars (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} $\ast$}]{bars }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25242                                              \{}
+\DoxyCodeLine{25243   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_bars_group_aa5affa0639c13e05bda9d23f16dd1393}{mBars}}.contains(\mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}})) \mbox{\hyperlink{class_q_c_p_bars_group_aa5affa0639c13e05bda9d23f16dd1393}{mBars}}.append(\mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}});}
+\DoxyCodeLine{25244 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_bars_group_a215e28a5944f1159013a0e19169220e7}\label{class_q_c_p_bars_group_a215e28a5944f1159013a0e19169220e7}} 
+\index{QCPBarsGroup@{QCPBarsGroup}!remove@{remove}}
+\index{remove@{remove}!QCPBarsGroup@{QCPBarsGroup}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void QCPBars\+Group\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} $\ast$}]{bars }\end{DoxyParamCaption})}
+
+Removes the specified {\itshape bars} plottable from this group.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_bars_group_ae26da07a23553052a178fb3fae90d0dc}{contains}}, \mbox{\hyperlink{class_q_c_p_bars_group_a3ddf23928c6cd89530bd34ab7ba7b177}{clear}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25222                                        \{}
+\DoxyCodeLine{25223   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}}) \{}
+\DoxyCodeLine{25224     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}bars is 0"{}};}
+\DoxyCodeLine{25225     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{25226   \}}
+\DoxyCodeLine{25227 }
+\DoxyCodeLine{25228   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_bars_group_aa5affa0639c13e05bda9d23f16dd1393}{mBars}}.contains(\mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}}))}
+\DoxyCodeLine{25229     \mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}}-\/>setBarsGroup(\textcolor{keyword}{nullptr});}
+\DoxyCodeLine{25230   \textcolor{keywordflow}{else}}
+\DoxyCodeLine{25231     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}bars plottable is not in this bars group:"{}}}
+\DoxyCodeLine{25232              << \textcolor{keyword}{reinterpret\_cast<}quintptr\textcolor{keyword}{>}(\mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}});}
+\DoxyCodeLine{25233 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_bars_group_aa553d327479d72a0c3dafcc724a190e2}\label{class_q_c_p_bars_group_aa553d327479d72a0c3dafcc724a190e2}} 
+\index{QCPBarsGroup@{QCPBarsGroup}!setSpacing@{setSpacing}}
+\index{setSpacing@{setSpacing}!QCPBarsGroup@{QCPBarsGroup}}
+\doxysubsubsection{\texorpdfstring{setSpacing()}{setSpacing()}}
+{\footnotesize\ttfamily void QCPBars\+Group\+::set\+Spacing (\begin{DoxyParamCaption}\item[{double}]{spacing }\end{DoxyParamCaption})}
+
+Sets the spacing between adjacent bars. What the number passed as {\itshape spacing} actually means, is defined by the current \mbox{\hyperlink{class_q_c_p_bars_group_a4c0521120a97e60bbca37677a37075b6}{Spacing\+Type}}, which can be set with \mbox{\hyperlink{class_q_c_p_bars_group_a2c7e2d61b10594a4555b615e1fcaf49e}{set\+Spacing\+Type}}.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_bars_group_a2c7e2d61b10594a4555b615e1fcaf49e}{set\+Spacing\+Type}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25149 \{ \mbox{\hyperlink{class_q_c_p_bars_group_a56471d7f548ca6141b7a5bf9629f7ece}{mSpacing}} = \mbox{\hyperlink{class_q_c_p_bars_group_a314d09aeb2ad209518b9183ca7ffe662}{spacing}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_bars_group_a2c7e2d61b10594a4555b615e1fcaf49e}\label{class_q_c_p_bars_group_a2c7e2d61b10594a4555b615e1fcaf49e}} 
+\index{QCPBarsGroup@{QCPBarsGroup}!setSpacingType@{setSpacingType}}
+\index{setSpacingType@{setSpacingType}!QCPBarsGroup@{QCPBarsGroup}}
+\doxysubsubsection{\texorpdfstring{setSpacingType()}{setSpacingType()}}
+{\footnotesize\ttfamily void QCPBars\+Group\+::set\+Spacing\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_bars_group_a4c0521120a97e60bbca37677a37075b6}{Spacing\+Type}}}]{spacing\+Type }\end{DoxyParamCaption})}
+
+Sets how the spacing between adjacent bars is interpreted. See \mbox{\hyperlink{class_q_c_p_bars_group_a4c0521120a97e60bbca37677a37075b6}{Spacing\+Type}}.
+
+The actual spacing can then be specified with \mbox{\hyperlink{class_q_c_p_bars_group_aa553d327479d72a0c3dafcc724a190e2}{set\+Spacing}}.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_bars_group_aa553d327479d72a0c3dafcc724a190e2}{set\+Spacing}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25138                                                          \{}
+\DoxyCodeLine{25139   \mbox{\hyperlink{class_q_c_p_bars_group_a6794ee1a9c81864d627bff6a4b2d64ec}{mSpacingType}} = \mbox{\hyperlink{class_q_c_p_bars_group_a894a77c45325aad2e742d936bc1f8aea}{spacingType}};}
+\DoxyCodeLine{25140 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_bars_group_a3780ec77919cb00840207ec7a0f00dd5}\label{class_q_c_p_bars_group_a3780ec77919cb00840207ec7a0f00dd5}} 
+\index{QCPBarsGroup@{QCPBarsGroup}!size@{size}}
+\index{size@{size}!QCPBarsGroup@{QCPBarsGroup}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int QCPBars\+Group\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} plottables that are part of this group. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6465 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_bars_group_aa5affa0639c13e05bda9d23f16dd1393}{mBars}}.size(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_bars_group_a314d09aeb2ad209518b9183ca7ffe662}\label{class_q_c_p_bars_group_a314d09aeb2ad209518b9183ca7ffe662}} 
+\index{QCPBarsGroup@{QCPBarsGroup}!spacing@{spacing}}
+\index{spacing@{spacing}!QCPBarsGroup@{QCPBarsGroup}}
+\doxysubsubsection{\texorpdfstring{spacing()}{spacing()}}
+{\footnotesize\ttfamily double QCPBars\+Group\+::spacing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6456 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_bars_group_a56471d7f548ca6141b7a5bf9629f7ece}{mSpacing}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_bars_group_a894a77c45325aad2e742d936bc1f8aea}\label{class_q_c_p_bars_group_a894a77c45325aad2e742d936bc1f8aea}} 
+\index{QCPBarsGroup@{QCPBarsGroup}!spacingType@{spacingType}}
+\index{spacingType@{spacingType}!QCPBarsGroup@{QCPBarsGroup}}
+\doxysubsubsection{\texorpdfstring{spacingType()}{spacingType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_bars_group_a4c0521120a97e60bbca37677a37075b6}{Spacing\+Type}} QCPBars\+Group\+::spacing\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6455 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_bars_group_a6794ee1a9c81864d627bff6a4b2d64ec}{mSpacingType}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_bars_group_ac7073cdd7b1a40c6cb4b5f908145f8c4}\label{class_q_c_p_bars_group_ac7073cdd7b1a40c6cb4b5f908145f8c4}} 
+\index{QCPBarsGroup@{QCPBarsGroup}!unregisterBars@{unregisterBars}}
+\index{unregisterBars@{unregisterBars}!QCPBarsGroup@{QCPBarsGroup}}
+\doxysubsubsection{\texorpdfstring{unregisterBars()}{unregisterBars()}}
+{\footnotesize\ttfamily void QCPBars\+Group\+::unregister\+Bars (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} $\ast$}]{bars }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25253 \{ \mbox{\hyperlink{class_q_c_p_bars_group_aa5affa0639c13e05bda9d23f16dd1393}{mBars}}.removeOne(\mbox{\hyperlink{class_q_c_p_bars_group_a6e4f4e86abbec6a9342f204ef82abef8}{bars}}); \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Документация по друзьям класса и функциям, относящимся к классу}
+\mbox{\Hypertarget{class_q_c_p_bars_group_a721b87c7cdb8e83a90d77fc8a22e7195}\label{class_q_c_p_bars_group_a721b87c7cdb8e83a90d77fc8a22e7195}} 
+\index{QCPBarsGroup@{QCPBarsGroup}!QCPBars@{QCPBars}}
+\index{QCPBars@{QCPBars}!QCPBarsGroup@{QCPBarsGroup}}
+\doxysubsubsection{\texorpdfstring{QCPBars}{QCPBars}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{class_q_c_p_bars_group_aa5affa0639c13e05bda9d23f16dd1393}\label{class_q_c_p_bars_group_aa5affa0639c13e05bda9d23f16dd1393}} 
+\index{QCPBarsGroup@{QCPBarsGroup}!mBars@{mBars}}
+\index{mBars@{mBars}!QCPBarsGroup@{QCPBarsGroup}}
+\doxysubsubsection{\texorpdfstring{mBars}{mBars}}
+{\footnotesize\ttfamily QList$<$\mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} $\ast$$>$ QCPBars\+Group\+::m\+Bars\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_bars_group_a973d408cfbf88db95115aec71877f9e7}\label{class_q_c_p_bars_group_a973d408cfbf88db95115aec71877f9e7}} 
+\index{QCPBarsGroup@{QCPBarsGroup}!mParentPlot@{mParentPlot}}
+\index{mParentPlot@{mParentPlot}!QCPBarsGroup@{QCPBarsGroup}}
+\doxysubsubsection{\texorpdfstring{mParentPlot}{mParentPlot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}}$\ast$ QCPBars\+Group\+::m\+Parent\+Plot\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_bars_group_a56471d7f548ca6141b7a5bf9629f7ece}\label{class_q_c_p_bars_group_a56471d7f548ca6141b7a5bf9629f7ece}} 
+\index{QCPBarsGroup@{QCPBarsGroup}!mSpacing@{mSpacing}}
+\index{mSpacing@{mSpacing}!QCPBarsGroup@{QCPBarsGroup}}
+\doxysubsubsection{\texorpdfstring{mSpacing}{mSpacing}}
+{\footnotesize\ttfamily double QCPBars\+Group\+::m\+Spacing\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_bars_group_a6794ee1a9c81864d627bff6a4b2d64ec}\label{class_q_c_p_bars_group_a6794ee1a9c81864d627bff6a4b2d64ec}} 
+\index{QCPBarsGroup@{QCPBarsGroup}!mSpacingType@{mSpacingType}}
+\index{mSpacingType@{mSpacingType}!QCPBarsGroup@{QCPBarsGroup}}
+\doxysubsubsection{\texorpdfstring{mSpacingType}{mSpacingType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_bars_group_a4c0521120a97e60bbca37677a37075b6}{Spacing\+Type}} QCPBars\+Group\+::m\+Spacing\+Type\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Smart\+Calc/\mbox{\hyperlink{qcustomplot_8h}{qcustomplot.\+h}}\item 
+Smart\+Calc/\mbox{\hyperlink{qcustomplot_8cpp}{qcustomplot.\+cpp}}\end{DoxyCompactItemize}

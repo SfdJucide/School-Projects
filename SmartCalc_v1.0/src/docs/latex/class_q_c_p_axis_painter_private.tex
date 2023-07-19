@@ -1,0 +1,1200 @@
+\hypertarget{class_q_c_p_axis_painter_private}{}\doxysection{Класс QCPAxis\+Painter\+Private}
+\label{class_q_c_p_axis_painter_private}\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+
+
+{\ttfamily \#include $<$qcustomplot.\+h$>$}
+
+\doxysubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_q_c_p_axis_painter_private_1_1_cached_label}{Cached\+Label}}
+\item 
+struct \mbox{\hyperlink{struct_q_c_p_axis_painter_private_1_1_tick_label_data}{Tick\+Label\+Data}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_c_p_axis_painter_private_a0f14aa5c4aa83dbcd68984a7c73bf94f}{QCPAxis\+Painter\+Private}} (\mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} $\ast$parent\+Plot)
+\item 
+virtual \mbox{\hyperlink{class_q_c_p_axis_painter_private_a7c7f95313f0f78c3c3975f822a5fea35}{$\sim$\+QCPAxis\+Painter\+Private}} ()
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_axis_painter_private_a0207a99bdf9c4f70af20928898ddc2fc}{draw}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter)
+\item 
+virtual int \mbox{\hyperlink{class_q_c_p_axis_painter_private_a62aa9247b2ab22a3e069b9b867376f85}{size}} ()
+\item 
+void \mbox{\hyperlink{class_q_c_p_axis_painter_private_a7b6806e32c44384fd0ae4dcdaa72b1b5}{clear\+Cache}} ()
+\item 
+QRect \mbox{\hyperlink{class_q_c_p_axis_painter_private_ab29635564acb5d0012fa9e297477db05}{axis\+Selection\+Box}} () const
+\item 
+QRect \mbox{\hyperlink{class_q_c_p_axis_painter_private_acf8a4fef47cec70b596fe20941aa5b16}{tick\+Labels\+Selection\+Box}} () const
+\item 
+QRect \mbox{\hyperlink{class_q_c_p_axis_painter_private_ae7800667d15867040ada5f4bf027f070}{label\+Selection\+Box}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18a}{QCPAxis\+::\+Axis\+Type}} \mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}}
+\item 
+QPen \mbox{\hyperlink{class_q_c_p_axis_painter_private_ab4affb27ae3485fecb7466622cabcbb2}{base\+Pen}}
+\item 
+\mbox{\hyperlink{class_q_c_p_line_ending}{QCPLine\+Ending}} \mbox{\hyperlink{class_q_c_p_axis_painter_private_a077696dd1e7efb96e4c199f521433e24}{lower\+Ending}}
+\item 
+\mbox{\hyperlink{class_q_c_p_line_ending}{QCPLine\+Ending}} \mbox{\hyperlink{class_q_c_p_axis_painter_private_af764be913be5f924700ac9bbb8c01139}{upper\+Ending}}
+\item 
+int \mbox{\hyperlink{class_q_c_p_axis_painter_private_a3f7465372df132bf7814345ea697dd34}{label\+Padding}}
+\item 
+QFont \mbox{\hyperlink{class_q_c_p_axis_painter_private_add1ff1030fbc36112c19b1468ad82d55}{label\+Font}}
+\item 
+QColor \mbox{\hyperlink{class_q_c_p_axis_painter_private_a5c36467daf057da0cf0792f3c5a06089}{label\+Color}}
+\item 
+QString \mbox{\hyperlink{class_q_c_p_axis_painter_private_afe004c322f92543c0467afc02da6cf6d}{label}}
+\item 
+int \mbox{\hyperlink{class_q_c_p_axis_painter_private_a264cfa080e84e536cf2d1ab9c5d5cc5f}{tick\+Label\+Padding}}
+\item 
+double \mbox{\hyperlink{class_q_c_p_axis_painter_private_ae6ade9232a8e400924009e8edca94bac}{tick\+Label\+Rotation}}
+\item 
+\mbox{\hyperlink{class_q_c_p_axis_a24b13374b9b8f75f47eed2ea78c37db9}{QCPAxis\+::\+Label\+Side}} \mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d27f7625fcfbeb3a60193d0c18fc7e9}{tick\+Label\+Side}}
+\item 
+bool \mbox{\hyperlink{class_q_c_p_axis_painter_private_a546d22b10ddb5ca8582b7deb90223a91}{substitute\+Exponent}}
+\item 
+bool \mbox{\hyperlink{class_q_c_p_axis_painter_private_a0deb7524009140f00a774dfd286d002c}{number\+Multiply\+Cross}}
+\item 
+int \mbox{\hyperlink{class_q_c_p_axis_painter_private_ae7360ff805fc6097019de8b35ffbd7e7}{tick\+Length\+In}}
+\item 
+int \mbox{\hyperlink{class_q_c_p_axis_painter_private_acbebb1f868906200f968627bc907b77d}{tick\+Length\+Out}}
+\item 
+int \mbox{\hyperlink{class_q_c_p_axis_painter_private_af11f7d83021c9cb3b0e76fe7814c6110}{sub\+Tick\+Length\+In}}
+\item 
+int \mbox{\hyperlink{class_q_c_p_axis_painter_private_a5f1afddc3dc7ccc4d5adcbcd8f0c2218}{sub\+Tick\+Length\+Out}}
+\item 
+QPen \mbox{\hyperlink{class_q_c_p_axis_painter_private_a389dde97f02fdee23965e4736e7d8c62}{tick\+Pen}}
+\item 
+QPen \mbox{\hyperlink{class_q_c_p_axis_painter_private_a9b9cf594cd16575f52ecda9abef4e412}{sub\+Tick\+Pen}}
+\item 
+QFont \mbox{\hyperlink{class_q_c_p_axis_painter_private_a06cb4b185feb1e560e01d65887e4d80d}{tick\+Label\+Font}}
+\item 
+QColor \mbox{\hyperlink{class_q_c_p_axis_painter_private_a88032cf15c997e3956b79617b859e8ad}{tick\+Label\+Color}}
+\item 
+QRect \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axis\+Rect}}
+\item 
+QRect \mbox{\hyperlink{class_q_c_p_axis_painter_private_a8627dc6b40781e3291bb508e4ac574d6}{viewport\+Rect}}
+\item 
+int \mbox{\hyperlink{class_q_c_p_axis_painter_private_a2a3931110efed91b0bb2f8cf1908a8e7}{offset}}
+\item 
+bool \mbox{\hyperlink{class_q_c_p_axis_painter_private_a68353c2eeabd00d96a2e36a0b3809cb2}{abbreviate\+Decimal\+Powers}}
+\item 
+bool \mbox{\hyperlink{class_q_c_p_axis_painter_private_a06d0ef3f4f1b567feb84196fc3b140da}{reversed\+Endings}}
+\item 
+QVector$<$ double $>$ \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcde7484bbcc1004b8f59ab984ada6f9}{sub\+Tick\+Positions}}
+\item 
+QVector$<$ double $>$ \mbox{\hyperlink{class_q_c_p_axis_painter_private_ae55e3dc2cf2af8d8a6e7235ccab54786}{tick\+Positions}}
+\item 
+QVector$<$ QString $>$ \mbox{\hyperlink{class_q_c_p_axis_painter_private_ad0a4998ca358ba751e84fca45a025abd}{tick\+Labels}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+virtual QByte\+Array \mbox{\hyperlink{class_q_c_p_axis_painter_private_ab6f77ae2bd3eccca3fef4b7ec8e34b31}{generate\+Label\+Parameter\+Hash}} () const
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_axis_painter_private_af8fe7350c19575bc33ca770f9b3a15fd}{place\+Tick\+Label}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter, double position, int distance\+To\+Axis, const QString \&text, QSize $\ast$tick\+Labels\+Size)
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_axis_painter_private_aab666e1d85b234afbc88076c7ba9424a}{draw\+Tick\+Label}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter, double x, double y, const \mbox{\hyperlink{struct_q_c_p_axis_painter_private_1_1_tick_label_data}{Tick\+Label\+Data}} \&label\+Data) const
+\item 
+virtual \mbox{\hyperlink{struct_q_c_p_axis_painter_private_1_1_tick_label_data}{Tick\+Label\+Data}} \mbox{\hyperlink{class_q_c_p_axis_painter_private_a5331f78e398da5442767c261578da502}{get\+Tick\+Label\+Data}} (const QFont \&font, const QString \&text) const
+\item 
+virtual QPointF \mbox{\hyperlink{class_q_c_p_axis_painter_private_a6205b60c7d305854ffd7602139433f6e}{get\+Tick\+Label\+Draw\+Offset}} (const \mbox{\hyperlink{struct_q_c_p_axis_painter_private_1_1_tick_label_data}{Tick\+Label\+Data}} \&label\+Data) const
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_axis_painter_private_a7a961f0e05c57b51cf1100b05e93f5b9}{get\+Max\+Tick\+Label\+Size}} (const QFont \&font, const QString \&text, QSize $\ast$tick\+Labels\+Size) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} $\ast$ \mbox{\hyperlink{class_q_c_p_axis_painter_private_a882029a5f2d4abd71289d415c9b90a28}{m\+Parent\+Plot}}
+\item 
+QByte\+Array \mbox{\hyperlink{class_q_c_p_axis_painter_private_aab8be59df22ed4e43e3a6d511cbc466a}{m\+Label\+Parameter\+Hash}}
+\item 
+QCache$<$ QString, \mbox{\hyperlink{struct_q_c_p_axis_painter_private_1_1_cached_label}{Cached\+Label}} $>$ \mbox{\hyperlink{class_q_c_p_axis_painter_private_a07ac270ea0c0ae084debd48d6a740e35}{m\+Label\+Cache}}
+\item 
+QRect \mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d7586f4923994488bdd006415b13f5f}{m\+Axis\+Selection\+Box}}
+\item 
+QRect \mbox{\hyperlink{class_q_c_p_axis_painter_private_a0adaf5f1d89be0f32dc4a904d157e5a9}{m\+Tick\+Labels\+Selection\+Box}}
+\item 
+QRect \mbox{\hyperlink{class_q_c_p_axis_painter_private_abac9a47048d537f72ca147b6f29d30f1}{m\+Label\+Selection\+Box}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_a0f14aa5c4aa83dbcd68984a7c73bf94f}\label{class_q_c_p_axis_painter_private_a0f14aa5c4aa83dbcd68984a7c73bf94f}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{QCPAxisPainterPrivate()}{QCPAxisPainterPrivate()}}
+{\footnotesize\ttfamily QCPAxis\+Painter\+Private\+::\+QCPAxis\+Painter\+Private (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} $\ast$}]{parent\+Plot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructs a \mbox{\hyperlink{class_q_c_p_axis_painter_private}{QCPAxis\+Painter\+Private}} instance. Make sure to not create a new instance on every redraw, to utilize the caching mechanisms. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10032     : \mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aaf84aa6cac6fb6099f54a2cbf7546b730}{QCPAxis::atLeft}}),}
+\DoxyCodeLine{10033       \mbox{\hyperlink{class_q_c_p_axis_painter_private_ab4affb27ae3485fecb7466622cabcbb2}{basePen}}(QPen(Qt::black, 0, Qt::SolidLine, Qt::SquareCap)),}
+\DoxyCodeLine{10034       \mbox{\hyperlink{class_q_c_p_axis_painter_private_a077696dd1e7efb96e4c199f521433e24}{lowerEnding}}(\mbox{\hyperlink{class_q_c_p_line_ending_a5ef16e6876b4b74959c7261d8d4c2cd5aca12d500f50cd6871766801bac30fb03}{QCPLineEnding::esNone}}),}
+\DoxyCodeLine{10035       \mbox{\hyperlink{class_q_c_p_axis_painter_private_af764be913be5f924700ac9bbb8c01139}{upperEnding}}(\mbox{\hyperlink{class_q_c_p_line_ending_a5ef16e6876b4b74959c7261d8d4c2cd5aca12d500f50cd6871766801bac30fb03}{QCPLineEnding::esNone}}),}
+\DoxyCodeLine{10036       \mbox{\hyperlink{class_q_c_p_axis_painter_private_a3f7465372df132bf7814345ea697dd34}{labelPadding}}(0),}
+\DoxyCodeLine{10037       \mbox{\hyperlink{class_q_c_p_axis_painter_private_a264cfa080e84e536cf2d1ab9c5d5cc5f}{tickLabelPadding}}(0),}
+\DoxyCodeLine{10038       \mbox{\hyperlink{class_q_c_p_axis_painter_private_ae6ade9232a8e400924009e8edca94bac}{tickLabelRotation}}(0),}
+\DoxyCodeLine{10039       \mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d27f7625fcfbeb3a60193d0c18fc7e9}{tickLabelSide}}(\mbox{\hyperlink{class_q_c_p_axis_a24b13374b9b8f75f47eed2ea78c37db9a2eadb509fc0c9a8b35b85c86ec9f3c7a}{QCPAxis::lsOutside}}),}
+\DoxyCodeLine{10040       \mbox{\hyperlink{class_q_c_p_axis_painter_private_a546d22b10ddb5ca8582b7deb90223a91}{substituteExponent}}(\textcolor{keyword}{true}),}
+\DoxyCodeLine{10041       \mbox{\hyperlink{class_q_c_p_axis_painter_private_a0deb7524009140f00a774dfd286d002c}{numberMultiplyCross}}(\textcolor{keyword}{false}),}
+\DoxyCodeLine{10042       \mbox{\hyperlink{class_q_c_p_axis_painter_private_ae7360ff805fc6097019de8b35ffbd7e7}{tickLengthIn}}(5),}
+\DoxyCodeLine{10043       \mbox{\hyperlink{class_q_c_p_axis_painter_private_acbebb1f868906200f968627bc907b77d}{tickLengthOut}}(0),}
+\DoxyCodeLine{10044       \mbox{\hyperlink{class_q_c_p_axis_painter_private_af11f7d83021c9cb3b0e76fe7814c6110}{subTickLengthIn}}(2),}
+\DoxyCodeLine{10045       \mbox{\hyperlink{class_q_c_p_axis_painter_private_a5f1afddc3dc7ccc4d5adcbcd8f0c2218}{subTickLengthOut}}(0),}
+\DoxyCodeLine{10046       \mbox{\hyperlink{class_q_c_p_axis_painter_private_a389dde97f02fdee23965e4736e7d8c62}{tickPen}}(QPen(Qt::black, 0, Qt::SolidLine, Qt::SquareCap)),}
+\DoxyCodeLine{10047       \mbox{\hyperlink{class_q_c_p_axis_painter_private_a9b9cf594cd16575f52ecda9abef4e412}{subTickPen}}(QPen(Qt::black, 0, Qt::SolidLine, Qt::SquareCap)),}
+\DoxyCodeLine{10048       \mbox{\hyperlink{class_q_c_p_axis_painter_private_a2a3931110efed91b0bb2f8cf1908a8e7}{offset}}(0),}
+\DoxyCodeLine{10049       \mbox{\hyperlink{class_q_c_p_axis_painter_private_a68353c2eeabd00d96a2e36a0b3809cb2}{abbreviateDecimalPowers}}(\textcolor{keyword}{false}),}
+\DoxyCodeLine{10050       \mbox{\hyperlink{class_q_c_p_axis_painter_private_a06d0ef3f4f1b567feb84196fc3b140da}{reversedEndings}}(\textcolor{keyword}{false}),}
+\DoxyCodeLine{10051       \mbox{\hyperlink{class_q_c_p_axis_painter_private_a882029a5f2d4abd71289d415c9b90a28}{mParentPlot}}(parentPlot),}
+\DoxyCodeLine{10052       \mbox{\hyperlink{class_q_c_p_axis_painter_private_a07ac270ea0c0ae084debd48d6a740e35}{mLabelCache}}(16)  \textcolor{comment}{// cache at most 16 (tick) labels}}
+\DoxyCodeLine{10053 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_a7c7f95313f0f78c3c3975f822a5fea35}\label{class_q_c_p_axis_painter_private_a7c7f95313f0f78c3c3975f822a5fea35}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!````~QCPAxisPainterPrivate@{$\sim$QCPAxisPainterPrivate}}
+\index{````~QCPAxisPainterPrivate@{$\sim$QCPAxisPainterPrivate}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{$\sim$QCPAxisPainterPrivate()}{~QCPAxisPainterPrivate()}}
+{\footnotesize\ttfamily QCPAxis\+Painter\+Private\+::$\sim$\+QCPAxis\+Painter\+Private (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10055 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_ab29635564acb5d0012fa9e297477db05}\label{class_q_c_p_axis_painter_private_ab29635564acb5d0012fa9e297477db05}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!axisSelectionBox@{axisSelectionBox}}
+\index{axisSelectionBox@{axisSelectionBox}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{axisSelectionBox()}{axisSelectionBox()}}
+{\footnotesize\ttfamily QRect QCPAxis\+Painter\+Private\+::axis\+Selection\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2711 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d7586f4923994488bdd006415b13f5f}{mAxisSelectionBox}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_a7b6806e32c44384fd0ae4dcdaa72b1b5}\label{class_q_c_p_axis_painter_private_a7b6806e32c44384fd0ae4dcdaa72b1b5}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!clearCache@{clearCache}}
+\index{clearCache@{clearCache}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{clearCache()}{clearCache()}}
+{\footnotesize\ttfamily void QCPAxis\+Painter\+Private\+::clear\+Cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10372 \{ \mbox{\hyperlink{class_q_c_p_axis_painter_private_a07ac270ea0c0ae084debd48d6a740e35}{mLabelCache}}.clear(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_a0207a99bdf9c4f70af20928898ddc2fc}\label{class_q_c_p_axis_painter_private_a0207a99bdf9c4f70af20928898ddc2fc}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!draw@{draw}}
+\index{draw@{draw}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void QCPAxis\+Painter\+Private\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10064                                                     \{}
+\DoxyCodeLine{10065   QByteArray newHash = \mbox{\hyperlink{class_q_c_p_axis_painter_private_ab6f77ae2bd3eccca3fef4b7ec8e34b31}{generateLabelParameterHash}}();}
+\DoxyCodeLine{10066   \textcolor{keywordflow}{if} (newHash != \mbox{\hyperlink{class_q_c_p_axis_painter_private_aab8be59df22ed4e43e3a6d511cbc466a}{mLabelParameterHash}}) \{}
+\DoxyCodeLine{10067     \mbox{\hyperlink{class_q_c_p_axis_painter_private_a07ac270ea0c0ae084debd48d6a740e35}{mLabelCache}}.clear();}
+\DoxyCodeLine{10068     \mbox{\hyperlink{class_q_c_p_axis_painter_private_aab8be59df22ed4e43e3a6d511cbc466a}{mLabelParameterHash}} = newHash;}
+\DoxyCodeLine{10069   \}}
+\DoxyCodeLine{10070 }
+\DoxyCodeLine{10071   QPoint origin;}
+\DoxyCodeLine{10072   \textcolor{keywordflow}{switch} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}}) \{}
+\DoxyCodeLine{10073     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aaf84aa6cac6fb6099f54a2cbf7546b730}{QCPAxis::atLeft}}:}
+\DoxyCodeLine{10074       origin = \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.bottomLeft() + QPoint(-\/\mbox{\hyperlink{class_q_c_p_axis_painter_private_a2a3931110efed91b0bb2f8cf1908a8e7}{offset}}, 0);}
+\DoxyCodeLine{10075       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{10076     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aadf5509f7d29199ef2f263b1dd224b345}{QCPAxis::atRight}}:}
+\DoxyCodeLine{10077       origin = \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.bottomRight() + QPoint(+\mbox{\hyperlink{class_q_c_p_axis_painter_private_a2a3931110efed91b0bb2f8cf1908a8e7}{offset}}, 0);}
+\DoxyCodeLine{10078       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{10079     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aac0ece2b680d3f545e701f75af1655977}{QCPAxis::atTop}}:}
+\DoxyCodeLine{10080       origin = \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.topLeft() + QPoint(0, -\/\mbox{\hyperlink{class_q_c_p_axis_painter_private_a2a3931110efed91b0bb2f8cf1908a8e7}{offset}});}
+\DoxyCodeLine{10081       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{10082     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aa220d68888516b6c3b493d144f1ba438f}{QCPAxis::atBottom}}:}
+\DoxyCodeLine{10083       origin = \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.bottomLeft() + QPoint(0, +\mbox{\hyperlink{class_q_c_p_axis_painter_private_a2a3931110efed91b0bb2f8cf1908a8e7}{offset}});}
+\DoxyCodeLine{10084       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{10085   \}}
+\DoxyCodeLine{10086 }
+\DoxyCodeLine{10087   \textcolor{keywordtype}{double} xCor = 0,}
+\DoxyCodeLine{10088          yCor = 0;  \textcolor{comment}{// paint system correction, for pixel exact matches (affects}}
+\DoxyCodeLine{10089                     \textcolor{comment}{// baselines and ticks of top/right axes)}}
+\DoxyCodeLine{10090   \textcolor{keywordflow}{switch} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}}) \{}
+\DoxyCodeLine{10091     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aac0ece2b680d3f545e701f75af1655977}{QCPAxis::atTop}}:}
+\DoxyCodeLine{10092       yCor = -\/1;}
+\DoxyCodeLine{10093       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{10094     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aadf5509f7d29199ef2f263b1dd224b345}{QCPAxis::atRight}}:}
+\DoxyCodeLine{10095       xCor = 1;}
+\DoxyCodeLine{10096       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{10097     \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{10098       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{10099   \}}
+\DoxyCodeLine{10100   \textcolor{keywordtype}{int} margin = 0;}
+\DoxyCodeLine{10101   \textcolor{comment}{// draw baseline:}}
+\DoxyCodeLine{10102   QLineF baseLine;}
+\DoxyCodeLine{10103   painter-\/>\mbox{\hyperlink{class_q_c_p_painter_af9c7a4cd1791403901f8c5b82a150195}{setPen}}(\mbox{\hyperlink{class_q_c_p_axis_painter_private_ab4affb27ae3485fecb7466622cabcbb2}{basePen}});}
+\DoxyCodeLine{10104   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_ab988ef4538e2655bb77bd138189cd42e}{QCPAxis::orientation}}(\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}}) == Qt::Horizontal)}
+\DoxyCodeLine{10105     baseLine.setPoints(origin + QPointF(xCor, yCor),}
+\DoxyCodeLine{10106                        origin + QPointF(\mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.width() + xCor, yCor));}
+\DoxyCodeLine{10107   \textcolor{keywordflow}{else}}
+\DoxyCodeLine{10108     baseLine.setPoints(origin + QPointF(xCor, yCor),}
+\DoxyCodeLine{10109                        origin + QPointF(xCor, -\/\mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.height() + yCor));}
+\DoxyCodeLine{10110   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_a06d0ef3f4f1b567feb84196fc3b140da}{reversedEndings}})}
+\DoxyCodeLine{10111     baseLine = QLineF(baseLine.p2(),}
+\DoxyCodeLine{10112                       baseLine.p1());  \textcolor{comment}{// won't make a difference for line}}
+\DoxyCodeLine{10113                                        \textcolor{comment}{// itself, but for line endings later}}
+\DoxyCodeLine{10114   painter-\/>\mbox{\hyperlink{class_q_c_p_painter_a0b4b1b9bd495e182c731774dc800e6e0}{drawLine}}(baseLine);}
+\DoxyCodeLine{10115 }
+\DoxyCodeLine{10116   \textcolor{comment}{// draw ticks:}}
+\DoxyCodeLine{10117   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae55e3dc2cf2af8d8a6e7235ccab54786}{tickPositions}}.isEmpty()) \{}
+\DoxyCodeLine{10118     painter-\/>\mbox{\hyperlink{class_q_c_p_painter_af9c7a4cd1791403901f8c5b82a150195}{setPen}}(\mbox{\hyperlink{class_q_c_p_axis_painter_private_a389dde97f02fdee23965e4736e7d8c62}{tickPen}});}
+\DoxyCodeLine{10119     \textcolor{keywordtype}{int} tickDir = (\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}} == \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aa220d68888516b6c3b493d144f1ba438f}{QCPAxis::atBottom}} || \mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}} == \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aadf5509f7d29199ef2f263b1dd224b345}{QCPAxis::atRight}})}
+\DoxyCodeLine{10120                       ? -\/1}
+\DoxyCodeLine{10121                       : 1;  \textcolor{comment}{// direction of ticks ("{}inward"{} is right for left}}
+\DoxyCodeLine{10122                             \textcolor{comment}{// axis and left for right axis)}}
+\DoxyCodeLine{10123     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_ab988ef4538e2655bb77bd138189cd42e}{QCPAxis::orientation}}(\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}}) == Qt::Horizontal) \{}
+\DoxyCodeLine{10124       \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{double} tickPos, \mbox{\hyperlink{class_q_c_p_axis_painter_private_ae55e3dc2cf2af8d8a6e7235ccab54786}{tickPositions}})}
+\DoxyCodeLine{10125         painter-\/>\mbox{\hyperlink{class_q_c_p_painter_a0b4b1b9bd495e182c731774dc800e6e0}{drawLine}}(}
+\DoxyCodeLine{10126             QLineF(tickPos + xCor, origin.y() -\/ \mbox{\hyperlink{class_q_c_p_axis_painter_private_acbebb1f868906200f968627bc907b77d}{tickLengthOut}} * tickDir + yCor,}
+\DoxyCodeLine{10127                    tickPos + xCor, origin.y() + \mbox{\hyperlink{class_q_c_p_axis_painter_private_ae7360ff805fc6097019de8b35ffbd7e7}{tickLengthIn}} * tickDir + yCor));}
+\DoxyCodeLine{10128     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{10129       \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{double} tickPos, \mbox{\hyperlink{class_q_c_p_axis_painter_private_ae55e3dc2cf2af8d8a6e7235ccab54786}{tickPositions}})}
+\DoxyCodeLine{10130         painter-\/>\mbox{\hyperlink{class_q_c_p_painter_a0b4b1b9bd495e182c731774dc800e6e0}{drawLine}}(}
+\DoxyCodeLine{10131             QLineF(origin.x() -\/ \mbox{\hyperlink{class_q_c_p_axis_painter_private_acbebb1f868906200f968627bc907b77d}{tickLengthOut}} * tickDir + xCor, tickPos + yCor,}
+\DoxyCodeLine{10132                    origin.x() + \mbox{\hyperlink{class_q_c_p_axis_painter_private_ae7360ff805fc6097019de8b35ffbd7e7}{tickLengthIn}} * tickDir + xCor, tickPos + yCor));}
+\DoxyCodeLine{10133     \}}
+\DoxyCodeLine{10134   \}}
+\DoxyCodeLine{10135 }
+\DoxyCodeLine{10136   \textcolor{comment}{// draw subticks:}}
+\DoxyCodeLine{10137   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_axis_painter_private_afcde7484bbcc1004b8f59ab984ada6f9}{subTickPositions}}.isEmpty()) \{}
+\DoxyCodeLine{10138     painter-\/>\mbox{\hyperlink{class_q_c_p_painter_af9c7a4cd1791403901f8c5b82a150195}{setPen}}(\mbox{\hyperlink{class_q_c_p_axis_painter_private_a9b9cf594cd16575f52ecda9abef4e412}{subTickPen}});}
+\DoxyCodeLine{10139     \textcolor{comment}{// direction of ticks ("{}inward"{} is right for left axis and left for right}}
+\DoxyCodeLine{10140     \textcolor{comment}{// axis)}}
+\DoxyCodeLine{10141     \textcolor{keywordtype}{int} tickDir =}
+\DoxyCodeLine{10142         (\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}} == \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aa220d68888516b6c3b493d144f1ba438f}{QCPAxis::atBottom}} || \mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}} == \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aadf5509f7d29199ef2f263b1dd224b345}{QCPAxis::atRight}}) ? -\/1 : 1;}
+\DoxyCodeLine{10143     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_ab988ef4538e2655bb77bd138189cd42e}{QCPAxis::orientation}}(\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}}) == Qt::Horizontal) \{}
+\DoxyCodeLine{10144       \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{double} subTickPos, \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcde7484bbcc1004b8f59ab984ada6f9}{subTickPositions}})}
+\DoxyCodeLine{10145         painter-\/>\mbox{\hyperlink{class_q_c_p_painter_a0b4b1b9bd495e182c731774dc800e6e0}{drawLine}}(QLineF(}
+\DoxyCodeLine{10146             subTickPos + xCor, origin.y() -\/ \mbox{\hyperlink{class_q_c_p_axis_painter_private_a5f1afddc3dc7ccc4d5adcbcd8f0c2218}{subTickLengthOut}} * tickDir + yCor,}
+\DoxyCodeLine{10147             subTickPos + xCor, origin.y() + \mbox{\hyperlink{class_q_c_p_axis_painter_private_af11f7d83021c9cb3b0e76fe7814c6110}{subTickLengthIn}} * tickDir + yCor));}
+\DoxyCodeLine{10148     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{10149       \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{double} subTickPos, \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcde7484bbcc1004b8f59ab984ada6f9}{subTickPositions}})}
+\DoxyCodeLine{10150         painter-\/>\mbox{\hyperlink{class_q_c_p_painter_a0b4b1b9bd495e182c731774dc800e6e0}{drawLine}}(QLineF(}
+\DoxyCodeLine{10151             origin.x() -\/ \mbox{\hyperlink{class_q_c_p_axis_painter_private_a5f1afddc3dc7ccc4d5adcbcd8f0c2218}{subTickLengthOut}} * tickDir + xCor, subTickPos + yCor,}
+\DoxyCodeLine{10152             origin.x() + \mbox{\hyperlink{class_q_c_p_axis_painter_private_af11f7d83021c9cb3b0e76fe7814c6110}{subTickLengthIn}} * tickDir + xCor, subTickPos + yCor));}
+\DoxyCodeLine{10153     \}}
+\DoxyCodeLine{10154   \}}
+\DoxyCodeLine{10155   margin += qMax(0, qMax(\mbox{\hyperlink{class_q_c_p_axis_painter_private_acbebb1f868906200f968627bc907b77d}{tickLengthOut}}, \mbox{\hyperlink{class_q_c_p_axis_painter_private_a5f1afddc3dc7ccc4d5adcbcd8f0c2218}{subTickLengthOut}}));}
+\DoxyCodeLine{10156 }
+\DoxyCodeLine{10157   \textcolor{comment}{// draw axis base endings:}}
+\DoxyCodeLine{10158   \textcolor{keywordtype}{bool} antialiasingBackup = painter-\/>\mbox{\hyperlink{class_q_c_p_painter_a5aff96296e995f6f35b2596a482aae37}{antialiasing}}();}
+\DoxyCodeLine{10159   painter-\/>\mbox{\hyperlink{class_q_c_p_painter_aaba1deb9188244d9ea65b035112b4d05}{setAntialiasing}}(\textcolor{keyword}{true});  \textcolor{comment}{// always want endings to be antialiased,}}
+\DoxyCodeLine{10160                                    \textcolor{comment}{// even if base and ticks themselves aren't}}
+\DoxyCodeLine{10161   painter-\/>setBrush(QBrush(\mbox{\hyperlink{class_q_c_p_axis_painter_private_ab4affb27ae3485fecb7466622cabcbb2}{basePen}}.color()));}
+\DoxyCodeLine{10162   \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}} baseLineVector(baseLine.dx(), baseLine.dy());}
+\DoxyCodeLine{10163   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_a077696dd1e7efb96e4c199f521433e24}{lowerEnding}}.\mbox{\hyperlink{class_q_c_p_line_ending_a07e75aaac6c61322bf51af237c5778e3}{style}}() != \mbox{\hyperlink{class_q_c_p_line_ending_a5ef16e6876b4b74959c7261d8d4c2cd5aca12d500f50cd6871766801bac30fb03}{QCPLineEnding::esNone}})}
+\DoxyCodeLine{10164     \mbox{\hyperlink{class_q_c_p_axis_painter_private_a077696dd1e7efb96e4c199f521433e24}{lowerEnding}}.\mbox{\hyperlink{class_q_c_p_line_ending_a4f45db54f2aba03acf055e29aec1e8e7}{draw}}(}
+\DoxyCodeLine{10165         painter,}
+\DoxyCodeLine{10166         \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}}(baseLine.p1()) -\/ baseLineVector.\mbox{\hyperlink{class_q_c_p_vector2_d_a707bb3af3b1f9331a2450ec75eaf7eb0}{normalized}}() *}
+\DoxyCodeLine{10167                                          \mbox{\hyperlink{class_q_c_p_axis_painter_private_a077696dd1e7efb96e4c199f521433e24}{lowerEnding}}.\mbox{\hyperlink{class_q_c_p_line_ending_acacd24d386d459b282d3c57f16a5405d}{realLength}}() *}
+\DoxyCodeLine{10168                                          (\mbox{\hyperlink{class_q_c_p_axis_painter_private_a077696dd1e7efb96e4c199f521433e24}{lowerEnding}}.\mbox{\hyperlink{class_q_c_p_line_ending_a15a68706d298a0c9f94556f6b4db15ff}{inverted}}() ? -\/1 : 1),}
+\DoxyCodeLine{10169         -\/baseLineVector);}
+\DoxyCodeLine{10170   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_af764be913be5f924700ac9bbb8c01139}{upperEnding}}.\mbox{\hyperlink{class_q_c_p_line_ending_a07e75aaac6c61322bf51af237c5778e3}{style}}() != \mbox{\hyperlink{class_q_c_p_line_ending_a5ef16e6876b4b74959c7261d8d4c2cd5aca12d500f50cd6871766801bac30fb03}{QCPLineEnding::esNone}})}
+\DoxyCodeLine{10171     \mbox{\hyperlink{class_q_c_p_axis_painter_private_af764be913be5f924700ac9bbb8c01139}{upperEnding}}.\mbox{\hyperlink{class_q_c_p_line_ending_a4f45db54f2aba03acf055e29aec1e8e7}{draw}}(}
+\DoxyCodeLine{10172         painter,}
+\DoxyCodeLine{10173         \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}}(baseLine.p2()) + baseLineVector.\mbox{\hyperlink{class_q_c_p_vector2_d_a707bb3af3b1f9331a2450ec75eaf7eb0}{normalized}}() *}
+\DoxyCodeLine{10174                                          \mbox{\hyperlink{class_q_c_p_axis_painter_private_af764be913be5f924700ac9bbb8c01139}{upperEnding}}.\mbox{\hyperlink{class_q_c_p_line_ending_acacd24d386d459b282d3c57f16a5405d}{realLength}}() *}
+\DoxyCodeLine{10175                                          (\mbox{\hyperlink{class_q_c_p_axis_painter_private_af764be913be5f924700ac9bbb8c01139}{upperEnding}}.\mbox{\hyperlink{class_q_c_p_line_ending_a15a68706d298a0c9f94556f6b4db15ff}{inverted}}() ? -\/1 : 1),}
+\DoxyCodeLine{10176         baseLineVector);}
+\DoxyCodeLine{10177   painter-\/>\mbox{\hyperlink{class_q_c_p_painter_aaba1deb9188244d9ea65b035112b4d05}{setAntialiasing}}(antialiasingBackup);}
+\DoxyCodeLine{10178 }
+\DoxyCodeLine{10179   \textcolor{comment}{// tick labels:}}
+\DoxyCodeLine{10180   QRect oldClipRect;}
+\DoxyCodeLine{10181   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d27f7625fcfbeb3a60193d0c18fc7e9}{tickLabelSide}} ==}
+\DoxyCodeLine{10182       \mbox{\hyperlink{class_q_c_p_axis_a24b13374b9b8f75f47eed2ea78c37db9aae7b027ac2839cf4ad611df30236fc3f}{QCPAxis::lsInside}})  \textcolor{comment}{// if using inside labels, clip them to the axis rect}}
+\DoxyCodeLine{10183   \{}
+\DoxyCodeLine{10184     oldClipRect = painter-\/>clipRegion().boundingRect();}
+\DoxyCodeLine{10185     painter-\/>setClipRect(\mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}});}
+\DoxyCodeLine{10186   \}}
+\DoxyCodeLine{10187   QSize tickLabelsSize(}
+\DoxyCodeLine{10188       0,}
+\DoxyCodeLine{10189       0);  \textcolor{comment}{// size of largest tick label, for offset calculation of axis label}}
+\DoxyCodeLine{10190   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_axis_painter_private_ad0a4998ca358ba751e84fca45a025abd}{tickLabels}}.isEmpty()) \{}
+\DoxyCodeLine{10191     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d27f7625fcfbeb3a60193d0c18fc7e9}{tickLabelSide}} == \mbox{\hyperlink{class_q_c_p_axis_a24b13374b9b8f75f47eed2ea78c37db9a2eadb509fc0c9a8b35b85c86ec9f3c7a}{QCPAxis::lsOutside}}) margin += \mbox{\hyperlink{class_q_c_p_axis_painter_private_a264cfa080e84e536cf2d1ab9c5d5cc5f}{tickLabelPadding}};}
+\DoxyCodeLine{10192     painter-\/>setFont(\mbox{\hyperlink{class_q_c_p_axis_painter_private_a06cb4b185feb1e560e01d65887e4d80d}{tickLabelFont}});}
+\DoxyCodeLine{10193     painter-\/>\mbox{\hyperlink{class_q_c_p_painter_af9c7a4cd1791403901f8c5b82a150195}{setPen}}(QPen(\mbox{\hyperlink{class_q_c_p_axis_painter_private_a88032cf15c997e3956b79617b859e8ad}{tickLabelColor}}));}
+\DoxyCodeLine{10194     \textcolor{keyword}{const} \textcolor{keywordtype}{int} maxLabelIndex = qMin(\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae55e3dc2cf2af8d8a6e7235ccab54786}{tickPositions}}.size(), \mbox{\hyperlink{class_q_c_p_axis_painter_private_ad0a4998ca358ba751e84fca45a025abd}{tickLabels}}.size());}
+\DoxyCodeLine{10195     \textcolor{keywordtype}{int} distanceToAxis = margin;}
+\DoxyCodeLine{10196     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d27f7625fcfbeb3a60193d0c18fc7e9}{tickLabelSide}} == \mbox{\hyperlink{class_q_c_p_axis_a24b13374b9b8f75f47eed2ea78c37db9aae7b027ac2839cf4ad611df30236fc3f}{QCPAxis::lsInside}})}
+\DoxyCodeLine{10197       distanceToAxis =}
+\DoxyCodeLine{10198           -\/(qMax(\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae7360ff805fc6097019de8b35ffbd7e7}{tickLengthIn}}, \mbox{\hyperlink{class_q_c_p_axis_painter_private_af11f7d83021c9cb3b0e76fe7814c6110}{subTickLengthIn}}) + \mbox{\hyperlink{class_q_c_p_axis_painter_private_a264cfa080e84e536cf2d1ab9c5d5cc5f}{tickLabelPadding}});}
+\DoxyCodeLine{10199     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < maxLabelIndex; ++i)}
+\DoxyCodeLine{10200       \mbox{\hyperlink{class_q_c_p_axis_painter_private_af8fe7350c19575bc33ca770f9b3a15fd}{placeTickLabel}}(painter, \mbox{\hyperlink{class_q_c_p_axis_painter_private_ae55e3dc2cf2af8d8a6e7235ccab54786}{tickPositions}}.at(i), distanceToAxis,}
+\DoxyCodeLine{10201                      \mbox{\hyperlink{class_q_c_p_axis_painter_private_ad0a4998ca358ba751e84fca45a025abd}{tickLabels}}.at(i), \&tickLabelsSize);}
+\DoxyCodeLine{10202     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d27f7625fcfbeb3a60193d0c18fc7e9}{tickLabelSide}} == \mbox{\hyperlink{class_q_c_p_axis_a24b13374b9b8f75f47eed2ea78c37db9a2eadb509fc0c9a8b35b85c86ec9f3c7a}{QCPAxis::lsOutside}})}
+\DoxyCodeLine{10203       margin += (\mbox{\hyperlink{class_q_c_p_axis_ab988ef4538e2655bb77bd138189cd42e}{QCPAxis::orientation}}(\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}}) == Qt::Horizontal)}
+\DoxyCodeLine{10204                     ? tickLabelsSize.height()}
+\DoxyCodeLine{10205                     : tickLabelsSize.width();}
+\DoxyCodeLine{10206   \}}
+\DoxyCodeLine{10207   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d27f7625fcfbeb3a60193d0c18fc7e9}{tickLabelSide}} == \mbox{\hyperlink{class_q_c_p_axis_a24b13374b9b8f75f47eed2ea78c37db9aae7b027ac2839cf4ad611df30236fc3f}{QCPAxis::lsInside}}) painter-\/>setClipRect(oldClipRect);}
+\DoxyCodeLine{10208 }
+\DoxyCodeLine{10209   \textcolor{comment}{// axis label:}}
+\DoxyCodeLine{10210   QRect labelBounds;}
+\DoxyCodeLine{10211   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_axis_painter_private_afe004c322f92543c0467afc02da6cf6d}{label}}.isEmpty()) \{}
+\DoxyCodeLine{10212     margin += \mbox{\hyperlink{class_q_c_p_axis_painter_private_a3f7465372df132bf7814345ea697dd34}{labelPadding}};}
+\DoxyCodeLine{10213     painter-\/>setFont(\mbox{\hyperlink{class_q_c_p_axis_painter_private_add1ff1030fbc36112c19b1468ad82d55}{labelFont}});}
+\DoxyCodeLine{10214     painter-\/>\mbox{\hyperlink{class_q_c_p_painter_af9c7a4cd1791403901f8c5b82a150195}{setPen}}(QPen(\mbox{\hyperlink{class_q_c_p_axis_painter_private_a5c36467daf057da0cf0792f3c5a06089}{labelColor}}));}
+\DoxyCodeLine{10215     labelBounds = painter-\/>fontMetrics().boundingRect(0, 0, 0, 0,}
+\DoxyCodeLine{10216                                                       Qt::TextDontClip, \mbox{\hyperlink{class_q_c_p_axis_painter_private_afe004c322f92543c0467afc02da6cf6d}{label}});}
+\DoxyCodeLine{10217     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}} == \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aaf84aa6cac6fb6099f54a2cbf7546b730}{QCPAxis::atLeft}}) \{}
+\DoxyCodeLine{10218       QTransform oldTransform = painter-\/>transform();}
+\DoxyCodeLine{10219       painter-\/>translate((origin.x() -\/ margin -\/ labelBounds.height()),}
+\DoxyCodeLine{10220                          origin.y());}
+\DoxyCodeLine{10221       painter-\/>rotate(-\/90);}
+\DoxyCodeLine{10222       painter-\/>drawText(0, 0, \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.height(), labelBounds.height(),}
+\DoxyCodeLine{10223                         Qt::TextDontClip | Qt::AlignCenter, \mbox{\hyperlink{class_q_c_p_axis_painter_private_afe004c322f92543c0467afc02da6cf6d}{label}});}
+\DoxyCodeLine{10224       painter-\/>setTransform(oldTransform);}
+\DoxyCodeLine{10225     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}} == \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aadf5509f7d29199ef2f263b1dd224b345}{QCPAxis::atRight}}) \{}
+\DoxyCodeLine{10226       QTransform oldTransform = painter-\/>transform();}
+\DoxyCodeLine{10227       painter-\/>translate((origin.x() + margin + labelBounds.height()),}
+\DoxyCodeLine{10228                          origin.y() -\/ \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.height());}
+\DoxyCodeLine{10229       painter-\/>rotate(90);}
+\DoxyCodeLine{10230       painter-\/>drawText(0, 0, \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.height(), labelBounds.height(),}
+\DoxyCodeLine{10231                         Qt::TextDontClip | Qt::AlignCenter, \mbox{\hyperlink{class_q_c_p_axis_painter_private_afe004c322f92543c0467afc02da6cf6d}{label}});}
+\DoxyCodeLine{10232       painter-\/>setTransform(oldTransform);}
+\DoxyCodeLine{10233     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}} == \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aac0ece2b680d3f545e701f75af1655977}{QCPAxis::atTop}})}
+\DoxyCodeLine{10234       painter-\/>drawText(origin.x(), origin.y() -\/ margin -\/ labelBounds.height(),}
+\DoxyCodeLine{10235                         \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.width(), labelBounds.height(),}
+\DoxyCodeLine{10236                         Qt::TextDontClip | Qt::AlignCenter, \mbox{\hyperlink{class_q_c_p_axis_painter_private_afe004c322f92543c0467afc02da6cf6d}{label}});}
+\DoxyCodeLine{10237     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}} == \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aa220d68888516b6c3b493d144f1ba438f}{QCPAxis::atBottom}})}
+\DoxyCodeLine{10238       painter-\/>drawText(origin.x(), origin.y() + margin, \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.width(),}
+\DoxyCodeLine{10239                         labelBounds.height(),}
+\DoxyCodeLine{10240                         Qt::TextDontClip | Qt::AlignCenter, \mbox{\hyperlink{class_q_c_p_axis_painter_private_afe004c322f92543c0467afc02da6cf6d}{label}});}
+\DoxyCodeLine{10241   \}}
+\DoxyCodeLine{10242 }
+\DoxyCodeLine{10243   \textcolor{comment}{// set selection boxes:}}
+\DoxyCodeLine{10244   \textcolor{keywordtype}{int} selectionTolerance = 0;}
+\DoxyCodeLine{10245   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_a882029a5f2d4abd71289d415c9b90a28}{mParentPlot}})}
+\DoxyCodeLine{10246     selectionTolerance = \mbox{\hyperlink{class_q_c_p_axis_painter_private_a882029a5f2d4abd71289d415c9b90a28}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a5441d11013afeaf4b8f2ea06e8624a25}{selectionTolerance}}();}
+\DoxyCodeLine{10247   \textcolor{keywordflow}{else}}
+\DoxyCodeLine{10248     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}mParentPlot is null"{}};}
+\DoxyCodeLine{10249   \textcolor{keywordtype}{int} selAxisOutSize =}
+\DoxyCodeLine{10250       qMax(qMax(\mbox{\hyperlink{class_q_c_p_axis_painter_private_acbebb1f868906200f968627bc907b77d}{tickLengthOut}}, \mbox{\hyperlink{class_q_c_p_axis_painter_private_a5f1afddc3dc7ccc4d5adcbcd8f0c2218}{subTickLengthOut}}), selectionTolerance);}
+\DoxyCodeLine{10251   \textcolor{keywordtype}{int} selAxisInSize = selectionTolerance;}
+\DoxyCodeLine{10252   \textcolor{keywordtype}{int} selTickLabelSize;}
+\DoxyCodeLine{10253   \textcolor{keywordtype}{int} selTickLabelOffset;}
+\DoxyCodeLine{10254   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d27f7625fcfbeb3a60193d0c18fc7e9}{tickLabelSide}} == \mbox{\hyperlink{class_q_c_p_axis_a24b13374b9b8f75f47eed2ea78c37db9a2eadb509fc0c9a8b35b85c86ec9f3c7a}{QCPAxis::lsOutside}}) \{}
+\DoxyCodeLine{10255     selTickLabelSize =}
+\DoxyCodeLine{10256         (\mbox{\hyperlink{class_q_c_p_axis_ab988ef4538e2655bb77bd138189cd42e}{QCPAxis::orientation}}(\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}}) == Qt::Horizontal ? tickLabelsSize.height()}
+\DoxyCodeLine{10257                                                       : tickLabelsSize.width());}
+\DoxyCodeLine{10258     selTickLabelOffset =}
+\DoxyCodeLine{10259         qMax(\mbox{\hyperlink{class_q_c_p_axis_painter_private_acbebb1f868906200f968627bc907b77d}{tickLengthOut}}, \mbox{\hyperlink{class_q_c_p_axis_painter_private_a5f1afddc3dc7ccc4d5adcbcd8f0c2218}{subTickLengthOut}}) + \mbox{\hyperlink{class_q_c_p_axis_painter_private_a264cfa080e84e536cf2d1ab9c5d5cc5f}{tickLabelPadding}};}
+\DoxyCodeLine{10260   \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{10261     selTickLabelSize = -\/(\mbox{\hyperlink{class_q_c_p_axis_ab988ef4538e2655bb77bd138189cd42e}{QCPAxis::orientation}}(\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}}) == Qt::Horizontal}
+\DoxyCodeLine{10262                              ? tickLabelsSize.height()}
+\DoxyCodeLine{10263                              : tickLabelsSize.width());}
+\DoxyCodeLine{10264     selTickLabelOffset =}
+\DoxyCodeLine{10265         -\/(qMax(\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae7360ff805fc6097019de8b35ffbd7e7}{tickLengthIn}}, \mbox{\hyperlink{class_q_c_p_axis_painter_private_af11f7d83021c9cb3b0e76fe7814c6110}{subTickLengthIn}}) + \mbox{\hyperlink{class_q_c_p_axis_painter_private_a264cfa080e84e536cf2d1ab9c5d5cc5f}{tickLabelPadding}});}
+\DoxyCodeLine{10266   \}}
+\DoxyCodeLine{10267   \textcolor{keywordtype}{int} selLabelSize = labelBounds.height();}
+\DoxyCodeLine{10268   \textcolor{keywordtype}{int} selLabelOffset =}
+\DoxyCodeLine{10269       qMax(\mbox{\hyperlink{class_q_c_p_axis_painter_private_acbebb1f868906200f968627bc907b77d}{tickLengthOut}}, \mbox{\hyperlink{class_q_c_p_axis_painter_private_a5f1afddc3dc7ccc4d5adcbcd8f0c2218}{subTickLengthOut}}) +}
+\DoxyCodeLine{10270       (!\mbox{\hyperlink{class_q_c_p_axis_painter_private_ad0a4998ca358ba751e84fca45a025abd}{tickLabels}}.isEmpty() \&\& \mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d27f7625fcfbeb3a60193d0c18fc7e9}{tickLabelSide}} == \mbox{\hyperlink{class_q_c_p_axis_a24b13374b9b8f75f47eed2ea78c37db9a2eadb509fc0c9a8b35b85c86ec9f3c7a}{QCPAxis::lsOutside}}}
+\DoxyCodeLine{10271            ? \mbox{\hyperlink{class_q_c_p_axis_painter_private_a264cfa080e84e536cf2d1ab9c5d5cc5f}{tickLabelPadding}} + selTickLabelSize}
+\DoxyCodeLine{10272            : 0) +}
+\DoxyCodeLine{10273       \mbox{\hyperlink{class_q_c_p_axis_painter_private_a3f7465372df132bf7814345ea697dd34}{labelPadding}};}
+\DoxyCodeLine{10274   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}} == \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aaf84aa6cac6fb6099f54a2cbf7546b730}{QCPAxis::atLeft}}) \{}
+\DoxyCodeLine{10275     \mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d7586f4923994488bdd006415b13f5f}{mAxisSelectionBox}}.setCoords(origin.x() -\/ selAxisOutSize, \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.top(),}
+\DoxyCodeLine{10276                                 origin.x() + selAxisInSize, \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.bottom());}
+\DoxyCodeLine{10277     \mbox{\hyperlink{class_q_c_p_axis_painter_private_a0adaf5f1d89be0f32dc4a904d157e5a9}{mTickLabelsSelectionBox}}.setCoords(}
+\DoxyCodeLine{10278         origin.x() -\/ selTickLabelOffset -\/ selTickLabelSize, \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.top(),}
+\DoxyCodeLine{10279         origin.x() -\/ selTickLabelOffset, \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.bottom());}
+\DoxyCodeLine{10280     \mbox{\hyperlink{class_q_c_p_axis_painter_private_abac9a47048d537f72ca147b6f29d30f1}{mLabelSelectionBox}}.setCoords(origin.x() -\/ selLabelOffset -\/ selLabelSize,}
+\DoxyCodeLine{10281                                  \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.top(), origin.x() -\/ selLabelOffset,}
+\DoxyCodeLine{10282                                  \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.bottom());}
+\DoxyCodeLine{10283   \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}} == \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aadf5509f7d29199ef2f263b1dd224b345}{QCPAxis::atRight}}) \{}
+\DoxyCodeLine{10284     \mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d7586f4923994488bdd006415b13f5f}{mAxisSelectionBox}}.setCoords(origin.x() -\/ selAxisInSize, \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.top(),}
+\DoxyCodeLine{10285                                 origin.x() + selAxisOutSize, \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.bottom());}
+\DoxyCodeLine{10286     \mbox{\hyperlink{class_q_c_p_axis_painter_private_a0adaf5f1d89be0f32dc4a904d157e5a9}{mTickLabelsSelectionBox}}.setCoords(}
+\DoxyCodeLine{10287         origin.x() + selTickLabelOffset + selTickLabelSize, \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.top(),}
+\DoxyCodeLine{10288         origin.x() + selTickLabelOffset, \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.bottom());}
+\DoxyCodeLine{10289     \mbox{\hyperlink{class_q_c_p_axis_painter_private_abac9a47048d537f72ca147b6f29d30f1}{mLabelSelectionBox}}.setCoords(origin.x() + selLabelOffset + selLabelSize,}
+\DoxyCodeLine{10290                                  \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.top(), origin.x() + selLabelOffset,}
+\DoxyCodeLine{10291                                  \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.bottom());}
+\DoxyCodeLine{10292   \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}} == \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aac0ece2b680d3f545e701f75af1655977}{QCPAxis::atTop}}) \{}
+\DoxyCodeLine{10293     \mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d7586f4923994488bdd006415b13f5f}{mAxisSelectionBox}}.setCoords(\mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.left(), origin.y() -\/ selAxisOutSize,}
+\DoxyCodeLine{10294                                 \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.right(), origin.y() + selAxisInSize);}
+\DoxyCodeLine{10295     \mbox{\hyperlink{class_q_c_p_axis_painter_private_a0adaf5f1d89be0f32dc4a904d157e5a9}{mTickLabelsSelectionBox}}.setCoords(}
+\DoxyCodeLine{10296         \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.left(), origin.y() -\/ selTickLabelOffset -\/ selTickLabelSize,}
+\DoxyCodeLine{10297         \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.right(), origin.y() -\/ selTickLabelOffset);}
+\DoxyCodeLine{10298     \mbox{\hyperlink{class_q_c_p_axis_painter_private_abac9a47048d537f72ca147b6f29d30f1}{mLabelSelectionBox}}.setCoords(\mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.left(),}
+\DoxyCodeLine{10299                                  origin.y() -\/ selLabelOffset -\/ selLabelSize,}
+\DoxyCodeLine{10300                                  \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.right(), origin.y() -\/ selLabelOffset);}
+\DoxyCodeLine{10301   \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}} == \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aa220d68888516b6c3b493d144f1ba438f}{QCPAxis::atBottom}}) \{}
+\DoxyCodeLine{10302     \mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d7586f4923994488bdd006415b13f5f}{mAxisSelectionBox}}.setCoords(\mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.left(), origin.y() -\/ selAxisInSize,}
+\DoxyCodeLine{10303                                 \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.right(), origin.y() + selAxisOutSize);}
+\DoxyCodeLine{10304     \mbox{\hyperlink{class_q_c_p_axis_painter_private_a0adaf5f1d89be0f32dc4a904d157e5a9}{mTickLabelsSelectionBox}}.setCoords(}
+\DoxyCodeLine{10305         \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.left(), origin.y() + selTickLabelOffset + selTickLabelSize,}
+\DoxyCodeLine{10306         \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.right(), origin.y() + selTickLabelOffset);}
+\DoxyCodeLine{10307     \mbox{\hyperlink{class_q_c_p_axis_painter_private_abac9a47048d537f72ca147b6f29d30f1}{mLabelSelectionBox}}.setCoords(\mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.left(),}
+\DoxyCodeLine{10308                                  origin.y() + selLabelOffset + selLabelSize,}
+\DoxyCodeLine{10309                                  \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.right(), origin.y() + selLabelOffset);}
+\DoxyCodeLine{10310   \}}
+\DoxyCodeLine{10311   \mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d7586f4923994488bdd006415b13f5f}{mAxisSelectionBox}} = \mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d7586f4923994488bdd006415b13f5f}{mAxisSelectionBox}}.normalized();}
+\DoxyCodeLine{10312   \mbox{\hyperlink{class_q_c_p_axis_painter_private_a0adaf5f1d89be0f32dc4a904d157e5a9}{mTickLabelsSelectionBox}} = \mbox{\hyperlink{class_q_c_p_axis_painter_private_a0adaf5f1d89be0f32dc4a904d157e5a9}{mTickLabelsSelectionBox}}.normalized();}
+\DoxyCodeLine{10313   \mbox{\hyperlink{class_q_c_p_axis_painter_private_abac9a47048d537f72ca147b6f29d30f1}{mLabelSelectionBox}} = \mbox{\hyperlink{class_q_c_p_axis_painter_private_abac9a47048d537f72ca147b6f29d30f1}{mLabelSelectionBox}}.normalized();}
+\DoxyCodeLine{10314   \textcolor{comment}{// draw hitboxes for debug purposes:}}
+\DoxyCodeLine{10315   \textcolor{comment}{// painter-\/>setBrush(Qt::NoBrush);}}
+\DoxyCodeLine{10316   \textcolor{comment}{// painter-\/>drawRects(QVector<QRect>() << mAxisSelectionBox <<}}
+\DoxyCodeLine{10317   \textcolor{comment}{// mTickLabelsSelectionBox << mLabelSelectionBox);}}
+\DoxyCodeLine{10318 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_aab666e1d85b234afbc88076c7ba9424a}\label{class_q_c_p_axis_painter_private_aab666e1d85b234afbc88076c7ba9424a}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!drawTickLabel@{drawTickLabel}}
+\index{drawTickLabel@{drawTickLabel}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{drawTickLabel()}{drawTickLabel()}}
+{\footnotesize\ttfamily void QCPAxis\+Painter\+Private\+::draw\+Tick\+Label (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter,  }\item[{double}]{x,  }\item[{double}]{y,  }\item[{const \mbox{\hyperlink{struct_q_c_p_axis_painter_private_1_1_tick_label_data}{Tick\+Label\+Data}} \&}]{label\+Data }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10550                                           \{}
+\DoxyCodeLine{10551   \textcolor{comment}{// backup painter settings that we're about to change:}}
+\DoxyCodeLine{10552   QTransform oldTransform = painter-\/>transform();}
+\DoxyCodeLine{10553   QFont oldFont = painter-\/>font();}
+\DoxyCodeLine{10554 }
+\DoxyCodeLine{10555   \textcolor{comment}{// transform painter to position/rotation:}}
+\DoxyCodeLine{10556   painter-\/>translate(x, y);}
+\DoxyCodeLine{10557   \textcolor{keywordflow}{if} (!qFuzzyIsNull(\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae6ade9232a8e400924009e8edca94bac}{tickLabelRotation}})) painter-\/>rotate(\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae6ade9232a8e400924009e8edca94bac}{tickLabelRotation}});}
+\DoxyCodeLine{10558 }
+\DoxyCodeLine{10559   \textcolor{comment}{// draw text:}}
+\DoxyCodeLine{10560   \textcolor{keywordflow}{if} (!labelData.expPart}
+\DoxyCodeLine{10561            .isEmpty())  \textcolor{comment}{// indicator that beautiful powers must be used}}
+\DoxyCodeLine{10562   \{}
+\DoxyCodeLine{10563     painter-\/>setFont(labelData.baseFont);}
+\DoxyCodeLine{10564     painter-\/>drawText(0, 0, 0, 0, Qt::TextDontClip, labelData.basePart);}
+\DoxyCodeLine{10565     \textcolor{keywordflow}{if} (!labelData.suffixPart.isEmpty())}
+\DoxyCodeLine{10566       painter-\/>drawText(}
+\DoxyCodeLine{10567           labelData.baseBounds.width() + 1 + labelData.expBounds.width(), 0, 0,}
+\DoxyCodeLine{10568           0, Qt::TextDontClip, labelData.suffixPart);}
+\DoxyCodeLine{10569     painter-\/>setFont(labelData.expFont);}
+\DoxyCodeLine{10570     painter-\/>drawText(labelData.baseBounds.width() + 1, 0,}
+\DoxyCodeLine{10571                       labelData.expBounds.width(), labelData.expBounds.height(),}
+\DoxyCodeLine{10572                       Qt::TextDontClip, labelData.expPart);}
+\DoxyCodeLine{10573   \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{10574     painter-\/>setFont(labelData.baseFont);}
+\DoxyCodeLine{10575     painter-\/>drawText(0, 0, labelData.totalBounds.width(),}
+\DoxyCodeLine{10576                       labelData.totalBounds.height(),}
+\DoxyCodeLine{10577                       Qt::TextDontClip | Qt::AlignHCenter, labelData.basePart);}
+\DoxyCodeLine{10578   \}}
+\DoxyCodeLine{10579 }
+\DoxyCodeLine{10580   \textcolor{comment}{// reset painter settings to what it was before:}}
+\DoxyCodeLine{10581   painter-\/>setTransform(oldTransform);}
+\DoxyCodeLine{10582   painter-\/>setFont(oldFont);}
+\DoxyCodeLine{10583 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_ab6f77ae2bd3eccca3fef4b7ec8e34b31}\label{class_q_c_p_axis_painter_private_ab6f77ae2bd3eccca3fef4b7ec8e34b31}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!generateLabelParameterHash@{generateLabelParameterHash}}
+\index{generateLabelParameterHash@{generateLabelParameterHash}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{generateLabelParameterHash()}{generateLabelParameterHash()}}
+{\footnotesize\ttfamily QByte\+Array QCPAxis\+Painter\+Private\+::generate\+Label\+Parameter\+Hash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10382                                                                    \{}
+\DoxyCodeLine{10383   QByteArray result;}
+\DoxyCodeLine{10384   result.append(QByteArray::number(\mbox{\hyperlink{class_q_c_p_axis_painter_private_a882029a5f2d4abd71289d415c9b90a28}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a53d35abe0f576f9838cde5d0bee47657}{bufferDevicePixelRatio}}()));}
+\DoxyCodeLine{10385   result.append(QByteArray::number(\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae6ade9232a8e400924009e8edca94bac}{tickLabelRotation}}));}
+\DoxyCodeLine{10386   result.append(QByteArray::number(\textcolor{keywordtype}{int}(\mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d27f7625fcfbeb3a60193d0c18fc7e9}{tickLabelSide}})));}
+\DoxyCodeLine{10387   result.append(QByteArray::number(\textcolor{keywordtype}{int}(\mbox{\hyperlink{class_q_c_p_axis_painter_private_a546d22b10ddb5ca8582b7deb90223a91}{substituteExponent}})));}
+\DoxyCodeLine{10388   result.append(QByteArray::number(\textcolor{keywordtype}{int}(\mbox{\hyperlink{class_q_c_p_axis_painter_private_a0deb7524009140f00a774dfd286d002c}{numberMultiplyCross}})));}
+\DoxyCodeLine{10389   result.append(\mbox{\hyperlink{class_q_c_p_axis_painter_private_a88032cf15c997e3956b79617b859e8ad}{tickLabelColor}}.name().toLatin1() +}
+\DoxyCodeLine{10390                 QByteArray::number(\mbox{\hyperlink{class_q_c_p_axis_painter_private_a88032cf15c997e3956b79617b859e8ad}{tickLabelColor}}.alpha(), 16));}
+\DoxyCodeLine{10391   result.append(\mbox{\hyperlink{class_q_c_p_axis_painter_private_a06cb4b185feb1e560e01d65887e4d80d}{tickLabelFont}}.toString().toLatin1());}
+\DoxyCodeLine{10392   \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{10393 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_a7a961f0e05c57b51cf1100b05e93f5b9}\label{class_q_c_p_axis_painter_private_a7a961f0e05c57b51cf1100b05e93f5b9}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!getMaxTickLabelSize@{getMaxTickLabelSize}}
+\index{getMaxTickLabelSize@{getMaxTickLabelSize}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{getMaxTickLabelSize()}{getMaxTickLabelSize()}}
+{\footnotesize\ttfamily void QCPAxis\+Painter\+Private\+::get\+Max\+Tick\+Label\+Size (\begin{DoxyParamCaption}\item[{const QFont \&}]{font,  }\item[{const QString \&}]{text,  }\item[{QSize $\ast$}]{tick\+Labels\+Size }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10823                                                                              \{}
+\DoxyCodeLine{10824   \textcolor{comment}{// note: this function must return the same tick label sizes as the}}
+\DoxyCodeLine{10825   \textcolor{comment}{// placeTickLabel function.}}
+\DoxyCodeLine{10826   QSize finalSize;}
+\DoxyCodeLine{10827   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_a882029a5f2d4abd71289d415c9b90a28}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_ac724f4075822f74f7b676a790095b877}{plottingHints}}().testFlag(\mbox{\hyperlink{namespace_q_c_p_a5400e5fcb9528d92002ddb938c1f4ef4a8e9cfe5ee0c5cd36dd7accf9739aff65}{QCP::phCacheLabels}}) \&\&}
+\DoxyCodeLine{10828       \mbox{\hyperlink{class_q_c_p_axis_painter_private_a07ac270ea0c0ae084debd48d6a740e35}{mLabelCache}}.contains(}
+\DoxyCodeLine{10829           text))  \textcolor{comment}{// label caching enabled and have cached label}}
+\DoxyCodeLine{10830   \{}
+\DoxyCodeLine{10831     \textcolor{keyword}{const} CachedLabel *cachedLabel = \mbox{\hyperlink{class_q_c_p_axis_painter_private_a07ac270ea0c0ae084debd48d6a740e35}{mLabelCache}}.object(text);}
+\DoxyCodeLine{10832     finalSize =}
+\DoxyCodeLine{10833         cachedLabel-\/>pixmap.size() / \mbox{\hyperlink{class_q_c_p_axis_painter_private_a882029a5f2d4abd71289d415c9b90a28}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a53d35abe0f576f9838cde5d0bee47657}{bufferDevicePixelRatio}}();}
+\DoxyCodeLine{10834   \} \textcolor{keywordflow}{else}  \textcolor{comment}{// label caching disabled or no label with this text cached:}}
+\DoxyCodeLine{10835   \{}
+\DoxyCodeLine{10836     TickLabelData labelData = \mbox{\hyperlink{class_q_c_p_axis_painter_private_a5331f78e398da5442767c261578da502}{getTickLabelData}}(font, text);}
+\DoxyCodeLine{10837     finalSize = labelData.rotatedTotalBounds.size();}
+\DoxyCodeLine{10838   \}}
+\DoxyCodeLine{10839 }
+\DoxyCodeLine{10840   \textcolor{comment}{// expand passed tickLabelsSize if current tick label is larger:}}
+\DoxyCodeLine{10841   \textcolor{keywordflow}{if} (finalSize.width() > tickLabelsSize-\/>width())}
+\DoxyCodeLine{10842     tickLabelsSize-\/>setWidth(finalSize.width());}
+\DoxyCodeLine{10843   \textcolor{keywordflow}{if} (finalSize.height() > tickLabelsSize-\/>height())}
+\DoxyCodeLine{10844     tickLabelsSize-\/>setHeight(finalSize.height());}
+\DoxyCodeLine{10845 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_a5331f78e398da5442767c261578da502}\label{class_q_c_p_axis_painter_private_a5331f78e398da5442767c261578da502}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!getTickLabelData@{getTickLabelData}}
+\index{getTickLabelData@{getTickLabelData}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{getTickLabelData()}{getTickLabelData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_q_c_p_axis_painter_private_1_1_tick_label_data}{QCPAxis\+Painter\+Private\+::\+Tick\+Label\+Data}} QCPAxis\+Painter\+Private\+::get\+Tick\+Label\+Data (\begin{DoxyParamCaption}\item[{const QFont \&}]{font,  }\item[{const QString \&}]{text }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10595                                                   \{}
+\DoxyCodeLine{10596   TickLabelData result;}
+\DoxyCodeLine{10597 }
+\DoxyCodeLine{10598   \textcolor{comment}{// determine whether beautiful decimal powers should be used}}
+\DoxyCodeLine{10599   \textcolor{keywordtype}{bool} useBeautifulPowers = \textcolor{keyword}{false};}
+\DoxyCodeLine{10600   \textcolor{keywordtype}{int} ePos = -\/1;   \textcolor{comment}{// first index of exponent part, text before that will be}}
+\DoxyCodeLine{10601                    \textcolor{comment}{// basePart, text until eLast will be expPart}}
+\DoxyCodeLine{10602   \textcolor{keywordtype}{int} eLast = -\/1;  \textcolor{comment}{// last index of exponent part, rest of text after this will}}
+\DoxyCodeLine{10603                    \textcolor{comment}{// be suffixPart}}
+\DoxyCodeLine{10604   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_a546d22b10ddb5ca8582b7deb90223a91}{substituteExponent}}) \{}
+\DoxyCodeLine{10605     ePos = text.indexOf(QLatin1Char(\textcolor{charliteral}{'e'}));}
+\DoxyCodeLine{10606     \textcolor{keywordflow}{if} (ePos > 0 \&\& text.at(ePos -\/ 1).isDigit()) \{}
+\DoxyCodeLine{10607       eLast = ePos;}
+\DoxyCodeLine{10608       \textcolor{keywordflow}{while} (eLast + 1 < text.size() \&\&}
+\DoxyCodeLine{10609              (text.at(eLast + 1) == QLatin1Char(\textcolor{charliteral}{'+'}) ||}
+\DoxyCodeLine{10610               text.at(eLast + 1) == QLatin1Char(\textcolor{charliteral}{'-\/'}) ||}
+\DoxyCodeLine{10611               text.at(eLast + 1).isDigit()))}
+\DoxyCodeLine{10612         ++eLast;}
+\DoxyCodeLine{10613       \textcolor{keywordflow}{if} (eLast > ePos)  \textcolor{comment}{// only if also to right of 'e' is a digit/+/-\/}}
+\DoxyCodeLine{10614                          \textcolor{comment}{// interpret it as beautifiable power}}
+\DoxyCodeLine{10615         useBeautifulPowers = \textcolor{keyword}{true};}
+\DoxyCodeLine{10616     \}}
+\DoxyCodeLine{10617   \}}
+\DoxyCodeLine{10618 }
+\DoxyCodeLine{10619   \textcolor{comment}{// calculate text bounding rects and do string preparation for beautiful}}
+\DoxyCodeLine{10620   \textcolor{comment}{// decimal powers:}}
+\DoxyCodeLine{10621   result.baseFont = font;}
+\DoxyCodeLine{10622   \textcolor{keywordflow}{if} (result.baseFont.pointSizeF() >}
+\DoxyCodeLine{10623       0)  \textcolor{comment}{// might return -\/1 if specified with setPixelSize, in that case we}}
+\DoxyCodeLine{10624           \textcolor{comment}{// can't do correction in next line}}
+\DoxyCodeLine{10625     result.baseFont.setPointSizeF(}
+\DoxyCodeLine{10626         result.baseFont.pointSizeF() +}
+\DoxyCodeLine{10627         0.05);  \textcolor{comment}{// QFontMetrics.boundingRect has a bug for exact point sizes}}
+\DoxyCodeLine{10628                 \textcolor{comment}{// that make the results oscillate due to internal rounding}}
+\DoxyCodeLine{10629   \textcolor{keywordflow}{if} (useBeautifulPowers) \{}
+\DoxyCodeLine{10630     \textcolor{comment}{// split text into parts of number/symbol that will be drawn normally and}}
+\DoxyCodeLine{10631     \textcolor{comment}{// part that will be drawn as exponent:}}
+\DoxyCodeLine{10632     result.basePart = text.left(ePos);}
+\DoxyCodeLine{10633     result.suffixPart =}
+\DoxyCodeLine{10634         text.mid(eLast + 1);  \textcolor{comment}{// also drawn normally but after exponent}}
+\DoxyCodeLine{10635     \textcolor{comment}{// in log scaling, we want to turn "{}1*10\string^n"{} into "{}10\string^n"{}, else add}}
+\DoxyCodeLine{10636     \textcolor{comment}{// multiplication sign and decimal base:}}
+\DoxyCodeLine{10637     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_a68353c2eeabd00d96a2e36a0b3809cb2}{abbreviateDecimalPowers}} \&\& result.basePart == QLatin1String(\textcolor{stringliteral}{"{}1"{}}))}
+\DoxyCodeLine{10638       result.basePart = QLatin1String(\textcolor{stringliteral}{"{}10"{}});}
+\DoxyCodeLine{10639     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{10640       result.basePart +=}
+\DoxyCodeLine{10641           (\mbox{\hyperlink{class_q_c_p_axis_painter_private_a0deb7524009140f00a774dfd286d002c}{numberMultiplyCross}} ? QString(QChar(215)) : QString(QChar(183))) +}
+\DoxyCodeLine{10642           QLatin1String(\textcolor{stringliteral}{"{}10"{}});}
+\DoxyCodeLine{10643     result.expPart = text.mid(ePos + 1, eLast -\/ ePos);}
+\DoxyCodeLine{10644     \textcolor{comment}{// clip "{}+"{} and leading zeros off expPart:}}
+\DoxyCodeLine{10645     \textcolor{keywordflow}{while} (result.expPart.length() > 2 \&\&}
+\DoxyCodeLine{10646            result.expPart.at(1) ==}
+\DoxyCodeLine{10647                QLatin1Char(\textcolor{charliteral}{'0'}))  \textcolor{comment}{// length > 2 so we leave one zero when}}
+\DoxyCodeLine{10648                                   \textcolor{comment}{// numberFormatChar is 'e'}}
+\DoxyCodeLine{10649       result.expPart.remove(1, 1);}
+\DoxyCodeLine{10650     \textcolor{keywordflow}{if} (!result.expPart.isEmpty() \&\& result.expPart.at(0) == QLatin1Char(\textcolor{charliteral}{'+'}))}
+\DoxyCodeLine{10651       result.expPart.remove(0, 1);}
+\DoxyCodeLine{10652     \textcolor{comment}{// prepare smaller font for exponent:}}
+\DoxyCodeLine{10653     result.expFont = font;}
+\DoxyCodeLine{10654     \textcolor{keywordflow}{if} (result.expFont.pointSize() > 0)}
+\DoxyCodeLine{10655       result.expFont.setPointSize(\textcolor{keywordtype}{int}(result.expFont.pointSize() * 0.75));}
+\DoxyCodeLine{10656     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{10657       result.expFont.setPixelSize(\textcolor{keywordtype}{int}(result.expFont.pixelSize() * 0.75));}
+\DoxyCodeLine{10658     \textcolor{comment}{// calculate bounding rects of base part(s), exponent part and total one:}}
+\DoxyCodeLine{10659     result.baseBounds =}
+\DoxyCodeLine{10660         QFontMetrics(result.baseFont)}
+\DoxyCodeLine{10661             .boundingRect(0, 0, 0, 0, Qt::TextDontClip, result.basePart);}
+\DoxyCodeLine{10662     result.expBounds =}
+\DoxyCodeLine{10663         QFontMetrics(result.expFont)}
+\DoxyCodeLine{10664             .boundingRect(0, 0, 0, 0, Qt::TextDontClip, result.expPart);}
+\DoxyCodeLine{10665     \textcolor{keywordflow}{if} (!result.suffixPart.isEmpty())}
+\DoxyCodeLine{10666       result.suffixBounds =}
+\DoxyCodeLine{10667           QFontMetrics(result.baseFont)}
+\DoxyCodeLine{10668               .boundingRect(0, 0, 0, 0, Qt::TextDontClip, result.suffixPart);}
+\DoxyCodeLine{10669     result.totalBounds = result.baseBounds.adjusted(}
+\DoxyCodeLine{10670         0, 0, result.expBounds.width() + result.suffixBounds.width() + 2,}
+\DoxyCodeLine{10671         0);  \textcolor{comment}{// +2 consists of the 1 pixel spacing between base and exponent}}
+\DoxyCodeLine{10672              \textcolor{comment}{// (see drawTickLabel) and an extra pixel to include AA}}
+\DoxyCodeLine{10673   \} \textcolor{keywordflow}{else}     \textcolor{comment}{// useBeautifulPowers == false}}
+\DoxyCodeLine{10674   \{}
+\DoxyCodeLine{10675     result.basePart = text;}
+\DoxyCodeLine{10676     result.totalBounds =}
+\DoxyCodeLine{10677         QFontMetrics(result.baseFont)}
+\DoxyCodeLine{10678             .boundingRect(0, 0, 0, 0, Qt::TextDontClip | Qt::AlignHCenter,}
+\DoxyCodeLine{10679                           result.basePart);}
+\DoxyCodeLine{10680   \}}
+\DoxyCodeLine{10681   result.totalBounds.moveTopLeft(QPoint(}
+\DoxyCodeLine{10682       0, 0));  \textcolor{comment}{// want bounding box aligned top left at origin, independent of}}
+\DoxyCodeLine{10683                \textcolor{comment}{// how it was created, to make further processing simpler}}
+\DoxyCodeLine{10684 }
+\DoxyCodeLine{10685   \textcolor{comment}{// calculate possibly different bounding rect after rotation:}}
+\DoxyCodeLine{10686   result.rotatedTotalBounds = result.totalBounds;}
+\DoxyCodeLine{10687   \textcolor{keywordflow}{if} (!qFuzzyIsNull(\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae6ade9232a8e400924009e8edca94bac}{tickLabelRotation}})) \{}
+\DoxyCodeLine{10688     QTransform transform;}
+\DoxyCodeLine{10689     transform.rotate(\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae6ade9232a8e400924009e8edca94bac}{tickLabelRotation}});}
+\DoxyCodeLine{10690     result.rotatedTotalBounds = transform.mapRect(result.rotatedTotalBounds);}
+\DoxyCodeLine{10691   \}}
+\DoxyCodeLine{10692 }
+\DoxyCodeLine{10693   \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{10694 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_a6205b60c7d305854ffd7602139433f6e}\label{class_q_c_p_axis_painter_private_a6205b60c7d305854ffd7602139433f6e}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!getTickLabelDrawOffset@{getTickLabelDrawOffset}}
+\index{getTickLabelDrawOffset@{getTickLabelDrawOffset}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{getTickLabelDrawOffset()}{getTickLabelDrawOffset()}}
+{\footnotesize\ttfamily QPointF QCPAxis\+Painter\+Private\+::get\+Tick\+Label\+Draw\+Offset (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_q_c_p_axis_painter_private_1_1_tick_label_data}{Tick\+Label\+Data}} \&}]{label\+Data }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10708                                           \{}
+\DoxyCodeLine{10709   \textcolor{comment}{/*}}
+\DoxyCodeLine{10710 \textcolor{comment}{    calculate label offset from base point at tick (non-\/trivial, for best visual}}
+\DoxyCodeLine{10711 \textcolor{comment}{    appearance): short explanation for bottom axis: The anchor, i.e. the point}}
+\DoxyCodeLine{10712 \textcolor{comment}{    in the label that is placed horizontally under the corresponding tick is}}
+\DoxyCodeLine{10713 \textcolor{comment}{    always on the label side that is closer to the axis (e.g. the left side of}}
+\DoxyCodeLine{10714 \textcolor{comment}{    the text when we're rotating clockwise). On that side, the height is halved}}
+\DoxyCodeLine{10715 \textcolor{comment}{    and the resulting point is defined the anchor. This way, a 90 degree rotated}}
+\DoxyCodeLine{10716 \textcolor{comment}{    text will be centered under the tick (i.e. displaced horizontally by half}}
+\DoxyCodeLine{10717 \textcolor{comment}{    its height). At the same time, a 45 degree rotated text will "{}point toward"{}}}
+\DoxyCodeLine{10718 \textcolor{comment}{    its tick, as is typical for rotated tick labels.}}
+\DoxyCodeLine{10719 \textcolor{comment}{  */}}
+\DoxyCodeLine{10720   \textcolor{keywordtype}{bool} doRotation = !qFuzzyIsNull(\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae6ade9232a8e400924009e8edca94bac}{tickLabelRotation}});}
+\DoxyCodeLine{10721   \textcolor{keywordtype}{bool} flip =}
+\DoxyCodeLine{10722       qFuzzyCompare(qAbs(\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae6ade9232a8e400924009e8edca94bac}{tickLabelRotation}}),}
+\DoxyCodeLine{10723                     90.0);  \textcolor{comment}{// perfect +/-\/90 degree flip. Indicates vertical}}
+\DoxyCodeLine{10724                             \textcolor{comment}{// label centering on vertical axes.}}
+\DoxyCodeLine{10725   \textcolor{keywordtype}{double} radians = \mbox{\hyperlink{class_q_c_p_axis_painter_private_ae6ade9232a8e400924009e8edca94bac}{tickLabelRotation}} / 180.0 * M\_PI;}
+\DoxyCodeLine{10726   \textcolor{keywordtype}{double} x = 0;}
+\DoxyCodeLine{10727   \textcolor{keywordtype}{double} y = 0;}
+\DoxyCodeLine{10728   \textcolor{keywordflow}{if} ((\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}} == \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aaf84aa6cac6fb6099f54a2cbf7546b730}{QCPAxis::atLeft}} \&\& \mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d27f7625fcfbeb3a60193d0c18fc7e9}{tickLabelSide}} == \mbox{\hyperlink{class_q_c_p_axis_a24b13374b9b8f75f47eed2ea78c37db9a2eadb509fc0c9a8b35b85c86ec9f3c7a}{QCPAxis::lsOutside}}) ||}
+\DoxyCodeLine{10729       (\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}} == \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aadf5509f7d29199ef2f263b1dd224b345}{QCPAxis::atRight}} \&\&}
+\DoxyCodeLine{10730        \mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d27f7625fcfbeb3a60193d0c18fc7e9}{tickLabelSide}} ==}
+\DoxyCodeLine{10731            \mbox{\hyperlink{class_q_c_p_axis_a24b13374b9b8f75f47eed2ea78c37db9aae7b027ac2839cf4ad611df30236fc3f}{QCPAxis::lsInside}}))  \textcolor{comment}{// Anchor at right side of tick label}}
+\DoxyCodeLine{10732   \{}
+\DoxyCodeLine{10733     \textcolor{keywordflow}{if} (doRotation) \{}
+\DoxyCodeLine{10734       \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae6ade9232a8e400924009e8edca94bac}{tickLabelRotation}} > 0) \{}
+\DoxyCodeLine{10735         x = -\/qCos(radians) * labelData.totalBounds.width();}
+\DoxyCodeLine{10736         y = flip ? -\/labelData.totalBounds.width() / 2.0}
+\DoxyCodeLine{10737                  : -\/qSin(radians) * labelData.totalBounds.width() -\/}
+\DoxyCodeLine{10738                        qCos(radians) * labelData.totalBounds.height() / 2.0;}
+\DoxyCodeLine{10739       \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{10740         x = -\/qCos(-\/radians) * labelData.totalBounds.width() -\/}
+\DoxyCodeLine{10741             qSin(-\/radians) * labelData.totalBounds.height();}
+\DoxyCodeLine{10742         y = flip ? +labelData.totalBounds.width() / 2.0}
+\DoxyCodeLine{10743                  : +qSin(-\/radians) * labelData.totalBounds.width() -\/}
+\DoxyCodeLine{10744                        qCos(-\/radians) * labelData.totalBounds.height() / 2.0;}
+\DoxyCodeLine{10745       \}}
+\DoxyCodeLine{10746     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{10747       x = -\/labelData.totalBounds.width();}
+\DoxyCodeLine{10748       y = -\/labelData.totalBounds.height() / 2.0;}
+\DoxyCodeLine{10749     \}}
+\DoxyCodeLine{10750   \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ((\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}} == \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aadf5509f7d29199ef2f263b1dd224b345}{QCPAxis::atRight}} \&\&}
+\DoxyCodeLine{10751               \mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d27f7625fcfbeb3a60193d0c18fc7e9}{tickLabelSide}} == \mbox{\hyperlink{class_q_c_p_axis_a24b13374b9b8f75f47eed2ea78c37db9a2eadb509fc0c9a8b35b85c86ec9f3c7a}{QCPAxis::lsOutside}}) ||}
+\DoxyCodeLine{10752              (\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}} == \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aaf84aa6cac6fb6099f54a2cbf7546b730}{QCPAxis::atLeft}} \&\&}
+\DoxyCodeLine{10753               \mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d27f7625fcfbeb3a60193d0c18fc7e9}{tickLabelSide}} ==}
+\DoxyCodeLine{10754                   \mbox{\hyperlink{class_q_c_p_axis_a24b13374b9b8f75f47eed2ea78c37db9aae7b027ac2839cf4ad611df30236fc3f}{QCPAxis::lsInside}}))  \textcolor{comment}{// Anchor at left side of tick label}}
+\DoxyCodeLine{10755   \{}
+\DoxyCodeLine{10756     \textcolor{keywordflow}{if} (doRotation) \{}
+\DoxyCodeLine{10757       \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae6ade9232a8e400924009e8edca94bac}{tickLabelRotation}} > 0) \{}
+\DoxyCodeLine{10758         x = +qSin(radians) * labelData.totalBounds.height();}
+\DoxyCodeLine{10759         y = flip ? -\/labelData.totalBounds.width() / 2.0}
+\DoxyCodeLine{10760                  : -\/qCos(radians) * labelData.totalBounds.height() / 2.0;}
+\DoxyCodeLine{10761       \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{10762         x = 0;}
+\DoxyCodeLine{10763         y = flip ? +labelData.totalBounds.width() / 2.0}
+\DoxyCodeLine{10764                  : -\/qCos(-\/radians) * labelData.totalBounds.height() / 2.0;}
+\DoxyCodeLine{10765       \}}
+\DoxyCodeLine{10766     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{10767       x = 0;}
+\DoxyCodeLine{10768       y = -\/labelData.totalBounds.height() / 2.0;}
+\DoxyCodeLine{10769     \}}
+\DoxyCodeLine{10770   \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ((\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}} == \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aac0ece2b680d3f545e701f75af1655977}{QCPAxis::atTop}} \&\& \mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d27f7625fcfbeb3a60193d0c18fc7e9}{tickLabelSide}} == \mbox{\hyperlink{class_q_c_p_axis_a24b13374b9b8f75f47eed2ea78c37db9a2eadb509fc0c9a8b35b85c86ec9f3c7a}{QCPAxis::lsOutside}}) ||}
+\DoxyCodeLine{10771              (\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}} == \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aa220d68888516b6c3b493d144f1ba438f}{QCPAxis::atBottom}} \&\&}
+\DoxyCodeLine{10772               \mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d27f7625fcfbeb3a60193d0c18fc7e9}{tickLabelSide}} ==}
+\DoxyCodeLine{10773                   \mbox{\hyperlink{class_q_c_p_axis_a24b13374b9b8f75f47eed2ea78c37db9aae7b027ac2839cf4ad611df30236fc3f}{QCPAxis::lsInside}}))  \textcolor{comment}{// Anchor at bottom side of tick label}}
+\DoxyCodeLine{10774   \{}
+\DoxyCodeLine{10775     \textcolor{keywordflow}{if} (doRotation) \{}
+\DoxyCodeLine{10776       \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae6ade9232a8e400924009e8edca94bac}{tickLabelRotation}} > 0) \{}
+\DoxyCodeLine{10777         x = -\/qCos(radians) * labelData.totalBounds.width() +}
+\DoxyCodeLine{10778             qSin(radians) * labelData.totalBounds.height() / 2.0;}
+\DoxyCodeLine{10779         y = -\/qSin(radians) * labelData.totalBounds.width() -\/}
+\DoxyCodeLine{10780             qCos(radians) * labelData.totalBounds.height();}
+\DoxyCodeLine{10781       \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{10782         x = -\/qSin(-\/radians) * labelData.totalBounds.height() / 2.0;}
+\DoxyCodeLine{10783         y = -\/qCos(-\/radians) * labelData.totalBounds.height();}
+\DoxyCodeLine{10784       \}}
+\DoxyCodeLine{10785     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{10786       x = -\/labelData.totalBounds.width() / 2.0;}
+\DoxyCodeLine{10787       y = -\/labelData.totalBounds.height();}
+\DoxyCodeLine{10788     \}}
+\DoxyCodeLine{10789   \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ((\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}} == \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aa220d68888516b6c3b493d144f1ba438f}{QCPAxis::atBottom}} \&\&}
+\DoxyCodeLine{10790               \mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d27f7625fcfbeb3a60193d0c18fc7e9}{tickLabelSide}} == \mbox{\hyperlink{class_q_c_p_axis_a24b13374b9b8f75f47eed2ea78c37db9a2eadb509fc0c9a8b35b85c86ec9f3c7a}{QCPAxis::lsOutside}}) ||}
+\DoxyCodeLine{10791              (\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}} == \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aac0ece2b680d3f545e701f75af1655977}{QCPAxis::atTop}} \&\&}
+\DoxyCodeLine{10792               \mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d27f7625fcfbeb3a60193d0c18fc7e9}{tickLabelSide}} ==}
+\DoxyCodeLine{10793                   \mbox{\hyperlink{class_q_c_p_axis_a24b13374b9b8f75f47eed2ea78c37db9aae7b027ac2839cf4ad611df30236fc3f}{QCPAxis::lsInside}}))  \textcolor{comment}{// Anchor at top side of tick label}}
+\DoxyCodeLine{10794   \{}
+\DoxyCodeLine{10795     \textcolor{keywordflow}{if} (doRotation) \{}
+\DoxyCodeLine{10796       \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae6ade9232a8e400924009e8edca94bac}{tickLabelRotation}} > 0) \{}
+\DoxyCodeLine{10797         x = +qSin(radians) * labelData.totalBounds.height() / 2.0;}
+\DoxyCodeLine{10798         y = 0;}
+\DoxyCodeLine{10799       \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{10800         x = -\/qCos(-\/radians) * labelData.totalBounds.width() -\/}
+\DoxyCodeLine{10801             qSin(-\/radians) * labelData.totalBounds.height() / 2.0;}
+\DoxyCodeLine{10802         y = +qSin(-\/radians) * labelData.totalBounds.width();}
+\DoxyCodeLine{10803       \}}
+\DoxyCodeLine{10804     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{10805       x = -\/labelData.totalBounds.width() / 2.0;}
+\DoxyCodeLine{10806       y = 0;}
+\DoxyCodeLine{10807     \}}
+\DoxyCodeLine{10808   \}}
+\DoxyCodeLine{10809 }
+\DoxyCodeLine{10810   \textcolor{keywordflow}{return} \{x, y\};}
+\DoxyCodeLine{10811 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_ae7800667d15867040ada5f4bf027f070}\label{class_q_c_p_axis_painter_private_ae7800667d15867040ada5f4bf027f070}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!labelSelectionBox@{labelSelectionBox}}
+\index{labelSelectionBox@{labelSelectionBox}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{labelSelectionBox()}{labelSelectionBox()}}
+{\footnotesize\ttfamily QRect QCPAxis\+Painter\+Private\+::label\+Selection\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2713 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_axis_painter_private_abac9a47048d537f72ca147b6f29d30f1}{mLabelSelectionBox}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_af8fe7350c19575bc33ca770f9b3a15fd}\label{class_q_c_p_axis_painter_private_af8fe7350c19575bc33ca770f9b3a15fd}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!placeTickLabel@{placeTickLabel}}
+\index{placeTickLabel@{placeTickLabel}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{placeTickLabel()}{placeTickLabel()}}
+{\footnotesize\ttfamily void QCPAxis\+Painter\+Private\+::place\+Tick\+Label (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter,  }\item[{double}]{position,  }\item[{int}]{distance\+To\+Axis,  }\item[{const QString \&}]{text,  }\item[{QSize $\ast$}]{tick\+Labels\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10419                                                                   \{}
+\DoxyCodeLine{10420   \textcolor{comment}{// warning: if you change anything here, also adapt getMaxTickLabelSize()}}
+\DoxyCodeLine{10421   \textcolor{comment}{// accordingly!}}
+\DoxyCodeLine{10422   \textcolor{keywordflow}{if} (text.isEmpty()) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{10423   QSize finalSize;}
+\DoxyCodeLine{10424   QPointF labelAnchor;}
+\DoxyCodeLine{10425   \textcolor{keywordflow}{switch} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}}) \{}
+\DoxyCodeLine{10426     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aaf84aa6cac6fb6099f54a2cbf7546b730}{QCPAxis::atLeft}}:}
+\DoxyCodeLine{10427       labelAnchor =}
+\DoxyCodeLine{10428           QPointF(\mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.left() -\/ distanceToAxis -\/ \mbox{\hyperlink{class_q_c_p_axis_painter_private_a2a3931110efed91b0bb2f8cf1908a8e7}{offset}}, position);}
+\DoxyCodeLine{10429       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{10430     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aadf5509f7d29199ef2f263b1dd224b345}{QCPAxis::atRight}}:}
+\DoxyCodeLine{10431       labelAnchor =}
+\DoxyCodeLine{10432           QPointF(\mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.right() + distanceToAxis + \mbox{\hyperlink{class_q_c_p_axis_painter_private_a2a3931110efed91b0bb2f8cf1908a8e7}{offset}}, position);}
+\DoxyCodeLine{10433       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{10434     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aac0ece2b680d3f545e701f75af1655977}{QCPAxis::atTop}}:}
+\DoxyCodeLine{10435       labelAnchor = QPointF(position, \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.top() -\/ distanceToAxis -\/ \mbox{\hyperlink{class_q_c_p_axis_painter_private_a2a3931110efed91b0bb2f8cf1908a8e7}{offset}});}
+\DoxyCodeLine{10436       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{10437     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aa220d68888516b6c3b493d144f1ba438f}{QCPAxis::atBottom}}:}
+\DoxyCodeLine{10438       labelAnchor =}
+\DoxyCodeLine{10439           QPointF(position, \mbox{\hyperlink{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}{axisRect}}.bottom() + distanceToAxis + \mbox{\hyperlink{class_q_c_p_axis_painter_private_a2a3931110efed91b0bb2f8cf1908a8e7}{offset}});}
+\DoxyCodeLine{10440       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{10441   \}}
+\DoxyCodeLine{10442   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_a882029a5f2d4abd71289d415c9b90a28}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_ac724f4075822f74f7b676a790095b877}{plottingHints}}().testFlag(\mbox{\hyperlink{namespace_q_c_p_a5400e5fcb9528d92002ddb938c1f4ef4a8e9cfe5ee0c5cd36dd7accf9739aff65}{QCP::phCacheLabels}}) \&\&}
+\DoxyCodeLine{10443       !painter-\/>\mbox{\hyperlink{class_q_c_p_painter_aef102658219b24165f7ee2aad1b9e48f}{modes}}().testFlag(}
+\DoxyCodeLine{10444           \mbox{\hyperlink{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156dae78f9a4eb277a5f9207f50850a51a0b0}{QCPPainter::pmNoCaching}}))  \textcolor{comment}{// label caching enabled}}
+\DoxyCodeLine{10445   \{}
+\DoxyCodeLine{10446     CachedLabel *cachedLabel =}
+\DoxyCodeLine{10447         \mbox{\hyperlink{class_q_c_p_axis_painter_private_a07ac270ea0c0ae084debd48d6a740e35}{mLabelCache}}.take(text);  \textcolor{comment}{// attempt to get label from cache}}
+\DoxyCodeLine{10448     \textcolor{keywordflow}{if} (!cachedLabel)            \textcolor{comment}{// no cached label existed, create it}}
+\DoxyCodeLine{10449     \{}
+\DoxyCodeLine{10450       cachedLabel = \textcolor{keyword}{new} CachedLabel;}
+\DoxyCodeLine{10451       TickLabelData labelData = \mbox{\hyperlink{class_q_c_p_axis_painter_private_a5331f78e398da5442767c261578da502}{getTickLabelData}}(painter-\/>font(), text);}
+\DoxyCodeLine{10452       cachedLabel-\/>offset = \mbox{\hyperlink{class_q_c_p_axis_painter_private_a6205b60c7d305854ffd7602139433f6e}{getTickLabelDrawOffset}}(labelData) +}
+\DoxyCodeLine{10453                             labelData.rotatedTotalBounds.topLeft();}
+\DoxyCodeLine{10454       \textcolor{keywordflow}{if} (!qFuzzyCompare(1.0, \mbox{\hyperlink{class_q_c_p_axis_painter_private_a882029a5f2d4abd71289d415c9b90a28}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a53d35abe0f576f9838cde5d0bee47657}{bufferDevicePixelRatio}}())) \{}
+\DoxyCodeLine{10455         cachedLabel-\/>pixmap = QPixmap(labelData.rotatedTotalBounds.size() *}
+\DoxyCodeLine{10456                                       \mbox{\hyperlink{class_q_c_p_axis_painter_private_a882029a5f2d4abd71289d415c9b90a28}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a53d35abe0f576f9838cde5d0bee47657}{bufferDevicePixelRatio}}());}
+\DoxyCodeLine{10457 \textcolor{preprocessor}{\#ifdef QCP\_DEVICEPIXELRATIO\_SUPPORTED}}
+\DoxyCodeLine{10458 \textcolor{preprocessor}{\#ifdef QCP\_DEVICEPIXELRATIO\_FLOAT}}
+\DoxyCodeLine{10459         cachedLabel-\/>pixmap.setDevicePixelRatio(}
+\DoxyCodeLine{10460             \mbox{\hyperlink{class_q_c_p_axis_painter_private_a882029a5f2d4abd71289d415c9b90a28}{mParentPlot}}-\/>devicePixelRatioF());}
+\DoxyCodeLine{10461 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{10462         cachedLabel-\/>pixmap.setDevicePixelRatio(}
+\DoxyCodeLine{10463             \mbox{\hyperlink{class_q_c_p_axis_painter_private_a882029a5f2d4abd71289d415c9b90a28}{mParentPlot}}-\/>devicePixelRatio());}
+\DoxyCodeLine{10464 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{10465 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{10466       \} \textcolor{keywordflow}{else}}
+\DoxyCodeLine{10467         cachedLabel-\/>pixmap = QPixmap(labelData.rotatedTotalBounds.size());}
+\DoxyCodeLine{10468       cachedLabel-\/>pixmap.fill(Qt::transparent);}
+\DoxyCodeLine{10469       \mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} cachePainter(\&cachedLabel-\/>pixmap);}
+\DoxyCodeLine{10470       cachePainter.setPen(painter-\/>pen());}
+\DoxyCodeLine{10471       \mbox{\hyperlink{class_q_c_p_axis_painter_private_aab666e1d85b234afbc88076c7ba9424a}{drawTickLabel}}(\&cachePainter, -\/labelData.rotatedTotalBounds.topLeft().x(),}
+\DoxyCodeLine{10472                     -\/labelData.rotatedTotalBounds.topLeft().y(), labelData);}
+\DoxyCodeLine{10473     \}}
+\DoxyCodeLine{10474     \textcolor{comment}{// if label would be partly clipped by widget border on sides, don't draw it}}
+\DoxyCodeLine{10475     \textcolor{comment}{// (only for outside tick labels):}}
+\DoxyCodeLine{10476     \textcolor{keywordtype}{bool} labelClippedByBorder = \textcolor{keyword}{false};}
+\DoxyCodeLine{10477     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d27f7625fcfbeb3a60193d0c18fc7e9}{tickLabelSide}} == \mbox{\hyperlink{class_q_c_p_axis_a24b13374b9b8f75f47eed2ea78c37db9a2eadb509fc0c9a8b35b85c86ec9f3c7a}{QCPAxis::lsOutside}}) \{}
+\DoxyCodeLine{10478       \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_ab988ef4538e2655bb77bd138189cd42e}{QCPAxis::orientation}}(\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}}) == Qt::Horizontal)}
+\DoxyCodeLine{10479         labelClippedByBorder =}
+\DoxyCodeLine{10480             labelAnchor.x() + cachedLabel-\/>offset.x() +}
+\DoxyCodeLine{10481                     cachedLabel-\/>pixmap.width() /}
+\DoxyCodeLine{10482                         \mbox{\hyperlink{class_q_c_p_axis_painter_private_a882029a5f2d4abd71289d415c9b90a28}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a53d35abe0f576f9838cde5d0bee47657}{bufferDevicePixelRatio}}() >}
+\DoxyCodeLine{10483                 \mbox{\hyperlink{class_q_c_p_axis_painter_private_a8627dc6b40781e3291bb508e4ac574d6}{viewportRect}}.right() ||}
+\DoxyCodeLine{10484             labelAnchor.x() + cachedLabel-\/>offset.x() < \mbox{\hyperlink{class_q_c_p_axis_painter_private_a8627dc6b40781e3291bb508e4ac574d6}{viewportRect}}.left();}
+\DoxyCodeLine{10485       \textcolor{keywordflow}{else}}
+\DoxyCodeLine{10486         labelClippedByBorder =}
+\DoxyCodeLine{10487             labelAnchor.y() + cachedLabel-\/>offset.y() +}
+\DoxyCodeLine{10488                     cachedLabel-\/>pixmap.height() /}
+\DoxyCodeLine{10489                         \mbox{\hyperlink{class_q_c_p_axis_painter_private_a882029a5f2d4abd71289d415c9b90a28}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a53d35abe0f576f9838cde5d0bee47657}{bufferDevicePixelRatio}}() >}
+\DoxyCodeLine{10490                 \mbox{\hyperlink{class_q_c_p_axis_painter_private_a8627dc6b40781e3291bb508e4ac574d6}{viewportRect}}.bottom() ||}
+\DoxyCodeLine{10491             labelAnchor.y() + cachedLabel-\/>offset.y() < \mbox{\hyperlink{class_q_c_p_axis_painter_private_a8627dc6b40781e3291bb508e4ac574d6}{viewportRect}}.top();}
+\DoxyCodeLine{10492     \}}
+\DoxyCodeLine{10493     \textcolor{keywordflow}{if} (!labelClippedByBorder) \{}
+\DoxyCodeLine{10494       painter-\/>drawPixmap(labelAnchor + cachedLabel-\/>offset,}
+\DoxyCodeLine{10495                           cachedLabel-\/>pixmap);}
+\DoxyCodeLine{10496       finalSize =}
+\DoxyCodeLine{10497           cachedLabel-\/>pixmap.size() / \mbox{\hyperlink{class_q_c_p_axis_painter_private_a882029a5f2d4abd71289d415c9b90a28}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a53d35abe0f576f9838cde5d0bee47657}{bufferDevicePixelRatio}}();}
+\DoxyCodeLine{10498     \}}
+\DoxyCodeLine{10499     \mbox{\hyperlink{class_q_c_p_axis_painter_private_a07ac270ea0c0ae084debd48d6a740e35}{mLabelCache}}.insert(text,}
+\DoxyCodeLine{10500                        cachedLabel);  \textcolor{comment}{// return label to cache or insert for the}}
+\DoxyCodeLine{10501                                       \textcolor{comment}{// first time if newly created}}
+\DoxyCodeLine{10502   \} \textcolor{keywordflow}{else}  \textcolor{comment}{// label caching disabled, draw text directly on surface:}}
+\DoxyCodeLine{10503   \{}
+\DoxyCodeLine{10504     TickLabelData labelData = \mbox{\hyperlink{class_q_c_p_axis_painter_private_a5331f78e398da5442767c261578da502}{getTickLabelData}}(painter-\/>font(), text);}
+\DoxyCodeLine{10505     QPointF finalPosition = labelAnchor + \mbox{\hyperlink{class_q_c_p_axis_painter_private_a6205b60c7d305854ffd7602139433f6e}{getTickLabelDrawOffset}}(labelData);}
+\DoxyCodeLine{10506     \textcolor{comment}{// if label would be partly clipped by widget border on sides, don't draw it}}
+\DoxyCodeLine{10507     \textcolor{comment}{// (only for outside tick labels):}}
+\DoxyCodeLine{10508     \textcolor{keywordtype}{bool} labelClippedByBorder = \textcolor{keyword}{false};}
+\DoxyCodeLine{10509     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d27f7625fcfbeb3a60193d0c18fc7e9}{tickLabelSide}} == \mbox{\hyperlink{class_q_c_p_axis_a24b13374b9b8f75f47eed2ea78c37db9a2eadb509fc0c9a8b35b85c86ec9f3c7a}{QCPAxis::lsOutside}}) \{}
+\DoxyCodeLine{10510       \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_ab988ef4538e2655bb77bd138189cd42e}{QCPAxis::orientation}}(\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}}) == Qt::Horizontal)}
+\DoxyCodeLine{10511         labelClippedByBorder =}
+\DoxyCodeLine{10512             finalPosition.x() + (labelData.rotatedTotalBounds.width() +}
+\DoxyCodeLine{10513                                  labelData.rotatedTotalBounds.left()) >}
+\DoxyCodeLine{10514                 \mbox{\hyperlink{class_q_c_p_axis_painter_private_a8627dc6b40781e3291bb508e4ac574d6}{viewportRect}}.right() ||}
+\DoxyCodeLine{10515             finalPosition.x() + labelData.rotatedTotalBounds.left() <}
+\DoxyCodeLine{10516                 \mbox{\hyperlink{class_q_c_p_axis_painter_private_a8627dc6b40781e3291bb508e4ac574d6}{viewportRect}}.left();}
+\DoxyCodeLine{10517       \textcolor{keywordflow}{else}}
+\DoxyCodeLine{10518         labelClippedByBorder =}
+\DoxyCodeLine{10519             finalPosition.y() + (labelData.rotatedTotalBounds.height() +}
+\DoxyCodeLine{10520                                  labelData.rotatedTotalBounds.top()) >}
+\DoxyCodeLine{10521                 \mbox{\hyperlink{class_q_c_p_axis_painter_private_a8627dc6b40781e3291bb508e4ac574d6}{viewportRect}}.bottom() ||}
+\DoxyCodeLine{10522             finalPosition.y() + labelData.rotatedTotalBounds.top() <}
+\DoxyCodeLine{10523                 \mbox{\hyperlink{class_q_c_p_axis_painter_private_a8627dc6b40781e3291bb508e4ac574d6}{viewportRect}}.top();}
+\DoxyCodeLine{10524     \}}
+\DoxyCodeLine{10525     \textcolor{keywordflow}{if} (!labelClippedByBorder) \{}
+\DoxyCodeLine{10526       \mbox{\hyperlink{class_q_c_p_axis_painter_private_aab666e1d85b234afbc88076c7ba9424a}{drawTickLabel}}(painter, finalPosition.x(), finalPosition.y(), labelData);}
+\DoxyCodeLine{10527       finalSize = labelData.rotatedTotalBounds.size();}
+\DoxyCodeLine{10528     \}}
+\DoxyCodeLine{10529   \}}
+\DoxyCodeLine{10530 }
+\DoxyCodeLine{10531   \textcolor{comment}{// expand passed tickLabelsSize if current tick label is larger:}}
+\DoxyCodeLine{10532   \textcolor{keywordflow}{if} (finalSize.width() > tickLabelsSize-\/>width())}
+\DoxyCodeLine{10533     tickLabelsSize-\/>setWidth(finalSize.width());}
+\DoxyCodeLine{10534   \textcolor{keywordflow}{if} (finalSize.height() > tickLabelsSize-\/>height())}
+\DoxyCodeLine{10535     tickLabelsSize-\/>setHeight(finalSize.height());}
+\DoxyCodeLine{10536 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_a62aa9247b2ab22a3e069b9b867376f85}\label{class_q_c_p_axis_painter_private_a62aa9247b2ab22a3e069b9b867376f85}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!size@{size}}
+\index{size@{size}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int QCPAxis\+Painter\+Private\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10325                                 \{}
+\DoxyCodeLine{10326   \textcolor{keywordtype}{int} result = 0;}
+\DoxyCodeLine{10327 }
+\DoxyCodeLine{10328   QByteArray newHash = \mbox{\hyperlink{class_q_c_p_axis_painter_private_ab6f77ae2bd3eccca3fef4b7ec8e34b31}{generateLabelParameterHash}}();}
+\DoxyCodeLine{10329   \textcolor{keywordflow}{if} (newHash != \mbox{\hyperlink{class_q_c_p_axis_painter_private_aab8be59df22ed4e43e3a6d511cbc466a}{mLabelParameterHash}}) \{}
+\DoxyCodeLine{10330     \mbox{\hyperlink{class_q_c_p_axis_painter_private_a07ac270ea0c0ae084debd48d6a740e35}{mLabelCache}}.clear();}
+\DoxyCodeLine{10331     \mbox{\hyperlink{class_q_c_p_axis_painter_private_aab8be59df22ed4e43e3a6d511cbc466a}{mLabelParameterHash}} = newHash;}
+\DoxyCodeLine{10332   \}}
+\DoxyCodeLine{10333 }
+\DoxyCodeLine{10334   \textcolor{comment}{// get length of tick marks pointing outwards:}}
+\DoxyCodeLine{10335   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae55e3dc2cf2af8d8a6e7235ccab54786}{tickPositions}}.isEmpty())}
+\DoxyCodeLine{10336     result += qMax(0, qMax(\mbox{\hyperlink{class_q_c_p_axis_painter_private_acbebb1f868906200f968627bc907b77d}{tickLengthOut}}, \mbox{\hyperlink{class_q_c_p_axis_painter_private_a5f1afddc3dc7ccc4d5adcbcd8f0c2218}{subTickLengthOut}}));}
+\DoxyCodeLine{10337 }
+\DoxyCodeLine{10338   \textcolor{comment}{// calculate size of tick labels:}}
+\DoxyCodeLine{10339   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_painter_private_a9d27f7625fcfbeb3a60193d0c18fc7e9}{tickLabelSide}} == \mbox{\hyperlink{class_q_c_p_axis_a24b13374b9b8f75f47eed2ea78c37db9a2eadb509fc0c9a8b35b85c86ec9f3c7a}{QCPAxis::lsOutside}}) \{}
+\DoxyCodeLine{10340     QSize tickLabelsSize(0, 0);}
+\DoxyCodeLine{10341     \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_axis_painter_private_ad0a4998ca358ba751e84fca45a025abd}{tickLabels}}.isEmpty()) \{}
+\DoxyCodeLine{10342       \textcolor{keywordflow}{foreach} (\textcolor{keyword}{const} QString \&tickLabel, \mbox{\hyperlink{class_q_c_p_axis_painter_private_ad0a4998ca358ba751e84fca45a025abd}{tickLabels}})}
+\DoxyCodeLine{10343         \mbox{\hyperlink{class_q_c_p_axis_painter_private_a7a961f0e05c57b51cf1100b05e93f5b9}{getMaxTickLabelSize}}(\mbox{\hyperlink{class_q_c_p_axis_painter_private_a06cb4b185feb1e560e01d65887e4d80d}{tickLabelFont}}, tickLabel, \&tickLabelsSize);}
+\DoxyCodeLine{10344       result += \mbox{\hyperlink{class_q_c_p_axis_ab988ef4538e2655bb77bd138189cd42e}{QCPAxis::orientation}}(\mbox{\hyperlink{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}{type}}) == Qt::Horizontal}
+\DoxyCodeLine{10345                     ? tickLabelsSize.height()}
+\DoxyCodeLine{10346                     : tickLabelsSize.width();}
+\DoxyCodeLine{10347       result += \mbox{\hyperlink{class_q_c_p_axis_painter_private_a264cfa080e84e536cf2d1ab9c5d5cc5f}{tickLabelPadding}};}
+\DoxyCodeLine{10348     \}}
+\DoxyCodeLine{10349   \}}
+\DoxyCodeLine{10350 }
+\DoxyCodeLine{10351   \textcolor{comment}{// calculate size of axis label (only height needed, because left/right labels}}
+\DoxyCodeLine{10352   \textcolor{comment}{// are rotated by 90 degrees):}}
+\DoxyCodeLine{10353   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_axis_painter_private_afe004c322f92543c0467afc02da6cf6d}{label}}.isEmpty()) \{}
+\DoxyCodeLine{10354     QFontMetrics fontMetrics(\mbox{\hyperlink{class_q_c_p_axis_painter_private_add1ff1030fbc36112c19b1468ad82d55}{labelFont}});}
+\DoxyCodeLine{10355     QRect bounds;}
+\DoxyCodeLine{10356     bounds = fontMetrics.boundingRect(}
+\DoxyCodeLine{10357         0, 0, 0, 0, Qt::TextDontClip | Qt::AlignHCenter | Qt::AlignVCenter,}
+\DoxyCodeLine{10358         \mbox{\hyperlink{class_q_c_p_axis_painter_private_afe004c322f92543c0467afc02da6cf6d}{label}});}
+\DoxyCodeLine{10359     result += bounds.height() + \mbox{\hyperlink{class_q_c_p_axis_painter_private_a3f7465372df132bf7814345ea697dd34}{labelPadding}};}
+\DoxyCodeLine{10360   \}}
+\DoxyCodeLine{10361 }
+\DoxyCodeLine{10362   \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{10363 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_acf8a4fef47cec70b596fe20941aa5b16}\label{class_q_c_p_axis_painter_private_acf8a4fef47cec70b596fe20941aa5b16}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!tickLabelsSelectionBox@{tickLabelsSelectionBox}}
+\index{tickLabelsSelectionBox@{tickLabelsSelectionBox}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{tickLabelsSelectionBox()}{tickLabelsSelectionBox()}}
+{\footnotesize\ttfamily QRect QCPAxis\+Painter\+Private\+::tick\+Labels\+Selection\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2712 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_axis_painter_private_a0adaf5f1d89be0f32dc4a904d157e5a9}{mTickLabelsSelectionBox}}; \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_a68353c2eeabd00d96a2e36a0b3809cb2}\label{class_q_c_p_axis_painter_private_a68353c2eeabd00d96a2e36a0b3809cb2}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!abbreviateDecimalPowers@{abbreviateDecimalPowers}}
+\index{abbreviateDecimalPowers@{abbreviateDecimalPowers}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{abbreviateDecimalPowers}{abbreviateDecimalPowers}}
+{\footnotesize\ttfamily bool QCPAxis\+Painter\+Private\+::abbreviate\+Decimal\+Powers}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}\label{class_q_c_p_axis_painter_private_afcd55b0e1ecd689fffd2b1fc75dc7732}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!axisRect@{axisRect}}
+\index{axisRect@{axisRect}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{axisRect}{axisRect}}
+{\footnotesize\ttfamily QRect QCPAxis\+Painter\+Private\+::axis\+Rect}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_ab4affb27ae3485fecb7466622cabcbb2}\label{class_q_c_p_axis_painter_private_ab4affb27ae3485fecb7466622cabcbb2}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!basePen@{basePen}}
+\index{basePen@{basePen}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{basePen}{basePen}}
+{\footnotesize\ttfamily QPen QCPAxis\+Painter\+Private\+::base\+Pen}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_afe004c322f92543c0467afc02da6cf6d}\label{class_q_c_p_axis_painter_private_afe004c322f92543c0467afc02da6cf6d}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!label@{label}}
+\index{label@{label}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{label}{label}}
+{\footnotesize\ttfamily QString QCPAxis\+Painter\+Private\+::label}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_a5c36467daf057da0cf0792f3c5a06089}\label{class_q_c_p_axis_painter_private_a5c36467daf057da0cf0792f3c5a06089}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!labelColor@{labelColor}}
+\index{labelColor@{labelColor}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{labelColor}{labelColor}}
+{\footnotesize\ttfamily QColor QCPAxis\+Painter\+Private\+::label\+Color}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_add1ff1030fbc36112c19b1468ad82d55}\label{class_q_c_p_axis_painter_private_add1ff1030fbc36112c19b1468ad82d55}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!labelFont@{labelFont}}
+\index{labelFont@{labelFont}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{labelFont}{labelFont}}
+{\footnotesize\ttfamily QFont QCPAxis\+Painter\+Private\+::label\+Font}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_a3f7465372df132bf7814345ea697dd34}\label{class_q_c_p_axis_painter_private_a3f7465372df132bf7814345ea697dd34}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!labelPadding@{labelPadding}}
+\index{labelPadding@{labelPadding}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{labelPadding}{labelPadding}}
+{\footnotesize\ttfamily int QCPAxis\+Painter\+Private\+::label\+Padding}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_a077696dd1e7efb96e4c199f521433e24}\label{class_q_c_p_axis_painter_private_a077696dd1e7efb96e4c199f521433e24}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!lowerEnding@{lowerEnding}}
+\index{lowerEnding@{lowerEnding}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{lowerEnding}{lowerEnding}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_line_ending}{QCPLine\+Ending}} QCPAxis\+Painter\+Private\+::lower\+Ending}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_a9d7586f4923994488bdd006415b13f5f}\label{class_q_c_p_axis_painter_private_a9d7586f4923994488bdd006415b13f5f}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!mAxisSelectionBox@{mAxisSelectionBox}}
+\index{mAxisSelectionBox@{mAxisSelectionBox}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{mAxisSelectionBox}{mAxisSelectionBox}}
+{\footnotesize\ttfamily QRect QCPAxis\+Painter\+Private\+::m\+Axis\+Selection\+Box\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_a07ac270ea0c0ae084debd48d6a740e35}\label{class_q_c_p_axis_painter_private_a07ac270ea0c0ae084debd48d6a740e35}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!mLabelCache@{mLabelCache}}
+\index{mLabelCache@{mLabelCache}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{mLabelCache}{mLabelCache}}
+{\footnotesize\ttfamily QCache$<$QString, \mbox{\hyperlink{struct_q_c_p_axis_painter_private_1_1_cached_label}{Cached\+Label}}$>$ QCPAxis\+Painter\+Private\+::m\+Label\+Cache\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_aab8be59df22ed4e43e3a6d511cbc466a}\label{class_q_c_p_axis_painter_private_aab8be59df22ed4e43e3a6d511cbc466a}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!mLabelParameterHash@{mLabelParameterHash}}
+\index{mLabelParameterHash@{mLabelParameterHash}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{mLabelParameterHash}{mLabelParameterHash}}
+{\footnotesize\ttfamily QByte\+Array QCPAxis\+Painter\+Private\+::m\+Label\+Parameter\+Hash\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_abac9a47048d537f72ca147b6f29d30f1}\label{class_q_c_p_axis_painter_private_abac9a47048d537f72ca147b6f29d30f1}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!mLabelSelectionBox@{mLabelSelectionBox}}
+\index{mLabelSelectionBox@{mLabelSelectionBox}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{mLabelSelectionBox}{mLabelSelectionBox}}
+{\footnotesize\ttfamily QRect QCPAxis\+Painter\+Private\+::m\+Label\+Selection\+Box\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_a882029a5f2d4abd71289d415c9b90a28}\label{class_q_c_p_axis_painter_private_a882029a5f2d4abd71289d415c9b90a28}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!mParentPlot@{mParentPlot}}
+\index{mParentPlot@{mParentPlot}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{mParentPlot}{mParentPlot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}}$\ast$ QCPAxis\+Painter\+Private\+::m\+Parent\+Plot\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_a0adaf5f1d89be0f32dc4a904d157e5a9}\label{class_q_c_p_axis_painter_private_a0adaf5f1d89be0f32dc4a904d157e5a9}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!mTickLabelsSelectionBox@{mTickLabelsSelectionBox}}
+\index{mTickLabelsSelectionBox@{mTickLabelsSelectionBox}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{mTickLabelsSelectionBox}{mTickLabelsSelectionBox}}
+{\footnotesize\ttfamily QRect QCPAxis\+Painter\+Private\+::m\+Tick\+Labels\+Selection\+Box\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_a0deb7524009140f00a774dfd286d002c}\label{class_q_c_p_axis_painter_private_a0deb7524009140f00a774dfd286d002c}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!numberMultiplyCross@{numberMultiplyCross}}
+\index{numberMultiplyCross@{numberMultiplyCross}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{numberMultiplyCross}{numberMultiplyCross}}
+{\footnotesize\ttfamily bool QCPAxis\+Painter\+Private\+::number\+Multiply\+Cross}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_a2a3931110efed91b0bb2f8cf1908a8e7}\label{class_q_c_p_axis_painter_private_a2a3931110efed91b0bb2f8cf1908a8e7}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!offset@{offset}}
+\index{offset@{offset}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{offset}{offset}}
+{\footnotesize\ttfamily int QCPAxis\+Painter\+Private\+::offset}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_a06d0ef3f4f1b567feb84196fc3b140da}\label{class_q_c_p_axis_painter_private_a06d0ef3f4f1b567feb84196fc3b140da}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!reversedEndings@{reversedEndings}}
+\index{reversedEndings@{reversedEndings}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{reversedEndings}{reversedEndings}}
+{\footnotesize\ttfamily bool QCPAxis\+Painter\+Private\+::reversed\+Endings}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_a546d22b10ddb5ca8582b7deb90223a91}\label{class_q_c_p_axis_painter_private_a546d22b10ddb5ca8582b7deb90223a91}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!substituteExponent@{substituteExponent}}
+\index{substituteExponent@{substituteExponent}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{substituteExponent}{substituteExponent}}
+{\footnotesize\ttfamily bool QCPAxis\+Painter\+Private\+::substitute\+Exponent}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_af11f7d83021c9cb3b0e76fe7814c6110}\label{class_q_c_p_axis_painter_private_af11f7d83021c9cb3b0e76fe7814c6110}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!subTickLengthIn@{subTickLengthIn}}
+\index{subTickLengthIn@{subTickLengthIn}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{subTickLengthIn}{subTickLengthIn}}
+{\footnotesize\ttfamily int QCPAxis\+Painter\+Private\+::sub\+Tick\+Length\+In}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_a5f1afddc3dc7ccc4d5adcbcd8f0c2218}\label{class_q_c_p_axis_painter_private_a5f1afddc3dc7ccc4d5adcbcd8f0c2218}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!subTickLengthOut@{subTickLengthOut}}
+\index{subTickLengthOut@{subTickLengthOut}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{subTickLengthOut}{subTickLengthOut}}
+{\footnotesize\ttfamily int QCPAxis\+Painter\+Private\+::sub\+Tick\+Length\+Out}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_a9b9cf594cd16575f52ecda9abef4e412}\label{class_q_c_p_axis_painter_private_a9b9cf594cd16575f52ecda9abef4e412}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!subTickPen@{subTickPen}}
+\index{subTickPen@{subTickPen}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{subTickPen}{subTickPen}}
+{\footnotesize\ttfamily QPen QCPAxis\+Painter\+Private\+::sub\+Tick\+Pen}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_afcde7484bbcc1004b8f59ab984ada6f9}\label{class_q_c_p_axis_painter_private_afcde7484bbcc1004b8f59ab984ada6f9}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!subTickPositions@{subTickPositions}}
+\index{subTickPositions@{subTickPositions}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{subTickPositions}{subTickPositions}}
+{\footnotesize\ttfamily QVector$<$double$>$ QCPAxis\+Painter\+Private\+::sub\+Tick\+Positions}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_a88032cf15c997e3956b79617b859e8ad}\label{class_q_c_p_axis_painter_private_a88032cf15c997e3956b79617b859e8ad}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!tickLabelColor@{tickLabelColor}}
+\index{tickLabelColor@{tickLabelColor}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{tickLabelColor}{tickLabelColor}}
+{\footnotesize\ttfamily QColor QCPAxis\+Painter\+Private\+::tick\+Label\+Color}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_a06cb4b185feb1e560e01d65887e4d80d}\label{class_q_c_p_axis_painter_private_a06cb4b185feb1e560e01d65887e4d80d}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!tickLabelFont@{tickLabelFont}}
+\index{tickLabelFont@{tickLabelFont}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{tickLabelFont}{tickLabelFont}}
+{\footnotesize\ttfamily QFont QCPAxis\+Painter\+Private\+::tick\+Label\+Font}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_a264cfa080e84e536cf2d1ab9c5d5cc5f}\label{class_q_c_p_axis_painter_private_a264cfa080e84e536cf2d1ab9c5d5cc5f}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!tickLabelPadding@{tickLabelPadding}}
+\index{tickLabelPadding@{tickLabelPadding}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{tickLabelPadding}{tickLabelPadding}}
+{\footnotesize\ttfamily int QCPAxis\+Painter\+Private\+::tick\+Label\+Padding}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_ae6ade9232a8e400924009e8edca94bac}\label{class_q_c_p_axis_painter_private_ae6ade9232a8e400924009e8edca94bac}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!tickLabelRotation@{tickLabelRotation}}
+\index{tickLabelRotation@{tickLabelRotation}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{tickLabelRotation}{tickLabelRotation}}
+{\footnotesize\ttfamily double QCPAxis\+Painter\+Private\+::tick\+Label\+Rotation}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_ad0a4998ca358ba751e84fca45a025abd}\label{class_q_c_p_axis_painter_private_ad0a4998ca358ba751e84fca45a025abd}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!tickLabels@{tickLabels}}
+\index{tickLabels@{tickLabels}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{tickLabels}{tickLabels}}
+{\footnotesize\ttfamily QVector$<$QString$>$ QCPAxis\+Painter\+Private\+::tick\+Labels}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_a9d27f7625fcfbeb3a60193d0c18fc7e9}\label{class_q_c_p_axis_painter_private_a9d27f7625fcfbeb3a60193d0c18fc7e9}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!tickLabelSide@{tickLabelSide}}
+\index{tickLabelSide@{tickLabelSide}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{tickLabelSide}{tickLabelSide}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_axis_a24b13374b9b8f75f47eed2ea78c37db9}{QCPAxis\+::\+Label\+Side}} QCPAxis\+Painter\+Private\+::tick\+Label\+Side}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_ae7360ff805fc6097019de8b35ffbd7e7}\label{class_q_c_p_axis_painter_private_ae7360ff805fc6097019de8b35ffbd7e7}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!tickLengthIn@{tickLengthIn}}
+\index{tickLengthIn@{tickLengthIn}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{tickLengthIn}{tickLengthIn}}
+{\footnotesize\ttfamily int QCPAxis\+Painter\+Private\+::tick\+Length\+In}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_acbebb1f868906200f968627bc907b77d}\label{class_q_c_p_axis_painter_private_acbebb1f868906200f968627bc907b77d}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!tickLengthOut@{tickLengthOut}}
+\index{tickLengthOut@{tickLengthOut}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{tickLengthOut}{tickLengthOut}}
+{\footnotesize\ttfamily int QCPAxis\+Painter\+Private\+::tick\+Length\+Out}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_a389dde97f02fdee23965e4736e7d8c62}\label{class_q_c_p_axis_painter_private_a389dde97f02fdee23965e4736e7d8c62}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!tickPen@{tickPen}}
+\index{tickPen@{tickPen}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{tickPen}{tickPen}}
+{\footnotesize\ttfamily QPen QCPAxis\+Painter\+Private\+::tick\+Pen}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_ae55e3dc2cf2af8d8a6e7235ccab54786}\label{class_q_c_p_axis_painter_private_ae55e3dc2cf2af8d8a6e7235ccab54786}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!tickPositions@{tickPositions}}
+\index{tickPositions@{tickPositions}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{tickPositions}{tickPositions}}
+{\footnotesize\ttfamily QVector$<$double$>$ QCPAxis\+Painter\+Private\+::tick\+Positions}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}\label{class_q_c_p_axis_painter_private_ae04594e97417336933d807c86d353098}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!type@{type}}
+\index{type@{type}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18a}{QCPAxis\+::\+Axis\+Type}} QCPAxis\+Painter\+Private\+::type}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_af764be913be5f924700ac9bbb8c01139}\label{class_q_c_p_axis_painter_private_af764be913be5f924700ac9bbb8c01139}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!upperEnding@{upperEnding}}
+\index{upperEnding@{upperEnding}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{upperEnding}{upperEnding}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_line_ending}{QCPLine\+Ending}} QCPAxis\+Painter\+Private\+::upper\+Ending}
+
+\mbox{\Hypertarget{class_q_c_p_axis_painter_private_a8627dc6b40781e3291bb508e4ac574d6}\label{class_q_c_p_axis_painter_private_a8627dc6b40781e3291bb508e4ac574d6}} 
+\index{QCPAxisPainterPrivate@{QCPAxisPainterPrivate}!viewportRect@{viewportRect}}
+\index{viewportRect@{viewportRect}!QCPAxisPainterPrivate@{QCPAxisPainterPrivate}}
+\doxysubsubsection{\texorpdfstring{viewportRect}{viewportRect}}
+{\footnotesize\ttfamily QRect QCPAxis\+Painter\+Private\+::viewport\+Rect}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Smart\+Calc/\mbox{\hyperlink{qcustomplot_8h}{qcustomplot.\+h}}\item 
+Smart\+Calc/\mbox{\hyperlink{qcustomplot_8cpp}{qcustomplot.\+cpp}}\end{DoxyCompactItemize}

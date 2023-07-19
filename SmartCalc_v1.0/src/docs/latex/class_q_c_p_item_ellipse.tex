@@ -1,0 +1,597 @@
+\hypertarget{class_q_c_p_item_ellipse}{}\doxysection{Класс QCPItem\+Ellipse}
+\label{class_q_c_p_item_ellipse}\index{QCPItemEllipse@{QCPItemEllipse}}
+
+
+An ellipse.  
+
+
+
+
+{\ttfamily \#include $<$qcustomplot.\+h$>$}
+
+Граф наследования\+:QCPItem\+Ellipse\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_q_c_p_item_ellipse}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_c_p_item_ellipse_a759b77ef002515eba0263b5447ecb3fb}{QCPItem\+Ellipse}} (\mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} $\ast$\mbox{\hyperlink{class_q_c_p_layerable_a473edb813a4c1929d6b6a8fe3ff3faf7}{parent\+Plot}})
+\item 
+virtual \mbox{\hyperlink{class_q_c_p_item_ellipse_a99039c0b2d48a9ab460885ba9b7172a2}{$\sim$\+QCPItem\+Ellipse}} () \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+QPen \mbox{\hyperlink{class_q_c_p_item_ellipse_a8288f7ce760fc795f5ce4e61136bda19}{pen}} () const
+\item 
+QPen \mbox{\hyperlink{class_q_c_p_item_ellipse_a9a200af2797356b45479b601d75437ee}{selected\+Pen}} () const
+\item 
+QBrush \mbox{\hyperlink{class_q_c_p_item_ellipse_aacf45d032f204d0df3dd0bfdf1172cd3}{brush}} () const
+\item 
+QBrush \mbox{\hyperlink{class_q_c_p_item_ellipse_afeda9d8e2e6da216a3c3366d87e80feb}{selected\+Brush}} () const
+\item 
+void \mbox{\hyperlink{class_q_c_p_item_ellipse_adb81a663ed2420fcfa011e49f678d1a6}{set\+Pen}} (const QPen \&\mbox{\hyperlink{class_q_c_p_item_ellipse_a8288f7ce760fc795f5ce4e61136bda19}{pen}})
+\item 
+void \mbox{\hyperlink{class_q_c_p_item_ellipse_a6c542fba1dc918041c583f58a50dde99}{set\+Selected\+Pen}} (const QPen \&\mbox{\hyperlink{class_q_c_p_item_ellipse_a8288f7ce760fc795f5ce4e61136bda19}{pen}})
+\item 
+void \mbox{\hyperlink{class_q_c_p_item_ellipse_a49fc74e6965834e873d027d026def798}{set\+Brush}} (const QBrush \&\mbox{\hyperlink{class_q_c_p_item_ellipse_aacf45d032f204d0df3dd0bfdf1172cd3}{brush}})
+\item 
+void \mbox{\hyperlink{class_q_c_p_item_ellipse_a9693501cfaa43a099655c75bed0dab3f}{set\+Selected\+Brush}} (const QBrush \&\mbox{\hyperlink{class_q_c_p_item_ellipse_aacf45d032f204d0df3dd0bfdf1172cd3}{brush}})
+\item 
+virtual double \mbox{\hyperlink{class_q_c_p_item_ellipse_a1037a6c39ad70aabcb1b552a8b4eff97}{select\+Test}} (const QPointF \&pos, bool only\+Selectable, QVariant $\ast$details=nullptr) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_c_p_item_position}{QCPItem\+Position}} $\ast$const \mbox{\hyperlink{class_q_c_p_item_ellipse_a12fd8420c06718d0c8a2303d6a652848}{top\+Left}}
+\item 
+\mbox{\hyperlink{class_q_c_p_item_position}{QCPItem\+Position}} $\ast$const \mbox{\hyperlink{class_q_c_p_item_ellipse_ab73c8deafc0d8d1ef7d75b6cdcc37159}{bottom\+Right}}
+\item 
+\mbox{\hyperlink{class_q_c_p_item_anchor}{QCPItem\+Anchor}} $\ast$const \mbox{\hyperlink{class_q_c_p_item_ellipse_a33ebd2a751b63b9240edc9aa46c19eff}{top\+Left\+Rim}}
+\item 
+\mbox{\hyperlink{class_q_c_p_item_anchor}{QCPItem\+Anchor}} $\ast$const \mbox{\hyperlink{class_q_c_p_item_ellipse_ad50f907d6f9d1402c6c5d302dca5c5d5}{top}}
+\item 
+\mbox{\hyperlink{class_q_c_p_item_anchor}{QCPItem\+Anchor}} $\ast$const \mbox{\hyperlink{class_q_c_p_item_ellipse_a744446970b38a4a3bbea46d722b7c54d}{top\+Right\+Rim}}
+\item 
+\mbox{\hyperlink{class_q_c_p_item_anchor}{QCPItem\+Anchor}} $\ast$const \mbox{\hyperlink{class_q_c_p_item_ellipse_a50091a3bd8761d3ce0d95d9c727e4a82}{right}}
+\item 
+\mbox{\hyperlink{class_q_c_p_item_anchor}{QCPItem\+Anchor}} $\ast$const \mbox{\hyperlink{class_q_c_p_item_ellipse_a5c8404be601d61b7fafeaaf1c05c4c42}{bottom\+Right\+Rim}}
+\item 
+\mbox{\hyperlink{class_q_c_p_item_anchor}{QCPItem\+Anchor}} $\ast$const \mbox{\hyperlink{class_q_c_p_item_ellipse_a2dc80ff9f5db600eae0133bdde65066f}{bottom}}
+\item 
+\mbox{\hyperlink{class_q_c_p_item_anchor}{QCPItem\+Anchor}} $\ast$const \mbox{\hyperlink{class_q_c_p_item_ellipse_a31f31a9e9f9098c90fb47573094276c5}{bottom\+Left\+Rim}}
+\item 
+\mbox{\hyperlink{class_q_c_p_item_anchor}{QCPItem\+Anchor}} $\ast$const \mbox{\hyperlink{class_q_c_p_item_ellipse_aa259cd03efaedf60cf5b1019b20e4f2b}{left}}
+\item 
+\mbox{\hyperlink{class_q_c_p_item_anchor}{QCPItem\+Anchor}} $\ast$const \mbox{\hyperlink{class_q_c_p_item_ellipse_a8b6dd0e854f99239c5806ffdf2f590b3}{center}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные типы}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45e}{Anchor\+Index}} \{ \newline
+\mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45eab2538849b88921e7fc1dcc15b2a6109d}{ai\+Top\+Left\+Rim}}
+, \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea83e55b0c1799baac1eecab52bcbe096d}{ai\+Top}}
+, \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea415d82233c14f0c70c245d50e706e75b}{ai\+Top\+Right\+Rim}}
+, \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea0f0dcfdf87d9405b53b2129740fb6ba6}{ai\+Right}}
+, \newline
+\mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45eab62732e96d67801d50c6a9bdebc374d0}{ai\+Bottom\+Right\+Rim}}
+, \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea5894287dedaeec1f48394fd950ccff5b}{ai\+Bottom}}
+, \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea7b8101bfc590af8ce32961f6545c4f90}{ai\+Bottom\+Left\+Rim}}
+, \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45eae74dad00419a0e1f42877510158fb922}{ai\+Left}}
+, \newline
+\mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea580ec0e9b9fd1488fccf5783e52c0c02}{ai\+Center}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_item_ellipse_a77eebd67a402fc496082a2e51356928c}{draw}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter) \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual QPointF \mbox{\hyperlink{class_q_c_p_item_ellipse_a35cd6983c61a16ac33c23f08dd2817cc}{anchor\+Pixel\+Position}} (int anchor\+Id) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+QPen \mbox{\hyperlink{class_q_c_p_item_ellipse_a9c11717026dfd685c83a9650666b7181}{main\+Pen}} () const
+\item 
+QBrush \mbox{\hyperlink{class_q_c_p_item_ellipse_a6218bdf5e703f609b934b0bf9c8d0971}{main\+Brush}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+QPen \mbox{\hyperlink{class_q_c_p_item_ellipse_a16ad9389acf028a7e4ac8fd7a550b2e4}{m\+Pen}}
+\item 
+QPen \mbox{\hyperlink{class_q_c_p_item_ellipse_a57b047abfce6f1a84ed46ca668c90e21}{m\+Selected\+Pen}}
+\item 
+QBrush \mbox{\hyperlink{class_q_c_p_item_ellipse_a6fa59478cd3ad1b10e6c1f6cedc84bd6}{m\+Brush}}
+\item 
+QBrush \mbox{\hyperlink{class_q_c_p_item_ellipse_a2e49d5547478aa36910ed8a2dcc8a5c0}{m\+Selected\+Brush}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Дополнительные унаследованные члены}
+
+
+\doxysubsection{Подробное описание}
+An ellipse. 
+
+ anchors, solid blue discs are positions."{}
+
+It has two positions, {\itshape top\+Left} and {\itshape bottom\+Right}, which define the rect the ellipse will be drawn in. 
+
+\doxysubsection{Перечисления}
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45e}\label{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45e}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!AnchorIndex@{AnchorIndex}}
+\index{AnchorIndex@{AnchorIndex}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{AnchorIndex}{AnchorIndex}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45e}{QCPItem\+Ellipse\+::\+Anchor\+Index}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyEnumFields}{Элементы перечислений}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{aiTopLeftRim@{aiTopLeftRim}!QCPItemEllipse@{QCPItemEllipse}}\index{QCPItemEllipse@{QCPItemEllipse}!aiTopLeftRim@{aiTopLeftRim}}}\mbox{\Hypertarget{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45eab2538849b88921e7fc1dcc15b2a6109d}\label{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45eab2538849b88921e7fc1dcc15b2a6109d}} 
+ai\+Top\+Left\+Rim&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{aiTop@{aiTop}!QCPItemEllipse@{QCPItemEllipse}}\index{QCPItemEllipse@{QCPItemEllipse}!aiTop@{aiTop}}}\mbox{\Hypertarget{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea83e55b0c1799baac1eecab52bcbe096d}\label{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea83e55b0c1799baac1eecab52bcbe096d}} 
+ai\+Top&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{aiTopRightRim@{aiTopRightRim}!QCPItemEllipse@{QCPItemEllipse}}\index{QCPItemEllipse@{QCPItemEllipse}!aiTopRightRim@{aiTopRightRim}}}\mbox{\Hypertarget{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea415d82233c14f0c70c245d50e706e75b}\label{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea415d82233c14f0c70c245d50e706e75b}} 
+ai\+Top\+Right\+Rim&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{aiRight@{aiRight}!QCPItemEllipse@{QCPItemEllipse}}\index{QCPItemEllipse@{QCPItemEllipse}!aiRight@{aiRight}}}\mbox{\Hypertarget{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea0f0dcfdf87d9405b53b2129740fb6ba6}\label{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea0f0dcfdf87d9405b53b2129740fb6ba6}} 
+ai\+Right&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{aiBottomRightRim@{aiBottomRightRim}!QCPItemEllipse@{QCPItemEllipse}}\index{QCPItemEllipse@{QCPItemEllipse}!aiBottomRightRim@{aiBottomRightRim}}}\mbox{\Hypertarget{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45eab62732e96d67801d50c6a9bdebc374d0}\label{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45eab62732e96d67801d50c6a9bdebc374d0}} 
+ai\+Bottom\+Right\+Rim&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{aiBottom@{aiBottom}!QCPItemEllipse@{QCPItemEllipse}}\index{QCPItemEllipse@{QCPItemEllipse}!aiBottom@{aiBottom}}}\mbox{\Hypertarget{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea5894287dedaeec1f48394fd950ccff5b}\label{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea5894287dedaeec1f48394fd950ccff5b}} 
+ai\+Bottom&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{aiBottomLeftRim@{aiBottomLeftRim}!QCPItemEllipse@{QCPItemEllipse}}\index{QCPItemEllipse@{QCPItemEllipse}!aiBottomLeftRim@{aiBottomLeftRim}}}\mbox{\Hypertarget{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea7b8101bfc590af8ce32961f6545c4f90}\label{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea7b8101bfc590af8ce32961f6545c4f90}} 
+ai\+Bottom\+Left\+Rim&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{aiLeft@{aiLeft}!QCPItemEllipse@{QCPItemEllipse}}\index{QCPItemEllipse@{QCPItemEllipse}!aiLeft@{aiLeft}}}\mbox{\Hypertarget{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45eae74dad00419a0e1f42877510158fb922}\label{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45eae74dad00419a0e1f42877510158fb922}} 
+ai\+Left&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{aiCenter@{aiCenter}!QCPItemEllipse@{QCPItemEllipse}}\index{QCPItemEllipse@{QCPItemEllipse}!aiCenter@{aiCenter}}}\mbox{\Hypertarget{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea580ec0e9b9fd1488fccf5783e52c0c02}\label{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea580ec0e9b9fd1488fccf5783e52c0c02}} 
+ai\+Center&\\
+\hline
+
+\end{DoxyEnumFields}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7618                    \{}
+\DoxyCodeLine{7619     \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45eab2538849b88921e7fc1dcc15b2a6109d}{aiTopLeftRim}},}
+\DoxyCodeLine{7620     \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea83e55b0c1799baac1eecab52bcbe096d}{aiTop}},}
+\DoxyCodeLine{7621     \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea415d82233c14f0c70c245d50e706e75b}{aiTopRightRim}},}
+\DoxyCodeLine{7622     \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea0f0dcfdf87d9405b53b2129740fb6ba6}{aiRight}},}
+\DoxyCodeLine{7623     \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45eab62732e96d67801d50c6a9bdebc374d0}{aiBottomRightRim}},}
+\DoxyCodeLine{7624     \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea5894287dedaeec1f48394fd950ccff5b}{aiBottom}},}
+\DoxyCodeLine{7625     \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea7b8101bfc590af8ce32961f6545c4f90}{aiBottomLeftRim}},}
+\DoxyCodeLine{7626     \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45eae74dad00419a0e1f42877510158fb922}{aiLeft}},}
+\DoxyCodeLine{7627     \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea580ec0e9b9fd1488fccf5783e52c0c02}{aiCenter}}}
+\DoxyCodeLine{7628   \};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_a759b77ef002515eba0263b5447ecb3fb}\label{class_q_c_p_item_ellipse_a759b77ef002515eba0263b5447ecb3fb}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!QCPItemEllipse@{QCPItemEllipse}}
+\index{QCPItemEllipse@{QCPItemEllipse}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{QCPItemEllipse()}{QCPItemEllipse()}}
+{\footnotesize\ttfamily QCPItem\+Ellipse\+::\+QCPItem\+Ellipse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} $\ast$}]{parent\+Plot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Creates an ellipse item and sets default values.
+
+The created item is automatically registered with {\itshape parent\+Plot}. This \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} instance takes ownership of the item, so do not delete it manually but use \mbox{\hyperlink{class_q_custom_plot_ae04446557292551e8fb6e2c106e1848d}{QCustom\+Plot\+::remove\+Item()}} instead. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31288     : \mbox{\hyperlink{class_q_c_p_abstract_item_a9922507d8b4503a1fe1ed0b1030e23b6}{QCPAbstractItem}}(\mbox{\hyperlink{class_q_c_p_layerable_a473edb813a4c1929d6b6a8fe3ff3faf7}{parentPlot}}),}
+\DoxyCodeLine{31289       \mbox{\hyperlink{class_q_c_p_item_ellipse_a12fd8420c06718d0c8a2303d6a652848}{topLeft}}(\mbox{\hyperlink{class_q_c_p_abstract_item_a75036d39c4d4e2e1a7dd145fff915d32}{createPosition}}(QLatin1String(\textcolor{stringliteral}{"{}topLeft"{}}))),}
+\DoxyCodeLine{31290       \mbox{\hyperlink{class_q_c_p_item_ellipse_ab73c8deafc0d8d1ef7d75b6cdcc37159}{bottomRight}}(\mbox{\hyperlink{class_q_c_p_abstract_item_a75036d39c4d4e2e1a7dd145fff915d32}{createPosition}}(QLatin1String(\textcolor{stringliteral}{"{}bottomRight"{}}))),}
+\DoxyCodeLine{31291       \mbox{\hyperlink{class_q_c_p_item_ellipse_a33ebd2a751b63b9240edc9aa46c19eff}{topLeftRim}}(\mbox{\hyperlink{class_q_c_p_abstract_item_af3fc92527802078ca395138748b629a7}{createAnchor}}(QLatin1String(\textcolor{stringliteral}{"{}topLeftRim"{}}), \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45eab2538849b88921e7fc1dcc15b2a6109d}{aiTopLeftRim}})),}
+\DoxyCodeLine{31292       \mbox{\hyperlink{class_q_c_p_item_ellipse_ad50f907d6f9d1402c6c5d302dca5c5d5}{top}}(\mbox{\hyperlink{class_q_c_p_abstract_item_af3fc92527802078ca395138748b629a7}{createAnchor}}(QLatin1String(\textcolor{stringliteral}{"{}top"{}}), \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea83e55b0c1799baac1eecab52bcbe096d}{aiTop}})),}
+\DoxyCodeLine{31293       \mbox{\hyperlink{class_q_c_p_item_ellipse_a744446970b38a4a3bbea46d722b7c54d}{topRightRim}}(\mbox{\hyperlink{class_q_c_p_abstract_item_af3fc92527802078ca395138748b629a7}{createAnchor}}(QLatin1String(\textcolor{stringliteral}{"{}topRightRim"{}}), \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea415d82233c14f0c70c245d50e706e75b}{aiTopRightRim}})),}
+\DoxyCodeLine{31294       \mbox{\hyperlink{class_q_c_p_item_ellipse_a50091a3bd8761d3ce0d95d9c727e4a82}{right}}(\mbox{\hyperlink{class_q_c_p_abstract_item_af3fc92527802078ca395138748b629a7}{createAnchor}}(QLatin1String(\textcolor{stringliteral}{"{}right"{}}), \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea0f0dcfdf87d9405b53b2129740fb6ba6}{aiRight}})),}
+\DoxyCodeLine{31295       \mbox{\hyperlink{class_q_c_p_item_ellipse_a5c8404be601d61b7fafeaaf1c05c4c42}{bottomRightRim}}(}
+\DoxyCodeLine{31296           \mbox{\hyperlink{class_q_c_p_abstract_item_af3fc92527802078ca395138748b629a7}{createAnchor}}(QLatin1String(\textcolor{stringliteral}{"{}bottomRightRim"{}}), \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45eab62732e96d67801d50c6a9bdebc374d0}{aiBottomRightRim}})),}
+\DoxyCodeLine{31297       \mbox{\hyperlink{class_q_c_p_item_ellipse_a2dc80ff9f5db600eae0133bdde65066f}{bottom}}(\mbox{\hyperlink{class_q_c_p_abstract_item_af3fc92527802078ca395138748b629a7}{createAnchor}}(QLatin1String(\textcolor{stringliteral}{"{}bottom"{}}), \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea5894287dedaeec1f48394fd950ccff5b}{aiBottom}})),}
+\DoxyCodeLine{31298       \mbox{\hyperlink{class_q_c_p_item_ellipse_a31f31a9e9f9098c90fb47573094276c5}{bottomLeftRim}}(}
+\DoxyCodeLine{31299           \mbox{\hyperlink{class_q_c_p_abstract_item_af3fc92527802078ca395138748b629a7}{createAnchor}}(QLatin1String(\textcolor{stringliteral}{"{}bottomLeftRim"{}}), \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea7b8101bfc590af8ce32961f6545c4f90}{aiBottomLeftRim}})),}
+\DoxyCodeLine{31300       \mbox{\hyperlink{class_q_c_p_item_ellipse_aa259cd03efaedf60cf5b1019b20e4f2b}{left}}(\mbox{\hyperlink{class_q_c_p_abstract_item_af3fc92527802078ca395138748b629a7}{createAnchor}}(QLatin1String(\textcolor{stringliteral}{"{}left"{}}), \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45eae74dad00419a0e1f42877510158fb922}{aiLeft}})),}
+\DoxyCodeLine{31301       \mbox{\hyperlink{class_q_c_p_item_ellipse_a8b6dd0e854f99239c5806ffdf2f590b3}{center}}(\mbox{\hyperlink{class_q_c_p_abstract_item_af3fc92527802078ca395138748b629a7}{createAnchor}}(QLatin1String(\textcolor{stringliteral}{"{}center"{}}), \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea580ec0e9b9fd1488fccf5783e52c0c02}{aiCenter}})) \{}
+\DoxyCodeLine{31302   \mbox{\hyperlink{class_q_c_p_item_ellipse_a12fd8420c06718d0c8a2303d6a652848}{topLeft}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_aa988ba4e87ab684c9021017dcaba945f}{setCoords}}(0, 1);}
+\DoxyCodeLine{31303   \mbox{\hyperlink{class_q_c_p_item_ellipse_ab73c8deafc0d8d1ef7d75b6cdcc37159}{bottomRight}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_aa988ba4e87ab684c9021017dcaba945f}{setCoords}}(1, 0);}
+\DoxyCodeLine{31304 }
+\DoxyCodeLine{31305   \mbox{\hyperlink{class_q_c_p_item_ellipse_adb81a663ed2420fcfa011e49f678d1a6}{setPen}}(QPen(Qt::black));}
+\DoxyCodeLine{31306   \mbox{\hyperlink{class_q_c_p_item_ellipse_a6c542fba1dc918041c583f58a50dde99}{setSelectedPen}}(QPen(Qt::blue, 2));}
+\DoxyCodeLine{31307   \mbox{\hyperlink{class_q_c_p_item_ellipse_a49fc74e6965834e873d027d026def798}{setBrush}}(Qt::NoBrush);}
+\DoxyCodeLine{31308   \mbox{\hyperlink{class_q_c_p_item_ellipse_a9693501cfaa43a099655c75bed0dab3f}{setSelectedBrush}}(Qt::NoBrush);}
+\DoxyCodeLine{31309 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_a99039c0b2d48a9ab460885ba9b7172a2}\label{class_q_c_p_item_ellipse_a99039c0b2d48a9ab460885ba9b7172a2}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!````~QCPItemEllipse@{$\sim$QCPItemEllipse}}
+\index{````~QCPItemEllipse@{$\sim$QCPItemEllipse}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{$\sim$QCPItemEllipse()}{~QCPItemEllipse()}}
+{\footnotesize\ttfamily QCPItem\+Ellipse\+::$\sim$\+QCPItem\+Ellipse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31311 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_a35cd6983c61a16ac33c23f08dd2817cc}\label{class_q_c_p_item_ellipse_a35cd6983c61a16ac33c23f08dd2817cc}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!anchorPixelPosition@{anchorPixelPosition}}
+\index{anchorPixelPosition@{anchorPixelPosition}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{anchorPixelPosition()}{anchorPixelPosition()}}
+{\footnotesize\ttfamily QPointF QCPItem\+Ellipse\+::anchor\+Pixel\+Position (\begin{DoxyParamCaption}\item[{int}]{anchor\+Id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Переопределяет метод предка \mbox{\hyperlink{class_q_c_p_abstract_item_ada5bad4e1196c4fc0d0d12328e24b8f2}{QCPAbstract\+Item}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31400                                                               \{}
+\DoxyCodeLine{31401   QRectF rect = QRectF(\mbox{\hyperlink{class_q_c_p_item_ellipse_a12fd8420c06718d0c8a2303d6a652848}{topLeft}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_a8be9a4787635433edecc75164beb748d}{pixelPosition}}(), \mbox{\hyperlink{class_q_c_p_item_ellipse_ab73c8deafc0d8d1ef7d75b6cdcc37159}{bottomRight}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_a8be9a4787635433edecc75164beb748d}{pixelPosition}}());}
+\DoxyCodeLine{31402   \textcolor{keywordflow}{switch} (anchorId) \{}
+\DoxyCodeLine{31403     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45eab2538849b88921e7fc1dcc15b2a6109d}{aiTopLeftRim}}:}
+\DoxyCodeLine{31404       \textcolor{keywordflow}{return} rect.center() + (rect.topLeft() -\/ rect.center()) * 1 / qSqrt(2);}
+\DoxyCodeLine{31405     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea83e55b0c1799baac1eecab52bcbe096d}{aiTop}}:}
+\DoxyCodeLine{31406       \textcolor{keywordflow}{return} (rect.topLeft() + rect.topRight()) * 0.5;}
+\DoxyCodeLine{31407     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea415d82233c14f0c70c245d50e706e75b}{aiTopRightRim}}:}
+\DoxyCodeLine{31408       \textcolor{keywordflow}{return} rect.center() + (rect.topRight() -\/ rect.center()) * 1 / qSqrt(2);}
+\DoxyCodeLine{31409     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea0f0dcfdf87d9405b53b2129740fb6ba6}{aiRight}}:}
+\DoxyCodeLine{31410       \textcolor{keywordflow}{return} (rect.topRight() + rect.bottomRight()) * 0.5;}
+\DoxyCodeLine{31411     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45eab62732e96d67801d50c6a9bdebc374d0}{aiBottomRightRim}}:}
+\DoxyCodeLine{31412       \textcolor{keywordflow}{return} rect.center() +}
+\DoxyCodeLine{31413              (rect.bottomRight() -\/ rect.center()) * 1 / qSqrt(2);}
+\DoxyCodeLine{31414     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea5894287dedaeec1f48394fd950ccff5b}{aiBottom}}:}
+\DoxyCodeLine{31415       \textcolor{keywordflow}{return} (rect.bottomLeft() + rect.bottomRight()) * 0.5;}
+\DoxyCodeLine{31416     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea7b8101bfc590af8ce32961f6545c4f90}{aiBottomLeftRim}}:}
+\DoxyCodeLine{31417       \textcolor{keywordflow}{return} rect.center() + (rect.bottomLeft() -\/ rect.center()) * 1 / qSqrt(2);}
+\DoxyCodeLine{31418     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45eae74dad00419a0e1f42877510158fb922}{aiLeft}}:}
+\DoxyCodeLine{31419       \textcolor{keywordflow}{return} (rect.topLeft() + rect.bottomLeft()) * 0.5;}
+\DoxyCodeLine{31420     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_item_ellipse_a415009889543169f35b70795f415e45ea580ec0e9b9fd1488fccf5783e52c0c02}{aiCenter}}:}
+\DoxyCodeLine{31421       \textcolor{keywordflow}{return} (rect.topLeft() + rect.bottomRight()) * 0.5;}
+\DoxyCodeLine{31422   \}}
+\DoxyCodeLine{31423 }
+\DoxyCodeLine{31424   qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}invalid anchorId"{}} << anchorId;}
+\DoxyCodeLine{31425   \textcolor{keywordflow}{return} \{\};}
+\DoxyCodeLine{31426 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_aacf45d032f204d0df3dd0bfdf1172cd3}\label{class_q_c_p_item_ellipse_aacf45d032f204d0df3dd0bfdf1172cd3}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!brush@{brush}}
+\index{brush@{brush}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{brush()}{brush()}}
+{\footnotesize\ttfamily QBrush QCPItem\+Ellipse\+::brush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7592 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_item_ellipse_a6fa59478cd3ad1b10e6c1f6cedc84bd6}{mBrush}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_a77eebd67a402fc496082a2e51356928c}\label{class_q_c_p_item_ellipse_a77eebd67a402fc496082a2e51356928c}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!draw@{draw}}
+\index{draw@{draw}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void QCPItem\+Ellipse\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Замещает \mbox{\hyperlink{class_q_c_p_abstract_item_a007fdab79c935a5da5aa04a21d268c18}{QCPAbstract\+Item}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31372                                              \{}
+\DoxyCodeLine{31373   QPointF p1 = \mbox{\hyperlink{class_q_c_p_item_ellipse_a12fd8420c06718d0c8a2303d6a652848}{topLeft}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_a8be9a4787635433edecc75164beb748d}{pixelPosition}}();}
+\DoxyCodeLine{31374   QPointF p2 = \mbox{\hyperlink{class_q_c_p_item_ellipse_ab73c8deafc0d8d1ef7d75b6cdcc37159}{bottomRight}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_a8be9a4787635433edecc75164beb748d}{pixelPosition}}();}
+\DoxyCodeLine{31375   \textcolor{keywordflow}{if} (p1.toPoint() == p2.toPoint()) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{31376   QRectF ellipseRect = QRectF(p1, p2).normalized();}
+\DoxyCodeLine{31377   \textcolor{keyword}{const} \textcolor{keywordtype}{int} clipEnlarge = qCeil(\mbox{\hyperlink{class_q_c_p_item_ellipse_a9c11717026dfd685c83a9650666b7181}{mainPen}}().widthF());}
+\DoxyCodeLine{31378   QRect clip =}
+\DoxyCodeLine{31379       \mbox{\hyperlink{class_q_c_p_abstract_item_a6ad60000f29afe11035e1f791dcbd45a}{clipRect}}().adjusted(-\/clipEnlarge, -\/clipEnlarge, clipEnlarge, clipEnlarge);}
+\DoxyCodeLine{31380   \textcolor{keywordflow}{if} (ellipseRect.intersects(clip))  \textcolor{comment}{// only draw if bounding rect of ellipse is}}
+\DoxyCodeLine{31381                                      \textcolor{comment}{// visible in cliprect}}
+\DoxyCodeLine{31382   \{}
+\DoxyCodeLine{31383     painter-\/>\mbox{\hyperlink{class_q_c_p_painter_af9c7a4cd1791403901f8c5b82a150195}{setPen}}(\mbox{\hyperlink{class_q_c_p_item_ellipse_a9c11717026dfd685c83a9650666b7181}{mainPen}}());}
+\DoxyCodeLine{31384     painter-\/>setBrush(\mbox{\hyperlink{class_q_c_p_item_ellipse_a6218bdf5e703f609b934b0bf9c8d0971}{mainBrush}}());}
+\DoxyCodeLine{31385 \textcolor{preprocessor}{\#ifdef \_\_EXCEPTIONS}}
+\DoxyCodeLine{31386     \textcolor{keywordflow}{try}  \textcolor{comment}{// drawEllipse sometimes throws exceptions if ellipse is too big}}
+\DoxyCodeLine{31387     \{}
+\DoxyCodeLine{31388 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{31389       painter-\/>drawEllipse(ellipseRect);}
+\DoxyCodeLine{31390 \textcolor{preprocessor}{\#ifdef \_\_EXCEPTIONS}}
+\DoxyCodeLine{31391     \} \textcolor{keywordflow}{catch} (...) \{}
+\DoxyCodeLine{31392       qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}Item too large for memory, setting invisible"{}};}
+\DoxyCodeLine{31393       \mbox{\hyperlink{class_q_c_p_layerable_a3bed99ddc396b48ce3ebfdc0418744f8}{setVisible}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{31394     \}}
+\DoxyCodeLine{31395 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{31396   \}}
+\DoxyCodeLine{31397 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_a6218bdf5e703f609b934b0bf9c8d0971}\label{class_q_c_p_item_ellipse_a6218bdf5e703f609b934b0bf9c8d0971}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!mainBrush@{mainBrush}}
+\index{mainBrush@{mainBrush}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{mainBrush()}{mainBrush()}}
+{\footnotesize\ttfamily QBrush QCPItem\+Ellipse\+::main\+Brush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31440                                        \{}
+\DoxyCodeLine{31441   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_abstract_item_a4bdb3457dad1d268c0f78a44152b9645}{mSelected}} ? \mbox{\hyperlink{class_q_c_p_item_ellipse_a2e49d5547478aa36910ed8a2dcc8a5c0}{mSelectedBrush}} : \mbox{\hyperlink{class_q_c_p_item_ellipse_a6fa59478cd3ad1b10e6c1f6cedc84bd6}{mBrush}};}
+\DoxyCodeLine{31442 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_a9c11717026dfd685c83a9650666b7181}\label{class_q_c_p_item_ellipse_a9c11717026dfd685c83a9650666b7181}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!mainPen@{mainPen}}
+\index{mainPen@{mainPen}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{mainPen()}{mainPen()}}
+{\footnotesize\ttfamily QPen QCPItem\+Ellipse\+::main\+Pen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31433 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_abstract_item_a4bdb3457dad1d268c0f78a44152b9645}{mSelected}} ? \mbox{\hyperlink{class_q_c_p_item_ellipse_a57b047abfce6f1a84ed46ca668c90e21}{mSelectedPen}} : \mbox{\hyperlink{class_q_c_p_item_ellipse_a16ad9389acf028a7e4ac8fd7a550b2e4}{mPen}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_a8288f7ce760fc795f5ce4e61136bda19}\label{class_q_c_p_item_ellipse_a8288f7ce760fc795f5ce4e61136bda19}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!pen@{pen}}
+\index{pen@{pen}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{pen()}{pen()}}
+{\footnotesize\ttfamily QPen QCPItem\+Ellipse\+::pen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7590 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_item_ellipse_a16ad9389acf028a7e4ac8fd7a550b2e4}{mPen}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_afeda9d8e2e6da216a3c3366d87e80feb}\label{class_q_c_p_item_ellipse_afeda9d8e2e6da216a3c3366d87e80feb}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!selectedBrush@{selectedBrush}}
+\index{selectedBrush@{selectedBrush}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{selectedBrush()}{selectedBrush()}}
+{\footnotesize\ttfamily QBrush QCPItem\+Ellipse\+::selected\+Brush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7593 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_item_ellipse_a2e49d5547478aa36910ed8a2dcc8a5c0}{mSelectedBrush}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_a9a200af2797356b45479b601d75437ee}\label{class_q_c_p_item_ellipse_a9a200af2797356b45479b601d75437ee}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!selectedPen@{selectedPen}}
+\index{selectedPen@{selectedPen}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{selectedPen()}{selectedPen()}}
+{\footnotesize\ttfamily QPen QCPItem\+Ellipse\+::selected\+Pen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7591 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_item_ellipse_a57b047abfce6f1a84ed46ca668c90e21}{mSelectedPen}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_a1037a6c39ad70aabcb1b552a8b4eff97}\label{class_q_c_p_item_ellipse_a1037a6c39ad70aabcb1b552a8b4eff97}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!selectTest@{selectTest}}
+\index{selectTest@{selectTest}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{selectTest()}{selectTest()}}
+{\footnotesize\ttfamily double QCPItem\+Ellipse\+::select\+Test (\begin{DoxyParamCaption}\item[{const QPointF \&}]{pos,  }\item[{bool}]{only\+Selectable,  }\item[{QVariant $\ast$}]{details = {\ttfamily nullptr} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function is used to decide whether a click hits a layerable object or not.
+
+{\itshape pos} is a point in pixel coordinates on the \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} surface. This function returns the shortest pixel distance of this point to the object. If the object is either invisible or the distance couldn\textquotesingle{}t be determined, -\/1.\+0 is returned. Further, if {\itshape only\+Selectable} is true and the object is not selectable, -\/1.\+0 is returned, too.
+
+If the object is represented not by single lines but by an area like a \mbox{\hyperlink{class_q_c_p_item_text}{QCPItem\+Text}} or the bars of a \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} plottable, a click inside the area should also be considered a hit. In these cases this function thus returns a constant value greater zero but still below the parent plot\textquotesingle{}s selection tolerance. (typically the selection\+Tolerance multiplied by 0.\+99).
+
+Providing a constant value for area objects allows selecting line objects even when they are obscured by such area objects, by clicking close to the lines (i.\+e. closer than 0.\+99$\ast$selection\+Tolerance).
+
+The actual setting of the selection state is not done by this function. This is handled by the parent \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} when the mouse\+Release\+Event occurs, and the finally selected object is notified via the select\+Event/ deselect\+Event methods.
+
+{\itshape details} is an optional output parameter. Every layerable subclass may place any information in {\itshape details}. This information will be passed to \mbox{\hyperlink{class_q_c_p_abstract_item_aa4b969c58797f39c9c0b6c07c7869d17}{select\+Event}} when the parent \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} decides on the basis of this select\+Test call, that the object was successfully selected. The subsequent call to \mbox{\hyperlink{class_q_c_p_abstract_item_aa4b969c58797f39c9c0b6c07c7869d17}{select\+Event}} will carry the {\itshape details}. This is useful for multi-\/part objects (like \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}}). This way, a possibly complex calculation to decide which part was clicked is only done once in \mbox{\hyperlink{class_q_c_p_item_ellipse_a1037a6c39ad70aabcb1b552a8b4eff97}{select\+Test}}. The result (i.\+e. the actually clicked part) can then be placed in {\itshape details}. So in the subsequent \mbox{\hyperlink{class_q_c_p_abstract_item_aa4b969c58797f39c9c0b6c07c7869d17}{select\+Event}}, the decision which part was selected doesn\textquotesingle{}t have to be done a second time for a single selection operation.
+
+In the case of 1D Plottables (\mbox{\hyperlink{class_q_c_p_abstract_plottable1_d}{QCPAbstract\+Plottable1D}}, like \mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} or \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}}) {\itshape details} will be set to a \mbox{\hyperlink{class_q_c_p_data_selection}{QCPData\+Selection}}, describing the closest data point to {\itshape pos}.
+
+You may pass {\ttfamily nullptr} as {\itshape details} to indicate that you are not interested in those selection details.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_abstract_item_aa4b969c58797f39c9c0b6c07c7869d17}{select\+Event}}, \mbox{\hyperlink{class_q_c_p_abstract_item_af9093798cb07a861dcc73f93ca16c0c1}{deselect\+Event}}, \mbox{\hyperlink{class_q_c_p_layerable_af6567604818db90f4fd52822f8bc8376}{mouse\+Press\+Event}}, \mbox{\hyperlink{class_q_c_p_layerable_a47dfd7b8fd99c08ca54e09c362b6f022}{wheel\+Event}}, \mbox{\hyperlink{class_q_custom_plot_a5ee1e2f6ae27419deca53e75907c27e5}{QCustom\+Plot\+::set\+Interactions}}, \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_a22377bf6e57ab7eedbc9e489250c6ded}{QCPAbstract\+Plottable1\+D\+::select\+Test\+Rect}} 
+\end{DoxySeeAlso}
+
+
+Замещает \mbox{\hyperlink{class_q_c_p_abstract_item_ac75a4bdcba0ce51ae22eacebb16a9dcd}{QCPAbstract\+Item}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31347                                                            \{}
+\DoxyCodeLine{31348   Q\_UNUSED(details)}
+\DoxyCodeLine{31349   \textcolor{keywordflow}{if} (onlySelectable \&\& !\mbox{\hyperlink{class_q_c_p_abstract_item_ad81eb35c8726a0f458db9df9732e0e41}{mSelectable}}) \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{31350 }
+\DoxyCodeLine{31351   QPointF p1 = \mbox{\hyperlink{class_q_c_p_item_ellipse_a12fd8420c06718d0c8a2303d6a652848}{topLeft}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_a8be9a4787635433edecc75164beb748d}{pixelPosition}}();}
+\DoxyCodeLine{31352   QPointF p2 = \mbox{\hyperlink{class_q_c_p_item_ellipse_ab73c8deafc0d8d1ef7d75b6cdcc37159}{bottomRight}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_a8be9a4787635433edecc75164beb748d}{pixelPosition}}();}
+\DoxyCodeLine{31353   QPointF \mbox{\hyperlink{class_q_c_p_item_ellipse_a8b6dd0e854f99239c5806ffdf2f590b3}{center}}((p1 + p2) / 2.0);}
+\DoxyCodeLine{31354   \textcolor{keywordtype}{double} a = qAbs(p1.x() -\/ p2.x()) / 2.0;}
+\DoxyCodeLine{31355   \textcolor{keywordtype}{double} b = qAbs(p1.y() -\/ p2.y()) / 2.0;}
+\DoxyCodeLine{31356   \textcolor{keywordtype}{double} x = pos.x() -\/ \mbox{\hyperlink{class_q_c_p_item_ellipse_a8b6dd0e854f99239c5806ffdf2f590b3}{center}}.x();}
+\DoxyCodeLine{31357   \textcolor{keywordtype}{double} y = pos.y() -\/ \mbox{\hyperlink{class_q_c_p_item_ellipse_a8b6dd0e854f99239c5806ffdf2f590b3}{center}}.y();}
+\DoxyCodeLine{31358 }
+\DoxyCodeLine{31359   \textcolor{comment}{// distance to border:}}
+\DoxyCodeLine{31360   \textcolor{keywordtype}{double} c = 1.0 / qSqrt(x * x / (a * a) + y * y / (b * b));}
+\DoxyCodeLine{31361   \textcolor{keywordtype}{double} result = qAbs(c -\/ 1) * qSqrt(x * x + y * y);}
+\DoxyCodeLine{31362   \textcolor{comment}{// filled ellipse, allow click inside to count as hit:}}
+\DoxyCodeLine{31363   \textcolor{keywordflow}{if} (result > \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a5441d11013afeaf4b8f2ea06e8624a25}{selectionTolerance}}() * 0.99 \&\&}
+\DoxyCodeLine{31364       \mbox{\hyperlink{class_q_c_p_item_ellipse_a6fa59478cd3ad1b10e6c1f6cedc84bd6}{mBrush}}.style() != Qt::NoBrush \&\& \mbox{\hyperlink{class_q_c_p_item_ellipse_a6fa59478cd3ad1b10e6c1f6cedc84bd6}{mBrush}}.color().alpha() != 0) \{}
+\DoxyCodeLine{31365     \textcolor{keywordflow}{if} (x * x / (a * a) + y * y / (b * b) <= 1)}
+\DoxyCodeLine{31366       result = \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a5441d11013afeaf4b8f2ea06e8624a25}{selectionTolerance}}() * 0.99;}
+\DoxyCodeLine{31367   \}}
+\DoxyCodeLine{31368   \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{31369 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_a49fc74e6965834e873d027d026def798}\label{class_q_c_p_item_ellipse_a49fc74e6965834e873d027d026def798}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!setBrush@{setBrush}}
+\index{setBrush@{setBrush}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{setBrush()}{setBrush()}}
+{\footnotesize\ttfamily void QCPItem\+Ellipse\+::set\+Brush (\begin{DoxyParamCaption}\item[{const QBrush \&}]{brush }\end{DoxyParamCaption})}
+
+Sets the brush that will be used to fill the ellipse. To disable filling, set {\itshape brush} to Qt\+::\+No\+Brush.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_item_ellipse_a9693501cfaa43a099655c75bed0dab3f}{set\+Selected\+Brush}}, \mbox{\hyperlink{class_q_c_p_item_ellipse_adb81a663ed2420fcfa011e49f678d1a6}{set\+Pen}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31333 \{ \mbox{\hyperlink{class_q_c_p_item_ellipse_a6fa59478cd3ad1b10e6c1f6cedc84bd6}{mBrush}} = \mbox{\hyperlink{class_q_c_p_item_ellipse_aacf45d032f204d0df3dd0bfdf1172cd3}{brush}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_adb81a663ed2420fcfa011e49f678d1a6}\label{class_q_c_p_item_ellipse_adb81a663ed2420fcfa011e49f678d1a6}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!setPen@{setPen}}
+\index{setPen@{setPen}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{setPen()}{setPen()}}
+{\footnotesize\ttfamily void QCPItem\+Ellipse\+::set\+Pen (\begin{DoxyParamCaption}\item[{const QPen \&}]{pen }\end{DoxyParamCaption})}
+
+Sets the pen that will be used to draw the line of the ellipse
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_item_ellipse_a6c542fba1dc918041c583f58a50dde99}{set\+Selected\+Pen}}, \mbox{\hyperlink{class_q_c_p_item_ellipse_a49fc74e6965834e873d027d026def798}{set\+Brush}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31318 \{ \mbox{\hyperlink{class_q_c_p_item_ellipse_a16ad9389acf028a7e4ac8fd7a550b2e4}{mPen}} = \mbox{\hyperlink{class_q_c_p_item_ellipse_a8288f7ce760fc795f5ce4e61136bda19}{pen}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_a9693501cfaa43a099655c75bed0dab3f}\label{class_q_c_p_item_ellipse_a9693501cfaa43a099655c75bed0dab3f}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!setSelectedBrush@{setSelectedBrush}}
+\index{setSelectedBrush@{setSelectedBrush}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{setSelectedBrush()}{setSelectedBrush()}}
+{\footnotesize\ttfamily void QCPItem\+Ellipse\+::set\+Selected\+Brush (\begin{DoxyParamCaption}\item[{const QBrush \&}]{brush }\end{DoxyParamCaption})}
+
+Sets the brush that will be used to fill the ellipse when selected. To disable filling, set {\itshape brush} to Qt\+::\+No\+Brush.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_item_ellipse_a49fc74e6965834e873d027d026def798}{set\+Brush}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31341                                                          \{}
+\DoxyCodeLine{31342   \mbox{\hyperlink{class_q_c_p_item_ellipse_a2e49d5547478aa36910ed8a2dcc8a5c0}{mSelectedBrush}} = \mbox{\hyperlink{class_q_c_p_item_ellipse_aacf45d032f204d0df3dd0bfdf1172cd3}{brush}};}
+\DoxyCodeLine{31343 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_a6c542fba1dc918041c583f58a50dde99}\label{class_q_c_p_item_ellipse_a6c542fba1dc918041c583f58a50dde99}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!setSelectedPen@{setSelectedPen}}
+\index{setSelectedPen@{setSelectedPen}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{setSelectedPen()}{setSelectedPen()}}
+{\footnotesize\ttfamily void QCPItem\+Ellipse\+::set\+Selected\+Pen (\begin{DoxyParamCaption}\item[{const QPen \&}]{pen }\end{DoxyParamCaption})}
+
+Sets the pen that will be used to draw the line of the ellipse when selected
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_item_ellipse_adb81a663ed2420fcfa011e49f678d1a6}{set\+Pen}}, \mbox{\hyperlink{class_q_c_p_abstract_item_a203de94ad586cc44d16c9565f49d3378}{set\+Selected}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31325 \{ \mbox{\hyperlink{class_q_c_p_item_ellipse_a57b047abfce6f1a84ed46ca668c90e21}{mSelectedPen}} = \mbox{\hyperlink{class_q_c_p_item_ellipse_a8288f7ce760fc795f5ce4e61136bda19}{pen}}; \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_a2dc80ff9f5db600eae0133bdde65066f}\label{class_q_c_p_item_ellipse_a2dc80ff9f5db600eae0133bdde65066f}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!bottom@{bottom}}
+\index{bottom@{bottom}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{bottom}{bottom}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_item_anchor}{QCPItem\+Anchor}}$\ast$ const QCPItem\+Ellipse\+::bottom}
+
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_a31f31a9e9f9098c90fb47573094276c5}\label{class_q_c_p_item_ellipse_a31f31a9e9f9098c90fb47573094276c5}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!bottomLeftRim@{bottomLeftRim}}
+\index{bottomLeftRim@{bottomLeftRim}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{bottomLeftRim}{bottomLeftRim}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_item_anchor}{QCPItem\+Anchor}}$\ast$ const QCPItem\+Ellipse\+::bottom\+Left\+Rim}
+
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_ab73c8deafc0d8d1ef7d75b6cdcc37159}\label{class_q_c_p_item_ellipse_ab73c8deafc0d8d1ef7d75b6cdcc37159}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!bottomRight@{bottomRight}}
+\index{bottomRight@{bottomRight}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{bottomRight}{bottomRight}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_item_position}{QCPItem\+Position}}$\ast$ const QCPItem\+Ellipse\+::bottom\+Right}
+
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_a5c8404be601d61b7fafeaaf1c05c4c42}\label{class_q_c_p_item_ellipse_a5c8404be601d61b7fafeaaf1c05c4c42}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!bottomRightRim@{bottomRightRim}}
+\index{bottomRightRim@{bottomRightRim}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{bottomRightRim}{bottomRightRim}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_item_anchor}{QCPItem\+Anchor}}$\ast$ const QCPItem\+Ellipse\+::bottom\+Right\+Rim}
+
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_a8b6dd0e854f99239c5806ffdf2f590b3}\label{class_q_c_p_item_ellipse_a8b6dd0e854f99239c5806ffdf2f590b3}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!center@{center}}
+\index{center@{center}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{center}{center}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_item_anchor}{QCPItem\+Anchor}}$\ast$ const QCPItem\+Ellipse\+::center}
+
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_aa259cd03efaedf60cf5b1019b20e4f2b}\label{class_q_c_p_item_ellipse_aa259cd03efaedf60cf5b1019b20e4f2b}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!left@{left}}
+\index{left@{left}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{left}{left}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_item_anchor}{QCPItem\+Anchor}}$\ast$ const QCPItem\+Ellipse\+::left}
+
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_a6fa59478cd3ad1b10e6c1f6cedc84bd6}\label{class_q_c_p_item_ellipse_a6fa59478cd3ad1b10e6c1f6cedc84bd6}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!mBrush@{mBrush}}
+\index{mBrush@{mBrush}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{mBrush}{mBrush}}
+{\footnotesize\ttfamily QBrush QCPItem\+Ellipse\+::m\+Brush\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_a16ad9389acf028a7e4ac8fd7a550b2e4}\label{class_q_c_p_item_ellipse_a16ad9389acf028a7e4ac8fd7a550b2e4}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!mPen@{mPen}}
+\index{mPen@{mPen}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{mPen}{mPen}}
+{\footnotesize\ttfamily QPen QCPItem\+Ellipse\+::m\+Pen\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_a2e49d5547478aa36910ed8a2dcc8a5c0}\label{class_q_c_p_item_ellipse_a2e49d5547478aa36910ed8a2dcc8a5c0}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!mSelectedBrush@{mSelectedBrush}}
+\index{mSelectedBrush@{mSelectedBrush}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{mSelectedBrush}{mSelectedBrush}}
+{\footnotesize\ttfamily QBrush QCPItem\+Ellipse\+::m\+Selected\+Brush\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_a57b047abfce6f1a84ed46ca668c90e21}\label{class_q_c_p_item_ellipse_a57b047abfce6f1a84ed46ca668c90e21}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!mSelectedPen@{mSelectedPen}}
+\index{mSelectedPen@{mSelectedPen}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{mSelectedPen}{mSelectedPen}}
+{\footnotesize\ttfamily QPen QCPItem\+Ellipse\+::m\+Selected\+Pen\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_a50091a3bd8761d3ce0d95d9c727e4a82}\label{class_q_c_p_item_ellipse_a50091a3bd8761d3ce0d95d9c727e4a82}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!right@{right}}
+\index{right@{right}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{right}{right}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_item_anchor}{QCPItem\+Anchor}}$\ast$ const QCPItem\+Ellipse\+::right}
+
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_ad50f907d6f9d1402c6c5d302dca5c5d5}\label{class_q_c_p_item_ellipse_ad50f907d6f9d1402c6c5d302dca5c5d5}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!top@{top}}
+\index{top@{top}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{top}{top}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_item_anchor}{QCPItem\+Anchor}}$\ast$ const QCPItem\+Ellipse\+::top}
+
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_a12fd8420c06718d0c8a2303d6a652848}\label{class_q_c_p_item_ellipse_a12fd8420c06718d0c8a2303d6a652848}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!topLeft@{topLeft}}
+\index{topLeft@{topLeft}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{topLeft}{topLeft}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_item_position}{QCPItem\+Position}}$\ast$ const QCPItem\+Ellipse\+::top\+Left}
+
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_a33ebd2a751b63b9240edc9aa46c19eff}\label{class_q_c_p_item_ellipse_a33ebd2a751b63b9240edc9aa46c19eff}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!topLeftRim@{topLeftRim}}
+\index{topLeftRim@{topLeftRim}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{topLeftRim}{topLeftRim}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_item_anchor}{QCPItem\+Anchor}}$\ast$ const QCPItem\+Ellipse\+::top\+Left\+Rim}
+
+\mbox{\Hypertarget{class_q_c_p_item_ellipse_a744446970b38a4a3bbea46d722b7c54d}\label{class_q_c_p_item_ellipse_a744446970b38a4a3bbea46d722b7c54d}} 
+\index{QCPItemEllipse@{QCPItemEllipse}!topRightRim@{topRightRim}}
+\index{topRightRim@{topRightRim}!QCPItemEllipse@{QCPItemEllipse}}
+\doxysubsubsection{\texorpdfstring{topRightRim}{topRightRim}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_item_anchor}{QCPItem\+Anchor}}$\ast$ const QCPItem\+Ellipse\+::top\+Right\+Rim}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Smart\+Calc/\mbox{\hyperlink{qcustomplot_8h}{qcustomplot.\+h}}\item 
+Smart\+Calc/\mbox{\hyperlink{qcustomplot_8cpp}{qcustomplot.\+cpp}}\end{DoxyCompactItemize}

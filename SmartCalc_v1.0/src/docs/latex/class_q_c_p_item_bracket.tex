@@ -1,0 +1,573 @@
+\hypertarget{class_q_c_p_item_bracket}{}\doxysection{Класс QCPItem\+Bracket}
+\label{class_q_c_p_item_bracket}\index{QCPItemBracket@{QCPItemBracket}}
+
+
+A bracket for referencing/highlighting certain parts in the plot.  
+
+
+
+
+{\ttfamily \#include $<$qcustomplot.\+h$>$}
+
+Граф наследования\+:QCPItem\+Bracket\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_q_c_p_item_bracket}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые типы}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbd}{Bracket\+Style}} \{ \mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda7f9df4a7359bfe3dac1dbe4ccf5d220c}{bs\+Square}}
+, \mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda394627b0830a26ee3e0a02ca67a9f918}{bs\+Round}}
+, \mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda5024ce4023c2d8de4221f1cd4816acd8}{bs\+Curly}}
+, \mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda8f29f5ef754e2dc9a9efdedb2face0f3}{bs\+Calligraphic}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_c_p_item_bracket_a44ecfa37a76de5e3549e2d61f9d8ee56}{QCPItem\+Bracket}} (\mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} $\ast$\mbox{\hyperlink{class_q_c_p_layerable_a473edb813a4c1929d6b6a8fe3ff3faf7}{parent\+Plot}})
+\item 
+virtual \mbox{\hyperlink{class_q_c_p_item_bracket_a224d3fc708ccf54a41c0d1c5da8cf89a}{$\sim$\+QCPItem\+Bracket}} () \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+QPen \mbox{\hyperlink{class_q_c_p_item_bracket_a6013b3f83aab7bc82b485ee5447ecb1b}{pen}} () const
+\item 
+QPen \mbox{\hyperlink{class_q_c_p_item_bracket_aff5318a5415b87d9753c84752c65dd14}{selected\+Pen}} () const
+\item 
+double \mbox{\hyperlink{class_q_c_p_item_bracket_af69dbe7ca5847f36403e1fb502e8e59d}{length}} () const
+\item 
+\mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbd}{Bracket\+Style}} \mbox{\hyperlink{class_q_c_p_item_bracket_a600ad8c0a3193cc2f335db6039f2932d}{style}} () const
+\item 
+void \mbox{\hyperlink{class_q_c_p_item_bracket_ab13001d9cc5d8f9e56ea15bdda682acb}{set\+Pen}} (const QPen \&\mbox{\hyperlink{class_q_c_p_item_bracket_a6013b3f83aab7bc82b485ee5447ecb1b}{pen}})
+\item 
+void \mbox{\hyperlink{class_q_c_p_item_bracket_a349785c31122778a520c64891fa204c5}{set\+Selected\+Pen}} (const QPen \&\mbox{\hyperlink{class_q_c_p_item_bracket_a6013b3f83aab7bc82b485ee5447ecb1b}{pen}})
+\item 
+void \mbox{\hyperlink{class_q_c_p_item_bracket_ac7cfc3da7da9b5c5ac5dfbe4f0351b2a}{set\+Length}} (double \mbox{\hyperlink{class_q_c_p_item_bracket_af69dbe7ca5847f36403e1fb502e8e59d}{length}})
+\item 
+void \mbox{\hyperlink{class_q_c_p_item_bracket_a612dffa2373422eef8754d690add3703}{set\+Style}} (\mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbd}{Bracket\+Style}} \mbox{\hyperlink{class_q_c_p_item_bracket_a600ad8c0a3193cc2f335db6039f2932d}{style}})
+\item 
+virtual double \mbox{\hyperlink{class_q_c_p_item_bracket_a8c3bc895c9db93e97a291a1199f6f8c6}{select\+Test}} (const QPointF \&pos, bool only\+Selectable, QVariant $\ast$details=nullptr) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_c_p_item_position}{QCPItem\+Position}} $\ast$const \mbox{\hyperlink{class_q_c_p_item_bracket_af6cc6d27d96171778c6927d6edce48b0}{left}}
+\item 
+\mbox{\hyperlink{class_q_c_p_item_position}{QCPItem\+Position}} $\ast$const \mbox{\hyperlink{class_q_c_p_item_bracket_afa6c1360b05a50c4e0df37b3cebab6be}{right}}
+\item 
+\mbox{\hyperlink{class_q_c_p_item_anchor}{QCPItem\+Anchor}} $\ast$const \mbox{\hyperlink{class_q_c_p_item_bracket_a2dbcabdf5f467f28be12a7b25962ffca}{center}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные типы}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_q_c_p_item_bracket_a7f3a6a56d67f71219ed220553f3dd861}{Anchor\+Index}} \{ \mbox{\hyperlink{class_q_c_p_item_bracket_a7f3a6a56d67f71219ed220553f3dd861a17b57ef34cc05eadfe9becd1ad5b5242}{ai\+Center}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_item_bracket_a942a3978aea44a2fc7b4383f2bf6d417}{draw}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter) \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual QPointF \mbox{\hyperlink{class_q_c_p_item_bracket_a008d87325d26b6616d368cec06027cce}{anchor\+Pixel\+Position}} (int anchor\+Id) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+QPen \mbox{\hyperlink{class_q_c_p_item_bracket_af1c445df1a574bddc8a40efcd76dd2e1}{main\+Pen}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+QPen \mbox{\hyperlink{class_q_c_p_item_bracket_a350c864a5853b04343719f5a8be6b675}{m\+Pen}}
+\item 
+QPen \mbox{\hyperlink{class_q_c_p_item_bracket_adcfb53602d1802d00e2de4fd6df6b291}{m\+Selected\+Pen}}
+\item 
+double \mbox{\hyperlink{class_q_c_p_item_bracket_ab3d99bba8da18eb4d0e0cb23dded33b2}{m\+Length}}
+\item 
+\mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbd}{Bracket\+Style}} \mbox{\hyperlink{class_q_c_p_item_bracket_ac911907184c824d621f274f8e0990080}{m\+Style}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Дополнительные унаследованные члены}
+
+
+\doxysubsection{Подробное описание}
+A bracket for referencing/highlighting certain parts in the plot. 
+
+ anchors, solid blue discs are positions."{}
+
+It has two positions, {\itshape left} and {\itshape right}, which define the span of the bracket. If {\itshape left} is actually farther to the left than {\itshape right}, the bracket is opened to the bottom, as shown in the example image.
+
+The bracket supports multiple styles via \mbox{\hyperlink{class_q_c_p_item_bracket_a612dffa2373422eef8754d690add3703}{set\+Style}}. The length, i.\+e. how far the bracket stretches away from the embraced span, can be controlled with \mbox{\hyperlink{class_q_c_p_item_bracket_ac7cfc3da7da9b5c5ac5dfbe4f0351b2a}{set\+Length}}.
+
+ \begin{center}Demonstrating the effect of different values for \mbox{\hyperlink{class_q_c_p_item_bracket_ac7cfc3da7da9b5c5ac5dfbe4f0351b2a}{set\+Length}}, for styles \mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda8f29f5ef754e2dc9a9efdedb2face0f3}{bs\+Calligraphic}} and \mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda7f9df4a7359bfe3dac1dbe4ccf5d220c}{bs\+Square}}. Anchors and positions are displayed for reference.\end{center} 
+
+It provides an anchor {\itshape center}, to allow connection of other items, e.\+g. an arrow (\mbox{\hyperlink{class_q_c_p_item_line}{QCPItem\+Line}} or \mbox{\hyperlink{class_q_c_p_item_curve}{QCPItem\+Curve}}) or a text label (\mbox{\hyperlink{class_q_c_p_item_text}{QCPItem\+Text}}), to the bracket. 
+
+\doxysubsection{Перечисления}
+\mbox{\Hypertarget{class_q_c_p_item_bracket_a7f3a6a56d67f71219ed220553f3dd861}\label{class_q_c_p_item_bracket_a7f3a6a56d67f71219ed220553f3dd861}} 
+\index{QCPItemBracket@{QCPItemBracket}!AnchorIndex@{AnchorIndex}}
+\index{AnchorIndex@{AnchorIndex}!QCPItemBracket@{QCPItemBracket}}
+\doxysubsubsection{\texorpdfstring{AnchorIndex}{AnchorIndex}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_q_c_p_item_bracket_a7f3a6a56d67f71219ed220553f3dd861}{QCPItem\+Bracket\+::\+Anchor\+Index}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyEnumFields}{Элементы перечислений}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{aiCenter@{aiCenter}!QCPItemBracket@{QCPItemBracket}}\index{QCPItemBracket@{QCPItemBracket}!aiCenter@{aiCenter}}}\mbox{\Hypertarget{class_q_c_p_item_bracket_a7f3a6a56d67f71219ed220553f3dd861a17b57ef34cc05eadfe9becd1ad5b5242}\label{class_q_c_p_item_bracket_a7f3a6a56d67f71219ed220553f3dd861a17b57ef34cc05eadfe9becd1ad5b5242}} 
+ai\+Center&\\
+\hline
+
+\end{DoxyEnumFields}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7872 \{ \mbox{\hyperlink{class_q_c_p_item_bracket_a7f3a6a56d67f71219ed220553f3dd861a17b57ef34cc05eadfe9becd1ad5b5242}{aiCenter}} \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbd}\label{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbd}} 
+\index{QCPItemBracket@{QCPItemBracket}!BracketStyle@{BracketStyle}}
+\index{BracketStyle@{BracketStyle}!QCPItemBracket@{QCPItemBracket}}
+\doxysubsubsection{\texorpdfstring{BracketStyle}{BracketStyle}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbd}{QCPItem\+Bracket\+::\+Bracket\+Style}}}
+
+Defines the various visual shapes of the bracket item. The appearance can be further modified by \mbox{\hyperlink{class_q_c_p_item_bracket_ac7cfc3da7da9b5c5ac5dfbe4f0351b2a}{set\+Length}} and \mbox{\hyperlink{class_q_c_p_item_bracket_ab13001d9cc5d8f9e56ea15bdda682acb}{set\+Pen}}.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_item_bracket_a612dffa2373422eef8754d690add3703}{set\+Style}} 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Элементы перечислений}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{bsSquare@{bsSquare}!QCPItemBracket@{QCPItemBracket}}\index{QCPItemBracket@{QCPItemBracket}!bsSquare@{bsSquare}}}\mbox{\Hypertarget{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda7f9df4a7359bfe3dac1dbe4ccf5d220c}\label{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda7f9df4a7359bfe3dac1dbe4ccf5d220c}} 
+bs\+Square&A brace with angled edges. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{bsRound@{bsRound}!QCPItemBracket@{QCPItemBracket}}\index{QCPItemBracket@{QCPItemBracket}!bsRound@{bsRound}}}\mbox{\Hypertarget{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda394627b0830a26ee3e0a02ca67a9f918}\label{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda394627b0830a26ee3e0a02ca67a9f918}} 
+bs\+Round&A brace with round edges. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{bsCurly@{bsCurly}!QCPItemBracket@{QCPItemBracket}}\index{QCPItemBracket@{QCPItemBracket}!bsCurly@{bsCurly}}}\mbox{\Hypertarget{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda5024ce4023c2d8de4221f1cd4816acd8}\label{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda5024ce4023c2d8de4221f1cd4816acd8}} 
+bs\+Curly&A curly brace. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{bsCalligraphic@{bsCalligraphic}!QCPItemBracket@{QCPItemBracket}}\index{QCPItemBracket@{QCPItemBracket}!bsCalligraphic@{bsCalligraphic}}}\mbox{\Hypertarget{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda8f29f5ef754e2dc9a9efdedb2face0f3}\label{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda8f29f5ef754e2dc9a9efdedb2face0f3}} 
+bs\+Calligraphic&A curly brace with varying stroke width giving a calligraphic impression \\
+\hline
+
+\end{DoxyEnumFields}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7835                     \{}
+\DoxyCodeLine{7836     \mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda7f9df4a7359bfe3dac1dbe4ccf5d220c}{bsSquare}}  }
+\DoxyCodeLine{7837     ,}
+\DoxyCodeLine{7838     \mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda394627b0830a26ee3e0a02ca67a9f918}{bsRound}}  }
+\DoxyCodeLine{7839     ,}
+\DoxyCodeLine{7840     \mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda5024ce4023c2d8de4221f1cd4816acd8}{bsCurly}}  }
+\DoxyCodeLine{7841     ,}
+\DoxyCodeLine{7842     \mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda8f29f5ef754e2dc9a9efdedb2face0f3}{bsCalligraphic}}  }
+\DoxyCodeLine{7844   \};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_q_c_p_item_bracket_a44ecfa37a76de5e3549e2d61f9d8ee56}\label{class_q_c_p_item_bracket_a44ecfa37a76de5e3549e2d61f9d8ee56}} 
+\index{QCPItemBracket@{QCPItemBracket}!QCPItemBracket@{QCPItemBracket}}
+\index{QCPItemBracket@{QCPItemBracket}!QCPItemBracket@{QCPItemBracket}}
+\doxysubsubsection{\texorpdfstring{QCPItemBracket()}{QCPItemBracket()}}
+{\footnotesize\ttfamily QCPItem\+Bracket\+::\+QCPItem\+Bracket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} $\ast$}]{parent\+Plot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Creates a bracket item and sets default values.
+
+The created item is automatically registered with {\itshape parent\+Plot}. This \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} instance takes ownership of the item, so do not delete it manually but use \mbox{\hyperlink{class_q_custom_plot_ae04446557292551e8fb6e2c106e1848d}{QCustom\+Plot\+::remove\+Item()}} instead. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{32092     : \mbox{\hyperlink{class_q_c_p_abstract_item_a9922507d8b4503a1fe1ed0b1030e23b6}{QCPAbstractItem}}(\mbox{\hyperlink{class_q_c_p_layerable_a473edb813a4c1929d6b6a8fe3ff3faf7}{parentPlot}}),}
+\DoxyCodeLine{32093       \mbox{\hyperlink{class_q_c_p_item_bracket_af6cc6d27d96171778c6927d6edce48b0}{left}}(\mbox{\hyperlink{class_q_c_p_abstract_item_a75036d39c4d4e2e1a7dd145fff915d32}{createPosition}}(QLatin1String(\textcolor{stringliteral}{"{}left"{}}))),}
+\DoxyCodeLine{32094       \mbox{\hyperlink{class_q_c_p_item_bracket_afa6c1360b05a50c4e0df37b3cebab6be}{right}}(\mbox{\hyperlink{class_q_c_p_abstract_item_a75036d39c4d4e2e1a7dd145fff915d32}{createPosition}}(QLatin1String(\textcolor{stringliteral}{"{}right"{}}))),}
+\DoxyCodeLine{32095       \mbox{\hyperlink{class_q_c_p_item_bracket_a2dbcabdf5f467f28be12a7b25962ffca}{center}}(\mbox{\hyperlink{class_q_c_p_abstract_item_af3fc92527802078ca395138748b629a7}{createAnchor}}(QLatin1String(\textcolor{stringliteral}{"{}center"{}}), \mbox{\hyperlink{class_q_c_p_item_bracket_a7f3a6a56d67f71219ed220553f3dd861a17b57ef34cc05eadfe9becd1ad5b5242}{aiCenter}})),}
+\DoxyCodeLine{32096       \mbox{\hyperlink{class_q_c_p_item_bracket_ab3d99bba8da18eb4d0e0cb23dded33b2}{mLength}}(8),}
+\DoxyCodeLine{32097       \mbox{\hyperlink{class_q_c_p_item_bracket_ac911907184c824d621f274f8e0990080}{mStyle}}(\mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda8f29f5ef754e2dc9a9efdedb2face0f3}{bsCalligraphic}}) \{}
+\DoxyCodeLine{32098   \mbox{\hyperlink{class_q_c_p_item_bracket_af6cc6d27d96171778c6927d6edce48b0}{left}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_aa988ba4e87ab684c9021017dcaba945f}{setCoords}}(0, 0);}
+\DoxyCodeLine{32099   \mbox{\hyperlink{class_q_c_p_item_bracket_afa6c1360b05a50c4e0df37b3cebab6be}{right}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_aa988ba4e87ab684c9021017dcaba945f}{setCoords}}(1, 1);}
+\DoxyCodeLine{32100 }
+\DoxyCodeLine{32101   \mbox{\hyperlink{class_q_c_p_item_bracket_ab13001d9cc5d8f9e56ea15bdda682acb}{setPen}}(QPen(Qt::black));}
+\DoxyCodeLine{32102   \mbox{\hyperlink{class_q_c_p_item_bracket_a349785c31122778a520c64891fa204c5}{setSelectedPen}}(QPen(Qt::blue, 2));}
+\DoxyCodeLine{32103 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_bracket_a224d3fc708ccf54a41c0d1c5da8cf89a}\label{class_q_c_p_item_bracket_a224d3fc708ccf54a41c0d1c5da8cf89a}} 
+\index{QCPItemBracket@{QCPItemBracket}!````~QCPItemBracket@{$\sim$QCPItemBracket}}
+\index{````~QCPItemBracket@{$\sim$QCPItemBracket}!QCPItemBracket@{QCPItemBracket}}
+\doxysubsubsection{\texorpdfstring{$\sim$QCPItemBracket()}{~QCPItemBracket()}}
+{\footnotesize\ttfamily QCPItem\+Bracket\+::$\sim$\+QCPItem\+Bracket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{32105 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_q_c_p_item_bracket_a008d87325d26b6616d368cec06027cce}\label{class_q_c_p_item_bracket_a008d87325d26b6616d368cec06027cce}} 
+\index{QCPItemBracket@{QCPItemBracket}!anchorPixelPosition@{anchorPixelPosition}}
+\index{anchorPixelPosition@{anchorPixelPosition}!QCPItemBracket@{QCPItemBracket}}
+\doxysubsubsection{\texorpdfstring{anchorPixelPosition()}{anchorPixelPosition()}}
+{\footnotesize\ttfamily QPointF QCPItem\+Bracket\+::anchor\+Pixel\+Position (\begin{DoxyParamCaption}\item[{int}]{anchor\+Id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Переопределяет метод предка \mbox{\hyperlink{class_q_c_p_abstract_item_ada5bad4e1196c4fc0d0d12328e24b8f2}{QCPAbstract\+Item}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{32275                                                               \{}
+\DoxyCodeLine{32276   \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}} leftVec(\mbox{\hyperlink{class_q_c_p_item_bracket_af6cc6d27d96171778c6927d6edce48b0}{left}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_a8be9a4787635433edecc75164beb748d}{pixelPosition}}());}
+\DoxyCodeLine{32277   \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}} rightVec(\mbox{\hyperlink{class_q_c_p_item_bracket_afa6c1360b05a50c4e0df37b3cebab6be}{right}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_a8be9a4787635433edecc75164beb748d}{pixelPosition}}());}
+\DoxyCodeLine{32278   \textcolor{keywordflow}{if} (leftVec.toPoint() == rightVec.toPoint()) \textcolor{keywordflow}{return} leftVec.toPointF();}
+\DoxyCodeLine{32279 }
+\DoxyCodeLine{32280   \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}} widthVec = (rightVec -\/ leftVec) * 0.5;}
+\DoxyCodeLine{32281   \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}} lengthVec = widthVec.\mbox{\hyperlink{class_q_c_p_vector2_d_a0e08d09f9027784237e302e32290b001}{perpendicular}}().\mbox{\hyperlink{class_q_c_p_vector2_d_a707bb3af3b1f9331a2450ec75eaf7eb0}{normalized}}() * \mbox{\hyperlink{class_q_c_p_item_bracket_ab3d99bba8da18eb4d0e0cb23dded33b2}{mLength}};}
+\DoxyCodeLine{32282   \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}} centerVec = (rightVec + leftVec) * 0.5 -\/ lengthVec;}
+\DoxyCodeLine{32283 }
+\DoxyCodeLine{32284   \textcolor{keywordflow}{switch} (anchorId) \{}
+\DoxyCodeLine{32285     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_item_bracket_a7f3a6a56d67f71219ed220553f3dd861a17b57ef34cc05eadfe9becd1ad5b5242}{aiCenter}}:}
+\DoxyCodeLine{32286       \textcolor{keywordflow}{return} centerVec.\mbox{\hyperlink{class_q_c_p_vector2_d_acd7af3f4a62833ada58be3f3021dbbac}{toPointF}}();}
+\DoxyCodeLine{32287   \}}
+\DoxyCodeLine{32288   qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}invalid anchorId"{}} << anchorId;}
+\DoxyCodeLine{32289   \textcolor{keywordflow}{return} \{\};}
+\DoxyCodeLine{32290 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_bracket_a942a3978aea44a2fc7b4383f2bf6d417}\label{class_q_c_p_item_bracket_a942a3978aea44a2fc7b4383f2bf6d417}} 
+\index{QCPItemBracket@{QCPItemBracket}!draw@{draw}}
+\index{draw@{draw}!QCPItemBracket@{QCPItemBracket}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void QCPItem\+Bracket\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Замещает \mbox{\hyperlink{class_q_c_p_abstract_item_a007fdab79c935a5da5aa04a21d268c18}{QCPAbstract\+Item}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{32194                                              \{}
+\DoxyCodeLine{32195   \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}} leftVec(\mbox{\hyperlink{class_q_c_p_item_bracket_af6cc6d27d96171778c6927d6edce48b0}{left}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_a8be9a4787635433edecc75164beb748d}{pixelPosition}}());}
+\DoxyCodeLine{32196   \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}} rightVec(\mbox{\hyperlink{class_q_c_p_item_bracket_afa6c1360b05a50c4e0df37b3cebab6be}{right}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_a8be9a4787635433edecc75164beb748d}{pixelPosition}}());}
+\DoxyCodeLine{32197   \textcolor{keywordflow}{if} (leftVec.toPoint() == rightVec.toPoint()) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{32198 }
+\DoxyCodeLine{32199   \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}} widthVec = (rightVec -\/ leftVec) * 0.5;}
+\DoxyCodeLine{32200   \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}} lengthVec = widthVec.\mbox{\hyperlink{class_q_c_p_vector2_d_a0e08d09f9027784237e302e32290b001}{perpendicular}}().\mbox{\hyperlink{class_q_c_p_vector2_d_a707bb3af3b1f9331a2450ec75eaf7eb0}{normalized}}() * \mbox{\hyperlink{class_q_c_p_item_bracket_ab3d99bba8da18eb4d0e0cb23dded33b2}{mLength}};}
+\DoxyCodeLine{32201   \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}} centerVec = (rightVec + leftVec) * 0.5 -\/ lengthVec;}
+\DoxyCodeLine{32202 }
+\DoxyCodeLine{32203   QPolygon boundingPoly;}
+\DoxyCodeLine{32204   boundingPoly << leftVec.\mbox{\hyperlink{class_q_c_p_vector2_d_add3edf75de9b7bf1abc693b973b2e906}{toPoint}}() << rightVec.toPoint()}
+\DoxyCodeLine{32205                << (rightVec -\/ lengthVec).toPoint()}
+\DoxyCodeLine{32206                << (leftVec -\/ lengthVec).toPoint();}
+\DoxyCodeLine{32207   \textcolor{keyword}{const} \textcolor{keywordtype}{int} clipEnlarge = qCeil(\mbox{\hyperlink{class_q_c_p_item_bracket_af1c445df1a574bddc8a40efcd76dd2e1}{mainPen}}().widthF());}
+\DoxyCodeLine{32208   QRect clip =}
+\DoxyCodeLine{32209       \mbox{\hyperlink{class_q_c_p_abstract_item_a6ad60000f29afe11035e1f791dcbd45a}{clipRect}}().adjusted(-\/clipEnlarge, -\/clipEnlarge, clipEnlarge, clipEnlarge);}
+\DoxyCodeLine{32210   \textcolor{keywordflow}{if} (clip.intersects(boundingPoly.boundingRect())) \{}
+\DoxyCodeLine{32211     painter-\/>\mbox{\hyperlink{class_q_c_p_painter_af9c7a4cd1791403901f8c5b82a150195}{setPen}}(\mbox{\hyperlink{class_q_c_p_item_bracket_af1c445df1a574bddc8a40efcd76dd2e1}{mainPen}}());}
+\DoxyCodeLine{32212     \textcolor{keywordflow}{switch} (\mbox{\hyperlink{class_q_c_p_item_bracket_ac911907184c824d621f274f8e0990080}{mStyle}}) \{}
+\DoxyCodeLine{32213       \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda7f9df4a7359bfe3dac1dbe4ccf5d220c}{bsSquare}}: \{}
+\DoxyCodeLine{32214         painter-\/>\mbox{\hyperlink{class_q_c_p_painter_a0b4b1b9bd495e182c731774dc800e6e0}{drawLine}}((centerVec + widthVec).toPointF(),}
+\DoxyCodeLine{32215                           (centerVec -\/ widthVec).toPointF());}
+\DoxyCodeLine{32216         painter-\/>\mbox{\hyperlink{class_q_c_p_painter_a0b4b1b9bd495e182c731774dc800e6e0}{drawLine}}((centerVec + widthVec).toPointF(),}
+\DoxyCodeLine{32217                           (centerVec + widthVec + lengthVec).toPointF());}
+\DoxyCodeLine{32218         painter-\/>\mbox{\hyperlink{class_q_c_p_painter_a0b4b1b9bd495e182c731774dc800e6e0}{drawLine}}((centerVec -\/ widthVec).toPointF(),}
+\DoxyCodeLine{32219                           (centerVec -\/ widthVec + lengthVec).toPointF());}
+\DoxyCodeLine{32220         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{32221       \}}
+\DoxyCodeLine{32222       \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda394627b0830a26ee3e0a02ca67a9f918}{bsRound}}: \{}
+\DoxyCodeLine{32223         painter-\/>setBrush(Qt::NoBrush);}
+\DoxyCodeLine{32224         QPainterPath path;}
+\DoxyCodeLine{32225         path.moveTo((centerVec + widthVec + lengthVec).toPointF());}
+\DoxyCodeLine{32226         path.cubicTo((centerVec + widthVec).toPointF(),}
+\DoxyCodeLine{32227                      (centerVec + widthVec).toPointF(), centerVec.\mbox{\hyperlink{class_q_c_p_vector2_d_acd7af3f4a62833ada58be3f3021dbbac}{toPointF}}());}
+\DoxyCodeLine{32228         path.cubicTo((centerVec -\/ widthVec).toPointF(),}
+\DoxyCodeLine{32229                      (centerVec -\/ widthVec).toPointF(),}
+\DoxyCodeLine{32230                      (centerVec -\/ widthVec + lengthVec).toPointF());}
+\DoxyCodeLine{32231         painter-\/>drawPath(path);}
+\DoxyCodeLine{32232         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{32233       \}}
+\DoxyCodeLine{32234       \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda5024ce4023c2d8de4221f1cd4816acd8}{bsCurly}}: \{}
+\DoxyCodeLine{32235         painter-\/>setBrush(Qt::NoBrush);}
+\DoxyCodeLine{32236         QPainterPath path;}
+\DoxyCodeLine{32237         path.moveTo((centerVec + widthVec + lengthVec).toPointF());}
+\DoxyCodeLine{32238         path.cubicTo((centerVec + widthVec -\/ lengthVec * 0.8).toPointF(),}
+\DoxyCodeLine{32239                      (centerVec + 0.4 * widthVec + lengthVec).toPointF(),}
+\DoxyCodeLine{32240                      centerVec.\mbox{\hyperlink{class_q_c_p_vector2_d_acd7af3f4a62833ada58be3f3021dbbac}{toPointF}}());}
+\DoxyCodeLine{32241         path.cubicTo((centerVec -\/ 0.4 * widthVec + lengthVec).toPointF(),}
+\DoxyCodeLine{32242                      (centerVec -\/ widthVec -\/ lengthVec * 0.8).toPointF(),}
+\DoxyCodeLine{32243                      (centerVec -\/ widthVec + lengthVec).toPointF());}
+\DoxyCodeLine{32244         painter-\/>drawPath(path);}
+\DoxyCodeLine{32245         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{32246       \}}
+\DoxyCodeLine{32247       \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda8f29f5ef754e2dc9a9efdedb2face0f3}{bsCalligraphic}}: \{}
+\DoxyCodeLine{32248         painter-\/>\mbox{\hyperlink{class_q_c_p_painter_af9c7a4cd1791403901f8c5b82a150195}{setPen}}(Qt::NoPen);}
+\DoxyCodeLine{32249         painter-\/>setBrush(QBrush(\mbox{\hyperlink{class_q_c_p_item_bracket_af1c445df1a574bddc8a40efcd76dd2e1}{mainPen}}().color()));}
+\DoxyCodeLine{32250         QPainterPath path;}
+\DoxyCodeLine{32251         path.moveTo((centerVec + widthVec + lengthVec).toPointF());}
+\DoxyCodeLine{32252 }
+\DoxyCodeLine{32253         path.cubicTo((centerVec + widthVec -\/ lengthVec * 0.8).toPointF(),}
+\DoxyCodeLine{32254                      (centerVec + 0.4 * widthVec + 0.8 * lengthVec).toPointF(),}
+\DoxyCodeLine{32255                      centerVec.\mbox{\hyperlink{class_q_c_p_vector2_d_acd7af3f4a62833ada58be3f3021dbbac}{toPointF}}());}
+\DoxyCodeLine{32256         path.cubicTo((centerVec -\/ 0.4 * widthVec + 0.8 * lengthVec).toPointF(),}
+\DoxyCodeLine{32257                      (centerVec -\/ widthVec -\/ lengthVec * 0.8).toPointF(),}
+\DoxyCodeLine{32258                      (centerVec -\/ widthVec + lengthVec).toPointF());}
+\DoxyCodeLine{32259 }
+\DoxyCodeLine{32260         path.cubicTo((centerVec -\/ widthVec -\/ lengthVec * 0.5).toPointF(),}
+\DoxyCodeLine{32261                      (centerVec -\/ 0.2 * widthVec + 1.2 * lengthVec).toPointF(),}
+\DoxyCodeLine{32262                      (centerVec + lengthVec * 0.2).toPointF());}
+\DoxyCodeLine{32263         path.cubicTo((centerVec + 0.2 * widthVec + 1.2 * lengthVec).toPointF(),}
+\DoxyCodeLine{32264                      (centerVec + widthVec -\/ lengthVec * 0.5).toPointF(),}
+\DoxyCodeLine{32265                      (centerVec + widthVec + lengthVec).toPointF());}
+\DoxyCodeLine{32266 }
+\DoxyCodeLine{32267         painter-\/>drawPath(path);}
+\DoxyCodeLine{32268         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{32269       \}}
+\DoxyCodeLine{32270     \}}
+\DoxyCodeLine{32271   \}}
+\DoxyCodeLine{32272 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_bracket_af69dbe7ca5847f36403e1fb502e8e59d}\label{class_q_c_p_item_bracket_af69dbe7ca5847f36403e1fb502e8e59d}} 
+\index{QCPItemBracket@{QCPItemBracket}!length@{length}}
+\index{length@{length}!QCPItemBracket@{QCPItemBracket}}
+\doxysubsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily double QCPItem\+Bracket\+::length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7853 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_item_bracket_ab3d99bba8da18eb4d0e0cb23dded33b2}{mLength}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_bracket_af1c445df1a574bddc8a40efcd76dd2e1}\label{class_q_c_p_item_bracket_af1c445df1a574bddc8a40efcd76dd2e1}} 
+\index{QCPItemBracket@{QCPItemBracket}!mainPen@{mainPen}}
+\index{mainPen@{mainPen}!QCPItemBracket@{QCPItemBracket}}
+\doxysubsubsection{\texorpdfstring{mainPen()}{mainPen()}}
+{\footnotesize\ttfamily QPen QCPItem\+Bracket\+::main\+Pen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{32297 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_abstract_item_a4bdb3457dad1d268c0f78a44152b9645}{mSelected}} ? \mbox{\hyperlink{class_q_c_p_item_bracket_adcfb53602d1802d00e2de4fd6df6b291}{mSelectedPen}} : \mbox{\hyperlink{class_q_c_p_item_bracket_a350c864a5853b04343719f5a8be6b675}{mPen}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_bracket_a6013b3f83aab7bc82b485ee5447ecb1b}\label{class_q_c_p_item_bracket_a6013b3f83aab7bc82b485ee5447ecb1b}} 
+\index{QCPItemBracket@{QCPItemBracket}!pen@{pen}}
+\index{pen@{pen}!QCPItemBracket@{QCPItemBracket}}
+\doxysubsubsection{\texorpdfstring{pen()}{pen()}}
+{\footnotesize\ttfamily QPen QCPItem\+Bracket\+::pen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7851 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_item_bracket_a350c864a5853b04343719f5a8be6b675}{mPen}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_bracket_aff5318a5415b87d9753c84752c65dd14}\label{class_q_c_p_item_bracket_aff5318a5415b87d9753c84752c65dd14}} 
+\index{QCPItemBracket@{QCPItemBracket}!selectedPen@{selectedPen}}
+\index{selectedPen@{selectedPen}!QCPItemBracket@{QCPItemBracket}}
+\doxysubsubsection{\texorpdfstring{selectedPen()}{selectedPen()}}
+{\footnotesize\ttfamily QPen QCPItem\+Bracket\+::selected\+Pen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7852 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_item_bracket_adcfb53602d1802d00e2de4fd6df6b291}{mSelectedPen}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_bracket_a8c3bc895c9db93e97a291a1199f6f8c6}\label{class_q_c_p_item_bracket_a8c3bc895c9db93e97a291a1199f6f8c6}} 
+\index{QCPItemBracket@{QCPItemBracket}!selectTest@{selectTest}}
+\index{selectTest@{selectTest}!QCPItemBracket@{QCPItemBracket}}
+\doxysubsubsection{\texorpdfstring{selectTest()}{selectTest()}}
+{\footnotesize\ttfamily double QCPItem\+Bracket\+::select\+Test (\begin{DoxyParamCaption}\item[{const QPointF \&}]{pos,  }\item[{bool}]{only\+Selectable,  }\item[{QVariant $\ast$}]{details = {\ttfamily nullptr} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function is used to decide whether a click hits a layerable object or not.
+
+{\itshape pos} is a point in pixel coordinates on the \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} surface. This function returns the shortest pixel distance of this point to the object. If the object is either invisible or the distance couldn\textquotesingle{}t be determined, -\/1.\+0 is returned. Further, if {\itshape only\+Selectable} is true and the object is not selectable, -\/1.\+0 is returned, too.
+
+If the object is represented not by single lines but by an area like a \mbox{\hyperlink{class_q_c_p_item_text}{QCPItem\+Text}} or the bars of a \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} plottable, a click inside the area should also be considered a hit. In these cases this function thus returns a constant value greater zero but still below the parent plot\textquotesingle{}s selection tolerance. (typically the selection\+Tolerance multiplied by 0.\+99).
+
+Providing a constant value for area objects allows selecting line objects even when they are obscured by such area objects, by clicking close to the lines (i.\+e. closer than 0.\+99$\ast$selection\+Tolerance).
+
+The actual setting of the selection state is not done by this function. This is handled by the parent \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} when the mouse\+Release\+Event occurs, and the finally selected object is notified via the select\+Event/ deselect\+Event methods.
+
+{\itshape details} is an optional output parameter. Every layerable subclass may place any information in {\itshape details}. This information will be passed to \mbox{\hyperlink{class_q_c_p_abstract_item_aa4b969c58797f39c9c0b6c07c7869d17}{select\+Event}} when the parent \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} decides on the basis of this select\+Test call, that the object was successfully selected. The subsequent call to \mbox{\hyperlink{class_q_c_p_abstract_item_aa4b969c58797f39c9c0b6c07c7869d17}{select\+Event}} will carry the {\itshape details}. This is useful for multi-\/part objects (like \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}}). This way, a possibly complex calculation to decide which part was clicked is only done once in \mbox{\hyperlink{class_q_c_p_item_bracket_a8c3bc895c9db93e97a291a1199f6f8c6}{select\+Test}}. The result (i.\+e. the actually clicked part) can then be placed in {\itshape details}. So in the subsequent \mbox{\hyperlink{class_q_c_p_abstract_item_aa4b969c58797f39c9c0b6c07c7869d17}{select\+Event}}, the decision which part was selected doesn\textquotesingle{}t have to be done a second time for a single selection operation.
+
+In the case of 1D Plottables (\mbox{\hyperlink{class_q_c_p_abstract_plottable1_d}{QCPAbstract\+Plottable1D}}, like \mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} or \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}}) {\itshape details} will be set to a \mbox{\hyperlink{class_q_c_p_data_selection}{QCPData\+Selection}}, describing the closest data point to {\itshape pos}.
+
+You may pass {\ttfamily nullptr} as {\itshape details} to indicate that you are not interested in those selection details.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_abstract_item_aa4b969c58797f39c9c0b6c07c7869d17}{select\+Event}}, \mbox{\hyperlink{class_q_c_p_abstract_item_af9093798cb07a861dcc73f93ca16c0c1}{deselect\+Event}}, \mbox{\hyperlink{class_q_c_p_layerable_af6567604818db90f4fd52822f8bc8376}{mouse\+Press\+Event}}, \mbox{\hyperlink{class_q_c_p_layerable_a47dfd7b8fd99c08ca54e09c362b6f022}{wheel\+Event}}, \mbox{\hyperlink{class_q_custom_plot_a5ee1e2f6ae27419deca53e75907c27e5}{QCustom\+Plot\+::set\+Interactions}}, \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_a22377bf6e57ab7eedbc9e489250c6ded}{QCPAbstract\+Plottable1\+D\+::select\+Test\+Rect}} 
+\end{DoxySeeAlso}
+
+
+Замещает \mbox{\hyperlink{class_q_c_p_abstract_item_ac75a4bdcba0ce51ae22eacebb16a9dcd}{QCPAbstract\+Item}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{32149                                                            \{}
+\DoxyCodeLine{32150   Q\_UNUSED(details)}
+\DoxyCodeLine{32151   \textcolor{keywordflow}{if} (onlySelectable \&\& !\mbox{\hyperlink{class_q_c_p_abstract_item_ad81eb35c8726a0f458db9df9732e0e41}{mSelectable}}) \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{32152 }
+\DoxyCodeLine{32153   \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}} p(pos);}
+\DoxyCodeLine{32154   \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}} leftVec(\mbox{\hyperlink{class_q_c_p_item_bracket_af6cc6d27d96171778c6927d6edce48b0}{left}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_a8be9a4787635433edecc75164beb748d}{pixelPosition}}());}
+\DoxyCodeLine{32155   \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}} rightVec(\mbox{\hyperlink{class_q_c_p_item_bracket_afa6c1360b05a50c4e0df37b3cebab6be}{right}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_a8be9a4787635433edecc75164beb748d}{pixelPosition}}());}
+\DoxyCodeLine{32156   \textcolor{keywordflow}{if} (leftVec.toPoint() == rightVec.toPoint()) \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{32157 }
+\DoxyCodeLine{32158   \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}} widthVec = (rightVec -\/ leftVec) * 0.5;}
+\DoxyCodeLine{32159   \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}} lengthVec = widthVec.\mbox{\hyperlink{class_q_c_p_vector2_d_a0e08d09f9027784237e302e32290b001}{perpendicular}}().\mbox{\hyperlink{class_q_c_p_vector2_d_a707bb3af3b1f9331a2450ec75eaf7eb0}{normalized}}() * \mbox{\hyperlink{class_q_c_p_item_bracket_ab3d99bba8da18eb4d0e0cb23dded33b2}{mLength}};}
+\DoxyCodeLine{32160   \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}} centerVec = (rightVec + leftVec) * 0.5 -\/ lengthVec;}
+\DoxyCodeLine{32161 }
+\DoxyCodeLine{32162   \textcolor{keywordflow}{switch} (\mbox{\hyperlink{class_q_c_p_item_bracket_ac911907184c824d621f274f8e0990080}{mStyle}}) \{}
+\DoxyCodeLine{32163     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda7f9df4a7359bfe3dac1dbe4ccf5d220c}{QCPItemBracket::bsSquare}}:}
+\DoxyCodeLine{32164     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda394627b0830a26ee3e0a02ca67a9f918}{QCPItemBracket::bsRound}}: \{}
+\DoxyCodeLine{32165       \textcolor{keywordtype}{double} a =}
+\DoxyCodeLine{32166           p.distanceSquaredToLine(centerVec -\/ widthVec, centerVec + widthVec);}
+\DoxyCodeLine{32167       \textcolor{keywordtype}{double} b = p.distanceSquaredToLine(centerVec -\/ widthVec + lengthVec,}
+\DoxyCodeLine{32168                                          centerVec -\/ widthVec);}
+\DoxyCodeLine{32169       \textcolor{keywordtype}{double} c = p.distanceSquaredToLine(centerVec + widthVec + lengthVec,}
+\DoxyCodeLine{32170                                          centerVec + widthVec);}
+\DoxyCodeLine{32171       \textcolor{keywordflow}{return} qSqrt(qMin(qMin(a, b), c));}
+\DoxyCodeLine{32172     \}}
+\DoxyCodeLine{32173     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda5024ce4023c2d8de4221f1cd4816acd8}{QCPItemBracket::bsCurly}}:}
+\DoxyCodeLine{32174     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda8f29f5ef754e2dc9a9efdedb2face0f3}{QCPItemBracket::bsCalligraphic}}: \{}
+\DoxyCodeLine{32175       \textcolor{keywordtype}{double} a = p.distanceSquaredToLine(}
+\DoxyCodeLine{32176           centerVec -\/ widthVec * 0.75 + lengthVec * 0.15,}
+\DoxyCodeLine{32177           centerVec + lengthVec * 0.3);}
+\DoxyCodeLine{32178       \textcolor{keywordtype}{double} b = p.distanceSquaredToLine(}
+\DoxyCodeLine{32179           centerVec -\/ widthVec + lengthVec * 0.7,}
+\DoxyCodeLine{32180           centerVec -\/ widthVec * 0.75 + lengthVec * 0.15);}
+\DoxyCodeLine{32181       \textcolor{keywordtype}{double} c = p.distanceSquaredToLine(}
+\DoxyCodeLine{32182           centerVec + widthVec * 0.75 + lengthVec * 0.15,}
+\DoxyCodeLine{32183           centerVec + lengthVec * 0.3);}
+\DoxyCodeLine{32184       \textcolor{keywordtype}{double} d = p.distanceSquaredToLine(}
+\DoxyCodeLine{32185           centerVec + widthVec + lengthVec * 0.7,}
+\DoxyCodeLine{32186           centerVec + widthVec * 0.75 + lengthVec * 0.15);}
+\DoxyCodeLine{32187       \textcolor{keywordflow}{return} qSqrt(qMin(qMin(a, b), qMin(c, d)));}
+\DoxyCodeLine{32188     \}}
+\DoxyCodeLine{32189   \}}
+\DoxyCodeLine{32190   \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{32191 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_bracket_ac7cfc3da7da9b5c5ac5dfbe4f0351b2a}\label{class_q_c_p_item_bracket_ac7cfc3da7da9b5c5ac5dfbe4f0351b2a}} 
+\index{QCPItemBracket@{QCPItemBracket}!setLength@{setLength}}
+\index{setLength@{setLength}!QCPItemBracket@{QCPItemBracket}}
+\doxysubsubsection{\texorpdfstring{setLength()}{setLength()}}
+{\footnotesize\ttfamily void QCPItem\+Bracket\+::set\+Length (\begin{DoxyParamCaption}\item[{double}]{length }\end{DoxyParamCaption})}
+
+Sets the {\itshape length} in pixels how far the bracket extends in the direction towards the embraced span of the bracket (i.\+e. perpendicular to the {\itshape left}-\/{\itshape right}-\/direction)
+
+ \begin{center}Demonstrating the effect of different values for \mbox{\hyperlink{class_q_c_p_item_bracket_ac7cfc3da7da9b5c5ac5dfbe4f0351b2a}{set\+Length}}, for styles \mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda8f29f5ef754e2dc9a9efdedb2face0f3}{bs\+Calligraphic}} and \mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda7f9df4a7359bfe3dac1dbe4ccf5d220c}{bs\+Square}}. Anchors and positions are displayed for reference.\end{center}  
+\begin{DoxyCode}{0}
+\DoxyCodeLine{32136 \{ \mbox{\hyperlink{class_q_c_p_item_bracket_ab3d99bba8da18eb4d0e0cb23dded33b2}{mLength}} = \mbox{\hyperlink{class_q_c_p_item_bracket_af69dbe7ca5847f36403e1fb502e8e59d}{length}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_bracket_ab13001d9cc5d8f9e56ea15bdda682acb}\label{class_q_c_p_item_bracket_ab13001d9cc5d8f9e56ea15bdda682acb}} 
+\index{QCPItemBracket@{QCPItemBracket}!setPen@{setPen}}
+\index{setPen@{setPen}!QCPItemBracket@{QCPItemBracket}}
+\doxysubsubsection{\texorpdfstring{setPen()}{setPen()}}
+{\footnotesize\ttfamily void QCPItem\+Bracket\+::set\+Pen (\begin{DoxyParamCaption}\item[{const QPen \&}]{pen }\end{DoxyParamCaption})}
+
+Sets the pen that will be used to draw the bracket.
+
+Note that when the style is \mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbda8f29f5ef754e2dc9a9efdedb2face0f3}{bs\+Calligraphic}}, only the color will be taken from the pen, the stroke and width are ignored. To change the apparent stroke width of a calligraphic bracket, use \mbox{\hyperlink{class_q_c_p_item_bracket_ac7cfc3da7da9b5c5ac5dfbe4f0351b2a}{set\+Length}}, which has a similar effect.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_item_bracket_a349785c31122778a520c64891fa204c5}{set\+Selected\+Pen}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{32117 \{ \mbox{\hyperlink{class_q_c_p_item_bracket_a350c864a5853b04343719f5a8be6b675}{mPen}} = \mbox{\hyperlink{class_q_c_p_item_bracket_a6013b3f83aab7bc82b485ee5447ecb1b}{pen}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_bracket_a349785c31122778a520c64891fa204c5}\label{class_q_c_p_item_bracket_a349785c31122778a520c64891fa204c5}} 
+\index{QCPItemBracket@{QCPItemBracket}!setSelectedPen@{setSelectedPen}}
+\index{setSelectedPen@{setSelectedPen}!QCPItemBracket@{QCPItemBracket}}
+\doxysubsubsection{\texorpdfstring{setSelectedPen()}{setSelectedPen()}}
+{\footnotesize\ttfamily void QCPItem\+Bracket\+::set\+Selected\+Pen (\begin{DoxyParamCaption}\item[{const QPen \&}]{pen }\end{DoxyParamCaption})}
+
+Sets the pen that will be used to draw the bracket when selected
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_item_bracket_ab13001d9cc5d8f9e56ea15bdda682acb}{set\+Pen}}, \mbox{\hyperlink{class_q_c_p_abstract_item_a203de94ad586cc44d16c9565f49d3378}{set\+Selected}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{32124 \{ \mbox{\hyperlink{class_q_c_p_item_bracket_adcfb53602d1802d00e2de4fd6df6b291}{mSelectedPen}} = \mbox{\hyperlink{class_q_c_p_item_bracket_a6013b3f83aab7bc82b485ee5447ecb1b}{pen}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_bracket_a612dffa2373422eef8754d690add3703}\label{class_q_c_p_item_bracket_a612dffa2373422eef8754d690add3703}} 
+\index{QCPItemBracket@{QCPItemBracket}!setStyle@{setStyle}}
+\index{setStyle@{setStyle}!QCPItemBracket@{QCPItemBracket}}
+\doxysubsubsection{\texorpdfstring{setStyle()}{setStyle()}}
+{\footnotesize\ttfamily void QCPItem\+Bracket\+::set\+Style (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbd}{QCPItem\+Bracket\+::\+Bracket\+Style}}}]{style }\end{DoxyParamCaption})}
+
+Sets the style of the bracket, i.\+e. the shape/visual appearance.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_item_bracket_ab13001d9cc5d8f9e56ea15bdda682acb}{set\+Pen}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{32143                                                               \{}
+\DoxyCodeLine{32144   \mbox{\hyperlink{class_q_c_p_item_bracket_ac911907184c824d621f274f8e0990080}{mStyle}} = \mbox{\hyperlink{class_q_c_p_item_bracket_a600ad8c0a3193cc2f335db6039f2932d}{style}};}
+\DoxyCodeLine{32145 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_bracket_a600ad8c0a3193cc2f335db6039f2932d}\label{class_q_c_p_item_bracket_a600ad8c0a3193cc2f335db6039f2932d}} 
+\index{QCPItemBracket@{QCPItemBracket}!style@{style}}
+\index{style@{style}!QCPItemBracket@{QCPItemBracket}}
+\doxysubsubsection{\texorpdfstring{style()}{style()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbd}{Bracket\+Style}} QCPItem\+Bracket\+::style (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7854 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_item_bracket_ac911907184c824d621f274f8e0990080}{mStyle}}; \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{class_q_c_p_item_bracket_a2dbcabdf5f467f28be12a7b25962ffca}\label{class_q_c_p_item_bracket_a2dbcabdf5f467f28be12a7b25962ffca}} 
+\index{QCPItemBracket@{QCPItemBracket}!center@{center}}
+\index{center@{center}!QCPItemBracket@{QCPItemBracket}}
+\doxysubsubsection{\texorpdfstring{center}{center}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_item_anchor}{QCPItem\+Anchor}}$\ast$ const QCPItem\+Bracket\+::center}
+
+\mbox{\Hypertarget{class_q_c_p_item_bracket_af6cc6d27d96171778c6927d6edce48b0}\label{class_q_c_p_item_bracket_af6cc6d27d96171778c6927d6edce48b0}} 
+\index{QCPItemBracket@{QCPItemBracket}!left@{left}}
+\index{left@{left}!QCPItemBracket@{QCPItemBracket}}
+\doxysubsubsection{\texorpdfstring{left}{left}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_item_position}{QCPItem\+Position}}$\ast$ const QCPItem\+Bracket\+::left}
+
+\mbox{\Hypertarget{class_q_c_p_item_bracket_ab3d99bba8da18eb4d0e0cb23dded33b2}\label{class_q_c_p_item_bracket_ab3d99bba8da18eb4d0e0cb23dded33b2}} 
+\index{QCPItemBracket@{QCPItemBracket}!mLength@{mLength}}
+\index{mLength@{mLength}!QCPItemBracket@{QCPItemBracket}}
+\doxysubsubsection{\texorpdfstring{mLength}{mLength}}
+{\footnotesize\ttfamily double QCPItem\+Bracket\+::m\+Length\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_item_bracket_a350c864a5853b04343719f5a8be6b675}\label{class_q_c_p_item_bracket_a350c864a5853b04343719f5a8be6b675}} 
+\index{QCPItemBracket@{QCPItemBracket}!mPen@{mPen}}
+\index{mPen@{mPen}!QCPItemBracket@{QCPItemBracket}}
+\doxysubsubsection{\texorpdfstring{mPen}{mPen}}
+{\footnotesize\ttfamily QPen QCPItem\+Bracket\+::m\+Pen\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_item_bracket_adcfb53602d1802d00e2de4fd6df6b291}\label{class_q_c_p_item_bracket_adcfb53602d1802d00e2de4fd6df6b291}} 
+\index{QCPItemBracket@{QCPItemBracket}!mSelectedPen@{mSelectedPen}}
+\index{mSelectedPen@{mSelectedPen}!QCPItemBracket@{QCPItemBracket}}
+\doxysubsubsection{\texorpdfstring{mSelectedPen}{mSelectedPen}}
+{\footnotesize\ttfamily QPen QCPItem\+Bracket\+::m\+Selected\+Pen\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_item_bracket_ac911907184c824d621f274f8e0990080}\label{class_q_c_p_item_bracket_ac911907184c824d621f274f8e0990080}} 
+\index{QCPItemBracket@{QCPItemBracket}!mStyle@{mStyle}}
+\index{mStyle@{mStyle}!QCPItemBracket@{QCPItemBracket}}
+\doxysubsubsection{\texorpdfstring{mStyle}{mStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_item_bracket_a7ac3afd0b24a607054e7212047d59dbd}{Bracket\+Style}} QCPItem\+Bracket\+::m\+Style\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_item_bracket_afa6c1360b05a50c4e0df37b3cebab6be}\label{class_q_c_p_item_bracket_afa6c1360b05a50c4e0df37b3cebab6be}} 
+\index{QCPItemBracket@{QCPItemBracket}!right@{right}}
+\index{right@{right}!QCPItemBracket@{QCPItemBracket}}
+\doxysubsubsection{\texorpdfstring{right}{right}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_item_position}{QCPItem\+Position}}$\ast$ const QCPItem\+Bracket\+::right}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Smart\+Calc/\mbox{\hyperlink{qcustomplot_8h}{qcustomplot.\+h}}\item 
+Smart\+Calc/\mbox{\hyperlink{qcustomplot_8cpp}{qcustomplot.\+cpp}}\end{DoxyCompactItemize}

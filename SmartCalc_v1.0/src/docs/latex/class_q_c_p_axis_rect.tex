@@ -1,0 +1,2010 @@
+\hypertarget{class_q_c_p_axis_rect}{}\doxysection{Класс QCPAxis\+Rect}
+\label{class_q_c_p_axis_rect}\index{QCPAxisRect@{QCPAxisRect}}
+
+
+Holds multiple axes and arranges them in a rectangular shape.  
+
+
+
+
+{\ttfamily \#include $<$qcustomplot.\+h$>$}
+
+Граф наследования\+:QCPAxis\+Rect\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_q_c_p_axis_rect}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_c_p_axis_rect_a60b31dece805462c1b82eea2e69ba042}{QCPAxis\+Rect}} (\mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} $\ast$\mbox{\hyperlink{class_q_c_p_layerable_a473edb813a4c1929d6b6a8fe3ff3faf7}{parent\+Plot}}, bool setup\+Default\+Axes=true)
+\item 
+virtual \mbox{\hyperlink{class_q_c_p_axis_rect_a1e8a674908e23d107aaf275227c54aaf}{$\sim$\+QCPAxis\+Rect}} () \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+QPixmap \mbox{\hyperlink{class_q_c_p_axis_rect_a572deec9c9a4d5987d5c5f78521991e6}{background}} () const
+\item 
+QBrush \mbox{\hyperlink{class_q_c_p_axis_rect_a7d09540e3fef12362d00e6bac92b6453}{background\+Brush}} () const
+\item 
+bool \mbox{\hyperlink{class_q_c_p_axis_rect_a059ede9a5fdcafb5cef280cd65fe4f3a}{background\+Scaled}} () const
+\item 
+Qt\+::\+Aspect\+Ratio\+Mode \mbox{\hyperlink{class_q_c_p_axis_rect_a06b98faf54b5491bff780294e423d3ff}{background\+Scaled\+Mode}} () const
+\item 
+Qt\+::\+Orientations \mbox{\hyperlink{class_q_c_p_axis_rect_aa3a84c768ad6edd08fd4c5dec176828f}{range\+Drag}} () const
+\item 
+Qt\+::\+Orientations \mbox{\hyperlink{class_q_c_p_axis_rect_aa0d8414ef040523f8b2d55f0c0bddbee}{range\+Zoom}} () const
+\item 
+\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ \mbox{\hyperlink{class_q_c_p_axis_rect_a6d7c22cfc54fac7a3d6ef80b133a8574}{range\+Drag\+Axis}} (Qt\+::\+Orientation orientation)
+\item 
+\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ \mbox{\hyperlink{class_q_c_p_axis_rect_a679c63f2b8daccfe6ec5110dce3dd3b6}{range\+Zoom\+Axis}} (Qt\+::\+Orientation orientation)
+\item 
+QList$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ $>$ \mbox{\hyperlink{class_q_c_p_axis_rect_aae5f99a044ca911685a306f01b7ff941}{range\+Drag\+Axes}} (Qt\+::\+Orientation orientation)
+\item 
+QList$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ $>$ \mbox{\hyperlink{class_q_c_p_axis_rect_a86aac0f435f209d60dacd22cda10c104}{range\+Zoom\+Axes}} (Qt\+::\+Orientation orientation)
+\item 
+double \mbox{\hyperlink{class_q_c_p_axis_rect_ae4e6c4d143aacc88d2d3c56f117c2fe1}{range\+Zoom\+Factor}} (Qt\+::\+Orientation orientation)
+\item 
+void \mbox{\hyperlink{class_q_c_p_axis_rect_af615ab5e52b8e0a9a0eff415b6559db5}{set\+Background}} (const QPixmap \&pm)
+\item 
+void \mbox{\hyperlink{class_q_c_p_axis_rect_ac48a2d5d9b7732e73b86605c69c5e4c1}{set\+Background}} (const QPixmap \&pm, bool scaled, Qt\+::\+Aspect\+Ratio\+Mode mode=Qt\+::\+Keep\+Aspect\+Ratio\+By\+Expanding)
+\item 
+void \mbox{\hyperlink{class_q_c_p_axis_rect_a22a22b8668735438dc06f9a55fe46b33}{set\+Background}} (const QBrush \&brush)
+\item 
+void \mbox{\hyperlink{class_q_c_p_axis_rect_ae6d36c3e0e968ffb991170a018e7b503}{set\+Background\+Scaled}} (bool scaled)
+\item 
+void \mbox{\hyperlink{class_q_c_p_axis_rect_a5ef77ea829c9de7ba248e473f48f7305}{set\+Background\+Scaled\+Mode}} (Qt\+::\+Aspect\+Ratio\+Mode mode)
+\item 
+void \mbox{\hyperlink{class_q_c_p_axis_rect_ae6aef2f7211ba6097c925dcd26008418}{set\+Range\+Drag}} (Qt\+::\+Orientations orientations)
+\item 
+void \mbox{\hyperlink{class_q_c_p_axis_rect_a7960a9d222f1c31d558b064b60f86a31}{set\+Range\+Zoom}} (Qt\+::\+Orientations orientations)
+\item 
+void \mbox{\hyperlink{class_q_c_p_axis_rect_a648cce336bd99daac4a5ca3e5743775d}{set\+Range\+Drag\+Axes}} (\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$horizontal, \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$vertical)
+\item 
+void \mbox{\hyperlink{class_q_c_p_axis_rect_af0fbc510147a2a54b9c8cd296e6df8ac}{set\+Range\+Drag\+Axes}} (QList$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ $>$ \mbox{\hyperlink{class_q_c_p_axis_rect_a8db4722cb93e9c4a6f0d91150c200867}{axes}})
+\item 
+void \mbox{\hyperlink{class_q_c_p_axis_rect_a8366903edcb3bb703a8b0be783a85746}{set\+Range\+Drag\+Axes}} (QList$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ $>$ horizontal, QList$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ $>$ vertical)
+\item 
+void \mbox{\hyperlink{class_q_c_p_axis_rect_a9442cca2aa358405f39a64d51eca13d2}{set\+Range\+Zoom\+Axes}} (\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$horizontal, \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$vertical)
+\item 
+void \mbox{\hyperlink{class_q_c_p_axis_rect_a89c1ab7ee6d2a14b56c57c9a796ba623}{set\+Range\+Zoom\+Axes}} (QList$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ $>$ \mbox{\hyperlink{class_q_c_p_axis_rect_a8db4722cb93e9c4a6f0d91150c200867}{axes}})
+\item 
+void \mbox{\hyperlink{class_q_c_p_axis_rect_ae29d6e9e54ebd981769c986e498ae118}{set\+Range\+Zoom\+Axes}} (QList$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ $>$ horizontal, QList$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ $>$ vertical)
+\item 
+void \mbox{\hyperlink{class_q_c_p_axis_rect_a895d7ac745ea614e04056244b3c138ac}{set\+Range\+Zoom\+Factor}} (double horizontal\+Factor, double vertical\+Factor)
+\item 
+void \mbox{\hyperlink{class_q_c_p_axis_rect_ae83d187b03fc6fa4f00765ad50cd3fc3}{set\+Range\+Zoom\+Factor}} (double factor)
+\item 
+int \mbox{\hyperlink{class_q_c_p_axis_rect_a85b321acec0f694d8b5fdeafdbff3133}{axis\+Count}} (\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18a}{QCPAxis\+::\+Axis\+Type}} type) const
+\item 
+\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}} (\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18a}{QCPAxis\+::\+Axis\+Type}} type, int index=0) const
+\item 
+QList$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ $>$ \mbox{\hyperlink{class_q_c_p_axis_rect_a8db4722cb93e9c4a6f0d91150c200867}{axes}} (QCPAxis\+::\+Axis\+Types types) const
+\item 
+QList$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ $>$ \mbox{\hyperlink{class_q_c_p_axis_rect_a11657b8faebe9677180860e8057ede26}{axes}} () const
+\item 
+\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ \mbox{\hyperlink{class_q_c_p_axis_rect_a2a845ee60eac7a8d5e71718c5e77c274}{add\+Axis}} (\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18a}{QCPAxis\+::\+Axis\+Type}} type, \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$\mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}=nullptr)
+\item 
+QList$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ $>$ \mbox{\hyperlink{class_q_c_p_axis_rect_a792e1f3d9cb1591fca135bb0de9b81fc}{add\+Axes}} (QCPAxis\+::\+Axis\+Types types)
+\item 
+bool \mbox{\hyperlink{class_q_c_p_axis_rect_a03c39cd9704f0d36fb6cf980cdddcbaa}{remove\+Axis}} (\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$\mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}})
+\item 
+\mbox{\hyperlink{class_q_c_p_layout_inset}{QCPLayout\+Inset}} $\ast$ \mbox{\hyperlink{class_q_c_p_axis_rect_a949f803466619924c7018df4b511ae10}{inset\+Layout}} () const
+\item 
+void \mbox{\hyperlink{class_q_c_p_axis_rect_a5fc8460564e81dcc2a9343dc8bc1fe67}{zoom}} (const QRectF \&pixel\+Rect)
+\item 
+void \mbox{\hyperlink{class_q_c_p_axis_rect_ae481c28b50e10cfbbec59fde45e77367}{zoom}} (const QRectF \&pixel\+Rect, const QList$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ $>$ \&affected\+Axes)
+\item 
+void \mbox{\hyperlink{class_q_c_p_axis_rect_a5fa906175447b14206954f77fc7f1ef4}{setup\+Full\+Axes\+Box}} (bool connect\+Ranges=false)
+\item 
+QList$<$ \mbox{\hyperlink{class_q_c_p_abstract_plottable}{QCPAbstract\+Plottable}} $\ast$ $>$ \mbox{\hyperlink{class_q_c_p_axis_rect_a587d073a97b27bc7293fab4b2774ad59}{plottables}} () const
+\item 
+QList$<$ \mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} $\ast$ $>$ \mbox{\hyperlink{class_q_c_p_axis_rect_a2d9ded3eca97be1fcb5867949391bb88}{graphs}} () const
+\item 
+QList$<$ \mbox{\hyperlink{class_q_c_p_abstract_item}{QCPAbstract\+Item}} $\ast$ $>$ \mbox{\hyperlink{class_q_c_p_axis_rect_a03c113a2175448300ee8f944e24776ba}{items}} () const
+\item 
+int \mbox{\hyperlink{class_q_c_p_axis_rect_afb4a3de02046b20b9310bdb8fca781c3}{left}} () const
+\item 
+int \mbox{\hyperlink{class_q_c_p_axis_rect_a3f819d4a1b2193723d1fdafc573eea10}{right}} () const
+\item 
+int \mbox{\hyperlink{class_q_c_p_axis_rect_a45dbad181cbb9f09d068dbb76c817c95}{top}} () const
+\item 
+int \mbox{\hyperlink{class_q_c_p_axis_rect_acefdf1abaa8a8ab681e906cc2be9581e}{bottom}} () const
+\item 
+int \mbox{\hyperlink{class_q_c_p_axis_rect_a204645398a4f9d0b0189385c7c2cfb91}{width}} () const
+\item 
+int \mbox{\hyperlink{class_q_c_p_axis_rect_acc4377809e79d9a089ab790f39429b0d}{height}} () const
+\item 
+QSize \mbox{\hyperlink{class_q_c_p_axis_rect_a7a8289346eb612f422c704f8b75cf479}{size}} () const
+\item 
+QPoint \mbox{\hyperlink{class_q_c_p_axis_rect_a5a847b3ddeca3abec38d3838fefb0dbd}{top\+Left}} () const
+\item 
+QPoint \mbox{\hyperlink{class_q_c_p_axis_rect_a7aa221967549ba71b98c465bf8234758}{top\+Right}} () const
+\item 
+QPoint \mbox{\hyperlink{class_q_c_p_axis_rect_ab15d4311d6535ccd7af504dc0e2b98c6}{bottom\+Left}} () const
+\item 
+QPoint \mbox{\hyperlink{class_q_c_p_axis_rect_a36dac884ec8fa3a3a2f3842ca7b7d32d}{bottom\+Right}} () const
+\item 
+QPoint \mbox{\hyperlink{class_q_c_p_axis_rect_ade3aef874bafcec6dd16174fba44c0b1}{center}} () const
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_axis_rect_add049d464b9ef2ccdc638adc4ccb4aca}{update}} (\mbox{\hyperlink{class_q_c_p_layout_element_a0d83360e05735735aaf6d7983c56374d}{Update\+Phase}} phase) \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual QList$<$ \mbox{\hyperlink{class_q_c_p_layout_element}{QCPLayout\+Element}} $\ast$ $>$ \mbox{\hyperlink{class_q_c_p_axis_rect_a3aee067fd105f2fa8de9eb8024435ac5}{elements}} (bool recursive) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_axis_rect_a4a318008e2b7f881a14c3d97186b31f9}{apply\+Default\+Antialiasing\+Hint}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_axis_rect_af710c50530e370539a4439d6c4db9090}{draw}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter) \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual int \mbox{\hyperlink{class_q_c_p_axis_rect_ac51055d83f5f414b6d013d3a24b0a941}{calculate\+Auto\+Margin}} (\mbox{\hyperlink{namespace_q_c_p_a7e487e3e2ccb62ab7771065bab7cae54}{QCP\+::\+Margin\+Side}} side) \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_axis_rect_a575e38ac71a21906dc2d7b3364db2d62}{layout\+Changed}} () \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_axis_rect_aa9a7c807eaa4666870ac94aa6abc4dde}{mouse\+Press\+Event}} (QMouse\+Event $\ast$event, const QVariant \&details) \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_axis_rect_a9cd27ad8c5cfb49aefd9dbb30def4beb}{mouse\+Move\+Event}} (QMouse\+Event $\ast$event, const QPointF \&start\+Pos) \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_axis_rect_a6c89b988d3a0b93c0878f0ebdb5037f4}{mouse\+Release\+Event}} (QMouse\+Event $\ast$event, const QPointF \&start\+Pos) \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_axis_rect_a93eeaa0c127d6d6fe8171b2455080262}{wheel\+Event}} (QWheel\+Event $\ast$event) \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+void \mbox{\hyperlink{class_q_c_p_axis_rect_ab49d338d1ce74b476fcead5b32cf06dc}{draw\+Background}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter)
+\item 
+void \mbox{\hyperlink{class_q_c_p_axis_rect_a6024ccdc74f5dc0e8a0fe482e5b28a20}{update\+Axes\+Offset}} (\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18a}{QCPAxis\+::\+Axis\+Type}} type)
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+QBrush \mbox{\hyperlink{class_q_c_p_axis_rect_a5748e1a37f63c428e38b0a7724b46259}{m\+Background\+Brush}}
+\item 
+QPixmap \mbox{\hyperlink{class_q_c_p_axis_rect_a38fb1a15f43228a0c124553649303722}{m\+Background\+Pixmap}}
+\item 
+QPixmap \mbox{\hyperlink{class_q_c_p_axis_rect_aa74b9415598d59b49290e41e42d7ee27}{m\+Scaled\+Background\+Pixmap}}
+\item 
+bool \mbox{\hyperlink{class_q_c_p_axis_rect_a5ad835f0fae5d7cc5ada9e063641dbf1}{m\+Background\+Scaled}}
+\item 
+Qt\+::\+Aspect\+Ratio\+Mode \mbox{\hyperlink{class_q_c_p_axis_rect_a859fd368e794663e346b4f53f35078e9}{m\+Background\+Scaled\+Mode}}
+\item 
+\mbox{\hyperlink{class_q_c_p_layout_inset}{QCPLayout\+Inset}} $\ast$ \mbox{\hyperlink{class_q_c_p_axis_rect_a255240399e0fd24baad80cbbe46f698a}{m\+Inset\+Layout}}
+\item 
+Qt\+::\+Orientations \mbox{\hyperlink{class_q_c_p_axis_rect_aa9f107f66ca3469ad50ee6cea7c9e237}{m\+Range\+Drag}}
+\item 
+Qt\+::\+Orientations \mbox{\hyperlink{class_q_c_p_axis_rect_a215eff671d48df2edccc36e7f976f28c}{m\+Range\+Zoom}}
+\item 
+QList$<$ QPointer$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $>$ $>$ \mbox{\hyperlink{class_q_c_p_axis_rect_abd4f1d854b41a9c6730f3a3d605c42af}{m\+Range\+Drag\+Horz\+Axis}}
+\item 
+QList$<$ QPointer$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $>$ $>$ \mbox{\hyperlink{class_q_c_p_axis_rect_a3b0a86e5bb136a458d7bc20773e45853}{m\+Range\+Drag\+Vert\+Axis}}
+\item 
+QList$<$ QPointer$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $>$ $>$ \mbox{\hyperlink{class_q_c_p_axis_rect_aa35eeb02f68b63f2069fcc80c9334b91}{m\+Range\+Zoom\+Horz\+Axis}}
+\item 
+QList$<$ QPointer$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $>$ $>$ \mbox{\hyperlink{class_q_c_p_axis_rect_aafb0e243294c158668499fd62cee057c}{m\+Range\+Zoom\+Vert\+Axis}}
+\item 
+double \mbox{\hyperlink{class_q_c_p_axis_rect_ad08d0250ed7b99de387d0ea6c7fd4dc1}{m\+Range\+Zoom\+Factor\+Horz}}
+\item 
+double \mbox{\hyperlink{class_q_c_p_axis_rect_a32f063629581d5bf82b12769940b34ad}{m\+Range\+Zoom\+Factor\+Vert}}
+\item 
+QList$<$ \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} $>$ \mbox{\hyperlink{class_q_c_p_axis_rect_a274aef08c4de084a3f26c3e92fac3a79}{m\+Drag\+Start\+Horz\+Range}}
+\item 
+QList$<$ \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} $>$ \mbox{\hyperlink{class_q_c_p_axis_rect_ab362ee8f71a156d812a1ea793a1e42cb}{m\+Drag\+Start\+Vert\+Range}}
+\item 
+QCP\+::\+Antialiased\+Elements \mbox{\hyperlink{class_q_c_p_axis_rect_aa4a24f76360cfebe1bcf17a77fa7521b}{m\+AADrag\+Backup}}
+\item 
+QCP\+::\+Antialiased\+Elements \mbox{\hyperlink{class_q_c_p_axis_rect_a6fcb12e052e276d57efbb128be31d6f5}{m\+Not\+AADrag\+Backup}}
+\item 
+bool \mbox{\hyperlink{class_q_c_p_axis_rect_ab49a6698194cf0e9e38a1d734c0888a8}{m\+Dragging}}
+\item 
+QHash$<$ \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18a}{QCPAxis\+::\+Axis\+Type}}, QList$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ $>$ $>$ \mbox{\hyperlink{class_q_c_p_axis_rect_ac2cb3ba9a25b733883afc3bd25f7d82b}{m\+Axes}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Друзья}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_q_c_p_axis_rect_a1cdf9df76adcfae45261690aa0ca2198}{QCustom\+Plot}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Дополнительные унаследованные члены}
+
+
+\doxysubsection{Подробное описание}
+Holds multiple axes and arranges them in a rectangular shape. 
+
+This class represents an axis rect, a rectangular area that is bounded on all sides with an arbitrary number of axes.
+
+Initially \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} has one axis rect, accessible via \mbox{\hyperlink{class_q_custom_plot_ae5eefcb5f6ca26689b1fd4f6e25b42f9}{QCustom\+Plot\+::axis\+Rect()}}. However, the layout system allows to have multiple axis rects, e.\+g. arranged in a grid layout (\mbox{\hyperlink{class_q_custom_plot_af1a1f1f571237deb7c2bd34a5e9f018f}{QCustom\+Plot\+::plot\+Layout}}).
+
+By default, \mbox{\hyperlink{class_q_c_p_axis_rect}{QCPAxis\+Rect}} comes with four axes, at bottom, top, left and right. They can be accessed via \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}} by providing the respective axis type (\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18a}{QCPAxis\+::\+Axis\+Type}}) and index. If you need all axes in the axis rect, use \mbox{\hyperlink{class_q_c_p_axis_rect_a8db4722cb93e9c4a6f0d91150c200867}{axes}}. The top and right axes are set to be invisible initially (\mbox{\hyperlink{class_q_c_p_layerable_a3bed99ddc396b48ce3ebfdc0418744f8}{QCPAxis\+::set\+Visible}}). To add more axes to a side, use \mbox{\hyperlink{class_q_c_p_axis_rect_a2a845ee60eac7a8d5e71718c5e77c274}{add\+Axis}} or \mbox{\hyperlink{class_q_c_p_axis_rect_a792e1f3d9cb1591fca135bb0de9b81fc}{add\+Axes}}. To remove an axis, use \mbox{\hyperlink{class_q_c_p_axis_rect_a03c39cd9704f0d36fb6cf980cdddcbaa}{remove\+Axis}}.
+
+The axis rect layerable itself only draws a background pixmap or color, if specified (\mbox{\hyperlink{class_q_c_p_axis_rect_af615ab5e52b8e0a9a0eff415b6559db5}{set\+Background}}). It is placed on the \char`\"{}background\char`\"{} layer initially (see \mbox{\hyperlink{class_q_c_p_layer}{QCPLayer}} for an explanation of the \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} layer system). The axes that are held by the axis rect can be placed on other layers, independently of the axis rect.
+
+Every axis rect has a child layout of type \mbox{\hyperlink{class_q_c_p_layout_inset}{QCPLayout\+Inset}}. It is accessible via \mbox{\hyperlink{class_q_c_p_axis_rect_a949f803466619924c7018df4b511ae10}{inset\+Layout}} and can be used to have other layout elements (or even other layouts with multiple elements) hovering inside the axis rect.
+
+If an axis rect is clicked and dragged, it processes this by moving certain axis ranges. The behaviour can be controlled with \mbox{\hyperlink{class_q_c_p_axis_rect_ae6aef2f7211ba6097c925dcd26008418}{set\+Range\+Drag}} and \mbox{\hyperlink{class_q_c_p_axis_rect_a648cce336bd99daac4a5ca3e5743775d}{set\+Range\+Drag\+Axes}}. If the mouse wheel is scrolled while the cursor is on the axis rect, certain axes are scaled. This is controllable via \mbox{\hyperlink{class_q_c_p_axis_rect_a7960a9d222f1c31d558b064b60f86a31}{set\+Range\+Zoom}}, \mbox{\hyperlink{class_q_c_p_axis_rect_a9442cca2aa358405f39a64d51eca13d2}{set\+Range\+Zoom\+Axes}} and \mbox{\hyperlink{class_q_c_p_axis_rect_a895d7ac745ea614e04056244b3c138ac}{set\+Range\+Zoom\+Factor}}. These interactions are only enabled if \mbox{\hyperlink{class_q_custom_plot_a5ee1e2f6ae27419deca53e75907c27e5}{QCustom\+Plot\+::set\+Interactions}} contains \mbox{\hyperlink{namespace_q_c_p_a2ad6bb6281c7c2d593d4277b44c2b037a2c4432b9aceafb94000be8d1b589ef18}{QCP\+::i\+Range\+Drag}} and \mbox{\hyperlink{namespace_q_c_p_a2ad6bb6281c7c2d593d4277b44c2b037abee1e94353525a636aeaf0ba32b72e14}{QCP\+::i\+Range\+Zoom}}.
+
+ \begin{center}Overview of the spacings and paddings that define the geometry of an axis. The dashed line on the far left indicates the viewport/widget border.\end{center}  
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a60b31dece805462c1b82eea2e69ba042}\label{class_q_c_p_axis_rect_a60b31dece805462c1b82eea2e69ba042}} 
+\index{QCPAxisRect@{QCPAxisRect}!QCPAxisRect@{QCPAxisRect}}
+\index{QCPAxisRect@{QCPAxisRect}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{QCPAxisRect()}{QCPAxisRect()}}
+{\footnotesize\ttfamily QCPAxis\+Rect\+::\+QCPAxis\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} $\ast$}]{parent\+Plot,  }\item[{bool}]{setup\+Default\+Axes = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Creates a \mbox{\hyperlink{class_q_c_p_axis_rect}{QCPAxis\+Rect}} instance and sets default values. An axis is added for each of the four sides, the top and right axes are set invisible initially. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18025     : \mbox{\hyperlink{class_q_c_p_layout_element_a2c25c7bf27eaa1fad66807af855d8d81}{QCPLayoutElement}}(\mbox{\hyperlink{class_q_c_p_layerable_a473edb813a4c1929d6b6a8fe3ff3faf7}{parentPlot}}),}
+\DoxyCodeLine{18026       \mbox{\hyperlink{class_q_c_p_axis_rect_a5748e1a37f63c428e38b0a7724b46259}{mBackgroundBrush}}(Qt::NoBrush),}
+\DoxyCodeLine{18027       \mbox{\hyperlink{class_q_c_p_axis_rect_a5ad835f0fae5d7cc5ada9e063641dbf1}{mBackgroundScaled}}(\textcolor{keyword}{true}),}
+\DoxyCodeLine{18028       \mbox{\hyperlink{class_q_c_p_axis_rect_a859fd368e794663e346b4f53f35078e9}{mBackgroundScaledMode}}(Qt::KeepAspectRatioByExpanding),}
+\DoxyCodeLine{18029       \mbox{\hyperlink{class_q_c_p_axis_rect_a255240399e0fd24baad80cbbe46f698a}{mInsetLayout}}(\textcolor{keyword}{new} \mbox{\hyperlink{class_q_c_p_layout_inset}{QCPLayoutInset}}),}
+\DoxyCodeLine{18030       \mbox{\hyperlink{class_q_c_p_axis_rect_aa9f107f66ca3469ad50ee6cea7c9e237}{mRangeDrag}}(Qt::Horizontal | Qt::Vertical),}
+\DoxyCodeLine{18031       \mbox{\hyperlink{class_q_c_p_axis_rect_a215eff671d48df2edccc36e7f976f28c}{mRangeZoom}}(Qt::Horizontal | Qt::Vertical),}
+\DoxyCodeLine{18032       \mbox{\hyperlink{class_q_c_p_axis_rect_ad08d0250ed7b99de387d0ea6c7fd4dc1}{mRangeZoomFactorHorz}}(0.85),}
+\DoxyCodeLine{18033       \mbox{\hyperlink{class_q_c_p_axis_rect_a32f063629581d5bf82b12769940b34ad}{mRangeZoomFactorVert}}(0.85),}
+\DoxyCodeLine{18034       \mbox{\hyperlink{class_q_c_p_axis_rect_ab49a6698194cf0e9e38a1d734c0888a8}{mDragging}}(\textcolor{keyword}{false}) \{}
+\DoxyCodeLine{18035   \mbox{\hyperlink{class_q_c_p_axis_rect_a255240399e0fd24baad80cbbe46f698a}{mInsetLayout}}-\/>\mbox{\hyperlink{class_q_c_p_layerable_a8cbe5a0c9a5674249982f5ca5f8e02bc}{initializeParentPlot}}(\mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}});}
+\DoxyCodeLine{18036   \mbox{\hyperlink{class_q_c_p_axis_rect_a255240399e0fd24baad80cbbe46f698a}{mInsetLayout}}-\/>\mbox{\hyperlink{class_q_c_p_layerable_aa23c893671f1f6744ac235cf2204cf3a}{setParentLayerable}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{18037   \mbox{\hyperlink{class_q_c_p_axis_rect_a255240399e0fd24baad80cbbe46f698a}{mInsetLayout}}-\/>setParent(\textcolor{keyword}{this});}
+\DoxyCodeLine{18038 }
+\DoxyCodeLine{18039   \mbox{\hyperlink{class_q_c_p_layout_element_a5dd29a3c8bc88440c97c06b67be7886b}{setMinimumSize}}(50, 50);}
+\DoxyCodeLine{18040   \mbox{\hyperlink{class_q_c_p_layout_element_a0a8a17abc16b7923159fcc7608f94673}{setMinimumMargins}}(QMargins(15, 15, 15, 15));}
+\DoxyCodeLine{18041   \mbox{\hyperlink{class_q_c_p_axis_rect_ac2cb3ba9a25b733883afc3bd25f7d82b}{mAxes}}.insert(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aaf84aa6cac6fb6099f54a2cbf7546b730}{QCPAxis::atLeft}}, QList<QCPAxis *>());}
+\DoxyCodeLine{18042   \mbox{\hyperlink{class_q_c_p_axis_rect_ac2cb3ba9a25b733883afc3bd25f7d82b}{mAxes}}.insert(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aadf5509f7d29199ef2f263b1dd224b345}{QCPAxis::atRight}}, QList<QCPAxis *>());}
+\DoxyCodeLine{18043   \mbox{\hyperlink{class_q_c_p_axis_rect_ac2cb3ba9a25b733883afc3bd25f7d82b}{mAxes}}.insert(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aac0ece2b680d3f545e701f75af1655977}{QCPAxis::atTop}}, QList<QCPAxis *>());}
+\DoxyCodeLine{18044   \mbox{\hyperlink{class_q_c_p_axis_rect_ac2cb3ba9a25b733883afc3bd25f7d82b}{mAxes}}.insert(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aa220d68888516b6c3b493d144f1ba438f}{QCPAxis::atBottom}}, QList<QCPAxis *>());}
+\DoxyCodeLine{18045 }
+\DoxyCodeLine{18046   \textcolor{keywordflow}{if} (setupDefaultAxes) \{}
+\DoxyCodeLine{18047     \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} *xAxis = \mbox{\hyperlink{class_q_c_p_axis_rect_a2a845ee60eac7a8d5e71718c5e77c274}{addAxis}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aa220d68888516b6c3b493d144f1ba438f}{QCPAxis::atBottom}});}
+\DoxyCodeLine{18048     \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} *yAxis = \mbox{\hyperlink{class_q_c_p_axis_rect_a2a845ee60eac7a8d5e71718c5e77c274}{addAxis}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aaf84aa6cac6fb6099f54a2cbf7546b730}{QCPAxis::atLeft}});}
+\DoxyCodeLine{18049     \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} *xAxis2 = \mbox{\hyperlink{class_q_c_p_axis_rect_a2a845ee60eac7a8d5e71718c5e77c274}{addAxis}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aac0ece2b680d3f545e701f75af1655977}{QCPAxis::atTop}});}
+\DoxyCodeLine{18050     \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} *yAxis2 = \mbox{\hyperlink{class_q_c_p_axis_rect_a2a845ee60eac7a8d5e71718c5e77c274}{addAxis}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aadf5509f7d29199ef2f263b1dd224b345}{QCPAxis::atRight}});}
+\DoxyCodeLine{18051     \mbox{\hyperlink{class_q_c_p_axis_rect_a648cce336bd99daac4a5ca3e5743775d}{setRangeDragAxes}}(xAxis, yAxis);}
+\DoxyCodeLine{18052     \mbox{\hyperlink{class_q_c_p_axis_rect_a9442cca2aa358405f39a64d51eca13d2}{setRangeZoomAxes}}(xAxis, yAxis);}
+\DoxyCodeLine{18053     xAxis2-\/>\mbox{\hyperlink{class_q_c_p_layerable_a3bed99ddc396b48ce3ebfdc0418744f8}{setVisible}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{18054     yAxis2-\/>\mbox{\hyperlink{class_q_c_p_layerable_a3bed99ddc396b48ce3ebfdc0418744f8}{setVisible}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{18055     xAxis-\/>\mbox{\hyperlink{class_q_c_p_axis_a63f1dd2df663680d2a8d06c19592dd63}{grid}}()-\/>\mbox{\hyperlink{class_q_c_p_layerable_a3bed99ddc396b48ce3ebfdc0418744f8}{setVisible}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{18056     yAxis-\/>\mbox{\hyperlink{class_q_c_p_axis_a63f1dd2df663680d2a8d06c19592dd63}{grid}}()-\/>\mbox{\hyperlink{class_q_c_p_layerable_a3bed99ddc396b48ce3ebfdc0418744f8}{setVisible}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{18057     xAxis2-\/>\mbox{\hyperlink{class_q_c_p_axis_a63f1dd2df663680d2a8d06c19592dd63}{grid}}()-\/>\mbox{\hyperlink{class_q_c_p_layerable_a3bed99ddc396b48ce3ebfdc0418744f8}{setVisible}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{18058     yAxis2-\/>\mbox{\hyperlink{class_q_c_p_axis_a63f1dd2df663680d2a8d06c19592dd63}{grid}}()-\/>\mbox{\hyperlink{class_q_c_p_layerable_a3bed99ddc396b48ce3ebfdc0418744f8}{setVisible}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{18059     xAxis2-\/>\mbox{\hyperlink{class_q_c_p_axis_a63f1dd2df663680d2a8d06c19592dd63}{grid}}()-\/>\mbox{\hyperlink{class_q_c_p_grid_a209f40fdb252397b418b82d3494d8ea0}{setZeroLinePen}}(Qt::NoPen);}
+\DoxyCodeLine{18060     yAxis2-\/>\mbox{\hyperlink{class_q_c_p_axis_a63f1dd2df663680d2a8d06c19592dd63}{grid}}()-\/>\mbox{\hyperlink{class_q_c_p_grid_a209f40fdb252397b418b82d3494d8ea0}{setZeroLinePen}}(Qt::NoPen);}
+\DoxyCodeLine{18061     xAxis2-\/>\mbox{\hyperlink{class_q_c_p_axis_a63f1dd2df663680d2a8d06c19592dd63}{grid}}()-\/>\mbox{\hyperlink{class_q_c_p_layerable_a3bed99ddc396b48ce3ebfdc0418744f8}{setVisible}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{18062     yAxis2-\/>\mbox{\hyperlink{class_q_c_p_axis_a63f1dd2df663680d2a8d06c19592dd63}{grid}}()-\/>\mbox{\hyperlink{class_q_c_p_layerable_a3bed99ddc396b48ce3ebfdc0418744f8}{setVisible}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{18063   \}}
+\DoxyCodeLine{18064 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a1e8a674908e23d107aaf275227c54aaf}\label{class_q_c_p_axis_rect_a1e8a674908e23d107aaf275227c54aaf}} 
+\index{QCPAxisRect@{QCPAxisRect}!````~QCPAxisRect@{$\sim$QCPAxisRect}}
+\index{````~QCPAxisRect@{$\sim$QCPAxisRect}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{$\sim$QCPAxisRect()}{~QCPAxisRect()}}
+{\footnotesize\ttfamily QCPAxis\+Rect\+::$\sim$\+QCPAxis\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18066                           \{}
+\DoxyCodeLine{18067   \textcolor{keyword}{delete} \mbox{\hyperlink{class_q_c_p_axis_rect_a255240399e0fd24baad80cbbe46f698a}{mInsetLayout}};}
+\DoxyCodeLine{18068   \mbox{\hyperlink{class_q_c_p_axis_rect_a255240399e0fd24baad80cbbe46f698a}{mInsetLayout}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{18069 }
+\DoxyCodeLine{18070   \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} *\mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}, \mbox{\hyperlink{class_q_c_p_axis_rect_a11657b8faebe9677180860e8057ede26}{axes}}()) \mbox{\hyperlink{class_q_c_p_axis_rect_a03c39cd9704f0d36fb6cf980cdddcbaa}{removeAxis}}(\mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}});}
+\DoxyCodeLine{18071 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a792e1f3d9cb1591fca135bb0de9b81fc}\label{class_q_c_p_axis_rect_a792e1f3d9cb1591fca135bb0de9b81fc}} 
+\index{QCPAxisRect@{QCPAxisRect}!addAxes@{addAxes}}
+\index{addAxes@{addAxes}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{addAxes()}{addAxes()}}
+{\footnotesize\ttfamily QList$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ $>$ QCPAxis\+Rect\+::add\+Axes (\begin{DoxyParamCaption}\item[{QCPAxis\+::\+Axis\+Types}]{types }\end{DoxyParamCaption})}
+
+Adds a new axis with \mbox{\hyperlink{class_q_c_p_axis_rect_a2a845ee60eac7a8d5e71718c5e77c274}{add\+Axis}} to each axis rect side specified in {\itshape types}. This may be an {\ttfamily or}-\/combination of \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18a}{QCPAxis\+::\+Axis\+Type}}, so axes can be added to multiple sides at once.
+
+Returns a list of the added axes.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_axis_rect_a2a845ee60eac7a8d5e71718c5e77c274}{add\+Axis}}, \mbox{\hyperlink{class_q_c_p_axis_rect_a5fa906175447b14206954f77fc7f1ef4}{setup\+Full\+Axes\+Box}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18223                                                             \{}
+\DoxyCodeLine{18224   QList<QCPAxis *> result;}
+\DoxyCodeLine{18225   \textcolor{keywordflow}{if} (types.testFlag(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aaf84aa6cac6fb6099f54a2cbf7546b730}{QCPAxis::atLeft}})) result << \mbox{\hyperlink{class_q_c_p_axis_rect_a2a845ee60eac7a8d5e71718c5e77c274}{addAxis}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aaf84aa6cac6fb6099f54a2cbf7546b730}{QCPAxis::atLeft}});}
+\DoxyCodeLine{18226   \textcolor{keywordflow}{if} (types.testFlag(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aadf5509f7d29199ef2f263b1dd224b345}{QCPAxis::atRight}})) result << \mbox{\hyperlink{class_q_c_p_axis_rect_a2a845ee60eac7a8d5e71718c5e77c274}{addAxis}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aadf5509f7d29199ef2f263b1dd224b345}{QCPAxis::atRight}});}
+\DoxyCodeLine{18227   \textcolor{keywordflow}{if} (types.testFlag(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aac0ece2b680d3f545e701f75af1655977}{QCPAxis::atTop}})) result << \mbox{\hyperlink{class_q_c_p_axis_rect_a2a845ee60eac7a8d5e71718c5e77c274}{addAxis}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aac0ece2b680d3f545e701f75af1655977}{QCPAxis::atTop}});}
+\DoxyCodeLine{18228   \textcolor{keywordflow}{if} (types.testFlag(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aa220d68888516b6c3b493d144f1ba438f}{QCPAxis::atBottom}})) result << \mbox{\hyperlink{class_q_c_p_axis_rect_a2a845ee60eac7a8d5e71718c5e77c274}{addAxis}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aa220d68888516b6c3b493d144f1ba438f}{QCPAxis::atBottom}});}
+\DoxyCodeLine{18229   \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{18230 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a2a845ee60eac7a8d5e71718c5e77c274}\label{class_q_c_p_axis_rect_a2a845ee60eac7a8d5e71718c5e77c274}} 
+\index{QCPAxisRect@{QCPAxisRect}!addAxis@{addAxis}}
+\index{addAxis@{addAxis}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{addAxis()}{addAxis()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ QCPAxis\+Rect\+::add\+Axis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18a}{QCPAxis\+::\+Axis\+Type}}}]{type,  }\item[{\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$}]{axis = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+Adds a new axis to the axis rect side specified with {\itshape type}, and returns it. If {\itshape axis} is 0, a new \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} instance is created internally. \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} owns the returned axis, so if you want to remove an axis, use \mbox{\hyperlink{class_q_c_p_axis_rect_a03c39cd9704f0d36fb6cf980cdddcbaa}{remove\+Axis}} instead of deleting it manually.
+
+You may inject \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} instances (or subclasses of \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}}) by setting {\itshape axis} to an axis that was previously created outside \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}}. It is important to note that \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} takes ownership of the axis, so you may not delete it afterwards. Further, the {\itshape axis} must have been created with this axis rect as parent and with the same axis type as specified in {\itshape type}. If this is not the case, a debug output is generated, the axis is not added, and the method returns {\ttfamily nullptr}.
+
+This method can not be used to move {\itshape axis} between axis rects. The same {\itshape axis} instance must not be added multiple times to the same or different axis rects.
+
+If an axis rect side already contains one or more axes, the lower and upper endings of the new axis (\mbox{\hyperlink{class_q_c_p_axis_a08af1c72db9ae4dc8cb8a973d44405ab}{QCPAxis\+::set\+Lower\+Ending}}, \mbox{\hyperlink{class_q_c_p_axis_a69119b892fc306f651763596685aa377}{QCPAxis\+::set\+Upper\+Ending}}) are set to \mbox{\hyperlink{class_q_c_p_line_ending_a5ef16e6876b4b74959c7261d8d4c2cd5a126c390f0c359fcd8df1fc5e38d26d5b}{QCPLine\+Ending\+::es\+Half\+Bar}}.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_axis_rect_a792e1f3d9cb1591fca135bb0de9b81fc}{add\+Axes}}, \mbox{\hyperlink{class_q_c_p_axis_rect_a5fa906175447b14206954f77fc7f1ef4}{setup\+Full\+Axes\+Box}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18154                                                                  \{}
+\DoxyCodeLine{18155   \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} *newAxis = \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}};}
+\DoxyCodeLine{18156   \textcolor{keywordflow}{if} (!newAxis) \{}
+\DoxyCodeLine{18157     newAxis = \textcolor{keyword}{new} \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}}(\textcolor{keyword}{this}, type);}
+\DoxyCodeLine{18158   \} \textcolor{keywordflow}{else}  \textcolor{comment}{// user provided existing axis instance, do some sanity checks}}
+\DoxyCodeLine{18159   \{}
+\DoxyCodeLine{18160     \textcolor{keywordflow}{if} (newAxis-\/>\mbox{\hyperlink{class_q_c_p_axis_aa19679359783c5ecd27757b7e5619976}{axisType}}() != type) \{}
+\DoxyCodeLine{18161       qDebug() << Q\_FUNC\_INFO}
+\DoxyCodeLine{18162                << \textcolor{stringliteral}{"{}passed axis has different axis type than specified in type "{}}}
+\DoxyCodeLine{18163                   \textcolor{stringliteral}{"{}parameter"{}};}
+\DoxyCodeLine{18164       \textcolor{keywordflow}{return} \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{18165     \}}
+\DoxyCodeLine{18166     \textcolor{keywordflow}{if} (newAxis-\/>\mbox{\hyperlink{class_q_c_p_axis_afc94bcfdf8adfe8e01013f13bdf159a2}{axisRect}}() != \textcolor{keyword}{this}) \{}
+\DoxyCodeLine{18167       qDebug() << Q\_FUNC\_INFO}
+\DoxyCodeLine{18168                << \textcolor{stringliteral}{"{}passed axis doesn't have this axis rect as parent axis rect"{}};}
+\DoxyCodeLine{18169       \textcolor{keywordflow}{return} \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{18170     \}}
+\DoxyCodeLine{18171     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_rect_a11657b8faebe9677180860e8057ede26}{axes}}().contains(newAxis)) \{}
+\DoxyCodeLine{18172       qDebug() << Q\_FUNC\_INFO}
+\DoxyCodeLine{18173                << \textcolor{stringliteral}{"{}passed axis is already owned by this axis rect"{}};}
+\DoxyCodeLine{18174       \textcolor{keywordflow}{return} \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{18175     \}}
+\DoxyCodeLine{18176   \}}
+\DoxyCodeLine{18177   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_axis_rect_ac2cb3ba9a25b733883afc3bd25f7d82b}{mAxes}}[type].isEmpty())  \textcolor{comment}{// multiple axes on one side, add half-\/bar axis}}
+\DoxyCodeLine{18178                                \textcolor{comment}{// ending to additional axes with offset}}
+\DoxyCodeLine{18179   \{}
+\DoxyCodeLine{18180     \textcolor{keywordtype}{bool} invert = (type == \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aadf5509f7d29199ef2f263b1dd224b345}{QCPAxis::atRight}}) || (type == \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aa220d68888516b6c3b493d144f1ba438f}{QCPAxis::atBottom}});}
+\DoxyCodeLine{18181     newAxis-\/>\mbox{\hyperlink{class_q_c_p_axis_a08af1c72db9ae4dc8cb8a973d44405ab}{setLowerEnding}}(}
+\DoxyCodeLine{18182         \mbox{\hyperlink{class_q_c_p_line_ending}{QCPLineEnding}}(\mbox{\hyperlink{class_q_c_p_line_ending_a5ef16e6876b4b74959c7261d8d4c2cd5a126c390f0c359fcd8df1fc5e38d26d5b}{QCPLineEnding::esHalfBar}}, 6, 10, !invert));}
+\DoxyCodeLine{18183     newAxis-\/>\mbox{\hyperlink{class_q_c_p_axis_a69119b892fc306f651763596685aa377}{setUpperEnding}}(}
+\DoxyCodeLine{18184         \mbox{\hyperlink{class_q_c_p_line_ending}{QCPLineEnding}}(\mbox{\hyperlink{class_q_c_p_line_ending_a5ef16e6876b4b74959c7261d8d4c2cd5a126c390f0c359fcd8df1fc5e38d26d5b}{QCPLineEnding::esHalfBar}}, 6, 10, invert));}
+\DoxyCodeLine{18185   \}}
+\DoxyCodeLine{18186   \mbox{\hyperlink{class_q_c_p_axis_rect_ac2cb3ba9a25b733883afc3bd25f7d82b}{mAxes}}[type].append(newAxis);}
+\DoxyCodeLine{18187 }
+\DoxyCodeLine{18188   \textcolor{comment}{// reset convenience axis pointers on parent QCustomPlot if they are unset:}}
+\DoxyCodeLine{18189   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}} \&\& \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a8f85940aaac50efb466287d9d2d04ec6}{axisRectCount}}() > 0 \&\&}
+\DoxyCodeLine{18190       \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_ae5eefcb5f6ca26689b1fd4f6e25b42f9}{axisRect}}(0) == \textcolor{keyword}{this}) \{}
+\DoxyCodeLine{18191     \textcolor{keywordflow}{switch} (type) \{}
+\DoxyCodeLine{18192       \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aa220d68888516b6c3b493d144f1ba438f}{QCPAxis::atBottom}}: \{}
+\DoxyCodeLine{18193         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a9a79cd0158a4c7f30cbc702f0fd800e4}{xAxis}}) \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a9a79cd0158a4c7f30cbc702f0fd800e4}{xAxis}} = newAxis;}
+\DoxyCodeLine{18194         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{18195       \}}
+\DoxyCodeLine{18196       \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aaf84aa6cac6fb6099f54a2cbf7546b730}{QCPAxis::atLeft}}: \{}
+\DoxyCodeLine{18197         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_af6fea5679725b152c14facd920b19367}{yAxis}}) \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_af6fea5679725b152c14facd920b19367}{yAxis}} = newAxis;}
+\DoxyCodeLine{18198         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{18199       \}}
+\DoxyCodeLine{18200       \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aac0ece2b680d3f545e701f75af1655977}{QCPAxis::atTop}}: \{}
+\DoxyCodeLine{18201         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_ada41599f22cad901c030f3dcbdd82fd9}{xAxis2}}) \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_ada41599f22cad901c030f3dcbdd82fd9}{xAxis2}} = newAxis;}
+\DoxyCodeLine{18202         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{18203       \}}
+\DoxyCodeLine{18204       \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aadf5509f7d29199ef2f263b1dd224b345}{QCPAxis::atRight}}: \{}
+\DoxyCodeLine{18205         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_af13fdc5bce7d0fabd640f13ba805c0b7}{yAxis2}}) \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_af13fdc5bce7d0fabd640f13ba805c0b7}{yAxis2}} = newAxis;}
+\DoxyCodeLine{18206         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{18207       \}}
+\DoxyCodeLine{18208     \}}
+\DoxyCodeLine{18209   \}}
+\DoxyCodeLine{18210 }
+\DoxyCodeLine{18211   \textcolor{keywordflow}{return} newAxis;}
+\DoxyCodeLine{18212 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a4a318008e2b7f881a14c3d97186b31f9}\label{class_q_c_p_axis_rect_a4a318008e2b7f881a14c3d97186b31f9}} 
+\index{QCPAxisRect@{QCPAxisRect}!applyDefaultAntialiasingHint@{applyDefaultAntialiasingHint}}
+\index{applyDefaultAntialiasingHint@{applyDefaultAntialiasingHint}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{applyDefaultAntialiasingHint()}{applyDefaultAntialiasingHint()}}
+{\footnotesize\ttfamily void QCPAxis\+Rect\+::apply\+Default\+Antialiasing\+Hint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+This function applies the default antialiasing setting to the specified {\itshape painter}, using the function \mbox{\hyperlink{class_q_c_p_layerable_acb663e375d2d36dc5c55021ee5a2119b}{apply\+Antialiasing\+Hint}}. It is the antialiasing state the painter is put in, when \mbox{\hyperlink{class_q_c_p_axis_rect_af710c50530e370539a4439d6c4db9090}{draw}} is called on the layerable. If the layerable has multiple entities whose antialiasing setting may be specified individually, this function should set the antialiasing state of the most prominent entity. In this case however, the \mbox{\hyperlink{class_q_c_p_axis_rect_af710c50530e370539a4439d6c4db9090}{draw}} function usually calls the specialized versions of this function before drawing each entity, effectively overriding the setting of the default antialiasing hint.
+
+{\bfseries{First example\+:}} \mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} has multiple entities that have an antialiasing setting\+: The graph line, fills and scatters. Those can be configured via \mbox{\hyperlink{class_q_c_p_layerable_a4fd43e89be4a553ead41652565ff0581}{QCPGraph\+::set\+Antialiased}}, \mbox{\hyperlink{class_q_c_p_abstract_plottable_a089d6b5577120239b55c39ed27c39536}{QCPGraph\+::set\+Antialiased\+Fill}} and \mbox{\hyperlink{class_q_c_p_abstract_plottable_a2f03f067ede2ed4da6f7d0e4777a3f02}{QCPGraph\+::set\+Antialiased\+Scatters}}. Consequently, there isn\textquotesingle{}t only the \mbox{\hyperlink{class_q_c_p_abstract_plottable_ac032077fb0db93d6faa3273d02363398}{QCPGraph\+::apply\+Default\+Antialiasing\+Hint}} function (which corresponds to the graph line\textquotesingle{}s antialiasing), but specialized ones like \mbox{\hyperlink{class_q_c_p_abstract_plottable_a8d06a59ea23324cce6330ebf2262c0ed}{QCPGraph\+::apply\+Fill\+Antialiasing\+Hint}} and \mbox{\hyperlink{class_q_c_p_abstract_plottable_ac95f26b15a1e5d9c7bd2c0a46d760fc9}{QCPGraph\+::apply\+Scatters\+Antialiasing\+Hint}}. So before drawing one of those entities, \mbox{\hyperlink{class_q_c_p_graph_a2b0849598f06e834b43ce18cd13bcdc3}{QCPGraph\+::draw}} calls the respective specialized apply\+Antialiasing\+Hint function.
+
+{\bfseries{Second example\+:}} \mbox{\hyperlink{class_q_c_p_item_line}{QCPItem\+Line}} consists only of a line so there is only one antialiasing setting which can be controlled with \mbox{\hyperlink{class_q_c_p_layerable_a4fd43e89be4a553ead41652565ff0581}{QCPItem\+Line\+::set\+Antialiased}}. (This function is inherited by all layerables. The specialized functions, as seen on \mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}}, must be added explicitly to the respective layerable subclass.) Consequently it only has the normal \mbox{\hyperlink{class_q_c_p_abstract_item_a5579ce9ec7cad202499886b042448b10}{QCPItem\+Line\+::apply\+Default\+Antialiasing\+Hint}}. The \mbox{\hyperlink{class_q_c_p_item_line_ae184140b61b2ef5b8edde76304447200}{QCPItem\+Line\+::draw}} function doesn\textquotesingle{}t need to care about setting any antialiasing states, because the default antialiasing hint is already set on the painter when the \mbox{\hyperlink{class_q_c_p_axis_rect_af710c50530e370539a4439d6c4db9090}{draw}} function is called, and that\textquotesingle{}s the state it wants to draw the line with. 
+
+Переопределяет метод предка \mbox{\hyperlink{class_q_c_p_layout_element_a0a8f18141bcf46cf40ad4c13324ff346}{QCPLayout\+Element}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18496                                                                         \{}
+\DoxyCodeLine{18497   painter-\/>\mbox{\hyperlink{class_q_c_p_painter_aaba1deb9188244d9ea65b035112b4d05}{setAntialiasing}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{18498 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a11657b8faebe9677180860e8057ede26}\label{class_q_c_p_axis_rect_a11657b8faebe9677180860e8057ede26}} 
+\index{QCPAxisRect@{QCPAxisRect}!axes@{axes}}
+\index{axes@{axes}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{axes()}{axes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily QList$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ $>$ QCPAxis\+Rect\+::axes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Эта функция перегружена и предоставляется исключительно для удобства использования. Она отличается от вышеупомянутой только фактическими аргументами.
+
+Returns all axes of this axis rect. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18120                                          \{}
+\DoxyCodeLine{18121   QList<QCPAxis *> result;}
+\DoxyCodeLine{18122   QHashIterator<QCPAxis::AxisType, QList<QCPAxis *> > it(\mbox{\hyperlink{class_q_c_p_axis_rect_ac2cb3ba9a25b733883afc3bd25f7d82b}{mAxes}});}
+\DoxyCodeLine{18123   \textcolor{keywordflow}{while} (it.hasNext()) \{}
+\DoxyCodeLine{18124     it.next();}
+\DoxyCodeLine{18125     result << it.value();}
+\DoxyCodeLine{18126   \}}
+\DoxyCodeLine{18127   \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{18128 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a8db4722cb93e9c4a6f0d91150c200867}\label{class_q_c_p_axis_rect_a8db4722cb93e9c4a6f0d91150c200867}} 
+\index{QCPAxisRect@{QCPAxisRect}!axes@{axes}}
+\index{axes@{axes}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{axes()}{axes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily QList$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ $>$ QCPAxis\+Rect\+::axes (\begin{DoxyParamCaption}\item[{QCPAxis\+::\+Axis\+Types}]{types }\end{DoxyParamCaption}) const}
+
+Returns all axes on the axis rect sides specified with {\itshape types}.
+
+{\itshape types} may be a single \mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18a}{QCPAxis\+::\+Axis\+Type}} or an {\ttfamily or}-\/combination, to get the axes of multiple sides.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18106                                                                \{}
+\DoxyCodeLine{18107   QList<QCPAxis *> result;}
+\DoxyCodeLine{18108   \textcolor{keywordflow}{if} (types.testFlag(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aaf84aa6cac6fb6099f54a2cbf7546b730}{QCPAxis::atLeft}})) result << \mbox{\hyperlink{class_q_c_p_axis_rect_ac2cb3ba9a25b733883afc3bd25f7d82b}{mAxes}}.value(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aaf84aa6cac6fb6099f54a2cbf7546b730}{QCPAxis::atLeft}});}
+\DoxyCodeLine{18109   \textcolor{keywordflow}{if} (types.testFlag(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aadf5509f7d29199ef2f263b1dd224b345}{QCPAxis::atRight}})) result << \mbox{\hyperlink{class_q_c_p_axis_rect_ac2cb3ba9a25b733883afc3bd25f7d82b}{mAxes}}.value(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aadf5509f7d29199ef2f263b1dd224b345}{QCPAxis::atRight}});}
+\DoxyCodeLine{18110   \textcolor{keywordflow}{if} (types.testFlag(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aac0ece2b680d3f545e701f75af1655977}{QCPAxis::atTop}})) result << \mbox{\hyperlink{class_q_c_p_axis_rect_ac2cb3ba9a25b733883afc3bd25f7d82b}{mAxes}}.value(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aac0ece2b680d3f545e701f75af1655977}{QCPAxis::atTop}});}
+\DoxyCodeLine{18111   \textcolor{keywordflow}{if} (types.testFlag(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aa220d68888516b6c3b493d144f1ba438f}{QCPAxis::atBottom}}))}
+\DoxyCodeLine{18112     result << \mbox{\hyperlink{class_q_c_p_axis_rect_ac2cb3ba9a25b733883afc3bd25f7d82b}{mAxes}}.value(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aa220d68888516b6c3b493d144f1ba438f}{QCPAxis::atBottom}});}
+\DoxyCodeLine{18113   \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{18114 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}\label{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}} 
+\index{QCPAxisRect@{QCPAxisRect}!axis@{axis}}
+\index{axis@{axis}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{axis()}{axis()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ QCPAxis\+Rect\+::axis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18a}{QCPAxis\+::\+Axis\+Type}}}]{type,  }\item[{int}]{index = {\ttfamily 0} }\end{DoxyParamCaption}) const}
+
+Returns the axis with the given {\itshape index} on the axis rect side specified with {\itshape type}.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_axis_rect_a85b321acec0f694d8b5fdeafdbff3133}{axis\+Count}}, \mbox{\hyperlink{class_q_c_p_axis_rect_a8db4722cb93e9c4a6f0d91150c200867}{axes}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18088                                                                 \{}
+\DoxyCodeLine{18089   QList<QCPAxis *> ax(\mbox{\hyperlink{class_q_c_p_axis_rect_ac2cb3ba9a25b733883afc3bd25f7d82b}{mAxes}}.value(type));}
+\DoxyCodeLine{18090   \textcolor{keywordflow}{if} (index >= 0 \&\& index < ax.size()) \{}
+\DoxyCodeLine{18091     \textcolor{keywordflow}{return} ax.at(index);}
+\DoxyCodeLine{18092   \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{18093     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}Axis index out of bounds:"{}} << index;}
+\DoxyCodeLine{18094     \textcolor{keywordflow}{return} \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{18095   \}}
+\DoxyCodeLine{18096 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a85b321acec0f694d8b5fdeafdbff3133}\label{class_q_c_p_axis_rect_a85b321acec0f694d8b5fdeafdbff3133}} 
+\index{QCPAxisRect@{QCPAxisRect}!axisCount@{axisCount}}
+\index{axisCount@{axisCount}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{axisCount()}{axisCount()}}
+{\footnotesize\ttfamily int QCPAxis\+Rect\+::axis\+Count (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18a}{QCPAxis\+::\+Axis\+Type}}}]{type }\end{DoxyParamCaption}) const}
+
+Returns the number of axes on the axis rect side specified with {\itshape type}.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18078                                                      \{}
+\DoxyCodeLine{18079   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_axis_rect_ac2cb3ba9a25b733883afc3bd25f7d82b}{mAxes}}.value(type).size();}
+\DoxyCodeLine{18080 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a572deec9c9a4d5987d5c5f78521991e6}\label{class_q_c_p_axis_rect_a572deec9c9a4d5987d5c5f78521991e6}} 
+\index{QCPAxisRect@{QCPAxisRect}!background@{background}}
+\index{background@{background}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{background()}{background()}}
+{\footnotesize\ttfamily QPixmap QCPAxis\+Rect\+::background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5537 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_axis_rect_a38fb1a15f43228a0c124553649303722}{mBackgroundPixmap}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a7d09540e3fef12362d00e6bac92b6453}\label{class_q_c_p_axis_rect_a7d09540e3fef12362d00e6bac92b6453}} 
+\index{QCPAxisRect@{QCPAxisRect}!backgroundBrush@{backgroundBrush}}
+\index{backgroundBrush@{backgroundBrush}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{backgroundBrush()}{backgroundBrush()}}
+{\footnotesize\ttfamily QBrush QCPAxis\+Rect\+::background\+Brush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5538 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_axis_rect_a5748e1a37f63c428e38b0a7724b46259}{mBackgroundBrush}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a059ede9a5fdcafb5cef280cd65fe4f3a}\label{class_q_c_p_axis_rect_a059ede9a5fdcafb5cef280cd65fe4f3a}} 
+\index{QCPAxisRect@{QCPAxisRect}!backgroundScaled@{backgroundScaled}}
+\index{backgroundScaled@{backgroundScaled}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{backgroundScaled()}{backgroundScaled()}}
+{\footnotesize\ttfamily bool QCPAxis\+Rect\+::background\+Scaled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5539 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_axis_rect_a5ad835f0fae5d7cc5ada9e063641dbf1}{mBackgroundScaled}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a06b98faf54b5491bff780294e423d3ff}\label{class_q_c_p_axis_rect_a06b98faf54b5491bff780294e423d3ff}} 
+\index{QCPAxisRect@{QCPAxisRect}!backgroundScaledMode@{backgroundScaledMode}}
+\index{backgroundScaledMode@{backgroundScaledMode}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{backgroundScaledMode()}{backgroundScaledMode()}}
+{\footnotesize\ttfamily Qt\+::\+Aspect\+Ratio\+Mode QCPAxis\+Rect\+::background\+Scaled\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5540                                                  \{}
+\DoxyCodeLine{5541     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_axis_rect_a859fd368e794663e346b4f53f35078e9}{mBackgroundScaledMode}};}
+\DoxyCodeLine{5542   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_acefdf1abaa8a8ab681e906cc2be9581e}\label{class_q_c_p_axis_rect_acefdf1abaa8a8ab681e906cc2be9581e}} 
+\index{QCPAxisRect@{QCPAxisRect}!bottom@{bottom}}
+\index{bottom@{bottom}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{bottom()}{bottom()}}
+{\footnotesize\ttfamily int QCPAxis\+Rect\+::bottom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the pixel position of the bottom border of this axis rect. Margins are not taken into account here, so the returned value is with respect to the inner \mbox{\hyperlink{class_q_c_p_layout_element_a208effccfe2cca4a0eaf9393e60f2dd4}{rect}}. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5590 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_layout_element_ad8896f05550389f7b9e92c9e6cdf6e01}{mRect}}.bottom(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_ab15d4311d6535ccd7af504dc0e2b98c6}\label{class_q_c_p_axis_rect_ab15d4311d6535ccd7af504dc0e2b98c6}} 
+\index{QCPAxisRect@{QCPAxisRect}!bottomLeft@{bottomLeft}}
+\index{bottomLeft@{bottomLeft}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{bottomLeft()}{bottomLeft()}}
+{\footnotesize\ttfamily QPoint QCPAxis\+Rect\+::bottom\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the bottom left corner of this axis rect in pixels. Margins are not taken into account here, so the returned value is with respect to the inner \mbox{\hyperlink{class_q_c_p_layout_element_a208effccfe2cca4a0eaf9393e60f2dd4}{rect}}. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5596 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_layout_element_ad8896f05550389f7b9e92c9e6cdf6e01}{mRect}}.bottomLeft(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a36dac884ec8fa3a3a2f3842ca7b7d32d}\label{class_q_c_p_axis_rect_a36dac884ec8fa3a3a2f3842ca7b7d32d}} 
+\index{QCPAxisRect@{QCPAxisRect}!bottomRight@{bottomRight}}
+\index{bottomRight@{bottomRight}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{bottomRight()}{bottomRight()}}
+{\footnotesize\ttfamily QPoint QCPAxis\+Rect\+::bottom\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the bottom right corner of this axis rect in pixels. Margins are not taken into account here, so the returned value is with respect to the inner \mbox{\hyperlink{class_q_c_p_layout_element_a208effccfe2cca4a0eaf9393e60f2dd4}{rect}}. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5597 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_layout_element_ad8896f05550389f7b9e92c9e6cdf6e01}{mRect}}.bottomRight(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_ac51055d83f5f414b6d013d3a24b0a941}\label{class_q_c_p_axis_rect_ac51055d83f5f414b6d013d3a24b0a941}} 
+\index{QCPAxisRect@{QCPAxisRect}!calculateAutoMargin@{calculateAutoMargin}}
+\index{calculateAutoMargin@{calculateAutoMargin}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{calculateAutoMargin()}{calculateAutoMargin()}}
+{\footnotesize\ttfamily int QCPAxis\+Rect\+::calculate\+Auto\+Margin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_q_c_p_a7e487e3e2ccb62ab7771065bab7cae54}{QCP\+::\+Margin\+Side}}}]{side }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Переопределяет метод предка \mbox{\hyperlink{class_q_c_p_layout_element_a005c9f0fe84bc1591a2cf2c46fd477b4}{QCPLayout\+Element}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18953                                                        \{}
+\DoxyCodeLine{18954   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_layout_element_af61c70354d1275778d68206b2a1b2d36}{mAutoMargins}}.testFlag(side))}
+\DoxyCodeLine{18955     qDebug() << Q\_FUNC\_INFO}
+\DoxyCodeLine{18956              << \textcolor{stringliteral}{"{}Called with side that isn't specified as auto margin"{}};}
+\DoxyCodeLine{18957 }
+\DoxyCodeLine{18958   \mbox{\hyperlink{class_q_c_p_axis_rect_a6024ccdc74f5dc0e8a0fe482e5b28a20}{updateAxesOffset}}(\mbox{\hyperlink{class_q_c_p_axis_ac0a6b77bd52bec6c81cd62d167cfeba6}{QCPAxis::marginSideToAxisType}}(side));}
+\DoxyCodeLine{18959 }
+\DoxyCodeLine{18960   \textcolor{comment}{// note: only need to look at the last (outer most) axis to determine the}}
+\DoxyCodeLine{18961   \textcolor{comment}{// total margin, due to updateAxisOffset call}}
+\DoxyCodeLine{18962   \textcolor{keyword}{const} QList<QCPAxis *> axesList =}
+\DoxyCodeLine{18963       \mbox{\hyperlink{class_q_c_p_axis_rect_ac2cb3ba9a25b733883afc3bd25f7d82b}{mAxes}}.value(\mbox{\hyperlink{class_q_c_p_axis_ac0a6b77bd52bec6c81cd62d167cfeba6}{QCPAxis::marginSideToAxisType}}(side));}
+\DoxyCodeLine{18964   \textcolor{keywordflow}{if} (!axesList.isEmpty())}
+\DoxyCodeLine{18965     \textcolor{keywordflow}{return} axesList.last()-\/>offset() + axesList.last()-\/>calculateMargin();}
+\DoxyCodeLine{18966   \textcolor{keywordflow}{else}}
+\DoxyCodeLine{18967     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{18968 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_ade3aef874bafcec6dd16174fba44c0b1}\label{class_q_c_p_axis_rect_ade3aef874bafcec6dd16174fba44c0b1}} 
+\index{QCPAxisRect@{QCPAxisRect}!center@{center}}
+\index{center@{center}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{center()}{center()}}
+{\footnotesize\ttfamily QPoint QCPAxis\+Rect\+::center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the center of this axis rect in pixels. Margins are not taken into account here, so the returned value is with respect to the inner \mbox{\hyperlink{class_q_c_p_layout_element_a208effccfe2cca4a0eaf9393e60f2dd4}{rect}}. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5598 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_layout_element_ad8896f05550389f7b9e92c9e6cdf6e01}{mRect}}.center(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_af710c50530e370539a4439d6c4db9090}\label{class_q_c_p_axis_rect_af710c50530e370539a4439d6c4db9090}} 
+\index{QCPAxisRect@{QCPAxisRect}!draw@{draw}}
+\index{draw@{draw}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void QCPAxis\+Rect\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Переопределяет метод предка \mbox{\hyperlink{class_q_c_p_layout_element_ad1c597b1d608cfdd86e7b76819a94cfb}{QCPLayout\+Element}}.
+
+
+
+Переопределяется в \mbox{\hyperlink{class_q_c_p_color_scale_axis_rect_private_a52a21c7cbe086cd587c955cfe6e25e3b}{QCPColor\+Scale\+Axis\+Rect\+Private}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18501 \{ \mbox{\hyperlink{class_q_c_p_axis_rect_ab49d338d1ce74b476fcead5b32cf06dc}{drawBackground}}(painter); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_ab49d338d1ce74b476fcead5b32cf06dc}\label{class_q_c_p_axis_rect_ab49d338d1ce74b476fcead5b32cf06dc}} 
+\index{QCPAxisRect@{QCPAxisRect}!drawBackground@{drawBackground}}
+\index{drawBackground@{drawBackground}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{drawBackground()}{drawBackground()}}
+{\footnotesize\ttfamily void QCPAxis\+Rect\+::draw\+Background (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18892                                                     \{}
+\DoxyCodeLine{18893   \textcolor{comment}{// draw background fill:}}
+\DoxyCodeLine{18894   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_rect_a5748e1a37f63c428e38b0a7724b46259}{mBackgroundBrush}} != Qt::NoBrush)}
+\DoxyCodeLine{18895     painter-\/>fillRect(\mbox{\hyperlink{class_q_c_p_layout_element_ad8896f05550389f7b9e92c9e6cdf6e01}{mRect}}, \mbox{\hyperlink{class_q_c_p_axis_rect_a5748e1a37f63c428e38b0a7724b46259}{mBackgroundBrush}});}
+\DoxyCodeLine{18896 }
+\DoxyCodeLine{18897   \textcolor{comment}{// draw background pixmap (on top of fill, if brush specified):}}
+\DoxyCodeLine{18898   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_axis_rect_a38fb1a15f43228a0c124553649303722}{mBackgroundPixmap}}.isNull()) \{}
+\DoxyCodeLine{18899     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_rect_a5ad835f0fae5d7cc5ada9e063641dbf1}{mBackgroundScaled}}) \{}
+\DoxyCodeLine{18900       \textcolor{comment}{// check whether mScaledBackground needs to be updated:}}
+\DoxyCodeLine{18901       QSize scaledSize(\mbox{\hyperlink{class_q_c_p_axis_rect_a38fb1a15f43228a0c124553649303722}{mBackgroundPixmap}}.size());}
+\DoxyCodeLine{18902       scaledSize.scale(\mbox{\hyperlink{class_q_c_p_layout_element_ad8896f05550389f7b9e92c9e6cdf6e01}{mRect}}.size(), \mbox{\hyperlink{class_q_c_p_axis_rect_a859fd368e794663e346b4f53f35078e9}{mBackgroundScaledMode}});}
+\DoxyCodeLine{18903       \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_rect_aa74b9415598d59b49290e41e42d7ee27}{mScaledBackgroundPixmap}}.size() != scaledSize)}
+\DoxyCodeLine{18904         \mbox{\hyperlink{class_q_c_p_axis_rect_aa74b9415598d59b49290e41e42d7ee27}{mScaledBackgroundPixmap}} = \mbox{\hyperlink{class_q_c_p_axis_rect_a38fb1a15f43228a0c124553649303722}{mBackgroundPixmap}}.scaled(}
+\DoxyCodeLine{18905             \mbox{\hyperlink{class_q_c_p_layout_element_ad8896f05550389f7b9e92c9e6cdf6e01}{mRect}}.size(), \mbox{\hyperlink{class_q_c_p_axis_rect_a859fd368e794663e346b4f53f35078e9}{mBackgroundScaledMode}}, Qt::SmoothTransformation);}
+\DoxyCodeLine{18906       painter-\/>drawPixmap(\mbox{\hyperlink{class_q_c_p_layout_element_ad8896f05550389f7b9e92c9e6cdf6e01}{mRect}}.topLeft() + QPoint(0, -\/1),}
+\DoxyCodeLine{18907                           \mbox{\hyperlink{class_q_c_p_axis_rect_aa74b9415598d59b49290e41e42d7ee27}{mScaledBackgroundPixmap}},}
+\DoxyCodeLine{18908                           QRect(0, 0, \mbox{\hyperlink{class_q_c_p_layout_element_ad8896f05550389f7b9e92c9e6cdf6e01}{mRect}}.width(), \mbox{\hyperlink{class_q_c_p_layout_element_ad8896f05550389f7b9e92c9e6cdf6e01}{mRect}}.height()) \&}
+\DoxyCodeLine{18909                               \mbox{\hyperlink{class_q_c_p_axis_rect_aa74b9415598d59b49290e41e42d7ee27}{mScaledBackgroundPixmap}}.rect());}
+\DoxyCodeLine{18910     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{18911       painter-\/>drawPixmap(\mbox{\hyperlink{class_q_c_p_layout_element_ad8896f05550389f7b9e92c9e6cdf6e01}{mRect}}.topLeft() + QPoint(0, -\/1), \mbox{\hyperlink{class_q_c_p_axis_rect_a38fb1a15f43228a0c124553649303722}{mBackgroundPixmap}},}
+\DoxyCodeLine{18912                           QRect(0, 0, \mbox{\hyperlink{class_q_c_p_layout_element_ad8896f05550389f7b9e92c9e6cdf6e01}{mRect}}.width(), \mbox{\hyperlink{class_q_c_p_layout_element_ad8896f05550389f7b9e92c9e6cdf6e01}{mRect}}.height()));}
+\DoxyCodeLine{18913     \}}
+\DoxyCodeLine{18914   \}}
+\DoxyCodeLine{18915 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a3aee067fd105f2fa8de9eb8024435ac5}\label{class_q_c_p_axis_rect_a3aee067fd105f2fa8de9eb8024435ac5}} 
+\index{QCPAxisRect@{QCPAxisRect}!elements@{elements}}
+\index{elements@{elements}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{elements()}{elements()}}
+{\footnotesize\ttfamily QList$<$ \mbox{\hyperlink{class_q_c_p_layout_element}{QCPLayout\+Element}} $\ast$ $>$ QCPAxis\+Rect\+::elements (\begin{DoxyParamCaption}\item[{bool}]{recursive }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns a list of all child elements in this layout element. If {\itshape recursive} is true, all sub-\/child elements are included in the list, too.
+
+\begin{DoxyWarning}{Предупреждения}
+There may be {\ttfamily nullptr} entries in the returned list. For example, \mbox{\hyperlink{class_q_c_p_layout_grid}{QCPLayout\+Grid}} may have empty cells which yield {\ttfamily nullptr} at the respective index. 
+\end{DoxyWarning}
+
+
+Переопределяет метод предка \mbox{\hyperlink{class_q_c_p_layout_element_a76dec8cb31e498994a944d7647a43309}{QCPLayout\+Element}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18486                                                                     \{}
+\DoxyCodeLine{18487   QList<QCPLayoutElement *> result;}
+\DoxyCodeLine{18488   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_rect_a255240399e0fd24baad80cbbe46f698a}{mInsetLayout}}) \{}
+\DoxyCodeLine{18489     result << \mbox{\hyperlink{class_q_c_p_axis_rect_a255240399e0fd24baad80cbbe46f698a}{mInsetLayout}};}
+\DoxyCodeLine{18490     \textcolor{keywordflow}{if} (recursive) result << \mbox{\hyperlink{class_q_c_p_axis_rect_a255240399e0fd24baad80cbbe46f698a}{mInsetLayout}}-\/>\mbox{\hyperlink{class_q_c_p_layout_aca129722c019f91d3367046f80abfa77}{elements}}(recursive);}
+\DoxyCodeLine{18491   \}}
+\DoxyCodeLine{18492   \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{18493 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a2d9ded3eca97be1fcb5867949391bb88}\label{class_q_c_p_axis_rect_a2d9ded3eca97be1fcb5867949391bb88}} 
+\index{QCPAxisRect@{QCPAxisRect}!graphs@{graphs}}
+\index{graphs@{graphs}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{graphs()}{graphs()}}
+{\footnotesize\ttfamily QList$<$ \mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} $\ast$ $>$ QCPAxis\+Rect\+::graphs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns a list of all the graphs that are associated with this axis rect.
+
+A graph is considered associated with an axis rect if its key or value axis (or both) is in this axis rect.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_axis_rect_a587d073a97b27bc7293fab4b2774ad59}{plottables}}, \mbox{\hyperlink{class_q_c_p_axis_rect_a03c113a2175448300ee8f944e24776ba}{items}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18409                                             \{}
+\DoxyCodeLine{18410   \textcolor{comment}{// Note: don't append all QCPAxis::graphs() into a list, because we might get}}
+\DoxyCodeLine{18411   \textcolor{comment}{// duplicate entries}}
+\DoxyCodeLine{18412   QList<QCPGraph *> result;}
+\DoxyCodeLine{18413   \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} *graph, \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a38676b141ac8005fca4882a73ddfaf59}{mGraphs}}) \{}
+\DoxyCodeLine{18414     \textcolor{keywordflow}{if} (graph-\/>\mbox{\hyperlink{class_q_c_p_abstract_plottable_a2cdd6f0dd5e9a979037f86b4000d9cfe}{keyAxis}}()-\/>\mbox{\hyperlink{class_q_c_p_axis_afc94bcfdf8adfe8e01013f13bdf159a2}{axisRect}}() == \textcolor{keyword}{this} ||}
+\DoxyCodeLine{18415         graph-\/>\mbox{\hyperlink{class_q_c_p_abstract_plottable_af47809a644a68ffd955fb30b01fb4f2f}{valueAxis}}()-\/>\mbox{\hyperlink{class_q_c_p_axis_afc94bcfdf8adfe8e01013f13bdf159a2}{axisRect}}() == \textcolor{keyword}{this})}
+\DoxyCodeLine{18416       result.append(graph);}
+\DoxyCodeLine{18417   \}}
+\DoxyCodeLine{18418   \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{18419 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_acc4377809e79d9a089ab790f39429b0d}\label{class_q_c_p_axis_rect_acc4377809e79d9a089ab790f39429b0d}} 
+\index{QCPAxisRect@{QCPAxisRect}!height@{height}}
+\index{height@{height}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{height()}{height()}}
+{\footnotesize\ttfamily int QCPAxis\+Rect\+::height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the pixel height of this axis rect. Margins are not taken into account here, so the returned value is with respect to the inner \mbox{\hyperlink{class_q_c_p_layout_element_a208effccfe2cca4a0eaf9393e60f2dd4}{rect}}. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5592 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_layout_element_ad8896f05550389f7b9e92c9e6cdf6e01}{mRect}}.height(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a949f803466619924c7018df4b511ae10}\label{class_q_c_p_axis_rect_a949f803466619924c7018df4b511ae10}} 
+\index{QCPAxisRect@{QCPAxisRect}!insetLayout@{insetLayout}}
+\index{insetLayout@{insetLayout}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{insetLayout()}{insetLayout()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_layout_inset}{QCPLayout\+Inset}} $\ast$ QCPAxis\+Rect\+::inset\+Layout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the inset layout of this axis rect. It can be used to place other layout elements (or even layouts with multiple other elements) inside/on top of an axis rect.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_layout_inset}{QCPLayout\+Inset}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5577 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_axis_rect_a255240399e0fd24baad80cbbe46f698a}{mInsetLayout}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a03c113a2175448300ee8f944e24776ba}\label{class_q_c_p_axis_rect_a03c113a2175448300ee8f944e24776ba}} 
+\index{QCPAxisRect@{QCPAxisRect}!items@{items}}
+\index{items@{items}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{items()}{items()}}
+{\footnotesize\ttfamily QList$<$ \mbox{\hyperlink{class_q_c_p_abstract_item}{QCPAbstract\+Item}} $\ast$ $>$ QCPAxis\+Rect\+::items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns a list of all the items that are associated with this axis rect.
+
+An item is considered associated with an axis rect if any of its positions has key or value axis set to an axis that is in this axis rect, or if any of its positions has \mbox{\hyperlink{class_q_c_p_item_position_a0cd9b326fb324710169e92e8ca0041c2}{QCPItem\+Position\+::set\+Axis\+Rect}} set to the axis rect, or if the clip axis rect (\mbox{\hyperlink{class_q_c_p_abstract_item_a7dc75fcbcd10206fe0b75d757ea7a347}{QCPAbstract\+Item\+::set\+Clip\+Axis\+Rect}}) is set to this axis rect.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_axis_rect_a587d073a97b27bc7293fab4b2774ad59}{plottables}}, \mbox{\hyperlink{class_q_c_p_axis_rect_a2d9ded3eca97be1fcb5867949391bb88}{graphs}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18432                                                   \{}
+\DoxyCodeLine{18433   \textcolor{comment}{// Note: don't just append all QCPAxis::items() into a list, because we might}}
+\DoxyCodeLine{18434   \textcolor{comment}{// get duplicate entries}}
+\DoxyCodeLine{18435   \textcolor{comment}{//       and miss those items that have this axis rect as clipAxisRect.}}
+\DoxyCodeLine{18436   QList<QCPAbstractItem *> result;}
+\DoxyCodeLine{18437   \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_q_c_p_abstract_item}{QCPAbstractItem}} *item, \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_afa5fd6957169dfef2e4e7815a04c36e0}{mItems}}) \{}
+\DoxyCodeLine{18438     \textcolor{keywordflow}{if} (item-\/>\mbox{\hyperlink{class_q_c_p_abstract_item_ae162314efd3fe1a6d4df11da1d275d52}{clipAxisRect}}() == \textcolor{keyword}{this}) \{}
+\DoxyCodeLine{18439       result.append(item);}
+\DoxyCodeLine{18440       \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{18441     \}}
+\DoxyCodeLine{18442     \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_q_c_p_item_position}{QCPItemPosition}} *position, item-\/>\mbox{\hyperlink{class_q_c_p_abstract_item_a709f655ac3f7f22d452714134662b454}{positions}}()) \{}
+\DoxyCodeLine{18443       \textcolor{keywordflow}{if} (position-\/>\mbox{\hyperlink{class_q_c_p_item_position_ae4081cfe7575f922f403c6e3a2ce7891}{axisRect}}() == \textcolor{keyword}{this} ||}
+\DoxyCodeLine{18444           position-\/>\mbox{\hyperlink{class_q_c_p_item_position_a9ad34861fbfd8be8b8270c16f879169c}{keyAxis}}()-\/>\mbox{\hyperlink{class_q_c_p_axis_afc94bcfdf8adfe8e01013f13bdf159a2}{axisRect}}() == \textcolor{keyword}{this} ||}
+\DoxyCodeLine{18445           position-\/>\mbox{\hyperlink{class_q_c_p_item_position_a356ac94e7e73d88deb7f2841c0d0c734}{valueAxis}}()-\/>\mbox{\hyperlink{class_q_c_p_axis_afc94bcfdf8adfe8e01013f13bdf159a2}{axisRect}}() == \textcolor{keyword}{this}) \{}
+\DoxyCodeLine{18446         result.append(item);}
+\DoxyCodeLine{18447         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{18448       \}}
+\DoxyCodeLine{18449     \}}
+\DoxyCodeLine{18450   \}}
+\DoxyCodeLine{18451   \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{18452 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a575e38ac71a21906dc2d7b3364db2d62}\label{class_q_c_p_axis_rect_a575e38ac71a21906dc2d7b3364db2d62}} 
+\index{QCPAxisRect@{QCPAxisRect}!layoutChanged@{layoutChanged}}
+\index{layoutChanged@{layoutChanged}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{layoutChanged()}{layoutChanged()}}
+{\footnotesize\ttfamily void QCPAxis\+Rect\+::layout\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Переопределяет метод предка \mbox{\hyperlink{class_q_c_p_layout_element_a765f041a73af0c2de41b41a5a03e31a4}{QCPLayout\+Element}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18981                                 \{}
+\DoxyCodeLine{18982   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}} \&\& \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a8f85940aaac50efb466287d9d2d04ec6}{axisRectCount}}() > 0 \&\&}
+\DoxyCodeLine{18983       \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_ae5eefcb5f6ca26689b1fd4f6e25b42f9}{axisRect}}(0) == \textcolor{keyword}{this}) \{}
+\DoxyCodeLine{18984     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_rect_a85b321acec0f694d8b5fdeafdbff3133}{axisCount}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aa220d68888516b6c3b493d144f1ba438f}{QCPAxis::atBottom}}) > 0 \&\& !\mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a9a79cd0158a4c7f30cbc702f0fd800e4}{xAxis}})}
+\DoxyCodeLine{18985       \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a9a79cd0158a4c7f30cbc702f0fd800e4}{xAxis}} = \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aa220d68888516b6c3b493d144f1ba438f}{QCPAxis::atBottom}});}
+\DoxyCodeLine{18986     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_rect_a85b321acec0f694d8b5fdeafdbff3133}{axisCount}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aaf84aa6cac6fb6099f54a2cbf7546b730}{QCPAxis::atLeft}}) > 0 \&\& !\mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_af6fea5679725b152c14facd920b19367}{yAxis}})}
+\DoxyCodeLine{18987       \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_af6fea5679725b152c14facd920b19367}{yAxis}} = \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aaf84aa6cac6fb6099f54a2cbf7546b730}{QCPAxis::atLeft}});}
+\DoxyCodeLine{18988     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_rect_a85b321acec0f694d8b5fdeafdbff3133}{axisCount}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aac0ece2b680d3f545e701f75af1655977}{QCPAxis::atTop}}) > 0 \&\& !\mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_ada41599f22cad901c030f3dcbdd82fd9}{xAxis2}})}
+\DoxyCodeLine{18989       \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_ada41599f22cad901c030f3dcbdd82fd9}{xAxis2}} = \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aac0ece2b680d3f545e701f75af1655977}{QCPAxis::atTop}});}
+\DoxyCodeLine{18990     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_rect_a85b321acec0f694d8b5fdeafdbff3133}{axisCount}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aadf5509f7d29199ef2f263b1dd224b345}{QCPAxis::atRight}}) > 0 \&\& !\mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_af13fdc5bce7d0fabd640f13ba805c0b7}{yAxis2}})}
+\DoxyCodeLine{18991       \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_af13fdc5bce7d0fabd640f13ba805c0b7}{yAxis2}} = \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aadf5509f7d29199ef2f263b1dd224b345}{QCPAxis::atRight}});}
+\DoxyCodeLine{18992   \}}
+\DoxyCodeLine{18993 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_afb4a3de02046b20b9310bdb8fca781c3}\label{class_q_c_p_axis_rect_afb4a3de02046b20b9310bdb8fca781c3}} 
+\index{QCPAxisRect@{QCPAxisRect}!left@{left}}
+\index{left@{left}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{left()}{left()}}
+{\footnotesize\ttfamily int QCPAxis\+Rect\+::left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the pixel position of the left border of this axis rect. Margins are not taken into account here, so the returned value is with respect to the inner \mbox{\hyperlink{class_q_c_p_layout_element_a208effccfe2cca4a0eaf9393e60f2dd4}{rect}}. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5587 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_layout_element_ad8896f05550389f7b9e92c9e6cdf6e01}{mRect}}.left(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a9cd27ad8c5cfb49aefd9dbb30def4beb}\label{class_q_c_p_axis_rect_a9cd27ad8c5cfb49aefd9dbb30def4beb}} 
+\index{QCPAxisRect@{QCPAxisRect}!mouseMoveEvent@{mouseMoveEvent}}
+\index{mouseMoveEvent@{mouseMoveEvent}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{mouseMoveEvent()}{mouseMoveEvent()}}
+{\footnotesize\ttfamily void QCPAxis\+Rect\+::mouse\+Move\+Event (\begin{DoxyParamCaption}\item[{QMouse\+Event $\ast$}]{event,  }\item[{const QPointF \&}]{start\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+This event gets called when the user moves the mouse while holding a mouse button, after this layerable has become the mouse grabber by accepting the preceding \mbox{\hyperlink{class_q_c_p_axis_rect_aa9a7c807eaa4666870ac94aa6abc4dde}{mouse\+Press\+Event}}.
+
+The current pixel position of the cursor on the \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} widget is accessible via {\ttfamily event-\/$>$pos()}. The parameter {\itshape start\+Pos} indicates the position where the initial \mbox{\hyperlink{class_q_c_p_axis_rect_aa9a7c807eaa4666870ac94aa6abc4dde}{mouse\+Press\+Event}} occurred, that started the mouse interaction.
+
+The default implementation does nothing.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_axis_rect_aa9a7c807eaa4666870ac94aa6abc4dde}{mouse\+Press\+Event}}, \mbox{\hyperlink{class_q_c_p_axis_rect_a6c89b988d3a0b93c0878f0ebdb5037f4}{mouse\+Release\+Event}}, \mbox{\hyperlink{class_q_c_p_layerable_a4171e2e823aca242dd0279f00ed2de81}{mouse\+Double\+Click\+Event}}, \mbox{\hyperlink{class_q_c_p_axis_rect_a93eeaa0c127d6d6fe8171b2455080262}{wheel\+Event}} 
+\end{DoxySeeAlso}
+
+
+Переопределяет метод предка \mbox{\hyperlink{class_q_c_p_layerable_a9eee1ba47fd69be111059ca3881933e4}{QCPLayerable}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{19036                                                                             \{}
+\DoxyCodeLine{19037   Q\_UNUSED(startPos)}
+\DoxyCodeLine{19038   \textcolor{comment}{// Mouse range dragging interaction:}}
+\DoxyCodeLine{19039   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_rect_ab49a6698194cf0e9e38a1d734c0888a8}{mDragging}} \&\& \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a2c78c5fd2943c148ab76652801d3f2dc}{interactions}}().testFlag(\mbox{\hyperlink{namespace_q_c_p_a2ad6bb6281c7c2d593d4277b44c2b037a2c4432b9aceafb94000be8d1b589ef18}{QCP::iRangeDrag}})) \{}
+\DoxyCodeLine{19040     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_rect_aa9f107f66ca3469ad50ee6cea7c9e237}{mRangeDrag}}.testFlag(Qt::Horizontal)) \{}
+\DoxyCodeLine{19041       \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_q_c_p_axis_rect_abd4f1d854b41a9c6730f3a3d605c42af}{mRangeDragHorzAxis}}.size(); ++i) \{}
+\DoxyCodeLine{19042         \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} *ax = \mbox{\hyperlink{class_q_c_p_axis_rect_abd4f1d854b41a9c6730f3a3d605c42af}{mRangeDragHorzAxis}}.at(i).data();}
+\DoxyCodeLine{19043         \textcolor{keywordflow}{if} (!ax) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{19044         \textcolor{keywordflow}{if} (i >= \mbox{\hyperlink{class_q_c_p_axis_rect_a274aef08c4de084a3f26c3e92fac3a79}{mDragStartHorzRange}}.size()) \textcolor{keywordflow}{break};}
+\DoxyCodeLine{19045         \textcolor{keywordflow}{if} (ax-\/>\mbox{\hyperlink{class_q_c_p_axis_ad706039549cbbbec5fcb2baf7894e04d}{mScaleType}} == \mbox{\hyperlink{class_q_c_p_axis_a36d8e8658dbaa179bf2aeb973db2d6f0aff6e30a11a828bc850caffab0ff994f6}{QCPAxis::stLinear}}) \{}
+\DoxyCodeLine{19046           \textcolor{keywordtype}{double} diff = ax-\/>\mbox{\hyperlink{class_q_c_p_axis_a536ef8f624cac59b6b6fdcb495723c57}{pixelToCoord}}(startPos.x()) -\/}
+\DoxyCodeLine{19047                         ax-\/>\mbox{\hyperlink{class_q_c_p_axis_a536ef8f624cac59b6b6fdcb495723c57}{pixelToCoord}}(event-\/>pos().x());}
+\DoxyCodeLine{19048           ax-\/>\mbox{\hyperlink{class_q_c_p_axis_aebdfea5d44c3a0ad2b4700cd4d25b641}{setRange}}(\mbox{\hyperlink{class_q_c_p_axis_rect_a274aef08c4de084a3f26c3e92fac3a79}{mDragStartHorzRange}}.at(i).lower + diff,}
+\DoxyCodeLine{19049                        \mbox{\hyperlink{class_q_c_p_axis_rect_a274aef08c4de084a3f26c3e92fac3a79}{mDragStartHorzRange}}.at(i).upper + diff);}
+\DoxyCodeLine{19050         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ax-\/>\mbox{\hyperlink{class_q_c_p_axis_ad706039549cbbbec5fcb2baf7894e04d}{mScaleType}} == \mbox{\hyperlink{class_q_c_p_axis_a36d8e8658dbaa179bf2aeb973db2d6f0abf5b785ad976618816dc6f79b73216d4}{QCPAxis::stLogarithmic}}) \{}
+\DoxyCodeLine{19051           \textcolor{keywordtype}{double} diff = ax-\/>\mbox{\hyperlink{class_q_c_p_axis_a536ef8f624cac59b6b6fdcb495723c57}{pixelToCoord}}(startPos.x()) /}
+\DoxyCodeLine{19052                         ax-\/>\mbox{\hyperlink{class_q_c_p_axis_a536ef8f624cac59b6b6fdcb495723c57}{pixelToCoord}}(event-\/>pos().x());}
+\DoxyCodeLine{19053           ax-\/>\mbox{\hyperlink{class_q_c_p_axis_aebdfea5d44c3a0ad2b4700cd4d25b641}{setRange}}(\mbox{\hyperlink{class_q_c_p_axis_rect_a274aef08c4de084a3f26c3e92fac3a79}{mDragStartHorzRange}}.at(i).lower * diff,}
+\DoxyCodeLine{19054                        \mbox{\hyperlink{class_q_c_p_axis_rect_a274aef08c4de084a3f26c3e92fac3a79}{mDragStartHorzRange}}.at(i).upper * diff);}
+\DoxyCodeLine{19055         \}}
+\DoxyCodeLine{19056       \}}
+\DoxyCodeLine{19057     \}}
+\DoxyCodeLine{19058 }
+\DoxyCodeLine{19059     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_rect_aa9f107f66ca3469ad50ee6cea7c9e237}{mRangeDrag}}.testFlag(Qt::Vertical)) \{}
+\DoxyCodeLine{19060       \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_q_c_p_axis_rect_a3b0a86e5bb136a458d7bc20773e45853}{mRangeDragVertAxis}}.size(); ++i) \{}
+\DoxyCodeLine{19061         \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} *ax = \mbox{\hyperlink{class_q_c_p_axis_rect_a3b0a86e5bb136a458d7bc20773e45853}{mRangeDragVertAxis}}.at(i).data();}
+\DoxyCodeLine{19062         \textcolor{keywordflow}{if} (!ax) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{19063         \textcolor{keywordflow}{if} (i >= \mbox{\hyperlink{class_q_c_p_axis_rect_ab362ee8f71a156d812a1ea793a1e42cb}{mDragStartVertRange}}.size()) \textcolor{keywordflow}{break};}
+\DoxyCodeLine{19064         \textcolor{keywordflow}{if} (ax-\/>\mbox{\hyperlink{class_q_c_p_axis_ad706039549cbbbec5fcb2baf7894e04d}{mScaleType}} == \mbox{\hyperlink{class_q_c_p_axis_a36d8e8658dbaa179bf2aeb973db2d6f0aff6e30a11a828bc850caffab0ff994f6}{QCPAxis::stLinear}}) \{}
+\DoxyCodeLine{19065           \textcolor{keywordtype}{double} diff = ax-\/>\mbox{\hyperlink{class_q_c_p_axis_a536ef8f624cac59b6b6fdcb495723c57}{pixelToCoord}}(startPos.y()) -\/}
+\DoxyCodeLine{19066                         ax-\/>\mbox{\hyperlink{class_q_c_p_axis_a536ef8f624cac59b6b6fdcb495723c57}{pixelToCoord}}(event-\/>pos().y());}
+\DoxyCodeLine{19067           ax-\/>\mbox{\hyperlink{class_q_c_p_axis_aebdfea5d44c3a0ad2b4700cd4d25b641}{setRange}}(\mbox{\hyperlink{class_q_c_p_axis_rect_ab362ee8f71a156d812a1ea793a1e42cb}{mDragStartVertRange}}.at(i).lower + diff,}
+\DoxyCodeLine{19068                        \mbox{\hyperlink{class_q_c_p_axis_rect_ab362ee8f71a156d812a1ea793a1e42cb}{mDragStartVertRange}}.at(i).upper + diff);}
+\DoxyCodeLine{19069         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ax-\/>\mbox{\hyperlink{class_q_c_p_axis_ad706039549cbbbec5fcb2baf7894e04d}{mScaleType}} == \mbox{\hyperlink{class_q_c_p_axis_a36d8e8658dbaa179bf2aeb973db2d6f0abf5b785ad976618816dc6f79b73216d4}{QCPAxis::stLogarithmic}}) \{}
+\DoxyCodeLine{19070           \textcolor{keywordtype}{double} diff = ax-\/>\mbox{\hyperlink{class_q_c_p_axis_a536ef8f624cac59b6b6fdcb495723c57}{pixelToCoord}}(startPos.y()) /}
+\DoxyCodeLine{19071                         ax-\/>\mbox{\hyperlink{class_q_c_p_axis_a536ef8f624cac59b6b6fdcb495723c57}{pixelToCoord}}(event-\/>pos().y());}
+\DoxyCodeLine{19072           ax-\/>\mbox{\hyperlink{class_q_c_p_axis_aebdfea5d44c3a0ad2b4700cd4d25b641}{setRange}}(\mbox{\hyperlink{class_q_c_p_axis_rect_ab362ee8f71a156d812a1ea793a1e42cb}{mDragStartVertRange}}.at(i).lower * diff,}
+\DoxyCodeLine{19073                        \mbox{\hyperlink{class_q_c_p_axis_rect_ab362ee8f71a156d812a1ea793a1e42cb}{mDragStartVertRange}}.at(i).upper * diff);}
+\DoxyCodeLine{19074         \}}
+\DoxyCodeLine{19075       \}}
+\DoxyCodeLine{19076     \}}
+\DoxyCodeLine{19077 }
+\DoxyCodeLine{19078     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_rect_aa9f107f66ca3469ad50ee6cea7c9e237}{mRangeDrag}} !=}
+\DoxyCodeLine{19079         0)  \textcolor{comment}{// if either vertical or horizontal drag was enabled, do a replot}}
+\DoxyCodeLine{19080     \{}
+\DoxyCodeLine{19081       \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_aca3f01f903fb250a3dd27104d92830be}{noAntialiasingOnDrag}}())}
+\DoxyCodeLine{19082         \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_ae10d685b5eabea2999fb8775ca173c24}{setNotAntialiasedElements}}(\mbox{\hyperlink{namespace_q_c_p_ae55dbe315d41fe80f29ba88100843a0caa897c232a0ffc8368e7c100ffc59ef31}{QCP::aeAll}});}
+\DoxyCodeLine{19083       \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_aa4bfe7d70dbe67e81d877819b75ab9af}{replot}}(\mbox{\hyperlink{class_q_custom_plot_a45d61392d13042e712a956d27762aa39a019650c6ddf308f97e811fbfff207a8f}{QCustomPlot::rpQueuedReplot}});}
+\DoxyCodeLine{19084     \}}
+\DoxyCodeLine{19085   \}}
+\DoxyCodeLine{19086 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_aa9a7c807eaa4666870ac94aa6abc4dde}\label{class_q_c_p_axis_rect_aa9a7c807eaa4666870ac94aa6abc4dde}} 
+\index{QCPAxisRect@{QCPAxisRect}!mousePressEvent@{mousePressEvent}}
+\index{mousePressEvent@{mousePressEvent}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{mousePressEvent()}{mousePressEvent()}}
+{\footnotesize\ttfamily void QCPAxis\+Rect\+::mouse\+Press\+Event (\begin{DoxyParamCaption}\item[{QMouse\+Event $\ast$}]{event,  }\item[{const QVariant \&}]{details }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+This event gets called when the user presses a mouse button while the cursor is over the layerable. Whether a cursor is over the layerable is decided by a preceding call to \mbox{\hyperlink{class_q_c_p_layout_element_a62d60f1b0ee9bb23e38811d71586d79c}{select\+Test}}.
+
+The current pixel position of the cursor on the \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} widget is accessible via {\ttfamily event-\/$>$pos()}. The parameter {\itshape details} contains layerable-\/specific details about the hit, which were generated in the previous call to \mbox{\hyperlink{class_q_c_p_layout_element_a62d60f1b0ee9bb23e38811d71586d79c}{select\+Test}}. For example, One-\/dimensional plottables like \mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} or \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} convey the clicked data point in the {\itshape details} parameter, as \mbox{\hyperlink{class_q_c_p_data_selection}{QCPData\+Selection}} packed as QVariant. Multi-\/part objects convey the specific {\ttfamily Selectable\+Part} that was hit (e.\+g. \mbox{\hyperlink{class_q_c_p_axis_abee4c7a54c468b1385dfce2c898b115f}{QCPAxis\+::\+Selectable\+Part}} in the case of axes).
+
+\mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} uses an event propagation system that works the same as Qt\textquotesingle{}s system. If your layerable doesn\textquotesingle{}t reimplement the \mbox{\hyperlink{class_q_c_p_axis_rect_aa9a7c807eaa4666870ac94aa6abc4dde}{mouse\+Press\+Event}} or explicitly calls {\ttfamily event-\/$>$ignore()} in its reimplementation, the event will be propagated to the next layerable in the stacking order.
+
+Once a layerable has accepted the \mbox{\hyperlink{class_q_c_p_axis_rect_aa9a7c807eaa4666870ac94aa6abc4dde}{mouse\+Press\+Event}}, it is considered the mouse grabber and will receive all following calls to \mbox{\hyperlink{class_q_c_p_axis_rect_a9cd27ad8c5cfb49aefd9dbb30def4beb}{mouse\+Move\+Event}} or \mbox{\hyperlink{class_q_c_p_axis_rect_a6c89b988d3a0b93c0878f0ebdb5037f4}{mouse\+Release\+Event}} for this mouse interaction (a \char`\"{}mouse interaction\char`\"{} in this context ends with the release).
+
+The default implementation does nothing except explicitly ignoring the event with {\ttfamily event-\/$>$ignore()}.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_axis_rect_a9cd27ad8c5cfb49aefd9dbb30def4beb}{mouse\+Move\+Event}}, \mbox{\hyperlink{class_q_c_p_axis_rect_a6c89b988d3a0b93c0878f0ebdb5037f4}{mouse\+Release\+Event}}, \mbox{\hyperlink{class_q_c_p_layerable_a4171e2e823aca242dd0279f00ed2de81}{mouse\+Double\+Click\+Event}}, \mbox{\hyperlink{class_q_c_p_axis_rect_a93eeaa0c127d6d6fe8171b2455080262}{wheel\+Event}} 
+\end{DoxySeeAlso}
+
+
+Переопределяет метод предка \mbox{\hyperlink{class_q_c_p_layerable_af6567604818db90f4fd52822f8bc8376}{QCPLayerable}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{19007                                                                              \{}
+\DoxyCodeLine{19008   Q\_UNUSED(details)}
+\DoxyCodeLine{19009   \textcolor{keywordflow}{if} (event-\/>buttons() \& Qt::LeftButton) \{}
+\DoxyCodeLine{19010     \mbox{\hyperlink{class_q_c_p_axis_rect_ab49a6698194cf0e9e38a1d734c0888a8}{mDragging}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{19011     \textcolor{comment}{// initialize antialiasing backup in case we start dragging:}}
+\DoxyCodeLine{19012     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_aca3f01f903fb250a3dd27104d92830be}{noAntialiasingOnDrag}}()) \{}
+\DoxyCodeLine{19013       \mbox{\hyperlink{class_q_c_p_axis_rect_aa4a24f76360cfebe1bcf17a77fa7521b}{mAADragBackup}} = \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a631762eb183aceecee73d30e108641ee}{antialiasedElements}}();}
+\DoxyCodeLine{19014       \mbox{\hyperlink{class_q_c_p_axis_rect_a6fcb12e052e276d57efbb128be31d6f5}{mNotAADragBackup}} = \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a75571bc5b2167e83def132fc993091b3}{notAntialiasedElements}}();}
+\DoxyCodeLine{19015     \}}
+\DoxyCodeLine{19016     \textcolor{comment}{// Mouse range dragging interaction:}}
+\DoxyCodeLine{19017     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a2c78c5fd2943c148ab76652801d3f2dc}{interactions}}().testFlag(\mbox{\hyperlink{namespace_q_c_p_a2ad6bb6281c7c2d593d4277b44c2b037a2c4432b9aceafb94000be8d1b589ef18}{QCP::iRangeDrag}})) \{}
+\DoxyCodeLine{19018       \mbox{\hyperlink{class_q_c_p_axis_rect_a274aef08c4de084a3f26c3e92fac3a79}{mDragStartHorzRange}}.clear();}
+\DoxyCodeLine{19019       \textcolor{keywordflow}{foreach} (QPointer<QCPAxis> \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}, \mbox{\hyperlink{class_q_c_p_axis_rect_abd4f1d854b41a9c6730f3a3d605c42af}{mRangeDragHorzAxis}})}
+\DoxyCodeLine{19020         \mbox{\hyperlink{class_q_c_p_axis_rect_a274aef08c4de084a3f26c3e92fac3a79}{mDragStartHorzRange}}.append(\mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}.isNull() ? \mbox{\hyperlink{class_q_c_p_range}{QCPRange}}() : \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_ac4058855a81f1a883cf2e754f6a6acb1}{range}}());}
+\DoxyCodeLine{19021       \mbox{\hyperlink{class_q_c_p_axis_rect_ab362ee8f71a156d812a1ea793a1e42cb}{mDragStartVertRange}}.clear();}
+\DoxyCodeLine{19022       \textcolor{keywordflow}{foreach} (QPointer<QCPAxis> \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}, \mbox{\hyperlink{class_q_c_p_axis_rect_a3b0a86e5bb136a458d7bc20773e45853}{mRangeDragVertAxis}})}
+\DoxyCodeLine{19023         \mbox{\hyperlink{class_q_c_p_axis_rect_ab362ee8f71a156d812a1ea793a1e42cb}{mDragStartVertRange}}.append(\mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}.isNull() ? \mbox{\hyperlink{class_q_c_p_range}{QCPRange}}() : \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_ac4058855a81f1a883cf2e754f6a6acb1}{range}}());}
+\DoxyCodeLine{19024     \}}
+\DoxyCodeLine{19025   \}}
+\DoxyCodeLine{19026 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a6c89b988d3a0b93c0878f0ebdb5037f4}\label{class_q_c_p_axis_rect_a6c89b988d3a0b93c0878f0ebdb5037f4}} 
+\index{QCPAxisRect@{QCPAxisRect}!mouseReleaseEvent@{mouseReleaseEvent}}
+\index{mouseReleaseEvent@{mouseReleaseEvent}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{mouseReleaseEvent()}{mouseReleaseEvent()}}
+{\footnotesize\ttfamily void QCPAxis\+Rect\+::mouse\+Release\+Event (\begin{DoxyParamCaption}\item[{QMouse\+Event $\ast$}]{event,  }\item[{const QPointF \&}]{start\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+This event gets called when the user releases the mouse button, after this layerable has become the mouse grabber by accepting the preceding \mbox{\hyperlink{class_q_c_p_axis_rect_aa9a7c807eaa4666870ac94aa6abc4dde}{mouse\+Press\+Event}}.
+
+The current pixel position of the cursor on the \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} widget is accessible via {\ttfamily event-\/$>$pos()}. The parameter {\itshape start\+Pos} indicates the position where the initial \mbox{\hyperlink{class_q_c_p_axis_rect_aa9a7c807eaa4666870ac94aa6abc4dde}{mouse\+Press\+Event}} occurred, that started the mouse interaction.
+
+The default implementation does nothing.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_axis_rect_aa9a7c807eaa4666870ac94aa6abc4dde}{mouse\+Press\+Event}}, \mbox{\hyperlink{class_q_c_p_axis_rect_a9cd27ad8c5cfb49aefd9dbb30def4beb}{mouse\+Move\+Event}}, \mbox{\hyperlink{class_q_c_p_layerable_a4171e2e823aca242dd0279f00ed2de81}{mouse\+Double\+Click\+Event}}, \mbox{\hyperlink{class_q_c_p_axis_rect_a93eeaa0c127d6d6fe8171b2455080262}{wheel\+Event}} 
+\end{DoxySeeAlso}
+
+
+Переопределяет метод предка \mbox{\hyperlink{class_q_c_p_layerable_aa0d79b005686f668622bbe66ac03ba2c}{QCPLayerable}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{19090                                                              \{}
+\DoxyCodeLine{19091   Q\_UNUSED(event)}
+\DoxyCodeLine{19092   Q\_UNUSED(startPos)}
+\DoxyCodeLine{19093   \mbox{\hyperlink{class_q_c_p_axis_rect_ab49a6698194cf0e9e38a1d734c0888a8}{mDragging}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{19094   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_aca3f01f903fb250a3dd27104d92830be}{noAntialiasingOnDrag}}()) \{}
+\DoxyCodeLine{19095     \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_af6f91e5eab1be85f67c556e98c3745e8}{setAntialiasedElements}}(\mbox{\hyperlink{class_q_c_p_axis_rect_aa4a24f76360cfebe1bcf17a77fa7521b}{mAADragBackup}});}
+\DoxyCodeLine{19096     \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_ae10d685b5eabea2999fb8775ca173c24}{setNotAntialiasedElements}}(\mbox{\hyperlink{class_q_c_p_axis_rect_a6fcb12e052e276d57efbb128be31d6f5}{mNotAADragBackup}});}
+\DoxyCodeLine{19097   \}}
+\DoxyCodeLine{19098 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a587d073a97b27bc7293fab4b2774ad59}\label{class_q_c_p_axis_rect_a587d073a97b27bc7293fab4b2774ad59}} 
+\index{QCPAxisRect@{QCPAxisRect}!plottables@{plottables}}
+\index{plottables@{plottables}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{plottables()}{plottables()}}
+{\footnotesize\ttfamily QList$<$ \mbox{\hyperlink{class_q_c_p_abstract_plottable}{QCPAbstract\+Plottable}} $\ast$ $>$ QCPAxis\+Rect\+::plottables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns a list of all the plottables that are associated with this axis rect.
+
+A plottable is considered associated with an axis rect if its key or value axis (or both) is in this axis rect.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_axis_rect_a2d9ded3eca97be1fcb5867949391bb88}{graphs}}, \mbox{\hyperlink{class_q_c_p_axis_rect_a03c113a2175448300ee8f944e24776ba}{items}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18389                                                             \{}
+\DoxyCodeLine{18390   \textcolor{comment}{// Note: don't append all QCPAxis::plottables() into a list, because we might}}
+\DoxyCodeLine{18391   \textcolor{comment}{// get duplicate entries}}
+\DoxyCodeLine{18392   QList<QCPAbstractPlottable *> result;}
+\DoxyCodeLine{18393   \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_q_c_p_abstract_plottable}{QCPAbstractPlottable}} *plottable, \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a4b6c694fbdb2f201626f71eff2d1694e}{mPlottables}}) \{}
+\DoxyCodeLine{18394     \textcolor{keywordflow}{if} (plottable-\/>\mbox{\hyperlink{class_q_c_p_abstract_plottable_a2cdd6f0dd5e9a979037f86b4000d9cfe}{keyAxis}}()-\/>\mbox{\hyperlink{class_q_c_p_axis_afc94bcfdf8adfe8e01013f13bdf159a2}{axisRect}}() == \textcolor{keyword}{this} ||}
+\DoxyCodeLine{18395         plottable-\/>\mbox{\hyperlink{class_q_c_p_abstract_plottable_af47809a644a68ffd955fb30b01fb4f2f}{valueAxis}}()-\/>\mbox{\hyperlink{class_q_c_p_axis_afc94bcfdf8adfe8e01013f13bdf159a2}{axisRect}}() == \textcolor{keyword}{this})}
+\DoxyCodeLine{18396       result.append(plottable);}
+\DoxyCodeLine{18397   \}}
+\DoxyCodeLine{18398   \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{18399 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_aa3a84c768ad6edd08fd4c5dec176828f}\label{class_q_c_p_axis_rect_aa3a84c768ad6edd08fd4c5dec176828f}} 
+\index{QCPAxisRect@{QCPAxisRect}!rangeDrag@{rangeDrag}}
+\index{rangeDrag@{rangeDrag}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{rangeDrag()}{rangeDrag()}}
+{\footnotesize\ttfamily Qt\+::\+Orientations QCPAxis\+Rect\+::range\+Drag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5543 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_axis_rect_aa9f107f66ca3469ad50ee6cea7c9e237}{mRangeDrag}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_aae5f99a044ca911685a306f01b7ff941}\label{class_q_c_p_axis_rect_aae5f99a044ca911685a306f01b7ff941}} 
+\index{QCPAxisRect@{QCPAxisRect}!rangeDragAxes@{rangeDragAxes}}
+\index{rangeDragAxes@{rangeDragAxes}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{rangeDragAxes()}{rangeDragAxes()}}
+{\footnotesize\ttfamily QList$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ $>$ QCPAxis\+Rect\+::range\+Drag\+Axes (\begin{DoxyParamCaption}\item[{Qt\+::\+Orientation}]{orientation }\end{DoxyParamCaption})}
+
+Returns all range drag axes of the {\itshape orientation} provided.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_axis_rect_a679c63f2b8daccfe6ec5110dce3dd3b6}{range\+Zoom\+Axis}}, \mbox{\hyperlink{class_q_c_p_axis_rect_a9442cca2aa358405f39a64d51eca13d2}{set\+Range\+Zoom\+Axes}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18622                                                                      \{}
+\DoxyCodeLine{18623   QList<QCPAxis *> result;}
+\DoxyCodeLine{18624   \textcolor{keywordflow}{if} (orientation == Qt::Horizontal) \{}
+\DoxyCodeLine{18625     \textcolor{keywordflow}{foreach} (QPointer<QCPAxis> \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}, \mbox{\hyperlink{class_q_c_p_axis_rect_abd4f1d854b41a9c6730f3a3d605c42af}{mRangeDragHorzAxis}}) \{}
+\DoxyCodeLine{18626       \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}.isNull()) result.append(\mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}.data());}
+\DoxyCodeLine{18627     \}}
+\DoxyCodeLine{18628   \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{18629     \textcolor{keywordflow}{foreach} (QPointer<QCPAxis> \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}, \mbox{\hyperlink{class_q_c_p_axis_rect_a3b0a86e5bb136a458d7bc20773e45853}{mRangeDragVertAxis}}) \{}
+\DoxyCodeLine{18630       \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}.isNull()) result.append(\mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}.data());}
+\DoxyCodeLine{18631     \}}
+\DoxyCodeLine{18632   \}}
+\DoxyCodeLine{18633   \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{18634 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a6d7c22cfc54fac7a3d6ef80b133a8574}\label{class_q_c_p_axis_rect_a6d7c22cfc54fac7a3d6ef80b133a8574}} 
+\index{QCPAxisRect@{QCPAxisRect}!rangeDragAxis@{rangeDragAxis}}
+\index{rangeDragAxis@{rangeDragAxis}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{rangeDragAxis()}{rangeDragAxis()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ QCPAxis\+Rect\+::range\+Drag\+Axis (\begin{DoxyParamCaption}\item[{Qt\+::\+Orientation}]{orientation }\end{DoxyParamCaption})}
+
+Returns the range drag axis of the {\itshape orientation} provided. If multiple axes were set, returns the first one (use \mbox{\hyperlink{class_q_c_p_axis_rect_aae5f99a044ca911685a306f01b7ff941}{range\+Drag\+Axes}} to retrieve a list with all set axes).
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_axis_rect_a648cce336bd99daac4a5ca3e5743775d}{set\+Range\+Drag\+Axes}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18592                                                              \{}
+\DoxyCodeLine{18593   \textcolor{keywordflow}{if} (orientation == Qt::Horizontal)}
+\DoxyCodeLine{18594     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_axis_rect_abd4f1d854b41a9c6730f3a3d605c42af}{mRangeDragHorzAxis}}.isEmpty() ? nullptr}
+\DoxyCodeLine{18595                                         : \mbox{\hyperlink{class_q_c_p_axis_rect_abd4f1d854b41a9c6730f3a3d605c42af}{mRangeDragHorzAxis}}.first().data();}
+\DoxyCodeLine{18596   \textcolor{keywordflow}{else}}
+\DoxyCodeLine{18597     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_axis_rect_a3b0a86e5bb136a458d7bc20773e45853}{mRangeDragVertAxis}}.isEmpty() ? nullptr}
+\DoxyCodeLine{18598                                         : \mbox{\hyperlink{class_q_c_p_axis_rect_a3b0a86e5bb136a458d7bc20773e45853}{mRangeDragVertAxis}}.first().data();}
+\DoxyCodeLine{18599 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_aa0d8414ef040523f8b2d55f0c0bddbee}\label{class_q_c_p_axis_rect_aa0d8414ef040523f8b2d55f0c0bddbee}} 
+\index{QCPAxisRect@{QCPAxisRect}!rangeZoom@{rangeZoom}}
+\index{rangeZoom@{rangeZoom}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{rangeZoom()}{rangeZoom()}}
+{\footnotesize\ttfamily Qt\+::\+Orientations QCPAxis\+Rect\+::range\+Zoom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5544 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_axis_rect_a215eff671d48df2edccc36e7f976f28c}{mRangeZoom}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a86aac0f435f209d60dacd22cda10c104}\label{class_q_c_p_axis_rect_a86aac0f435f209d60dacd22cda10c104}} 
+\index{QCPAxisRect@{QCPAxisRect}!rangeZoomAxes@{rangeZoomAxes}}
+\index{rangeZoomAxes@{rangeZoomAxes}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{rangeZoomAxes()}{rangeZoomAxes()}}
+{\footnotesize\ttfamily QList$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ $>$ QCPAxis\+Rect\+::range\+Zoom\+Axes (\begin{DoxyParamCaption}\item[{Qt\+::\+Orientation}]{orientation }\end{DoxyParamCaption})}
+
+Returns all range zoom axes of the {\itshape orientation} provided.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_axis_rect_a6d7c22cfc54fac7a3d6ef80b133a8574}{range\+Drag\+Axis}}, \mbox{\hyperlink{class_q_c_p_axis_rect_a648cce336bd99daac4a5ca3e5743775d}{set\+Range\+Drag\+Axes}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18641                                                                      \{}
+\DoxyCodeLine{18642   QList<QCPAxis *> result;}
+\DoxyCodeLine{18643   \textcolor{keywordflow}{if} (orientation == Qt::Horizontal) \{}
+\DoxyCodeLine{18644     \textcolor{keywordflow}{foreach} (QPointer<QCPAxis> \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}, \mbox{\hyperlink{class_q_c_p_axis_rect_aa35eeb02f68b63f2069fcc80c9334b91}{mRangeZoomHorzAxis}}) \{}
+\DoxyCodeLine{18645       \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}.isNull()) result.append(\mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}.data());}
+\DoxyCodeLine{18646     \}}
+\DoxyCodeLine{18647   \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{18648     \textcolor{keywordflow}{foreach} (QPointer<QCPAxis> \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}, \mbox{\hyperlink{class_q_c_p_axis_rect_aafb0e243294c158668499fd62cee057c}{mRangeZoomVertAxis}}) \{}
+\DoxyCodeLine{18649       \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}.isNull()) result.append(\mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}.data());}
+\DoxyCodeLine{18650     \}}
+\DoxyCodeLine{18651   \}}
+\DoxyCodeLine{18652   \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{18653 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a679c63f2b8daccfe6ec5110dce3dd3b6}\label{class_q_c_p_axis_rect_a679c63f2b8daccfe6ec5110dce3dd3b6}} 
+\index{QCPAxisRect@{QCPAxisRect}!rangeZoomAxis@{rangeZoomAxis}}
+\index{rangeZoomAxis@{rangeZoomAxis}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{rangeZoomAxis()}{rangeZoomAxis()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ QCPAxis\+Rect\+::range\+Zoom\+Axis (\begin{DoxyParamCaption}\item[{Qt\+::\+Orientation}]{orientation }\end{DoxyParamCaption})}
+
+Returns the range zoom axis of the {\itshape orientation} provided. If multiple axes were set, returns the first one (use \mbox{\hyperlink{class_q_c_p_axis_rect_a86aac0f435f209d60dacd22cda10c104}{range\+Zoom\+Axes}} to retrieve a list with all set axes).
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_axis_rect_a9442cca2aa358405f39a64d51eca13d2}{set\+Range\+Zoom\+Axes}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18608                                                              \{}
+\DoxyCodeLine{18609   \textcolor{keywordflow}{if} (orientation == Qt::Horizontal)}
+\DoxyCodeLine{18610     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_axis_rect_aa35eeb02f68b63f2069fcc80c9334b91}{mRangeZoomHorzAxis}}.isEmpty() ? nullptr}
+\DoxyCodeLine{18611                                         : \mbox{\hyperlink{class_q_c_p_axis_rect_aa35eeb02f68b63f2069fcc80c9334b91}{mRangeZoomHorzAxis}}.first().data();}
+\DoxyCodeLine{18612   \textcolor{keywordflow}{else}}
+\DoxyCodeLine{18613     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_axis_rect_aafb0e243294c158668499fd62cee057c}{mRangeZoomVertAxis}}.isEmpty() ? nullptr}
+\DoxyCodeLine{18614                                         : \mbox{\hyperlink{class_q_c_p_axis_rect_aafb0e243294c158668499fd62cee057c}{mRangeZoomVertAxis}}.first().data();}
+\DoxyCodeLine{18615 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_ae4e6c4d143aacc88d2d3c56f117c2fe1}\label{class_q_c_p_axis_rect_ae4e6c4d143aacc88d2d3c56f117c2fe1}} 
+\index{QCPAxisRect@{QCPAxisRect}!rangeZoomFactor@{rangeZoomFactor}}
+\index{rangeZoomFactor@{rangeZoomFactor}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{rangeZoomFactor()}{rangeZoomFactor()}}
+{\footnotesize\ttfamily double QCPAxis\+Rect\+::range\+Zoom\+Factor (\begin{DoxyParamCaption}\item[{Qt\+::\+Orientation}]{orientation }\end{DoxyParamCaption})}
+
+Returns the range zoom factor of the {\itshape orientation} provided.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_axis_rect_a895d7ac745ea614e04056244b3c138ac}{set\+Range\+Zoom\+Factor}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18660                                                              \{}
+\DoxyCodeLine{18661   \textcolor{keywordflow}{return} (orientation == Qt::Horizontal ? \mbox{\hyperlink{class_q_c_p_axis_rect_ad08d0250ed7b99de387d0ea6c7fd4dc1}{mRangeZoomFactorHorz}}}
+\DoxyCodeLine{18662                                         : \mbox{\hyperlink{class_q_c_p_axis_rect_a32f063629581d5bf82b12769940b34ad}{mRangeZoomFactorVert}});}
+\DoxyCodeLine{18663 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a03c39cd9704f0d36fb6cf980cdddcbaa}\label{class_q_c_p_axis_rect_a03c39cd9704f0d36fb6cf980cdddcbaa}} 
+\index{QCPAxisRect@{QCPAxisRect}!removeAxis@{removeAxis}}
+\index{removeAxis@{removeAxis}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{removeAxis()}{removeAxis()}}
+{\footnotesize\ttfamily bool QCPAxis\+Rect\+::remove\+Axis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$}]{axis }\end{DoxyParamCaption})}
+
+Removes the specified {\itshape axis} from the axis rect and deletes it.
+
+Returns true on success, i.\+e. if {\itshape axis} was a valid axis in this axis rect.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_axis_rect_a2a845ee60eac7a8d5e71718c5e77c274}{add\+Axis}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18239                                           \{}
+\DoxyCodeLine{18240   \textcolor{comment}{// don't access axis-\/>axisType() to provide safety when axis is an invalid}}
+\DoxyCodeLine{18241   \textcolor{comment}{// pointer, rather go through all axis containers:}}
+\DoxyCodeLine{18242   QHashIterator<QCPAxis::AxisType, QList<QCPAxis *> > it(\mbox{\hyperlink{class_q_c_p_axis_rect_ac2cb3ba9a25b733883afc3bd25f7d82b}{mAxes}});}
+\DoxyCodeLine{18243   \textcolor{keywordflow}{while} (it.hasNext()) \{}
+\DoxyCodeLine{18244     it.next();}
+\DoxyCodeLine{18245     \textcolor{keywordflow}{if} (it.value().contains(\mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}})) \{}
+\DoxyCodeLine{18246       \textcolor{keywordflow}{if} (it.value().first() == \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}} \&\&}
+\DoxyCodeLine{18247           it.value().size() > 1)  \textcolor{comment}{// if removing first axis, transfer axis}}
+\DoxyCodeLine{18248                                   \textcolor{comment}{// offset to the new first axis (which at this}}
+\DoxyCodeLine{18249                                   \textcolor{comment}{// point is the second axis, if it exists)}}
+\DoxyCodeLine{18250         it.value()[1]-\/>setOffset(\mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_aef66fa16353b4993b1cceabfb644a1a9}{offset}}());}
+\DoxyCodeLine{18251       \mbox{\hyperlink{class_q_c_p_axis_rect_ac2cb3ba9a25b733883afc3bd25f7d82b}{mAxes}}[it.key()].removeOne(\mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}});}
+\DoxyCodeLine{18252       \textcolor{keywordflow}{if} (qobject\_cast<QCustomPlot *>(}
+\DoxyCodeLine{18253               \mbox{\hyperlink{class_q_c_p_layerable_a473edb813a4c1929d6b6a8fe3ff3faf7}{parentPlot}}()))  \textcolor{comment}{// make sure this isn't called from QObject dtor}}
+\DoxyCodeLine{18254                               \textcolor{comment}{// when QCustomPlot is already destructed (happens}}
+\DoxyCodeLine{18255                               \textcolor{comment}{// when the axis rect is not in any layout and}}
+\DoxyCodeLine{18256                               \textcolor{comment}{// thus QObject-\/child of QCustomPlot)}}
+\DoxyCodeLine{18257         \mbox{\hyperlink{class_q_c_p_layerable_a473edb813a4c1929d6b6a8fe3ff3faf7}{parentPlot}}()-\/>\mbox{\hyperlink{class_q_custom_plot_a8b46607021c463c94709d3504951cb47}{axisRemoved}}(\mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}});}
+\DoxyCodeLine{18258       \textcolor{keyword}{delete} \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}};}
+\DoxyCodeLine{18259       \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{18260     \}}
+\DoxyCodeLine{18261   \}}
+\DoxyCodeLine{18262   qDebug() << Q\_FUNC\_INFO}
+\DoxyCodeLine{18263            << \textcolor{stringliteral}{"{}Axis isn't in axis rect:"{}} << \textcolor{keyword}{reinterpret\_cast<}quintptr\textcolor{keyword}{>}(\mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}});}
+\DoxyCodeLine{18264   \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{18265 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a3f819d4a1b2193723d1fdafc573eea10}\label{class_q_c_p_axis_rect_a3f819d4a1b2193723d1fdafc573eea10}} 
+\index{QCPAxisRect@{QCPAxisRect}!right@{right}}
+\index{right@{right}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{right()}{right()}}
+{\footnotesize\ttfamily int QCPAxis\+Rect\+::right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the pixel position of the right border of this axis rect. Margins are not taken into account here, so the returned value is with respect to the inner \mbox{\hyperlink{class_q_c_p_layout_element_a208effccfe2cca4a0eaf9393e60f2dd4}{rect}}. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5588 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_layout_element_ad8896f05550389f7b9e92c9e6cdf6e01}{mRect}}.right(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a22a22b8668735438dc06f9a55fe46b33}\label{class_q_c_p_axis_rect_a22a22b8668735438dc06f9a55fe46b33}} 
+\index{QCPAxisRect@{QCPAxisRect}!setBackground@{setBackground}}
+\index{setBackground@{setBackground}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{setBackground()}{setBackground()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void QCPAxis\+Rect\+::set\+Background (\begin{DoxyParamCaption}\item[{const QBrush \&}]{brush }\end{DoxyParamCaption})}
+
+Эта функция перегружена и предоставляется исключительно для удобства использования. Она отличается от вышеупомянутой только фактическими аргументами.
+
+Sets {\itshape brush} as the background brush. The axis rect background will be filled with this brush. Since axis rects place themselves on the \char`\"{}background\char`\"{} layer by default, the axis rect backgrounds are usually drawn below everything else.
+
+The brush will be drawn before (under) any background pixmap, which may be specified with \mbox{\hyperlink{class_q_c_p_axis_rect_af615ab5e52b8e0a9a0eff415b6559db5}{set\+Background(const QPixmap \&pm)}}.
+
+To disable drawing of a background brush, set {\itshape brush} to Qt\+::\+No\+Brush.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_axis_rect_af615ab5e52b8e0a9a0eff415b6559db5}{set\+Background(const QPixmap \&pm)}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18539                                                    \{}
+\DoxyCodeLine{18540   \mbox{\hyperlink{class_q_c_p_axis_rect_a5748e1a37f63c428e38b0a7724b46259}{mBackgroundBrush}} = brush;}
+\DoxyCodeLine{18541 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_af615ab5e52b8e0a9a0eff415b6559db5}\label{class_q_c_p_axis_rect_af615ab5e52b8e0a9a0eff415b6559db5}} 
+\index{QCPAxisRect@{QCPAxisRect}!setBackground@{setBackground}}
+\index{setBackground@{setBackground}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{setBackground()}{setBackground()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void QCPAxis\+Rect\+::set\+Background (\begin{DoxyParamCaption}\item[{const QPixmap \&}]{pm }\end{DoxyParamCaption})}
+
+Sets {\itshape pm} as the axis background pixmap. The axis background pixmap will be drawn inside the axis rect. Since axis rects place themselves on the \char`\"{}background\char`\"{} layer by default, the axis rect backgrounds are usually drawn below everything else.
+
+For cases where the provided pixmap doesn\textquotesingle{}t have the same size as the axis rect, scaling can be enabled with \mbox{\hyperlink{class_q_c_p_axis_rect_ae6d36c3e0e968ffb991170a018e7b503}{set\+Background\+Scaled}} and the scaling mode (i.\+e. whether and how the aspect ratio is preserved) can be set with \mbox{\hyperlink{class_q_c_p_axis_rect_a5ef77ea829c9de7ba248e473f48f7305}{set\+Background\+Scaled\+Mode}}. To set all these options in one call, consider using the overloaded version of this function.
+
+Below the pixmap, the axis rect may be optionally filled with a brush, if specified with \mbox{\hyperlink{class_q_c_p_axis_rect_a22a22b8668735438dc06f9a55fe46b33}{set\+Background(const QBrush \&brush)}}.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_axis_rect_ae6d36c3e0e968ffb991170a018e7b503}{set\+Background\+Scaled}}, \mbox{\hyperlink{class_q_c_p_axis_rect_a5ef77ea829c9de7ba248e473f48f7305}{set\+Background\+Scaled\+Mode}}, \mbox{\hyperlink{class_q_c_p_axis_rect_af615ab5e52b8e0a9a0eff415b6559db5}{set\+Background}}(const QBrush \&brush) 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18521                                                  \{}
+\DoxyCodeLine{18522   \mbox{\hyperlink{class_q_c_p_axis_rect_a38fb1a15f43228a0c124553649303722}{mBackgroundPixmap}} = pm;}
+\DoxyCodeLine{18523   \mbox{\hyperlink{class_q_c_p_axis_rect_aa74b9415598d59b49290e41e42d7ee27}{mScaledBackgroundPixmap}} = QPixmap();}
+\DoxyCodeLine{18524 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_ac48a2d5d9b7732e73b86605c69c5e4c1}\label{class_q_c_p_axis_rect_ac48a2d5d9b7732e73b86605c69c5e4c1}} 
+\index{QCPAxisRect@{QCPAxisRect}!setBackground@{setBackground}}
+\index{setBackground@{setBackground}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{setBackground()}{setBackground()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void QCPAxis\+Rect\+::set\+Background (\begin{DoxyParamCaption}\item[{const QPixmap \&}]{pm,  }\item[{bool}]{scaled,  }\item[{Qt\+::\+Aspect\+Ratio\+Mode}]{mode = {\ttfamily Qt\+:\+:KeepAspectRatioByExpanding} }\end{DoxyParamCaption})}
+
+Эта функция перегружена и предоставляется исключительно для удобства использования. Она отличается от вышеупомянутой только фактическими аргументами.
+
+Allows setting the background pixmap of the axis rect, whether it shall be scaled and how it shall be scaled in one call.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_axis_rect_af615ab5e52b8e0a9a0eff415b6559db5}{set\+Background(const QPixmap \&pm)}}, \mbox{\hyperlink{class_q_c_p_axis_rect_ae6d36c3e0e968ffb991170a018e7b503}{set\+Background\+Scaled}}, \mbox{\hyperlink{class_q_c_p_axis_rect_a5ef77ea829c9de7ba248e473f48f7305}{set\+Background\+Scaled\+Mode}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18552                                                         \{}
+\DoxyCodeLine{18553   \mbox{\hyperlink{class_q_c_p_axis_rect_a38fb1a15f43228a0c124553649303722}{mBackgroundPixmap}} = pm;}
+\DoxyCodeLine{18554   \mbox{\hyperlink{class_q_c_p_axis_rect_aa74b9415598d59b49290e41e42d7ee27}{mScaledBackgroundPixmap}} = QPixmap();}
+\DoxyCodeLine{18555   \mbox{\hyperlink{class_q_c_p_axis_rect_a5ad835f0fae5d7cc5ada9e063641dbf1}{mBackgroundScaled}} = scaled;}
+\DoxyCodeLine{18556   \mbox{\hyperlink{class_q_c_p_axis_rect_a859fd368e794663e346b4f53f35078e9}{mBackgroundScaledMode}} = mode;}
+\DoxyCodeLine{18557 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_ae6d36c3e0e968ffb991170a018e7b503}\label{class_q_c_p_axis_rect_ae6d36c3e0e968ffb991170a018e7b503}} 
+\index{QCPAxisRect@{QCPAxisRect}!setBackgroundScaled@{setBackgroundScaled}}
+\index{setBackgroundScaled@{setBackgroundScaled}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{setBackgroundScaled()}{setBackgroundScaled()}}
+{\footnotesize\ttfamily void QCPAxis\+Rect\+::set\+Background\+Scaled (\begin{DoxyParamCaption}\item[{bool}]{scaled }\end{DoxyParamCaption})}
+
+Sets whether the axis background pixmap shall be scaled to fit the axis rect or not. If {\itshape scaled} is set to true, you may control whether and how the aspect ratio of the original pixmap is preserved with \mbox{\hyperlink{class_q_c_p_axis_rect_a5ef77ea829c9de7ba248e473f48f7305}{set\+Background\+Scaled\+Mode}}.
+
+Note that the scaled version of the original pixmap is buffered, so there is no performance penalty on replots. (Except when the axis rect dimensions are changed continuously.)
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_axis_rect_af615ab5e52b8e0a9a0eff415b6559db5}{set\+Background}}, \mbox{\hyperlink{class_q_c_p_axis_rect_a5ef77ea829c9de7ba248e473f48f7305}{set\+Background\+Scaled\+Mode}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18571                                                  \{}
+\DoxyCodeLine{18572   \mbox{\hyperlink{class_q_c_p_axis_rect_a5ad835f0fae5d7cc5ada9e063641dbf1}{mBackgroundScaled}} = scaled;}
+\DoxyCodeLine{18573 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a5ef77ea829c9de7ba248e473f48f7305}\label{class_q_c_p_axis_rect_a5ef77ea829c9de7ba248e473f48f7305}} 
+\index{QCPAxisRect@{QCPAxisRect}!setBackgroundScaledMode@{setBackgroundScaledMode}}
+\index{setBackgroundScaledMode@{setBackgroundScaledMode}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{setBackgroundScaledMode()}{setBackgroundScaledMode()}}
+{\footnotesize\ttfamily void QCPAxis\+Rect\+::set\+Background\+Scaled\+Mode (\begin{DoxyParamCaption}\item[{Qt\+::\+Aspect\+Ratio\+Mode}]{mode }\end{DoxyParamCaption})}
+
+If scaling of the axis background pixmap is enabled (\mbox{\hyperlink{class_q_c_p_axis_rect_ae6d36c3e0e968ffb991170a018e7b503}{set\+Background\+Scaled}}), use this function to define whether and how the aspect ratio of the original pixmap passed to \mbox{\hyperlink{class_q_c_p_axis_rect_af615ab5e52b8e0a9a0eff415b6559db5}{set\+Background}} is preserved. \begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_axis_rect_af615ab5e52b8e0a9a0eff415b6559db5}{set\+Background}}, \mbox{\hyperlink{class_q_c_p_axis_rect_ae6d36c3e0e968ffb991170a018e7b503}{set\+Background\+Scaled}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18581                                                                 \{}
+\DoxyCodeLine{18582   \mbox{\hyperlink{class_q_c_p_axis_rect_a859fd368e794663e346b4f53f35078e9}{mBackgroundScaledMode}} = mode;}
+\DoxyCodeLine{18583 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_ae6aef2f7211ba6097c925dcd26008418}\label{class_q_c_p_axis_rect_ae6aef2f7211ba6097c925dcd26008418}} 
+\index{QCPAxisRect@{QCPAxisRect}!setRangeDrag@{setRangeDrag}}
+\index{setRangeDrag@{setRangeDrag}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{setRangeDrag()}{setRangeDrag()}}
+{\footnotesize\ttfamily void QCPAxis\+Rect\+::set\+Range\+Drag (\begin{DoxyParamCaption}\item[{Qt\+::\+Orientations}]{orientations }\end{DoxyParamCaption})}
+
+Sets which axis orientation may be range dragged by the user with mouse interaction. What orientation corresponds to which specific axis can be set with \mbox{\hyperlink{class_q_c_p_axis_rect_a648cce336bd99daac4a5ca3e5743775d}{set\+Range\+Drag\+Axes(\+QCPAxis $\ast$horizontal, QCPAxis $\ast$vertical)}}. By default, the horizontal axis is the bottom axis (x\+Axis) and the vertical axis is the left axis (y\+Axis).
+
+To disable range dragging entirely, pass {\ttfamily nullptr} as {\itshape orientations} or remove \mbox{\hyperlink{namespace_q_c_p_a2ad6bb6281c7c2d593d4277b44c2b037a2c4432b9aceafb94000be8d1b589ef18}{QCP\+::i\+Range\+Drag}} from \mbox{\hyperlink{class_q_custom_plot_a5ee1e2f6ae27419deca53e75907c27e5}{QCustom\+Plot\+::set\+Interactions}}. To enable range dragging for both directions, pass {\ttfamily Qt\+::\+Horizontal $\vert$ Qt\+::\+Vertical} as {\itshape orientations}.
+
+In addition to setting {\itshape orientations} to a non-\/zero value, make sure \mbox{\hyperlink{class_q_custom_plot_a5ee1e2f6ae27419deca53e75907c27e5}{QCustom\+Plot\+::set\+Interactions}} contains \mbox{\hyperlink{namespace_q_c_p_a2ad6bb6281c7c2d593d4277b44c2b037a2c4432b9aceafb94000be8d1b589ef18}{QCP\+::i\+Range\+Drag}} to enable the range dragging interaction.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_axis_rect_a7960a9d222f1c31d558b064b60f86a31}{set\+Range\+Zoom}}, \mbox{\hyperlink{class_q_c_p_axis_rect_a648cce336bd99daac4a5ca3e5743775d}{set\+Range\+Drag\+Axes}}, \mbox{\hyperlink{class_q_custom_plot_a775bdcb6329d44701aeaa6135b0e5265}{QCustom\+Plot\+::set\+No\+Antialiasing\+On\+Drag}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18683                                                           \{}
+\DoxyCodeLine{18684   \mbox{\hyperlink{class_q_c_p_axis_rect_aa9f107f66ca3469ad50ee6cea7c9e237}{mRangeDrag}} = orientations;}
+\DoxyCodeLine{18685 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a648cce336bd99daac4a5ca3e5743775d}\label{class_q_c_p_axis_rect_a648cce336bd99daac4a5ca3e5743775d}} 
+\index{QCPAxisRect@{QCPAxisRect}!setRangeDragAxes@{setRangeDragAxes}}
+\index{setRangeDragAxes@{setRangeDragAxes}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{setRangeDragAxes()}{setRangeDragAxes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void QCPAxis\+Rect\+::set\+Range\+Drag\+Axes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$}]{horizontal,  }\item[{\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$}]{vertical }\end{DoxyParamCaption})}
+
+Эта функция перегружена и предоставляется исключительно для удобства использования. Она отличается от вышеупомянутой только фактическими аргументами.
+
+Sets the axes whose range will be dragged when \mbox{\hyperlink{class_q_c_p_axis_rect_ae6aef2f7211ba6097c925dcd26008418}{set\+Range\+Drag}} enables mouse range dragging on the \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} widget. Pass {\ttfamily nullptr} if no axis shall be dragged in the respective orientation.
+
+Use the overload taking a list of axes, if multiple axes (more than one per orientation) shall react to dragging interactions.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_axis_rect_a9442cca2aa358405f39a64d51eca13d2}{set\+Range\+Zoom\+Axes}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18720                                                                          \{}
+\DoxyCodeLine{18721   QList<QCPAxis *> horz, vert;}
+\DoxyCodeLine{18722   \textcolor{keywordflow}{if} (horizontal) horz.append(horizontal);}
+\DoxyCodeLine{18723   \textcolor{keywordflow}{if} (vertical) vert.append(vertical);}
+\DoxyCodeLine{18724   \mbox{\hyperlink{class_q_c_p_axis_rect_a648cce336bd99daac4a5ca3e5743775d}{setRangeDragAxes}}(horz, vert);}
+\DoxyCodeLine{18725 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_af0fbc510147a2a54b9c8cd296e6df8ac}\label{class_q_c_p_axis_rect_af0fbc510147a2a54b9c8cd296e6df8ac}} 
+\index{QCPAxisRect@{QCPAxisRect}!setRangeDragAxes@{setRangeDragAxes}}
+\index{setRangeDragAxes@{setRangeDragAxes}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{setRangeDragAxes()}{setRangeDragAxes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void QCPAxis\+Rect\+::set\+Range\+Drag\+Axes (\begin{DoxyParamCaption}\item[{QList$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ $>$}]{axes }\end{DoxyParamCaption})}
+
+Эта функция перегружена и предоставляется исключительно для удобства использования. Она отличается от вышеупомянутой только фактическими аргументами.
+
+This method allows to set up multiple axes to react to horizontal and vertical dragging. The drag orientation that the respective axis will react to is deduced from its orientation (\mbox{\hyperlink{class_q_c_p_axis_ab988ef4538e2655bb77bd138189cd42e}{QCPAxis\+::orientation}}).
+
+In the unusual case that you wish to e.\+g. drag a vertically oriented axis with a horizontal drag motion, use the overload taking two separate lists for horizontal and vertical dragging. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18737                                                         \{}
+\DoxyCodeLine{18738   QList<QCPAxis *> horz, vert;}
+\DoxyCodeLine{18739   \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} *ax, \mbox{\hyperlink{class_q_c_p_axis_rect_a11657b8faebe9677180860e8057ede26}{axes}}) \{}
+\DoxyCodeLine{18740     \textcolor{keywordflow}{if} (ax-\/>\mbox{\hyperlink{class_q_c_p_axis_ab988ef4538e2655bb77bd138189cd42e}{orientation}}() == Qt::Horizontal)}
+\DoxyCodeLine{18741       horz.append(ax);}
+\DoxyCodeLine{18742     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{18743       vert.append(ax);}
+\DoxyCodeLine{18744   \}}
+\DoxyCodeLine{18745   \mbox{\hyperlink{class_q_c_p_axis_rect_a648cce336bd99daac4a5ca3e5743775d}{setRangeDragAxes}}(horz, vert);}
+\DoxyCodeLine{18746 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a8366903edcb3bb703a8b0be783a85746}\label{class_q_c_p_axis_rect_a8366903edcb3bb703a8b0be783a85746}} 
+\index{QCPAxisRect@{QCPAxisRect}!setRangeDragAxes@{setRangeDragAxes}}
+\index{setRangeDragAxes@{setRangeDragAxes}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{setRangeDragAxes()}{setRangeDragAxes()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void QCPAxis\+Rect\+::set\+Range\+Drag\+Axes (\begin{DoxyParamCaption}\item[{QList$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ $>$}]{horizontal,  }\item[{QList$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ $>$}]{vertical }\end{DoxyParamCaption})}
+
+Эта функция перегружена и предоставляется исключительно для удобства использования. Она отличается от вышеупомянутой только фактическими аргументами.
+
+This method allows to set multiple axes up to react to horizontal and vertical dragging, and define specifically which axis reacts to which drag orientation (irrespective of the axis orientation). 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18755                                                               \{}
+\DoxyCodeLine{18756   \mbox{\hyperlink{class_q_c_p_axis_rect_abd4f1d854b41a9c6730f3a3d605c42af}{mRangeDragHorzAxis}}.clear();}
+\DoxyCodeLine{18757   \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} *ax, horizontal) \{}
+\DoxyCodeLine{18758     QPointer<QCPAxis> axPointer(ax);}
+\DoxyCodeLine{18759     \textcolor{keywordflow}{if} (!axPointer.isNull())}
+\DoxyCodeLine{18760       \mbox{\hyperlink{class_q_c_p_axis_rect_abd4f1d854b41a9c6730f3a3d605c42af}{mRangeDragHorzAxis}}.append(axPointer);}
+\DoxyCodeLine{18761     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{18762       qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}invalid axis passed in horizontal list:"{}}}
+\DoxyCodeLine{18763                << \textcolor{keyword}{reinterpret\_cast<}quintptr\textcolor{keyword}{>}(ax);}
+\DoxyCodeLine{18764   \}}
+\DoxyCodeLine{18765   \mbox{\hyperlink{class_q_c_p_axis_rect_a3b0a86e5bb136a458d7bc20773e45853}{mRangeDragVertAxis}}.clear();}
+\DoxyCodeLine{18766   \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} *ax, vertical) \{}
+\DoxyCodeLine{18767     QPointer<QCPAxis> axPointer(ax);}
+\DoxyCodeLine{18768     \textcolor{keywordflow}{if} (!axPointer.isNull())}
+\DoxyCodeLine{18769       \mbox{\hyperlink{class_q_c_p_axis_rect_a3b0a86e5bb136a458d7bc20773e45853}{mRangeDragVertAxis}}.append(axPointer);}
+\DoxyCodeLine{18770     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{18771       qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}invalid axis passed in vertical list:"{}}}
+\DoxyCodeLine{18772                << \textcolor{keyword}{reinterpret\_cast<}quintptr\textcolor{keyword}{>}(ax);}
+\DoxyCodeLine{18773   \}}
+\DoxyCodeLine{18774 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a7960a9d222f1c31d558b064b60f86a31}\label{class_q_c_p_axis_rect_a7960a9d222f1c31d558b064b60f86a31}} 
+\index{QCPAxisRect@{QCPAxisRect}!setRangeZoom@{setRangeZoom}}
+\index{setRangeZoom@{setRangeZoom}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{setRangeZoom()}{setRangeZoom()}}
+{\footnotesize\ttfamily void QCPAxis\+Rect\+::set\+Range\+Zoom (\begin{DoxyParamCaption}\item[{Qt\+::\+Orientations}]{orientations }\end{DoxyParamCaption})}
+
+Sets which axis orientation may be zoomed by the user with the mouse wheel. What orientation corresponds to which specific axis can be set with \mbox{\hyperlink{class_q_c_p_axis_rect_a9442cca2aa358405f39a64d51eca13d2}{set\+Range\+Zoom\+Axes(\+QCPAxis $\ast$horizontal, QCPAxis $\ast$vertical)}}. By default, the horizontal axis is the bottom axis (x\+Axis) and the vertical axis is the left axis (y\+Axis).
+
+To disable range zooming entirely, pass {\ttfamily nullptr} as {\itshape orientations} or remove \mbox{\hyperlink{namespace_q_c_p_a2ad6bb6281c7c2d593d4277b44c2b037abee1e94353525a636aeaf0ba32b72e14}{QCP\+::i\+Range\+Zoom}} from \mbox{\hyperlink{class_q_custom_plot_a5ee1e2f6ae27419deca53e75907c27e5}{QCustom\+Plot\+::set\+Interactions}}. To enable range zooming for both directions, pass {\ttfamily Qt\+::\+Horizontal $\vert$ Qt\+::\+Vertical} as {\itshape orientations}.
+
+In addition to setting {\itshape orientations} to a non-\/zero value, make sure \mbox{\hyperlink{class_q_custom_plot_a5ee1e2f6ae27419deca53e75907c27e5}{QCustom\+Plot\+::set\+Interactions}} contains \mbox{\hyperlink{namespace_q_c_p_a2ad6bb6281c7c2d593d4277b44c2b037abee1e94353525a636aeaf0ba32b72e14}{QCP\+::i\+Range\+Zoom}} to enable the range zooming interaction.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_axis_rect_a895d7ac745ea614e04056244b3c138ac}{set\+Range\+Zoom\+Factor}}, \mbox{\hyperlink{class_q_c_p_axis_rect_a9442cca2aa358405f39a64d51eca13d2}{set\+Range\+Zoom\+Axes}}, \mbox{\hyperlink{class_q_c_p_axis_rect_ae6aef2f7211ba6097c925dcd26008418}{set\+Range\+Drag}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18705                                                           \{}
+\DoxyCodeLine{18706   \mbox{\hyperlink{class_q_c_p_axis_rect_a215eff671d48df2edccc36e7f976f28c}{mRangeZoom}} = orientations;}
+\DoxyCodeLine{18707 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a9442cca2aa358405f39a64d51eca13d2}\label{class_q_c_p_axis_rect_a9442cca2aa358405f39a64d51eca13d2}} 
+\index{QCPAxisRect@{QCPAxisRect}!setRangeZoomAxes@{setRangeZoomAxes}}
+\index{setRangeZoomAxes@{setRangeZoomAxes}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{setRangeZoomAxes()}{setRangeZoomAxes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void QCPAxis\+Rect\+::set\+Range\+Zoom\+Axes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$}]{horizontal,  }\item[{\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$}]{vertical }\end{DoxyParamCaption})}
+
+Sets the axes whose range will be zoomed when \mbox{\hyperlink{class_q_c_p_axis_rect_a7960a9d222f1c31d558b064b60f86a31}{set\+Range\+Zoom}} enables mouse wheel zooming on the \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} widget. Pass {\ttfamily nullptr} if no axis shall be zoomed in the respective orientation.
+
+The two axes can be zoomed with different strengths, when different factors are passed to \mbox{\hyperlink{class_q_c_p_axis_rect_a895d7ac745ea614e04056244b3c138ac}{set\+Range\+Zoom\+Factor}}(double horizontal\+Factor, double vertical\+Factor).
+
+Use the overload taking a list of axes, if multiple axes (more than one per orientation) shall react to zooming interactions.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_axis_rect_a648cce336bd99daac4a5ca3e5743775d}{set\+Range\+Drag\+Axes}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18790                                                                          \{}
+\DoxyCodeLine{18791   QList<QCPAxis *> horz, vert;}
+\DoxyCodeLine{18792   \textcolor{keywordflow}{if} (horizontal) horz.append(horizontal);}
+\DoxyCodeLine{18793   \textcolor{keywordflow}{if} (vertical) vert.append(vertical);}
+\DoxyCodeLine{18794   \mbox{\hyperlink{class_q_c_p_axis_rect_a9442cca2aa358405f39a64d51eca13d2}{setRangeZoomAxes}}(horz, vert);}
+\DoxyCodeLine{18795 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a89c1ab7ee6d2a14b56c57c9a796ba623}\label{class_q_c_p_axis_rect_a89c1ab7ee6d2a14b56c57c9a796ba623}} 
+\index{QCPAxisRect@{QCPAxisRect}!setRangeZoomAxes@{setRangeZoomAxes}}
+\index{setRangeZoomAxes@{setRangeZoomAxes}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{setRangeZoomAxes()}{setRangeZoomAxes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void QCPAxis\+Rect\+::set\+Range\+Zoom\+Axes (\begin{DoxyParamCaption}\item[{QList$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ $>$}]{axes }\end{DoxyParamCaption})}
+
+Эта функция перегружена и предоставляется исключительно для удобства использования. Она отличается от вышеупомянутой только фактическими аргументами.
+
+This method allows to set up multiple axes to react to horizontal and vertical range zooming. The zoom orientation that the respective axis will react to is deduced from its orientation (\mbox{\hyperlink{class_q_c_p_axis_ab988ef4538e2655bb77bd138189cd42e}{QCPAxis\+::orientation}}).
+
+In the unusual case that you wish to e.\+g. zoom a vertically oriented axis with a horizontal zoom interaction, use the overload taking two separate lists for horizontal and vertical zooming. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18807                                                         \{}
+\DoxyCodeLine{18808   QList<QCPAxis *> horz, vert;}
+\DoxyCodeLine{18809   \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} *ax, \mbox{\hyperlink{class_q_c_p_axis_rect_a11657b8faebe9677180860e8057ede26}{axes}}) \{}
+\DoxyCodeLine{18810     \textcolor{keywordflow}{if} (ax-\/>\mbox{\hyperlink{class_q_c_p_axis_ab988ef4538e2655bb77bd138189cd42e}{orientation}}() == Qt::Horizontal)}
+\DoxyCodeLine{18811       horz.append(ax);}
+\DoxyCodeLine{18812     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{18813       vert.append(ax);}
+\DoxyCodeLine{18814   \}}
+\DoxyCodeLine{18815   \mbox{\hyperlink{class_q_c_p_axis_rect_a9442cca2aa358405f39a64d51eca13d2}{setRangeZoomAxes}}(horz, vert);}
+\DoxyCodeLine{18816 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_ae29d6e9e54ebd981769c986e498ae118}\label{class_q_c_p_axis_rect_ae29d6e9e54ebd981769c986e498ae118}} 
+\index{QCPAxisRect@{QCPAxisRect}!setRangeZoomAxes@{setRangeZoomAxes}}
+\index{setRangeZoomAxes@{setRangeZoomAxes}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{setRangeZoomAxes()}{setRangeZoomAxes()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void QCPAxis\+Rect\+::set\+Range\+Zoom\+Axes (\begin{DoxyParamCaption}\item[{QList$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ $>$}]{horizontal,  }\item[{QList$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ $>$}]{vertical }\end{DoxyParamCaption})}
+
+Эта функция перегружена и предоставляется исключительно для удобства использования. Она отличается от вышеупомянутой только фактическими аргументами.
+
+This method allows to set multiple axes up to react to horizontal and vertical zooming, and define specifically which axis reacts to which zoom orientation (irrespective of the axis orientation). 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18825                                                               \{}
+\DoxyCodeLine{18826   \mbox{\hyperlink{class_q_c_p_axis_rect_aa35eeb02f68b63f2069fcc80c9334b91}{mRangeZoomHorzAxis}}.clear();}
+\DoxyCodeLine{18827   \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} *ax, horizontal) \{}
+\DoxyCodeLine{18828     QPointer<QCPAxis> axPointer(ax);}
+\DoxyCodeLine{18829     \textcolor{keywordflow}{if} (!axPointer.isNull())}
+\DoxyCodeLine{18830       \mbox{\hyperlink{class_q_c_p_axis_rect_aa35eeb02f68b63f2069fcc80c9334b91}{mRangeZoomHorzAxis}}.append(axPointer);}
+\DoxyCodeLine{18831     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{18832       qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}invalid axis passed in horizontal list:"{}}}
+\DoxyCodeLine{18833                << \textcolor{keyword}{reinterpret\_cast<}quintptr\textcolor{keyword}{>}(ax);}
+\DoxyCodeLine{18834   \}}
+\DoxyCodeLine{18835   \mbox{\hyperlink{class_q_c_p_axis_rect_aafb0e243294c158668499fd62cee057c}{mRangeZoomVertAxis}}.clear();}
+\DoxyCodeLine{18836   \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} *ax, vertical) \{}
+\DoxyCodeLine{18837     QPointer<QCPAxis> axPointer(ax);}
+\DoxyCodeLine{18838     \textcolor{keywordflow}{if} (!axPointer.isNull())}
+\DoxyCodeLine{18839       \mbox{\hyperlink{class_q_c_p_axis_rect_aafb0e243294c158668499fd62cee057c}{mRangeZoomVertAxis}}.append(axPointer);}
+\DoxyCodeLine{18840     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{18841       qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}invalid axis passed in vertical list:"{}}}
+\DoxyCodeLine{18842                << \textcolor{keyword}{reinterpret\_cast<}quintptr\textcolor{keyword}{>}(ax);}
+\DoxyCodeLine{18843   \}}
+\DoxyCodeLine{18844 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_ae83d187b03fc6fa4f00765ad50cd3fc3}\label{class_q_c_p_axis_rect_ae83d187b03fc6fa4f00765ad50cd3fc3}} 
+\index{QCPAxisRect@{QCPAxisRect}!setRangeZoomFactor@{setRangeZoomFactor}}
+\index{setRangeZoomFactor@{setRangeZoomFactor}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{setRangeZoomFactor()}{setRangeZoomFactor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void QCPAxis\+Rect\+::set\+Range\+Zoom\+Factor (\begin{DoxyParamCaption}\item[{double}]{factor }\end{DoxyParamCaption})}
+
+Эта функция перегружена и предоставляется исключительно для удобства использования. Она отличается от вышеупомянутой только фактическими аргументами.
+
+Sets both the horizontal and vertical zoom {\itshape factor}. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18867                                                   \{}
+\DoxyCodeLine{18868   \mbox{\hyperlink{class_q_c_p_axis_rect_ad08d0250ed7b99de387d0ea6c7fd4dc1}{mRangeZoomFactorHorz}} = factor;}
+\DoxyCodeLine{18869   \mbox{\hyperlink{class_q_c_p_axis_rect_a32f063629581d5bf82b12769940b34ad}{mRangeZoomFactorVert}} = factor;}
+\DoxyCodeLine{18870 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a895d7ac745ea614e04056244b3c138ac}\label{class_q_c_p_axis_rect_a895d7ac745ea614e04056244b3c138ac}} 
+\index{QCPAxisRect@{QCPAxisRect}!setRangeZoomFactor@{setRangeZoomFactor}}
+\index{setRangeZoomFactor@{setRangeZoomFactor}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{setRangeZoomFactor()}{setRangeZoomFactor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void QCPAxis\+Rect\+::set\+Range\+Zoom\+Factor (\begin{DoxyParamCaption}\item[{double}]{horizontal\+Factor,  }\item[{double}]{vertical\+Factor }\end{DoxyParamCaption})}
+
+Sets how strong one rotation step of the mouse wheel zooms, when range zoom was activated with \mbox{\hyperlink{class_q_c_p_axis_rect_a7960a9d222f1c31d558b064b60f86a31}{set\+Range\+Zoom}}. The two parameters {\itshape horizontal\+Factor} and {\itshape vertical\+Factor} provide a way to let the horizontal axis zoom at different rates than the vertical axis. Which axis is horizontal and which is vertical, can be set with \mbox{\hyperlink{class_q_c_p_axis_rect_a9442cca2aa358405f39a64d51eca13d2}{set\+Range\+Zoom\+Axes}}.
+
+When the zoom factor is greater than one, scrolling the mouse wheel backwards (towards the user) will zoom in (make the currently visible range smaller). For zoom factors smaller than one, the same scrolling direction will zoom out. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18858                                                             \{}
+\DoxyCodeLine{18859   \mbox{\hyperlink{class_q_c_p_axis_rect_ad08d0250ed7b99de387d0ea6c7fd4dc1}{mRangeZoomFactorHorz}} = horizontalFactor;}
+\DoxyCodeLine{18860   \mbox{\hyperlink{class_q_c_p_axis_rect_a32f063629581d5bf82b12769940b34ad}{mRangeZoomFactorVert}} = verticalFactor;}
+\DoxyCodeLine{18861 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a5fa906175447b14206954f77fc7f1ef4}\label{class_q_c_p_axis_rect_a5fa906175447b14206954f77fc7f1ef4}} 
+\index{QCPAxisRect@{QCPAxisRect}!setupFullAxesBox@{setupFullAxesBox}}
+\index{setupFullAxesBox@{setupFullAxesBox}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{setupFullAxesBox()}{setupFullAxesBox()}}
+{\footnotesize\ttfamily void QCPAxis\+Rect\+::setup\+Full\+Axes\+Box (\begin{DoxyParamCaption}\item[{bool}]{connect\+Ranges = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Convenience function to create an axis on each side that doesn\textquotesingle{}t have any axes yet and set their visibility to true. Further, the top/right axes are assigned the following properties of the bottom/left axes\+:
+
+\begin{DoxyItemize}
+\item range (\mbox{\hyperlink{class_q_c_p_axis_aebdfea5d44c3a0ad2b4700cd4d25b641}{QCPAxis\+::set\+Range}}) \item range reversed (\mbox{\hyperlink{class_q_c_p_axis_a2172fdb196b1a0dc3f40992fcad8e9e1}{QCPAxis\+::set\+Range\+Reversed}}) \item scale type (\mbox{\hyperlink{class_q_c_p_axis_adef29cae617af4f519f6c40d1a866ca6}{QCPAxis\+::set\+Scale\+Type}}) \item tick visibility (\mbox{\hyperlink{class_q_c_p_axis_ac891409315bc379e3b1abdb162c1a011}{QCPAxis\+::set\+Ticks}}) \item number format (\mbox{\hyperlink{class_q_c_p_axis_ae585a54dc2aac662e90a2ca82f002590}{QCPAxis\+::set\+Number\+Format}}) \item number precision (\mbox{\hyperlink{class_q_c_p_axis_a21dc8023ad7500382ad9574b48137e63}{QCPAxis\+::set\+Number\+Precision}}) \item tick count of ticker (\mbox{\hyperlink{class_q_c_p_axis_ticker_a47752abba8293e6dc18491501ae34008}{QCPAxis\+Ticker\+::set\+Tick\+Count}}) \item tick origin of ticker (\mbox{\hyperlink{class_q_c_p_axis_ticker_ab509c7e500293bf66a8409f0d7c23943}{QCPAxis\+Ticker\+::set\+Tick\+Origin}})\end{DoxyItemize}
+Tick label visibility (\mbox{\hyperlink{class_q_c_p_axis_a04ba16e1f6f78d70f938519576ed32c8}{QCPAxis\+::set\+Tick\+Labels}}) of the right and top axes are set to false.
+
+If {\itshape connect\+Ranges} is true, the \mbox{\hyperlink{class_q_c_p_axis_a0894084e4c16a1736534c4095746f910}{range\+Changed}} signals of the bottom and left axes are connected to the \mbox{\hyperlink{class_q_c_p_axis_aebdfea5d44c3a0ad2b4700cd4d25b641}{QCPAxis\+::set\+Range}} slots of the top and right axes. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18326                                                      \{}
+\DoxyCodeLine{18327   \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} *xAxis, *yAxis, *xAxis2, *yAxis2;}
+\DoxyCodeLine{18328   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_rect_a85b321acec0f694d8b5fdeafdbff3133}{axisCount}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aa220d68888516b6c3b493d144f1ba438f}{QCPAxis::atBottom}}) == 0)}
+\DoxyCodeLine{18329     xAxis = \mbox{\hyperlink{class_q_c_p_axis_rect_a2a845ee60eac7a8d5e71718c5e77c274}{addAxis}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aa220d68888516b6c3b493d144f1ba438f}{QCPAxis::atBottom}});}
+\DoxyCodeLine{18330   \textcolor{keywordflow}{else}}
+\DoxyCodeLine{18331     xAxis = \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aa220d68888516b6c3b493d144f1ba438f}{QCPAxis::atBottom}});}
+\DoxyCodeLine{18332 }
+\DoxyCodeLine{18333   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_rect_a85b321acec0f694d8b5fdeafdbff3133}{axisCount}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aaf84aa6cac6fb6099f54a2cbf7546b730}{QCPAxis::atLeft}}) == 0)}
+\DoxyCodeLine{18334     yAxis = \mbox{\hyperlink{class_q_c_p_axis_rect_a2a845ee60eac7a8d5e71718c5e77c274}{addAxis}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aaf84aa6cac6fb6099f54a2cbf7546b730}{QCPAxis::atLeft}});}
+\DoxyCodeLine{18335   \textcolor{keywordflow}{else}}
+\DoxyCodeLine{18336     yAxis = \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aaf84aa6cac6fb6099f54a2cbf7546b730}{QCPAxis::atLeft}});}
+\DoxyCodeLine{18337 }
+\DoxyCodeLine{18338   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_rect_a85b321acec0f694d8b5fdeafdbff3133}{axisCount}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aac0ece2b680d3f545e701f75af1655977}{QCPAxis::atTop}}) == 0)}
+\DoxyCodeLine{18339     xAxis2 = \mbox{\hyperlink{class_q_c_p_axis_rect_a2a845ee60eac7a8d5e71718c5e77c274}{addAxis}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aac0ece2b680d3f545e701f75af1655977}{QCPAxis::atTop}});}
+\DoxyCodeLine{18340   \textcolor{keywordflow}{else}}
+\DoxyCodeLine{18341     xAxis2 = \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aac0ece2b680d3f545e701f75af1655977}{QCPAxis::atTop}});}
+\DoxyCodeLine{18342 }
+\DoxyCodeLine{18343   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_rect_a85b321acec0f694d8b5fdeafdbff3133}{axisCount}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aadf5509f7d29199ef2f263b1dd224b345}{QCPAxis::atRight}}) == 0)}
+\DoxyCodeLine{18344     yAxis2 = \mbox{\hyperlink{class_q_c_p_axis_rect_a2a845ee60eac7a8d5e71718c5e77c274}{addAxis}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aadf5509f7d29199ef2f263b1dd224b345}{QCPAxis::atRight}});}
+\DoxyCodeLine{18345   \textcolor{keywordflow}{else}}
+\DoxyCodeLine{18346     yAxis2 = \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}(\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18aadf5509f7d29199ef2f263b1dd224b345}{QCPAxis::atRight}});}
+\DoxyCodeLine{18347 }
+\DoxyCodeLine{18348   xAxis-\/>\mbox{\hyperlink{class_q_c_p_layerable_a3bed99ddc396b48ce3ebfdc0418744f8}{setVisible}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{18349   yAxis-\/>\mbox{\hyperlink{class_q_c_p_layerable_a3bed99ddc396b48ce3ebfdc0418744f8}{setVisible}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{18350   xAxis2-\/>\mbox{\hyperlink{class_q_c_p_layerable_a3bed99ddc396b48ce3ebfdc0418744f8}{setVisible}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{18351   yAxis2-\/>\mbox{\hyperlink{class_q_c_p_layerable_a3bed99ddc396b48ce3ebfdc0418744f8}{setVisible}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{18352   xAxis2-\/>\mbox{\hyperlink{class_q_c_p_axis_a04ba16e1f6f78d70f938519576ed32c8}{setTickLabels}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{18353   yAxis2-\/>\mbox{\hyperlink{class_q_c_p_axis_a04ba16e1f6f78d70f938519576ed32c8}{setTickLabels}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{18354 }
+\DoxyCodeLine{18355   xAxis2-\/>\mbox{\hyperlink{class_q_c_p_axis_aebdfea5d44c3a0ad2b4700cd4d25b641}{setRange}}(xAxis-\/>\mbox{\hyperlink{class_q_c_p_axis_ac4058855a81f1a883cf2e754f6a6acb1}{range}}());}
+\DoxyCodeLine{18356   xAxis2-\/>\mbox{\hyperlink{class_q_c_p_axis_a2172fdb196b1a0dc3f40992fcad8e9e1}{setRangeReversed}}(xAxis-\/>\mbox{\hyperlink{class_q_c_p_axis_ab9866dd1a78f1920f491ec12a794bec2}{rangeReversed}}());}
+\DoxyCodeLine{18357   xAxis2-\/>\mbox{\hyperlink{class_q_c_p_axis_adef29cae617af4f519f6c40d1a866ca6}{setScaleType}}(xAxis-\/>\mbox{\hyperlink{class_q_c_p_axis_ad23e9ad97b44e9aeaf4fab8904280098}{scaleType}}());}
+\DoxyCodeLine{18358   xAxis2-\/>\mbox{\hyperlink{class_q_c_p_axis_ac891409315bc379e3b1abdb162c1a011}{setTicks}}(xAxis-\/>\mbox{\hyperlink{class_q_c_p_axis_a5c3da767a2dc990f200856a9e27ea06e}{ticks}}());}
+\DoxyCodeLine{18359   xAxis2-\/>\mbox{\hyperlink{class_q_c_p_axis_ae585a54dc2aac662e90a2ca82f002590}{setNumberFormat}}(xAxis-\/>\mbox{\hyperlink{class_q_c_p_axis_a20cc29c2f282a0e9efd8f32145e47be6}{numberFormat}}());}
+\DoxyCodeLine{18360   xAxis2-\/>\mbox{\hyperlink{class_q_c_p_axis_a21dc8023ad7500382ad9574b48137e63}{setNumberPrecision}}(xAxis-\/>\mbox{\hyperlink{class_q_c_p_axis_a2562b6f3a4a01c7ed83a388042664998}{numberPrecision}}());}
+\DoxyCodeLine{18361   xAxis2-\/>\mbox{\hyperlink{class_q_c_p_axis_a7b7a27151be8235059e1294f73ecf615}{ticker}}()-\/>setTickCount(xAxis-\/>\mbox{\hyperlink{class_q_c_p_axis_a7b7a27151be8235059e1294f73ecf615}{ticker}}()-\/>tickCount());}
+\DoxyCodeLine{18362   xAxis2-\/>\mbox{\hyperlink{class_q_c_p_axis_a7b7a27151be8235059e1294f73ecf615}{ticker}}()-\/>setTickOrigin(xAxis-\/>\mbox{\hyperlink{class_q_c_p_axis_a7b7a27151be8235059e1294f73ecf615}{ticker}}()-\/>tickOrigin());}
+\DoxyCodeLine{18363 }
+\DoxyCodeLine{18364   yAxis2-\/>\mbox{\hyperlink{class_q_c_p_axis_aebdfea5d44c3a0ad2b4700cd4d25b641}{setRange}}(yAxis-\/>\mbox{\hyperlink{class_q_c_p_axis_ac4058855a81f1a883cf2e754f6a6acb1}{range}}());}
+\DoxyCodeLine{18365   yAxis2-\/>\mbox{\hyperlink{class_q_c_p_axis_a2172fdb196b1a0dc3f40992fcad8e9e1}{setRangeReversed}}(yAxis-\/>\mbox{\hyperlink{class_q_c_p_axis_ab9866dd1a78f1920f491ec12a794bec2}{rangeReversed}}());}
+\DoxyCodeLine{18366   yAxis2-\/>\mbox{\hyperlink{class_q_c_p_axis_adef29cae617af4f519f6c40d1a866ca6}{setScaleType}}(yAxis-\/>\mbox{\hyperlink{class_q_c_p_axis_ad23e9ad97b44e9aeaf4fab8904280098}{scaleType}}());}
+\DoxyCodeLine{18367   yAxis2-\/>\mbox{\hyperlink{class_q_c_p_axis_ac891409315bc379e3b1abdb162c1a011}{setTicks}}(yAxis-\/>\mbox{\hyperlink{class_q_c_p_axis_a5c3da767a2dc990f200856a9e27ea06e}{ticks}}());}
+\DoxyCodeLine{18368   yAxis2-\/>\mbox{\hyperlink{class_q_c_p_axis_ae585a54dc2aac662e90a2ca82f002590}{setNumberFormat}}(yAxis-\/>\mbox{\hyperlink{class_q_c_p_axis_a20cc29c2f282a0e9efd8f32145e47be6}{numberFormat}}());}
+\DoxyCodeLine{18369   yAxis2-\/>\mbox{\hyperlink{class_q_c_p_axis_a21dc8023ad7500382ad9574b48137e63}{setNumberPrecision}}(yAxis-\/>\mbox{\hyperlink{class_q_c_p_axis_a2562b6f3a4a01c7ed83a388042664998}{numberPrecision}}());}
+\DoxyCodeLine{18370   yAxis2-\/>\mbox{\hyperlink{class_q_c_p_axis_a7b7a27151be8235059e1294f73ecf615}{ticker}}()-\/>setTickCount(yAxis-\/>\mbox{\hyperlink{class_q_c_p_axis_a7b7a27151be8235059e1294f73ecf615}{ticker}}()-\/>tickCount());}
+\DoxyCodeLine{18371   yAxis2-\/>\mbox{\hyperlink{class_q_c_p_axis_a7b7a27151be8235059e1294f73ecf615}{ticker}}()-\/>setTickOrigin(yAxis-\/>\mbox{\hyperlink{class_q_c_p_axis_a7b7a27151be8235059e1294f73ecf615}{ticker}}()-\/>tickOrigin());}
+\DoxyCodeLine{18372 }
+\DoxyCodeLine{18373   \textcolor{keywordflow}{if} (connectRanges) \{}
+\DoxyCodeLine{18374     connect(xAxis, SIGNAL(rangeChanged(\mbox{\hyperlink{class_q_c_p_range}{QCPRange}})), xAxis2,}
+\DoxyCodeLine{18375             SLOT(setRange(\mbox{\hyperlink{class_q_c_p_range}{QCPRange}})));}
+\DoxyCodeLine{18376     connect(yAxis, SIGNAL(rangeChanged(\mbox{\hyperlink{class_q_c_p_range}{QCPRange}})), yAxis2,}
+\DoxyCodeLine{18377             SLOT(setRange(\mbox{\hyperlink{class_q_c_p_range}{QCPRange}})));}
+\DoxyCodeLine{18378   \}}
+\DoxyCodeLine{18379 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a7a8289346eb612f422c704f8b75cf479}\label{class_q_c_p_axis_rect_a7a8289346eb612f422c704f8b75cf479}} 
+\index{QCPAxisRect@{QCPAxisRect}!size@{size}}
+\index{size@{size}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily QSize QCPAxis\+Rect\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the pixel size of this axis rect. Margins are not taken into account here, so the returned value is with respect to the inner \mbox{\hyperlink{class_q_c_p_layout_element_a208effccfe2cca4a0eaf9393e60f2dd4}{rect}}. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5593 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_layout_element_ad8896f05550389f7b9e92c9e6cdf6e01}{mRect}}.size(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a45dbad181cbb9f09d068dbb76c817c95}\label{class_q_c_p_axis_rect_a45dbad181cbb9f09d068dbb76c817c95}} 
+\index{QCPAxisRect@{QCPAxisRect}!top@{top}}
+\index{top@{top}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{top()}{top()}}
+{\footnotesize\ttfamily int QCPAxis\+Rect\+::top (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the pixel position of the top border of this axis rect. Margins are not taken into account here, so the returned value is with respect to the inner \mbox{\hyperlink{class_q_c_p_layout_element_a208effccfe2cca4a0eaf9393e60f2dd4}{rect}}. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5589 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_layout_element_ad8896f05550389f7b9e92c9e6cdf6e01}{mRect}}.top(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a5a847b3ddeca3abec38d3838fefb0dbd}\label{class_q_c_p_axis_rect_a5a847b3ddeca3abec38d3838fefb0dbd}} 
+\index{QCPAxisRect@{QCPAxisRect}!topLeft@{topLeft}}
+\index{topLeft@{topLeft}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{topLeft()}{topLeft()}}
+{\footnotesize\ttfamily QPoint QCPAxis\+Rect\+::top\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the top left corner of this axis rect in pixels. Margins are not taken into account here, so the returned value is with respect to the inner \mbox{\hyperlink{class_q_c_p_layout_element_a208effccfe2cca4a0eaf9393e60f2dd4}{rect}}. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5594 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_layout_element_ad8896f05550389f7b9e92c9e6cdf6e01}{mRect}}.topLeft(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a7aa221967549ba71b98c465bf8234758}\label{class_q_c_p_axis_rect_a7aa221967549ba71b98c465bf8234758}} 
+\index{QCPAxisRect@{QCPAxisRect}!topRight@{topRight}}
+\index{topRight@{topRight}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{topRight()}{topRight()}}
+{\footnotesize\ttfamily QPoint QCPAxis\+Rect\+::top\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the top right corner of this axis rect in pixels. Margins are not taken into account here, so the returned value is with respect to the inner \mbox{\hyperlink{class_q_c_p_layout_element_a208effccfe2cca4a0eaf9393e60f2dd4}{rect}}. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5595 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_layout_element_ad8896f05550389f7b9e92c9e6cdf6e01}{mRect}}.topRight(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_add049d464b9ef2ccdc638adc4ccb4aca}\label{class_q_c_p_axis_rect_add049d464b9ef2ccdc638adc4ccb4aca}} 
+\index{QCPAxisRect@{QCPAxisRect}!update@{update}}
+\index{update@{update}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void QCPAxis\+Rect\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_layout_element_a0d83360e05735735aaf6d7983c56374d}{Update\+Phase}}}]{phase }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This method is called automatically upon replot and doesn\textquotesingle{}t need to be called by users of \mbox{\hyperlink{class_q_c_p_axis_rect}{QCPAxis\+Rect}}.
+
+Calls the base class implementation to update the margins (see \mbox{\hyperlink{class_q_c_p_layout_element_a929c2ec62e0e0e1d8418eaa802e2af9b}{QCPLayout\+Element\+::update}}), and finally passes the \mbox{\hyperlink{class_q_c_p_layout_element_a208effccfe2cca4a0eaf9393e60f2dd4}{rect}} to the inset layout (\mbox{\hyperlink{class_q_c_p_axis_rect_a949f803466619924c7018df4b511ae10}{inset\+Layout}}) and calls its QCPInset\+Layout\+::update function.
+
+\textbackslash{}seebaseclassmethod 
+
+Переопределяет метод предка \mbox{\hyperlink{class_q_c_p_layout_element_a929c2ec62e0e0e1d8418eaa802e2af9b}{QCPLayout\+Element}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18464                                           \{}
+\DoxyCodeLine{18465   \mbox{\hyperlink{class_q_c_p_layout_element_a929c2ec62e0e0e1d8418eaa802e2af9b}{QCPLayoutElement::update}}(phase);}
+\DoxyCodeLine{18466 }
+\DoxyCodeLine{18467   \textcolor{keywordflow}{switch} (phase) \{}
+\DoxyCodeLine{18468     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_layout_element_a0d83360e05735735aaf6d7983c56374dad6119882eba136357c2f627992e527d3}{upPreparation}}: \{}
+\DoxyCodeLine{18469       \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} *\mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}, \mbox{\hyperlink{class_q_c_p_axis_rect_a11657b8faebe9677180860e8057ede26}{axes}}()) \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_a57d9e961bae7d62f5b4e1f143e660c78}{setupTickVectors}}();}
+\DoxyCodeLine{18470       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{18471     \}}
+\DoxyCodeLine{18472     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_layout_element_a0d83360e05735735aaf6d7983c56374da5d1ccf5d79967c232c3c511796860045}{upLayout}}: \{}
+\DoxyCodeLine{18473       \mbox{\hyperlink{class_q_c_p_axis_rect_a255240399e0fd24baad80cbbe46f698a}{mInsetLayout}}-\/>\mbox{\hyperlink{class_q_c_p_layout_element_a38975ea13e36de8e53391ce41d94bc0f}{setOuterRect}}(\mbox{\hyperlink{class_q_c_p_layout_element_a208effccfe2cca4a0eaf9393e60f2dd4}{rect}}());}
+\DoxyCodeLine{18474       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{18475     \}}
+\DoxyCodeLine{18476     \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{18477       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{18478   \}}
+\DoxyCodeLine{18479 }
+\DoxyCodeLine{18480   \textcolor{comment}{// pass update call on to inset layout (doesn't happen automatically, because}}
+\DoxyCodeLine{18481   \textcolor{comment}{// QCPAxisRect doesn't derive from QCPLayout):}}
+\DoxyCodeLine{18482   \mbox{\hyperlink{class_q_c_p_axis_rect_a255240399e0fd24baad80cbbe46f698a}{mInsetLayout}}-\/>\mbox{\hyperlink{class_q_c_p_layout_a48ecc9c98ea90b547c3e27a931a8f7bd}{update}}(phase);}
+\DoxyCodeLine{18483 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a6024ccdc74f5dc0e8a0fe482e5b28a20}\label{class_q_c_p_axis_rect_a6024ccdc74f5dc0e8a0fe482e5b28a20}} 
+\index{QCPAxisRect@{QCPAxisRect}!updateAxesOffset@{updateAxesOffset}}
+\index{updateAxesOffset@{updateAxesOffset}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{updateAxesOffset()}{updateAxesOffset()}}
+{\footnotesize\ttfamily void QCPAxis\+Rect\+::update\+Axes\+Offset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18a}{QCPAxis\+::\+Axis\+Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18928                                                        \{}
+\DoxyCodeLine{18929   \textcolor{keyword}{const} QList<QCPAxis *> axesList = \mbox{\hyperlink{class_q_c_p_axis_rect_ac2cb3ba9a25b733883afc3bd25f7d82b}{mAxes}}.value(type);}
+\DoxyCodeLine{18930   \textcolor{keywordflow}{if} (axesList.isEmpty()) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{18931 }
+\DoxyCodeLine{18932   \textcolor{keywordtype}{bool} isFirstVisible =}
+\DoxyCodeLine{18933       !axesList.first()}
+\DoxyCodeLine{18934            -\/>visible();  \textcolor{comment}{// if the first axis is visible, the second axis (which}}
+\DoxyCodeLine{18935                          \textcolor{comment}{// is where the loop starts) isn't the first visible}}
+\DoxyCodeLine{18936                          \textcolor{comment}{// axis, so initialize with false}}
+\DoxyCodeLine{18937   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i < axesList.size(); ++i) \{}
+\DoxyCodeLine{18938     \textcolor{keywordtype}{int} offset =}
+\DoxyCodeLine{18939         axesList.at(i -\/ 1)-\/>offset() + axesList.at(i -\/ 1)-\/>calculateMargin();}
+\DoxyCodeLine{18940     \textcolor{keywordflow}{if} (axesList.at(i)}
+\DoxyCodeLine{18941             -\/>visible())  \textcolor{comment}{// only add inner tick length to offset if this axis}}
+\DoxyCodeLine{18942                           \textcolor{comment}{// is visible and it's not the first visible one}}
+\DoxyCodeLine{18943                           \textcolor{comment}{// (might happen if true first axis is invisible)}}
+\DoxyCodeLine{18944     \{}
+\DoxyCodeLine{18945       \textcolor{keywordflow}{if} (!isFirstVisible) offset += axesList.at(i)-\/>tickLengthIn();}
+\DoxyCodeLine{18946       isFirstVisible = \textcolor{keyword}{false};}
+\DoxyCodeLine{18947     \}}
+\DoxyCodeLine{18948     axesList.at(i)-\/>setOffset(offset);}
+\DoxyCodeLine{18949   \}}
+\DoxyCodeLine{18950 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a93eeaa0c127d6d6fe8171b2455080262}\label{class_q_c_p_axis_rect_a93eeaa0c127d6d6fe8171b2455080262}} 
+\index{QCPAxisRect@{QCPAxisRect}!wheelEvent@{wheelEvent}}
+\index{wheelEvent@{wheelEvent}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{wheelEvent()}{wheelEvent()}}
+{\footnotesize\ttfamily void QCPAxis\+Rect\+::wheel\+Event (\begin{DoxyParamCaption}\item[{QWheel\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+This event gets called when the user turns the mouse scroll wheel while the cursor is over the layerable. Whether a cursor is over the layerable is decided by a preceding call to \mbox{\hyperlink{class_q_c_p_layout_element_a62d60f1b0ee9bb23e38811d71586d79c}{select\+Test}}.
+
+The current pixel position of the cursor on the \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} widget is accessible via {\ttfamily event-\/$>$pos()}.
+
+The {\ttfamily event-\/$>$angle\+Delta()} indicates how far the mouse wheel was turned, which is usually +/-\/ 120 for single rotation steps. However, if the mouse wheel is turned rapidly, multiple steps may accumulate to one event, making the delta larger. On the other hand, if the wheel has very smooth steps or none at all, the delta may be smaller.
+
+The default implementation does nothing.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_axis_rect_aa9a7c807eaa4666870ac94aa6abc4dde}{mouse\+Press\+Event}}, \mbox{\hyperlink{class_q_c_p_axis_rect_a9cd27ad8c5cfb49aefd9dbb30def4beb}{mouse\+Move\+Event}}, \mbox{\hyperlink{class_q_c_p_axis_rect_a6c89b988d3a0b93c0878f0ebdb5037f4}{mouse\+Release\+Event}}, \mbox{\hyperlink{class_q_c_p_layerable_a4171e2e823aca242dd0279f00ed2de81}{mouse\+Double\+Click\+Event}} 
+\end{DoxySeeAlso}
+
+
+Переопределяет метод предка \mbox{\hyperlink{class_q_c_p_layerable_a47dfd7b8fd99c08ca54e09c362b6f022}{QCPLayerable}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{19117                                                \{}
+\DoxyCodeLine{19118 \textcolor{preprocessor}{\#if QT\_VERSION < QT\_VERSION\_CHECK(5, 0, 0)}}
+\DoxyCodeLine{19119   \textcolor{keyword}{const} \textcolor{keywordtype}{double} delta = \textcolor{keyword}{event}-\/>delta();}
+\DoxyCodeLine{19120 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{19121   \textcolor{keyword}{const} \textcolor{keywordtype}{double} delta = \textcolor{keyword}{event}-\/>angleDelta().y();}
+\DoxyCodeLine{19122 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{19123 }
+\DoxyCodeLine{19124 \textcolor{preprocessor}{\#if QT\_VERSION < QT\_VERSION\_CHECK(5, 14, 0)}}
+\DoxyCodeLine{19125   \textcolor{keyword}{const} QPointF pos = \textcolor{keyword}{event}-\/>pos();}
+\DoxyCodeLine{19126 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{19127   \textcolor{keyword}{const} QPointF pos = \textcolor{keyword}{event}-\/>position();}
+\DoxyCodeLine{19128 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{19129 }
+\DoxyCodeLine{19130   \textcolor{comment}{// Mouse range zooming interaction:}}
+\DoxyCodeLine{19131   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a2c78c5fd2943c148ab76652801d3f2dc}{interactions}}().testFlag(\mbox{\hyperlink{namespace_q_c_p_a2ad6bb6281c7c2d593d4277b44c2b037abee1e94353525a636aeaf0ba32b72e14}{QCP::iRangeZoom}})) \{}
+\DoxyCodeLine{19132     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_rect_a215eff671d48df2edccc36e7f976f28c}{mRangeZoom}} != 0) \{}
+\DoxyCodeLine{19133       \textcolor{keywordtype}{double} factor;}
+\DoxyCodeLine{19134       \textcolor{keywordtype}{double} wheelSteps =}
+\DoxyCodeLine{19135           delta / 120.0;  \textcolor{comment}{// a single step delta is +/-\/120 usually}}
+\DoxyCodeLine{19136       \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_rect_a215eff671d48df2edccc36e7f976f28c}{mRangeZoom}}.testFlag(Qt::Horizontal)) \{}
+\DoxyCodeLine{19137         factor = qPow(\mbox{\hyperlink{class_q_c_p_axis_rect_ad08d0250ed7b99de387d0ea6c7fd4dc1}{mRangeZoomFactorHorz}}, wheelSteps);}
+\DoxyCodeLine{19138         \textcolor{keywordflow}{foreach} (QPointer<QCPAxis> \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}, \mbox{\hyperlink{class_q_c_p_axis_rect_aa35eeb02f68b63f2069fcc80c9334b91}{mRangeZoomHorzAxis}}) \{}
+\DoxyCodeLine{19139           \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}.isNull())}
+\DoxyCodeLine{19140             \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_a31d18ddf3a4f21ceb077db8ae5b69856}{scaleRange}}(factor, \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_a536ef8f624cac59b6b6fdcb495723c57}{pixelToCoord}}(pos.x()));}
+\DoxyCodeLine{19141         \}}
+\DoxyCodeLine{19142       \}}
+\DoxyCodeLine{19143       \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_rect_a215eff671d48df2edccc36e7f976f28c}{mRangeZoom}}.testFlag(Qt::Vertical)) \{}
+\DoxyCodeLine{19144         factor = qPow(\mbox{\hyperlink{class_q_c_p_axis_rect_a32f063629581d5bf82b12769940b34ad}{mRangeZoomFactorVert}}, wheelSteps);}
+\DoxyCodeLine{19145         \textcolor{keywordflow}{foreach} (QPointer<QCPAxis> \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}, \mbox{\hyperlink{class_q_c_p_axis_rect_aafb0e243294c158668499fd62cee057c}{mRangeZoomVertAxis}}) \{}
+\DoxyCodeLine{19146           \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}.isNull())}
+\DoxyCodeLine{19147             \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_a31d18ddf3a4f21ceb077db8ae5b69856}{scaleRange}}(factor, \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_a536ef8f624cac59b6b6fdcb495723c57}{pixelToCoord}}(pos.y()));}
+\DoxyCodeLine{19148         \}}
+\DoxyCodeLine{19149       \}}
+\DoxyCodeLine{19150       \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_aa4bfe7d70dbe67e81d877819b75ab9af}{replot}}();}
+\DoxyCodeLine{19151     \}}
+\DoxyCodeLine{19152   \}}
+\DoxyCodeLine{19153 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a204645398a4f9d0b0189385c7c2cfb91}\label{class_q_c_p_axis_rect_a204645398a4f9d0b0189385c7c2cfb91}} 
+\index{QCPAxisRect@{QCPAxisRect}!width@{width}}
+\index{width@{width}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{width()}{width()}}
+{\footnotesize\ttfamily int QCPAxis\+Rect\+::width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the pixel width of this axis rect. Margins are not taken into account here, so the returned value is with respect to the inner \mbox{\hyperlink{class_q_c_p_layout_element_a208effccfe2cca4a0eaf9393e60f2dd4}{rect}}. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5591 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_layout_element_ad8896f05550389f7b9e92c9e6cdf6e01}{mRect}}.width(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a5fc8460564e81dcc2a9343dc8bc1fe67}\label{class_q_c_p_axis_rect_a5fc8460564e81dcc2a9343dc8bc1fe67}} 
+\index{QCPAxisRect@{QCPAxisRect}!zoom@{zoom}}
+\index{zoom@{zoom}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{zoom()}{zoom()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void QCPAxis\+Rect\+::zoom (\begin{DoxyParamCaption}\item[{const QRectF \&}]{pixel\+Rect }\end{DoxyParamCaption})}
+
+Zooms in (or out) to the passed rectangular region {\itshape pixel\+Rect}, given in pixel coordinates.
+
+All axes of this axis rect will have their range zoomed accordingly. If you only wish to zoom specific axes, use the overloaded version of this method.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_custom_plot_a810ef958ebe84db661c7288b526c0deb}{QCustom\+Plot\+::set\+Selection\+Rect\+Mode}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18276 \{ \mbox{\hyperlink{class_q_c_p_axis_rect_a5fc8460564e81dcc2a9343dc8bc1fe67}{zoom}}(pixelRect, \mbox{\hyperlink{class_q_c_p_axis_rect_a11657b8faebe9677180860e8057ede26}{axes}}()); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_ae481c28b50e10cfbbec59fde45e77367}\label{class_q_c_p_axis_rect_ae481c28b50e10cfbbec59fde45e77367}} 
+\index{QCPAxisRect@{QCPAxisRect}!zoom@{zoom}}
+\index{zoom@{zoom}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{zoom()}{zoom()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void QCPAxis\+Rect\+::zoom (\begin{DoxyParamCaption}\item[{const QRectF \&}]{pixel\+Rect,  }\item[{const QList$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ $>$ \&}]{affected\+Axes }\end{DoxyParamCaption})}
+
+Эта функция перегружена и предоставляется исключительно для удобства использования. Она отличается от вышеупомянутой только фактическими аргументами.
+
+Zooms in (or out) to the passed rectangular region {\itshape pixel\+Rect}, given in pixel coordinates.
+
+Only the axes passed in {\itshape affected\+Axes} will have their ranges zoomed accordingly.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_custom_plot_a810ef958ebe84db661c7288b526c0deb}{QCustom\+Plot\+::set\+Selection\+Rect\+Mode}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18289                                                              \{}
+\DoxyCodeLine{18290   \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} *\mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}, affectedAxes) \{}
+\DoxyCodeLine{18291     \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}) \{}
+\DoxyCodeLine{18292       qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}a passed axis was zero"{}};}
+\DoxyCodeLine{18293       \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{18294     \}}
+\DoxyCodeLine{18295     \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} pixelRange;}
+\DoxyCodeLine{18296     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_ab988ef4538e2655bb77bd138189cd42e}{orientation}}() == Qt::Horizontal)}
+\DoxyCodeLine{18297       pixelRange = \mbox{\hyperlink{class_q_c_p_range}{QCPRange}}(pixelRect.left(), pixelRect.right());}
+\DoxyCodeLine{18298     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{18299       pixelRange = \mbox{\hyperlink{class_q_c_p_range}{QCPRange}}(pixelRect.top(), pixelRect.bottom());}
+\DoxyCodeLine{18300     \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_aebdfea5d44c3a0ad2b4700cd4d25b641}{setRange}}(\mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_a536ef8f624cac59b6b6fdcb495723c57}{pixelToCoord}}(pixelRange.\mbox{\hyperlink{class_q_c_p_range_aa3aca3edb14f7ca0c85d912647b91745}{lower}}),}
+\DoxyCodeLine{18301                    \mbox{\hyperlink{class_q_c_p_axis_rect_a583ae4f6d78b601b732183f6cabecbe1}{axis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_a536ef8f624cac59b6b6fdcb495723c57}{pixelToCoord}}(pixelRange.\mbox{\hyperlink{class_q_c_p_range_ae44eb3aafe1d0e2ed34b499b6d2e074f}{upper}}));}
+\DoxyCodeLine{18302   \}}
+\DoxyCodeLine{18303 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Документация по друзьям класса и функциям, относящимся к классу}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a1cdf9df76adcfae45261690aa0ca2198}\label{class_q_c_p_axis_rect_a1cdf9df76adcfae45261690aa0ca2198}} 
+\index{QCPAxisRect@{QCPAxisRect}!QCustomPlot@{QCustomPlot}}
+\index{QCustomPlot@{QCustomPlot}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{QCustomPlot}{QCustomPlot}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{class_q_c_p_axis_rect_aa4a24f76360cfebe1bcf17a77fa7521b}\label{class_q_c_p_axis_rect_aa4a24f76360cfebe1bcf17a77fa7521b}} 
+\index{QCPAxisRect@{QCPAxisRect}!mAADragBackup@{mAADragBackup}}
+\index{mAADragBackup@{mAADragBackup}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{mAADragBackup}{mAADragBackup}}
+{\footnotesize\ttfamily QCP\+::\+Antialiased\+Elements QCPAxis\+Rect\+::m\+AADrag\+Backup\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_axis_rect_ac2cb3ba9a25b733883afc3bd25f7d82b}\label{class_q_c_p_axis_rect_ac2cb3ba9a25b733883afc3bd25f7d82b}} 
+\index{QCPAxisRect@{QCPAxisRect}!mAxes@{mAxes}}
+\index{mAxes@{mAxes}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{mAxes}{mAxes}}
+{\footnotesize\ttfamily QHash$<$\mbox{\hyperlink{class_q_c_p_axis_ae2bcc1728b382f10f064612b368bc18a}{QCPAxis\+::\+Axis\+Type}}, QList$<$\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$$>$ $>$ QCPAxis\+Rect\+::m\+Axes\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a5748e1a37f63c428e38b0a7724b46259}\label{class_q_c_p_axis_rect_a5748e1a37f63c428e38b0a7724b46259}} 
+\index{QCPAxisRect@{QCPAxisRect}!mBackgroundBrush@{mBackgroundBrush}}
+\index{mBackgroundBrush@{mBackgroundBrush}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{mBackgroundBrush}{mBackgroundBrush}}
+{\footnotesize\ttfamily QBrush QCPAxis\+Rect\+::m\+Background\+Brush\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a38fb1a15f43228a0c124553649303722}\label{class_q_c_p_axis_rect_a38fb1a15f43228a0c124553649303722}} 
+\index{QCPAxisRect@{QCPAxisRect}!mBackgroundPixmap@{mBackgroundPixmap}}
+\index{mBackgroundPixmap@{mBackgroundPixmap}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{mBackgroundPixmap}{mBackgroundPixmap}}
+{\footnotesize\ttfamily QPixmap QCPAxis\+Rect\+::m\+Background\+Pixmap\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a5ad835f0fae5d7cc5ada9e063641dbf1}\label{class_q_c_p_axis_rect_a5ad835f0fae5d7cc5ada9e063641dbf1}} 
+\index{QCPAxisRect@{QCPAxisRect}!mBackgroundScaled@{mBackgroundScaled}}
+\index{mBackgroundScaled@{mBackgroundScaled}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{mBackgroundScaled}{mBackgroundScaled}}
+{\footnotesize\ttfamily bool QCPAxis\+Rect\+::m\+Background\+Scaled\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a859fd368e794663e346b4f53f35078e9}\label{class_q_c_p_axis_rect_a859fd368e794663e346b4f53f35078e9}} 
+\index{QCPAxisRect@{QCPAxisRect}!mBackgroundScaledMode@{mBackgroundScaledMode}}
+\index{mBackgroundScaledMode@{mBackgroundScaledMode}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{mBackgroundScaledMode}{mBackgroundScaledMode}}
+{\footnotesize\ttfamily Qt\+::\+Aspect\+Ratio\+Mode QCPAxis\+Rect\+::m\+Background\+Scaled\+Mode\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_axis_rect_ab49a6698194cf0e9e38a1d734c0888a8}\label{class_q_c_p_axis_rect_ab49a6698194cf0e9e38a1d734c0888a8}} 
+\index{QCPAxisRect@{QCPAxisRect}!mDragging@{mDragging}}
+\index{mDragging@{mDragging}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{mDragging}{mDragging}}
+{\footnotesize\ttfamily bool QCPAxis\+Rect\+::m\+Dragging\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a274aef08c4de084a3f26c3e92fac3a79}\label{class_q_c_p_axis_rect_a274aef08c4de084a3f26c3e92fac3a79}} 
+\index{QCPAxisRect@{QCPAxisRect}!mDragStartHorzRange@{mDragStartHorzRange}}
+\index{mDragStartHorzRange@{mDragStartHorzRange}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{mDragStartHorzRange}{mDragStartHorzRange}}
+{\footnotesize\ttfamily QList$<$\mbox{\hyperlink{class_q_c_p_range}{QCPRange}}$>$ QCPAxis\+Rect\+::m\+Drag\+Start\+Horz\+Range\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_axis_rect_ab362ee8f71a156d812a1ea793a1e42cb}\label{class_q_c_p_axis_rect_ab362ee8f71a156d812a1ea793a1e42cb}} 
+\index{QCPAxisRect@{QCPAxisRect}!mDragStartVertRange@{mDragStartVertRange}}
+\index{mDragStartVertRange@{mDragStartVertRange}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{mDragStartVertRange}{mDragStartVertRange}}
+{\footnotesize\ttfamily QList$<$\mbox{\hyperlink{class_q_c_p_range}{QCPRange}}$>$ QCPAxis\+Rect\+::m\+Drag\+Start\+Vert\+Range\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a255240399e0fd24baad80cbbe46f698a}\label{class_q_c_p_axis_rect_a255240399e0fd24baad80cbbe46f698a}} 
+\index{QCPAxisRect@{QCPAxisRect}!mInsetLayout@{mInsetLayout}}
+\index{mInsetLayout@{mInsetLayout}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{mInsetLayout}{mInsetLayout}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_layout_inset}{QCPLayout\+Inset}}$\ast$ QCPAxis\+Rect\+::m\+Inset\+Layout\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a6fcb12e052e276d57efbb128be31d6f5}\label{class_q_c_p_axis_rect_a6fcb12e052e276d57efbb128be31d6f5}} 
+\index{QCPAxisRect@{QCPAxisRect}!mNotAADragBackup@{mNotAADragBackup}}
+\index{mNotAADragBackup@{mNotAADragBackup}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{mNotAADragBackup}{mNotAADragBackup}}
+{\footnotesize\ttfamily QCP\+::\+Antialiased\+Elements QCPAxis\+Rect\+::m\+Not\+AADrag\+Backup\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_axis_rect_aa9f107f66ca3469ad50ee6cea7c9e237}\label{class_q_c_p_axis_rect_aa9f107f66ca3469ad50ee6cea7c9e237}} 
+\index{QCPAxisRect@{QCPAxisRect}!mRangeDrag@{mRangeDrag}}
+\index{mRangeDrag@{mRangeDrag}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{mRangeDrag}{mRangeDrag}}
+{\footnotesize\ttfamily Qt\+::\+Orientations QCPAxis\+Rect\+::m\+Range\+Drag\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_axis_rect_abd4f1d854b41a9c6730f3a3d605c42af}\label{class_q_c_p_axis_rect_abd4f1d854b41a9c6730f3a3d605c42af}} 
+\index{QCPAxisRect@{QCPAxisRect}!mRangeDragHorzAxis@{mRangeDragHorzAxis}}
+\index{mRangeDragHorzAxis@{mRangeDragHorzAxis}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{mRangeDragHorzAxis}{mRangeDragHorzAxis}}
+{\footnotesize\ttfamily QList$<$QPointer$<$\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}}$>$ $>$ QCPAxis\+Rect\+::m\+Range\+Drag\+Horz\+Axis\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a3b0a86e5bb136a458d7bc20773e45853}\label{class_q_c_p_axis_rect_a3b0a86e5bb136a458d7bc20773e45853}} 
+\index{QCPAxisRect@{QCPAxisRect}!mRangeDragVertAxis@{mRangeDragVertAxis}}
+\index{mRangeDragVertAxis@{mRangeDragVertAxis}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{mRangeDragVertAxis}{mRangeDragVertAxis}}
+{\footnotesize\ttfamily QList$<$QPointer$<$\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}}$>$ $>$ QCPAxis\+Rect\+::m\+Range\+Drag\+Vert\+Axis\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a215eff671d48df2edccc36e7f976f28c}\label{class_q_c_p_axis_rect_a215eff671d48df2edccc36e7f976f28c}} 
+\index{QCPAxisRect@{QCPAxisRect}!mRangeZoom@{mRangeZoom}}
+\index{mRangeZoom@{mRangeZoom}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{mRangeZoom}{mRangeZoom}}
+{\footnotesize\ttfamily Qt\+::\+Orientations QCPAxis\+Rect\+::m\+Range\+Zoom\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_axis_rect_ad08d0250ed7b99de387d0ea6c7fd4dc1}\label{class_q_c_p_axis_rect_ad08d0250ed7b99de387d0ea6c7fd4dc1}} 
+\index{QCPAxisRect@{QCPAxisRect}!mRangeZoomFactorHorz@{mRangeZoomFactorHorz}}
+\index{mRangeZoomFactorHorz@{mRangeZoomFactorHorz}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{mRangeZoomFactorHorz}{mRangeZoomFactorHorz}}
+{\footnotesize\ttfamily double QCPAxis\+Rect\+::m\+Range\+Zoom\+Factor\+Horz\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_axis_rect_a32f063629581d5bf82b12769940b34ad}\label{class_q_c_p_axis_rect_a32f063629581d5bf82b12769940b34ad}} 
+\index{QCPAxisRect@{QCPAxisRect}!mRangeZoomFactorVert@{mRangeZoomFactorVert}}
+\index{mRangeZoomFactorVert@{mRangeZoomFactorVert}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{mRangeZoomFactorVert}{mRangeZoomFactorVert}}
+{\footnotesize\ttfamily double QCPAxis\+Rect\+::m\+Range\+Zoom\+Factor\+Vert\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_axis_rect_aa35eeb02f68b63f2069fcc80c9334b91}\label{class_q_c_p_axis_rect_aa35eeb02f68b63f2069fcc80c9334b91}} 
+\index{QCPAxisRect@{QCPAxisRect}!mRangeZoomHorzAxis@{mRangeZoomHorzAxis}}
+\index{mRangeZoomHorzAxis@{mRangeZoomHorzAxis}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{mRangeZoomHorzAxis}{mRangeZoomHorzAxis}}
+{\footnotesize\ttfamily QList$<$QPointer$<$\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}}$>$ $>$ QCPAxis\+Rect\+::m\+Range\+Zoom\+Horz\+Axis\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_axis_rect_aafb0e243294c158668499fd62cee057c}\label{class_q_c_p_axis_rect_aafb0e243294c158668499fd62cee057c}} 
+\index{QCPAxisRect@{QCPAxisRect}!mRangeZoomVertAxis@{mRangeZoomVertAxis}}
+\index{mRangeZoomVertAxis@{mRangeZoomVertAxis}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{mRangeZoomVertAxis}{mRangeZoomVertAxis}}
+{\footnotesize\ttfamily QList$<$QPointer$<$\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}}$>$ $>$ QCPAxis\+Rect\+::m\+Range\+Zoom\+Vert\+Axis\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_axis_rect_aa74b9415598d59b49290e41e42d7ee27}\label{class_q_c_p_axis_rect_aa74b9415598d59b49290e41e42d7ee27}} 
+\index{QCPAxisRect@{QCPAxisRect}!mScaledBackgroundPixmap@{mScaledBackgroundPixmap}}
+\index{mScaledBackgroundPixmap@{mScaledBackgroundPixmap}!QCPAxisRect@{QCPAxisRect}}
+\doxysubsubsection{\texorpdfstring{mScaledBackgroundPixmap}{mScaledBackgroundPixmap}}
+{\footnotesize\ttfamily QPixmap QCPAxis\+Rect\+::m\+Scaled\+Background\+Pixmap\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Smart\+Calc/\mbox{\hyperlink{qcustomplot_8h}{qcustomplot.\+h}}\item 
+Smart\+Calc/\mbox{\hyperlink{qcustomplot_8cpp}{qcustomplot.\+cpp}}\end{DoxyCompactItemize}

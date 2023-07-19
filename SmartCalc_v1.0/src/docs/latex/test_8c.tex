@@ -1,0 +1,346 @@
+\hypertarget{test_8c}{}\doxysection{Файл Smart\+Calc/test.c}
+\label{test_8c}\index{SmartCalc/test.c@{SmartCalc/test.c}}
+{\ttfamily \#include $<$check.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}s21\+\_\+calc.\+h\char`\"{}}\newline
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{test_8c_a67596fe42066c8a395fcc16361afb63d}{START\+\_\+\+TEST}} (test\+\_\+1)
+\item 
+END\+\_\+\+TEST \mbox{\hyperlink{test_8c_a41c75531b65214936c13b33fca278471}{START\+\_\+\+TEST}} (test\+\_\+2)
+\item 
+END\+\_\+\+TEST \mbox{\hyperlink{test_8c_ae26d496e58b0e8c1d14188a173486621}{START\+\_\+\+TEST}} (test\+\_\+3)
+\item 
+END\+\_\+\+TEST \mbox{\hyperlink{test_8c_a182c23bfea0c7fb1eefbe9d381865659}{START\+\_\+\+TEST}} (test\+\_\+4)
+\item 
+END\+\_\+\+TEST \mbox{\hyperlink{test_8c_ab5249727f1ae39baee614fa8c391070b}{START\+\_\+\+TEST}} (test\+\_\+5)
+\item 
+END\+\_\+\+TEST \mbox{\hyperlink{test_8c_a5034e75c93cb0a52145e2be7fa4d7168}{START\+\_\+\+TEST}} (test\+\_\+6)
+\item 
+END\+\_\+\+TEST \mbox{\hyperlink{test_8c_a63e53ac81f37203b59c7e02dde1581f6}{START\+\_\+\+TEST}} (test\+\_\+7)
+\item 
+END\+\_\+\+TEST \mbox{\hyperlink{test_8c_afb8d32644e462416bfac55a3c9dea15d}{START\+\_\+\+TEST}} (test\+\_\+8)
+\item 
+END\+\_\+\+TEST \mbox{\hyperlink{test_8c_aa5e3228c74ed81df982598c3cafd2d59}{START\+\_\+\+TEST}} (test\+\_\+9)
+\item 
+END\+\_\+\+TEST \mbox{\hyperlink{test_8c_a4fba4d39bbdb6062b7bdc7dde3bd2200}{START\+\_\+\+TEST}} (test\+\_\+10)
+\item 
+END\+\_\+\+TEST \mbox{\hyperlink{test_8c_a644fde73b8e3a5df62c5b93ae0c9d678}{START\+\_\+\+TEST}} (test\+\_\+11)
+\item 
+END\+\_\+\+TEST \mbox{\hyperlink{test_8c_a2c4df19882541a179e1a528c275e7d3d}{START\+\_\+\+TEST}} (test\+\_\+12)
+\item 
+END\+\_\+\+TEST \mbox{\hyperlink{test_8c_a8ef9edf76a98b7dd0ef37c54182a22e0}{START\+\_\+\+TEST}} (test\+\_\+13)
+\item 
+END\+\_\+\+TEST \mbox{\hyperlink{test_8c_a2e668390e29f73dca45829d0b1ea9707}{START\+\_\+\+TEST}} (test\+\_\+14)
+\item 
+END\+\_\+\+TEST Suite $\ast$ \mbox{\hyperlink{test_8c_a6a347bdf176bb980be3d8fb4190d3486}{calc\+\_\+suite}} (void)
+\item 
+int \mbox{\hyperlink{test_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{test_8c_a6a347bdf176bb980be3d8fb4190d3486}\label{test_8c_a6a347bdf176bb980be3d8fb4190d3486}} 
+\index{test.c@{test.c}!calc\_suite@{calc\_suite}}
+\index{calc\_suite@{calc\_suite}!test.c@{test.c}}
+\doxysubsubsection{\texorpdfstring{calc\_suite()}{calc\_suite()}}
+{\footnotesize\ttfamily END\+\_\+\+TEST Suite$\ast$ calc\+\_\+suite (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{141                         \{}
+\DoxyCodeLine{142   Suite* s = suite\_create(\textcolor{stringliteral}{"{}SmartCalc\_testcase"{}});}
+\DoxyCodeLine{143   TCase* tc\_calc = tcase\_create(\textcolor{stringliteral}{"{}Core"{}});}
+\DoxyCodeLine{144 }
+\DoxyCodeLine{145   suite\_add\_tcase(s, tc\_calc);}
+\DoxyCodeLine{146   tcase\_add\_test(tc\_calc, test\_1);}
+\DoxyCodeLine{147   tcase\_add\_test(tc\_calc, test\_2);}
+\DoxyCodeLine{148   tcase\_add\_test(tc\_calc, test\_3);}
+\DoxyCodeLine{149   tcase\_add\_test(tc\_calc, test\_4);}
+\DoxyCodeLine{150   tcase\_add\_test(tc\_calc, test\_5);}
+\DoxyCodeLine{151   tcase\_add\_test(tc\_calc, test\_6);}
+\DoxyCodeLine{152   tcase\_add\_test(tc\_calc, test\_7);}
+\DoxyCodeLine{153   tcase\_add\_test(tc\_calc, test\_8);}
+\DoxyCodeLine{154   tcase\_add\_test(tc\_calc, test\_9);}
+\DoxyCodeLine{155   tcase\_add\_test(tc\_calc, test\_10);}
+\DoxyCodeLine{156   tcase\_add\_test(tc\_calc, test\_11);}
+\DoxyCodeLine{157   tcase\_add\_test(tc\_calc, test\_12);}
+\DoxyCodeLine{158   tcase\_add\_test(tc\_calc, test\_13);}
+\DoxyCodeLine{159   tcase\_add\_test(tc\_calc, test\_14);}
+\DoxyCodeLine{160 }
+\DoxyCodeLine{161   \textcolor{keywordflow}{return} s;}
+\DoxyCodeLine{162 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{test_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{test_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{test.c@{test.c}!main@{main}}
+\index{main@{main}!test.c@{test.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{164            \{}
+\DoxyCodeLine{165   \textcolor{keywordtype}{int} number\_failed;}
+\DoxyCodeLine{166   Suite* s;}
+\DoxyCodeLine{167   SRunner* sr;}
+\DoxyCodeLine{168 }
+\DoxyCodeLine{169   s = \mbox{\hyperlink{test_8c_a6a347bdf176bb980be3d8fb4190d3486}{calc\_suite}}();}
+\DoxyCodeLine{170   sr = srunner\_create(s);}
+\DoxyCodeLine{171 }
+\DoxyCodeLine{172   srunner\_set\_fork\_status(sr, CK\_NOFORK);}
+\DoxyCodeLine{173   srunner\_run\_all(sr, CK\_NORMAL);}
+\DoxyCodeLine{174   number\_failed = srunner\_ntests\_failed(sr);}
+\DoxyCodeLine{175   srunner\_free(sr);}
+\DoxyCodeLine{176   \textcolor{keywordflow}{return} (number\_failed == 0) ? EXIT\_SUCCESS : EXIT\_FAILURE;}
+\DoxyCodeLine{177 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{test_8c_a67596fe42066c8a395fcc16361afb63d}\label{test_8c_a67596fe42066c8a395fcc16361afb63d}} 
+\index{test.c@{test.c}!START\_TEST@{START\_TEST}}
+\index{START\_TEST@{START\_TEST}!test.c@{test.c}}
+\doxysubsubsection{\texorpdfstring{START\_TEST()}{START\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/14]}}
+{\footnotesize\ttfamily START\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{test\+\_\+1}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9                    \{}
+\DoxyCodeLine{10   \textcolor{keywordtype}{char}* input = \textcolor{stringliteral}{"{}12.2345+(-\/235)"{}};}
+\DoxyCodeLine{11   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} res = 0;}
+\DoxyCodeLine{12   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} true\_res = 12.2345 + (-\/235);}
+\DoxyCodeLine{13   \mbox{\hyperlink{s21__calc_8c_a6bc0290fd7bb65ace779387602a2f91c}{calc}}(input, \&res);}
+\DoxyCodeLine{14   ck\_assert\_ldouble\_eq\_tol(true\_res, res, 1e-\/06);}
+\DoxyCodeLine{15 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{test_8c_a4fba4d39bbdb6062b7bdc7dde3bd2200}\label{test_8c_a4fba4d39bbdb6062b7bdc7dde3bd2200}} 
+\index{test.c@{test.c}!START\_TEST@{START\_TEST}}
+\index{START\_TEST@{START\_TEST}!test.c@{test.c}}
+\doxysubsubsection{\texorpdfstring{START\_TEST()}{START\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/14]}}
+{\footnotesize\ttfamily END\+\_\+\+TEST START\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{test\+\_\+10}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{89                     \{}
+\DoxyCodeLine{90   \textcolor{keywordtype}{char}* input = \textcolor{stringliteral}{"{}*ec4"{}};}
+\DoxyCodeLine{91   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} res = 0;}
+\DoxyCodeLine{92   ck\_assert\_int\_eq(\mbox{\hyperlink{s21__calc_8c_a6bc0290fd7bb65ace779387602a2f91c}{calc}}(input, \&res), 1);}
+\DoxyCodeLine{93 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{test_8c_a644fde73b8e3a5df62c5b93ae0c9d678}\label{test_8c_a644fde73b8e3a5df62c5b93ae0c9d678}} 
+\index{test.c@{test.c}!START\_TEST@{START\_TEST}}
+\index{START\_TEST@{START\_TEST}!test.c@{test.c}}
+\doxysubsubsection{\texorpdfstring{START\_TEST()}{START\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [3/14]}}
+{\footnotesize\ttfamily END\+\_\+\+TEST START\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{test\+\_\+11}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{96                     \{}
+\DoxyCodeLine{97   \textcolor{keywordtype}{char}* input = \textcolor{stringliteral}{"{}998+ 9 -\/"{}};}
+\DoxyCodeLine{98   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} res = 0;}
+\DoxyCodeLine{99   ck\_assert\_int\_eq(\mbox{\hyperlink{s21__calc_8c_a6bc0290fd7bb65ace779387602a2f91c}{calc}}(input, \&res), 1);}
+\DoxyCodeLine{100 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{test_8c_a2c4df19882541a179e1a528c275e7d3d}\label{test_8c_a2c4df19882541a179e1a528c275e7d3d}} 
+\index{test.c@{test.c}!START\_TEST@{START\_TEST}}
+\index{START\_TEST@{START\_TEST}!test.c@{test.c}}
+\doxysubsubsection{\texorpdfstring{START\_TEST()}{START\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [4/14]}}
+{\footnotesize\ttfamily END\+\_\+\+TEST START\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{test\+\_\+12}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{103                     \{}
+\DoxyCodeLine{104   \textcolor{keywordtype}{char}* input = \textcolor{stringliteral}{"{}()"{}};}
+\DoxyCodeLine{105   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} res = 0;}
+\DoxyCodeLine{106   ck\_assert\_int\_eq(\mbox{\hyperlink{s21__calc_8c_a6bc0290fd7bb65ace779387602a2f91c}{calc}}(input, \&res), 1);}
+\DoxyCodeLine{107 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{test_8c_a8ef9edf76a98b7dd0ef37c54182a22e0}\label{test_8c_a8ef9edf76a98b7dd0ef37c54182a22e0}} 
+\index{test.c@{test.c}!START\_TEST@{START\_TEST}}
+\index{START\_TEST@{START\_TEST}!test.c@{test.c}}
+\doxysubsubsection{\texorpdfstring{START\_TEST()}{START\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [5/14]}}
+{\footnotesize\ttfamily END\+\_\+\+TEST START\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{test\+\_\+13}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{110                     \{}
+\DoxyCodeLine{111   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} S = 670000;}
+\DoxyCodeLine{112   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} p = 5;}
+\DoxyCodeLine{113   \textcolor{keywordtype}{int} m = 15;}
+\DoxyCodeLine{114   \textcolor{keywordtype}{char} t = \textcolor{charliteral}{'a'};}
+\DoxyCodeLine{115   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} mp = 0;}
+\DoxyCodeLine{116   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} ov = 0;}
+\DoxyCodeLine{117   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} tp = 0;}
+\DoxyCodeLine{118   \mbox{\hyperlink{s21__calc_8c_a0ebdd47b5d533d3a0e373da59bc08e6d}{calculate\_credit}}(S, p, m, t, 1, \&mp, \&ov, \&tp);}
+\DoxyCodeLine{119   ck\_assert\_ldouble\_eq\_tol(mp, 46170.0, 1e-\/02);}
+\DoxyCodeLine{120   ck\_assert\_ldouble\_eq\_tol(ov, 22550.0, 1e-\/02);}
+\DoxyCodeLine{121   ck\_assert\_ldouble\_eq\_tol(tp, 692550.0, 1e-\/02);}
+\DoxyCodeLine{122 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{test_8c_a2e668390e29f73dca45829d0b1ea9707}\label{test_8c_a2e668390e29f73dca45829d0b1ea9707}} 
+\index{test.c@{test.c}!START\_TEST@{START\_TEST}}
+\index{START\_TEST@{START\_TEST}!test.c@{test.c}}
+\doxysubsubsection{\texorpdfstring{START\_TEST()}{START\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [6/14]}}
+{\footnotesize\ttfamily END\+\_\+\+TEST START\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{test\+\_\+14}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{125                     \{}
+\DoxyCodeLine{126   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} S = 670000;}
+\DoxyCodeLine{127   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} p = 5;}
+\DoxyCodeLine{128   \textcolor{keywordtype}{int} m = 15;}
+\DoxyCodeLine{129   \textcolor{keywordtype}{int} m\_n = 3;}
+\DoxyCodeLine{130   \textcolor{keywordtype}{char} t = \textcolor{charliteral}{'d'};}
+\DoxyCodeLine{131   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} mp = 0;}
+\DoxyCodeLine{132   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} ov = 0;}
+\DoxyCodeLine{133   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} tp = 0;}
+\DoxyCodeLine{134   \mbox{\hyperlink{s21__calc_8c_a0ebdd47b5d533d3a0e373da59bc08e6d}{calculate\_credit}}(S, p, m, t, m\_n, \&mp, \&ov, \&tp);}
+\DoxyCodeLine{135   ck\_assert\_ldouble\_eq\_tol(mp, 47132.511416, 1e-\/02);}
+\DoxyCodeLine{136   ck\_assert\_ldouble\_eq\_tol(ov, 22259.908676, 1e-\/01);}
+\DoxyCodeLine{137   ck\_assert\_ldouble\_eq\_tol(tp, 692259.908676, 1e-\/01);}
+\DoxyCodeLine{138 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{test_8c_a41c75531b65214936c13b33fca278471}\label{test_8c_a41c75531b65214936c13b33fca278471}} 
+\index{test.c@{test.c}!START\_TEST@{START\_TEST}}
+\index{START\_TEST@{START\_TEST}!test.c@{test.c}}
+\doxysubsubsection{\texorpdfstring{START\_TEST()}{START\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [7/14]}}
+{\footnotesize\ttfamily END\+\_\+\+TEST START\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{test\+\_\+2}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18                    \{}
+\DoxyCodeLine{19   \textcolor{keywordtype}{char}* input = \textcolor{stringliteral}{"{}12.3-\/2"{}};}
+\DoxyCodeLine{20   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} res = 0;}
+\DoxyCodeLine{21   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} true\_res = 12.3 -\/ 2;}
+\DoxyCodeLine{22   \mbox{\hyperlink{s21__calc_8c_a6bc0290fd7bb65ace779387602a2f91c}{calc}}(input, \&res);}
+\DoxyCodeLine{23   ck\_assert\_ldouble\_eq\_tol(true\_res, res, 1e-\/06);}
+\DoxyCodeLine{24 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{test_8c_ae26d496e58b0e8c1d14188a173486621}\label{test_8c_ae26d496e58b0e8c1d14188a173486621}} 
+\index{test.c@{test.c}!START\_TEST@{START\_TEST}}
+\index{START\_TEST@{START\_TEST}!test.c@{test.c}}
+\doxysubsubsection{\texorpdfstring{START\_TEST()}{START\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [8/14]}}
+{\footnotesize\ttfamily END\+\_\+\+TEST START\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{test\+\_\+3}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{27                    \{}
+\DoxyCodeLine{28   \textcolor{keywordtype}{char}* input = \textcolor{stringliteral}{"{}9 / 0"{}};}
+\DoxyCodeLine{29   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} res = 0;}
+\DoxyCodeLine{30   \mbox{\hyperlink{s21__calc_8c_a6bc0290fd7bb65ace779387602a2f91c}{calc}}(input, \&res);}
+\DoxyCodeLine{31   ck\_assert\_ldouble\_infinite(res);}
+\DoxyCodeLine{32 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{test_8c_a182c23bfea0c7fb1eefbe9d381865659}\label{test_8c_a182c23bfea0c7fb1eefbe9d381865659}} 
+\index{test.c@{test.c}!START\_TEST@{START\_TEST}}
+\index{START\_TEST@{START\_TEST}!test.c@{test.c}}
+\doxysubsubsection{\texorpdfstring{START\_TEST()}{START\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [9/14]}}
+{\footnotesize\ttfamily END\+\_\+\+TEST START\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{test\+\_\+4}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{35                    \{}
+\DoxyCodeLine{36   \textcolor{keywordtype}{char}* input = \textcolor{stringliteral}{"{}-\/8 + (-\/sin(7)) * (-\/(78 + (3 -\/ 8)))"{}};}
+\DoxyCodeLine{37   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} res = 0;}
+\DoxyCodeLine{38   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} true\_res = -\/8 + (-\/sin(7)) * (-\/(78 + (3 -\/ 8)));}
+\DoxyCodeLine{39   \mbox{\hyperlink{s21__calc_8c_a6bc0290fd7bb65ace779387602a2f91c}{calc}}(input, \&res);}
+\DoxyCodeLine{40   ck\_assert\_ldouble\_eq\_tol(true\_res, res, 1e-\/06);}
+\DoxyCodeLine{41 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{test_8c_ab5249727f1ae39baee614fa8c391070b}\label{test_8c_ab5249727f1ae39baee614fa8c391070b}} 
+\index{test.c@{test.c}!START\_TEST@{START\_TEST}}
+\index{START\_TEST@{START\_TEST}!test.c@{test.c}}
+\doxysubsubsection{\texorpdfstring{START\_TEST()}{START\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [10/14]}}
+{\footnotesize\ttfamily END\+\_\+\+TEST START\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{test\+\_\+5}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44                    \{}
+\DoxyCodeLine{45   \textcolor{keywordtype}{char}* input = \textcolor{stringliteral}{"{}7 \% 3"{}};}
+\DoxyCodeLine{46   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} res = 0;}
+\DoxyCodeLine{47   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} true\_res = 7 \% 3;}
+\DoxyCodeLine{48   \mbox{\hyperlink{s21__calc_8c_a6bc0290fd7bb65ace779387602a2f91c}{calc}}(input, \&res);}
+\DoxyCodeLine{49   ck\_assert\_ldouble\_eq\_tol(true\_res, res, 1e-\/06);}
+\DoxyCodeLine{50 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{test_8c_a5034e75c93cb0a52145e2be7fa4d7168}\label{test_8c_a5034e75c93cb0a52145e2be7fa4d7168}} 
+\index{test.c@{test.c}!START\_TEST@{START\_TEST}}
+\index{START\_TEST@{START\_TEST}!test.c@{test.c}}
+\doxysubsubsection{\texorpdfstring{START\_TEST()}{START\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [11/14]}}
+{\footnotesize\ttfamily END\+\_\+\+TEST START\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{test\+\_\+6}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53                    \{}
+\DoxyCodeLine{54   \textcolor{keywordtype}{char}* input = \textcolor{stringliteral}{"{}+78-\/ 6.342 / (-\/sin(5) -\/ ln(6\string^5) * tan(1))"{}};}
+\DoxyCodeLine{55   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} res = 0;}
+\DoxyCodeLine{56   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} true\_res = 78.4880873472;}
+\DoxyCodeLine{57   \mbox{\hyperlink{s21__calc_8c_a6bc0290fd7bb65ace779387602a2f91c}{calc}}(input, \&res);}
+\DoxyCodeLine{58   ck\_assert\_ldouble\_eq\_tol(true\_res, res, 1e-\/06);}
+\DoxyCodeLine{59 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{test_8c_a63e53ac81f37203b59c7e02dde1581f6}\label{test_8c_a63e53ac81f37203b59c7e02dde1581f6}} 
+\index{test.c@{test.c}!START\_TEST@{START\_TEST}}
+\index{START\_TEST@{START\_TEST}!test.c@{test.c}}
+\doxysubsubsection{\texorpdfstring{START\_TEST()}{START\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [12/14]}}
+{\footnotesize\ttfamily END\+\_\+\+TEST START\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{test\+\_\+7}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{62                    \{}
+\DoxyCodeLine{63   \textcolor{keywordtype}{char}* input = \textcolor{stringliteral}{"{}6\string^(2) + 7"{}};}
+\DoxyCodeLine{64   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} res = 0;}
+\DoxyCodeLine{65   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} true\_res = pow(6, 2) + 7;}
+\DoxyCodeLine{66   \mbox{\hyperlink{s21__calc_8c_a6bc0290fd7bb65ace779387602a2f91c}{calc}}(input, \&res);}
+\DoxyCodeLine{67   ck\_assert\_ldouble\_eq\_tol(true\_res, res, 1e-\/06);}
+\DoxyCodeLine{68 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{test_8c_afb8d32644e462416bfac55a3c9dea15d}\label{test_8c_afb8d32644e462416bfac55a3c9dea15d}} 
+\index{test.c@{test.c}!START\_TEST@{START\_TEST}}
+\index{START\_TEST@{START\_TEST}!test.c@{test.c}}
+\doxysubsubsection{\texorpdfstring{START\_TEST()}{START\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [13/14]}}
+{\footnotesize\ttfamily END\+\_\+\+TEST START\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{test\+\_\+8}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{71                    \{}
+\DoxyCodeLine{72   \textcolor{keywordtype}{char}* input = \textcolor{stringliteral}{"{}-\/ log(3.4) / sqrt(9)"{}};}
+\DoxyCodeLine{73   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} res = 0;}
+\DoxyCodeLine{74   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} true\_res = -\/0.177159639;}
+\DoxyCodeLine{75   \mbox{\hyperlink{s21__calc_8c_a6bc0290fd7bb65ace779387602a2f91c}{calc}}(input, \&res);}
+\DoxyCodeLine{76   ck\_assert\_ldouble\_eq\_tol(true\_res, res, 1e-\/06);}
+\DoxyCodeLine{77 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{test_8c_aa5e3228c74ed81df982598c3cafd2d59}\label{test_8c_aa5e3228c74ed81df982598c3cafd2d59}} 
+\index{test.c@{test.c}!START\_TEST@{START\_TEST}}
+\index{START\_TEST@{START\_TEST}!test.c@{test.c}}
+\doxysubsubsection{\texorpdfstring{START\_TEST()}{START\_TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [14/14]}}
+{\footnotesize\ttfamily END\+\_\+\+TEST START\+\_\+\+TEST (\begin{DoxyParamCaption}\item[{test\+\_\+9}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{80                    \{}
+\DoxyCodeLine{81   \textcolor{keywordtype}{char}* input = \textcolor{stringliteral}{"{}cos(8) -\/ acos(1) * asin(0.4) / atan(78)"{}};}
+\DoxyCodeLine{82   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} res = 0;}
+\DoxyCodeLine{83   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} true\_res = cos(8) -\/ acos(1) * asin(0.4) / atan(78);}
+\DoxyCodeLine{84   \mbox{\hyperlink{s21__calc_8c_a6bc0290fd7bb65ace779387602a2f91c}{calc}}(input, \&res);}
+\DoxyCodeLine{85   ck\_assert\_ldouble\_eq\_tol(true\_res, res, 1e-\/06);}
+\DoxyCodeLine{86 \}}
+
+\end{DoxyCode}

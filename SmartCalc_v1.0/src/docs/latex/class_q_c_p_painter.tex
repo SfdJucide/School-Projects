@@ -1,0 +1,455 @@
+\hypertarget{class_q_c_p_painter}{}\doxysection{Класс QCPPainter}
+\label{class_q_c_p_painter}\index{QCPPainter@{QCPPainter}}
+
+
+QPainter subclass used internally.  
+
+
+
+
+{\ttfamily \#include $<$qcustomplot.\+h$>$}
+
+Граф наследования\+:QCPPainter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_c_p_painter}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые типы}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156d}{Painter\+Mode}} \{ \mbox{\hyperlink{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156da3bac5e87e3d58553b297befb4eee2a45}{pm\+Default}}
+, \mbox{\hyperlink{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156daeda679cd55dcd468341d07d48a30b6ab}{pm\+Vectorized}}
+, \mbox{\hyperlink{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156dae78f9a4eb277a5f9207f50850a51a0b0}{pm\+No\+Caching}} = 0x02
+, \mbox{\hyperlink{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156dac1e481bfaf408f2bd2eaad3ec341f36b}{pm\+Non\+Cosmetic}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_c_p_painter_a3c52cb0f43f34573d29bea487da28fe8}{QCPPainter}} ()
+\item 
+\mbox{\hyperlink{class_q_c_p_painter_ae58dbb1795ddc4351ab324dc9898aa22}{QCPPainter}} (QPaint\+Device $\ast$device)
+\item 
+bool \mbox{\hyperlink{class_q_c_p_painter_a5aff96296e995f6f35b2596a482aae37}{antialiasing}} () const
+\item 
+Painter\+Modes \mbox{\hyperlink{class_q_c_p_painter_aef102658219b24165f7ee2aad1b9e48f}{modes}} () const
+\item 
+void \mbox{\hyperlink{class_q_c_p_painter_aaba1deb9188244d9ea65b035112b4d05}{set\+Antialiasing}} (bool enabled)
+\item 
+void \mbox{\hyperlink{class_q_c_p_painter_af6b1f7d2bbc548b10aa55d8b6ad49577}{set\+Mode}} (\mbox{\hyperlink{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156d}{Painter\+Mode}} mode, bool enabled=true)
+\item 
+void \mbox{\hyperlink{class_q_c_p_painter_a5fac93adc29c7c4dea9f3e171e9e635e}{set\+Modes}} (Painter\+Modes \mbox{\hyperlink{class_q_c_p_painter_aef102658219b24165f7ee2aad1b9e48f}{modes}})
+\item 
+bool \mbox{\hyperlink{class_q_c_p_painter_a0a41146ccd619dceab6e25ec7b46b044}{begin}} (QPaint\+Device $\ast$device)
+\item 
+void \mbox{\hyperlink{class_q_c_p_painter_af9c7a4cd1791403901f8c5b82a150195}{set\+Pen}} (const QPen \&pen)
+\item 
+void \mbox{\hyperlink{class_q_c_p_painter_a5c4d88f21564e156e88ef807f7cf0003}{set\+Pen}} (const QColor \&color)
+\item 
+void \mbox{\hyperlink{class_q_c_p_painter_a25e76095aae41da0d08035060e5f81ca}{set\+Pen}} (Qt\+::\+Pen\+Style pen\+Style)
+\item 
+void \mbox{\hyperlink{class_q_c_p_painter_a0b4b1b9bd495e182c731774dc800e6e0}{draw\+Line}} (const QLineF \&line)
+\item 
+void \mbox{\hyperlink{class_q_c_p_painter_ad1638db27929491b3f1beb74d6cbad5e}{draw\+Line}} (const QPointF \&p1, const QPointF \&p2)
+\item 
+void \mbox{\hyperlink{class_q_c_p_painter_a8fd6821ee6fecbfa04444c9062912abd}{save}} ()
+\item 
+void \mbox{\hyperlink{class_q_c_p_painter_a64908e6298d5bbd83457dc987cc3a022}{restore}} ()
+\item 
+void \mbox{\hyperlink{class_q_c_p_painter_a7e63fbcf47e35c6f2ecd11b8fef7c7d8}{make\+Non\+Cosmetic}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+Painter\+Modes \mbox{\hyperlink{class_q_c_p_painter_af5d1d6e5df0adbc7de5633250fb3396c}{m\+Modes}}
+\item 
+bool \mbox{\hyperlink{class_q_c_p_painter_a7055085da176aee0f6b23298f1003d08}{m\+Is\+Antialiasing}}
+\item 
+QStack$<$ bool $>$ \mbox{\hyperlink{class_q_c_p_painter_a0189e641bbf7dc31ac15aef7b36501fa}{m\+Antialiasing\+Stack}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+QPainter subclass used internally. 
+
+This QPainter subclass is used to provide some extended functionality e.\+g. for tweaking position consistency between antialiased and non-\/antialiased painting. Further it provides workarounds for QPainter quirks.
+
+\begin{DoxyWarning}{Предупреждения}
+This class intentionally hides non-\/virtual functions of QPainter, e.\+g. set\+Pen, save and restore. So while it is possible to pass a \mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} instance to a function that expects a QPainter pointer, some of the workarounds and tweaks will be unavailable to the function (because it will call the base class implementations of the functions actually hidden by \mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}}). 
+\end{DoxyWarning}
+
+
+\doxysubsection{Перечисления}
+\mbox{\Hypertarget{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156d}\label{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156d}} 
+\index{QCPPainter@{QCPPainter}!PainterMode@{PainterMode}}
+\index{PainterMode@{PainterMode}!QCPPainter@{QCPPainter}}
+\doxysubsubsection{\texorpdfstring{PainterMode}{PainterMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156d}{QCPPainter\+::\+Painter\+Mode}}}
+
+Defines special modes the painter can operate in. They disable or enable certain subsets of features/fixes/workarounds, depending on whether they are wanted on the respective output device. \begin{DoxyEnumFields}{Элементы перечислений}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{pmDefault@{pmDefault}!QCPPainter@{QCPPainter}}\index{QCPPainter@{QCPPainter}!pmDefault@{pmDefault}}}\mbox{\Hypertarget{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156da3bac5e87e3d58553b297befb4eee2a45}\label{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156da3bac5e87e3d58553b297befb4eee2a45}} 
+pm\+Default&{\ttfamily 0x00} Default mode for painting on screen devices \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{pmVectorized@{pmVectorized}!QCPPainter@{QCPPainter}}\index{QCPPainter@{QCPPainter}!pmVectorized@{pmVectorized}}}\mbox{\Hypertarget{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156daeda679cd55dcd468341d07d48a30b6ab}\label{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156daeda679cd55dcd468341d07d48a30b6ab}} 
+pm\+Vectorized&{\ttfamily 0x01} Mode for vectorized painting (e.\+g. PDF export). For example, this prevents some antialiasing fixes. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{pmNoCaching@{pmNoCaching}!QCPPainter@{QCPPainter}}\index{QCPPainter@{QCPPainter}!pmNoCaching@{pmNoCaching}}}\mbox{\Hypertarget{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156dae78f9a4eb277a5f9207f50850a51a0b0}\label{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156dae78f9a4eb277a5f9207f50850a51a0b0}} 
+pm\+No\+Caching&{\ttfamily 0x02} Mode for all sorts of exports (e.\+g. PNG, PDF,...). For example, this prevents using cached pixmap labels \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{pmNonCosmetic@{pmNonCosmetic}!QCPPainter@{QCPPainter}}\index{QCPPainter@{QCPPainter}!pmNonCosmetic@{pmNonCosmetic}}}\mbox{\Hypertarget{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156dac1e481bfaf408f2bd2eaad3ec341f36b}\label{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156dac1e481bfaf408f2bd2eaad3ec341f36b}} 
+pm\+Non\+Cosmetic&{\ttfamily 0x04} Turns pen widths 0 to 1, i.\+e. disables cosmetic pens. (A cosmetic pen is always drawn with width 1 pixel in the vector image/pdf viewer, independent of zoom.) \\
+\hline
+
+\end{DoxyEnumFields}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{614                    \{}
+\DoxyCodeLine{615     \mbox{\hyperlink{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156da3bac5e87e3d58553b297befb4eee2a45}{pmDefault}} =}
+\DoxyCodeLine{616         0x00  }
+\DoxyCodeLine{617     ,}
+\DoxyCodeLine{618     \mbox{\hyperlink{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156daeda679cd55dcd468341d07d48a30b6ab}{pmVectorized}} =}
+\DoxyCodeLine{619         0x01  }
+\DoxyCodeLine{621     ,}
+\DoxyCodeLine{622     \mbox{\hyperlink{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156dae78f9a4eb277a5f9207f50850a51a0b0}{pmNoCaching}} = 0x02  }
+\DoxyCodeLine{625     ,}
+\DoxyCodeLine{626     \mbox{\hyperlink{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156dac1e481bfaf408f2bd2eaad3ec341f36b}{pmNonCosmetic}} =}
+\DoxyCodeLine{627         0x04  }
+\DoxyCodeLine{630   \};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_q_c_p_painter_a3c52cb0f43f34573d29bea487da28fe8}\label{class_q_c_p_painter_a3c52cb0f43f34573d29bea487da28fe8}} 
+\index{QCPPainter@{QCPPainter}!QCPPainter@{QCPPainter}}
+\index{QCPPainter@{QCPPainter}!QCPPainter@{QCPPainter}}
+\doxysubsubsection{\texorpdfstring{QCPPainter()}{QCPPainter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily QCPPainter\+::\+QCPPainter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a new \mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} instance and sets default values 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{280                        : \mbox{\hyperlink{class_q_c_p_painter_af5d1d6e5df0adbc7de5633250fb3396c}{mModes}}(\mbox{\hyperlink{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156da3bac5e87e3d58553b297befb4eee2a45}{pmDefault}}), \mbox{\hyperlink{class_q_c_p_painter_a7055085da176aee0f6b23298f1003d08}{mIsAntialiasing}}(\textcolor{keyword}{false}) \{}
+\DoxyCodeLine{281   \textcolor{comment}{// don't setRenderHint(QPainter::NonCosmeticDefautPen) here, because painter}}
+\DoxyCodeLine{282   \textcolor{comment}{// isn't active yet and a call to begin() will follow}}
+\DoxyCodeLine{283 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_painter_ae58dbb1795ddc4351ab324dc9898aa22}\label{class_q_c_p_painter_ae58dbb1795ddc4351ab324dc9898aa22}} 
+\index{QCPPainter@{QCPPainter}!QCPPainter@{QCPPainter}}
+\index{QCPPainter@{QCPPainter}!QCPPainter@{QCPPainter}}
+\doxysubsubsection{\texorpdfstring{QCPPainter()}{QCPPainter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily QCPPainter\+::\+QCPPainter (\begin{DoxyParamCaption}\item[{QPaint\+Device $\ast$}]{device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Creates a new \mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} instance on the specified paint {\itshape device} and sets default values. Just like the analogous QPainter constructor, begins painting on {\itshape device} immediately.
+
+Like \mbox{\hyperlink{class_q_c_p_painter_a0a41146ccd619dceab6e25ec7b46b044}{begin}}, this method sets QPainter\+::\+Non\+Cosmetic\+Default\+Pen in Qt versions before Qt5. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{294     : QPainter(device), \mbox{\hyperlink{class_q_c_p_painter_af5d1d6e5df0adbc7de5633250fb3396c}{mModes}}(\mbox{\hyperlink{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156da3bac5e87e3d58553b297befb4eee2a45}{pmDefault}}), \mbox{\hyperlink{class_q_c_p_painter_a7055085da176aee0f6b23298f1003d08}{mIsAntialiasing}}(\textcolor{keyword}{false}) \{}
+\DoxyCodeLine{295 \textcolor{preprocessor}{\#if QT\_VERSION <           \(\backslash\)}}
+\DoxyCodeLine{296 \textcolor{preprocessor}{    QT\_VERSION\_CHECK(5, 0, \(\backslash\)}}
+\DoxyCodeLine{297 \textcolor{preprocessor}{                     0)  }\textcolor{comment}{// before Qt5, default pens used to be cosmetic if}}
+\DoxyCodeLine{298                          \textcolor{comment}{// NonCosmeticDefaultPen flag isn't set. So we set it}}
+\DoxyCodeLine{299                          \textcolor{comment}{// to get consistency across Qt versions.}}
+\DoxyCodeLine{300   \textcolor{keywordflow}{if} (isActive()) setRenderHint(QPainter::NonCosmeticDefaultPen);}
+\DoxyCodeLine{301 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{302 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_q_c_p_painter_a5aff96296e995f6f35b2596a482aae37}\label{class_q_c_p_painter_a5aff96296e995f6f35b2596a482aae37}} 
+\index{QCPPainter@{QCPPainter}!antialiasing@{antialiasing}}
+\index{antialiasing@{antialiasing}!QCPPainter@{QCPPainter}}
+\doxysubsubsection{\texorpdfstring{antialiasing()}{antialiasing()}}
+{\footnotesize\ttfamily bool QCPPainter\+::antialiasing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{639 \{ \textcolor{keywordflow}{return} testRenderHint(QPainter::Antialiasing); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_painter_a0a41146ccd619dceab6e25ec7b46b044}\label{class_q_c_p_painter_a0a41146ccd619dceab6e25ec7b46b044}} 
+\index{QCPPainter@{QCPPainter}!begin@{begin}}
+\index{begin@{begin}!QCPPainter@{QCPPainter}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily bool QCPPainter\+::begin (\begin{DoxyParamCaption}\item[{QPaint\+Device $\ast$}]{device }\end{DoxyParamCaption})}
+
+Sets the QPainter\+::\+Non\+Cosmetic\+Default\+Pen in Qt versions before Qt5 after beginning painting on {\itshape device}. This is necessary to get cosmetic pen consistency across Qt versions, because since Qt5, all pens are non-\/cosmetic by default, and in Qt4 this render hint must be set to get that behaviour.
+
+The Constructor \mbox{\hyperlink{class_q_c_p_painter_ae58dbb1795ddc4351ab324dc9898aa22}{QCPPainter(\+QPaint\+Device $\ast$device)}} which directly starts painting also sets the render hint as appropriate.
+
+\begin{DoxyNote}{Заметки}
+this function hides the non-\/virtual base class implementation. 
+\end{DoxyNote}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{394                                            \{}
+\DoxyCodeLine{395   \textcolor{keywordtype}{bool} result = QPainter::begin(device);}
+\DoxyCodeLine{396 \textcolor{preprocessor}{\#if QT\_VERSION <           \(\backslash\)}}
+\DoxyCodeLine{397 \textcolor{preprocessor}{    QT\_VERSION\_CHECK(5, 0, \(\backslash\)}}
+\DoxyCodeLine{398 \textcolor{preprocessor}{                     0)  }\textcolor{comment}{// before Qt5, default pens used to be cosmetic if}}
+\DoxyCodeLine{399                          \textcolor{comment}{// NonCosmeticDefaultPen flag isn't set. So we set it}}
+\DoxyCodeLine{400                          \textcolor{comment}{// to get consistency across Qt versions.}}
+\DoxyCodeLine{401   \textcolor{keywordflow}{if} (result) setRenderHint(QPainter::NonCosmeticDefaultPen);}
+\DoxyCodeLine{402 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{403   \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{404 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_painter_a0b4b1b9bd495e182c731774dc800e6e0}\label{class_q_c_p_painter_a0b4b1b9bd495e182c731774dc800e6e0}} 
+\index{QCPPainter@{QCPPainter}!drawLine@{drawLine}}
+\index{drawLine@{drawLine}!QCPPainter@{QCPPainter}}
+\doxysubsubsection{\texorpdfstring{drawLine()}{drawLine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void QCPPainter\+::draw\+Line (\begin{DoxyParamCaption}\item[{const QLineF \&}]{line }\end{DoxyParamCaption})}
+
+Эта функция перегружена и предоставляется исключительно для удобства использования. Она отличается от вышеупомянутой только фактическими аргументами.
+
+Works around a Qt bug introduced with Qt 4.\+8 which makes drawing QLineF unpredictable when antialiasing is disabled. Thus when antialiasing is disabled, it rounds the {\itshape line} to integer coordinates and then passes it to the original draw\+Line.
+
+\begin{DoxyNote}{Заметки}
+this function hides the non-\/virtual base class implementation. 
+\end{DoxyNote}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{348                                             \{}
+\DoxyCodeLine{349   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_painter_a7055085da176aee0f6b23298f1003d08}{mIsAntialiasing}} || \mbox{\hyperlink{class_q_c_p_painter_af5d1d6e5df0adbc7de5633250fb3396c}{mModes}}.testFlag(\mbox{\hyperlink{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156daeda679cd55dcd468341d07d48a30b6ab}{pmVectorized}}))}
+\DoxyCodeLine{350     QPainter::drawLine(line);}
+\DoxyCodeLine{351   \textcolor{keywordflow}{else}}
+\DoxyCodeLine{352     QPainter::drawLine(line.toLine());}
+\DoxyCodeLine{353 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_painter_ad1638db27929491b3f1beb74d6cbad5e}\label{class_q_c_p_painter_ad1638db27929491b3f1beb74d6cbad5e}} 
+\index{QCPPainter@{QCPPainter}!drawLine@{drawLine}}
+\index{drawLine@{drawLine}!QCPPainter@{QCPPainter}}
+\doxysubsubsection{\texorpdfstring{drawLine()}{drawLine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void QCPPainter\+::draw\+Line (\begin{DoxyParamCaption}\item[{const QPointF \&}]{p1,  }\item[{const QPointF \&}]{p2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{653                                                       \{}
+\DoxyCodeLine{654     \mbox{\hyperlink{class_q_c_p_painter_a0b4b1b9bd495e182c731774dc800e6e0}{drawLine}}(QLineF(p1, p2));}
+\DoxyCodeLine{655   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_painter_a7e63fbcf47e35c6f2ecd11b8fef7c7d8}\label{class_q_c_p_painter_a7e63fbcf47e35c6f2ecd11b8fef7c7d8}} 
+\index{QCPPainter@{QCPPainter}!makeNonCosmetic@{makeNonCosmetic}}
+\index{makeNonCosmetic@{makeNonCosmetic}!QCPPainter@{QCPPainter}}
+\doxysubsubsection{\texorpdfstring{makeNonCosmetic()}{makeNonCosmetic()}}
+{\footnotesize\ttfamily void QCPPainter\+::make\+Non\+Cosmetic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Changes the pen width to 1 if it currently is 0. This function is called in the \mbox{\hyperlink{class_q_c_p_painter_af9c7a4cd1791403901f8c5b82a150195}{set\+Pen}} overrides when the \mbox{\hyperlink{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156dac1e481bfaf408f2bd2eaad3ec341f36b}{pm\+Non\+Cosmetic}} mode is set. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{453                                  \{}
+\DoxyCodeLine{454   \textcolor{keywordflow}{if} (qFuzzyIsNull(pen().widthF())) \{}
+\DoxyCodeLine{455     QPen p = pen();}
+\DoxyCodeLine{456     p.setWidth(1);}
+\DoxyCodeLine{457     QPainter::setPen(p);}
+\DoxyCodeLine{458   \}}
+\DoxyCodeLine{459 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_painter_aef102658219b24165f7ee2aad1b9e48f}\label{class_q_c_p_painter_aef102658219b24165f7ee2aad1b9e48f}} 
+\index{QCPPainter@{QCPPainter}!modes@{modes}}
+\index{modes@{modes}!QCPPainter@{QCPPainter}}
+\doxysubsubsection{\texorpdfstring{modes()}{modes()}}
+{\footnotesize\ttfamily Painter\+Modes QCPPainter\+::modes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{640 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_painter_af5d1d6e5df0adbc7de5633250fb3396c}{mModes}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_painter_a64908e6298d5bbd83457dc987cc3a022}\label{class_q_c_p_painter_a64908e6298d5bbd83457dc987cc3a022}} 
+\index{QCPPainter@{QCPPainter}!restore@{restore}}
+\index{restore@{restore}!QCPPainter@{QCPPainter}}
+\doxysubsubsection{\texorpdfstring{restore()}{restore()}}
+{\footnotesize\ttfamily void QCPPainter\+::restore (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Restores the painter (see QPainter\+::restore). Since \mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} adds some new internal state to QPainter, the save/restore functions are reimplemented to also save/restore those members.
+
+\begin{DoxyNote}{Заметки}
+this function hides the non-\/virtual base class implementation.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_painter_a8fd6821ee6fecbfa04444c9062912abd}{save}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{441                          \{}
+\DoxyCodeLine{442   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_painter_a0189e641bbf7dc31ac15aef7b36501fa}{mAntialiasingStack}}.isEmpty())}
+\DoxyCodeLine{443     \mbox{\hyperlink{class_q_c_p_painter_a7055085da176aee0f6b23298f1003d08}{mIsAntialiasing}} = \mbox{\hyperlink{class_q_c_p_painter_a0189e641bbf7dc31ac15aef7b36501fa}{mAntialiasingStack}}.pop();}
+\DoxyCodeLine{444   \textcolor{keywordflow}{else}}
+\DoxyCodeLine{445     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}Unbalanced save/restore"{}};}
+\DoxyCodeLine{446   QPainter::restore();}
+\DoxyCodeLine{447 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_painter_a8fd6821ee6fecbfa04444c9062912abd}\label{class_q_c_p_painter_a8fd6821ee6fecbfa04444c9062912abd}} 
+\index{QCPPainter@{QCPPainter}!save@{save}}
+\index{save@{save}!QCPPainter@{QCPPainter}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void QCPPainter\+::save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Saves the painter (see QPainter\+::save). Since \mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} adds some new internal state to QPainter, the save/restore functions are reimplemented to also save/restore those members.
+
+\begin{DoxyNote}{Заметки}
+this function hides the non-\/virtual base class implementation.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_painter_a64908e6298d5bbd83457dc987cc3a022}{restore}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{427                       \{}
+\DoxyCodeLine{428   \mbox{\hyperlink{class_q_c_p_painter_a0189e641bbf7dc31ac15aef7b36501fa}{mAntialiasingStack}}.push(\mbox{\hyperlink{class_q_c_p_painter_a7055085da176aee0f6b23298f1003d08}{mIsAntialiasing}});}
+\DoxyCodeLine{429   QPainter::save();}
+\DoxyCodeLine{430 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_painter_aaba1deb9188244d9ea65b035112b4d05}\label{class_q_c_p_painter_aaba1deb9188244d9ea65b035112b4d05}} 
+\index{QCPPainter@{QCPPainter}!setAntialiasing@{setAntialiasing}}
+\index{setAntialiasing@{setAntialiasing}!QCPPainter@{QCPPainter}}
+\doxysubsubsection{\texorpdfstring{setAntialiasing()}{setAntialiasing()}}
+{\footnotesize\ttfamily void QCPPainter\+::set\+Antialiasing (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})}
+
+Sets whether painting uses antialiasing or not. Use this method instead of using set\+Render\+Hint with QPainter\+::\+Antialiasing directly, as it allows \mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} to regain pixel exactness between antialiased and non-\/antialiased painting (Since Qt $<$ 5.\+0 uses slightly different coordinate systems for AA/\+Non-\/\+AA painting). 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{362                                              \{}
+\DoxyCodeLine{363   setRenderHint(QPainter::Antialiasing, enabled);}
+\DoxyCodeLine{364   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_painter_a7055085da176aee0f6b23298f1003d08}{mIsAntialiasing}} != enabled) \{}
+\DoxyCodeLine{365     \mbox{\hyperlink{class_q_c_p_painter_a7055085da176aee0f6b23298f1003d08}{mIsAntialiasing}} = enabled;}
+\DoxyCodeLine{366     \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_painter_af5d1d6e5df0adbc7de5633250fb3396c}{mModes}}.testFlag(\mbox{\hyperlink{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156daeda679cd55dcd468341d07d48a30b6ab}{pmVectorized}}))  \textcolor{comment}{// antialiasing half-\/pixel shift only}}
+\DoxyCodeLine{367                                          \textcolor{comment}{// needed for rasterized outputs}}
+\DoxyCodeLine{368     \{}
+\DoxyCodeLine{369       \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_painter_a7055085da176aee0f6b23298f1003d08}{mIsAntialiasing}})}
+\DoxyCodeLine{370         translate(0.5, 0.5);}
+\DoxyCodeLine{371       \textcolor{keywordflow}{else}}
+\DoxyCodeLine{372         translate(-\/0.5, -\/0.5);}
+\DoxyCodeLine{373     \}}
+\DoxyCodeLine{374   \}}
+\DoxyCodeLine{375 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_painter_af6b1f7d2bbc548b10aa55d8b6ad49577}\label{class_q_c_p_painter_af6b1f7d2bbc548b10aa55d8b6ad49577}} 
+\index{QCPPainter@{QCPPainter}!setMode@{setMode}}
+\index{setMode@{setMode}!QCPPainter@{QCPPainter}}
+\doxysubsubsection{\texorpdfstring{setMode()}{setMode()}}
+{\footnotesize\ttfamily void QCPPainter\+::set\+Mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156d}{QCPPainter\+::\+Painter\+Mode}}}]{mode,  }\item[{bool}]{enabled = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Эта функция перегружена и предоставляется исключительно для удобства использования. Она отличается от вышеупомянутой только фактическими аргументами.
+
+Sets the mode of the painter. This controls whether the painter shall adjust its fixes/workarounds optimized for certain output devices. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{411                                                                  \{}
+\DoxyCodeLine{412   \textcolor{keywordflow}{if} (!enabled \&\& \mbox{\hyperlink{class_q_c_p_painter_af5d1d6e5df0adbc7de5633250fb3396c}{mModes}}.testFlag(mode))}
+\DoxyCodeLine{413     \mbox{\hyperlink{class_q_c_p_painter_af5d1d6e5df0adbc7de5633250fb3396c}{mModes}} \&= \string~mode;}
+\DoxyCodeLine{414   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (enabled \&\& !\mbox{\hyperlink{class_q_c_p_painter_af5d1d6e5df0adbc7de5633250fb3396c}{mModes}}.testFlag(mode))}
+\DoxyCodeLine{415     \mbox{\hyperlink{class_q_c_p_painter_af5d1d6e5df0adbc7de5633250fb3396c}{mModes}} |= mode;}
+\DoxyCodeLine{416 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_painter_a5fac93adc29c7c4dea9f3e171e9e635e}\label{class_q_c_p_painter_a5fac93adc29c7c4dea9f3e171e9e635e}} 
+\index{QCPPainter@{QCPPainter}!setModes@{setModes}}
+\index{setModes@{setModes}!QCPPainter@{QCPPainter}}
+\doxysubsubsection{\texorpdfstring{setModes()}{setModes()}}
+{\footnotesize\ttfamily void QCPPainter\+::set\+Modes (\begin{DoxyParamCaption}\item[{Painter\+Modes}]{modes }\end{DoxyParamCaption})}
+
+Sets the mode of the painter. This controls whether the painter shall adjust its fixes/workarounds optimized for certain output devices. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{381 \{ \mbox{\hyperlink{class_q_c_p_painter_af5d1d6e5df0adbc7de5633250fb3396c}{mModes}} = \mbox{\hyperlink{class_q_c_p_painter_aef102658219b24165f7ee2aad1b9e48f}{modes}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_painter_a5c4d88f21564e156e88ef807f7cf0003}\label{class_q_c_p_painter_a5c4d88f21564e156e88ef807f7cf0003}} 
+\index{QCPPainter@{QCPPainter}!setPen@{setPen}}
+\index{setPen@{setPen}!QCPPainter@{QCPPainter}}
+\doxysubsubsection{\texorpdfstring{setPen()}{setPen()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void QCPPainter\+::set\+Pen (\begin{DoxyParamCaption}\item[{const QColor \&}]{color }\end{DoxyParamCaption})}
+
+Эта функция перегружена и предоставляется исключительно для удобства использования. Она отличается от вышеупомянутой только фактическими аргументами.
+
+Sets the pen (by color) of the painter and applies certain fixes to it, depending on the mode of this \mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}}.
+
+\begin{DoxyNote}{Заметки}
+this function hides the non-\/virtual base class implementation. 
+\end{DoxyNote}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{322                                            \{}
+\DoxyCodeLine{323   QPainter::setPen(color);}
+\DoxyCodeLine{324   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_painter_af5d1d6e5df0adbc7de5633250fb3396c}{mModes}}.testFlag(\mbox{\hyperlink{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156dac1e481bfaf408f2bd2eaad3ec341f36b}{pmNonCosmetic}})) \mbox{\hyperlink{class_q_c_p_painter_a7e63fbcf47e35c6f2ecd11b8fef7c7d8}{makeNonCosmetic}}();}
+\DoxyCodeLine{325 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_painter_af9c7a4cd1791403901f8c5b82a150195}\label{class_q_c_p_painter_af9c7a4cd1791403901f8c5b82a150195}} 
+\index{QCPPainter@{QCPPainter}!setPen@{setPen}}
+\index{setPen@{setPen}!QCPPainter@{QCPPainter}}
+\doxysubsubsection{\texorpdfstring{setPen()}{setPen()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void QCPPainter\+::set\+Pen (\begin{DoxyParamCaption}\item[{const QPen \&}]{pen }\end{DoxyParamCaption})}
+
+Sets the pen of the painter and applies certain fixes to it, depending on the mode of this \mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}}.
+
+\begin{DoxyNote}{Заметки}
+this function hides the non-\/virtual base class implementation. 
+\end{DoxyNote}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{310                                        \{}
+\DoxyCodeLine{311   QPainter::setPen(pen);}
+\DoxyCodeLine{312   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_painter_af5d1d6e5df0adbc7de5633250fb3396c}{mModes}}.testFlag(\mbox{\hyperlink{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156dac1e481bfaf408f2bd2eaad3ec341f36b}{pmNonCosmetic}})) \mbox{\hyperlink{class_q_c_p_painter_a7e63fbcf47e35c6f2ecd11b8fef7c7d8}{makeNonCosmetic}}();}
+\DoxyCodeLine{313 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_painter_a25e76095aae41da0d08035060e5f81ca}\label{class_q_c_p_painter_a25e76095aae41da0d08035060e5f81ca}} 
+\index{QCPPainter@{QCPPainter}!setPen@{setPen}}
+\index{setPen@{setPen}!QCPPainter@{QCPPainter}}
+\doxysubsubsection{\texorpdfstring{setPen()}{setPen()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void QCPPainter\+::set\+Pen (\begin{DoxyParamCaption}\item[{Qt\+::\+Pen\+Style}]{pen\+Style }\end{DoxyParamCaption})}
+
+Эта функция перегружена и предоставляется исключительно для удобства использования. Она отличается от вышеупомянутой только фактическими аргументами.
+
+Sets the pen (by style) of the painter and applies certain fixes to it, depending on the mode of this \mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}}.
+
+\begin{DoxyNote}{Заметки}
+this function hides the non-\/virtual base class implementation. 
+\end{DoxyNote}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{334                                            \{}
+\DoxyCodeLine{335   QPainter::setPen(penStyle);}
+\DoxyCodeLine{336   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_painter_af5d1d6e5df0adbc7de5633250fb3396c}{mModes}}.testFlag(\mbox{\hyperlink{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156dac1e481bfaf408f2bd2eaad3ec341f36b}{pmNonCosmetic}})) \mbox{\hyperlink{class_q_c_p_painter_a7e63fbcf47e35c6f2ecd11b8fef7c7d8}{makeNonCosmetic}}();}
+\DoxyCodeLine{337 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{class_q_c_p_painter_a0189e641bbf7dc31ac15aef7b36501fa}\label{class_q_c_p_painter_a0189e641bbf7dc31ac15aef7b36501fa}} 
+\index{QCPPainter@{QCPPainter}!mAntialiasingStack@{mAntialiasingStack}}
+\index{mAntialiasingStack@{mAntialiasingStack}!QCPPainter@{QCPPainter}}
+\doxysubsubsection{\texorpdfstring{mAntialiasingStack}{mAntialiasingStack}}
+{\footnotesize\ttfamily QStack$<$bool$>$ QCPPainter\+::m\+Antialiasing\+Stack\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_painter_a7055085da176aee0f6b23298f1003d08}\label{class_q_c_p_painter_a7055085da176aee0f6b23298f1003d08}} 
+\index{QCPPainter@{QCPPainter}!mIsAntialiasing@{mIsAntialiasing}}
+\index{mIsAntialiasing@{mIsAntialiasing}!QCPPainter@{QCPPainter}}
+\doxysubsubsection{\texorpdfstring{mIsAntialiasing}{mIsAntialiasing}}
+{\footnotesize\ttfamily bool QCPPainter\+::m\+Is\+Antialiasing\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_painter_af5d1d6e5df0adbc7de5633250fb3396c}\label{class_q_c_p_painter_af5d1d6e5df0adbc7de5633250fb3396c}} 
+\index{QCPPainter@{QCPPainter}!mModes@{mModes}}
+\index{mModes@{mModes}!QCPPainter@{QCPPainter}}
+\doxysubsubsection{\texorpdfstring{mModes}{mModes}}
+{\footnotesize\ttfamily Painter\+Modes QCPPainter\+::m\+Modes\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Smart\+Calc/\mbox{\hyperlink{qcustomplot_8h}{qcustomplot.\+h}}\item 
+Smart\+Calc/\mbox{\hyperlink{qcustomplot_8cpp}{qcustomplot.\+cpp}}\end{DoxyCompactItemize}

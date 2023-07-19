@@ -1,0 +1,712 @@
+\hypertarget{s21__calc_8c}{}\doxysection{Файл Smart\+Calc/s21\+\_\+calc.c}
+\label{s21__calc_8c}\index{SmartCalc/s21\_calc.c@{SmartCalc/s21\_calc.c}}
+{\ttfamily \#include \char`\"{}s21\+\_\+calc.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}s21\+\_\+stack.\+h\char`\"{}}\newline
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{s21__calc_8c_a6bc0290fd7bb65ace779387602a2f91c}{calc}} (char $\ast$input, long double $\ast$result)
+\begin{DoxyCompactList}\small\item\em Вычисление выражения \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__calc_8c_a6667074b192216c2bf8a45ac5248cfc9}{get\+\_\+polish\+\_\+notation}} (char $\ast$$\ast$input, char $\ast$$\ast$result)
+\begin{DoxyCompactList}\small\item\em Преобразование инфиксной записи в польскую нотацию \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__calc_8c_ab3b65ec8106201bd2ffe29d3d3e24d3f}{is\+\_\+digit}} (char symbol)
+\begin{DoxyCompactList}\small\item\em Проверка является ли символ числом \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__calc_8c_a1af1a8119589bd1881acf16f56d8bf78}{priority}} (char sign)
+\begin{DoxyCompactList}\small\item\em Вычисление приоритета операции \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__calc_8c_a426e7a37f18103788c2ff1fd0b034547}{validate\+\_\+input}} (char $\ast$input)
+\begin{DoxyCompactList}\small\item\em Валидация входного выражения \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__calc_8c_aa042b6eb8b60790ff8160a48d15f3507}{get\+\_\+lexems}} (char $\ast$input, char $\ast$$\ast$result)
+\begin{DoxyCompactList}\small\item\em Преобработка входного выражения \end{DoxyCompactList}\item 
+long double \mbox{\hyperlink{s21__calc_8c_ae346379100c9902e9d21514e33f70279}{calculate\+\_\+lexems}} (char $\ast$$\ast$input)
+\begin{DoxyCompactList}\small\item\em Вычисление выражения в польской нотации \end{DoxyCompactList}\item 
+long double \mbox{\hyperlink{s21__calc_8c_ad3801123e3a90c817398694fde46c911}{calc\+\_\+binary}} (char operation, long double a, long double b)
+\begin{DoxyCompactList}\small\item\em Вычисление бинарной операции между 2 числами \end{DoxyCompactList}\item 
+long double \mbox{\hyperlink{s21__calc_8c_a988e3d80bf1efc9ba6d5fc84085b7c9e}{calc\+\_\+unary}} (char operation, long double a)
+\begin{DoxyCompactList}\small\item\em Вычисление унарной операции между 2 числами \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__calc_8c_a8fa97ec5a7233fb4209e962d4756a2ae}{is\+\_\+binary\+\_\+operation}} (char symbol)
+\begin{DoxyCompactList}\small\item\em Проверка является ли символ бинарной операцией \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__calc_8c_a1d844fdcf4e367747951108a024322f4}{is\+\_\+unary\+\_\+operation}} (char symbol)
+\begin{DoxyCompactList}\small\item\em Проверка является ли символ унарной операцией \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__calc_8c_a0ebdd47b5d533d3a0e373da59bc08e6d}{calculate\+\_\+credit}} (long double total\+\_\+sum, long double persent, int months, char type, int month\+\_\+number, long double $\ast$monthly\+\_\+payment, long double $\ast$overpayment, long double $\ast$total\+\_\+payment)
+\begin{DoxyCompactList}\small\item\em Вычисление параметров кредита \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{s21__calc_8c_a6bc0290fd7bb65ace779387602a2f91c}\label{s21__calc_8c_a6bc0290fd7bb65ace779387602a2f91c}} 
+\index{s21\_calc.c@{s21\_calc.c}!calc@{calc}}
+\index{calc@{calc}!s21\_calc.c@{s21\_calc.c}}
+\doxysubsubsection{\texorpdfstring{calc()}{calc()}}
+{\footnotesize\ttfamily int calc (\begin{DoxyParamCaption}\item[{char $\ast$}]{input,  }\item[{long double $\ast$}]{result }\end{DoxyParamCaption})}
+
+
+
+Вычисление выражения 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em input} & выражение \\
+\hline
+{\em result} & указатель на результат \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+код ошибки 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10                                            \{}
+\DoxyCodeLine{11   \textcolor{keywordtype}{int} code = \mbox{\hyperlink{s21__calc_8h_abfc8d2c18d65a6b696664cc78c39c2c5a2bc49ec37d6a5715dd23e85f1ff5bb59}{OK}};}
+\DoxyCodeLine{12   \textcolor{comment}{// validation}}
+\DoxyCodeLine{13   code = \mbox{\hyperlink{s21__calc_8c_a426e7a37f18103788c2ff1fd0b034547}{validate\_input}}(input);}
+\DoxyCodeLine{14   \textcolor{keywordflow}{if} (!code) \{}
+\DoxyCodeLine{15     \textcolor{comment}{// filling res with only lexems}}
+\DoxyCodeLine{16     \textcolor{keywordtype}{char} **res = calloc(255, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{char} *));}
+\DoxyCodeLine{17     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 255; i++) \{}
+\DoxyCodeLine{18       res[i] = calloc(100, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{char}));}
+\DoxyCodeLine{19     \}}
+\DoxyCodeLine{20     \mbox{\hyperlink{s21__calc_8c_aa042b6eb8b60790ff8160a48d15f3507}{get\_lexems}}(input, res);}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22     \textcolor{comment}{// filling res2 with polish notation}}
+\DoxyCodeLine{23     \textcolor{keywordtype}{char} **res2 = calloc(255, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{char} *));}
+\DoxyCodeLine{24     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 255; i++) \{}
+\DoxyCodeLine{25       res2[i] = calloc(100, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{char}));}
+\DoxyCodeLine{26     \}}
+\DoxyCodeLine{27     \mbox{\hyperlink{s21__calc_8c_a6667074b192216c2bf8a45ac5248cfc9}{get\_polish\_notation}}(res, res2);}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     *result = \mbox{\hyperlink{s21__calc_8c_ae346379100c9902e9d21514e33f70279}{calculate\_lexems}}(res2);}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 255; i++) \{}
+\DoxyCodeLine{32       free(res[i]);}
+\DoxyCodeLine{33     \}}
+\DoxyCodeLine{34     free(res);}
+\DoxyCodeLine{35     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 255; i++) \{}
+\DoxyCodeLine{36       free(res2[i]);}
+\DoxyCodeLine{37     \}}
+\DoxyCodeLine{38     free(res2);}
+\DoxyCodeLine{39   \}}
+\DoxyCodeLine{40   \textcolor{keywordflow}{return} code;}
+\DoxyCodeLine{41 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{s21__calc_8c_ad3801123e3a90c817398694fde46c911}\label{s21__calc_8c_ad3801123e3a90c817398694fde46c911}} 
+\index{s21\_calc.c@{s21\_calc.c}!calc\_binary@{calc\_binary}}
+\index{calc\_binary@{calc\_binary}!s21\_calc.c@{s21\_calc.c}}
+\doxysubsubsection{\texorpdfstring{calc\_binary()}{calc\_binary()}}
+{\footnotesize\ttfamily long double calc\+\_\+binary (\begin{DoxyParamCaption}\item[{char}]{operation,  }\item[{long double}]{a,  }\item[{long double}]{b }\end{DoxyParamCaption})}
+
+
+
+Вычисление бинарной операции между 2 числами 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em operation} & символ операции \\
+\hline
+{\em a} & первое число \\
+\hline
+{\em b} & второе число \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+результат операции 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{281                                                                       \{}
+\DoxyCodeLine{282   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} res;}
+\DoxyCodeLine{283   \textcolor{keywordflow}{switch} (operation) \{}
+\DoxyCodeLine{284     \textcolor{keywordflow}{case} \textcolor{charliteral}{'+'}:}
+\DoxyCodeLine{285       res = b + a;}
+\DoxyCodeLine{286       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{287     \textcolor{keywordflow}{case} \textcolor{charliteral}{'-\/'}:}
+\DoxyCodeLine{288       res = b -\/ a;}
+\DoxyCodeLine{289       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{290     \textcolor{keywordflow}{case} \textcolor{charliteral}{'*'}:}
+\DoxyCodeLine{291       res = b * a;}
+\DoxyCodeLine{292       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{293     \textcolor{keywordflow}{case} \textcolor{charliteral}{'/'}:}
+\DoxyCodeLine{294       res = b / a;}
+\DoxyCodeLine{295       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{296     \textcolor{keywordflow}{case} \textcolor{charliteral}{'\string^'}:}
+\DoxyCodeLine{297       res = pow(b, a);}
+\DoxyCodeLine{298       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{299     \textcolor{keywordflow}{case} \textcolor{charliteral}{'\%'}:}
+\DoxyCodeLine{300       res = (\textcolor{keywordtype}{long} int)b \% (\textcolor{keywordtype}{long} \textcolor{keywordtype}{int})a;}
+\DoxyCodeLine{301       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{302   \}}
+\DoxyCodeLine{303   \textcolor{keywordflow}{return} res;}
+\DoxyCodeLine{304 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{s21__calc_8c_a988e3d80bf1efc9ba6d5fc84085b7c9e}\label{s21__calc_8c_a988e3d80bf1efc9ba6d5fc84085b7c9e}} 
+\index{s21\_calc.c@{s21\_calc.c}!calc\_unary@{calc\_unary}}
+\index{calc\_unary@{calc\_unary}!s21\_calc.c@{s21\_calc.c}}
+\doxysubsubsection{\texorpdfstring{calc\_unary()}{calc\_unary()}}
+{\footnotesize\ttfamily long double calc\+\_\+unary (\begin{DoxyParamCaption}\item[{char}]{operation,  }\item[{long double}]{a }\end{DoxyParamCaption})}
+
+
+
+Вычисление унарной операции между 2 числами 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em operation} & символ операции \\
+\hline
+{\em a} & число \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+результат операции 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{306                                                       \{}
+\DoxyCodeLine{307   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} res;}
+\DoxyCodeLine{308   \textcolor{keywordflow}{switch} (operation) \{}
+\DoxyCodeLine{309     \textcolor{keywordflow}{case} \textcolor{charliteral}{'\string~'}:}
+\DoxyCodeLine{310       res = a * (-\/1);}
+\DoxyCodeLine{311       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{312     \textcolor{keywordflow}{case} \textcolor{charliteral}{'s'}:}
+\DoxyCodeLine{313       res = sin(a);}
+\DoxyCodeLine{314       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{315     \textcolor{keywordflow}{case} \textcolor{charliteral}{'c'}:}
+\DoxyCodeLine{316       res = cos(a);}
+\DoxyCodeLine{317       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{318     \textcolor{keywordflow}{case} \textcolor{charliteral}{'t'}:}
+\DoxyCodeLine{319       res = tan(a);}
+\DoxyCodeLine{320       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{321     \textcolor{keywordflow}{case} \textcolor{charliteral}{'S'}:}
+\DoxyCodeLine{322       res = asin(a);}
+\DoxyCodeLine{323       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{324     \textcolor{keywordflow}{case} \textcolor{charliteral}{'C'}:}
+\DoxyCodeLine{325       res = acos(a);}
+\DoxyCodeLine{326       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{327     \textcolor{keywordflow}{case} \textcolor{charliteral}{'T'}:}
+\DoxyCodeLine{328       res = atan(a);}
+\DoxyCodeLine{329       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{330     \textcolor{keywordflow}{case} \textcolor{charliteral}{'q'}:}
+\DoxyCodeLine{331       res = sqrt(a);}
+\DoxyCodeLine{332       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{333     \textcolor{keywordflow}{case} \textcolor{charliteral}{'l'}:}
+\DoxyCodeLine{334       res = log(a);}
+\DoxyCodeLine{335       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{336     \textcolor{keywordflow}{case} \textcolor{charliteral}{'g'}:}
+\DoxyCodeLine{337       res = log10(a);}
+\DoxyCodeLine{338       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{339   \}}
+\DoxyCodeLine{340   \textcolor{keywordflow}{return} res;}
+\DoxyCodeLine{341 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{s21__calc_8c_a0ebdd47b5d533d3a0e373da59bc08e6d}\label{s21__calc_8c_a0ebdd47b5d533d3a0e373da59bc08e6d}} 
+\index{s21\_calc.c@{s21\_calc.c}!calculate\_credit@{calculate\_credit}}
+\index{calculate\_credit@{calculate\_credit}!s21\_calc.c@{s21\_calc.c}}
+\doxysubsubsection{\texorpdfstring{calculate\_credit()}{calculate\_credit()}}
+{\footnotesize\ttfamily void calculate\+\_\+credit (\begin{DoxyParamCaption}\item[{long double}]{total\+\_\+sum,  }\item[{long double}]{persent,  }\item[{int}]{months,  }\item[{char}]{type,  }\item[{int}]{month,  }\item[{long double $\ast$}]{monthly\+\_\+payment,  }\item[{long double $\ast$}]{overpayment,  }\item[{long double $\ast$}]{total\+\_\+payment }\end{DoxyParamCaption})}
+
+
+
+Вычисление параметров кредита 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em total\+\_\+sum} & общая сумма кредита \\
+\hline
+{\em persent} & процентная ставка \\
+\hline
+{\em months} & срок (в месяцах) \\
+\hline
+{\em type} & тип (аннуитетный, дифференцированный) \\
+\hline
+{\em month} & номер месяца \\
+\hline
+{\em monthly\+\_\+payment} & ежемесячный платеж \\
+\hline
+{\em overpayment} & переплата по кредиту \\
+\hline
+{\em total\+\_\+payment} & общая выплата \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{379                                                                             \{}
+\DoxyCodeLine{380   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} bet, koef;}
+\DoxyCodeLine{381   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} sd = total\_sum / months;}
+\DoxyCodeLine{382   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} sp = 0;}
+\DoxyCodeLine{383   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} sp\_sum = 0;}
+\DoxyCodeLine{384 }
+\DoxyCodeLine{385   \textcolor{keywordtype}{double} months\_days[] = \{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31\};}
+\DoxyCodeLine{386 }
+\DoxyCodeLine{387   \textcolor{keywordflow}{switch} (type) \{}
+\DoxyCodeLine{388     \textcolor{keywordflow}{case} \textcolor{charliteral}{'a'}:}
+\DoxyCodeLine{389       bet = persent / 1200;}
+\DoxyCodeLine{390       koef = bet * powl(1 + bet, months) / (powl(1 + bet, months) -\/ 1);}
+\DoxyCodeLine{391       *monthly\_payment = total\_sum * koef;}
+\DoxyCodeLine{392       *total\_payment = *monthly\_payment * months;}
+\DoxyCodeLine{393       *overpayment = *total\_payment -\/ total\_sum;}
+\DoxyCodeLine{394       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{395 }
+\DoxyCodeLine{396     \textcolor{keywordflow}{case} \textcolor{charliteral}{'d'}:}
+\DoxyCodeLine{397       *total\_payment = 0;}
+\DoxyCodeLine{398       \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < months; i++) \{}
+\DoxyCodeLine{399         sp = (total\_sum -\/ sp\_sum) * (persent / 100) * (months\_days[i \% 12]) /}
+\DoxyCodeLine{400              365;}
+\DoxyCodeLine{401         *total\_payment += sp + sd;}
+\DoxyCodeLine{402         sp\_sum += sd;}
+\DoxyCodeLine{403       \}}
+\DoxyCodeLine{404       sp\_sum = 0;}
+\DoxyCodeLine{405       \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < month\_number; i++) \{}
+\DoxyCodeLine{406         sp = (total\_sum -\/ sp\_sum) * (persent / 100) * (months\_days[i \% 12]) /}
+\DoxyCodeLine{407              365;}
+\DoxyCodeLine{408         sp\_sum += sd;}
+\DoxyCodeLine{409       \}}
+\DoxyCodeLine{410 }
+\DoxyCodeLine{411       *monthly\_payment = sd + sp;}
+\DoxyCodeLine{412       *overpayment = *total\_payment -\/ total\_sum;}
+\DoxyCodeLine{413       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{414   \}}
+\DoxyCodeLine{415 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{s21__calc_8c_ae346379100c9902e9d21514e33f70279}\label{s21__calc_8c_ae346379100c9902e9d21514e33f70279}} 
+\index{s21\_calc.c@{s21\_calc.c}!calculate\_lexems@{calculate\_lexems}}
+\index{calculate\_lexems@{calculate\_lexems}!s21\_calc.c@{s21\_calc.c}}
+\doxysubsubsection{\texorpdfstring{calculate\_lexems()}{calculate\_lexems()}}
+{\footnotesize\ttfamily long double calculate\+\_\+lexems (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{input }\end{DoxyParamCaption})}
+
+
+
+Вычисление выражения в польской нотации 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em input} & выражения в польской нотации \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+результат выражения 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{260                                            \{}
+\DoxyCodeLine{261   \mbox{\hyperlink{struct_stack__digit}{Stack\_digit}} stack;}
+\DoxyCodeLine{262   stack.\mbox{\hyperlink{struct_stack__digit_ab5b1307f109658c668a916e58dcfa38e}{length}} = 0;}
+\DoxyCodeLine{263   \textcolor{keywordtype}{char} *endptr;}
+\DoxyCodeLine{264   \textcolor{keywordtype}{long} \textcolor{keywordtype}{double} a, b;}
+\DoxyCodeLine{265 }
+\DoxyCodeLine{266   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; input[i][0] != \textcolor{charliteral}{'\(\backslash\)0'}; i++) \{}
+\DoxyCodeLine{267     \textcolor{keywordflow}{if} (\mbox{\hyperlink{s21__calc_8c_a8fa97ec5a7233fb4209e962d4756a2ae}{is\_binary\_operation}}(input[i][0])) \{}
+\DoxyCodeLine{268       a = \mbox{\hyperlink{s21__stack_8c_a1cac984ca81e836d4d61d4e1d6a4307f}{pop\_digit}}(\&stack);}
+\DoxyCodeLine{269       b = \mbox{\hyperlink{s21__stack_8c_a1cac984ca81e836d4d61d4e1d6a4307f}{pop\_digit}}(\&stack);}
+\DoxyCodeLine{270       \mbox{\hyperlink{s21__stack_8c_aea3d1947320d9cb2aec7c88ee615e85f}{push\_digit}}(\&stack, \mbox{\hyperlink{s21__calc_8c_ad3801123e3a90c817398694fde46c911}{calc\_binary}}(input[i][0], a, b));}
+\DoxyCodeLine{271     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{s21__calc_8c_a1d844fdcf4e367747951108a024322f4}{is\_unary\_operation}}(input[i][0])) \{}
+\DoxyCodeLine{272       a = \mbox{\hyperlink{s21__stack_8c_a1cac984ca81e836d4d61d4e1d6a4307f}{pop\_digit}}(\&stack);}
+\DoxyCodeLine{273       \mbox{\hyperlink{s21__stack_8c_aea3d1947320d9cb2aec7c88ee615e85f}{push\_digit}}(\&stack, \mbox{\hyperlink{s21__calc_8c_a988e3d80bf1efc9ba6d5fc84085b7c9e}{calc\_unary}}(input[i][0], a));}
+\DoxyCodeLine{274     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{275       \mbox{\hyperlink{s21__stack_8c_aea3d1947320d9cb2aec7c88ee615e85f}{push\_digit}}(\&stack, strtold(input[i], \&endptr));}
+\DoxyCodeLine{276     \}}
+\DoxyCodeLine{277   \}}
+\DoxyCodeLine{278   \textcolor{keywordflow}{return} \mbox{\hyperlink{s21__stack_8c_a1cac984ca81e836d4d61d4e1d6a4307f}{pop\_digit}}(\&stack);}
+\DoxyCodeLine{279 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{s21__calc_8c_aa042b6eb8b60790ff8160a48d15f3507}\label{s21__calc_8c_aa042b6eb8b60790ff8160a48d15f3507}} 
+\index{s21\_calc.c@{s21\_calc.c}!get\_lexems@{get\_lexems}}
+\index{get\_lexems@{get\_lexems}!s21\_calc.c@{s21\_calc.c}}
+\doxysubsubsection{\texorpdfstring{get\_lexems()}{get\_lexems()}}
+{\footnotesize\ttfamily void get\+\_\+lexems (\begin{DoxyParamCaption}\item[{char $\ast$}]{input,  }\item[{char $\ast$$\ast$}]{result }\end{DoxyParamCaption})}
+
+
+
+Преобработка входного выражения 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em input} & входная строка \\
+\hline
+{\em result} & выходная строка \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{184                                             \{}
+\DoxyCodeLine{185   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < strlen(input); i++) \{}
+\DoxyCodeLine{186     \textcolor{keywordflow}{if} (input[i] == \textcolor{charliteral}{' '}) \{}
+\DoxyCodeLine{187       \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{188     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (strchr(\textcolor{stringliteral}{"{}+-\/"{}}, input[i]) != NULL) \{}
+\DoxyCodeLine{189       \textcolor{keywordflow}{if} (i == 0 || !strcmp(*(-\/-\/result), \textcolor{stringliteral}{"{}("{}})) \{}
+\DoxyCodeLine{190         \textcolor{keywordflow}{if} (i != 0) \{}
+\DoxyCodeLine{191           result++;}
+\DoxyCodeLine{192         \}}
+\DoxyCodeLine{193         \textcolor{keywordflow}{if} (input[i] == \textcolor{charliteral}{'+'}) \{}
+\DoxyCodeLine{194           \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{195         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{196           strcpy(*result, \textcolor{stringliteral}{"{}\string~"{}});}
+\DoxyCodeLine{197           result++;}
+\DoxyCodeLine{198         \}}
+\DoxyCodeLine{199       \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{200         \textcolor{keywordflow}{if} (i != 0) \{}
+\DoxyCodeLine{201           result++;}
+\DoxyCodeLine{202         \}}
+\DoxyCodeLine{203         strncpy(*result, \&input[i], 1);}
+\DoxyCodeLine{204         result++;}
+\DoxyCodeLine{205       \}}
+\DoxyCodeLine{206     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (strchr(\textcolor{stringliteral}{"{}\string^*/()x\%\%"{}}, input[i]) != NULL) \{}
+\DoxyCodeLine{207       strncpy(*result, \&input[i], 1);}
+\DoxyCodeLine{208       result++;}
+\DoxyCodeLine{209     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (input[i] == \textcolor{charliteral}{'l'} \&\& input[i + 1] == \textcolor{charliteral}{'n'}) \{}
+\DoxyCodeLine{210       strcpy(*result, \textcolor{stringliteral}{"{}l"{}});}
+\DoxyCodeLine{211       result++;}
+\DoxyCodeLine{212       i += 1;}
+\DoxyCodeLine{213     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (input[i] == \textcolor{charliteral}{'c'} \&\& input[i + 1] == \textcolor{charliteral}{'o'} \&\& input[i + 2] == \textcolor{charliteral}{'s'}) \{}
+\DoxyCodeLine{214       strcpy(*result, \textcolor{stringliteral}{"{}c"{}});}
+\DoxyCodeLine{215       result++;}
+\DoxyCodeLine{216       i += 2;}
+\DoxyCodeLine{217     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (input[i] == \textcolor{charliteral}{'s'} \&\& input[i + 1] == \textcolor{charliteral}{'i'} \&\& input[i + 2] == \textcolor{charliteral}{'n'}) \{}
+\DoxyCodeLine{218       strcpy(*result, \textcolor{stringliteral}{"{}s"{}});}
+\DoxyCodeLine{219       result++;}
+\DoxyCodeLine{220       i += 2;}
+\DoxyCodeLine{221     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (input[i] == \textcolor{charliteral}{'t'} \&\& input[i + 1] == \textcolor{charliteral}{'a'} \&\& input[i + 2] == \textcolor{charliteral}{'n'}) \{}
+\DoxyCodeLine{222       strcpy(*result, \textcolor{stringliteral}{"{}t"{}});}
+\DoxyCodeLine{223       result++;}
+\DoxyCodeLine{224       i += 2;}
+\DoxyCodeLine{225     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (input[i] == \textcolor{charliteral}{'l'} \&\& input[i + 1] == \textcolor{charliteral}{'o'} \&\& input[i + 2] == \textcolor{charliteral}{'g'}) \{}
+\DoxyCodeLine{226       strcpy(*result, \textcolor{stringliteral}{"{}g"{}});}
+\DoxyCodeLine{227       result++;}
+\DoxyCodeLine{228       i += 2;}
+\DoxyCodeLine{229     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (input[i] == \textcolor{charliteral}{'a'} \&\& input[i + 1] == \textcolor{charliteral}{'c'} \&\& input[i + 2] == \textcolor{charliteral}{'o'} \&\&}
+\DoxyCodeLine{230                input[i + 3] == \textcolor{charliteral}{'s'}) \{}
+\DoxyCodeLine{231       strcpy(*result, \textcolor{stringliteral}{"{}C"{}});}
+\DoxyCodeLine{232       result++;}
+\DoxyCodeLine{233       i += 3;}
+\DoxyCodeLine{234     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (input[i] == \textcolor{charliteral}{'a'} \&\& input[i + 1] == \textcolor{charliteral}{'s'} \&\& input[i + 2] == \textcolor{charliteral}{'i'} \&\&}
+\DoxyCodeLine{235                input[i + 3] == \textcolor{charliteral}{'n'}) \{}
+\DoxyCodeLine{236       strcpy(*result, \textcolor{stringliteral}{"{}S"{}});}
+\DoxyCodeLine{237       result++;}
+\DoxyCodeLine{238       i += 3;}
+\DoxyCodeLine{239     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (input[i] == \textcolor{charliteral}{'a'} \&\& input[i + 1] == \textcolor{charliteral}{'t'} \&\& input[i + 2] == \textcolor{charliteral}{'a'} \&\&}
+\DoxyCodeLine{240                input[i + 3] == \textcolor{charliteral}{'n'}) \{}
+\DoxyCodeLine{241       strcpy(*result, \textcolor{stringliteral}{"{}T"{}});}
+\DoxyCodeLine{242       result++;}
+\DoxyCodeLine{243       i += 3;}
+\DoxyCodeLine{244     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (input[i] == \textcolor{charliteral}{'s'} \&\& input[i + 1] == \textcolor{charliteral}{'q'} \&\& input[i + 2] == \textcolor{charliteral}{'r'} \&\&}
+\DoxyCodeLine{245                input[i + 3] == \textcolor{charliteral}{'t'}) \{}
+\DoxyCodeLine{246       strcpy(*result, \textcolor{stringliteral}{"{}q"{}});}
+\DoxyCodeLine{247       result++;}
+\DoxyCodeLine{248       i += 3;}
+\DoxyCodeLine{249     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{s21__calc_8c_ab3b65ec8106201bd2ffe29d3d3e24d3f}{is\_digit}}(input[i])) \{}
+\DoxyCodeLine{250       \textcolor{keywordflow}{while} (\mbox{\hyperlink{s21__calc_8c_ab3b65ec8106201bd2ffe29d3d3e24d3f}{is\_digit}}(input[i])) \{}
+\DoxyCodeLine{251         strncat(*result, \&input[i], 1);}
+\DoxyCodeLine{252         i++;}
+\DoxyCodeLine{253       \}}
+\DoxyCodeLine{254       result++;}
+\DoxyCodeLine{255       i-\/-\/;}
+\DoxyCodeLine{256     \}}
+\DoxyCodeLine{257   \}}
+\DoxyCodeLine{258 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{s21__calc_8c_a6667074b192216c2bf8a45ac5248cfc9}\label{s21__calc_8c_a6667074b192216c2bf8a45ac5248cfc9}} 
+\index{s21\_calc.c@{s21\_calc.c}!get\_polish\_notation@{get\_polish\_notation}}
+\index{get\_polish\_notation@{get\_polish\_notation}!s21\_calc.c@{s21\_calc.c}}
+\doxysubsubsection{\texorpdfstring{get\_polish\_notation()}{get\_polish\_notation()}}
+{\footnotesize\ttfamily void get\+\_\+polish\+\_\+notation (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{input,  }\item[{char $\ast$$\ast$}]{result }\end{DoxyParamCaption})}
+
+
+
+Преобразование инфиксной записи в польскую нотацию 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em input} & выражение в инфиксной записи \\
+\hline
+{\em result} & выражение в польской нотации \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43                                                       \{}
+\DoxyCodeLine{44   \mbox{\hyperlink{struct_stack__sign}{Stack\_sign}} stack;}
+\DoxyCodeLine{45   stack.\mbox{\hyperlink{struct_stack__sign_a5cb8f33483a17870eea1fcd40cbfb654}{length}} = 0;}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; input[i][0] != \textcolor{charliteral}{'\(\backslash\)0'}; i++) \{}
+\DoxyCodeLine{48     \textcolor{comment}{// printf("{}\%s -\/>"{}, input[i]);}}
+\DoxyCodeLine{49     \textcolor{comment}{// printStack\_sign(\&stack);}}
+\DoxyCodeLine{50     \textcolor{keywordflow}{if} (\mbox{\hyperlink{s21__calc_8c_ab3b65ec8106201bd2ffe29d3d3e24d3f}{is\_digit}}(input[i][0]) || input[i][0] == \textcolor{charliteral}{'x'}) \{}
+\DoxyCodeLine{51       strcpy(*result, input[i]);}
+\DoxyCodeLine{52       result++;}
+\DoxyCodeLine{53     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (!strcmp(input[i], \textcolor{stringliteral}{"{}("{}}) || !strcmp(input[i], \textcolor{stringliteral}{"{}s"{}}) ||}
+\DoxyCodeLine{54                !strcmp(input[i], \textcolor{stringliteral}{"{}c"{}}) || !strcmp(input[i], \textcolor{stringliteral}{"{}t"{}}) ||}
+\DoxyCodeLine{55                !strcmp(input[i], \textcolor{stringliteral}{"{}S"{}}) || !strcmp(input[i], \textcolor{stringliteral}{"{}C"{}}) ||}
+\DoxyCodeLine{56                !strcmp(input[i], \textcolor{stringliteral}{"{}T"{}}) || !strcmp(input[i], \textcolor{stringliteral}{"{}q"{}}) ||}
+\DoxyCodeLine{57                !strcmp(input[i], \textcolor{stringliteral}{"{}l"{}}) || !strcmp(input[i], \textcolor{stringliteral}{"{}g"{}})) \{}
+\DoxyCodeLine{58       \mbox{\hyperlink{s21__stack_8c_a4686948fde887e6ab0789265cafc1f55}{push\_sign}}(\&stack, input[i][0]);}
+\DoxyCodeLine{59     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (!strcmp(input[i], \textcolor{stringliteral}{"{})"{}})) \{}
+\DoxyCodeLine{60       \textcolor{keywordflow}{while} (stack.\mbox{\hyperlink{struct_stack__sign_a8cfcb2cc78f88e10068c5f6c3484823c}{data}}[stack.\mbox{\hyperlink{struct_stack__sign_a5cb8f33483a17870eea1fcd40cbfb654}{length}} -\/ 1] != \textcolor{charliteral}{'('}) \{}
+\DoxyCodeLine{61         **result = \mbox{\hyperlink{s21__stack_8c_ad5673f4cc4c9d8968863b87b0ecf3ab0}{pop\_sign}}(\&stack);}
+\DoxyCodeLine{62         result++;}
+\DoxyCodeLine{63       \}}
+\DoxyCodeLine{64       \mbox{\hyperlink{s21__stack_8c_ad5673f4cc4c9d8968863b87b0ecf3ab0}{pop\_sign}}(\&stack);}
+\DoxyCodeLine{65       \textcolor{keywordflow}{if} (stack.\mbox{\hyperlink{struct_stack__sign_a5cb8f33483a17870eea1fcd40cbfb654}{length}} > 0) \{}
+\DoxyCodeLine{66         \textcolor{keywordtype}{char} func = stack.\mbox{\hyperlink{struct_stack__sign_a8cfcb2cc78f88e10068c5f6c3484823c}{data}}[stack.\mbox{\hyperlink{struct_stack__sign_a5cb8f33483a17870eea1fcd40cbfb654}{length}} -\/ 1];}
+\DoxyCodeLine{67         \textcolor{keywordflow}{if} (func == \textcolor{charliteral}{'s'} || func == \textcolor{charliteral}{'c'} || func == \textcolor{charliteral}{'t'} || func == \textcolor{charliteral}{'l'} ||}
+\DoxyCodeLine{68             func == \textcolor{charliteral}{'g'} || func == \textcolor{charliteral}{'q'} || func == \textcolor{charliteral}{'S'} || func == \textcolor{charliteral}{'C'} ||}
+\DoxyCodeLine{69             func == \textcolor{charliteral}{'T'}) \{}
+\DoxyCodeLine{70           **result = \mbox{\hyperlink{s21__stack_8c_ad5673f4cc4c9d8968863b87b0ecf3ab0}{pop\_sign}}(\&stack);}
+\DoxyCodeLine{71           result++;}
+\DoxyCodeLine{72         \}}
+\DoxyCodeLine{73       \}}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{76       \textcolor{keywordflow}{if} (stack.\mbox{\hyperlink{struct_stack__sign_a5cb8f33483a17870eea1fcd40cbfb654}{length}} == 0 || stack.\mbox{\hyperlink{struct_stack__sign_a8cfcb2cc78f88e10068c5f6c3484823c}{data}}[stack.\mbox{\hyperlink{struct_stack__sign_a5cb8f33483a17870eea1fcd40cbfb654}{length}} -\/ 1] == \textcolor{charliteral}{'('} ||}
+\DoxyCodeLine{77           \mbox{\hyperlink{s21__calc_8c_a1af1a8119589bd1881acf16f56d8bf78}{priority}}(input[i][0]) > \mbox{\hyperlink{s21__calc_8c_a1af1a8119589bd1881acf16f56d8bf78}{priority}}(stack.\mbox{\hyperlink{struct_stack__sign_a8cfcb2cc78f88e10068c5f6c3484823c}{data}}[stack.\mbox{\hyperlink{struct_stack__sign_a5cb8f33483a17870eea1fcd40cbfb654}{length}} -\/ 1]) ||}
+\DoxyCodeLine{78           (\mbox{\hyperlink{s21__calc_8c_a1af1a8119589bd1881acf16f56d8bf78}{priority}}(input[i][0]) == \mbox{\hyperlink{s21__calc_8c_a1af1a8119589bd1881acf16f56d8bf78}{priority}}(stack.\mbox{\hyperlink{struct_stack__sign_a8cfcb2cc78f88e10068c5f6c3484823c}{data}}[stack.\mbox{\hyperlink{struct_stack__sign_a5cb8f33483a17870eea1fcd40cbfb654}{length}} -\/ 1]) \&\&}
+\DoxyCodeLine{79            stack.\mbox{\hyperlink{struct_stack__sign_a8cfcb2cc78f88e10068c5f6c3484823c}{data}}[stack.\mbox{\hyperlink{struct_stack__sign_a5cb8f33483a17870eea1fcd40cbfb654}{length}} -\/ 1] == \textcolor{charliteral}{'\%'} \&\&}
+\DoxyCodeLine{80            (input[i][0] == \textcolor{charliteral}{'*'} || input[i][0] == \textcolor{charliteral}{'/'}))) \{}
+\DoxyCodeLine{81         \mbox{\hyperlink{s21__stack_8c_a4686948fde887e6ab0789265cafc1f55}{push\_sign}}(\&stack, input[i][0]);}
+\DoxyCodeLine{82       \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{s21__calc_8c_a1af1a8119589bd1881acf16f56d8bf78}{priority}}(input[i][0]) <=}
+\DoxyCodeLine{83                  \mbox{\hyperlink{s21__calc_8c_a1af1a8119589bd1881acf16f56d8bf78}{priority}}(stack.\mbox{\hyperlink{struct_stack__sign_a8cfcb2cc78f88e10068c5f6c3484823c}{data}}[stack.\mbox{\hyperlink{struct_stack__sign_a5cb8f33483a17870eea1fcd40cbfb654}{length}} -\/ 1])) \{}
+\DoxyCodeLine{84         \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{85           **result = \mbox{\hyperlink{s21__stack_8c_ad5673f4cc4c9d8968863b87b0ecf3ab0}{pop\_sign}}(\&stack);}
+\DoxyCodeLine{86           result++;}
+\DoxyCodeLine{87         \} \textcolor{keywordflow}{while} (}
+\DoxyCodeLine{88             (\mbox{\hyperlink{s21__calc_8c_a1af1a8119589bd1881acf16f56d8bf78}{priority}}(input[i][0]) <= \mbox{\hyperlink{s21__calc_8c_a1af1a8119589bd1881acf16f56d8bf78}{priority}}(stack.\mbox{\hyperlink{struct_stack__sign_a8cfcb2cc78f88e10068c5f6c3484823c}{data}}[stack.\mbox{\hyperlink{struct_stack__sign_a5cb8f33483a17870eea1fcd40cbfb654}{length}} -\/ 1]) \&\&}
+\DoxyCodeLine{89              !(\mbox{\hyperlink{s21__calc_8c_a1af1a8119589bd1881acf16f56d8bf78}{priority}}(input[i][0]) ==}
+\DoxyCodeLine{90                    \mbox{\hyperlink{s21__calc_8c_a1af1a8119589bd1881acf16f56d8bf78}{priority}}(stack.\mbox{\hyperlink{struct_stack__sign_a8cfcb2cc78f88e10068c5f6c3484823c}{data}}[stack.\mbox{\hyperlink{struct_stack__sign_a5cb8f33483a17870eea1fcd40cbfb654}{length}} -\/ 1]) \&\&}
+\DoxyCodeLine{91                stack.\mbox{\hyperlink{struct_stack__sign_a8cfcb2cc78f88e10068c5f6c3484823c}{data}}[stack.\mbox{\hyperlink{struct_stack__sign_a5cb8f33483a17870eea1fcd40cbfb654}{length}} -\/ 1] == \textcolor{charliteral}{'\%'} \&\&}
+\DoxyCodeLine{92                (input[i][0] == \textcolor{charliteral}{'*'} || input[i][0] == \textcolor{charliteral}{'/'}))) \&\&}
+\DoxyCodeLine{93             stack.\mbox{\hyperlink{struct_stack__sign_a5cb8f33483a17870eea1fcd40cbfb654}{length}} > 0);}
+\DoxyCodeLine{94         \mbox{\hyperlink{s21__stack_8c_a4686948fde887e6ab0789265cafc1f55}{push\_sign}}(\&stack, input[i][0]);}
+\DoxyCodeLine{95       \}}
+\DoxyCodeLine{96     \}}
+\DoxyCodeLine{97   \}}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99   \textcolor{keywordflow}{while} (stack.\mbox{\hyperlink{struct_stack__sign_a5cb8f33483a17870eea1fcd40cbfb654}{length}} > 0) \{}
+\DoxyCodeLine{100     **result = \mbox{\hyperlink{s21__stack_8c_ad5673f4cc4c9d8968863b87b0ecf3ab0}{pop\_sign}}(\&stack);}
+\DoxyCodeLine{101     result++;}
+\DoxyCodeLine{102   \}}
+\DoxyCodeLine{103 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{s21__calc_8c_a8fa97ec5a7233fb4209e962d4756a2ae}\label{s21__calc_8c_a8fa97ec5a7233fb4209e962d4756a2ae}} 
+\index{s21\_calc.c@{s21\_calc.c}!is\_binary\_operation@{is\_binary\_operation}}
+\index{is\_binary\_operation@{is\_binary\_operation}!s21\_calc.c@{s21\_calc.c}}
+\doxysubsubsection{\texorpdfstring{is\_binary\_operation()}{is\_binary\_operation()}}
+{\footnotesize\ttfamily int is\+\_\+binary\+\_\+operation (\begin{DoxyParamCaption}\item[{char}]{symbol }\end{DoxyParamCaption})}
+
+
+
+Проверка является ли символ бинарной операцией 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em symbol} & символ операции \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+1 -\/ если символ является бинарной операцией, иначе -\/ 0 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{343                                      \{}
+\DoxyCodeLine{344   \textcolor{keywordtype}{int} res = 0;}
+\DoxyCodeLine{345   \textcolor{keywordflow}{switch} (symbol) \{}
+\DoxyCodeLine{346     \textcolor{keywordflow}{case} \textcolor{charliteral}{'+'}:}
+\DoxyCodeLine{347     \textcolor{keywordflow}{case} \textcolor{charliteral}{'-\/'}:}
+\DoxyCodeLine{348     \textcolor{keywordflow}{case} \textcolor{charliteral}{'*'}:}
+\DoxyCodeLine{349     \textcolor{keywordflow}{case} \textcolor{charliteral}{'/'}:}
+\DoxyCodeLine{350     \textcolor{keywordflow}{case} \textcolor{charliteral}{'\%'}:}
+\DoxyCodeLine{351     \textcolor{keywordflow}{case} \textcolor{charliteral}{'\string^'}:}
+\DoxyCodeLine{352       res = 1;}
+\DoxyCodeLine{353       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{354   \}}
+\DoxyCodeLine{355   \textcolor{keywordflow}{return} res;}
+\DoxyCodeLine{356 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{s21__calc_8c_ab3b65ec8106201bd2ffe29d3d3e24d3f}\label{s21__calc_8c_ab3b65ec8106201bd2ffe29d3d3e24d3f}} 
+\index{s21\_calc.c@{s21\_calc.c}!is\_digit@{is\_digit}}
+\index{is\_digit@{is\_digit}!s21\_calc.c@{s21\_calc.c}}
+\doxysubsubsection{\texorpdfstring{is\_digit()}{is\_digit()}}
+{\footnotesize\ttfamily int is\+\_\+digit (\begin{DoxyParamCaption}\item[{char}]{symbol }\end{DoxyParamCaption})}
+
+
+
+Проверка является ли символ числом 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em symbol} & символ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+1 -\/ если символ является числом, иначе -\/ 0 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{105                           \{}
+\DoxyCodeLine{106   \textcolor{keywordtype}{char} *nums = \textcolor{stringliteral}{"{}1234567890."{}};}
+\DoxyCodeLine{107   \textcolor{keywordflow}{return} (strchr(nums, symbol) != NULL) ? 1 : 0;}
+\DoxyCodeLine{108 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{s21__calc_8c_a1d844fdcf4e367747951108a024322f4}\label{s21__calc_8c_a1d844fdcf4e367747951108a024322f4}} 
+\index{s21\_calc.c@{s21\_calc.c}!is\_unary\_operation@{is\_unary\_operation}}
+\index{is\_unary\_operation@{is\_unary\_operation}!s21\_calc.c@{s21\_calc.c}}
+\doxysubsubsection{\texorpdfstring{is\_unary\_operation()}{is\_unary\_operation()}}
+{\footnotesize\ttfamily int is\+\_\+unary\+\_\+operation (\begin{DoxyParamCaption}\item[{char}]{symbol }\end{DoxyParamCaption})}
+
+
+
+Проверка является ли символ унарной операцией 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em symbol} & символ операции \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+1 -\/ если символ является унарной операцией, иначе -\/ 0 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{358                                     \{}
+\DoxyCodeLine{359   \textcolor{keywordtype}{int} res = 0;}
+\DoxyCodeLine{360   \textcolor{keywordflow}{switch} (symbol) \{}
+\DoxyCodeLine{361     \textcolor{keywordflow}{case} \textcolor{charliteral}{'\string~'}:}
+\DoxyCodeLine{362     \textcolor{keywordflow}{case} \textcolor{charliteral}{'s'}:}
+\DoxyCodeLine{363     \textcolor{keywordflow}{case} \textcolor{charliteral}{'c'}:}
+\DoxyCodeLine{364     \textcolor{keywordflow}{case} \textcolor{charliteral}{'t'}:}
+\DoxyCodeLine{365     \textcolor{keywordflow}{case} \textcolor{charliteral}{'l'}:}
+\DoxyCodeLine{366     \textcolor{keywordflow}{case} \textcolor{charliteral}{'g'}:}
+\DoxyCodeLine{367     \textcolor{keywordflow}{case} \textcolor{charliteral}{'q'}:}
+\DoxyCodeLine{368     \textcolor{keywordflow}{case} \textcolor{charliteral}{'S'}:}
+\DoxyCodeLine{369     \textcolor{keywordflow}{case} \textcolor{charliteral}{'C'}:}
+\DoxyCodeLine{370     \textcolor{keywordflow}{case} \textcolor{charliteral}{'T'}:}
+\DoxyCodeLine{371       res = 1;}
+\DoxyCodeLine{372       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{373   \}}
+\DoxyCodeLine{374   \textcolor{keywordflow}{return} res;}
+\DoxyCodeLine{375 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{s21__calc_8c_a1af1a8119589bd1881acf16f56d8bf78}\label{s21__calc_8c_a1af1a8119589bd1881acf16f56d8bf78}} 
+\index{s21\_calc.c@{s21\_calc.c}!priority@{priority}}
+\index{priority@{priority}!s21\_calc.c@{s21\_calc.c}}
+\doxysubsubsection{\texorpdfstring{priority()}{priority()}}
+{\footnotesize\ttfamily int priority (\begin{DoxyParamCaption}\item[{char}]{sign }\end{DoxyParamCaption})}
+
+
+
+Вычисление приоритета операции 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em sign} & символ операции \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Приоритет операции 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{110                         \{}
+\DoxyCodeLine{111   \textcolor{keywordtype}{int} \mbox{\hyperlink{s21__calc_8c_a1af1a8119589bd1881acf16f56d8bf78}{priority}} = 0;}
+\DoxyCodeLine{112   \textcolor{keywordflow}{switch} (sign) \{}
+\DoxyCodeLine{113     \textcolor{keywordflow}{case} \textcolor{charliteral}{'+'}:}
+\DoxyCodeLine{114     \textcolor{keywordflow}{case} \textcolor{charliteral}{'-\/'}:}
+\DoxyCodeLine{115       \mbox{\hyperlink{s21__calc_8c_a1af1a8119589bd1881acf16f56d8bf78}{priority}} = 2;}
+\DoxyCodeLine{116       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{117     \textcolor{keywordflow}{case} \textcolor{charliteral}{'*'}:}
+\DoxyCodeLine{118     \textcolor{keywordflow}{case} \textcolor{charliteral}{'/'}:}
+\DoxyCodeLine{119     \textcolor{keywordflow}{case} \textcolor{charliteral}{'\%'}:}
+\DoxyCodeLine{120       \mbox{\hyperlink{s21__calc_8c_a1af1a8119589bd1881acf16f56d8bf78}{priority}} = 3;}
+\DoxyCodeLine{121       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{122     \textcolor{keywordflow}{case} \textcolor{charliteral}{'\string^'}:}
+\DoxyCodeLine{123       \mbox{\hyperlink{s21__calc_8c_a1af1a8119589bd1881acf16f56d8bf78}{priority}} = 4;}
+\DoxyCodeLine{124       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{125     \textcolor{keywordflow}{case} \textcolor{charliteral}{'s'}:}
+\DoxyCodeLine{126     \textcolor{keywordflow}{case} \textcolor{charliteral}{'c'}:}
+\DoxyCodeLine{127     \textcolor{keywordflow}{case} \textcolor{charliteral}{'t'}:}
+\DoxyCodeLine{128     \textcolor{keywordflow}{case} \textcolor{charliteral}{'S'}:}
+\DoxyCodeLine{129     \textcolor{keywordflow}{case} \textcolor{charliteral}{'C'}:}
+\DoxyCodeLine{130     \textcolor{keywordflow}{case} \textcolor{charliteral}{'T'}:}
+\DoxyCodeLine{131     \textcolor{keywordflow}{case} \textcolor{charliteral}{'q'}:}
+\DoxyCodeLine{132     \textcolor{keywordflow}{case} \textcolor{charliteral}{'l'}:}
+\DoxyCodeLine{133     \textcolor{keywordflow}{case} \textcolor{charliteral}{'g'}:}
+\DoxyCodeLine{134     \textcolor{keywordflow}{case} \textcolor{charliteral}{'\string~'}:}
+\DoxyCodeLine{135       \mbox{\hyperlink{s21__calc_8c_a1af1a8119589bd1881acf16f56d8bf78}{priority}} = 5;}
+\DoxyCodeLine{136       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{137   \}}
+\DoxyCodeLine{138   \textcolor{keywordflow}{return} \mbox{\hyperlink{s21__calc_8c_a1af1a8119589bd1881acf16f56d8bf78}{priority}};}
+\DoxyCodeLine{139 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{s21__calc_8c_a426e7a37f18103788c2ff1fd0b034547}\label{s21__calc_8c_a426e7a37f18103788c2ff1fd0b034547}} 
+\index{s21\_calc.c@{s21\_calc.c}!validate\_input@{validate\_input}}
+\index{validate\_input@{validate\_input}!s21\_calc.c@{s21\_calc.c}}
+\doxysubsubsection{\texorpdfstring{validate\_input()}{validate\_input()}}
+{\footnotesize\ttfamily int validate\+\_\+input (\begin{DoxyParamCaption}\item[{char $\ast$}]{input }\end{DoxyParamCaption})}
+
+
+
+Валидация входного выражения 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em input} & входная строка \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+код ошибки 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{141                                 \{}
+\DoxyCodeLine{142   \textcolor{keywordtype}{int} code = \mbox{\hyperlink{s21__calc_8h_abfc8d2c18d65a6b696664cc78c39c2c5a2bc49ec37d6a5715dd23e85f1ff5bb59}{OK}};}
+\DoxyCodeLine{143   \textcolor{keywordtype}{int} no\_num = 1;}
+\DoxyCodeLine{144   \textcolor{keywordtype}{int} count\_opened\_braces = 0;}
+\DoxyCodeLine{145   \textcolor{keywordtype}{int} count\_closed\_braces = 0;}
+\DoxyCodeLine{146 }
+\DoxyCodeLine{147   \textcolor{keywordflow}{switch} (input[0]) \{}
+\DoxyCodeLine{148     \textcolor{keywordflow}{case} \textcolor{charliteral}{'*'}:}
+\DoxyCodeLine{149     \textcolor{keywordflow}{case} \textcolor{charliteral}{'/'}:}
+\DoxyCodeLine{150     \textcolor{keywordflow}{case} \textcolor{charliteral}{')'}:}
+\DoxyCodeLine{151     \textcolor{keywordflow}{case} \textcolor{charliteral}{'\string^'}:}
+\DoxyCodeLine{152     \textcolor{keywordflow}{case} \textcolor{charliteral}{'\%'}:}
+\DoxyCodeLine{153       code = \mbox{\hyperlink{s21__calc_8h_abfc8d2c18d65a6b696664cc78c39c2c5a2fd6f336d08340583bd620a7f5694c90}{ERROR}};}
+\DoxyCodeLine{154       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{155   \}}
+\DoxyCodeLine{156   \textcolor{keywordflow}{switch} (input[strlen(input) -\/ 1]) \{}
+\DoxyCodeLine{157     \textcolor{keywordflow}{case} \textcolor{charliteral}{'+'}:}
+\DoxyCodeLine{158     \textcolor{keywordflow}{case} \textcolor{charliteral}{'-\/'}:}
+\DoxyCodeLine{159     \textcolor{keywordflow}{case} \textcolor{charliteral}{'*'}:}
+\DoxyCodeLine{160     \textcolor{keywordflow}{case} \textcolor{charliteral}{'/'}:}
+\DoxyCodeLine{161     \textcolor{keywordflow}{case} \textcolor{charliteral}{'('}:}
+\DoxyCodeLine{162     \textcolor{keywordflow}{case} \textcolor{charliteral}{'\string^'}:}
+\DoxyCodeLine{163     \textcolor{keywordflow}{case} \textcolor{charliteral}{'\%'}:}
+\DoxyCodeLine{164       code = \mbox{\hyperlink{s21__calc_8h_abfc8d2c18d65a6b696664cc78c39c2c5a2fd6f336d08340583bd620a7f5694c90}{ERROR}};}
+\DoxyCodeLine{165       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{166   \}}
+\DoxyCodeLine{167   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < strlen(input); i++) \{}
+\DoxyCodeLine{168     \textcolor{keywordflow}{if} (input[i] == \textcolor{charliteral}{'('}) \{}
+\DoxyCodeLine{169       count\_opened\_braces++;}
+\DoxyCodeLine{170     \}}
+\DoxyCodeLine{171     \textcolor{keywordflow}{if} (input[i] == \textcolor{charliteral}{')'}) \{}
+\DoxyCodeLine{172       count\_closed\_braces++;}
+\DoxyCodeLine{173     \}}
+\DoxyCodeLine{174     \textcolor{keywordflow}{if} (\mbox{\hyperlink{s21__calc_8c_ab3b65ec8106201bd2ffe29d3d3e24d3f}{is\_digit}}(input[i]) || input[i] == \textcolor{charliteral}{'X'}) \{}
+\DoxyCodeLine{175       no\_num = 0;}
+\DoxyCodeLine{176     \}}
+\DoxyCodeLine{177   \}}
+\DoxyCodeLine{178   \textcolor{keywordflow}{if} (count\_opened\_braces != count\_closed\_braces || no\_num) \{}
+\DoxyCodeLine{179     code = \mbox{\hyperlink{s21__calc_8h_abfc8d2c18d65a6b696664cc78c39c2c5a2fd6f336d08340583bd620a7f5694c90}{ERROR}};}
+\DoxyCodeLine{180   \}}
+\DoxyCodeLine{181   \textcolor{keywordflow}{return} code;}
+\DoxyCodeLine{182 \}}
+
+\end{DoxyCode}

@@ -1,0 +1,680 @@
+\hypertarget{class_q_c_p_abstract_plottable1_d}{}\doxysection{Шаблон класса QCPAbstract\+Plottable1D$<$ Data\+Type $>$}
+\label{class_q_c_p_abstract_plottable1_d}\index{QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}}
+
+
+A template base class for plottables with one-\/dimensional data.  
+
+
+
+
+{\ttfamily \#include $<$qcustomplot.\+h$>$}
+
+Граф наследования\+:QCPAbstract\+Plottable1D$<$ Data\+Type $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_q_c_p_abstract_plottable1_d}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_a30b2e50ab0afce65f104ea7a95440315}{QCPAbstract\+Plottable1D}} (\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$\mbox{\hyperlink{class_q_c_p_abstract_plottable_a2cdd6f0dd5e9a979037f86b4000d9cfe}{key\+Axis}}, \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$\mbox{\hyperlink{class_q_c_p_abstract_plottable_af47809a644a68ffd955fb30b01fb4f2f}{value\+Axis}})
+\item 
+virtual \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ae4d821dbdc530b6910321e53599ec39b}{$\sim$\+QCPAbstract\+Plottable1D}} () \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual int \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ab5dd99e4f1621e7dbd63438e0b02984e}{data\+Count}} () const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual double \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_aeb156ebf5d3c8de906b428be30733ad8}{data\+Main\+Key}} (int index) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual double \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_aa8277da921b009bce474437d50b4a2d8}{data\+Sort\+Key}} (int index) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual double \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_a6be0f657ba85a1688336d76ad649ecf2}{data\+Main\+Value}} (int index) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_a55f937ba6a63e56e57f0b1a6e85a333a}{data\+Value\+Range}} (int index) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual QPointF \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_a6ca0699a6af5f25a7565de7c50ce13b2}{data\+Pixel\+Position}} (int index) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual bool \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_afe0d56e39cc076032922f059b304c092}{sort\+Key\+Is\+Main\+Key}} () const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual \mbox{\hyperlink{class_q_c_p_data_selection}{QCPData\+Selection}} \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_a22377bf6e57ab7eedbc9e489250c6ded}{select\+Test\+Rect}} (const QRectF \&rect, bool only\+Selectable) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual int \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ad0b46d25cde3d035b180fb8f10c056e6}{find\+Begin}} (double sort\+Key, bool expanded\+Range=true) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual int \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_a6e3ba20c9160d7361e58070390d10b1a}{find\+End}} (double sort\+Key, bool expanded\+Range=true) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual double \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_a2f169c3c2989e5d08ec7a9e3eb56a261}{select\+Test}} (const QPointF \&pos, bool only\+Selectable, QVariant $\ast$details=nullptr) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual \mbox{\hyperlink{class_q_c_p_plottable_interface1_d}{QCPPlottable\+Interface1D}} $\ast$ \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac58fb47bfe330f6931ed8e64326387d7}{interface1D}} () \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ae890e62ce403c54f575c73b9529f1af8}{get\+Data\+Segments}} (QList$<$ \mbox{\hyperlink{class_q_c_p_data_range}{QCPData\+Range}} $>$ \&selected\+Segments, QList$<$ \mbox{\hyperlink{class_q_c_p_data_range}{QCPData\+Range}} $>$ \&unselected\+Segments) const
+\item 
+void \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_a7adc6c3cccebb5341f11e0c2b7d54206}{draw\+Polyline}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter, const QVector$<$ QPointF $>$ \&line\+Data) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+QShared\+Pointer$<$ \mbox{\hyperlink{class_q_c_p_data_container}{QCPData\+Container}}$<$ Data\+Type $>$ $>$ \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}{m\+Data\+Container}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Дополнительные унаследованные члены}
+
+
+\doxysubsection{Подробное описание}
+\subsubsection*{template$<$class Data\+Type$>$\newline
+class QCPAbstract\+Plottable1\+D$<$ Data\+Type $>$}
+
+A template base class for plottables with one-\/dimensional data. 
+
+This template class derives from \mbox{\hyperlink{class_q_c_p_abstract_plottable}{QCPAbstract\+Plottable}} and from the abstract interface \mbox{\hyperlink{class_q_c_p_plottable_interface1_d}{QCPPlottable\+Interface1D}}. It serves as a base class for all one-\/dimensional data (i.\+e. data with one key dimension), such as \mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} and \mbox{\hyperlink{class_q_c_p_curve}{QCPCurve}}.
+
+The template parameter {\itshape Data\+Type} is the type of the data points of this plottable (e.\+g. \mbox{\hyperlink{class_q_c_p_graph_data}{QCPGraph\+Data}} or \mbox{\hyperlink{class_q_c_p_curve_data}{QCPCurve\+Data}}). The main purpose of this base class is to provide the member {\itshape m\+Data\+Container} (a shared pointer to a \mbox{\hyperlink{class_q_c_p_data_container}{QCPData\+Container$<$Data\+Type$>$}}) and implement the according virtual methods of the \mbox{\hyperlink{class_q_c_p_plottable_interface1_d}{QCPPlottable\+Interface1D}}, such that most subclassed plottables don\textquotesingle{}t need to worry about this anymore.
+
+Further, it provides a convenience method for retrieving selected/unselected data segments via \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ae890e62ce403c54f575c73b9529f1af8}{get\+Data\+Segments}}. This is useful when subclasses implement their \mbox{\hyperlink{class_q_c_p_abstract_plottable_a453f676a5cee7bf846c5f0fa05ea84b3}{draw}} method and need to draw selected segments with a different pen/brush than unselected segments (also see \mbox{\hyperlink{class_q_c_p_selection_decorator}{QCPSelection\+Decorator}}).
+
+This class implements basic functionality of \mbox{\hyperlink{class_q_c_p_abstract_plottable_a8e4964b629802ce50e1427c7fb21d35b}{QCPAbstract\+Plottable\+::select\+Test}} and \mbox{\hyperlink{class_q_c_p_plottable_interface1_d_a67093e4ccf490ff5f7750640941ff34c}{QCPPlottable\+Interface1\+D\+::select\+Test\+Rect}}, assuming point-\/like data points, based on the 1D data interface. In spite of that, most plottable subclasses will want to reimplement those methods again, to provide a more accurate hit test based on their specific data visualization geometry. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_q_c_p_abstract_plottable1_d_a30b2e50ab0afce65f104ea7a95440315}\label{class_q_c_p_abstract_plottable1_d_a30b2e50ab0afce65f104ea7a95440315}} 
+\index{QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}!QCPAbstractPlottable1D@{QCPAbstractPlottable1D}}
+\index{QCPAbstractPlottable1D@{QCPAbstractPlottable1D}!QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{QCPAbstractPlottable1D()}{QCPAbstractPlottable1D()}}
+{\footnotesize\ttfamily template$<$class Data\+Type $>$ \\
+\mbox{\hyperlink{class_q_c_p_abstract_plottable1_d}{QCPAbstract\+Plottable1D}}$<$ Data\+Type $>$\+::\mbox{\hyperlink{class_q_c_p_abstract_plottable1_d}{QCPAbstract\+Plottable1D}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$}]{key\+Axis,  }\item[{\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$}]{value\+Axis }\end{DoxyParamCaption})}
+
+Forwards {\itshape key\+Axis} and {\itshape value\+Axis} to the \mbox{\hyperlink{class_q_c_p_abstract_plottable_af78a036e40db6f53a31abadc5323715a}{QCPAbstract\+Plottable}} constructor and allocates the {\itshape m\+Data\+Container}. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{4936     : \mbox{\hyperlink{class_q_c_p_abstract_plottable_af78a036e40db6f53a31abadc5323715a}{QCPAbstractPlottable}}(\mbox{\hyperlink{class_q_c_p_abstract_plottable_a2cdd6f0dd5e9a979037f86b4000d9cfe}{keyAxis}}, \mbox{\hyperlink{class_q_c_p_abstract_plottable_af47809a644a68ffd955fb30b01fb4f2f}{valueAxis}}),}
+\DoxyCodeLine{4937       \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}{mDataContainer}}(\textcolor{keyword}{new} \mbox{\hyperlink{class_q_c_p_data_container}{QCPDataContainer<DataType>}}) \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_abstract_plottable1_d_ae4d821dbdc530b6910321e53599ec39b}\label{class_q_c_p_abstract_plottable1_d_ae4d821dbdc530b6910321e53599ec39b}} 
+\index{QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}!````~QCPAbstractPlottable1D@{$\sim$QCPAbstractPlottable1D}}
+\index{````~QCPAbstractPlottable1D@{$\sim$QCPAbstractPlottable1D}!QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$QCPAbstractPlottable1D()}{~QCPAbstractPlottable1D()}}
+{\footnotesize\ttfamily template$<$class Data\+Type $>$ \\
+\mbox{\hyperlink{class_q_c_p_abstract_plottable1_d}{QCPAbstract\+Plottable1D}}$<$ Data\+Type $>$\+::$\sim$\mbox{\hyperlink{class_q_c_p_abstract_plottable1_d}{QCPAbstract\+Plottable1D}}\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{4940 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_q_c_p_abstract_plottable1_d_ab5dd99e4f1621e7dbd63438e0b02984e}\label{class_q_c_p_abstract_plottable1_d_ab5dd99e4f1621e7dbd63438e0b02984e}} 
+\index{QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}!dataCount@{dataCount}}
+\index{dataCount@{dataCount}!QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{dataCount()}{dataCount()}}
+{\footnotesize\ttfamily template$<$class Data\+Type $>$ \\
+int \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d}{QCPAbstract\+Plottable1D}}$<$ Data\+Type $>$\+::data\+Count\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+
+
+Returns the number of data points of the plottable. 
+
+Замещает \mbox{\hyperlink{class_q_c_p_plottable_interface1_d_a058a22c770ef4d5a0e878a7f02183da9}{QCPPlottable\+Interface1D}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{4946                                                       \{}
+\DoxyCodeLine{4947   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}{mDataContainer}}-\/>size();}
+\DoxyCodeLine{4948 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_abstract_plottable1_d_aeb156ebf5d3c8de906b428be30733ad8}\label{class_q_c_p_abstract_plottable1_d_aeb156ebf5d3c8de906b428be30733ad8}} 
+\index{QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}!dataMainKey@{dataMainKey}}
+\index{dataMainKey@{dataMainKey}!QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{dataMainKey()}{dataMainKey()}}
+{\footnotesize\ttfamily template$<$class Data\+Type $>$ \\
+double \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d}{QCPAbstract\+Plottable1D}}$<$ Data\+Type $>$\+::data\+Main\+Key (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+
+
+Returns the main key of the data point at the given {\itshape index}.
+
+What the main key is, is defined by the plottable\textquotesingle{}s data type. See the \mbox{\hyperlink{class_q_c_p_data_container_qcpdatacontainer-datatype}{QCPData\+Container Data\+Type}} documentation for details about this naming convention. 
+
+Замещает \mbox{\hyperlink{class_q_c_p_plottable_interface1_d_a2bd60daaac046945fead558cbd83cf73}{QCPPlottable\+Interface1D}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{4954                                                                     \{}
+\DoxyCodeLine{4955   \textcolor{keywordflow}{if} (index >= 0 \&\& index < mDataContainer-\/>size()) \{}
+\DoxyCodeLine{4956     \textcolor{keywordflow}{return} (\mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}{mDataContainer}}-\/>constBegin() + index)-\/>mainKey();}
+\DoxyCodeLine{4957   \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{4958     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}Index out of bounds"{}} << index;}
+\DoxyCodeLine{4959     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{4960   \}}
+\DoxyCodeLine{4961 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_abstract_plottable1_d_a6be0f657ba85a1688336d76ad649ecf2}\label{class_q_c_p_abstract_plottable1_d_a6be0f657ba85a1688336d76ad649ecf2}} 
+\index{QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}!dataMainValue@{dataMainValue}}
+\index{dataMainValue@{dataMainValue}!QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{dataMainValue()}{dataMainValue()}}
+{\footnotesize\ttfamily template$<$class Data\+Type $>$ \\
+double \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d}{QCPAbstract\+Plottable1D}}$<$ Data\+Type $>$\+::data\+Main\+Value (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+
+
+0
+
+Returns the main value of the data point at the given {\itshape index}.
+
+What the main value is, is defined by the plottable\textquotesingle{}s data type. See the \mbox{\hyperlink{class_q_c_p_data_container_qcpdatacontainer-datatype}{QCPData\+Container Data\+Type}} documentation for details about this naming convention. 
+
+Замещает \mbox{\hyperlink{class_q_c_p_plottable_interface1_d_af6330919e8023277d08c958a6074fc76}{QCPPlottable\+Interface1D}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{4980                                                                       \{}
+\DoxyCodeLine{4981   \textcolor{keywordflow}{if} (index >= 0 \&\& index < mDataContainer-\/>size()) \{}
+\DoxyCodeLine{4982     \textcolor{keywordflow}{return} (\mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}{mDataContainer}}-\/>constBegin() + index)-\/>mainValue();}
+\DoxyCodeLine{4983   \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{4984     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}Index out of bounds"{}} << index;}
+\DoxyCodeLine{4985     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{4986   \}}
+\DoxyCodeLine{4987 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_abstract_plottable1_d_a6ca0699a6af5f25a7565de7c50ce13b2}\label{class_q_c_p_abstract_plottable1_d_a6ca0699a6af5f25a7565de7c50ce13b2}} 
+\index{QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}!dataPixelPosition@{dataPixelPosition}}
+\index{dataPixelPosition@{dataPixelPosition}!QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{dataPixelPosition()}{dataPixelPosition()}}
+{\footnotesize\ttfamily template$<$class Data\+Type $>$ \\
+QPointF \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d}{QCPAbstract\+Plottable1D}}$<$ Data\+Type $>$\+::data\+Pixel\+Position (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+
+
+const = 0
+
+Returns the pixel position on the widget surface at which the data point at the given {\itshape index} appears.
+
+Usually this corresponds to the point of data\+Main\+Key/ data\+Main\+Value, in pixel coordinates. However, depending on the plottable, this might be a different apparent position than just a coord-\/to-\/pixel transform of those values. For example, \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} apparent data values can be shifted depending on their stacking, bar grouping or configured base value. 
+
+Замещает \mbox{\hyperlink{class_q_c_p_plottable_interface1_d_a78911838cfbcfd2d8df9ad2fdbfb8e93}{QCPPlottable\+Interface1D}}.
+
+
+
+Переопределяется в \mbox{\hyperlink{class_q_c_p_bars_a55cdaf565cd3384158d1f7f89533bc2d}{QCPBars}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5006                                                                            \{}
+\DoxyCodeLine{5007   \textcolor{keywordflow}{if} (index >= 0 \&\& index < mDataContainer-\/>size()) \{}
+\DoxyCodeLine{5008     \textcolor{keyword}{const} \textcolor{keyword}{typename} \mbox{\hyperlink{class_q_c_p_data_container_a1cd3412b067579f66f4a252e5b2b3e22}{QCPDataContainer<DataType>::const\_iterator}} it =}
+\DoxyCodeLine{5009         \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}{mDataContainer}}-\/>constBegin() + index;}
+\DoxyCodeLine{5010     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(it-\/>mainKey(), it-\/>mainValue());}
+\DoxyCodeLine{5011   \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{5012     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}Index out of bounds"{}} << index;}
+\DoxyCodeLine{5013     \textcolor{keywordflow}{return} QPointF();}
+\DoxyCodeLine{5014   \}}
+\DoxyCodeLine{5015 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_abstract_plottable1_d_aa8277da921b009bce474437d50b4a2d8}\label{class_q_c_p_abstract_plottable1_d_aa8277da921b009bce474437d50b4a2d8}} 
+\index{QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}!dataSortKey@{dataSortKey}}
+\index{dataSortKey@{dataSortKey}!QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{dataSortKey()}{dataSortKey()}}
+{\footnotesize\ttfamily template$<$class Data\+Type $>$ \\
+double \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d}{QCPAbstract\+Plottable1D}}$<$ Data\+Type $>$\+::data\+Sort\+Key (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+
+
+Returns the sort key of the data point at the given {\itshape index}.
+
+What the sort key is, is defined by the plottable\textquotesingle{}s data type. See the \mbox{\hyperlink{class_q_c_p_data_container_qcpdatacontainer-datatype}{QCPData\+Container Data\+Type}} documentation for details about this naming convention. 
+
+Замещает \mbox{\hyperlink{class_q_c_p_plottable_interface1_d_afdc92f9f01e7e35f2e96b2ea9dc14ae7}{QCPPlottable\+Interface1D}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{4967                                                                     \{}
+\DoxyCodeLine{4968   \textcolor{keywordflow}{if} (index >= 0 \&\& index < mDataContainer-\/>size()) \{}
+\DoxyCodeLine{4969     \textcolor{keywordflow}{return} (\mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}{mDataContainer}}-\/>constBegin() + index)-\/>sortKey();}
+\DoxyCodeLine{4970   \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{4971     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}Index out of bounds"{}} << index;}
+\DoxyCodeLine{4972     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{4973   \}}
+\DoxyCodeLine{4974 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_abstract_plottable1_d_a55f937ba6a63e56e57f0b1a6e85a333a}\label{class_q_c_p_abstract_plottable1_d_a55f937ba6a63e56e57f0b1a6e85a333a}} 
+\index{QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}!dataValueRange@{dataValueRange}}
+\index{dataValueRange@{dataValueRange}!QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{dataValueRange()}{dataValueRange()}}
+{\footnotesize\ttfamily template$<$class Data\+Type $>$ \\
+\mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d}{QCPAbstract\+Plottable1D}}$<$ Data\+Type $>$\+::data\+Value\+Range (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+
+
+const = 0
+
+Returns the value range of the data point at the given {\itshape index}.
+
+What the value range is, is defined by the plottable\textquotesingle{}s data type. See the \mbox{\hyperlink{class_q_c_p_data_container_qcpdatacontainer-datatype}{QCPData\+Container Data\+Type}} documentation for details about this naming convention. 
+
+Замещает \mbox{\hyperlink{class_q_c_p_plottable_interface1_d_a9ca7fcf14d885a200879768679b19be9}{QCPPlottable\+Interface1D}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{4993                                                                          \{}
+\DoxyCodeLine{4994   \textcolor{keywordflow}{if} (index >= 0 \&\& index < mDataContainer-\/>size()) \{}
+\DoxyCodeLine{4995     \textcolor{keywordflow}{return} (\mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}{mDataContainer}}-\/>constBegin() + index)-\/>valueRange();}
+\DoxyCodeLine{4996   \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{4997     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}Index out of bounds"{}} << index;}
+\DoxyCodeLine{4998     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_range}{QCPRange}}(0, 0);}
+\DoxyCodeLine{4999   \}}
+\DoxyCodeLine{5000 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_abstract_plottable1_d_a7adc6c3cccebb5341f11e0c2b7d54206}\label{class_q_c_p_abstract_plottable1_d_a7adc6c3cccebb5341f11e0c2b7d54206}} 
+\index{QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}!drawPolyline@{drawPolyline}}
+\index{drawPolyline@{drawPolyline}!QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{drawPolyline()}{drawPolyline()}}
+{\footnotesize\ttfamily template$<$class Data\+Type $>$ \\
+void \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d}{QCPAbstract\+Plottable1D}}$<$ Data\+Type $>$\+::draw\+Polyline (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter,  }\item[{const QVector$<$ QPointF $>$ \&}]{line\+Data }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+A helper method which draws a line with the passed {\itshape painter}, according to the pixel data in {\itshape line\+Data}. NaN points create gaps in the line, as expected from \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}}\textquotesingle{}s plottables (this is the main difference to QPainter\textquotesingle{}s regular draw\+Polyline, which handles Na\+Ns by lagging or crashing).
+
+Further it uses a faster line drawing technique based on \mbox{\hyperlink{class_q_c_p_painter_a0b4b1b9bd495e182c731774dc800e6e0}{QCPPainter\+::draw\+Line}} rather than {\ttfamily QPainter\+::draw\+Polyline} if the configured \mbox{\hyperlink{class_q_custom_plot_a94a33cbdadbbac5934843508bcfc210d}{QCustom\+Plot\+::set\+Plotting\+Hints()}} and {\itshape painter} style allows. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5228                                                                  \{}
+\DoxyCodeLine{5229   \textcolor{comment}{// if drawing lines in plot (instead of PDF), reduce 1px lines to cosmetic,}}
+\DoxyCodeLine{5230   \textcolor{comment}{// because at least in Qt6 drawing of "{}1px"{} width lines is much slower even}}
+\DoxyCodeLine{5231   \textcolor{comment}{// though it has same appearance apart from High-\/DPI. In High-\/DPI cases people}}
+\DoxyCodeLine{5232   \textcolor{comment}{// must set a pen width slightly larger than 1.0 to get correct DPI scaling of}}
+\DoxyCodeLine{5233   \textcolor{comment}{// width, but of course with performance penalty.}}
+\DoxyCodeLine{5234   \textcolor{keywordflow}{if} (!painter-\/>\mbox{\hyperlink{class_q_c_p_painter_aef102658219b24165f7ee2aad1b9e48f}{modes}}().testFlag(\mbox{\hyperlink{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156daeda679cd55dcd468341d07d48a30b6ab}{QCPPainter::pmVectorized}}) \&\&}
+\DoxyCodeLine{5235       qFuzzyCompare(painter-\/>pen().widthF(), 1.0)) \{}
+\DoxyCodeLine{5236     QPen newPen = painter-\/>pen();}
+\DoxyCodeLine{5237     newPen.setWidth(0);}
+\DoxyCodeLine{5238     painter-\/>\mbox{\hyperlink{class_q_c_p_painter_af9c7a4cd1791403901f8c5b82a150195}{setPen}}(newPen);}
+\DoxyCodeLine{5239   \}}
+\DoxyCodeLine{5240 }
+\DoxyCodeLine{5241   \textcolor{comment}{// if drawing solid line and not in PDF, use much faster line drawing instead}}
+\DoxyCodeLine{5242   \textcolor{comment}{// of polyline:}}
+\DoxyCodeLine{5243   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_ac724f4075822f74f7b676a790095b877}{plottingHints}}().testFlag(\mbox{\hyperlink{namespace_q_c_p_a5400e5fcb9528d92002ddb938c1f4ef4aa5fd227bc878c56ad2a87ea32c74ee4d}{QCP::phFastPolylines}}) \&\&}
+\DoxyCodeLine{5244       painter-\/>pen().style() == Qt::SolidLine \&\&}
+\DoxyCodeLine{5245       !painter-\/>\mbox{\hyperlink{class_q_c_p_painter_aef102658219b24165f7ee2aad1b9e48f}{modes}}().testFlag(\mbox{\hyperlink{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156daeda679cd55dcd468341d07d48a30b6ab}{QCPPainter::pmVectorized}}) \&\&}
+\DoxyCodeLine{5246       !painter-\/>\mbox{\hyperlink{class_q_c_p_painter_aef102658219b24165f7ee2aad1b9e48f}{modes}}().testFlag(\mbox{\hyperlink{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156dae78f9a4eb277a5f9207f50850a51a0b0}{QCPPainter::pmNoCaching}})) \{}
+\DoxyCodeLine{5247     \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{5248     \textcolor{keywordtype}{bool} lastIsNan = \textcolor{keyword}{false};}
+\DoxyCodeLine{5249     \textcolor{keyword}{const} \textcolor{keywordtype}{int} lineDataSize = lineData.size();}
+\DoxyCodeLine{5250     \textcolor{keywordflow}{while} (i < lineDataSize \&\&}
+\DoxyCodeLine{5251            (qIsNaN(lineData.at(i).y()) ||}
+\DoxyCodeLine{5252             qIsNaN(lineData.at(i).x())))  \textcolor{comment}{// make sure first point is not NaN}}
+\DoxyCodeLine{5253       ++i;}
+\DoxyCodeLine{5254     ++i;  \textcolor{comment}{// because drawing works in 1 point retrospect}}
+\DoxyCodeLine{5255     \textcolor{keywordflow}{while} (i < lineDataSize) \{}
+\DoxyCodeLine{5256       \textcolor{keywordflow}{if} (!qIsNaN(lineData.at(i).y()) \&\&}
+\DoxyCodeLine{5257           !qIsNaN(lineData.at(i).x()))  \textcolor{comment}{// NaNs create a gap in the line}}
+\DoxyCodeLine{5258       \{}
+\DoxyCodeLine{5259         \textcolor{keywordflow}{if} (!lastIsNan)}
+\DoxyCodeLine{5260           painter-\/>\mbox{\hyperlink{class_q_c_p_painter_a0b4b1b9bd495e182c731774dc800e6e0}{drawLine}}(lineData.at(i -\/ 1), lineData.at(i));}
+\DoxyCodeLine{5261         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{5262           lastIsNan = \textcolor{keyword}{false};}
+\DoxyCodeLine{5263       \} \textcolor{keywordflow}{else}}
+\DoxyCodeLine{5264         lastIsNan = \textcolor{keyword}{true};}
+\DoxyCodeLine{5265       ++i;}
+\DoxyCodeLine{5266     \}}
+\DoxyCodeLine{5267   \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{5268     \textcolor{keywordtype}{int} segmentStart = 0;}
+\DoxyCodeLine{5269     \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{5270     \textcolor{keyword}{const} \textcolor{keywordtype}{int} lineDataSize = lineData.size();}
+\DoxyCodeLine{5271     \textcolor{keywordflow}{while} (i < lineDataSize) \{}
+\DoxyCodeLine{5272       \textcolor{keywordflow}{if} (qIsNaN(lineData.at(i).y()) || qIsNaN(lineData.at(i).x()) ||}
+\DoxyCodeLine{5273           qIsInf(}
+\DoxyCodeLine{5274               lineData.at(i).y()))  \textcolor{comment}{// NaNs create a gap in the line. Also}}
+\DoxyCodeLine{5275                                     \textcolor{comment}{// filter Infs which make drawPolyline block}}
+\DoxyCodeLine{5276       \{}
+\DoxyCodeLine{5277         painter-\/>drawPolyline(}
+\DoxyCodeLine{5278             lineData.constData() + segmentStart,}
+\DoxyCodeLine{5279             i -\/ segmentStart);  \textcolor{comment}{// i, because we don't want to include the}}
+\DoxyCodeLine{5280                                 \textcolor{comment}{// current NaN point}}
+\DoxyCodeLine{5281         segmentStart = i + 1;}
+\DoxyCodeLine{5282       \}}
+\DoxyCodeLine{5283       ++i;}
+\DoxyCodeLine{5284     \}}
+\DoxyCodeLine{5285     \textcolor{comment}{// draw last segment:}}
+\DoxyCodeLine{5286     painter-\/>drawPolyline(lineData.constData() + segmentStart,}
+\DoxyCodeLine{5287                           lineDataSize -\/ segmentStart);}
+\DoxyCodeLine{5288   \}}
+\DoxyCodeLine{5289 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_abstract_plottable1_d_ad0b46d25cde3d035b180fb8f10c056e6}\label{class_q_c_p_abstract_plottable1_d_ad0b46d25cde3d035b180fb8f10c056e6}} 
+\index{QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}!findBegin@{findBegin}}
+\index{findBegin@{findBegin}!QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{findBegin()}{findBegin()}}
+{\footnotesize\ttfamily template$<$class Data\+Type $>$ \\
+int \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d}{QCPAbstract\+Plottable1D}}$<$ Data\+Type $>$\+::find\+Begin (\begin{DoxyParamCaption}\item[{double}]{sort\+Key,  }\item[{bool}]{expanded\+Range = {\ttfamily true} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+
+
+Returns the index of the data point with a (sort-\/)key that is equal to, just below, or just above {\itshape sort\+Key}. If {\itshape expanded\+Range} is true, the data point just below {\itshape sort\+Key} will be considered, otherwise the one just above.
+
+This can be used in conjunction with \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_a6e3ba20c9160d7361e58070390d10b1a}{find\+End}} to iterate over data points within a given key range, including or excluding the bounding data points that are just beyond the specified range.
+
+If {\itshape expanded\+Range} is true but there are no data points below {\itshape sort\+Key}, 0 is returned.
+
+If the container is empty, returns 0 (in that case, \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_a6e3ba20c9160d7361e58070390d10b1a}{find\+End}} will also return 0, so a loop using these methods will not iterate over the index 0).
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_a6e3ba20c9160d7361e58070390d10b1a}{find\+End}}, \mbox{\hyperlink{class_q_c_p_data_container_a2ad8a5399072d99a242d3a6d2d7e278a}{QCPData\+Container\+::find\+Begin}} 
+\end{DoxySeeAlso}
+
+
+Замещает \mbox{\hyperlink{class_q_c_p_plottable_interface1_d_a5b95783271306a4de97be54eac1e7d13}{QCPPlottable\+Interface1D}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5094                                                                           \{}
+\DoxyCodeLine{5095   \textcolor{keywordflow}{return} int(\mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}{mDataContainer}}-\/>findBegin(sortKey, expandedRange) -\/}
+\DoxyCodeLine{5096              \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}{mDataContainer}}-\/>constBegin());}
+\DoxyCodeLine{5097 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_abstract_plottable1_d_a6e3ba20c9160d7361e58070390d10b1a}\label{class_q_c_p_abstract_plottable1_d_a6e3ba20c9160d7361e58070390d10b1a}} 
+\index{QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}!findEnd@{findEnd}}
+\index{findEnd@{findEnd}!QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{findEnd()}{findEnd()}}
+{\footnotesize\ttfamily template$<$class Data\+Type $>$ \\
+int \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d}{QCPAbstract\+Plottable1D}}$<$ Data\+Type $>$\+::find\+End (\begin{DoxyParamCaption}\item[{double}]{sort\+Key,  }\item[{bool}]{expanded\+Range = {\ttfamily true} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+
+
+Returns the index one after the data point with a (sort-\/)key that is equal to, just above, or just below {\itshape sort\+Key}. If {\itshape expanded\+Range} is true, the data point just above {\itshape sort\+Key} will be considered, otherwise the one just below.
+
+This can be used in conjunction with \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ad0b46d25cde3d035b180fb8f10c056e6}{find\+Begin}} to iterate over data points within a given key range, including the bounding data points that are just below and above the specified range.
+
+If {\itshape expanded\+Range} is true but there are no data points above {\itshape sort\+Key}, the index just above the highest data point is returned.
+
+If the container is empty, returns 0.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ad0b46d25cde3d035b180fb8f10c056e6}{find\+Begin}}, \mbox{\hyperlink{class_q_c_p_data_container_afb8b8f23cc2b7234a793a25ce79fe48f}{QCPData\+Container\+::find\+End}} 
+\end{DoxySeeAlso}
+
+
+Замещает \mbox{\hyperlink{class_q_c_p_plottable_interface1_d_a5deced1016bc55a41a2339619045b295}{QCPPlottable\+Interface1D}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5104                                                                         \{}
+\DoxyCodeLine{5105   \textcolor{keywordflow}{return} int(\mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}{mDataContainer}}-\/>findEnd(sortKey, expandedRange) -\/}
+\DoxyCodeLine{5106              \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}{mDataContainer}}-\/>constBegin());}
+\DoxyCodeLine{5107 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_abstract_plottable1_d_ae890e62ce403c54f575c73b9529f1af8}\label{class_q_c_p_abstract_plottable1_d_ae890e62ce403c54f575c73b9529f1af8}} 
+\index{QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}!getDataSegments@{getDataSegments}}
+\index{getDataSegments@{getDataSegments}!QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{getDataSegments()}{getDataSegments()}}
+{\footnotesize\ttfamily template$<$class Data\+Type $>$ \\
+void \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d}{QCPAbstract\+Plottable1D}}$<$ Data\+Type $>$\+::get\+Data\+Segments (\begin{DoxyParamCaption}\item[{QList$<$ \mbox{\hyperlink{class_q_c_p_data_range}{QCPData\+Range}} $>$ \&}]{selected\+Segments,  }\item[{QList$<$ \mbox{\hyperlink{class_q_c_p_data_range}{QCPData\+Range}} $>$ \&}]{unselected\+Segments }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+Splits all data into selected and unselected segments and outputs them via {\itshape selected\+Segments} and {\itshape unselected\+Segments}, respectively.
+
+This is useful when subclasses implement their \mbox{\hyperlink{class_q_c_p_abstract_plottable_a453f676a5cee7bf846c5f0fa05ea84b3}{draw}} method and need to draw selected segments with a different pen/brush than unselected segments (also see \mbox{\hyperlink{class_q_c_p_selection_decorator}{QCPSelection\+Decorator}}).
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_abstract_plottable_a219bc5403a9d85d3129165ec3f5ae436}{set\+Selection}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5197                                                    \{}
+\DoxyCodeLine{5198   selectedSegments.clear();}
+\DoxyCodeLine{5199   unselectedSegments.clear();}
+\DoxyCodeLine{5200   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_abstract_plottable_a3944521f7bec90974737c9d192fc57ba}{mSelectable}} ==}
+\DoxyCodeLine{5201       \mbox{\hyperlink{namespace_q_c_p_ac6cb9db26a564b27feda362a438db038aff7a688d4d520e8e7f01be098a034a2d}{QCP::stWhole}})  \textcolor{comment}{// stWhole selection type draws the entire plottable with}}
+\DoxyCodeLine{5202                      \textcolor{comment}{// selected style if mSelection isn't empty}}
+\DoxyCodeLine{5203   \{}
+\DoxyCodeLine{5204     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_abstract_plottable_a0b3b514474fe93354fc74cfc144184b4}{selected}}())}
+\DoxyCodeLine{5205       selectedSegments << \mbox{\hyperlink{class_q_c_p_data_range}{QCPDataRange}}(0, \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ab5dd99e4f1621e7dbd63438e0b02984e}{dataCount}}());}
+\DoxyCodeLine{5206     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{5207       unselectedSegments << \mbox{\hyperlink{class_q_c_p_data_range}{QCPDataRange}}(0, \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ab5dd99e4f1621e7dbd63438e0b02984e}{dataCount}}());}
+\DoxyCodeLine{5208   \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{5209     \mbox{\hyperlink{class_q_c_p_data_selection}{QCPDataSelection}} sel(\mbox{\hyperlink{class_q_c_p_abstract_plottable_a040bf09f41d456284cfd39cc37aa068f}{selection}}());}
+\DoxyCodeLine{5210     sel.simplify();}
+\DoxyCodeLine{5211     selectedSegments = sel.dataRanges();}
+\DoxyCodeLine{5212     unselectedSegments = sel.inverse(\mbox{\hyperlink{class_q_c_p_data_range}{QCPDataRange}}(0, \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ab5dd99e4f1621e7dbd63438e0b02984e}{dataCount}}())).dataRanges();}
+\DoxyCodeLine{5213   \}}
+\DoxyCodeLine{5214 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_abstract_plottable1_d_ac58fb47bfe330f6931ed8e64326387d7}\label{class_q_c_p_abstract_plottable1_d_ac58fb47bfe330f6931ed8e64326387d7}} 
+\index{QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}!interface1D@{interface1D}}
+\index{interface1D@{interface1D}!QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{interface1D()}{interface1D()}}
+{\footnotesize\ttfamily template$<$class Data\+Type $>$ \\
+\mbox{\hyperlink{class_q_c_p_plottable_interface1_d}{QCPPlottable\+Interface1D}} $\ast$ \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d}{QCPAbstract\+Plottable1D}}$<$ Data\+Type $>$\+::interface1D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns a \mbox{\hyperlink{class_q_c_p_plottable_interface1_d}{QCPPlottable\+Interface1D}} pointer to this plottable, providing access to its 1D interface.
+
+\textbackslash{}seebaseclassmethod 
+
+Переопределяет метод предка \mbox{\hyperlink{class_q_c_p_abstract_plottable_a81fd9fd5c4f429c074785e2eb238a8e7}{QCPAbstract\+Plottable}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{4706                                                                  \{}
+\DoxyCodeLine{4707     \textcolor{keywordflow}{return} \textcolor{keyword}{this};}
+\DoxyCodeLine{4708   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_abstract_plottable1_d_a2f169c3c2989e5d08ec7a9e3eb56a261}\label{class_q_c_p_abstract_plottable1_d_a2f169c3c2989e5d08ec7a9e3eb56a261}} 
+\index{QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}!selectTest@{selectTest}}
+\index{selectTest@{selectTest}!QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{selectTest()}{selectTest()}}
+{\footnotesize\ttfamily template$<$class Data\+Type $>$ \\
+double \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d}{QCPAbstract\+Plottable1D}}$<$ Data\+Type $>$\+::select\+Test (\begin{DoxyParamCaption}\item[{const QPointF \&}]{pos,  }\item[{bool}]{only\+Selectable,  }\item[{QVariant $\ast$}]{details = {\ttfamily nullptr} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Implements a point-\/selection algorithm assuming the data (accessed via the 1D data interface) is point-\/like. Most subclasses will want to reimplement this method again, to provide a more accurate hit test based on the true data visualization geometry.
+
+If {\itshape details} is not 0, it will be set to a \mbox{\hyperlink{class_q_c_p_data_selection}{QCPData\+Selection}}, describing the closest data point to {\itshape pos}.
+
+\textbackslash{}seebaseclassmethod 
+
+Замещает \mbox{\hyperlink{class_q_c_p_abstract_plottable_a8e4964b629802ce50e1427c7fb21d35b}{QCPAbstract\+Plottable}}.
+
+
+
+Переопределяется в \mbox{\hyperlink{class_q_c_p_financial_a8114a6d3ab6bea0a93d4b85401f29b52}{QCPFinancial}}, \mbox{\hyperlink{class_q_c_p_statistical_box_abefd8d3e0adf21c198cfc9615ddc8df1}{QCPStatistical\+Box}}, \mbox{\hyperlink{class_q_c_p_bars_ae490d8589b7e5f5d7e2e5ee88ce3e6c2}{QCPBars}}, \mbox{\hyperlink{class_q_c_p_curve_a6717367381d420607fae5c98b4eba022}{QCPCurve}} и \mbox{\hyperlink{class_q_c_p_graph_af524307eacb919827b88233ef7449ce3}{QCPGraph}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5123                                                                              \{}
+\DoxyCodeLine{5124   \textcolor{keywordflow}{if} ((onlySelectable \&\& \mbox{\hyperlink{class_q_c_p_abstract_plottable_a3944521f7bec90974737c9d192fc57ba}{mSelectable}} == \mbox{\hyperlink{namespace_q_c_p_ac6cb9db26a564b27feda362a438db038aa64628e338a2dd1e6f0dc84dec0b63fe}{QCP::stNone}}) ||}
+\DoxyCodeLine{5125       \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}{mDataContainer}}-\/>isEmpty())}
+\DoxyCodeLine{5126     \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{5127   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_abstract_plottable_a426f42e254d0f8ce5436a868c61a6827}{mKeyAxis}} || !\mbox{\hyperlink{class_q_c_p_abstract_plottable_a2901452ca4aea911a1827717934a4bda}{mValueAxis}}) \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{5128 }
+\DoxyCodeLine{5129   \mbox{\hyperlink{class_q_c_p_data_selection}{QCPDataSelection}} selectionResult;}
+\DoxyCodeLine{5130   \textcolor{keywordtype}{double} minDistSqr = (std::numeric\_limits<double>::max)();}
+\DoxyCodeLine{5131   \textcolor{keywordtype}{int} minDistIndex = \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}{mDataContainer}}-\/>size();}
+\DoxyCodeLine{5132 }
+\DoxyCodeLine{5133   \textcolor{keyword}{typename} \mbox{\hyperlink{class_q_c_p_data_container_a1cd3412b067579f66f4a252e5b2b3e22}{QCPDataContainer<DataType>::const\_iterator}} begin =}
+\DoxyCodeLine{5134       \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}{mDataContainer}}-\/>constBegin();}
+\DoxyCodeLine{5135   \textcolor{keyword}{typename} \mbox{\hyperlink{class_q_c_p_data_container_a1cd3412b067579f66f4a252e5b2b3e22}{QCPDataContainer<DataType>::const\_iterator}} end =}
+\DoxyCodeLine{5136       \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}{mDataContainer}}-\/>constEnd();}
+\DoxyCodeLine{5137   \textcolor{keywordflow}{if} (DataType::sortKeyIsMainKey())  \textcolor{comment}{// we can assume that data is sorted by}}
+\DoxyCodeLine{5138                                      \textcolor{comment}{// main key, so can reduce the searched key}}
+\DoxyCodeLine{5139                                      \textcolor{comment}{// interval:}}
+\DoxyCodeLine{5140   \{}
+\DoxyCodeLine{5141     \textcolor{comment}{// determine which key range comes into question, taking selection tolerance}}
+\DoxyCodeLine{5142     \textcolor{comment}{// around pos into account:}}
+\DoxyCodeLine{5143     \textcolor{keywordtype}{double} posKeyMin, posKeyMax, dummy;}
+\DoxyCodeLine{5144     \mbox{\hyperlink{class_q_c_p_abstract_plottable_a3903c1120ab5c27e7fa46b597ef267bd}{pixelsToCoords}}(pos -\/ QPointF(\mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a5441d11013afeaf4b8f2ea06e8624a25}{selectionTolerance}}(),}
+\DoxyCodeLine{5145                                  \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a5441d11013afeaf4b8f2ea06e8624a25}{selectionTolerance}}()),}
+\DoxyCodeLine{5146                    posKeyMin, dummy);}
+\DoxyCodeLine{5147     \mbox{\hyperlink{class_q_c_p_abstract_plottable_a3903c1120ab5c27e7fa46b597ef267bd}{pixelsToCoords}}(pos + QPointF(\mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a5441d11013afeaf4b8f2ea06e8624a25}{selectionTolerance}}(),}
+\DoxyCodeLine{5148                                  \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a5441d11013afeaf4b8f2ea06e8624a25}{selectionTolerance}}()),}
+\DoxyCodeLine{5149                    posKeyMax, dummy);}
+\DoxyCodeLine{5150     \textcolor{keywordflow}{if} (posKeyMin > posKeyMax) qSwap(posKeyMin, posKeyMax);}
+\DoxyCodeLine{5151     begin = \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}{mDataContainer}}-\/>findBegin(posKeyMin, \textcolor{keyword}{true});}
+\DoxyCodeLine{5152     end = \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}{mDataContainer}}-\/>findEnd(posKeyMax, \textcolor{keyword}{true});}
+\DoxyCodeLine{5153   \}}
+\DoxyCodeLine{5154   \textcolor{keywordflow}{if} (begin == end) \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{5155   \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} keyRange(\mbox{\hyperlink{class_q_c_p_abstract_plottable_a426f42e254d0f8ce5436a868c61a6827}{mKeyAxis}}-\/>range());}
+\DoxyCodeLine{5156   \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} valueRange(\mbox{\hyperlink{class_q_c_p_abstract_plottable_a2901452ca4aea911a1827717934a4bda}{mValueAxis}}-\/>range());}
+\DoxyCodeLine{5157   \textcolor{keywordflow}{for} (\textcolor{keyword}{typename} \mbox{\hyperlink{class_q_c_p_data_container_a1cd3412b067579f66f4a252e5b2b3e22}{QCPDataContainer<DataType>::const\_iterator}} it = begin;}
+\DoxyCodeLine{5158        it != end; ++it) \{}
+\DoxyCodeLine{5159     \textcolor{keyword}{const} \textcolor{keywordtype}{double} mainKey = it-\/>mainKey();}
+\DoxyCodeLine{5160     \textcolor{keyword}{const} \textcolor{keywordtype}{double} mainValue = it-\/>mainValue();}
+\DoxyCodeLine{5161     \textcolor{keywordflow}{if} (keyRange.contains(mainKey) \&\&}
+\DoxyCodeLine{5162         valueRange.contains(}
+\DoxyCodeLine{5163             mainValue))  \textcolor{comment}{// make sure data point is inside visible range, for}}
+\DoxyCodeLine{5164                          \textcolor{comment}{// speedup in cases where sort key isn't main key and}}
+\DoxyCodeLine{5165                          \textcolor{comment}{// we iterate over all points}}
+\DoxyCodeLine{5166     \{}
+\DoxyCodeLine{5167       \textcolor{keyword}{const} \textcolor{keywordtype}{double} currentDistSqr =}
+\DoxyCodeLine{5168           \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}}(\mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(mainKey, mainValue) -\/ pos).\mbox{\hyperlink{class_q_c_p_vector2_d_a766585459d84cb149334fda1a498b2e5}{lengthSquared}}();}
+\DoxyCodeLine{5169       \textcolor{keywordflow}{if} (currentDistSqr < minDistSqr) \{}
+\DoxyCodeLine{5170         minDistSqr = currentDistSqr;}
+\DoxyCodeLine{5171         minDistIndex = int(it -\/ \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}{mDataContainer}}-\/>constBegin());}
+\DoxyCodeLine{5172       \}}
+\DoxyCodeLine{5173     \}}
+\DoxyCodeLine{5174   \}}
+\DoxyCodeLine{5175   \textcolor{keywordflow}{if} (minDistIndex != \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}{mDataContainer}}-\/>size())}
+\DoxyCodeLine{5176     selectionResult.\mbox{\hyperlink{class_q_c_p_data_selection_a46740c5aa7b80ae9b2abf6985d61b74f}{addDataRange}}(\mbox{\hyperlink{class_q_c_p_data_range}{QCPDataRange}}(minDistIndex, minDistIndex + 1),}
+\DoxyCodeLine{5177                                  \textcolor{keyword}{false});}
+\DoxyCodeLine{5178 }
+\DoxyCodeLine{5179   selectionResult.\mbox{\hyperlink{class_q_c_p_data_selection_a4a2fbad1a6e4d1dd26fdfdf88956f2a4}{simplify}}();}
+\DoxyCodeLine{5180   \textcolor{keywordflow}{if} (details) details-\/>setValue(selectionResult);}
+\DoxyCodeLine{5181   \textcolor{keywordflow}{return} qSqrt(minDistSqr);}
+\DoxyCodeLine{5182 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_abstract_plottable1_d_a22377bf6e57ab7eedbc9e489250c6ded}\label{class_q_c_p_abstract_plottable1_d_a22377bf6e57ab7eedbc9e489250c6ded}} 
+\index{QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}!selectTestRect@{selectTestRect}}
+\index{selectTestRect@{selectTestRect}!QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{selectTestRect()}{selectTestRect()}}
+{\footnotesize\ttfamily template$<$class Data\+Type $>$ \\
+\mbox{\hyperlink{class_q_c_p_data_selection}{QCPData\+Selection}} \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d}{QCPAbstract\+Plottable1D}}$<$ Data\+Type $>$\+::select\+Test\+Rect (\begin{DoxyParamCaption}\item[{const QRectF \&}]{rect,  }\item[{bool}]{only\+Selectable }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Implements a rect-\/selection algorithm assuming the data (accessed via the 1D data interface) is point-\/like. Most subclasses will want to reimplement this method again, to provide a more accurate hit test based on the true data visualization geometry.
+
+\textbackslash{}seebaseclassmethod 
+
+Замещает \mbox{\hyperlink{class_q_c_p_plottable_interface1_d_a67093e4ccf490ff5f7750640941ff34c}{QCPPlottable\+Interface1D}}.
+
+
+
+Переопределяется в \mbox{\hyperlink{class_q_c_p_financial_a3c5beb1ab028a1dba845fc9dcffc7cf4}{QCPFinancial}}, \mbox{\hyperlink{class_q_c_p_statistical_box_a42febad6ad5e924a151434cc434b4ffc}{QCPStatistical\+Box}} и \mbox{\hyperlink{class_q_c_p_bars_ab03bb6125c3e983b89d694f75ce6b3d5}{QCPBars}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5035                                                    \{}
+\DoxyCodeLine{5036   \mbox{\hyperlink{class_q_c_p_data_selection}{QCPDataSelection}} result;}
+\DoxyCodeLine{5037   \textcolor{keywordflow}{if} ((onlySelectable \&\& \mbox{\hyperlink{class_q_c_p_abstract_plottable_a3944521f7bec90974737c9d192fc57ba}{mSelectable}} == \mbox{\hyperlink{namespace_q_c_p_ac6cb9db26a564b27feda362a438db038aa64628e338a2dd1e6f0dc84dec0b63fe}{QCP::stNone}}) ||}
+\DoxyCodeLine{5038       \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}{mDataContainer}}-\/>isEmpty())}
+\DoxyCodeLine{5039     \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{5040   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_abstract_plottable_a426f42e254d0f8ce5436a868c61a6827}{mKeyAxis}} || !\mbox{\hyperlink{class_q_c_p_abstract_plottable_a2901452ca4aea911a1827717934a4bda}{mValueAxis}}) \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{5041 }
+\DoxyCodeLine{5042   \textcolor{comment}{// convert rect given in pixels to ranges given in plot coordinates:}}
+\DoxyCodeLine{5043   \textcolor{keywordtype}{double} key1, value1, key2, value2;}
+\DoxyCodeLine{5044   \mbox{\hyperlink{class_q_c_p_abstract_plottable_a3903c1120ab5c27e7fa46b597ef267bd}{pixelsToCoords}}(rect.topLeft(), key1, value1);}
+\DoxyCodeLine{5045   \mbox{\hyperlink{class_q_c_p_abstract_plottable_a3903c1120ab5c27e7fa46b597ef267bd}{pixelsToCoords}}(rect.bottomRight(), key2, value2);}
+\DoxyCodeLine{5046   \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} keyRange(key1, key2);  \textcolor{comment}{// QCPRange normalizes internally so we don't}}
+\DoxyCodeLine{5047                                   \textcolor{comment}{// have to care about whether key1 < key2}}
+\DoxyCodeLine{5048   \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} valueRange(value1, value2);}
+\DoxyCodeLine{5049   \textcolor{keyword}{typename} \mbox{\hyperlink{class_q_c_p_data_container_a1cd3412b067579f66f4a252e5b2b3e22}{QCPDataContainer<DataType>::const\_iterator}} begin =}
+\DoxyCodeLine{5050       \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}{mDataContainer}}-\/>constBegin();}
+\DoxyCodeLine{5051   \textcolor{keyword}{typename} \mbox{\hyperlink{class_q_c_p_data_container_a1cd3412b067579f66f4a252e5b2b3e22}{QCPDataContainer<DataType>::const\_iterator}} end =}
+\DoxyCodeLine{5052       \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}{mDataContainer}}-\/>constEnd();}
+\DoxyCodeLine{5053   \textcolor{keywordflow}{if} (DataType::sortKeyIsMainKey())  \textcolor{comment}{// we can assume that data is sorted by}}
+\DoxyCodeLine{5054                                      \textcolor{comment}{// main key, so can reduce the searched key}}
+\DoxyCodeLine{5055                                      \textcolor{comment}{// interval:}}
+\DoxyCodeLine{5056   \{}
+\DoxyCodeLine{5057     begin = \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}{mDataContainer}}-\/>findBegin(keyRange.lower, \textcolor{keyword}{false});}
+\DoxyCodeLine{5058     end = \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}{mDataContainer}}-\/>findEnd(keyRange.upper, \textcolor{keyword}{false});}
+\DoxyCodeLine{5059   \}}
+\DoxyCodeLine{5060   \textcolor{keywordflow}{if} (begin == end) \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{5061 }
+\DoxyCodeLine{5062   \textcolor{keywordtype}{int} currentSegmentBegin =}
+\DoxyCodeLine{5063       -\/1;  \textcolor{comment}{// -\/1 means we're currently not in a segment that's contained in rect}}
+\DoxyCodeLine{5064   \textcolor{keywordflow}{for} (\textcolor{keyword}{typename} \mbox{\hyperlink{class_q_c_p_data_container_a1cd3412b067579f66f4a252e5b2b3e22}{QCPDataContainer<DataType>::const\_iterator}} it = begin;}
+\DoxyCodeLine{5065        it != end; ++it) \{}
+\DoxyCodeLine{5066     \textcolor{keywordflow}{if} (currentSegmentBegin == -\/1) \{}
+\DoxyCodeLine{5067       \textcolor{keywordflow}{if} (valueRange.contains(it-\/>mainValue()) \&\&}
+\DoxyCodeLine{5068           keyRange.contains(it-\/>mainKey()))  \textcolor{comment}{// start segment}}
+\DoxyCodeLine{5069         currentSegmentBegin = int(it -\/ \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}{mDataContainer}}-\/>constBegin());}
+\DoxyCodeLine{5070     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (!valueRange.contains(it-\/>mainValue()) ||}
+\DoxyCodeLine{5071                !keyRange.contains(it-\/>mainKey()))  \textcolor{comment}{// segment just ended}}
+\DoxyCodeLine{5072     \{}
+\DoxyCodeLine{5073       result.\mbox{\hyperlink{class_q_c_p_data_selection_a46740c5aa7b80ae9b2abf6985d61b74f}{addDataRange}}(\mbox{\hyperlink{class_q_c_p_data_range}{QCPDataRange}}(currentSegmentBegin,}
+\DoxyCodeLine{5074                                        \textcolor{keywordtype}{int}(it -\/ \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}{mDataContainer}}-\/>constBegin())),}
+\DoxyCodeLine{5075                           \textcolor{keyword}{false});}
+\DoxyCodeLine{5076       currentSegmentBegin = -\/1;}
+\DoxyCodeLine{5077     \}}
+\DoxyCodeLine{5078   \}}
+\DoxyCodeLine{5079   \textcolor{comment}{// process potential last segment:}}
+\DoxyCodeLine{5080   \textcolor{keywordflow}{if} (currentSegmentBegin != -\/1)}
+\DoxyCodeLine{5081     result.\mbox{\hyperlink{class_q_c_p_data_selection_a46740c5aa7b80ae9b2abf6985d61b74f}{addDataRange}}(\mbox{\hyperlink{class_q_c_p_data_range}{QCPDataRange}}(currentSegmentBegin,}
+\DoxyCodeLine{5082                                      \textcolor{keywordtype}{int}(end -\/ \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}{mDataContainer}}-\/>constBegin())),}
+\DoxyCodeLine{5083                         \textcolor{keyword}{false});}
+\DoxyCodeLine{5084 }
+\DoxyCodeLine{5085   result.\mbox{\hyperlink{class_q_c_p_data_selection_a4a2fbad1a6e4d1dd26fdfdf88956f2a4}{simplify}}();}
+\DoxyCodeLine{5086   \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{5087 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_abstract_plottable1_d_afe0d56e39cc076032922f059b304c092}\label{class_q_c_p_abstract_plottable1_d_afe0d56e39cc076032922f059b304c092}} 
+\index{QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}!sortKeyIsMainKey@{sortKeyIsMainKey}}
+\index{sortKeyIsMainKey@{sortKeyIsMainKey}!QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{sortKeyIsMainKey()}{sortKeyIsMainKey()}}
+{\footnotesize\ttfamily template$<$class Data\+Type $>$ \\
+bool \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d}{QCPAbstract\+Plottable1D}}$<$ Data\+Type $>$\+::sort\+Key\+Is\+Main\+Key\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+
+
+Returns whether the sort key (\mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_aa8277da921b009bce474437d50b4a2d8}{data\+Sort\+Key}}) is identical to the main key (\mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_aeb156ebf5d3c8de906b428be30733ad8}{data\+Main\+Key}}).
+
+What the sort and main keys are, is defined by the plottable\textquotesingle{}s data type. See the \mbox{\hyperlink{class_q_c_p_data_container_qcpdatacontainer-datatype}{QCPData\+Container Data\+Type}} documentation for details about this naming convention. 
+
+Замещает \mbox{\hyperlink{class_q_c_p_plottable_interface1_d_a229e65e7ab968dd6cd0e259fa504b79d}{QCPPlottable\+Interface1D}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5021                                                               \{}
+\DoxyCodeLine{5022   \textcolor{keywordflow}{return} DataType::sortKeyIsMainKey();}
+\DoxyCodeLine{5023 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}\label{class_q_c_p_abstract_plottable1_d_ac139cf70590707a1fb40eabe97fac246}} 
+\index{QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}!mDataContainer@{mDataContainer}}
+\index{mDataContainer@{mDataContainer}!QCPAbstractPlottable1D$<$ DataType $>$@{QCPAbstractPlottable1D$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{mDataContainer}{mDataContainer}}
+{\footnotesize\ttfamily template$<$class Data\+Type $>$ \\
+QShared\+Pointer$<$\mbox{\hyperlink{class_q_c_p_data_container}{QCPData\+Container}}$<$Data\+Type$>$ $>$ \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d}{QCPAbstract\+Plottable1D}}$<$ Data\+Type $>$\+::m\+Data\+Container\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Smart\+Calc/\mbox{\hyperlink{qcustomplot_8h}{qcustomplot.\+h}}\end{DoxyCompactItemize}

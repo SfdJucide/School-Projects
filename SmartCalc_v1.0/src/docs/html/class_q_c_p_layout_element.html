@@ -1,0 +1,1775 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Smart-Calc: Класс QCPLayoutElement</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Smart-Calc
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="#friends">Друзья</a> &#124;
+<a href="class_q_c_p_layout_element-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс QCPLayoutElement</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The abstract base class for all objects that form the layout system.  
+ <a href="class_q_c_p_layout_element.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:QCPLayoutElement:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_q_c_p_layout_element.png" usemap="#QCPLayoutElement_map" alt=""/>
+  <map id="QCPLayoutElement_map" name="QCPLayoutElement_map">
+<area href="class_q_c_p_layerable.html" title="Base class for all drawable objects." alt="QCPLayerable" shape="rect" coords="703,56,894,80"/>
+<area href="class_q_c_p_abstract_legend_item.html" title="The abstract base class for all entries in a QCPLegend." alt="QCPAbstractLegendItem" shape="rect" coords="100,168,291,192"/>
+<area href="class_q_c_p_axis_rect.html" title="Holds multiple axes and arranges them in a rectangular shape." alt="QCPAxisRect" shape="rect" coords="402,168,593,192"/>
+<area href="class_q_c_p_color_scale.html" title="A color scale for use with color coding data such as QCPColorMap." alt="QCPColorScale" shape="rect" coords="603,168,794,192"/>
+<area href="class_q_c_p_layout.html" title="The abstract base class for layouts." alt="QCPLayout" shape="rect" coords="804,168,995,192"/>
+<area href="class_q_c_p_polar_axis_angular.html" title="The main container for polar plots, representing the angular axis as a circle." alt="QCPPolarAxisAngular" shape="rect" coords="1005,168,1196,192"/>
+<area href="class_q_c_p_text_element.html" title="A layout element displaying a text." alt="QCPTextElement" shape="rect" coords="1206,168,1397,192"/>
+<area href="class_q_c_p_plottable_legend_item.html" title="A legend item representing a plottable with an icon and the plottable name." alt="QCPPlottableLegendItem" shape="rect" coords="0,224,191,248"/>
+<area href="class_q_c_p_polar_legend_item.html" title="A legend item for polar plots." alt="QCPPolarLegendItem" shape="rect" coords="201,224,392,248"/>
+<area href="class_q_c_p_color_scale_axis_rect_private.html" alt="QCPColorScaleAxisRectPrivate" shape="rect" coords="402,224,593,248"/>
+<area href="class_q_c_p_layout_grid.html" title="A layout that arranges child elements in a grid." alt="QCPLayoutGrid" shape="rect" coords="703,224,894,248"/>
+<area href="class_q_c_p_layout_inset.html" title="A layout that places child elements aligned to the border or arbitrarily positioned." alt="QCPLayoutInset" shape="rect" coords="904,224,1095,248"/>
+<area href="class_q_c_p_legend.html" title="Manages a legend inside a QCustomPlot." alt="QCPLegend" shape="rect" coords="703,280,894,304"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:a0d83360e05735735aaf6d7983c56374d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a0d83360e05735735aaf6d7983c56374d">UpdatePhase</a> { <a class="el" href="class_q_c_p_layout_element.html#a0d83360e05735735aaf6d7983c56374dad6119882eba136357c2f627992e527d3">upPreparation</a>
+, <a class="el" href="class_q_c_p_layout_element.html#a0d83360e05735735aaf6d7983c56374da288cb59a92280e47261a341f2813e676">upMargins</a>
+, <a class="el" href="class_q_c_p_layout_element.html#a0d83360e05735735aaf6d7983c56374da5d1ccf5d79967c232c3c511796860045">upLayout</a>
+ }</td></tr>
+<tr class="separator:a0d83360e05735735aaf6d7983c56374d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0afb3e5773529e4bd20e448f81be4d2a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a0afb3e5773529e4bd20e448f81be4d2a">SizeConstraintRect</a> { <a class="el" href="class_q_c_p_layout_element.html#a0afb3e5773529e4bd20e448f81be4d2aa7fa7e25cd23758b9915c64ed9f1be26c">scrInnerRect</a>
+, <a class="el" href="class_q_c_p_layout_element.html#a0afb3e5773529e4bd20e448f81be4d2aabe2745b41a6131ed194e13591b08e04d">scrOuterRect</a>
+ }</td></tr>
+<tr class="separator:a0afb3e5773529e4bd20e448f81be4d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a2c25c7bf27eaa1fad66807af855d8d81"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a2c25c7bf27eaa1fad66807af855d8d81">QCPLayoutElement</a> (<a class="el" href="class_q_custom_plot.html">QCustomPlot</a> *<a class="el" href="class_q_c_p_layerable.html#a473edb813a4c1929d6b6a8fe3ff3faf7">parentPlot</a>=nullptr)</td></tr>
+<tr class="separator:a2c25c7bf27eaa1fad66807af855d8d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fa26d3d22a2854c4da1d80f188db961"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a2fa26d3d22a2854c4da1d80f188db961">~QCPLayoutElement</a> () <a class="el" href="qcustomplot_8h.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
+<tr class="separator:a2fa26d3d22a2854c4da1d80f188db961"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4efdcbde9d28f410e5ef166c9d691deb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_c_p_layout.html">QCPLayout</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a4efdcbde9d28f410e5ef166c9d691deb">layout</a> () const</td></tr>
+<tr class="separator:a4efdcbde9d28f410e5ef166c9d691deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a208effccfe2cca4a0eaf9393e60f2dd4"><td class="memItemLeft" align="right" valign="top">QRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a> () const</td></tr>
+<tr class="separator:a208effccfe2cca4a0eaf9393e60f2dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a32a12a6161c9dffbadeb9cc585510c"><td class="memItemLeft" align="right" valign="top">QRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a2a32a12a6161c9dffbadeb9cc585510c">outerRect</a> () const</td></tr>
+<tr class="separator:a2a32a12a6161c9dffbadeb9cc585510c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ac9450aa2d60863bf3a8ea0c940c9d"><td class="memItemLeft" align="right" valign="top">QMargins&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#af4ac9450aa2d60863bf3a8ea0c940c9d">margins</a> () const</td></tr>
+<tr class="separator:af4ac9450aa2d60863bf3a8ea0c940c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eae30e28f28d73fd1c56409c011393e"><td class="memItemLeft" align="right" valign="top">QMargins&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a5eae30e28f28d73fd1c56409c011393e">minimumMargins</a> () const</td></tr>
+<tr class="separator:a5eae30e28f28d73fd1c56409c011393e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2585bc8c5cc70ee712909751a2fc8909"><td class="memItemLeft" align="right" valign="top">QCP::MarginSides&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a2585bc8c5cc70ee712909751a2fc8909">autoMargins</a> () const</td></tr>
+<tr class="separator:a2585bc8c5cc70ee712909751a2fc8909"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60d4295468a2b57fe91f6f68e20c3993"><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a60d4295468a2b57fe91f6f68e20c3993">minimumSize</a> () const</td></tr>
+<tr class="separator:a60d4295468a2b57fe91f6f68e20c3993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb9503858d4aa0f3b9f1794b084fb40a"><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#afb9503858d4aa0f3b9f1794b084fb40a">maximumSize</a> () const</td></tr>
+<tr class="separator:afb9503858d4aa0f3b9f1794b084fb40a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66136f121ee3e1c933b748761203cab4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_c_p_layout_element.html#a0afb3e5773529e4bd20e448f81be4d2a">SizeConstraintRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a66136f121ee3e1c933b748761203cab4">sizeConstraintRect</a> () const</td></tr>
+<tr class="separator:a66136f121ee3e1c933b748761203cab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8af6bcf81e12fe1d6f44490f34522b90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_c_p_margin_group.html">QCPMarginGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a8af6bcf81e12fe1d6f44490f34522b90">marginGroup</a> (<a class="el" href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54">QCP::MarginSide</a> side) const</td></tr>
+<tr class="separator:a8af6bcf81e12fe1d6f44490f34522b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84bee9a0d9cf3adf1b4384f361a253fd"><td class="memItemLeft" align="right" valign="top">QHash&lt; <a class="el" href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54">QCP::MarginSide</a>, <a class="el" href="class_q_c_p_margin_group.html">QCPMarginGroup</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a84bee9a0d9cf3adf1b4384f361a253fd">marginGroups</a> () const</td></tr>
+<tr class="separator:a84bee9a0d9cf3adf1b4384f361a253fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38975ea13e36de8e53391ce41d94bc0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a38975ea13e36de8e53391ce41d94bc0f">setOuterRect</a> (const QRect &amp;<a class="el" href="class_q_c_p_layout_element.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a>)</td></tr>
+<tr class="separator:a38975ea13e36de8e53391ce41d94bc0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f450b1f3f992ad576fce2c63d8b79cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a8f450b1f3f992ad576fce2c63d8b79cf">setMargins</a> (const QMargins &amp;<a class="el" href="class_q_c_p_layout_element.html#af4ac9450aa2d60863bf3a8ea0c940c9d">margins</a>)</td></tr>
+<tr class="separator:a8f450b1f3f992ad576fce2c63d8b79cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a8a17abc16b7923159fcc7608f94673"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a0a8a17abc16b7923159fcc7608f94673">setMinimumMargins</a> (const QMargins &amp;<a class="el" href="class_q_c_p_layout_element.html#af4ac9450aa2d60863bf3a8ea0c940c9d">margins</a>)</td></tr>
+<tr class="separator:a0a8a17abc16b7923159fcc7608f94673"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accfda49994e3e6d51ed14504abf9d27d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#accfda49994e3e6d51ed14504abf9d27d">setAutoMargins</a> (QCP::MarginSides sides)</td></tr>
+<tr class="separator:accfda49994e3e6d51ed14504abf9d27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dd29a3c8bc88440c97c06b67be7886b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a5dd29a3c8bc88440c97c06b67be7886b">setMinimumSize</a> (const QSize &amp;size)</td></tr>
+<tr class="separator:a5dd29a3c8bc88440c97c06b67be7886b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e0447614a0bf92de9a7304588c6b96e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a8e0447614a0bf92de9a7304588c6b96e">setMinimumSize</a> (int width, int height)</td></tr>
+<tr class="separator:a8e0447614a0bf92de9a7304588c6b96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74eb5280a737ab44833d506db65efd95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a74eb5280a737ab44833d506db65efd95">setMaximumSize</a> (const QSize &amp;size)</td></tr>
+<tr class="separator:a74eb5280a737ab44833d506db65efd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03e0e9c48f230217c529b0819f832d84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a03e0e9c48f230217c529b0819f832d84">setMaximumSize</a> (int width, int height)</td></tr>
+<tr class="separator:a03e0e9c48f230217c529b0819f832d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a361666cdcc6fbfd37344cc44be746b0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a361666cdcc6fbfd37344cc44be746b0f">setSizeConstraintRect</a> (<a class="el" href="class_q_c_p_layout_element.html#a0afb3e5773529e4bd20e448f81be4d2a">SizeConstraintRect</a> constraintRect)</td></tr>
+<tr class="separator:a361666cdcc6fbfd37344cc44be746b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a516e56f76b6bc100e8e71d329866847d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a516e56f76b6bc100e8e71d329866847d">setMarginGroup</a> (QCP::MarginSides sides, <a class="el" href="class_q_c_p_margin_group.html">QCPMarginGroup</a> *group)</td></tr>
+<tr class="separator:a516e56f76b6bc100e8e71d329866847d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a929c2ec62e0e0e1d8418eaa802e2af9b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a929c2ec62e0e0e1d8418eaa802e2af9b">update</a> (<a class="el" href="class_q_c_p_layout_element.html#a0d83360e05735735aaf6d7983c56374d">UpdatePhase</a> phase)</td></tr>
+<tr class="separator:a929c2ec62e0e0e1d8418eaa802e2af9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46789036c4fcb190fa374f91321d7c09"><td class="memItemLeft" align="right" valign="top">virtual QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a46789036c4fcb190fa374f91321d7c09">minimumOuterSizeHint</a> () const</td></tr>
+<tr class="separator:a46789036c4fcb190fa374f91321d7c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad96efb977a26e360e8a64a4c1e56456d"><td class="memItemLeft" align="right" valign="top">virtual QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#ad96efb977a26e360e8a64a4c1e56456d">maximumOuterSizeHint</a> () const</td></tr>
+<tr class="separator:ad96efb977a26e360e8a64a4c1e56456d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76dec8cb31e498994a944d7647a43309"><td class="memItemLeft" align="right" valign="top">virtual QList&lt; <a class="el" href="class_q_c_p_layout_element.html">QCPLayoutElement</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a76dec8cb31e498994a944d7647a43309">elements</a> (bool recursive) const</td></tr>
+<tr class="separator:a76dec8cb31e498994a944d7647a43309"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62d60f1b0ee9bb23e38811d71586d79c"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a62d60f1b0ee9bb23e38811d71586d79c">selectTest</a> (const QPointF &amp;pos, bool onlySelectable, QVariant *details=nullptr) const <a class="el" href="qcustomplot_8h.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
+<tr class="separator:a62d60f1b0ee9bb23e38811d71586d79c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_q_c_p_layerable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_q_c_p_layerable')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_q_c_p_layerable.html">QCPLayerable</a></td></tr>
+<tr class="memitem:a4f87f420cb2597e2b393aab934d2f099 inherit pub_methods_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#a4f87f420cb2597e2b393aab934d2f099">QCPLayerable</a> (<a class="el" href="class_q_custom_plot.html">QCustomPlot</a> *plot, QString targetLayer=QString(), <a class="el" href="class_q_c_p_layerable.html">QCPLayerable</a> *<a class="el" href="class_q_c_p_layerable.html#aa78b7e644d2c519e1a9a6f2ac5fcd858">parentLayerable</a>=nullptr)</td></tr>
+<tr class="separator:a4f87f420cb2597e2b393aab934d2f099 inherit pub_methods_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4231cf5b3601d6d3a5781283e7a9735b inherit pub_methods_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#a4231cf5b3601d6d3a5781283e7a9735b">~QCPLayerable</a> ()</td></tr>
+<tr class="separator:a4231cf5b3601d6d3a5781283e7a9735b inherit pub_methods_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0297b944b6192b6d67d00bff41b6b70 inherit pub_methods_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#af0297b944b6192b6d67d00bff41b6b70">visible</a> () const</td></tr>
+<tr class="separator:af0297b944b6192b6d67d00bff41b6b70 inherit pub_methods_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a473edb813a4c1929d6b6a8fe3ff3faf7 inherit pub_methods_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_custom_plot.html">QCustomPlot</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#a473edb813a4c1929d6b6a8fe3ff3faf7">parentPlot</a> () const</td></tr>
+<tr class="separator:a473edb813a4c1929d6b6a8fe3ff3faf7 inherit pub_methods_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa78b7e644d2c519e1a9a6f2ac5fcd858 inherit pub_methods_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_c_p_layerable.html">QCPLayerable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#aa78b7e644d2c519e1a9a6f2ac5fcd858">parentLayerable</a> () const</td></tr>
+<tr class="separator:aa78b7e644d2c519e1a9a6f2ac5fcd858 inherit pub_methods_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ff4862e8c784c9f5986dbc1533ba2a4 inherit pub_methods_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_c_p_layer.html">QCPLayer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#a5ff4862e8c784c9f5986dbc1533ba2a4">layer</a> () const</td></tr>
+<tr class="separator:a5ff4862e8c784c9f5986dbc1533ba2a4 inherit pub_methods_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71cbd212fde2703cee076e204a475709 inherit pub_methods_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#a71cbd212fde2703cee076e204a475709">antialiased</a> () const</td></tr>
+<tr class="separator:a71cbd212fde2703cee076e204a475709 inherit pub_methods_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bed99ddc396b48ce3ebfdc0418744f8 inherit pub_methods_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#a3bed99ddc396b48ce3ebfdc0418744f8">setVisible</a> (bool on)</td></tr>
+<tr class="separator:a3bed99ddc396b48ce3ebfdc0418744f8 inherit pub_methods_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0d0da6d2de45a118886d2c8e16d5a54 inherit pub_methods_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top">Q_SLOT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#ab0d0da6d2de45a118886d2c8e16d5a54">setLayer</a> (<a class="el" href="class_q_c_p_layer.html">QCPLayer</a> *<a class="el" href="class_q_c_p_layerable.html#a5ff4862e8c784c9f5986dbc1533ba2a4">layer</a>)</td></tr>
+<tr class="separator:ab0d0da6d2de45a118886d2c8e16d5a54 inherit pub_methods_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab25a0e7b897993b44447caee0f142083 inherit pub_methods_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#ab25a0e7b897993b44447caee0f142083">setLayer</a> (const QString &amp;layerName)</td></tr>
+<tr class="separator:ab25a0e7b897993b44447caee0f142083 inherit pub_methods_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fd43e89be4a553ead41652565ff0581 inherit pub_methods_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#a4fd43e89be4a553ead41652565ff0581">setAntialiased</a> (bool enabled)</td></tr>
+<tr class="separator:a4fd43e89be4a553ead41652565ff0581 inherit pub_methods_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab054e88f15d485defcb95e7376f119e7 inherit pub_methods_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#ab054e88f15d485defcb95e7376f119e7">realVisibility</a> () const</td></tr>
+<tr class="separator:ab054e88f15d485defcb95e7376f119e7 inherit pub_methods_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:a005c9f0fe84bc1591a2cf2c46fd477b4"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a005c9f0fe84bc1591a2cf2c46fd477b4">calculateAutoMargin</a> (<a class="el" href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54">QCP::MarginSide</a> side)</td></tr>
+<tr class="separator:a005c9f0fe84bc1591a2cf2c46fd477b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a765f041a73af0c2de41b41a5a03e31a4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a765f041a73af0c2de41b41a5a03e31a4">layoutChanged</a> ()</td></tr>
+<tr class="separator:a765f041a73af0c2de41b41a5a03e31a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a8f18141bcf46cf40ad4c13324ff346"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a0a8f18141bcf46cf40ad4c13324ff346">applyDefaultAntialiasingHint</a> (<a class="el" href="class_q_c_p_painter.html">QCPPainter</a> *painter) const <a class="el" href="qcustomplot_8h.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
+<tr class="separator:a0a8f18141bcf46cf40ad4c13324ff346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1c597b1d608cfdd86e7b76819a94cfb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#ad1c597b1d608cfdd86e7b76819a94cfb">draw</a> (<a class="el" href="class_q_c_p_painter.html">QCPPainter</a> *painter) <a class="el" href="qcustomplot_8h.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
+<tr class="separator:ad1c597b1d608cfdd86e7b76819a94cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4bb5c5a958451f5f153fdce350f13cf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#ab4bb5c5a958451f5f153fdce350f13cf">parentPlotInitialized</a> (<a class="el" href="class_q_custom_plot.html">QCustomPlot</a> *<a class="el" href="class_q_c_p_layerable.html#a473edb813a4c1929d6b6a8fe3ff3faf7">parentPlot</a>) <a class="el" href="qcustomplot_8h.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
+<tr class="separator:ab4bb5c5a958451f5f153fdce350f13cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_q_c_p_layerable"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_q_c_p_layerable')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="class_q_c_p_layerable.html">QCPLayerable</a></td></tr>
+<tr class="memitem:a908c9edda761886f33893be326dab77d inherit pro_methods_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespace_q_c_p.html#a2ad6bb6281c7c2d593d4277b44c2b037">QCP::Interaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#a908c9edda761886f33893be326dab77d">selectionCategory</a> () const</td></tr>
+<tr class="separator:a908c9edda761886f33893be326dab77d inherit pro_methods_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbcfc9ecc75433747b1978a77b1864b3 inherit pro_methods_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top">virtual QRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#acbcfc9ecc75433747b1978a77b1864b3">clipRect</a> () const</td></tr>
+<tr class="separator:acbcfc9ecc75433747b1978a77b1864b3 inherit pro_methods_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7498c2d0d081cf7cad0fb3bb93aa0e91 inherit pro_methods_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#a7498c2d0d081cf7cad0fb3bb93aa0e91">selectEvent</a> (QMouseEvent *event, bool additive, const QVariant &amp;details, bool *selectionStateChanged)</td></tr>
+<tr class="separator:a7498c2d0d081cf7cad0fb3bb93aa0e91 inherit pro_methods_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae546370644a5551c76af739afc008bee inherit pro_methods_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#ae546370644a5551c76af739afc008bee">deselectEvent</a> (bool *selectionStateChanged)</td></tr>
+<tr class="separator:ae546370644a5551c76af739afc008bee inherit pro_methods_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6567604818db90f4fd52822f8bc8376 inherit pro_methods_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#af6567604818db90f4fd52822f8bc8376">mousePressEvent</a> (QMouseEvent *event, const QVariant &amp;details)</td></tr>
+<tr class="separator:af6567604818db90f4fd52822f8bc8376 inherit pro_methods_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eee1ba47fd69be111059ca3881933e4 inherit pro_methods_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#a9eee1ba47fd69be111059ca3881933e4">mouseMoveEvent</a> (QMouseEvent *event, const QPointF &amp;startPos)</td></tr>
+<tr class="separator:a9eee1ba47fd69be111059ca3881933e4 inherit pro_methods_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0d79b005686f668622bbe66ac03ba2c inherit pro_methods_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#aa0d79b005686f668622bbe66ac03ba2c">mouseReleaseEvent</a> (QMouseEvent *event, const QPointF &amp;startPos)</td></tr>
+<tr class="separator:aa0d79b005686f668622bbe66ac03ba2c inherit pro_methods_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4171e2e823aca242dd0279f00ed2de81 inherit pro_methods_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#a4171e2e823aca242dd0279f00ed2de81">mouseDoubleClickEvent</a> (QMouseEvent *event, const QVariant &amp;details)</td></tr>
+<tr class="separator:a4171e2e823aca242dd0279f00ed2de81 inherit pro_methods_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47dfd7b8fd99c08ca54e09c362b6f022 inherit pro_methods_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#a47dfd7b8fd99c08ca54e09c362b6f022">wheelEvent</a> (QWheelEvent *event)</td></tr>
+<tr class="separator:a47dfd7b8fd99c08ca54e09c362b6f022 inherit pro_methods_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cbe5a0c9a5674249982f5ca5f8e02bc inherit pro_methods_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#a8cbe5a0c9a5674249982f5ca5f8e02bc">initializeParentPlot</a> (<a class="el" href="class_q_custom_plot.html">QCustomPlot</a> *<a class="el" href="class_q_c_p_layerable.html#a473edb813a4c1929d6b6a8fe3ff3faf7">parentPlot</a>)</td></tr>
+<tr class="separator:a8cbe5a0c9a5674249982f5ca5f8e02bc inherit pro_methods_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa23c893671f1f6744ac235cf2204cf3a inherit pro_methods_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#aa23c893671f1f6744ac235cf2204cf3a">setParentLayerable</a> (<a class="el" href="class_q_c_p_layerable.html">QCPLayerable</a> *<a class="el" href="class_q_c_p_layerable.html#aa78b7e644d2c519e1a9a6f2ac5fcd858">parentLayerable</a>)</td></tr>
+<tr class="separator:aa23c893671f1f6744ac235cf2204cf3a inherit pro_methods_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af94484cfb7cbbddb7de522e9be71d9a4 inherit pro_methods_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#af94484cfb7cbbddb7de522e9be71d9a4">moveToLayer</a> (<a class="el" href="class_q_c_p_layer.html">QCPLayer</a> *<a class="el" href="class_q_c_p_layerable.html#a5ff4862e8c784c9f5986dbc1533ba2a4">layer</a>, bool prepend)</td></tr>
+<tr class="separator:af94484cfb7cbbddb7de522e9be71d9a4 inherit pro_methods_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb663e375d2d36dc5c55021ee5a2119b inherit pro_methods_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#acb663e375d2d36dc5c55021ee5a2119b">applyAntialiasingHint</a> (<a class="el" href="class_q_c_p_painter.html">QCPPainter</a> *painter, bool localAntialiased, <a class="el" href="namespace_q_c_p.html#ae55dbe315d41fe80f29ba88100843a0c">QCP::AntialiasedElement</a> overrideElement) const</td></tr>
+<tr class="separator:acb663e375d2d36dc5c55021ee5a2119b inherit pro_methods_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:ae7c75c25549608bd688bdb65d4c38066"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_c_p_layout.html">QCPLayout</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#ae7c75c25549608bd688bdb65d4c38066">mParentLayout</a></td></tr>
+<tr class="separator:ae7c75c25549608bd688bdb65d4c38066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affef747c81632de33f08483b7fd10d01"><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#affef747c81632de33f08483b7fd10d01">mMinimumSize</a></td></tr>
+<tr class="separator:affef747c81632de33f08483b7fd10d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64a387973fd4addac842028c89088998"><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a64a387973fd4addac842028c89088998">mMaximumSize</a></td></tr>
+<tr class="separator:a64a387973fd4addac842028c89088998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc012635b1ae178ff3c4da8a3af303a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_c_p_layout_element.html#a0afb3e5773529e4bd20e448f81be4d2a">SizeConstraintRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#acc012635b1ae178ff3c4da8a3af303a2">mSizeConstraintRect</a></td></tr>
+<tr class="separator:acc012635b1ae178ff3c4da8a3af303a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8896f05550389f7b9e92c9e6cdf6e01"><td class="memItemLeft" align="right" valign="top">QRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#ad8896f05550389f7b9e92c9e6cdf6e01">mRect</a></td></tr>
+<tr class="separator:ad8896f05550389f7b9e92c9e6cdf6e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07bb4973379e75cb0fa5b032c1d24afd"><td class="memItemLeft" align="right" valign="top">QRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a07bb4973379e75cb0fa5b032c1d24afd">mOuterRect</a></td></tr>
+<tr class="separator:a07bb4973379e75cb0fa5b032c1d24afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2a32b99ee527ca5dfff9da03628fe94"><td class="memItemLeft" align="right" valign="top">QMargins&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#ac2a32b99ee527ca5dfff9da03628fe94">mMargins</a></td></tr>
+<tr class="separator:ac2a32b99ee527ca5dfff9da03628fe94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ba71f25d1af4bb092b28df618538e63"><td class="memItemLeft" align="right" valign="top">QMargins&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a5ba71f25d1af4bb092b28df618538e63">mMinimumMargins</a></td></tr>
+<tr class="separator:a5ba71f25d1af4bb092b28df618538e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af61c70354d1275778d68206b2a1b2d36"><td class="memItemLeft" align="right" valign="top">QCP::MarginSides&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#af61c70354d1275778d68206b2a1b2d36">mAutoMargins</a></td></tr>
+<tr class="separator:af61c70354d1275778d68206b2a1b2d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae027b5caf347c2fb635e797513712a32"><td class="memItemLeft" align="right" valign="top">QHash&lt; <a class="el" href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54">QCP::MarginSide</a>, <a class="el" href="class_q_c_p_margin_group.html">QCPMarginGroup</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#ae027b5caf347c2fb635e797513712a32">mMarginGroups</a></td></tr>
+<tr class="separator:ae027b5caf347c2fb635e797513712a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_q_c_p_layerable"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_q_c_p_layerable')"><img src="closed.png" alt="-"/>&#160;Защищенные данные унаследованные от <a class="el" href="class_q_c_p_layerable.html">QCPLayerable</a></td></tr>
+<tr class="memitem:a62e3aed8427d6ce3ccf716f285106cb3 inherit pro_attribs_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#a62e3aed8427d6ce3ccf716f285106cb3">mVisible</a></td></tr>
+<tr class="separator:a62e3aed8427d6ce3ccf716f285106cb3 inherit pro_attribs_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2a528433e44db02b8aef23c1f9f90ed inherit pro_attribs_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_custom_plot.html">QCustomPlot</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#aa2a528433e44db02b8aef23c1f9f90ed">mParentPlot</a></td></tr>
+<tr class="separator:aa2a528433e44db02b8aef23c1f9f90ed inherit pro_attribs_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3291445a980053e2d17a21d15957624e inherit pro_attribs_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top">QPointer&lt; <a class="el" href="class_q_c_p_layerable.html">QCPLayerable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#a3291445a980053e2d17a21d15957624e">mParentLayerable</a></td></tr>
+<tr class="separator:a3291445a980053e2d17a21d15957624e inherit pro_attribs_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa38ec5891aff0f50b36fd63e9372a0cd inherit pro_attribs_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_c_p_layer.html">QCPLayer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#aa38ec5891aff0f50b36fd63e9372a0cd">mLayer</a></td></tr>
+<tr class="separator:aa38ec5891aff0f50b36fd63e9372a0cd inherit pro_attribs_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ab45a4c76a3333ce42eb217a81733ec inherit pro_attribs_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#a3ab45a4c76a3333ce42eb217a81733ec">mAntialiased</a></td></tr>
+<tr class="separator:a3ab45a4c76a3333ce42eb217a81733ec inherit pro_attribs_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Друзья</h2></td></tr>
+<tr class="memitem:a1cdf9df76adcfae45261690aa0ca2198"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a1cdf9df76adcfae45261690aa0ca2198">QCustomPlot</a></td></tr>
+<tr class="separator:a1cdf9df76adcfae45261690aa0ca2198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a588aac0a0d721f6c5f10126d8596a20f"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#a588aac0a0d721f6c5f10126d8596a20f">QCPLayout</a></td></tr>
+<tr class="separator:a588aac0a0d721f6c5f10126d8596a20f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad077a686e85ab6fa03dcb2fd37fc499a"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layout_element.html#ad077a686e85ab6fa03dcb2fd37fc499a">QCPMarginGroup</a></td></tr>
+<tr class="separator:ad077a686e85ab6fa03dcb2fd37fc499a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header signals_class_q_c_p_layerable"><td colspan="2" onclick="javascript:toggleInherit('signals_class_q_c_p_layerable')"><img src="closed.png" alt="-"/>&#160;Сигналы унаследованные от <a class="el" href="class_q_c_p_layerable.html">QCPLayerable</a></td></tr>
+<tr class="memitem:abbf8657cedea73ac1c3499b521c90eba inherit signals_class_q_c_p_layerable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_layerable.html#abbf8657cedea73ac1c3499b521c90eba">layerChanged</a> (<a class="el" href="class_q_c_p_layer.html">QCPLayer</a> *newLayer)</td></tr>
+<tr class="separator:abbf8657cedea73ac1c3499b521c90eba inherit signals_class_q_c_p_layerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>The abstract base class for all objects that form the layout system. </p>
+<p>This is an abstract base class. As such, it can't be instantiated directly, rather use one of its subclasses.</p>
+<p>A Layout element is a rectangular object which can be placed in layouts. It has an outer rect (<a class="el" href="class_q_c_p_layout_element.html#a2a32a12a6161c9dffbadeb9cc585510c">QCPLayoutElement::outerRect</a>) and an inner rect (<a class="el" href="class_q_c_p_layout_element.html#a208effccfe2cca4a0eaf9393e60f2dd4">QCPLayoutElement::rect</a>). The difference between outer and inner rect is called its margin. The margin can either be set to automatic or manual (<a class="el" href="class_q_c_p_layout_element.html#accfda49994e3e6d51ed14504abf9d27d">setAutoMargins</a>) on a per-side basis. If a side is set to manual, that margin can be set explicitly with <a class="el" href="class_q_c_p_layout_element.html#a8f450b1f3f992ad576fce2c63d8b79cf">setMargins</a> and will stay fixed at that value. If it's set to automatic, the layout element subclass will control the value itself (via <a class="el" href="class_q_c_p_layout_element.html#a005c9f0fe84bc1591a2cf2c46fd477b4">calculateAutoMargin</a>).</p>
+<p>Layout elements can be placed in layouts (base class <a class="el" href="class_q_c_p_layout.html" title="The abstract base class for layouts.">QCPLayout</a>) like <a class="el" href="class_q_c_p_layout_grid.html" title="A layout that arranges child elements in a grid.">QCPLayoutGrid</a>. The top level layout is reachable via <a class="el" href="class_q_custom_plot.html#af1a1f1f571237deb7c2bd34a5e9f018f">QCustomPlot::plotLayout</a>, and is a <a class="el" href="class_q_c_p_layout_grid.html">QCPLayoutGrid</a>. Since <a class="el" href="class_q_c_p_layout.html">QCPLayout</a> itself derives from <a class="el" href="class_q_c_p_layout_element.html">QCPLayoutElement</a>, layouts can be nested.</p>
+<p>Thus in <a class="el" href="class_q_custom_plot.html" title="The central class of the library. This is the QWidget which displays the plot and interacts with the ...">QCustomPlot</a> one can divide layout elements into two categories: The ones that are invisible by themselves, because they don't draw anything. Their only purpose is to manage the position and size of other layout elements. This category of layout elements usually use <a class="el" href="class_q_c_p_layout.html" title="The abstract base class for layouts.">QCPLayout</a> as base class. Then there is the category of layout elements which actually draw something. For example, <a class="el" href="class_q_c_p_axis_rect.html" title="Holds multiple axes and arranges them in a rectangular shape.">QCPAxisRect</a>, <a class="el" href="class_q_c_p_legend.html" title="Manages a legend inside a QCustomPlot.">QCPLegend</a> and <a class="el" href="class_q_c_p_text_element.html" title="A layout element displaying a text.">QCPTextElement</a> are of this category. This does not necessarily mean that the latter category can't have child layout elements. <a class="el" href="class_q_c_p_legend.html" title="Manages a legend inside a QCustomPlot.">QCPLegend</a> for instance, actually derives from <a class="el" href="class_q_c_p_layout_grid.html" title="A layout that arranges child elements in a grid.">QCPLayoutGrid</a> and the individual legend items are child layout elements in the grid layout. </p>
+</div><h2 class="groupheader">Перечисления</h2>
+<a id="a0afb3e5773529e4bd20e448f81be4d2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0afb3e5773529e4bd20e448f81be4d2a">&#9670;&nbsp;</a></span>SizeConstraintRect</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_q_c_p_layout_element.html#a0afb3e5773529e4bd20e448f81be4d2a">QCPLayoutElement::SizeConstraintRect</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Defines to which rect of a layout element the size constraints that can be set via <a class="el" href="class_q_c_p_layout_element.html#a5dd29a3c8bc88440c97c06b67be7886b">setMinimumSize</a> and <a class="el" href="class_q_c_p_layout_element.html#a74eb5280a737ab44833d506db65efd95">setMaximumSize</a> apply. The outer rect (<a class="el" href="class_q_c_p_layout_element.html#a2a32a12a6161c9dffbadeb9cc585510c">outerRect</a>) includes the margins (e.g. in the case of a <a class="el" href="class_q_c_p_axis_rect.html" title="Holds multiple axes and arranges them in a rectangular shape.">QCPAxisRect</a> the axis labels), whereas the inner rect (<a class="el" href="class_q_c_p_layout_element.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a>) does not.</p>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="class_q_c_p_layout_element.html#a361666cdcc6fbfd37344cc44be746b0f">setSizeConstraintRect</a> </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a0afb3e5773529e4bd20e448f81be4d2aa7fa7e25cd23758b9915c64ed9f1be26c"></a>scrInnerRect&#160;</td><td class="fielddoc"><p>Minimum/Maximum size constraints apply to inner rect. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0afb3e5773529e4bd20e448f81be4d2aabe2745b41a6131ed194e13591b08e04d"></a>scrOuterRect&#160;</td><td class="fielddoc"><p>Minimum/Maximum size constraints apply to outer rect, thus include layout element margins </p>
+</td></tr>
+</table>
+<div class="fragment"><div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;                          {</div>
+<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;    <a class="code" href="class_q_c_p_layout_element.html#a0afb3e5773529e4bd20e448f81be4d2aa7fa7e25cd23758b9915c64ed9f1be26c">scrInnerRect</a>  </div>
+<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;    ,</div>
+<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;    <a class="code" href="class_q_c_p_layout_element.html#a0afb3e5773529e4bd20e448f81be4d2aabe2745b41a6131ed194e13591b08e04d">scrOuterRect</a>  </div>
+<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;  };</div>
+<div class="ttc" id="aclass_q_c_p_layout_element_html_a0afb3e5773529e4bd20e448f81be4d2aa7fa7e25cd23758b9915c64ed9f1be26c"><div class="ttname"><a href="class_q_c_p_layout_element.html#a0afb3e5773529e4bd20e448f81be4d2aa7fa7e25cd23758b9915c64ed9f1be26c">QCPLayoutElement::scrInnerRect</a></div><div class="ttdeci">@ scrInnerRect</div><div class="ttdoc">Minimum/Maximum size constraints apply to inner rect.</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:1405</div></div>
+<div class="ttc" id="aclass_q_c_p_layout_element_html_a0afb3e5773529e4bd20e448f81be4d2aabe2745b41a6131ed194e13591b08e04d"><div class="ttname"><a href="class_q_c_p_layout_element.html#a0afb3e5773529e4bd20e448f81be4d2aabe2745b41a6131ed194e13591b08e04d">QCPLayoutElement::scrOuterRect</a></div><div class="ttdeci">@ scrOuterRect</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:1407</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0d83360e05735735aaf6d7983c56374d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d83360e05735735aaf6d7983c56374d">&#9670;&nbsp;</a></span>UpdatePhase</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_q_c_p_layout_element.html#a0d83360e05735735aaf6d7983c56374d">QCPLayoutElement::UpdatePhase</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Defines the phases of the update process, that happens just before a replot. At each phase, <a class="el" href="class_q_c_p_layout_element.html#a929c2ec62e0e0e1d8418eaa802e2af9b">update</a> is called with the according UpdatePhase value. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a0d83360e05735735aaf6d7983c56374dad6119882eba136357c2f627992e527d3"></a>upPreparation&#160;</td><td class="fielddoc"><p>Phase used for any type of preparation that needs to be done before margin calculation and layout </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0d83360e05735735aaf6d7983c56374da288cb59a92280e47261a341f2813e676"></a>upMargins&#160;</td><td class="fielddoc"><p>Phase in which the margins are calculated and set. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0d83360e05735735aaf6d7983c56374da5d1ccf5d79967c232c3c511796860045"></a>upLayout&#160;</td><td class="fielddoc"><p>Final phase in which the layout system places the rects of the elements </p>
+</td></tr>
+</table>
+<div class="fragment"><div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;                   {</div>
+<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;    <a class="code" href="class_q_c_p_layout_element.html#a0d83360e05735735aaf6d7983c56374dad6119882eba136357c2f627992e527d3">upPreparation</a>  </div>
+<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;    ,</div>
+<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;    <a class="code" href="class_q_c_p_layout_element.html#a0d83360e05735735aaf6d7983c56374da288cb59a92280e47261a341f2813e676">upMargins</a>  </div>
+<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;    ,</div>
+<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;    <a class="code" href="class_q_c_p_layout_element.html#a0d83360e05735735aaf6d7983c56374da5d1ccf5d79967c232c3c511796860045">upLayout</a>  </div>
+<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;  };</div>
+<div class="ttc" id="aclass_q_c_p_layout_element_html_a0d83360e05735735aaf6d7983c56374da288cb59a92280e47261a341f2813e676"><div class="ttname"><a href="class_q_c_p_layout_element.html#a0d83360e05735735aaf6d7983c56374da288cb59a92280e47261a341f2813e676">QCPLayoutElement::upMargins</a></div><div class="ttdeci">@ upMargins</div><div class="ttdoc">Phase in which the margins are calculated and set.</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:1389</div></div>
+<div class="ttc" id="aclass_q_c_p_layout_element_html_a0d83360e05735735aaf6d7983c56374da5d1ccf5d79967c232c3c511796860045"><div class="ttname"><a href="class_q_c_p_layout_element.html#a0d83360e05735735aaf6d7983c56374da5d1ccf5d79967c232c3c511796860045">QCPLayoutElement::upLayout</a></div><div class="ttdeci">@ upLayout</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:1391</div></div>
+<div class="ttc" id="aclass_q_c_p_layout_element_html_a0d83360e05735735aaf6d7983c56374dad6119882eba136357c2f627992e527d3"><div class="ttname"><a href="class_q_c_p_layout_element.html#a0d83360e05735735aaf6d7983c56374dad6119882eba136357c2f627992e527d3">QCPLayoutElement::upPreparation</a></div><div class="ttdeci">@ upPreparation</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:1386</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a2c25c7bf27eaa1fad66807af855d8d81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c25c7bf27eaa1fad66807af855d8d81">&#9670;&nbsp;</a></span>QCPLayoutElement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QCPLayoutElement::QCPLayoutElement </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_q_custom_plot.html">QCustomPlot</a> *&#160;</td>
+          <td class="paramname"><em>parentPlot</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates an instance of <a class="el" href="class_q_c_p_layout_element.html" title="The abstract base class for all objects that form the layout system.">QCPLayoutElement</a> and sets default values. </p>
+<div class="fragment"><div class="line"><a name="l03154"></a><span class="lineno"> 3154</span>&#160;    : <a class="code" href="class_q_c_p_layerable.html#a4f87f420cb2597e2b393aab934d2f099">QCPLayerable</a>(</div>
+<div class="line"><a name="l03155"></a><span class="lineno"> 3155</span>&#160;          <a class="code" href="class_q_c_p_layerable.html#a473edb813a4c1929d6b6a8fe3ff3faf7">parentPlot</a>),  <span class="comment">// parenthood is changed as soon as layout element gets</span></div>
+<div class="line"><a name="l03156"></a><span class="lineno"> 3156</span>&#160;                        <span class="comment">// inserted into a layout (except for top level layout)</span></div>
+<div class="line"><a name="l03157"></a><span class="lineno"> 3157</span>&#160;      <a class="code" href="class_q_c_p_layout_element.html#ae7c75c25549608bd688bdb65d4c38066">mParentLayout</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><a name="l03158"></a><span class="lineno"> 3158</span>&#160;      <a class="code" href="class_q_c_p_layout_element.html#affef747c81632de33f08483b7fd10d01">mMinimumSize</a>(),</div>
+<div class="line"><a name="l03159"></a><span class="lineno"> 3159</span>&#160;      <a class="code" href="class_q_c_p_layout_element.html#a64a387973fd4addac842028c89088998">mMaximumSize</a>(QWIDGETSIZE_MAX, QWIDGETSIZE_MAX),</div>
+<div class="line"><a name="l03160"></a><span class="lineno"> 3160</span>&#160;      <a class="code" href="class_q_c_p_layout_element.html#acc012635b1ae178ff3c4da8a3af303a2">mSizeConstraintRect</a>(<a class="code" href="class_q_c_p_layout_element.html#a0afb3e5773529e4bd20e448f81be4d2aa7fa7e25cd23758b9915c64ed9f1be26c">scrInnerRect</a>),</div>
+<div class="line"><a name="l03161"></a><span class="lineno"> 3161</span>&#160;      <a class="code" href="class_q_c_p_layout_element.html#ad8896f05550389f7b9e92c9e6cdf6e01">mRect</a>(0, 0, 0, 0),</div>
+<div class="line"><a name="l03162"></a><span class="lineno"> 3162</span>&#160;      <a class="code" href="class_q_c_p_layout_element.html#a07bb4973379e75cb0fa5b032c1d24afd">mOuterRect</a>(0, 0, 0, 0),</div>
+<div class="line"><a name="l03163"></a><span class="lineno"> 3163</span>&#160;      <a class="code" href="class_q_c_p_layout_element.html#ac2a32b99ee527ca5dfff9da03628fe94">mMargins</a>(0, 0, 0, 0),</div>
+<div class="line"><a name="l03164"></a><span class="lineno"> 3164</span>&#160;      <a class="code" href="class_q_c_p_layout_element.html#a5ba71f25d1af4bb092b28df618538e63">mMinimumMargins</a>(0, 0, 0, 0),</div>
+<div class="line"><a name="l03165"></a><span class="lineno"> 3165</span>&#160;      <a class="code" href="class_q_c_p_layout_element.html#af61c70354d1275778d68206b2a1b2d36">mAutoMargins</a>(<a class="code" href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54a43d7361cb0c5244eabdc962021bffebc">QCP::msAll</a>) {}</div>
+<div class="ttc" id="aclass_q_c_p_layerable_html_a473edb813a4c1929d6b6a8fe3ff3faf7"><div class="ttname"><a href="class_q_c_p_layerable.html#a473edb813a4c1929d6b6a8fe3ff3faf7">QCPLayerable::parentPlot</a></div><div class="ttdeci">QCustomPlot * parentPlot() const</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:868</div></div>
+<div class="ttc" id="aclass_q_c_p_layerable_html_a4f87f420cb2597e2b393aab934d2f099"><div class="ttname"><a href="class_q_c_p_layerable.html#a4f87f420cb2597e2b393aab934d2f099">QCPLayerable::QCPLayerable</a></div><div class="ttdeci">QCPLayerable(QCustomPlot *plot, QString targetLayer=QString(), QCPLayerable *parentLayerable=nullptr)</div><div class="ttdef"><b>Definition:</b> qcustomplot.cpp:1335</div></div>
+<div class="ttc" id="aclass_q_c_p_layout_element_html_a07bb4973379e75cb0fa5b032c1d24afd"><div class="ttname"><a href="class_q_c_p_layout_element.html#a07bb4973379e75cb0fa5b032c1d24afd">QCPLayoutElement::mOuterRect</a></div><div class="ttdeci">QRect mOuterRect</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:1459</div></div>
+<div class="ttc" id="aclass_q_c_p_layout_element_html_a5ba71f25d1af4bb092b28df618538e63"><div class="ttname"><a href="class_q_c_p_layout_element.html#a5ba71f25d1af4bb092b28df618538e63">QCPLayoutElement::mMinimumMargins</a></div><div class="ttdeci">QMargins mMinimumMargins</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:1460</div></div>
+<div class="ttc" id="aclass_q_c_p_layout_element_html_a64a387973fd4addac842028c89088998"><div class="ttname"><a href="class_q_c_p_layout_element.html#a64a387973fd4addac842028c89088998">QCPLayoutElement::mMaximumSize</a></div><div class="ttdeci">QSize mMaximumSize</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:1457</div></div>
+<div class="ttc" id="aclass_q_c_p_layout_element_html_ac2a32b99ee527ca5dfff9da03628fe94"><div class="ttname"><a href="class_q_c_p_layout_element.html#ac2a32b99ee527ca5dfff9da03628fe94">QCPLayoutElement::mMargins</a></div><div class="ttdeci">QMargins mMargins</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:1460</div></div>
+<div class="ttc" id="aclass_q_c_p_layout_element_html_acc012635b1ae178ff3c4da8a3af303a2"><div class="ttname"><a href="class_q_c_p_layout_element.html#acc012635b1ae178ff3c4da8a3af303a2">QCPLayoutElement::mSizeConstraintRect</a></div><div class="ttdeci">SizeConstraintRect mSizeConstraintRect</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:1458</div></div>
+<div class="ttc" id="aclass_q_c_p_layout_element_html_ad8896f05550389f7b9e92c9e6cdf6e01"><div class="ttname"><a href="class_q_c_p_layout_element.html#ad8896f05550389f7b9e92c9e6cdf6e01">QCPLayoutElement::mRect</a></div><div class="ttdeci">QRect mRect</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:1459</div></div>
+<div class="ttc" id="aclass_q_c_p_layout_element_html_ae7c75c25549608bd688bdb65d4c38066"><div class="ttname"><a href="class_q_c_p_layout_element.html#ae7c75c25549608bd688bdb65d4c38066">QCPLayoutElement::mParentLayout</a></div><div class="ttdeci">QCPLayout * mParentLayout</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:1456</div></div>
+<div class="ttc" id="aclass_q_c_p_layout_element_html_af61c70354d1275778d68206b2a1b2d36"><div class="ttname"><a href="class_q_c_p_layout_element.html#af61c70354d1275778d68206b2a1b2d36">QCPLayoutElement::mAutoMargins</a></div><div class="ttdeci">QCP::MarginSides mAutoMargins</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:1461</div></div>
+<div class="ttc" id="aclass_q_c_p_layout_element_html_affef747c81632de33f08483b7fd10d01"><div class="ttname"><a href="class_q_c_p_layout_element.html#affef747c81632de33f08483b7fd10d01">QCPLayoutElement::mMinimumSize</a></div><div class="ttdeci">QSize mMinimumSize</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:1457</div></div>
+<div class="ttc" id="anamespace_q_c_p_html_a7e487e3e2ccb62ab7771065bab7cae54a43d7361cb0c5244eabdc962021bffebc"><div class="ttname"><a href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54a43d7361cb0c5244eabdc962021bffebc">QCP::msAll</a></div><div class="ttdeci">@ msAll</div><div class="ttdoc">0xFF all margins</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:226</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2fa26d3d22a2854c4da1d80f188db961"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fa26d3d22a2854c4da1d80f188db961">&#9670;&nbsp;</a></span>~QCPLayoutElement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QCPLayoutElement::~QCPLayoutElement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l03167"></a><span class="lineno"> 3167</span>&#160;                                    {</div>
+<div class="line"><a name="l03168"></a><span class="lineno"> 3168</span>&#160;  <a class="code" href="class_q_c_p_layout_element.html#a516e56f76b6bc100e8e71d329866847d">setMarginGroup</a>(<a class="code" href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54a43d7361cb0c5244eabdc962021bffebc">QCP::msAll</a>,</div>
+<div class="line"><a name="l03169"></a><span class="lineno"> 3169</span>&#160;                 <span class="keyword">nullptr</span>);  <span class="comment">// unregister at margin groups, if there are any</span></div>
+<div class="line"><a name="l03170"></a><span class="lineno"> 3170</span>&#160;  <span class="comment">// unregister at layout:</span></div>
+<div class="line"><a name="l03171"></a><span class="lineno"> 3171</span>&#160;  <span class="keywordflow">if</span> (qobject_cast&lt;QCPLayout *&gt;(</div>
+<div class="line"><a name="l03172"></a><span class="lineno"> 3172</span>&#160;          <a class="code" href="class_q_c_p_layout_element.html#ae7c75c25549608bd688bdb65d4c38066">mParentLayout</a>))  <span class="comment">// the qobject_cast is just a safeguard in case the</span></div>
+<div class="line"><a name="l03173"></a><span class="lineno"> 3173</span>&#160;                           <span class="comment">// layout forgets to call clear() in its dtor and</span></div>
+<div class="line"><a name="l03174"></a><span class="lineno"> 3174</span>&#160;                           <span class="comment">// this dtor is called by QObject dtor</span></div>
+<div class="line"><a name="l03175"></a><span class="lineno"> 3175</span>&#160;    <a class="code" href="class_q_c_p_layout_element.html#ae7c75c25549608bd688bdb65d4c38066">mParentLayout</a>-&gt;<a class="code" href="class_q_c_p_layout.html#ada26cd17e56472b0b4d7fbbc96873e4c">take</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l03176"></a><span class="lineno"> 3176</span>&#160;}</div>
+<div class="ttc" id="aclass_q_c_p_layout_element_html_a516e56f76b6bc100e8e71d329866847d"><div class="ttname"><a href="class_q_c_p_layout_element.html#a516e56f76b6bc100e8e71d329866847d">QCPLayoutElement::setMarginGroup</a></div><div class="ttdeci">void setMarginGroup(QCP::MarginSides sides, QCPMarginGroup *group)</div><div class="ttdef"><b>Definition:</b> qcustomplot.cpp:3336</div></div>
+<div class="ttc" id="aclass_q_c_p_layout_html_ada26cd17e56472b0b4d7fbbc96873e4c"><div class="ttname"><a href="class_q_c_p_layout.html#ada26cd17e56472b0b4d7fbbc96873e4c">QCPLayout::take</a></div><div class="ttdeci">virtual bool take(QCPLayoutElement *element)=0</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a0a8f18141bcf46cf40ad4c13324ff346"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a8f18141bcf46cf40ad4c13324ff346">&#9670;&nbsp;</a></span>applyDefaultAntialiasingHint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void QCPLayoutElement::applyDefaultAntialiasingHint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_q_c_p_painter.html">QCPPainter</a> *&#160;</td>
+          <td class="paramname"><em>painter</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This function applies the default antialiasing setting to the specified <em>painter</em>, using the function <a class="el" href="class_q_c_p_layerable.html#acb663e375d2d36dc5c55021ee5a2119b">applyAntialiasingHint</a>. It is the antialiasing state the painter is put in, when <a class="el" href="class_q_c_p_layout_element.html#ad1c597b1d608cfdd86e7b76819a94cfb">draw</a> is called on the layerable. If the layerable has multiple entities whose antialiasing setting may be specified individually, this function should set the antialiasing state of the most prominent entity. In this case however, the <a class="el" href="class_q_c_p_layout_element.html#ad1c597b1d608cfdd86e7b76819a94cfb">draw</a> function usually calls the specialized versions of this function before drawing each entity, effectively overriding the setting of the default antialiasing hint.</p>
+<p><b>First example:</b> <a class="el" href="class_q_c_p_graph.html" title="A plottable representing a graph in a plot.">QCPGraph</a> has multiple entities that have an antialiasing setting: The graph line, fills and scatters. Those can be configured via <a class="el" href="class_q_c_p_layerable.html#a4fd43e89be4a553ead41652565ff0581">QCPGraph::setAntialiased</a>, <a class="el" href="class_q_c_p_abstract_plottable.html#a089d6b5577120239b55c39ed27c39536">QCPGraph::setAntialiasedFill</a> and <a class="el" href="class_q_c_p_abstract_plottable.html#a2f03f067ede2ed4da6f7d0e4777a3f02">QCPGraph::setAntialiasedScatters</a>. Consequently, there isn't only the <a class="el" href="class_q_c_p_abstract_plottable.html#ac032077fb0db93d6faa3273d02363398">QCPGraph::applyDefaultAntialiasingHint</a> function (which corresponds to the graph line's antialiasing), but specialized ones like <a class="el" href="class_q_c_p_abstract_plottable.html#a8d06a59ea23324cce6330ebf2262c0ed">QCPGraph::applyFillAntialiasingHint</a> and <a class="el" href="class_q_c_p_abstract_plottable.html#ac95f26b15a1e5d9c7bd2c0a46d760fc9">QCPGraph::applyScattersAntialiasingHint</a>. So before drawing one of those entities, <a class="el" href="class_q_c_p_graph.html#a2b0849598f06e834b43ce18cd13bcdc3">QCPGraph::draw</a> calls the respective specialized applyAntialiasingHint function.</p>
+<p><b>Second example:</b> <a class="el" href="class_q_c_p_item_line.html" title="A line from one point to another.">QCPItemLine</a> consists only of a line so there is only one antialiasing setting which can be controlled with <a class="el" href="class_q_c_p_layerable.html#a4fd43e89be4a553ead41652565ff0581">QCPItemLine::setAntialiased</a>. (This function is inherited by all layerables. The specialized functions, as seen on <a class="el" href="class_q_c_p_graph.html" title="A plottable representing a graph in a plot.">QCPGraph</a>, must be added explicitly to the respective layerable subclass.) Consequently it only has the normal <a class="el" href="class_q_c_p_abstract_item.html#a5579ce9ec7cad202499886b042448b10">QCPItemLine::applyDefaultAntialiasingHint</a>. The <a class="el" href="class_q_c_p_item_line.html#ae184140b61b2ef5b8edde76304447200">QCPItemLine::draw</a> function doesn't need to care about setting any antialiasing states, because the default antialiasing hint is already set on the painter when the <a class="el" href="class_q_c_p_layout_element.html#ad1c597b1d608cfdd86e7b76819a94cfb">draw</a> function is called, and that's the state it wants to draw the line with. </p>
+
+<p>Замещает <a class="el" href="class_q_c_p_layerable.html#afdf83ddc6a265cbf4c89fe99d3d93473">QCPLayerable</a>.</p>
+
+<p>Переопределяется в <a class="el" href="class_q_c_p_polar_axis_angular.html#ae29231b68e311a3004a310b65b14ba5a">QCPPolarAxisAngular</a>, <a class="el" href="class_q_c_p_color_scale.html#af1b24d24a70f25b65d29f09e413390a8">QCPColorScale</a>, <a class="el" href="class_q_c_p_text_element.html#a91f2e4b4a639d9079e89a0030c7ed352">QCPTextElement</a>, <a class="el" href="class_q_c_p_legend.html#a817f75c234f82a2e26643dc0de742095">QCPLegend</a>, <a class="el" href="class_q_c_p_abstract_legend_item.html#a6bfbcb9ace779f4f6fe22241c32a67c9">QCPAbstractLegendItem</a> и <a class="el" href="class_q_c_p_axis_rect.html#a4a318008e2b7f881a14c3d97186b31f9">QCPAxisRect</a>.</p>
+<div class="fragment"><div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;                      {</div>
+<div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;    Q_UNUSED(painter)</div>
+<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2585bc8c5cc70ee712909751a2fc8909"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2585bc8c5cc70ee712909751a2fc8909">&#9670;&nbsp;</a></span>autoMargins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QCP::MarginSides QCPLayoutElement::autoMargins </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_q_c_p_layout_element.html#af61c70354d1275778d68206b2a1b2d36">mAutoMargins</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a005c9f0fe84bc1591a2cf2c46fd477b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a005c9f0fe84bc1591a2cf2c46fd477b4">&#9670;&nbsp;</a></span>calculateAutoMargin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int QCPLayoutElement::calculateAutoMargin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54">QCP::MarginSide</a>&#160;</td>
+          <td class="paramname"><em>side</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Переопределяется в <a class="el" href="class_q_c_p_axis_rect.html#ac51055d83f5f414b6d013d3a24b0a941">QCPAxisRect</a>.</p>
+<div class="fragment"><div class="line"><a name="l03519"></a><span class="lineno"> 3519</span>&#160;                                                            {</div>
+<div class="line"><a name="l03520"></a><span class="lineno"> 3520</span>&#160;  <span class="keywordflow">return</span> qMax(<a class="code" href="namespace_q_c_p.html#a23a2679d3495c444acc26acc61e35b5b">QCP::getMarginValue</a>(<a class="code" href="class_q_c_p_layout_element.html#ac2a32b99ee527ca5dfff9da03628fe94">mMargins</a>, side),</div>
+<div class="line"><a name="l03521"></a><span class="lineno"> 3521</span>&#160;              <a class="code" href="namespace_q_c_p.html#a23a2679d3495c444acc26acc61e35b5b">QCP::getMarginValue</a>(<a class="code" href="class_q_c_p_layout_element.html#a5ba71f25d1af4bb092b28df618538e63">mMinimumMargins</a>, side));</div>
+<div class="line"><a name="l03522"></a><span class="lineno"> 3522</span>&#160;}</div>
+<div class="ttc" id="anamespace_q_c_p_html_a23a2679d3495c444acc26acc61e35b5b"><div class="ttname"><a href="namespace_q_c_p.html#a23a2679d3495c444acc26acc61e35b5b">QCP::getMarginValue</a></div><div class="ttdeci">int getMarginValue(const QMargins &amp;margins, QCP::MarginSide side)</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:484</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad1c597b1d608cfdd86e7b76819a94cfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1c597b1d608cfdd86e7b76819a94cfb">&#9670;&nbsp;</a></span>draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void QCPLayoutElement::draw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_q_c_p_painter.html">QCPPainter</a> *&#160;</td>
+          <td class="paramname"><em>painter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_q_c_p_layerable.html#aecf2f7087482d4b6a78cb2770e5ed12d">QCPLayerable</a>.</p>
+
+<p>Переопределяется в <a class="el" href="class_q_c_p_abstract_legend_item.html#a14ce0b09f5b814c765a0d790bd838909">QCPAbstractLegendItem</a>, <a class="el" href="class_q_c_p_polar_legend_item.html#abf9639f11bfc64779f243cca920aadef">QCPPolarLegendItem</a>, <a class="el" href="class_q_c_p_polar_axis_angular.html#abc33754f6575a0ac2cdc597bbd11c6c7">QCPPolarAxisAngular</a>, <a class="el" href="class_q_c_p_color_scale_axis_rect_private.html#a52a21c7cbe086cd587c955cfe6e25e3b">QCPColorScaleAxisRectPrivate</a>, <a class="el" href="class_q_c_p_text_element.html#ad1dae61ea77ae74841f3c2fb765fc88e">QCPTextElement</a>, <a class="el" href="class_q_c_p_legend.html#a74f93358d2b4a76ec95c3a5d825582a3">QCPLegend</a>, <a class="el" href="class_q_c_p_plottable_legend_item.html#a5838366619200e99680afa6d355d13fa">QCPPlottableLegendItem</a> и <a class="el" href="class_q_c_p_axis_rect.html#af710c50530e370539a4439d6c4db9090">QCPAxisRect</a>.</p>
+<div class="fragment"><div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;{ Q_UNUSED(painter) }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a76dec8cb31e498994a944d7647a43309"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76dec8cb31e498994a944d7647a43309">&#9670;&nbsp;</a></span>elements()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; <a class="el" href="class_q_c_p_layout_element.html">QCPLayoutElement</a> * &gt; QCPLayoutElement::elements </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>recursive</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a list of all child elements in this layout element. If <em>recursive</em> is true, all sub-child elements are included in the list, too.</p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>There may be <code>nullptr</code> entries in the returned list. For example, <a class="el" href="class_q_c_p_layout_grid.html" title="A layout that arranges child elements in a grid.">QCPLayoutGrid</a> may have empty cells which yield <code>nullptr</code> at the respective index. </dd></dl>
+
+<p>Переопределяется в <a class="el" href="class_q_c_p_polar_axis_angular.html#a95fa9af1bcb033be5c394ec2767b000e">QCPPolarAxisAngular</a>, <a class="el" href="class_q_c_p_axis_rect.html#a3aee067fd105f2fa8de9eb8024435ac5">QCPAxisRect</a>, <a class="el" href="class_q_c_p_layout_grid.html#a7d5b968b4cf57393e9e387976d91f8f7">QCPLayoutGrid</a> и <a class="el" href="class_q_c_p_layout.html#aca129722c019f91d3367046f80abfa77">QCPLayout</a>.</p>
+<div class="fragment"><div class="line"><a name="l03464"></a><span class="lineno"> 3464</span>&#160;                                                                         {</div>
+<div class="line"><a name="l03465"></a><span class="lineno"> 3465</span>&#160;  Q_UNUSED(recursive)</div>
+<div class="line"><a name="l03466"></a><span class="lineno"> 3466</span>&#160;  <span class="keywordflow">return</span> QList&lt;QCPLayoutElement *&gt;();</div>
+<div class="line"><a name="l03467"></a><span class="lineno"> 3467</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4efdcbde9d28f410e5ef166c9d691deb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4efdcbde9d28f410e5ef166c9d691deb">&#9670;&nbsp;</a></span>layout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_c_p_layout.html">QCPLayout</a> * QCPLayoutElement::layout </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the parent layout of this layout element. </p>
+<div class="fragment"><div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_q_c_p_layout_element.html#ae7c75c25549608bd688bdb65d4c38066">mParentLayout</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a765f041a73af0c2de41b41a5a03e31a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a765f041a73af0c2de41b41a5a03e31a4">&#9670;&nbsp;</a></span>layoutChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QCPLayoutElement::layoutChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Переопределяется в <a class="el" href="class_q_c_p_axis_rect.html#a575e38ac71a21906dc2d7b3364db2d62">QCPAxisRect</a>.</p>
+<div class="fragment"><div class="line"><a name="l03536"></a><span class="lineno"> 3536</span>&#160;{}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8af6bcf81e12fe1d6f44490f34522b90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8af6bcf81e12fe1d6f44490f34522b90">&#9670;&nbsp;</a></span>marginGroup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_c_p_margin_group.html">QCPMarginGroup</a>* QCPLayoutElement::marginGroup </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54">QCP::MarginSide</a>&#160;</td>
+          <td class="paramname"><em>side</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;                                                        {</div>
+<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_q_c_p_layout_element.html#ae027b5caf347c2fb635e797513712a32">mMarginGroups</a>.value(side, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;  }</div>
+<div class="ttc" id="aclass_q_c_p_layout_element_html_ae027b5caf347c2fb635e797513712a32"><div class="ttname"><a href="class_q_c_p_layout_element.html#ae027b5caf347c2fb635e797513712a32">QCPLayoutElement::mMarginGroups</a></div><div class="ttdeci">QHash&lt; QCP::MarginSide, QCPMarginGroup * &gt; mMarginGroups</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:1462</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a84bee9a0d9cf3adf1b4384f361a253fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84bee9a0d9cf3adf1b4384f361a253fd">&#9670;&nbsp;</a></span>marginGroups()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QHash&lt;<a class="el" href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54">QCP::MarginSide</a>, <a class="el" href="class_q_c_p_margin_group.html">QCPMarginGroup</a> *&gt; QCPLayoutElement::marginGroups </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;                                                              {</div>
+<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_q_c_p_layout_element.html#ae027b5caf347c2fb635e797513712a32">mMarginGroups</a>;</div>
+<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af4ac9450aa2d60863bf3a8ea0c940c9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4ac9450aa2d60863bf3a8ea0c940c9d">&#9670;&nbsp;</a></span>margins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QMargins QCPLayoutElement::margins </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_q_c_p_layout_element.html#ac2a32b99ee527ca5dfff9da03628fe94">mMargins</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad96efb977a26e360e8a64a4c1e56456d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad96efb977a26e360e8a64a4c1e56456d">&#9670;&nbsp;</a></span>maximumOuterSizeHint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSize QCPLayoutElement::maximumOuterSizeHint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the suggested maximum size this layout element (the <a class="el" href="class_q_c_p_layout_element.html#a2a32a12a6161c9dffbadeb9cc585510c">outerRect</a>) may be expanded to, if no manual maximum size is set.</p>
+<p>if a maximum size (<a class="el" href="class_q_c_p_layout_element.html#a74eb5280a737ab44833d506db65efd95">setMaximumSize</a>) was not set manually, parent layouts use the returned size (usually indirectly through <a class="el" href="class_q_c_p_layout.html#add49fd6843821a6126914b837ed52e22">QCPLayout::getFinalMaximumOuterSize</a>) to determine the maximum allowed size of this layout element.</p>
+<p>A manual maximum size is considered set if it is smaller than Qt's <code>QWIDGETSIZE_MAX</code>.</p>
+<p>The default implementation simply returns <code>QWIDGETSIZE_MAX</code> for both width and height, implying no suggested maximum size. Reimplementations may use their detailed knowledge about the layout element's content to provide size hints. </p>
+
+<p>Переопределяется в <a class="el" href="class_q_c_p_text_element.html#ae82475b50c10a5b3314d996d50ae536b">QCPTextElement</a> и <a class="el" href="class_q_c_p_layout_grid.html#a41ce0014c220d77b909e2ca937f0e599">QCPLayoutGrid</a>.</p>
+<div class="fragment"><div class="line"><a name="l03452"></a><span class="lineno"> 3452</span>&#160;                                                   {</div>
+<div class="line"><a name="l03453"></a><span class="lineno"> 3453</span>&#160;  <span class="keywordflow">return</span> {QWIDGETSIZE_MAX, QWIDGETSIZE_MAX};</div>
+<div class="line"><a name="l03454"></a><span class="lineno"> 3454</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afb9503858d4aa0f3b9f1794b084fb40a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb9503858d4aa0f3b9f1794b084fb40a">&#9670;&nbsp;</a></span>maximumSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSize QCPLayoutElement::maximumSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_q_c_p_layout_element.html#a64a387973fd4addac842028c89088998">mMaximumSize</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5eae30e28f28d73fd1c56409c011393e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eae30e28f28d73fd1c56409c011393e">&#9670;&nbsp;</a></span>minimumMargins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QMargins QCPLayoutElement::minimumMargins </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_q_c_p_layout_element.html#a5ba71f25d1af4bb092b28df618538e63">mMinimumMargins</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a46789036c4fcb190fa374f91321d7c09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46789036c4fcb190fa374f91321d7c09">&#9670;&nbsp;</a></span>minimumOuterSizeHint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSize QCPLayoutElement::minimumOuterSizeHint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the suggested minimum size this layout element (the <a class="el" href="class_q_c_p_layout_element.html#a2a32a12a6161c9dffbadeb9cc585510c">outerRect</a>) may be compressed to, if no manual minimum size is set.</p>
+<p>if a minimum size (<a class="el" href="class_q_c_p_layout_element.html#a5dd29a3c8bc88440c97c06b67be7886b">setMinimumSize</a>) was not set manually, parent layouts use the returned size (usually indirectly through <a class="el" href="class_q_c_p_layout.html#a864fddc84721f186663faf3683f1fa70">QCPLayout::getFinalMinimumOuterSize</a>) to determine the minimum allowed size of this layout element.</p>
+<p>A manual minimum size is considered set if it is non-zero.</p>
+<p>The default implementation simply returns the sum of the horizontal margins for the width and the sum of the vertical margins for the height. Reimplementations may use their detailed knowledge about the layout element's content to provide size hints. </p>
+
+<p>Переопределяется в <a class="el" href="class_q_c_p_polar_legend_item.html#a17e2c0da8308a014b1d4339131215217">QCPPolarLegendItem</a>, <a class="el" href="class_q_c_p_text_element.html#a47b8541f55ff520c557e0f27461f109e">QCPTextElement</a>, <a class="el" href="class_q_c_p_plottable_legend_item.html#a8b543f3ac32b2fe59326e01c1101b3b8">QCPPlottableLegendItem</a> и <a class="el" href="class_q_c_p_layout_grid.html#a0438bc58b4d3894d01db95b08d4268df">QCPLayoutGrid</a>.</p>
+<div class="fragment"><div class="line"><a name="l03430"></a><span class="lineno"> 3430</span>&#160;                                                   {</div>
+<div class="line"><a name="l03431"></a><span class="lineno"> 3431</span>&#160;  <span class="keywordflow">return</span> {<a class="code" href="class_q_c_p_layout_element.html#ac2a32b99ee527ca5dfff9da03628fe94">mMargins</a>.left() + <a class="code" href="class_q_c_p_layout_element.html#ac2a32b99ee527ca5dfff9da03628fe94">mMargins</a>.right(),</div>
+<div class="line"><a name="l03432"></a><span class="lineno"> 3432</span>&#160;          <a class="code" href="class_q_c_p_layout_element.html#ac2a32b99ee527ca5dfff9da03628fe94">mMargins</a>.top() + <a class="code" href="class_q_c_p_layout_element.html#ac2a32b99ee527ca5dfff9da03628fe94">mMargins</a>.bottom()};</div>
+<div class="line"><a name="l03433"></a><span class="lineno"> 3433</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a60d4295468a2b57fe91f6f68e20c3993"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60d4295468a2b57fe91f6f68e20c3993">&#9670;&nbsp;</a></span>minimumSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSize QCPLayoutElement::minimumSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_q_c_p_layout_element.html#affef747c81632de33f08483b7fd10d01">mMinimumSize</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2a32a12a6161c9dffbadeb9cc585510c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a32a12a6161c9dffbadeb9cc585510c">&#9670;&nbsp;</a></span>outerRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRect QCPLayoutElement::outerRect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the outer rect of this layout element. The outer rect is the inner rect expanded by the margins (<a class="el" href="class_q_c_p_layout_element.html#a8f450b1f3f992ad576fce2c63d8b79cf">setMargins</a>, <a class="el" href="class_q_c_p_layout_element.html#accfda49994e3e6d51ed14504abf9d27d">setAutoMargins</a>). The outer rect is used (and set via <a class="el" href="class_q_c_p_layout_element.html#a38975ea13e36de8e53391ce41d94bc0f">setOuterRect</a>) by the parent <a class="el" href="class_q_c_p_layout.html">QCPLayout</a> to control the size of this layout element.</p>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="class_q_c_p_layout_element.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a> </dd></dl>
+<div class="fragment"><div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_q_c_p_layout_element.html#a07bb4973379e75cb0fa5b032c1d24afd">mOuterRect</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab4bb5c5a958451f5f153fdce350f13cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4bb5c5a958451f5f153fdce350f13cf">&#9670;&nbsp;</a></span>parentPlotInitialized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QCPLayoutElement::parentPlotInitialized </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_q_custom_plot.html">QCustomPlot</a> *&#160;</td>
+          <td class="paramname"><em>parentPlot</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Переопределяет метод предка <a class="el" href="class_q_c_p_layerable.html#ab20b7dbd8e0249ed61adb9622c427382">QCPLayerable</a>.</p>
+
+<p>Переопределяется в <a class="el" href="class_q_c_p_legend.html#a2b225cefb5eb267771e2c7c44fd2b408">QCPLegend</a>.</p>
+<div class="fragment"><div class="line"><a name="l03503"></a><span class="lineno"> 3503</span>&#160;                                                                    {</div>
+<div class="line"><a name="l03504"></a><span class="lineno"> 3504</span>&#160;  <span class="keywordflow">foreach</span> (<a class="code" href="class_q_c_p_layout_element.html">QCPLayoutElement</a> *el, <a class="code" href="class_q_c_p_layout_element.html#a76dec8cb31e498994a944d7647a43309">elements</a>(<span class="keyword">false</span>)) {</div>
+<div class="line"><a name="l03505"></a><span class="lineno"> 3505</span>&#160;    <span class="keywordflow">if</span> (!el-&gt;<a class="code" href="class_q_c_p_layerable.html#a473edb813a4c1929d6b6a8fe3ff3faf7">parentPlot</a>()) el-&gt;<a class="code" href="class_q_c_p_layerable.html#a8cbe5a0c9a5674249982f5ca5f8e02bc">initializeParentPlot</a>(<a class="code" href="class_q_c_p_layerable.html#a473edb813a4c1929d6b6a8fe3ff3faf7">parentPlot</a>);</div>
+<div class="line"><a name="l03506"></a><span class="lineno"> 3506</span>&#160;  }</div>
+<div class="line"><a name="l03507"></a><span class="lineno"> 3507</span>&#160;}</div>
+<div class="ttc" id="aclass_q_c_p_layerable_html_a8cbe5a0c9a5674249982f5ca5f8e02bc"><div class="ttname"><a href="class_q_c_p_layerable.html#a8cbe5a0c9a5674249982f5ca5f8e02bc">QCPLayerable::initializeParentPlot</a></div><div class="ttdeci">void initializeParentPlot(QCustomPlot *parentPlot)</div><div class="ttdef"><b>Definition:</b> qcustomplot.cpp:1495</div></div>
+<div class="ttc" id="aclass_q_c_p_layout_element_html"><div class="ttname"><a href="class_q_c_p_layout_element.html">QCPLayoutElement</a></div><div class="ttdoc">The abstract base class for all objects that form the layout system.</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:1366</div></div>
+<div class="ttc" id="aclass_q_c_p_layout_element_html_a76dec8cb31e498994a944d7647a43309"><div class="ttname"><a href="class_q_c_p_layout_element.html#a76dec8cb31e498994a944d7647a43309">QCPLayoutElement::elements</a></div><div class="ttdeci">virtual QList&lt; QCPLayoutElement * &gt; elements(bool recursive) const</div><div class="ttdef"><b>Definition:</b> qcustomplot.cpp:3464</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a208effccfe2cca4a0eaf9393e60f2dd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a208effccfe2cca4a0eaf9393e60f2dd4">&#9670;&nbsp;</a></span>rect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRect QCPLayoutElement::rect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the inner rect of this layout element. The inner rect is the outer rect (<a class="el" href="class_q_c_p_layout_element.html#a2a32a12a6161c9dffbadeb9cc585510c">outerRect</a>, <a class="el" href="class_q_c_p_layout_element.html#a38975ea13e36de8e53391ce41d94bc0f">setOuterRect</a>) shrinked by the margins (<a class="el" href="class_q_c_p_layout_element.html#a8f450b1f3f992ad576fce2c63d8b79cf">setMargins</a>, <a class="el" href="class_q_c_p_layout_element.html#accfda49994e3e6d51ed14504abf9d27d">setAutoMargins</a>).</p>
+<p>In some cases, the area between outer and inner rect is left blank. In other cases the margin area is used to display peripheral graphics while the main content is in the inner rect. This is where automatic margin calculation becomes interesting because it allows the layout element to adapt the margins to the peripheral graphics it wants to draw. For example, <a class="el" href="class_q_c_p_axis_rect.html">QCPAxisRect</a> draws the axis labels and tick labels in the margin area, thus needs to adjust the margins (if <a class="el" href="class_q_c_p_layout_element.html#accfda49994e3e6d51ed14504abf9d27d">setAutoMargins</a> is enabled) according to the space required by the labels of the axes.</p>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="class_q_c_p_layout_element.html#a2a32a12a6161c9dffbadeb9cc585510c">outerRect</a> </dd></dl>
+<div class="fragment"><div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_q_c_p_layout_element.html#ad8896f05550389f7b9e92c9e6cdf6e01">mRect</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a62d60f1b0ee9bb23e38811d71586d79c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62d60f1b0ee9bb23e38811d71586d79c">&#9670;&nbsp;</a></span>selectTest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double QCPLayoutElement::selectTest </td>
+          <td>(</td>
+          <td class="paramtype">const QPointF &amp;&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>onlySelectable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QVariant *&#160;</td>
+          <td class="paramname"><em>details</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Layout elements are sensitive to events inside their outer rect. If <em>pos</em> is within the outer rect, this method returns a value corresponding to 0.99 times the parent plot's selection tolerance. However, layout elements are not selectable by default. So if <em>onlySelectable</em> is true, -1.0 is returned.</p>
+<p>See <a class="el" href="class_q_c_p_layerable.html#a272989087fc8c4357b4ba614f9922336">QCPLayerable::selectTest</a> for a general explanation of this virtual method.</p>
+<p><a class="el" href="class_q_c_p_layout_element.html" title="The abstract base class for all objects that form the layout system.">QCPLayoutElement</a> subclasses may reimplement this method to provide more specific selection test behaviour. </p>
+
+<p>Переопределяет метод предка <a class="el" href="class_q_c_p_layerable.html#a272989087fc8c4357b4ba614f9922336">QCPLayerable</a>.</p>
+
+<p>Переопределяется в <a class="el" href="class_q_c_p_text_element.html#a29e95d6cfd9e28772ce6a8890a2c8889">QCPTextElement</a>, <a class="el" href="class_q_c_p_legend.html#ae11e1229abeec1abdbd22a57f2b26a84">QCPLegend</a>, <a class="el" href="class_q_c_p_abstract_legend_item.html#a206879d493749c3fb1494850bff40e7e">QCPAbstractLegendItem</a>, <a class="el" href="class_q_c_p_layout_inset.html#a1569969c3e7e92f64ea13d46616e5a8a">QCPLayoutInset</a> и <a class="el" href="class_q_c_p_polar_axis_angular.html#abb390ae7656b7241acfe4ed9ea56f1ae">QCPPolarAxisAngular</a>.</p>
+<div class="fragment"><div class="line"><a name="l03482"></a><span class="lineno"> 3482</span>&#160;                                                             {</div>
+<div class="line"><a name="l03483"></a><span class="lineno"> 3483</span>&#160;  Q_UNUSED(details)</div>
+<div class="line"><a name="l03484"></a><span class="lineno"> 3484</span>&#160; </div>
+<div class="line"><a name="l03485"></a><span class="lineno"> 3485</span>&#160;  <span class="keywordflow">if</span> (onlySelectable) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l03486"></a><span class="lineno"> 3486</span>&#160; </div>
+<div class="line"><a name="l03487"></a><span class="lineno"> 3487</span>&#160;  <span class="keywordflow">if</span> (QRectF(<a class="code" href="class_q_c_p_layout_element.html#a07bb4973379e75cb0fa5b032c1d24afd">mOuterRect</a>).contains(pos)) {</div>
+<div class="line"><a name="l03488"></a><span class="lineno"> 3488</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_q_c_p_layerable.html#aa2a528433e44db02b8aef23c1f9f90ed">mParentPlot</a>)</div>
+<div class="line"><a name="l03489"></a><span class="lineno"> 3489</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="class_q_c_p_layerable.html#aa2a528433e44db02b8aef23c1f9f90ed">mParentPlot</a>-&gt;<a class="code" href="class_q_custom_plot.html#a5441d11013afeaf4b8f2ea06e8624a25">selectionTolerance</a>() * 0.99;</div>
+<div class="line"><a name="l03490"></a><span class="lineno"> 3490</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l03491"></a><span class="lineno"> 3491</span>&#160;      qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;parent plot not defined&quot;</span>;</div>
+<div class="line"><a name="l03492"></a><span class="lineno"> 3492</span>&#160;      <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l03493"></a><span class="lineno"> 3493</span>&#160;    }</div>
+<div class="line"><a name="l03494"></a><span class="lineno"> 3494</span>&#160;  } <span class="keywordflow">else</span></div>
+<div class="line"><a name="l03495"></a><span class="lineno"> 3495</span>&#160;    <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l03496"></a><span class="lineno"> 3496</span>&#160;}</div>
+<div class="ttc" id="aclass_q_c_p_layerable_html_aa2a528433e44db02b8aef23c1f9f90ed"><div class="ttname"><a href="class_q_c_p_layerable.html#aa2a528433e44db02b8aef23c1f9f90ed">QCPLayerable::mParentPlot</a></div><div class="ttdeci">QCustomPlot * mParentPlot</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:892</div></div>
+<div class="ttc" id="aclass_q_custom_plot_html_a5441d11013afeaf4b8f2ea06e8624a25"><div class="ttname"><a href="class_q_custom_plot.html#a5441d11013afeaf4b8f2ea06e8624a25">QCustomPlot::selectionTolerance</a></div><div class="ttdeci">int selectionTolerance() const</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:4288</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="accfda49994e3e6d51ed14504abf9d27d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accfda49994e3e6d51ed14504abf9d27d">&#9670;&nbsp;</a></span>setAutoMargins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QCPLayoutElement::setAutoMargins </td>
+          <td>(</td>
+          <td class="paramtype">QCP::MarginSides&#160;</td>
+          <td class="paramname"><em>sides</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets on which sides the margin shall be calculated automatically. If a side is calculated automatically, a minimum margin value may be provided with <a class="el" href="class_q_c_p_layout_element.html#a0a8a17abc16b7923159fcc7608f94673">setMinimumMargins</a>. If a side is set to be controlled manually, the value may be specified with <a class="el" href="class_q_c_p_layout_element.html#a8f450b1f3f992ad576fce2c63d8b79cf">setMargins</a>.</p>
+<p>Margin sides that are under automatic control may participate in a <a class="el" href="class_q_c_p_margin_group.html">QCPMarginGroup</a> (see <a class="el" href="class_q_c_p_layout_element.html#a516e56f76b6bc100e8e71d329866847d">setMarginGroup</a>), to synchronize (align) it with other layout elements in the plot.</p>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="class_q_c_p_layout_element.html#a0a8a17abc16b7923159fcc7608f94673">setMinimumMargins</a>, <a class="el" href="class_q_c_p_layout_element.html#a8f450b1f3f992ad576fce2c63d8b79cf">setMargins</a>, <a class="el" href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54">QCP::MarginSide</a> </dd></dl>
+<div class="fragment"><div class="line"><a name="l03246"></a><span class="lineno"> 3246</span>&#160;                                                          {</div>
+<div class="line"><a name="l03247"></a><span class="lineno"> 3247</span>&#160;  <a class="code" href="class_q_c_p_layout_element.html#af61c70354d1275778d68206b2a1b2d36">mAutoMargins</a> = sides;</div>
+<div class="line"><a name="l03248"></a><span class="lineno"> 3248</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a516e56f76b6bc100e8e71d329866847d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a516e56f76b6bc100e8e71d329866847d">&#9670;&nbsp;</a></span>setMarginGroup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QCPLayoutElement::setMarginGroup </td>
+          <td>(</td>
+          <td class="paramtype">QCP::MarginSides&#160;</td>
+          <td class="paramname"><em>sides</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_q_c_p_margin_group.html">QCPMarginGroup</a> *&#160;</td>
+          <td class="paramname"><em>group</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the margin <em>group</em> of the specified margin <em>sides</em>.</p>
+<p>Margin groups allow synchronizing specified margins across layout elements, see the documentation of <a class="el" href="class_q_c_p_margin_group.html">QCPMarginGroup</a>.</p>
+<p>To unset the margin group of <em>sides</em>, set <em>group</em> to <code>nullptr</code>.</p>
+<p>Note that margin groups only work for margin sides that are set to automatic (<a class="el" href="class_q_c_p_layout_element.html#accfda49994e3e6d51ed14504abf9d27d">setAutoMargins</a>).</p>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54">QCP::MarginSide</a> </dd></dl>
+<div class="fragment"><div class="line"><a name="l03337"></a><span class="lineno"> 3337</span>&#160;                                                             {</div>
+<div class="line"><a name="l03338"></a><span class="lineno"> 3338</span>&#160;  QVector&lt;QCP::MarginSide&gt; sideVector;</div>
+<div class="line"><a name="l03339"></a><span class="lineno"> 3339</span>&#160;  <span class="keywordflow">if</span> (sides.testFlag(<a class="code" href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54a9500c8bfcc9e80b9dff0a8e00e867f07">QCP::msLeft</a>)) sideVector.append(<a class="code" href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54a9500c8bfcc9e80b9dff0a8e00e867f07">QCP::msLeft</a>);</div>
+<div class="line"><a name="l03340"></a><span class="lineno"> 3340</span>&#160;  <span class="keywordflow">if</span> (sides.testFlag(<a class="code" href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54a93c719593bb2b94ed244d52c86d83b65">QCP::msRight</a>)) sideVector.append(<a class="code" href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54a93c719593bb2b94ed244d52c86d83b65">QCP::msRight</a>);</div>
+<div class="line"><a name="l03341"></a><span class="lineno"> 3341</span>&#160;  <span class="keywordflow">if</span> (sides.testFlag(<a class="code" href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54a5db8fb0d0b0ecf0d611c2602a348e8a0">QCP::msTop</a>)) sideVector.append(<a class="code" href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54a5db8fb0d0b0ecf0d611c2602a348e8a0">QCP::msTop</a>);</div>
+<div class="line"><a name="l03342"></a><span class="lineno"> 3342</span>&#160;  <span class="keywordflow">if</span> (sides.testFlag(<a class="code" href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54a5241d8eac2bab9524a38889f576179cc">QCP::msBottom</a>)) sideVector.append(<a class="code" href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54a5241d8eac2bab9524a38889f576179cc">QCP::msBottom</a>);</div>
+<div class="line"><a name="l03343"></a><span class="lineno"> 3343</span>&#160; </div>
+<div class="line"><a name="l03344"></a><span class="lineno"> 3344</span>&#160;  <span class="keywordflow">foreach</span> (<a class="code" href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54">QCP::MarginSide</a> side, sideVector) {</div>
+<div class="line"><a name="l03345"></a><span class="lineno"> 3345</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_q_c_p_layout_element.html#a8af6bcf81e12fe1d6f44490f34522b90">marginGroup</a>(side) != group) {</div>
+<div class="line"><a name="l03346"></a><span class="lineno"> 3346</span>&#160;      <a class="code" href="class_q_c_p_margin_group.html">QCPMarginGroup</a> *oldGroup = <a class="code" href="class_q_c_p_layout_element.html#a8af6bcf81e12fe1d6f44490f34522b90">marginGroup</a>(side);</div>
+<div class="line"><a name="l03347"></a><span class="lineno"> 3347</span>&#160;      <span class="keywordflow">if</span> (oldGroup)  <span class="comment">// unregister at old group</span></div>
+<div class="line"><a name="l03348"></a><span class="lineno"> 3348</span>&#160;        oldGroup-&gt;<a class="code" href="class_q_c_p_margin_group.html#a20ab3286062957d99b58db683fe725b0">removeChild</a>(side, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l03349"></a><span class="lineno"> 3349</span>&#160; </div>
+<div class="line"><a name="l03350"></a><span class="lineno"> 3350</span>&#160;      <span class="keywordflow">if</span> (!group)  <span class="comment">// if setting to 0, remove hash entry. Else set hash entry to</span></div>
+<div class="line"><a name="l03351"></a><span class="lineno"> 3351</span>&#160;                   <span class="comment">// new group and register there</span></div>
+<div class="line"><a name="l03352"></a><span class="lineno"> 3352</span>&#160;      {</div>
+<div class="line"><a name="l03353"></a><span class="lineno"> 3353</span>&#160;        <a class="code" href="class_q_c_p_layout_element.html#ae027b5caf347c2fb635e797513712a32">mMarginGroups</a>.remove(side);</div>
+<div class="line"><a name="l03354"></a><span class="lineno"> 3354</span>&#160;      } <span class="keywordflow">else</span>  <span class="comment">// setting to a new group</span></div>
+<div class="line"><a name="l03355"></a><span class="lineno"> 3355</span>&#160;      {</div>
+<div class="line"><a name="l03356"></a><span class="lineno"> 3356</span>&#160;        <a class="code" href="class_q_c_p_layout_element.html#ae027b5caf347c2fb635e797513712a32">mMarginGroups</a>[side] = group;</div>
+<div class="line"><a name="l03357"></a><span class="lineno"> 3357</span>&#160;        group-&gt;<a class="code" href="class_q_c_p_margin_group.html#acb9c3a35acec655c2895b7eb95ee0524">addChild</a>(side, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l03358"></a><span class="lineno"> 3358</span>&#160;      }</div>
+<div class="line"><a name="l03359"></a><span class="lineno"> 3359</span>&#160;    }</div>
+<div class="line"><a name="l03360"></a><span class="lineno"> 3360</span>&#160;  }</div>
+<div class="line"><a name="l03361"></a><span class="lineno"> 3361</span>&#160;}</div>
+<div class="ttc" id="aclass_q_c_p_layout_element_html_a8af6bcf81e12fe1d6f44490f34522b90"><div class="ttname"><a href="class_q_c_p_layout_element.html#a8af6bcf81e12fe1d6f44490f34522b90">QCPLayoutElement::marginGroup</a></div><div class="ttdeci">QCPMarginGroup * marginGroup(QCP::MarginSide side) const</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:1425</div></div>
+<div class="ttc" id="aclass_q_c_p_margin_group_html"><div class="ttname"><a href="class_q_c_p_margin_group.html">QCPMarginGroup</a></div><div class="ttdoc">A margin group allows synchronization of margin sides if working with multiple layout elements.</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:1335</div></div>
+<div class="ttc" id="aclass_q_c_p_margin_group_html_a20ab3286062957d99b58db683fe725b0"><div class="ttname"><a href="class_q_c_p_margin_group.html#a20ab3286062957d99b58db683fe725b0">QCPMarginGroup::removeChild</a></div><div class="ttdeci">void removeChild(QCP::MarginSide side, QCPLayoutElement *element)</div><div class="ttdef"><b>Definition:</b> qcustomplot.cpp:3070</div></div>
+<div class="ttc" id="aclass_q_c_p_margin_group_html_acb9c3a35acec655c2895b7eb95ee0524"><div class="ttname"><a href="class_q_c_p_margin_group.html#acb9c3a35acec655c2895b7eb95ee0524">QCPMarginGroup::addChild</a></div><div class="ttdeci">void addChild(QCP::MarginSide side, QCPLayoutElement *element)</div><div class="ttdef"><b>Definition:</b> qcustomplot.cpp:3054</div></div>
+<div class="ttc" id="anamespace_q_c_p_html_a7e487e3e2ccb62ab7771065bab7cae54"><div class="ttname"><a href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54">QCP::MarginSide</a></div><div class="ttdeci">MarginSide</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:217</div></div>
+<div class="ttc" id="anamespace_q_c_p_html_a7e487e3e2ccb62ab7771065bab7cae54a5241d8eac2bab9524a38889f576179cc"><div class="ttname"><a href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54a5241d8eac2bab9524a38889f576179cc">QCP::msBottom</a></div><div class="ttdeci">@ msBottom</div><div class="ttdoc">0x08 bottom margin</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:224</div></div>
+<div class="ttc" id="anamespace_q_c_p_html_a7e487e3e2ccb62ab7771065bab7cae54a5db8fb0d0b0ecf0d611c2602a348e8a0"><div class="ttname"><a href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54a5db8fb0d0b0ecf0d611c2602a348e8a0">QCP::msTop</a></div><div class="ttdeci">@ msTop</div><div class="ttdoc">0x04 top margin</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:222</div></div>
+<div class="ttc" id="anamespace_q_c_p_html_a7e487e3e2ccb62ab7771065bab7cae54a93c719593bb2b94ed244d52c86d83b65"><div class="ttname"><a href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54a93c719593bb2b94ed244d52c86d83b65">QCP::msRight</a></div><div class="ttdeci">@ msRight</div><div class="ttdoc">0x02 right margin</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:220</div></div>
+<div class="ttc" id="anamespace_q_c_p_html_a7e487e3e2ccb62ab7771065bab7cae54a9500c8bfcc9e80b9dff0a8e00e867f07"><div class="ttname"><a href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54a9500c8bfcc9e80b9dff0a8e00e867f07">QCP::msLeft</a></div><div class="ttdeci">@ msLeft</div><div class="ttdoc">0x01 left margin</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:218</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8f450b1f3f992ad576fce2c63d8b79cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f450b1f3f992ad576fce2c63d8b79cf">&#9670;&nbsp;</a></span>setMargins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QCPLayoutElement::setMargins </td>
+          <td>(</td>
+          <td class="paramtype">const QMargins &amp;&#160;</td>
+          <td class="paramname"><em>margins</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the margins of this layout element. If <a class="el" href="class_q_c_p_layout_element.html#accfda49994e3e6d51ed14504abf9d27d">setAutoMargins</a> is disabled for some or all sides, this function is used to manually set the margin on those sides. Sides that are still set to be handled automatically are ignored and may have any value in <em>margins</em>.</p>
+<p>The margin is the distance between the outer rect (controlled by the parent layout via <a class="el" href="class_q_c_p_layout_element.html#a38975ea13e36de8e53391ce41d94bc0f">setOuterRect</a>) and the inner <a class="el" href="class_q_c_p_layout_element.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a> (which usually contains the main content of this layout element).</p>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="class_q_c_p_layout_element.html#accfda49994e3e6d51ed14504abf9d27d">setAutoMargins</a> </dd></dl>
+<div class="fragment"><div class="line"><a name="l03211"></a><span class="lineno"> 3211</span>&#160;                                                         {</div>
+<div class="line"><a name="l03212"></a><span class="lineno"> 3212</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="class_q_c_p_layout_element.html#ac2a32b99ee527ca5dfff9da03628fe94">mMargins</a> != <a class="code" href="class_q_c_p_layout_element.html#af4ac9450aa2d60863bf3a8ea0c940c9d">margins</a>) {</div>
+<div class="line"><a name="l03213"></a><span class="lineno"> 3213</span>&#160;    <a class="code" href="class_q_c_p_layout_element.html#ac2a32b99ee527ca5dfff9da03628fe94">mMargins</a> = <a class="code" href="class_q_c_p_layout_element.html#af4ac9450aa2d60863bf3a8ea0c940c9d">margins</a>;</div>
+<div class="line"><a name="l03214"></a><span class="lineno"> 3214</span>&#160;    <a class="code" href="class_q_c_p_layout_element.html#ad8896f05550389f7b9e92c9e6cdf6e01">mRect</a> = <a class="code" href="class_q_c_p_layout_element.html#a07bb4973379e75cb0fa5b032c1d24afd">mOuterRect</a>.adjusted(<a class="code" href="class_q_c_p_layout_element.html#ac2a32b99ee527ca5dfff9da03628fe94">mMargins</a>.left(), <a class="code" href="class_q_c_p_layout_element.html#ac2a32b99ee527ca5dfff9da03628fe94">mMargins</a>.top(),</div>
+<div class="line"><a name="l03215"></a><span class="lineno"> 3215</span>&#160;                                -<a class="code" href="class_q_c_p_layout_element.html#ac2a32b99ee527ca5dfff9da03628fe94">mMargins</a>.right(), -<a class="code" href="class_q_c_p_layout_element.html#ac2a32b99ee527ca5dfff9da03628fe94">mMargins</a>.bottom());</div>
+<div class="line"><a name="l03216"></a><span class="lineno"> 3216</span>&#160;  }</div>
+<div class="line"><a name="l03217"></a><span class="lineno"> 3217</span>&#160;}</div>
+<div class="ttc" id="aclass_q_c_p_layout_element_html_af4ac9450aa2d60863bf3a8ea0c940c9d"><div class="ttname"><a href="class_q_c_p_layout_element.html#af4ac9450aa2d60863bf3a8ea0c940c9d">QCPLayoutElement::margins</a></div><div class="ttdeci">QMargins margins() const</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:1419</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a74eb5280a737ab44833d506db65efd95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74eb5280a737ab44833d506db65efd95">&#9670;&nbsp;</a></span>setMaximumSize() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QCPLayoutElement::setMaximumSize </td>
+          <td>(</td>
+          <td class="paramtype">const QSize &amp;&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the maximum size of this layout element. A parent layout tries to respect the <em>size</em> here by changing row/column sizes in the layout accordingly.</p>
+<p>Whether this constraint applies to the inner or the outer rect can be specified with <a class="el" href="class_q_c_p_layout_element.html#a361666cdcc6fbfd37344cc44be746b0f">setSizeConstraintRect</a> (see <a class="el" href="class_q_c_p_layout_element.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a> and <a class="el" href="class_q_c_p_layout_element.html#a2a32a12a6161c9dffbadeb9cc585510c">outerRect</a>). </p>
+<div class="fragment"><div class="line"><a name="l03288"></a><span class="lineno"> 3288</span>&#160;                                                       {</div>
+<div class="line"><a name="l03289"></a><span class="lineno"> 3289</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="class_q_c_p_layout_element.html#a64a387973fd4addac842028c89088998">mMaximumSize</a> != size) {</div>
+<div class="line"><a name="l03290"></a><span class="lineno"> 3290</span>&#160;    <a class="code" href="class_q_c_p_layout_element.html#a64a387973fd4addac842028c89088998">mMaximumSize</a> = size;</div>
+<div class="line"><a name="l03291"></a><span class="lineno"> 3291</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_q_c_p_layout_element.html#ae7c75c25549608bd688bdb65d4c38066">mParentLayout</a>) <a class="code" href="class_q_c_p_layout_element.html#ae7c75c25549608bd688bdb65d4c38066">mParentLayout</a>-&gt;<a class="code" href="class_q_c_p_layout.html#aeac66a292f65cf7f8adf94eb92345b3e">sizeConstraintsChanged</a>();</div>
+<div class="line"><a name="l03292"></a><span class="lineno"> 3292</span>&#160;  }</div>
+<div class="line"><a name="l03293"></a><span class="lineno"> 3293</span>&#160;}</div>
+<div class="ttc" id="aclass_q_c_p_layout_html_aeac66a292f65cf7f8adf94eb92345b3e"><div class="ttname"><a href="class_q_c_p_layout.html#aeac66a292f65cf7f8adf94eb92345b3e">QCPLayout::sizeConstraintsChanged</a></div><div class="ttdeci">void sizeConstraintsChanged() const</div><div class="ttdef"><b>Definition:</b> qcustomplot.cpp:3733</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a03e0e9c48f230217c529b0819f832d84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03e0e9c48f230217c529b0819f832d84">&#9670;&nbsp;</a></span>setMaximumSize() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QCPLayoutElement::setMaximumSize </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Эта функция перегружена и предоставляется исключительно для удобства использования. Она отличается от вышеупомянутой только фактическими аргументами.</p>
+<p>Sets the maximum size of this layout element.</p>
+<p>Whether this constraint applies to the inner or the outer rect can be specified with <a class="el" href="class_q_c_p_layout_element.html#a361666cdcc6fbfd37344cc44be746b0f">setSizeConstraintRect</a> (see <a class="el" href="class_q_c_p_layout_element.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a> and <a class="el" href="class_q_c_p_layout_element.html#a2a32a12a6161c9dffbadeb9cc585510c">outerRect</a>). </p>
+<div class="fragment"><div class="line"><a name="l03302"></a><span class="lineno"> 3302</span>&#160;                                                           {</div>
+<div class="line"><a name="l03303"></a><span class="lineno"> 3303</span>&#160;  <a class="code" href="class_q_c_p_layout_element.html#a74eb5280a737ab44833d506db65efd95">setMaximumSize</a>(QSize(width, height));</div>
+<div class="line"><a name="l03304"></a><span class="lineno"> 3304</span>&#160;}</div>
+<div class="ttc" id="aclass_q_c_p_layout_element_html_a74eb5280a737ab44833d506db65efd95"><div class="ttname"><a href="class_q_c_p_layout_element.html#a74eb5280a737ab44833d506db65efd95">QCPLayoutElement::setMaximumSize</a></div><div class="ttdeci">void setMaximumSize(const QSize &amp;size)</div><div class="ttdef"><b>Definition:</b> qcustomplot.cpp:3288</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0a8a17abc16b7923159fcc7608f94673"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a8a17abc16b7923159fcc7608f94673">&#9670;&nbsp;</a></span>setMinimumMargins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QCPLayoutElement::setMinimumMargins </td>
+          <td>(</td>
+          <td class="paramtype">const QMargins &amp;&#160;</td>
+          <td class="paramname"><em>margins</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>If <a class="el" href="class_q_c_p_layout_element.html#accfda49994e3e6d51ed14504abf9d27d">setAutoMargins</a> is enabled on some or all margins, this function is used to provide minimum values for those margins.</p>
+<p>The minimum values are not enforced on margin sides that were set to be under manual control via <a class="el" href="class_q_c_p_layout_element.html#accfda49994e3e6d51ed14504abf9d27d">setAutoMargins</a>.</p>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="class_q_c_p_layout_element.html#accfda49994e3e6d51ed14504abf9d27d">setAutoMargins</a> </dd></dl>
+<div class="fragment"><div class="line"><a name="l03228"></a><span class="lineno"> 3228</span>&#160;                                                                {</div>
+<div class="line"><a name="l03229"></a><span class="lineno"> 3229</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="class_q_c_p_layout_element.html#a5ba71f25d1af4bb092b28df618538e63">mMinimumMargins</a> != <a class="code" href="class_q_c_p_layout_element.html#af4ac9450aa2d60863bf3a8ea0c940c9d">margins</a>) {</div>
+<div class="line"><a name="l03230"></a><span class="lineno"> 3230</span>&#160;    <a class="code" href="class_q_c_p_layout_element.html#a5ba71f25d1af4bb092b28df618538e63">mMinimumMargins</a> = <a class="code" href="class_q_c_p_layout_element.html#af4ac9450aa2d60863bf3a8ea0c940c9d">margins</a>;</div>
+<div class="line"><a name="l03231"></a><span class="lineno"> 3231</span>&#160;  }</div>
+<div class="line"><a name="l03232"></a><span class="lineno"> 3232</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5dd29a3c8bc88440c97c06b67be7886b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dd29a3c8bc88440c97c06b67be7886b">&#9670;&nbsp;</a></span>setMinimumSize() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QCPLayoutElement::setMinimumSize </td>
+          <td>(</td>
+          <td class="paramtype">const QSize &amp;&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the minimum size of this layout element. A parent layout tries to respect the <em>size</em> here by changing row/column sizes in the layout accordingly.</p>
+<p>If the parent layout size is not sufficient to satisfy all minimum size constraints of its child layout elements, the layout may set a size that is actually smaller than <em>size</em>. <a class="el" href="class_q_custom_plot.html" title="The central class of the library. This is the QWidget which displays the plot and interacts with the ...">QCustomPlot</a> propagates the layout's size constraints to the outside by setting its own minimum QWidget size accordingly, so violations of <em>size</em> should be exceptions.</p>
+<p>Whether this constraint applies to the inner or the outer rect can be specified with <a class="el" href="class_q_c_p_layout_element.html#a361666cdcc6fbfd37344cc44be746b0f">setSizeConstraintRect</a> (see <a class="el" href="class_q_c_p_layout_element.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a> and <a class="el" href="class_q_c_p_layout_element.html#a2a32a12a6161c9dffbadeb9cc585510c">outerRect</a>). </p>
+<div class="fragment"><div class="line"><a name="l03263"></a><span class="lineno"> 3263</span>&#160;                                                       {</div>
+<div class="line"><a name="l03264"></a><span class="lineno"> 3264</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="class_q_c_p_layout_element.html#affef747c81632de33f08483b7fd10d01">mMinimumSize</a> != size) {</div>
+<div class="line"><a name="l03265"></a><span class="lineno"> 3265</span>&#160;    <a class="code" href="class_q_c_p_layout_element.html#affef747c81632de33f08483b7fd10d01">mMinimumSize</a> = size;</div>
+<div class="line"><a name="l03266"></a><span class="lineno"> 3266</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_q_c_p_layout_element.html#ae7c75c25549608bd688bdb65d4c38066">mParentLayout</a>) <a class="code" href="class_q_c_p_layout_element.html#ae7c75c25549608bd688bdb65d4c38066">mParentLayout</a>-&gt;<a class="code" href="class_q_c_p_layout.html#aeac66a292f65cf7f8adf94eb92345b3e">sizeConstraintsChanged</a>();</div>
+<div class="line"><a name="l03267"></a><span class="lineno"> 3267</span>&#160;  }</div>
+<div class="line"><a name="l03268"></a><span class="lineno"> 3268</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8e0447614a0bf92de9a7304588c6b96e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e0447614a0bf92de9a7304588c6b96e">&#9670;&nbsp;</a></span>setMinimumSize() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QCPLayoutElement::setMinimumSize </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Эта функция перегружена и предоставляется исключительно для удобства использования. Она отличается от вышеупомянутой только фактическими аргументами.</p>
+<p>Sets the minimum size of this layout element.</p>
+<p>Whether this constraint applies to the inner or the outer rect can be specified with <a class="el" href="class_q_c_p_layout_element.html#a361666cdcc6fbfd37344cc44be746b0f">setSizeConstraintRect</a> (see <a class="el" href="class_q_c_p_layout_element.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a> and <a class="el" href="class_q_c_p_layout_element.html#a2a32a12a6161c9dffbadeb9cc585510c">outerRect</a>). </p>
+<div class="fragment"><div class="line"><a name="l03277"></a><span class="lineno"> 3277</span>&#160;                                                           {</div>
+<div class="line"><a name="l03278"></a><span class="lineno"> 3278</span>&#160;  <a class="code" href="class_q_c_p_layout_element.html#a5dd29a3c8bc88440c97c06b67be7886b">setMinimumSize</a>(QSize(width, height));</div>
+<div class="line"><a name="l03279"></a><span class="lineno"> 3279</span>&#160;}</div>
+<div class="ttc" id="aclass_q_c_p_layout_element_html_a5dd29a3c8bc88440c97c06b67be7886b"><div class="ttname"><a href="class_q_c_p_layout_element.html#a5dd29a3c8bc88440c97c06b67be7886b">QCPLayoutElement::setMinimumSize</a></div><div class="ttdeci">void setMinimumSize(const QSize &amp;size)</div><div class="ttdef"><b>Definition:</b> qcustomplot.cpp:3263</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a38975ea13e36de8e53391ce41d94bc0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38975ea13e36de8e53391ce41d94bc0f">&#9670;&nbsp;</a></span>setOuterRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QCPLayoutElement::setOuterRect </td>
+          <td>(</td>
+          <td class="paramtype">const QRect &amp;&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the outer rect of this layout element. If the layout element is inside a layout, the layout sets the position and size of this layout element using this function.</p>
+<p>Calling this function externally has no effect, since the layout will overwrite any changes to the outer rect upon the next replot.</p>
+<p>The layout element will adapt its inner <a class="el" href="class_q_c_p_layout_element.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a> by applying the margins inward to the outer rect.</p>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="class_q_c_p_layout_element.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a> </dd></dl>
+<div class="fragment"><div class="line"><a name="l03191"></a><span class="lineno"> 3191</span>&#160;                                                     {</div>
+<div class="line"><a name="l03192"></a><span class="lineno"> 3192</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="class_q_c_p_layout_element.html#a07bb4973379e75cb0fa5b032c1d24afd">mOuterRect</a> != <a class="code" href="class_q_c_p_layout_element.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a>) {</div>
+<div class="line"><a name="l03193"></a><span class="lineno"> 3193</span>&#160;    <a class="code" href="class_q_c_p_layout_element.html#a07bb4973379e75cb0fa5b032c1d24afd">mOuterRect</a> = <a class="code" href="class_q_c_p_layout_element.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a>;</div>
+<div class="line"><a name="l03194"></a><span class="lineno"> 3194</span>&#160;    <a class="code" href="class_q_c_p_layout_element.html#ad8896f05550389f7b9e92c9e6cdf6e01">mRect</a> = <a class="code" href="class_q_c_p_layout_element.html#a07bb4973379e75cb0fa5b032c1d24afd">mOuterRect</a>.adjusted(<a class="code" href="class_q_c_p_layout_element.html#ac2a32b99ee527ca5dfff9da03628fe94">mMargins</a>.left(), <a class="code" href="class_q_c_p_layout_element.html#ac2a32b99ee527ca5dfff9da03628fe94">mMargins</a>.top(),</div>
+<div class="line"><a name="l03195"></a><span class="lineno"> 3195</span>&#160;                                -<a class="code" href="class_q_c_p_layout_element.html#ac2a32b99ee527ca5dfff9da03628fe94">mMargins</a>.right(), -<a class="code" href="class_q_c_p_layout_element.html#ac2a32b99ee527ca5dfff9da03628fe94">mMargins</a>.bottom());</div>
+<div class="line"><a name="l03196"></a><span class="lineno"> 3196</span>&#160;  }</div>
+<div class="line"><a name="l03197"></a><span class="lineno"> 3197</span>&#160;}</div>
+<div class="ttc" id="aclass_q_c_p_layout_element_html_a208effccfe2cca4a0eaf9393e60f2dd4"><div class="ttname"><a href="class_q_c_p_layout_element.html#a208effccfe2cca4a0eaf9393e60f2dd4">QCPLayoutElement::rect</a></div><div class="ttdeci">QRect rect() const</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:1417</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a361666cdcc6fbfd37344cc44be746b0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a361666cdcc6fbfd37344cc44be746b0f">&#9670;&nbsp;</a></span>setSizeConstraintRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QCPLayoutElement::setSizeConstraintRect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_q_c_p_layout_element.html#a0afb3e5773529e4bd20e448f81be4d2a">SizeConstraintRect</a>&#160;</td>
+          <td class="paramname"><em>constraintRect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets to which rect of a layout element the size constraints apply. Size constraints can be set via <a class="el" href="class_q_c_p_layout_element.html#a5dd29a3c8bc88440c97c06b67be7886b">setMinimumSize</a> and <a class="el" href="class_q_c_p_layout_element.html#a74eb5280a737ab44833d506db65efd95">setMaximumSize</a>.</p>
+<p>The outer rect (<a class="el" href="class_q_c_p_layout_element.html#a2a32a12a6161c9dffbadeb9cc585510c">outerRect</a>) includes the margins (e.g. in the case of a <a class="el" href="class_q_c_p_axis_rect.html" title="Holds multiple axes and arranges them in a rectangular shape.">QCPAxisRect</a> the axis labels), whereas the inner rect (<a class="el" href="class_q_c_p_layout_element.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a>) does not.</p>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="class_q_c_p_layout_element.html#a5dd29a3c8bc88440c97c06b67be7886b">setMinimumSize</a>, <a class="el" href="class_q_c_p_layout_element.html#a74eb5280a737ab44833d506db65efd95">setMaximumSize</a> </dd></dl>
+<div class="fragment"><div class="line"><a name="l03316"></a><span class="lineno"> 3316</span>&#160;                                       {</div>
+<div class="line"><a name="l03317"></a><span class="lineno"> 3317</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="class_q_c_p_layout_element.html#acc012635b1ae178ff3c4da8a3af303a2">mSizeConstraintRect</a> != constraintRect) {</div>
+<div class="line"><a name="l03318"></a><span class="lineno"> 3318</span>&#160;    <a class="code" href="class_q_c_p_layout_element.html#acc012635b1ae178ff3c4da8a3af303a2">mSizeConstraintRect</a> = constraintRect;</div>
+<div class="line"><a name="l03319"></a><span class="lineno"> 3319</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_q_c_p_layout_element.html#ae7c75c25549608bd688bdb65d4c38066">mParentLayout</a>) <a class="code" href="class_q_c_p_layout_element.html#ae7c75c25549608bd688bdb65d4c38066">mParentLayout</a>-&gt;<a class="code" href="class_q_c_p_layout.html#aeac66a292f65cf7f8adf94eb92345b3e">sizeConstraintsChanged</a>();</div>
+<div class="line"><a name="l03320"></a><span class="lineno"> 3320</span>&#160;  }</div>
+<div class="line"><a name="l03321"></a><span class="lineno"> 3321</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a66136f121ee3e1c933b748761203cab4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66136f121ee3e1c933b748761203cab4">&#9670;&nbsp;</a></span>sizeConstraintRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_c_p_layout_element.html#a0afb3e5773529e4bd20e448f81be4d2a">SizeConstraintRect</a> QCPLayoutElement::sizeConstraintRect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_q_c_p_layout_element.html#acc012635b1ae178ff3c4da8a3af303a2">mSizeConstraintRect</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a929c2ec62e0e0e1d8418eaa802e2af9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a929c2ec62e0e0e1d8418eaa802e2af9b">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QCPLayoutElement::update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_q_c_p_layout_element.html#a0d83360e05735735aaf6d7983c56374d">UpdatePhase</a>&#160;</td>
+          <td class="paramname"><em>phase</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Updates the layout element and sub-elements. This function is automatically called before every replot by the parent layout element. It is called multiple times, once for every <a class="el" href="class_q_c_p_layout_element.html#a0d83360e05735735aaf6d7983c56374d">UpdatePhase</a>. The phases are run through in the order of the enum values. For details about what happens at the different phases, see the documentation of <a class="el" href="class_q_c_p_layout_element.html#a0d83360e05735735aaf6d7983c56374d">UpdatePhase</a>.</p>
+<p>Layout elements that have child elements should call the <a class="el" href="class_q_c_p_layout_element.html#a929c2ec62e0e0e1d8418eaa802e2af9b">update</a> method of their child elements, and pass the current <em>phase</em> unchanged.</p>
+<p>The default implementation executes the automatic margin mechanism in the <a class="el" href="class_q_c_p_layout_element.html#a0d83360e05735735aaf6d7983c56374da288cb59a92280e47261a341f2813e676">upMargins</a> phase. Subclasses should make sure to call the base class implementation. </p>
+
+<p>Переопределяется в <a class="el" href="class_q_c_p_polar_axis_angular.html#a9f2dfb377cdf3ce22a451fa9d3ab47e6">QCPPolarAxisAngular</a>, <a class="el" href="class_q_c_p_color_scale.html#a259dcb6d3053a2cc3c197e9b1191ddbe">QCPColorScale</a>, <a class="el" href="class_q_c_p_axis_rect.html#add049d464b9ef2ccdc638adc4ccb4aca">QCPAxisRect</a> и <a class="el" href="class_q_c_p_layout.html#a48ecc9c98ea90b547c3e27a931a8f7bd">QCPLayout</a>.</p>
+<div class="fragment"><div class="line"><a name="l03377"></a><span class="lineno"> 3377</span>&#160;                                               {</div>
+<div class="line"><a name="l03378"></a><span class="lineno"> 3378</span>&#160;  <span class="keywordflow">if</span> (phase == <a class="code" href="class_q_c_p_layout_element.html#a0d83360e05735735aaf6d7983c56374da288cb59a92280e47261a341f2813e676">upMargins</a>) {</div>
+<div class="line"><a name="l03379"></a><span class="lineno"> 3379</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_q_c_p_layout_element.html#af61c70354d1275778d68206b2a1b2d36">mAutoMargins</a> != <a class="code" href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54a80aa4149f16dabd538f8b2e3d42c42d5">QCP::msNone</a>) {</div>
+<div class="line"><a name="l03380"></a><span class="lineno"> 3380</span>&#160;      <span class="comment">// set the margins of this layout element according to automatic margin</span></div>
+<div class="line"><a name="l03381"></a><span class="lineno"> 3381</span>&#160;      <span class="comment">// calculation, either directly or via a margin group:</span></div>
+<div class="line"><a name="l03382"></a><span class="lineno"> 3382</span>&#160;      QMargins newMargins = <a class="code" href="class_q_c_p_layout_element.html#ac2a32b99ee527ca5dfff9da03628fe94">mMargins</a>;</div>
+<div class="line"><a name="l03383"></a><span class="lineno"> 3383</span>&#160;      <span class="keyword">const</span> QList&lt;QCP::MarginSide&gt; allMarginSides =</div>
+<div class="line"><a name="l03384"></a><span class="lineno"> 3384</span>&#160;          QList&lt;QCP::MarginSide&gt;()</div>
+<div class="line"><a name="l03385"></a><span class="lineno"> 3385</span>&#160;          &lt;&lt; <a class="code" href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54a9500c8bfcc9e80b9dff0a8e00e867f07">QCP::msLeft</a> &lt;&lt; <a class="code" href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54a93c719593bb2b94ed244d52c86d83b65">QCP::msRight</a> &lt;&lt; <a class="code" href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54a5db8fb0d0b0ecf0d611c2602a348e8a0">QCP::msTop</a> &lt;&lt; <a class="code" href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54a5241d8eac2bab9524a38889f576179cc">QCP::msBottom</a>;</div>
+<div class="line"><a name="l03386"></a><span class="lineno"> 3386</span>&#160;      <span class="keywordflow">foreach</span> (<a class="code" href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54">QCP::MarginSide</a> side, allMarginSides) {</div>
+<div class="line"><a name="l03387"></a><span class="lineno"> 3387</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_q_c_p_layout_element.html#af61c70354d1275778d68206b2a1b2d36">mAutoMargins</a>.testFlag(</div>
+<div class="line"><a name="l03388"></a><span class="lineno"> 3388</span>&#160;                side))  <span class="comment">// this side&#39;s margin shall be calculated automatically</span></div>
+<div class="line"><a name="l03389"></a><span class="lineno"> 3389</span>&#160;        {</div>
+<div class="line"><a name="l03390"></a><span class="lineno"> 3390</span>&#160;          <span class="keywordflow">if</span> (<a class="code" href="class_q_c_p_layout_element.html#ae027b5caf347c2fb635e797513712a32">mMarginGroups</a>.contains(side))</div>
+<div class="line"><a name="l03391"></a><span class="lineno"> 3391</span>&#160;            <a class="code" href="namespace_q_c_p.html#afbf6e3084c108f2bb4372107945ee82f">QCP::setMarginValue</a>(</div>
+<div class="line"><a name="l03392"></a><span class="lineno"> 3392</span>&#160;                newMargins, side,</div>
+<div class="line"><a name="l03393"></a><span class="lineno"> 3393</span>&#160;                <a class="code" href="class_q_c_p_layout_element.html#ae027b5caf347c2fb635e797513712a32">mMarginGroups</a>[side]-&gt;commonMargin(</div>
+<div class="line"><a name="l03394"></a><span class="lineno"> 3394</span>&#160;                    side));  <span class="comment">// this side is part of a margin group, so get the</span></div>
+<div class="line"><a name="l03395"></a><span class="lineno"> 3395</span>&#160;                             <span class="comment">// margin value from that group</span></div>
+<div class="line"><a name="l03396"></a><span class="lineno"> 3396</span>&#160;          <span class="keywordflow">else</span></div>
+<div class="line"><a name="l03397"></a><span class="lineno"> 3397</span>&#160;            <a class="code" href="namespace_q_c_p.html#afbf6e3084c108f2bb4372107945ee82f">QCP::setMarginValue</a>(</div>
+<div class="line"><a name="l03398"></a><span class="lineno"> 3398</span>&#160;                newMargins, side,</div>
+<div class="line"><a name="l03399"></a><span class="lineno"> 3399</span>&#160;                <a class="code" href="class_q_c_p_layout_element.html#a005c9f0fe84bc1591a2cf2c46fd477b4">calculateAutoMargin</a>(</div>
+<div class="line"><a name="l03400"></a><span class="lineno"> 3400</span>&#160;                    side));  <span class="comment">// this side is not part of a group, so calculate</span></div>
+<div class="line"><a name="l03401"></a><span class="lineno"> 3401</span>&#160;                             <span class="comment">// the value directly</span></div>
+<div class="line"><a name="l03402"></a><span class="lineno"> 3402</span>&#160;          <span class="comment">// apply minimum margin restrictions:</span></div>
+<div class="line"><a name="l03403"></a><span class="lineno"> 3403</span>&#160;          <span class="keywordflow">if</span> (<a class="code" href="namespace_q_c_p.html#a23a2679d3495c444acc26acc61e35b5b">QCP::getMarginValue</a>(newMargins, side) &lt;</div>
+<div class="line"><a name="l03404"></a><span class="lineno"> 3404</span>&#160;              <a class="code" href="namespace_q_c_p.html#a23a2679d3495c444acc26acc61e35b5b">QCP::getMarginValue</a>(<a class="code" href="class_q_c_p_layout_element.html#a5ba71f25d1af4bb092b28df618538e63">mMinimumMargins</a>, side))</div>
+<div class="line"><a name="l03405"></a><span class="lineno"> 3405</span>&#160;            <a class="code" href="namespace_q_c_p.html#afbf6e3084c108f2bb4372107945ee82f">QCP::setMarginValue</a>(newMargins, side,</div>
+<div class="line"><a name="l03406"></a><span class="lineno"> 3406</span>&#160;                                <a class="code" href="namespace_q_c_p.html#a23a2679d3495c444acc26acc61e35b5b">QCP::getMarginValue</a>(<a class="code" href="class_q_c_p_layout_element.html#a5ba71f25d1af4bb092b28df618538e63">mMinimumMargins</a>, side));</div>
+<div class="line"><a name="l03407"></a><span class="lineno"> 3407</span>&#160;        }</div>
+<div class="line"><a name="l03408"></a><span class="lineno"> 3408</span>&#160;      }</div>
+<div class="line"><a name="l03409"></a><span class="lineno"> 3409</span>&#160;      <a class="code" href="class_q_c_p_layout_element.html#a8f450b1f3f992ad576fce2c63d8b79cf">setMargins</a>(newMargins);</div>
+<div class="line"><a name="l03410"></a><span class="lineno"> 3410</span>&#160;    }</div>
+<div class="line"><a name="l03411"></a><span class="lineno"> 3411</span>&#160;  }</div>
+<div class="line"><a name="l03412"></a><span class="lineno"> 3412</span>&#160;}</div>
+<div class="ttc" id="aclass_q_c_p_layout_element_html_a005c9f0fe84bc1591a2cf2c46fd477b4"><div class="ttname"><a href="class_q_c_p_layout_element.html#a005c9f0fe84bc1591a2cf2c46fd477b4">QCPLayoutElement::calculateAutoMargin</a></div><div class="ttdeci">virtual int calculateAutoMargin(QCP::MarginSide side)</div><div class="ttdef"><b>Definition:</b> qcustomplot.cpp:3519</div></div>
+<div class="ttc" id="aclass_q_c_p_layout_element_html_a8f450b1f3f992ad576fce2c63d8b79cf"><div class="ttname"><a href="class_q_c_p_layout_element.html#a8f450b1f3f992ad576fce2c63d8b79cf">QCPLayoutElement::setMargins</a></div><div class="ttdeci">void setMargins(const QMargins &amp;margins)</div><div class="ttdef"><b>Definition:</b> qcustomplot.cpp:3211</div></div>
+<div class="ttc" id="anamespace_q_c_p_html_a7e487e3e2ccb62ab7771065bab7cae54a80aa4149f16dabd538f8b2e3d42c42d5"><div class="ttname"><a href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54a80aa4149f16dabd538f8b2e3d42c42d5">QCP::msNone</a></div><div class="ttdeci">@ msNone</div><div class="ttdoc">0x00 no margin</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:228</div></div>
+<div class="ttc" id="anamespace_q_c_p_html_afbf6e3084c108f2bb4372107945ee82f"><div class="ttname"><a href="namespace_q_c_p.html#afbf6e3084c108f2bb4372107945ee82f">QCP::setMarginValue</a></div><div class="ttdeci">void setMarginValue(QMargins &amp;margins, QCP::MarginSide side, int value)</div><div class="ttdef"><b>Definition:</b> qcustomplot.h:455</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Документация по друзьям класса и функциям, относящимся к классу</h2>
+<a id="a588aac0a0d721f6c5f10126d8596a20f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a588aac0a0d721f6c5f10126d8596a20f">&#9670;&nbsp;</a></span>QCPLayout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_q_c_p_layout.html">QCPLayout</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad077a686e85ab6fa03dcb2fd37fc499a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad077a686e85ab6fa03dcb2fd37fc499a">&#9670;&nbsp;</a></span>QCPMarginGroup</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_q_c_p_margin_group.html">QCPMarginGroup</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1cdf9df76adcfae45261690aa0ca2198"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cdf9df76adcfae45261690aa0ca2198">&#9670;&nbsp;</a></span>QCustomPlot</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_q_custom_plot.html">QCustomPlot</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="af61c70354d1275778d68206b2a1b2d36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af61c70354d1275778d68206b2a1b2d36">&#9670;&nbsp;</a></span>mAutoMargins</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QCP::MarginSides QCPLayoutElement::mAutoMargins</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae027b5caf347c2fb635e797513712a32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae027b5caf347c2fb635e797513712a32">&#9670;&nbsp;</a></span>mMarginGroups</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QHash&lt;<a class="el" href="namespace_q_c_p.html#a7e487e3e2ccb62ab7771065bab7cae54">QCP::MarginSide</a>, <a class="el" href="class_q_c_p_margin_group.html">QCPMarginGroup</a> *&gt; QCPLayoutElement::mMarginGroups</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac2a32b99ee527ca5dfff9da03628fe94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2a32b99ee527ca5dfff9da03628fe94">&#9670;&nbsp;</a></span>mMargins</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QMargins QCPLayoutElement::mMargins</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a64a387973fd4addac842028c89088998"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64a387973fd4addac842028c89088998">&#9670;&nbsp;</a></span>mMaximumSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSize QCPLayoutElement::mMaximumSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ba71f25d1af4bb092b28df618538e63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ba71f25d1af4bb092b28df618538e63">&#9670;&nbsp;</a></span>mMinimumMargins</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QMargins QCPLayoutElement::mMinimumMargins</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="affef747c81632de33f08483b7fd10d01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affef747c81632de33f08483b7fd10d01">&#9670;&nbsp;</a></span>mMinimumSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSize QCPLayoutElement::mMinimumSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a07bb4973379e75cb0fa5b032c1d24afd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07bb4973379e75cb0fa5b032c1d24afd">&#9670;&nbsp;</a></span>mOuterRect</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRect QCPLayoutElement::mOuterRect</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae7c75c25549608bd688bdb65d4c38066"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7c75c25549608bd688bdb65d4c38066">&#9670;&nbsp;</a></span>mParentLayout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_c_p_layout.html">QCPLayout</a>* QCPLayoutElement::mParentLayout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8896f05550389f7b9e92c9e6cdf6e01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8896f05550389f7b9e92c9e6cdf6e01">&#9670;&nbsp;</a></span>mRect</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRect QCPLayoutElement::mRect</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc012635b1ae178ff3c4da8a3af303a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc012635b1ae178ff3c4da8a3af303a2">&#9670;&nbsp;</a></span>mSizeConstraintRect</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_q_c_p_layout_element.html#a0afb3e5773529e4bd20e448f81be4d2a">SizeConstraintRect</a> QCPLayoutElement::mSizeConstraintRect</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>SmartCalc/<a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a></li>
+<li>SmartCalc/<a class="el" href="qcustomplot_8cpp.html">qcustomplot.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

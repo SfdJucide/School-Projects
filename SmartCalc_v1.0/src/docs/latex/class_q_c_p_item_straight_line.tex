@@ -1,0 +1,362 @@
+\hypertarget{class_q_c_p_item_straight_line}{}\doxysection{Класс QCPItem\+Straight\+Line}
+\label{class_q_c_p_item_straight_line}\index{QCPItemStraightLine@{QCPItemStraightLine}}
+
+
+A straight line that spans infinitely in both directions.  
+
+
+
+
+{\ttfamily \#include $<$qcustomplot.\+h$>$}
+
+Граф наследования\+:QCPItem\+Straight\+Line\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_q_c_p_item_straight_line}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_c_p_item_straight_line_a41fd2e1f006983449eca9830930c3b10}{QCPItem\+Straight\+Line}} (\mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} $\ast$\mbox{\hyperlink{class_q_c_p_layerable_a473edb813a4c1929d6b6a8fe3ff3faf7}{parent\+Plot}})
+\item 
+virtual \mbox{\hyperlink{class_q_c_p_item_straight_line_ae605850acdcaf57582294ebedd1fa4aa}{$\sim$\+QCPItem\+Straight\+Line}} () \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+QPen \mbox{\hyperlink{class_q_c_p_item_straight_line_aa751d46cf36073607c11508763f85ff6}{pen}} () const
+\item 
+QPen \mbox{\hyperlink{class_q_c_p_item_straight_line_ae4a4607045b1d0594f89eee448a31ff9}{selected\+Pen}} () const
+\item 
+void \mbox{\hyperlink{class_q_c_p_item_straight_line_a9f36c9c9e60d7d9ac084c80380ac8601}{set\+Pen}} (const QPen \&\mbox{\hyperlink{class_q_c_p_item_straight_line_aa751d46cf36073607c11508763f85ff6}{pen}})
+\item 
+void \mbox{\hyperlink{class_q_c_p_item_straight_line_a5c33559498d33543fa95cf0a36e851ff}{set\+Selected\+Pen}} (const QPen \&\mbox{\hyperlink{class_q_c_p_item_straight_line_aa751d46cf36073607c11508763f85ff6}{pen}})
+\item 
+virtual double \mbox{\hyperlink{class_q_c_p_item_straight_line_a0b10bec4746760cc99d210ba040cb8f7}{select\+Test}} (const QPointF \&pos, bool only\+Selectable, QVariant $\ast$details=nullptr) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_c_p_item_position}{QCPItem\+Position}} $\ast$const \mbox{\hyperlink{class_q_c_p_item_straight_line_ac131a6ffe456f2cc7364dce541fe0120}{point1}}
+\item 
+\mbox{\hyperlink{class_q_c_p_item_position}{QCPItem\+Position}} $\ast$const \mbox{\hyperlink{class_q_c_p_item_straight_line_ad26c0a732e471f63f75d481dcd48cfc9}{point2}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_item_straight_line_acbc84ad219bf4845152e4e2202fcaa3c}{draw}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter) \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+QLineF \mbox{\hyperlink{class_q_c_p_item_straight_line_a4dc8f987e0a8e4dfc0c8568923456e0c}{get\+Rect\+Clipped\+Straight\+Line}} (const \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}} \&base, const \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}} \&vec, const QRect \&rect) const
+\item 
+QPen \mbox{\hyperlink{class_q_c_p_item_straight_line_a5b1a39cfc54c3e22f65de2958d40eb59}{main\+Pen}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+QPen \mbox{\hyperlink{class_q_c_p_item_straight_line_a15106ddc2ebd73ed5c1bc57aa92bee8f}{m\+Pen}}
+\item 
+QPen \mbox{\hyperlink{class_q_c_p_item_straight_line_a0307a0d56a018656adbf798bc84c2a4b}{m\+Selected\+Pen}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Дополнительные унаследованные члены}
+
+
+\doxysubsection{Подробное описание}
+A straight line that spans infinitely in both directions. 
+
+ circles are anchors, solid blue discs are positions."{}
+
+It has two positions, {\itshape point1} and {\itshape point2}, which define the straight line. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_q_c_p_item_straight_line_a41fd2e1f006983449eca9830930c3b10}\label{class_q_c_p_item_straight_line_a41fd2e1f006983449eca9830930c3b10}} 
+\index{QCPItemStraightLine@{QCPItemStraightLine}!QCPItemStraightLine@{QCPItemStraightLine}}
+\index{QCPItemStraightLine@{QCPItemStraightLine}!QCPItemStraightLine@{QCPItemStraightLine}}
+\doxysubsubsection{\texorpdfstring{QCPItemStraightLine()}{QCPItemStraightLine()}}
+{\footnotesize\ttfamily QCPItem\+Straight\+Line\+::\+QCPItem\+Straight\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} $\ast$}]{parent\+Plot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Creates a straight line item and sets default values.
+
+The created item is automatically registered with {\itshape parent\+Plot}. This \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} instance takes ownership of the item, so do not delete it manually but use \mbox{\hyperlink{class_q_custom_plot_ae04446557292551e8fb6e2c106e1848d}{QCustom\+Plot\+::remove\+Item()}} instead. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30267     : \mbox{\hyperlink{class_q_c_p_abstract_item_a9922507d8b4503a1fe1ed0b1030e23b6}{QCPAbstractItem}}(\mbox{\hyperlink{class_q_c_p_layerable_a473edb813a4c1929d6b6a8fe3ff3faf7}{parentPlot}}),}
+\DoxyCodeLine{30268       \mbox{\hyperlink{class_q_c_p_item_straight_line_ac131a6ffe456f2cc7364dce541fe0120}{point1}}(\mbox{\hyperlink{class_q_c_p_abstract_item_a75036d39c4d4e2e1a7dd145fff915d32}{createPosition}}(QLatin1String(\textcolor{stringliteral}{"{}point1"{}}))),}
+\DoxyCodeLine{30269       \mbox{\hyperlink{class_q_c_p_item_straight_line_ad26c0a732e471f63f75d481dcd48cfc9}{point2}}(\mbox{\hyperlink{class_q_c_p_abstract_item_a75036d39c4d4e2e1a7dd145fff915d32}{createPosition}}(QLatin1String(\textcolor{stringliteral}{"{}point2"{}}))) \{}
+\DoxyCodeLine{30270   \mbox{\hyperlink{class_q_c_p_item_straight_line_ac131a6ffe456f2cc7364dce541fe0120}{point1}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_aa988ba4e87ab684c9021017dcaba945f}{setCoords}}(0, 0);}
+\DoxyCodeLine{30271   \mbox{\hyperlink{class_q_c_p_item_straight_line_ad26c0a732e471f63f75d481dcd48cfc9}{point2}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_aa988ba4e87ab684c9021017dcaba945f}{setCoords}}(1, 1);}
+\DoxyCodeLine{30272 }
+\DoxyCodeLine{30273   \mbox{\hyperlink{class_q_c_p_item_straight_line_a9f36c9c9e60d7d9ac084c80380ac8601}{setPen}}(QPen(Qt::black));}
+\DoxyCodeLine{30274   \mbox{\hyperlink{class_q_c_p_item_straight_line_a5c33559498d33543fa95cf0a36e851ff}{setSelectedPen}}(QPen(Qt::blue, 2));}
+\DoxyCodeLine{30275 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_straight_line_ae605850acdcaf57582294ebedd1fa4aa}\label{class_q_c_p_item_straight_line_ae605850acdcaf57582294ebedd1fa4aa}} 
+\index{QCPItemStraightLine@{QCPItemStraightLine}!````~QCPItemStraightLine@{$\sim$QCPItemStraightLine}}
+\index{````~QCPItemStraightLine@{$\sim$QCPItemStraightLine}!QCPItemStraightLine@{QCPItemStraightLine}}
+\doxysubsubsection{\texorpdfstring{$\sim$QCPItemStraightLine()}{~QCPItemStraightLine()}}
+{\footnotesize\ttfamily QCPItem\+Straight\+Line\+::$\sim$\+QCPItem\+Straight\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30277 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_q_c_p_item_straight_line_acbc84ad219bf4845152e4e2202fcaa3c}\label{class_q_c_p_item_straight_line_acbc84ad219bf4845152e4e2202fcaa3c}} 
+\index{QCPItemStraightLine@{QCPItemStraightLine}!draw@{draw}}
+\index{draw@{draw}!QCPItemStraightLine@{QCPItemStraightLine}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void QCPItem\+Straight\+Line\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Замещает \mbox{\hyperlink{class_q_c_p_abstract_item_a007fdab79c935a5da5aa04a21d268c18}{QCPAbstract\+Item}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30307                                                   \{}
+\DoxyCodeLine{30308   \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}} start(\mbox{\hyperlink{class_q_c_p_item_straight_line_ac131a6ffe456f2cc7364dce541fe0120}{point1}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_a8be9a4787635433edecc75164beb748d}{pixelPosition}}());}
+\DoxyCodeLine{30309   \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}} end(\mbox{\hyperlink{class_q_c_p_item_straight_line_ad26c0a732e471f63f75d481dcd48cfc9}{point2}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_a8be9a4787635433edecc75164beb748d}{pixelPosition}}());}
+\DoxyCodeLine{30310   \textcolor{comment}{// get visible segment of straight line inside clipRect:}}
+\DoxyCodeLine{30311   \textcolor{keywordtype}{int} clipPad = qCeil(\mbox{\hyperlink{class_q_c_p_item_straight_line_a5b1a39cfc54c3e22f65de2958d40eb59}{mainPen}}().widthF());}
+\DoxyCodeLine{30312   QLineF line = \mbox{\hyperlink{class_q_c_p_item_straight_line_a4dc8f987e0a8e4dfc0c8568923456e0c}{getRectClippedStraightLine}}(}
+\DoxyCodeLine{30313       start, end -\/ start,}
+\DoxyCodeLine{30314       \mbox{\hyperlink{class_q_c_p_abstract_item_a6ad60000f29afe11035e1f791dcbd45a}{clipRect}}().adjusted(-\/clipPad, -\/clipPad, clipPad, clipPad));}
+\DoxyCodeLine{30315   \textcolor{comment}{// paint visible segment, if existent:}}
+\DoxyCodeLine{30316   \textcolor{keywordflow}{if} (!line.isNull()) \{}
+\DoxyCodeLine{30317     painter-\/>\mbox{\hyperlink{class_q_c_p_painter_af9c7a4cd1791403901f8c5b82a150195}{setPen}}(\mbox{\hyperlink{class_q_c_p_item_straight_line_a5b1a39cfc54c3e22f65de2958d40eb59}{mainPen}}());}
+\DoxyCodeLine{30318     painter-\/>\mbox{\hyperlink{class_q_c_p_painter_a0b4b1b9bd495e182c731774dc800e6e0}{drawLine}}(line);}
+\DoxyCodeLine{30319   \}}
+\DoxyCodeLine{30320 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_straight_line_a4dc8f987e0a8e4dfc0c8568923456e0c}\label{class_q_c_p_item_straight_line_a4dc8f987e0a8e4dfc0c8568923456e0c}} 
+\index{QCPItemStraightLine@{QCPItemStraightLine}!getRectClippedStraightLine@{getRectClippedStraightLine}}
+\index{getRectClippedStraightLine@{getRectClippedStraightLine}!QCPItemStraightLine@{QCPItemStraightLine}}
+\doxysubsubsection{\texorpdfstring{getRectClippedStraightLine()}{getRectClippedStraightLine()}}
+{\footnotesize\ttfamily QLineF QCPItem\+Straight\+Line\+::get\+Rect\+Clipped\+Straight\+Line (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}} \&}]{base,  }\item[{const \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}} \&}]{vec,  }\item[{const QRect \&}]{rect }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30330                                                                               \{}
+\DoxyCodeLine{30331   \textcolor{keywordtype}{double} bx, by;}
+\DoxyCodeLine{30332   \textcolor{keywordtype}{double} gamma;}
+\DoxyCodeLine{30333   QLineF result;}
+\DoxyCodeLine{30334   \textcolor{keywordflow}{if} (vec.\mbox{\hyperlink{class_q_c_p_vector2_d_a4a099e1f9788d52cb46deb8139aa6195}{x}}() == 0 \&\& vec.\mbox{\hyperlink{class_q_c_p_vector2_d_a6398fb643ba380d7961a4b208f4eecf1}{y}}() == 0) \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{30335   \textcolor{keywordflow}{if} (qFuzzyIsNull(vec.\mbox{\hyperlink{class_q_c_p_vector2_d_a4a099e1f9788d52cb46deb8139aa6195}{x}}()))  \textcolor{comment}{// line is vertical}}
+\DoxyCodeLine{30336   \{}
+\DoxyCodeLine{30337     \textcolor{comment}{// check top of rect:}}
+\DoxyCodeLine{30338     bx = rect.left();}
+\DoxyCodeLine{30339     by = rect.top();}
+\DoxyCodeLine{30340     gamma = base.\mbox{\hyperlink{class_q_c_p_vector2_d_a4a099e1f9788d52cb46deb8139aa6195}{x}}() -\/ bx + (by -\/ base.\mbox{\hyperlink{class_q_c_p_vector2_d_a6398fb643ba380d7961a4b208f4eecf1}{y}}()) * vec.\mbox{\hyperlink{class_q_c_p_vector2_d_a4a099e1f9788d52cb46deb8139aa6195}{x}}() / vec.\mbox{\hyperlink{class_q_c_p_vector2_d_a6398fb643ba380d7961a4b208f4eecf1}{y}}();}
+\DoxyCodeLine{30341     \textcolor{keywordflow}{if} (gamma >= 0 \&\& gamma <= rect.width())}
+\DoxyCodeLine{30342       result.setLine(bx + gamma, rect.top(), bx + gamma,}
+\DoxyCodeLine{30343                      rect.bottom());  \textcolor{comment}{// no need to check bottom because we know}}
+\DoxyCodeLine{30344                                       \textcolor{comment}{// line is vertical}}
+\DoxyCodeLine{30345   \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (qFuzzyIsNull(vec.\mbox{\hyperlink{class_q_c_p_vector2_d_a6398fb643ba380d7961a4b208f4eecf1}{y}}()))   \textcolor{comment}{// line is horizontal}}
+\DoxyCodeLine{30346   \{}
+\DoxyCodeLine{30347     \textcolor{comment}{// check left of rect:}}
+\DoxyCodeLine{30348     bx = rect.left();}
+\DoxyCodeLine{30349     by = rect.top();}
+\DoxyCodeLine{30350     gamma = base.\mbox{\hyperlink{class_q_c_p_vector2_d_a6398fb643ba380d7961a4b208f4eecf1}{y}}() -\/ by + (bx -\/ base.\mbox{\hyperlink{class_q_c_p_vector2_d_a4a099e1f9788d52cb46deb8139aa6195}{x}}()) * vec.\mbox{\hyperlink{class_q_c_p_vector2_d_a6398fb643ba380d7961a4b208f4eecf1}{y}}() / vec.\mbox{\hyperlink{class_q_c_p_vector2_d_a4a099e1f9788d52cb46deb8139aa6195}{x}}();}
+\DoxyCodeLine{30351     \textcolor{keywordflow}{if} (gamma >= 0 \&\& gamma <= rect.height())}
+\DoxyCodeLine{30352       result.setLine(rect.left(), by + gamma, rect.right(),}
+\DoxyCodeLine{30353                      by + gamma);  \textcolor{comment}{// no need to check right because we know}}
+\DoxyCodeLine{30354                                    \textcolor{comment}{// line is horizontal}}
+\DoxyCodeLine{30355   \} \textcolor{keywordflow}{else}                           \textcolor{comment}{// line is skewed}}
+\DoxyCodeLine{30356   \{}
+\DoxyCodeLine{30357     QList<QCPVector2D> pointVectors;}
+\DoxyCodeLine{30358     \textcolor{comment}{// check top of rect:}}
+\DoxyCodeLine{30359     bx = rect.left();}
+\DoxyCodeLine{30360     by = rect.top();}
+\DoxyCodeLine{30361     gamma = base.\mbox{\hyperlink{class_q_c_p_vector2_d_a4a099e1f9788d52cb46deb8139aa6195}{x}}() -\/ bx + (by -\/ base.\mbox{\hyperlink{class_q_c_p_vector2_d_a6398fb643ba380d7961a4b208f4eecf1}{y}}()) * vec.\mbox{\hyperlink{class_q_c_p_vector2_d_a4a099e1f9788d52cb46deb8139aa6195}{x}}() / vec.\mbox{\hyperlink{class_q_c_p_vector2_d_a6398fb643ba380d7961a4b208f4eecf1}{y}}();}
+\DoxyCodeLine{30362     \textcolor{keywordflow}{if} (gamma >= 0 \&\& gamma <= rect.width())}
+\DoxyCodeLine{30363       pointVectors.append(\mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}}(bx + gamma, by));}
+\DoxyCodeLine{30364     \textcolor{comment}{// check bottom of rect:}}
+\DoxyCodeLine{30365     bx = rect.left();}
+\DoxyCodeLine{30366     by = rect.bottom();}
+\DoxyCodeLine{30367     gamma = base.\mbox{\hyperlink{class_q_c_p_vector2_d_a4a099e1f9788d52cb46deb8139aa6195}{x}}() -\/ bx + (by -\/ base.\mbox{\hyperlink{class_q_c_p_vector2_d_a6398fb643ba380d7961a4b208f4eecf1}{y}}()) * vec.\mbox{\hyperlink{class_q_c_p_vector2_d_a4a099e1f9788d52cb46deb8139aa6195}{x}}() / vec.\mbox{\hyperlink{class_q_c_p_vector2_d_a6398fb643ba380d7961a4b208f4eecf1}{y}}();}
+\DoxyCodeLine{30368     \textcolor{keywordflow}{if} (gamma >= 0 \&\& gamma <= rect.width())}
+\DoxyCodeLine{30369       pointVectors.append(\mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}}(bx + gamma, by));}
+\DoxyCodeLine{30370     \textcolor{comment}{// check left of rect:}}
+\DoxyCodeLine{30371     bx = rect.left();}
+\DoxyCodeLine{30372     by = rect.top();}
+\DoxyCodeLine{30373     gamma = base.\mbox{\hyperlink{class_q_c_p_vector2_d_a6398fb643ba380d7961a4b208f4eecf1}{y}}() -\/ by + (bx -\/ base.\mbox{\hyperlink{class_q_c_p_vector2_d_a4a099e1f9788d52cb46deb8139aa6195}{x}}()) * vec.\mbox{\hyperlink{class_q_c_p_vector2_d_a6398fb643ba380d7961a4b208f4eecf1}{y}}() / vec.\mbox{\hyperlink{class_q_c_p_vector2_d_a4a099e1f9788d52cb46deb8139aa6195}{x}}();}
+\DoxyCodeLine{30374     \textcolor{keywordflow}{if} (gamma >= 0 \&\& gamma <= rect.height())}
+\DoxyCodeLine{30375       pointVectors.append(\mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}}(bx, by + gamma));}
+\DoxyCodeLine{30376     \textcolor{comment}{// check right of rect:}}
+\DoxyCodeLine{30377     bx = rect.right();}
+\DoxyCodeLine{30378     by = rect.top();}
+\DoxyCodeLine{30379     gamma = base.\mbox{\hyperlink{class_q_c_p_vector2_d_a6398fb643ba380d7961a4b208f4eecf1}{y}}() -\/ by + (bx -\/ base.\mbox{\hyperlink{class_q_c_p_vector2_d_a4a099e1f9788d52cb46deb8139aa6195}{x}}()) * vec.\mbox{\hyperlink{class_q_c_p_vector2_d_a6398fb643ba380d7961a4b208f4eecf1}{y}}() / vec.\mbox{\hyperlink{class_q_c_p_vector2_d_a4a099e1f9788d52cb46deb8139aa6195}{x}}();}
+\DoxyCodeLine{30380     \textcolor{keywordflow}{if} (gamma >= 0 \&\& gamma <= rect.height())}
+\DoxyCodeLine{30381       pointVectors.append(\mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}}(bx, by + gamma));}
+\DoxyCodeLine{30382 }
+\DoxyCodeLine{30383     \textcolor{comment}{// evaluate points:}}
+\DoxyCodeLine{30384     \textcolor{keywordflow}{if} (pointVectors.size() == 2) \{}
+\DoxyCodeLine{30385       result.setPoints(pointVectors.at(0).toPointF(),}
+\DoxyCodeLine{30386                        pointVectors.at(1).toPointF());}
+\DoxyCodeLine{30387     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (pointVectors.size() > 2) \{}
+\DoxyCodeLine{30388       \textcolor{comment}{// line probably goes through corner of rect, and we got two points there.}}
+\DoxyCodeLine{30389       \textcolor{comment}{// single out the point pair with greatest distance:}}
+\DoxyCodeLine{30390       \textcolor{keywordtype}{double} distSqrMax = 0;}
+\DoxyCodeLine{30391       \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}} pv1, pv2;}
+\DoxyCodeLine{30392       \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < pointVectors.size() -\/ 1; ++i) \{}
+\DoxyCodeLine{30393         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = i + 1; k < pointVectors.size(); ++k) \{}
+\DoxyCodeLine{30394           \textcolor{keywordtype}{double} distSqr =}
+\DoxyCodeLine{30395               (pointVectors.at(i) -\/ pointVectors.at(k)).lengthSquared();}
+\DoxyCodeLine{30396           \textcolor{keywordflow}{if} (distSqr > distSqrMax) \{}
+\DoxyCodeLine{30397             pv1 = pointVectors.at(i);}
+\DoxyCodeLine{30398             pv2 = pointVectors.at(k);}
+\DoxyCodeLine{30399             distSqrMax = distSqr;}
+\DoxyCodeLine{30400           \}}
+\DoxyCodeLine{30401         \}}
+\DoxyCodeLine{30402       \}}
+\DoxyCodeLine{30403       result.setPoints(pv1.\mbox{\hyperlink{class_q_c_p_vector2_d_acd7af3f4a62833ada58be3f3021dbbac}{toPointF}}(), pv2.\mbox{\hyperlink{class_q_c_p_vector2_d_acd7af3f4a62833ada58be3f3021dbbac}{toPointF}}());}
+\DoxyCodeLine{30404     \}}
+\DoxyCodeLine{30405   \}}
+\DoxyCodeLine{30406   \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{30407 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_straight_line_a5b1a39cfc54c3e22f65de2958d40eb59}\label{class_q_c_p_item_straight_line_a5b1a39cfc54c3e22f65de2958d40eb59}} 
+\index{QCPItemStraightLine@{QCPItemStraightLine}!mainPen@{mainPen}}
+\index{mainPen@{mainPen}!QCPItemStraightLine@{QCPItemStraightLine}}
+\doxysubsubsection{\texorpdfstring{mainPen()}{mainPen()}}
+{\footnotesize\ttfamily QPen QCPItem\+Straight\+Line\+::main\+Pen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30414                                         \{}
+\DoxyCodeLine{30415   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_abstract_item_a4bdb3457dad1d268c0f78a44152b9645}{mSelected}} ? \mbox{\hyperlink{class_q_c_p_item_straight_line_a0307a0d56a018656adbf798bc84c2a4b}{mSelectedPen}} : \mbox{\hyperlink{class_q_c_p_item_straight_line_a15106ddc2ebd73ed5c1bc57aa92bee8f}{mPen}};}
+\DoxyCodeLine{30416 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_straight_line_aa751d46cf36073607c11508763f85ff6}\label{class_q_c_p_item_straight_line_aa751d46cf36073607c11508763f85ff6}} 
+\index{QCPItemStraightLine@{QCPItemStraightLine}!pen@{pen}}
+\index{pen@{pen}!QCPItemStraightLine@{QCPItemStraightLine}}
+\doxysubsubsection{\texorpdfstring{pen()}{pen()}}
+{\footnotesize\ttfamily QPen QCPItem\+Straight\+Line\+::pen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7271 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_item_straight_line_a15106ddc2ebd73ed5c1bc57aa92bee8f}{mPen}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_straight_line_ae4a4607045b1d0594f89eee448a31ff9}\label{class_q_c_p_item_straight_line_ae4a4607045b1d0594f89eee448a31ff9}} 
+\index{QCPItemStraightLine@{QCPItemStraightLine}!selectedPen@{selectedPen}}
+\index{selectedPen@{selectedPen}!QCPItemStraightLine@{QCPItemStraightLine}}
+\doxysubsubsection{\texorpdfstring{selectedPen()}{selectedPen()}}
+{\footnotesize\ttfamily QPen QCPItem\+Straight\+Line\+::selected\+Pen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7272 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_item_straight_line_a0307a0d56a018656adbf798bc84c2a4b}{mSelectedPen}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_straight_line_a0b10bec4746760cc99d210ba040cb8f7}\label{class_q_c_p_item_straight_line_a0b10bec4746760cc99d210ba040cb8f7}} 
+\index{QCPItemStraightLine@{QCPItemStraightLine}!selectTest@{selectTest}}
+\index{selectTest@{selectTest}!QCPItemStraightLine@{QCPItemStraightLine}}
+\doxysubsubsection{\texorpdfstring{selectTest()}{selectTest()}}
+{\footnotesize\ttfamily double QCPItem\+Straight\+Line\+::select\+Test (\begin{DoxyParamCaption}\item[{const QPointF \&}]{pos,  }\item[{bool}]{only\+Selectable,  }\item[{QVariant $\ast$}]{details = {\ttfamily nullptr} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function is used to decide whether a click hits a layerable object or not.
+
+{\itshape pos} is a point in pixel coordinates on the \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} surface. This function returns the shortest pixel distance of this point to the object. If the object is either invisible or the distance couldn\textquotesingle{}t be determined, -\/1.\+0 is returned. Further, if {\itshape only\+Selectable} is true and the object is not selectable, -\/1.\+0 is returned, too.
+
+If the object is represented not by single lines but by an area like a \mbox{\hyperlink{class_q_c_p_item_text}{QCPItem\+Text}} or the bars of a \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} plottable, a click inside the area should also be considered a hit. In these cases this function thus returns a constant value greater zero but still below the parent plot\textquotesingle{}s selection tolerance. (typically the selection\+Tolerance multiplied by 0.\+99).
+
+Providing a constant value for area objects allows selecting line objects even when they are obscured by such area objects, by clicking close to the lines (i.\+e. closer than 0.\+99$\ast$selection\+Tolerance).
+
+The actual setting of the selection state is not done by this function. This is handled by the parent \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} when the mouse\+Release\+Event occurs, and the finally selected object is notified via the select\+Event/ deselect\+Event methods.
+
+{\itshape details} is an optional output parameter. Every layerable subclass may place any information in {\itshape details}. This information will be passed to \mbox{\hyperlink{class_q_c_p_abstract_item_aa4b969c58797f39c9c0b6c07c7869d17}{select\+Event}} when the parent \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} decides on the basis of this select\+Test call, that the object was successfully selected. The subsequent call to \mbox{\hyperlink{class_q_c_p_abstract_item_aa4b969c58797f39c9c0b6c07c7869d17}{select\+Event}} will carry the {\itshape details}. This is useful for multi-\/part objects (like \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}}). This way, a possibly complex calculation to decide which part was clicked is only done once in \mbox{\hyperlink{class_q_c_p_item_straight_line_a0b10bec4746760cc99d210ba040cb8f7}{select\+Test}}. The result (i.\+e. the actually clicked part) can then be placed in {\itshape details}. So in the subsequent \mbox{\hyperlink{class_q_c_p_abstract_item_aa4b969c58797f39c9c0b6c07c7869d17}{select\+Event}}, the decision which part was selected doesn\textquotesingle{}t have to be done a second time for a single selection operation.
+
+In the case of 1D Plottables (\mbox{\hyperlink{class_q_c_p_abstract_plottable1_d}{QCPAbstract\+Plottable1D}}, like \mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} or \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}}) {\itshape details} will be set to a \mbox{\hyperlink{class_q_c_p_data_selection}{QCPData\+Selection}}, describing the closest data point to {\itshape pos}.
+
+You may pass {\ttfamily nullptr} as {\itshape details} to indicate that you are not interested in those selection details.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_abstract_item_aa4b969c58797f39c9c0b6c07c7869d17}{select\+Event}}, \mbox{\hyperlink{class_q_c_p_abstract_item_af9093798cb07a861dcc73f93ca16c0c1}{deselect\+Event}}, \mbox{\hyperlink{class_q_c_p_layerable_af6567604818db90f4fd52822f8bc8376}{mouse\+Press\+Event}}, \mbox{\hyperlink{class_q_c_p_layerable_a47dfd7b8fd99c08ca54e09c362b6f022}{wheel\+Event}}, \mbox{\hyperlink{class_q_custom_plot_a5ee1e2f6ae27419deca53e75907c27e5}{QCustom\+Plot\+::set\+Interactions}}, \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_a22377bf6e57ab7eedbc9e489250c6ded}{QCPAbstract\+Plottable1\+D\+::select\+Test\+Rect}} 
+\end{DoxySeeAlso}
+
+
+Замещает \mbox{\hyperlink{class_q_c_p_abstract_item_ac75a4bdcba0ce51ae22eacebb16a9dcd}{QCPAbstract\+Item}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30297                                                                 \{}
+\DoxyCodeLine{30298   Q\_UNUSED(details)}
+\DoxyCodeLine{30299   \textcolor{keywordflow}{if} (onlySelectable \&\& !\mbox{\hyperlink{class_q_c_p_abstract_item_ad81eb35c8726a0f458db9df9732e0e41}{mSelectable}}) \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{30300 }
+\DoxyCodeLine{30301   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}}(pos).\mbox{\hyperlink{class_q_c_p_vector2_d_ae240b845c3744e43a5d0aa7b2bb66c19}{distanceToStraightLine}}(}
+\DoxyCodeLine{30302       \mbox{\hyperlink{class_q_c_p_item_straight_line_ac131a6ffe456f2cc7364dce541fe0120}{point1}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_a8be9a4787635433edecc75164beb748d}{pixelPosition}}(),}
+\DoxyCodeLine{30303       \mbox{\hyperlink{class_q_c_p_item_straight_line_ad26c0a732e471f63f75d481dcd48cfc9}{point2}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_a8be9a4787635433edecc75164beb748d}{pixelPosition}}() -\/ \mbox{\hyperlink{class_q_c_p_item_straight_line_ac131a6ffe456f2cc7364dce541fe0120}{point1}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_a8be9a4787635433edecc75164beb748d}{pixelPosition}}());}
+\DoxyCodeLine{30304 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_straight_line_a9f36c9c9e60d7d9ac084c80380ac8601}\label{class_q_c_p_item_straight_line_a9f36c9c9e60d7d9ac084c80380ac8601}} 
+\index{QCPItemStraightLine@{QCPItemStraightLine}!setPen@{setPen}}
+\index{setPen@{setPen}!QCPItemStraightLine@{QCPItemStraightLine}}
+\doxysubsubsection{\texorpdfstring{setPen()}{setPen()}}
+{\footnotesize\ttfamily void QCPItem\+Straight\+Line\+::set\+Pen (\begin{DoxyParamCaption}\item[{const QPen \&}]{pen }\end{DoxyParamCaption})}
+
+Sets the pen that will be used to draw the line
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_item_straight_line_a5c33559498d33543fa95cf0a36e851ff}{set\+Selected\+Pen}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30284 \{ \mbox{\hyperlink{class_q_c_p_item_straight_line_a15106ddc2ebd73ed5c1bc57aa92bee8f}{mPen}} = \mbox{\hyperlink{class_q_c_p_item_straight_line_aa751d46cf36073607c11508763f85ff6}{pen}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_straight_line_a5c33559498d33543fa95cf0a36e851ff}\label{class_q_c_p_item_straight_line_a5c33559498d33543fa95cf0a36e851ff}} 
+\index{QCPItemStraightLine@{QCPItemStraightLine}!setSelectedPen@{setSelectedPen}}
+\index{setSelectedPen@{setSelectedPen}!QCPItemStraightLine@{QCPItemStraightLine}}
+\doxysubsubsection{\texorpdfstring{setSelectedPen()}{setSelectedPen()}}
+{\footnotesize\ttfamily void QCPItem\+Straight\+Line\+::set\+Selected\+Pen (\begin{DoxyParamCaption}\item[{const QPen \&}]{pen }\end{DoxyParamCaption})}
+
+Sets the pen that will be used to draw the line when selected
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_item_straight_line_a9f36c9c9e60d7d9ac084c80380ac8601}{set\+Pen}}, \mbox{\hyperlink{class_q_c_p_abstract_item_a203de94ad586cc44d16c9565f49d3378}{set\+Selected}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30291                                                         \{}
+\DoxyCodeLine{30292   \mbox{\hyperlink{class_q_c_p_item_straight_line_a0307a0d56a018656adbf798bc84c2a4b}{mSelectedPen}} = \mbox{\hyperlink{class_q_c_p_item_straight_line_aa751d46cf36073607c11508763f85ff6}{pen}};}
+\DoxyCodeLine{30293 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{class_q_c_p_item_straight_line_a15106ddc2ebd73ed5c1bc57aa92bee8f}\label{class_q_c_p_item_straight_line_a15106ddc2ebd73ed5c1bc57aa92bee8f}} 
+\index{QCPItemStraightLine@{QCPItemStraightLine}!mPen@{mPen}}
+\index{mPen@{mPen}!QCPItemStraightLine@{QCPItemStraightLine}}
+\doxysubsubsection{\texorpdfstring{mPen}{mPen}}
+{\footnotesize\ttfamily QPen QCPItem\+Straight\+Line\+::m\+Pen\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_item_straight_line_a0307a0d56a018656adbf798bc84c2a4b}\label{class_q_c_p_item_straight_line_a0307a0d56a018656adbf798bc84c2a4b}} 
+\index{QCPItemStraightLine@{QCPItemStraightLine}!mSelectedPen@{mSelectedPen}}
+\index{mSelectedPen@{mSelectedPen}!QCPItemStraightLine@{QCPItemStraightLine}}
+\doxysubsubsection{\texorpdfstring{mSelectedPen}{mSelectedPen}}
+{\footnotesize\ttfamily QPen QCPItem\+Straight\+Line\+::m\+Selected\+Pen\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_item_straight_line_ac131a6ffe456f2cc7364dce541fe0120}\label{class_q_c_p_item_straight_line_ac131a6ffe456f2cc7364dce541fe0120}} 
+\index{QCPItemStraightLine@{QCPItemStraightLine}!point1@{point1}}
+\index{point1@{point1}!QCPItemStraightLine@{QCPItemStraightLine}}
+\doxysubsubsection{\texorpdfstring{point1}{point1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_item_position}{QCPItem\+Position}}$\ast$ const QCPItem\+Straight\+Line\+::point1}
+
+\mbox{\Hypertarget{class_q_c_p_item_straight_line_ad26c0a732e471f63f75d481dcd48cfc9}\label{class_q_c_p_item_straight_line_ad26c0a732e471f63f75d481dcd48cfc9}} 
+\index{QCPItemStraightLine@{QCPItemStraightLine}!point2@{point2}}
+\index{point2@{point2}!QCPItemStraightLine@{QCPItemStraightLine}}
+\doxysubsubsection{\texorpdfstring{point2}{point2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_item_position}{QCPItem\+Position}}$\ast$ const QCPItem\+Straight\+Line\+::point2}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Smart\+Calc/\mbox{\hyperlink{qcustomplot_8h}{qcustomplot.\+h}}\item 
+Smart\+Calc/\mbox{\hyperlink{qcustomplot_8cpp}{qcustomplot.\+cpp}}\end{DoxyCompactItemize}

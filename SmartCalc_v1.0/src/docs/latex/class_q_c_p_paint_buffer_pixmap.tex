@@ -1,0 +1,189 @@
+\hypertarget{class_q_c_p_paint_buffer_pixmap}{}\doxysection{Класс QCPPaint\+Buffer\+Pixmap}
+\label{class_q_c_p_paint_buffer_pixmap}\index{QCPPaintBufferPixmap@{QCPPaintBufferPixmap}}
+
+
+A paint buffer based on QPixmap, using software raster rendering.  
+
+
+
+
+{\ttfamily \#include $<$qcustomplot.\+h$>$}
+
+Граф наследования\+:QCPPaint\+Buffer\+Pixmap\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_c_p_paint_buffer_pixmap}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_c_p_paint_buffer_pixmap_aef0224e03b9285509391fcd61a8e6844}{QCPPaint\+Buffer\+Pixmap}} (const QSize \&\mbox{\hyperlink{class_q_c_p_abstract_paint_buffer_a3ea8284e547985c5d263f26a6adfa11f}{size}}, double \mbox{\hyperlink{class_q_c_p_abstract_paint_buffer_aac1b981f8c1744036610ff1a6b9461f9}{device\+Pixel\+Ratio}})
+\item 
+virtual \mbox{\hyperlink{class_q_c_p_paint_buffer_pixmap_a4237edf96e3710e994768124c8722e76}{$\sim$\+QCPPaint\+Buffer\+Pixmap}} () \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual \mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$ \mbox{\hyperlink{class_q_c_p_paint_buffer_pixmap_a357964ef7d28cfa530338be4e5c93234}{start\+Painting}} () \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_paint_buffer_pixmap_af7bfc685e56a0a9329e57cd9a265eb74}{draw}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+void \mbox{\hyperlink{class_q_c_p_paint_buffer_pixmap_a14badbd010a3cde6b55817ccb7b65217}{clear}} (const QColor \&color) \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_paint_buffer_pixmap_ad49f3205ba3463b1c44f8db3cfcc90f0}{reallocate\+Buffer}} () \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+QPixmap \mbox{\hyperlink{class_q_c_p_paint_buffer_pixmap_a6d7009f45f03e305f2dc00e52a9225f8}{m\+Buffer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+A paint buffer based on QPixmap, using software raster rendering. 
+
+This paint buffer is the default and fall-\/back paint buffer which uses software rendering and QPixmap as internal buffer. It is used if \mbox{\hyperlink{class_q_custom_plot_a7db1adc09016329f3aef7c60da935789}{QCustom\+Plot\+::set\+Open\+Gl}} is false. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_q_c_p_paint_buffer_pixmap_aef0224e03b9285509391fcd61a8e6844}\label{class_q_c_p_paint_buffer_pixmap_aef0224e03b9285509391fcd61a8e6844}} 
+\index{QCPPaintBufferPixmap@{QCPPaintBufferPixmap}!QCPPaintBufferPixmap@{QCPPaintBufferPixmap}}
+\index{QCPPaintBufferPixmap@{QCPPaintBufferPixmap}!QCPPaintBufferPixmap@{QCPPaintBufferPixmap}}
+\doxysubsubsection{\texorpdfstring{QCPPaintBufferPixmap()}{QCPPaintBufferPixmap()}}
+{\footnotesize\ttfamily QCPPaint\+Buffer\+Pixmap\+::\+QCPPaint\+Buffer\+Pixmap (\begin{DoxyParamCaption}\item[{const QSize \&}]{size,  }\item[{double}]{device\+Pixel\+Ratio }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Creates a pixmap paint buffer instancen with the specified {\itshape size} and {\itshape device\+Pixel\+Ratio}, if applicable. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{646     : \mbox{\hyperlink{class_q_c_p_abstract_paint_buffer_a3ce532c12f10b81697108835755641e2}{QCPAbstractPaintBuffer}}(\mbox{\hyperlink{class_q_c_p_abstract_paint_buffer_a3ea8284e547985c5d263f26a6adfa11f}{size}}, \mbox{\hyperlink{class_q_c_p_abstract_paint_buffer_aac1b981f8c1744036610ff1a6b9461f9}{devicePixelRatio}}) \{}
+\DoxyCodeLine{647   \mbox{\hyperlink{class_q_c_p_paint_buffer_pixmap_ad49f3205ba3463b1c44f8db3cfcc90f0}{QCPPaintBufferPixmap::reallocateBuffer}}();}
+\DoxyCodeLine{648 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_paint_buffer_pixmap_a4237edf96e3710e994768124c8722e76}\label{class_q_c_p_paint_buffer_pixmap_a4237edf96e3710e994768124c8722e76}} 
+\index{QCPPaintBufferPixmap@{QCPPaintBufferPixmap}!````~QCPPaintBufferPixmap@{$\sim$QCPPaintBufferPixmap}}
+\index{````~QCPPaintBufferPixmap@{$\sim$QCPPaintBufferPixmap}!QCPPaintBufferPixmap@{QCPPaintBufferPixmap}}
+\doxysubsubsection{\texorpdfstring{$\sim$QCPPaintBufferPixmap()}{~QCPPaintBufferPixmap()}}
+{\footnotesize\ttfamily QCPPaint\+Buffer\+Pixmap\+::$\sim$\+QCPPaint\+Buffer\+Pixmap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{650 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_q_c_p_paint_buffer_pixmap_a14badbd010a3cde6b55817ccb7b65217}\label{class_q_c_p_paint_buffer_pixmap_a14badbd010a3cde6b55817ccb7b65217}} 
+\index{QCPPaintBufferPixmap@{QCPPaintBufferPixmap}!clear@{clear}}
+\index{clear@{clear}!QCPPaintBufferPixmap@{QCPPaintBufferPixmap}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void QCPPaint\+Buffer\+Pixmap\+::clear (\begin{DoxyParamCaption}\item[{const QColor \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Fills the entire buffer with the provided {\itshape color}. To have an empty transparent buffer, use the named color {\ttfamily Qt\+::transparent}.
+
+This method must not be called if there is currently a painter (acquired with \mbox{\hyperlink{class_q_c_p_paint_buffer_pixmap_a357964ef7d28cfa530338be4e5c93234}{start\+Painting}}) active. 
+
+Замещает \mbox{\hyperlink{class_q_c_p_abstract_paint_buffer_a9e253f4541dfc01992b77e8830bd7722}{QCPAbstract\+Paint\+Buffer}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{670 \{ \mbox{\hyperlink{class_q_c_p_paint_buffer_pixmap_a6d7009f45f03e305f2dc00e52a9225f8}{mBuffer}}.fill(color); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_paint_buffer_pixmap_af7bfc685e56a0a9329e57cd9a265eb74}\label{class_q_c_p_paint_buffer_pixmap_af7bfc685e56a0a9329e57cd9a265eb74}} 
+\index{QCPPaintBufferPixmap@{QCPPaintBufferPixmap}!draw@{draw}}
+\index{draw@{draw}!QCPPaintBufferPixmap@{QCPPaintBufferPixmap}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void QCPPaint\+Buffer\+Pixmap\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Draws the contents of this buffer with the provided {\itshape painter}. This is the method that is used to finally join all paint buffers and draw them onto the screen. 
+
+Замещает \mbox{\hyperlink{class_q_c_p_abstract_paint_buffer_afb998c7525e3ae37d9d2d46c7aaf461a}{QCPAbstract\+Paint\+Buffer}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{662                                                          \{}
+\DoxyCodeLine{663   \textcolor{keywordflow}{if} (painter \&\& painter-\/>isActive())}
+\DoxyCodeLine{664     painter-\/>drawPixmap(0, 0, \mbox{\hyperlink{class_q_c_p_paint_buffer_pixmap_a6d7009f45f03e305f2dc00e52a9225f8}{mBuffer}});}
+\DoxyCodeLine{665   \textcolor{keywordflow}{else}}
+\DoxyCodeLine{666     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}invalid or inactive painter passed"{}};}
+\DoxyCodeLine{667 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_paint_buffer_pixmap_ad49f3205ba3463b1c44f8db3cfcc90f0}\label{class_q_c_p_paint_buffer_pixmap_ad49f3205ba3463b1c44f8db3cfcc90f0}} 
+\index{QCPPaintBufferPixmap@{QCPPaintBufferPixmap}!reallocateBuffer@{reallocateBuffer}}
+\index{reallocateBuffer@{reallocateBuffer}!QCPPaintBufferPixmap@{QCPPaintBufferPixmap}}
+\doxysubsubsection{\texorpdfstring{reallocateBuffer()}{reallocateBuffer()}}
+{\footnotesize\ttfamily void QCPPaint\+Buffer\+Pixmap\+::reallocate\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Reallocates the internal buffer with the currently configured size (\mbox{\hyperlink{class_q_c_p_abstract_paint_buffer_a8b68c3cd36533f1a4a23b5ce8cd66f01}{set\+Size}}) and device pixel ratio, if applicable (\mbox{\hyperlink{class_q_c_p_abstract_paint_buffer_a555eaad5d5c806420ff35602a1bb68fa}{set\+Device\+Pixel\+Ratio}}). It is called as soon as any of those properties are changed on this paint buffer.
+
+\begin{DoxyNote}{Заметки}
+Subclasses of \mbox{\hyperlink{class_q_c_p_abstract_paint_buffer}{QCPAbstract\+Paint\+Buffer}} must call their reimplementation of this method in their constructor, to perform the first allocation (this can not be done by the base class because calling pure virtual methods in base class constructors is not possible). 
+\end{DoxyNote}
+
+
+Замещает \mbox{\hyperlink{class_q_c_p_abstract_paint_buffer_aee7506a52bd7e5a07c2af27935eb13e7}{QCPAbstract\+Paint\+Buffer}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{673                                             \{}
+\DoxyCodeLine{674   \mbox{\hyperlink{class_q_c_p_abstract_paint_buffer_ae4c7dc70dfc66be2879ce297b2b3d67f}{setInvalidated}}();}
+\DoxyCodeLine{675   \textcolor{keywordflow}{if} (!qFuzzyCompare(1.0, \mbox{\hyperlink{class_q_c_p_abstract_paint_buffer_a33c1fd784478441fcff9ebf3d69af5b2}{mDevicePixelRatio}})) \{}
+\DoxyCodeLine{676 \textcolor{preprocessor}{\#ifdef QCP\_DEVICEPIXELRATIO\_SUPPORTED}}
+\DoxyCodeLine{677     \mbox{\hyperlink{class_q_c_p_paint_buffer_pixmap_a6d7009f45f03e305f2dc00e52a9225f8}{mBuffer}} = QPixmap(\mbox{\hyperlink{class_q_c_p_abstract_paint_buffer_ae246c426222bfa18d5e8797fab73e3ce}{mSize}} * \mbox{\hyperlink{class_q_c_p_abstract_paint_buffer_a33c1fd784478441fcff9ebf3d69af5b2}{mDevicePixelRatio}});}
+\DoxyCodeLine{678     \mbox{\hyperlink{class_q_c_p_paint_buffer_pixmap_a6d7009f45f03e305f2dc00e52a9225f8}{mBuffer}}.setDevicePixelRatio(\mbox{\hyperlink{class_q_c_p_abstract_paint_buffer_a33c1fd784478441fcff9ebf3d69af5b2}{mDevicePixelRatio}});}
+\DoxyCodeLine{679 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{680     qDebug() << Q\_FUNC\_INFO}
+\DoxyCodeLine{681              << \textcolor{stringliteral}{"{}Device pixel ratios not supported for Qt versions before 5.4"{}};}
+\DoxyCodeLine{682     \mbox{\hyperlink{class_q_c_p_abstract_paint_buffer_a33c1fd784478441fcff9ebf3d69af5b2}{mDevicePixelRatio}} = 1.0;}
+\DoxyCodeLine{683     \mbox{\hyperlink{class_q_c_p_paint_buffer_pixmap_a6d7009f45f03e305f2dc00e52a9225f8}{mBuffer}} = QPixmap(\mbox{\hyperlink{class_q_c_p_abstract_paint_buffer_ae246c426222bfa18d5e8797fab73e3ce}{mSize}});}
+\DoxyCodeLine{684 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{685   \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{686     \mbox{\hyperlink{class_q_c_p_paint_buffer_pixmap_a6d7009f45f03e305f2dc00e52a9225f8}{mBuffer}} = QPixmap(\mbox{\hyperlink{class_q_c_p_abstract_paint_buffer_ae246c426222bfa18d5e8797fab73e3ce}{mSize}});}
+\DoxyCodeLine{687   \}}
+\DoxyCodeLine{688 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_paint_buffer_pixmap_a357964ef7d28cfa530338be4e5c93234}\label{class_q_c_p_paint_buffer_pixmap_a357964ef7d28cfa530338be4e5c93234}} 
+\index{QCPPaintBufferPixmap@{QCPPaintBufferPixmap}!startPainting@{startPainting}}
+\index{startPainting@{startPainting}!QCPPaintBufferPixmap@{QCPPaintBufferPixmap}}
+\doxysubsubsection{\texorpdfstring{startPainting()}{startPainting()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$ QCPPaint\+Buffer\+Pixmap\+::start\+Painting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns a \mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} which is ready to draw to this buffer. The ownership and thus the responsibility to delete the painter after the painting operations are complete is given to the caller of this method.
+
+Once you are done using the painter, delete the painter and call \mbox{\hyperlink{class_q_c_p_abstract_paint_buffer_a41b0dc6e7744f19fae09f8532c207dc1}{done\+Painting}}.
+
+While a painter generated with this method is active, you must not call \mbox{\hyperlink{class_q_c_p_abstract_paint_buffer_a8b68c3cd36533f1a4a23b5ce8cd66f01}{set\+Size}}, \mbox{\hyperlink{class_q_c_p_abstract_paint_buffer_a555eaad5d5c806420ff35602a1bb68fa}{set\+Device\+Pixel\+Ratio}} or \mbox{\hyperlink{class_q_c_p_paint_buffer_pixmap_a14badbd010a3cde6b55817ccb7b65217}{clear}}.
+
+This method may return 0, if a painter couldn\textquotesingle{}t be activated on the buffer. This usually indicates a problem with the respective painting backend. 
+
+Замещает \mbox{\hyperlink{class_q_c_p_abstract_paint_buffer_a9e9f29b19c033cf02fb96f1a148463f3}{QCPAbstract\+Paint\+Buffer}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{653                                                 \{}
+\DoxyCodeLine{654   \mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} *result = \textcolor{keyword}{new} \mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}}(\&\mbox{\hyperlink{class_q_c_p_paint_buffer_pixmap_a6d7009f45f03e305f2dc00e52a9225f8}{mBuffer}});}
+\DoxyCodeLine{655 \textcolor{preprocessor}{\#if QT\_VERSION < QT\_VERSION\_CHECK(6, 0, 0)}}
+\DoxyCodeLine{656   result-\/>setRenderHint(QPainter::HighQualityAntialiasing);}
+\DoxyCodeLine{657 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{658   \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{659 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{class_q_c_p_paint_buffer_pixmap_a6d7009f45f03e305f2dc00e52a9225f8}\label{class_q_c_p_paint_buffer_pixmap_a6d7009f45f03e305f2dc00e52a9225f8}} 
+\index{QCPPaintBufferPixmap@{QCPPaintBufferPixmap}!mBuffer@{mBuffer}}
+\index{mBuffer@{mBuffer}!QCPPaintBufferPixmap@{QCPPaintBufferPixmap}}
+\doxysubsubsection{\texorpdfstring{mBuffer}{mBuffer}}
+{\footnotesize\ttfamily QPixmap QCPPaint\+Buffer\+Pixmap\+::m\+Buffer\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Smart\+Calc/\mbox{\hyperlink{qcustomplot_8h}{qcustomplot.\+h}}\item 
+Smart\+Calc/\mbox{\hyperlink{qcustomplot_8cpp}{qcustomplot.\+cpp}}\end{DoxyCompactItemize}

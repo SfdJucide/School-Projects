@@ -1,0 +1,602 @@
+\hypertarget{class_q_c_p_layout}{}\doxysection{Класс QCPLayout}
+\label{class_q_c_p_layout}\index{QCPLayout@{QCPLayout}}
+
+
+The abstract base class for layouts.  
+
+
+
+
+{\ttfamily \#include $<$qcustomplot.\+h$>$}
+
+Граф наследования\+:QCPLayout\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{class_q_c_p_layout}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_c_p_layout_a04222e6e1361fd802d48f1a25b7020d4}{QCPLayout}} ()
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_layout_a48ecc9c98ea90b547c3e27a931a8f7bd}{update}} (\mbox{\hyperlink{class_q_c_p_layout_element_a0d83360e05735735aaf6d7983c56374d}{Update\+Phase}} phase) \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual QList$<$ \mbox{\hyperlink{class_q_c_p_layout_element}{QCPLayout\+Element}} $\ast$ $>$ \mbox{\hyperlink{class_q_c_p_layout_aca129722c019f91d3367046f80abfa77}{elements}} (bool recursive) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+DECL\+\_\+\+OVERRIDE}}
+\item 
+virtual int \mbox{\hyperlink{class_q_c_p_layout_a39d3e9ef5d9b82ab1885ba1cb9597e56}{element\+Count}} () const =0
+\item 
+virtual \mbox{\hyperlink{class_q_c_p_layout_element}{QCPLayout\+Element}} $\ast$ \mbox{\hyperlink{class_q_c_p_layout_afa73ca7d859f8a3ee5c73c9b353d2a56}{element\+At}} (int index) const =0
+\item 
+virtual \mbox{\hyperlink{class_q_c_p_layout_element}{QCPLayout\+Element}} $\ast$ \mbox{\hyperlink{class_q_c_p_layout_a5a79621fa0a6eabb8b520cfc04fb601a}{take\+At}} (int index)=0
+\item 
+virtual bool \mbox{\hyperlink{class_q_c_p_layout_ada26cd17e56472b0b4d7fbbc96873e4c}{take}} (\mbox{\hyperlink{class_q_c_p_layout_element}{QCPLayout\+Element}} $\ast$element)=0
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_layout_a41e6ac049143866e8f8b4964efab01b2}{simplify}} ()
+\item 
+bool \mbox{\hyperlink{class_q_c_p_layout_a2403f684fee3ce47132faaeed00bb066}{remove\+At}} (int index)
+\item 
+bool \mbox{\hyperlink{class_q_c_p_layout_a6c58f537d8086f352576ab7c5b15d0bc}{remove}} (\mbox{\hyperlink{class_q_c_p_layout_element}{QCPLayout\+Element}} $\ast$element)
+\item 
+void \mbox{\hyperlink{class_q_c_p_layout_a02883bdf2769b5b227f0232dba1ac4ee}{clear}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_layout_a165c77f6287ac92e8d03017ad913378b}{update\+Layout}} ()
+\item 
+void \mbox{\hyperlink{class_q_c_p_layout_aeac66a292f65cf7f8adf94eb92345b3e}{size\+Constraints\+Changed}} () const
+\item 
+void \mbox{\hyperlink{class_q_c_p_layout_af6dbbc24156a808da29cd1ec031729a3}{adopt\+Element}} (\mbox{\hyperlink{class_q_c_p_layout_element}{QCPLayout\+Element}} $\ast$el)
+\item 
+void \mbox{\hyperlink{class_q_c_p_layout_a4afbb4bef0071f72f91afdac4433a18e}{release\+Element}} (\mbox{\hyperlink{class_q_c_p_layout_element}{QCPLayout\+Element}} $\ast$el)
+\item 
+QVector$<$ int $>$ \mbox{\hyperlink{class_q_c_p_layout_a3e77be8006d39f2aafc1313d6e8fc3fd}{get\+Section\+Sizes}} (QVector$<$ int $>$ max\+Sizes, QVector$<$ int $>$ min\+Sizes, QVector$<$ double $>$ stretch\+Factors, int total\+Size) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static QSize \mbox{\hyperlink{class_q_c_p_layout_a864fddc84721f186663faf3683f1fa70}{get\+Final\+Minimum\+Outer\+Size}} (const \mbox{\hyperlink{class_q_c_p_layout_element}{QCPLayout\+Element}} $\ast$el)
+\item 
+static QSize \mbox{\hyperlink{class_q_c_p_layout_add49fd6843821a6126914b837ed52e22}{get\+Final\+Maximum\+Outer\+Size}} (const \mbox{\hyperlink{class_q_c_p_layout_element}{QCPLayout\+Element}} $\ast$el)
+\end{DoxyCompactItemize}
+\doxysubsection*{Друзья}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_q_c_p_layout_a0790750c7e7f14fdbd960d172655b42b}{QCPLayout\+Element}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Дополнительные унаследованные члены}
+
+
+\doxysubsection{Подробное описание}
+The abstract base class for layouts. 
+
+This is an abstract base class for layout elements whose main purpose is to define the position and size of other child layout elements. In most cases, layouts don\textquotesingle{}t draw anything themselves (but there are exceptions to this, e.\+g. \mbox{\hyperlink{class_q_c_p_legend}{QCPLegend}}).
+
+\mbox{\hyperlink{class_q_c_p_layout}{QCPLayout}} derives from \mbox{\hyperlink{class_q_c_p_layout_element}{QCPLayout\+Element}}, and thus can itself be nested in other layouts.
+
+\mbox{\hyperlink{class_q_c_p_layout}{QCPLayout}} introduces a common interface for accessing and manipulating the child elements. Those functions are most notably \mbox{\hyperlink{class_q_c_p_layout_a39d3e9ef5d9b82ab1885ba1cb9597e56}{element\+Count}}, \mbox{\hyperlink{class_q_c_p_layout_afa73ca7d859f8a3ee5c73c9b353d2a56}{element\+At}}, \mbox{\hyperlink{class_q_c_p_layout_a5a79621fa0a6eabb8b520cfc04fb601a}{take\+At}}, \mbox{\hyperlink{class_q_c_p_layout_ada26cd17e56472b0b4d7fbbc96873e4c}{take}}, \mbox{\hyperlink{class_q_c_p_layout_a41e6ac049143866e8f8b4964efab01b2}{simplify}}, \mbox{\hyperlink{class_q_c_p_layout_a2403f684fee3ce47132faaeed00bb066}{remove\+At}}, \mbox{\hyperlink{class_q_c_p_layout_a6c58f537d8086f352576ab7c5b15d0bc}{remove}} and \mbox{\hyperlink{class_q_c_p_layout_a02883bdf2769b5b227f0232dba1ac4ee}{clear}}. Individual subclasses may add more functions to this interface which are more specialized to the form of the layout. For example, \mbox{\hyperlink{class_q_c_p_layout_grid}{QCPLayout\+Grid}} adds functions that take row and column indices to access cells of the layout grid more conveniently.
+
+Since this is an abstract base class, you can\textquotesingle{}t instantiate it directly. Rather use one of its subclasses like \mbox{\hyperlink{class_q_c_p_layout_grid}{QCPLayout\+Grid}} or \mbox{\hyperlink{class_q_c_p_layout_inset}{QCPLayout\+Inset}}.
+
+For a general introduction to the layout system, see the dedicated documentation page The Layout System. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_q_c_p_layout_a04222e6e1361fd802d48f1a25b7020d4}\label{class_q_c_p_layout_a04222e6e1361fd802d48f1a25b7020d4}} 
+\index{QCPLayout@{QCPLayout}!QCPLayout@{QCPLayout}}
+\index{QCPLayout@{QCPLayout}!QCPLayout@{QCPLayout}}
+\doxysubsubsection{\texorpdfstring{QCPLayout()}{QCPLayout()}}
+{\footnotesize\ttfamily QCPLayout\+::\+QCPLayout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Creates an instance of \mbox{\hyperlink{class_q_c_p_layout}{QCPLayout}} and sets default values. Note that since \mbox{\hyperlink{class_q_c_p_layout}{QCPLayout}} is an abstract base class, it can\textquotesingle{}t be instantiated directly. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3622 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_q_c_p_layout_af6dbbc24156a808da29cd1ec031729a3}\label{class_q_c_p_layout_af6dbbc24156a808da29cd1ec031729a3}} 
+\index{QCPLayout@{QCPLayout}!adoptElement@{adoptElement}}
+\index{adoptElement@{adoptElement}!QCPLayout@{QCPLayout}}
+\doxysubsubsection{\texorpdfstring{adoptElement()}{adoptElement()}}
+{\footnotesize\ttfamily void QCPLayout\+::adopt\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_layout_element}{QCPLayout\+Element}} $\ast$}]{el }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3769                                                  \{}
+\DoxyCodeLine{3770   \textcolor{keywordflow}{if} (el) \{}
+\DoxyCodeLine{3771     el-\/>\mbox{\hyperlink{class_q_c_p_layout_element_ae7c75c25549608bd688bdb65d4c38066}{mParentLayout}} = \textcolor{keyword}{this};}
+\DoxyCodeLine{3772     el-\/>\mbox{\hyperlink{class_q_c_p_layerable_aa23c893671f1f6744ac235cf2204cf3a}{setParentLayerable}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{3773     el-\/>setParent(\textcolor{keyword}{this});}
+\DoxyCodeLine{3774     \textcolor{keywordflow}{if} (!el-\/>\mbox{\hyperlink{class_q_c_p_layerable_a473edb813a4c1929d6b6a8fe3ff3faf7}{parentPlot}}()) el-\/>\mbox{\hyperlink{class_q_c_p_layerable_a8cbe5a0c9a5674249982f5ca5f8e02bc}{initializeParentPlot}}(\mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}});}
+\DoxyCodeLine{3775     el-\/>\mbox{\hyperlink{class_q_c_p_layout_element_a765f041a73af0c2de41b41a5a03e31a4}{layoutChanged}}();}
+\DoxyCodeLine{3776   \} \textcolor{keywordflow}{else}}
+\DoxyCodeLine{3777     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}Null element passed"{}};}
+\DoxyCodeLine{3778 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_layout_a02883bdf2769b5b227f0232dba1ac4ee}\label{class_q_c_p_layout_a02883bdf2769b5b227f0232dba1ac4ee}} 
+\index{QCPLayout@{QCPLayout}!clear@{clear}}
+\index{clear@{clear}!QCPLayout@{QCPLayout}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void QCPLayout\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Removes and deletes all layout elements in this layout. Finally calls \mbox{\hyperlink{class_q_c_p_layout_a41e6ac049143866e8f8b4964efab01b2}{simplify}} to make sure all empty cells are collapsed.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_layout_a6c58f537d8086f352576ab7c5b15d0bc}{remove}}, \mbox{\hyperlink{class_q_c_p_layout_a2403f684fee3ce47132faaeed00bb066}{remove\+At}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3716                       \{}
+\DoxyCodeLine{3717   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = \mbox{\hyperlink{class_q_c_p_layout_a39d3e9ef5d9b82ab1885ba1cb9597e56}{elementCount}}() -\/ 1; i >= 0; -\/-\/i) \{}
+\DoxyCodeLine{3718     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_layout_afa73ca7d859f8a3ee5c73c9b353d2a56}{elementAt}}(i)) \mbox{\hyperlink{class_q_c_p_layout_a2403f684fee3ce47132faaeed00bb066}{removeAt}}(i);}
+\DoxyCodeLine{3719   \}}
+\DoxyCodeLine{3720   \mbox{\hyperlink{class_q_c_p_layout_a41e6ac049143866e8f8b4964efab01b2}{simplify}}();}
+\DoxyCodeLine{3721 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_layout_afa73ca7d859f8a3ee5c73c9b353d2a56}\label{class_q_c_p_layout_afa73ca7d859f8a3ee5c73c9b353d2a56}} 
+\index{QCPLayout@{QCPLayout}!elementAt@{elementAt}}
+\index{elementAt@{elementAt}!QCPLayout@{QCPLayout}}
+\doxysubsubsection{\texorpdfstring{elementAt()}{elementAt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_layout_element}{QCPLayout\+Element}} $\ast$ QCPLayout\+::element\+At (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the element in the cell with the given {\itshape index}. If {\itshape index} is invalid, returns {\ttfamily nullptr}.
+
+Note that even if {\itshape index} is valid, the respective cell may be empty in some layouts (e.\+g. \mbox{\hyperlink{class_q_c_p_layout_grid}{QCPLayout\+Grid}}), so this function may return {\ttfamily nullptr} in those cases. You may use this function to check whether a cell is empty or not.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_layout_aca129722c019f91d3367046f80abfa77}{elements}}, \mbox{\hyperlink{class_q_c_p_layout_a39d3e9ef5d9b82ab1885ba1cb9597e56}{element\+Count}}, \mbox{\hyperlink{class_q_c_p_layout_a5a79621fa0a6eabb8b520cfc04fb601a}{take\+At}} 
+\end{DoxySeeAlso}
+
+
+Замещается в \mbox{\hyperlink{class_q_c_p_layout_inset_a881ca205605bae9c034733b808f93a02}{QCPLayout\+Inset}} и \mbox{\hyperlink{class_q_c_p_layout_grid_a4288f174082555f6bd92021bdedb75dc}{QCPLayout\+Grid}}.
+
+\mbox{\Hypertarget{class_q_c_p_layout_a39d3e9ef5d9b82ab1885ba1cb9597e56}\label{class_q_c_p_layout_a39d3e9ef5d9b82ab1885ba1cb9597e56}} 
+\index{QCPLayout@{QCPLayout}!elementCount@{elementCount}}
+\index{elementCount@{elementCount}!QCPLayout@{QCPLayout}}
+\doxysubsubsection{\texorpdfstring{elementCount()}{elementCount()}}
+{\footnotesize\ttfamily int QCPLayout\+::element\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the number of elements/cells in the layout.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_layout_aca129722c019f91d3367046f80abfa77}{elements}}, \mbox{\hyperlink{class_q_c_p_layout_afa73ca7d859f8a3ee5c73c9b353d2a56}{element\+At}} 
+\end{DoxySeeAlso}
+
+
+Замещается в \mbox{\hyperlink{class_q_c_p_layout_inset_a7f5aa4d48a2e844cfe6dd7ed8f0861df}{QCPLayout\+Inset}} и \mbox{\hyperlink{class_q_c_p_layout_grid_a9a8942aface780a02445ebcf14c48513}{QCPLayout\+Grid}}.
+
+\mbox{\Hypertarget{class_q_c_p_layout_aca129722c019f91d3367046f80abfa77}\label{class_q_c_p_layout_aca129722c019f91d3367046f80abfa77}} 
+\index{QCPLayout@{QCPLayout}!elements@{elements}}
+\index{elements@{elements}!QCPLayout@{QCPLayout}}
+\doxysubsubsection{\texorpdfstring{elements()}{elements()}}
+{\footnotesize\ttfamily QList$<$ \mbox{\hyperlink{class_q_c_p_layout_element}{QCPLayout\+Element}} $\ast$ $>$ QCPLayout\+::elements (\begin{DoxyParamCaption}\item[{bool}]{recursive }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns a list of all child elements in this layout element. If {\itshape recursive} is true, all sub-\/child elements are included in the list, too.
+
+\begin{DoxyWarning}{Предупреждения}
+There may be {\ttfamily nullptr} entries in the returned list. For example, \mbox{\hyperlink{class_q_c_p_layout_grid}{QCPLayout\+Grid}} may have empty cells which yield {\ttfamily nullptr} at the respective index. 
+\end{DoxyWarning}
+
+
+Переопределяет метод предка \mbox{\hyperlink{class_q_c_p_layout_element_a76dec8cb31e498994a944d7647a43309}{QCPLayout\+Element}}.
+
+
+
+Переопределяется в \mbox{\hyperlink{class_q_c_p_layout_grid_a7d5b968b4cf57393e9e387976d91f8f7}{QCPLayout\+Grid}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3648                                                                   \{}
+\DoxyCodeLine{3649   \textcolor{keyword}{const} \textcolor{keywordtype}{int} c = \mbox{\hyperlink{class_q_c_p_layout_a39d3e9ef5d9b82ab1885ba1cb9597e56}{elementCount}}();}
+\DoxyCodeLine{3650   QList<QCPLayoutElement *> result;}
+\DoxyCodeLine{3651 \textcolor{preprocessor}{\#if QT\_VERSION >= QT\_VERSION\_CHECK(4, 7, 0)}}
+\DoxyCodeLine{3652   result.reserve(c);}
+\DoxyCodeLine{3653 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{3654   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < c; ++i) result.append(\mbox{\hyperlink{class_q_c_p_layout_afa73ca7d859f8a3ee5c73c9b353d2a56}{elementAt}}(i));}
+\DoxyCodeLine{3655   \textcolor{keywordflow}{if} (recursive) \{}
+\DoxyCodeLine{3656     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < c; ++i) \{}
+\DoxyCodeLine{3657       \textcolor{keywordflow}{if} (result.at(i)) result << result.at(i)-\/>elements(recursive);}
+\DoxyCodeLine{3658     \}}
+\DoxyCodeLine{3659   \}}
+\DoxyCodeLine{3660   \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{3661 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_layout_add49fd6843821a6126914b837ed52e22}\label{class_q_c_p_layout_add49fd6843821a6126914b837ed52e22}} 
+\index{QCPLayout@{QCPLayout}!getFinalMaximumOuterSize@{getFinalMaximumOuterSize}}
+\index{getFinalMaximumOuterSize@{getFinalMaximumOuterSize}!QCPLayout@{QCPLayout}}
+\doxysubsubsection{\texorpdfstring{getFinalMaximumOuterSize()}{getFinalMaximumOuterSize()}}
+{\footnotesize\ttfamily QSize QCPLayout\+::get\+Final\+Maximum\+Outer\+Size (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_p_layout_element}{QCPLayout\+Element}} $\ast$}]{el }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{4010                                                                     \{}
+\DoxyCodeLine{4011   QSize maxOuterHint = el-\/>\mbox{\hyperlink{class_q_c_p_layout_element_ad96efb977a26e360e8a64a4c1e56456d}{maximumOuterSizeHint}}();}
+\DoxyCodeLine{4012   QSize maxOuter =}
+\DoxyCodeLine{4013       el-\/>\mbox{\hyperlink{class_q_c_p_layout_element_afb9503858d4aa0f3b9f1794b084fb40a}{maximumSize}}();  \textcolor{comment}{// depending on sizeConstraitRect this might be with}}
+\DoxyCodeLine{4014                           \textcolor{comment}{// respect to inner rect, so possibly add margins in}}
+\DoxyCodeLine{4015                           \textcolor{comment}{// next four lines (preserving unset maximum of}}
+\DoxyCodeLine{4016                           \textcolor{comment}{// QWIDGETSIZE\_MAX)}}
+\DoxyCodeLine{4017   \textcolor{keywordflow}{if} (maxOuter.width() < QWIDGETSIZE\_MAX \&\&}
+\DoxyCodeLine{4018       el-\/>\mbox{\hyperlink{class_q_c_p_layout_element_a66136f121ee3e1c933b748761203cab4}{sizeConstraintRect}}() == \mbox{\hyperlink{class_q_c_p_layout_element_a0afb3e5773529e4bd20e448f81be4d2aa7fa7e25cd23758b9915c64ed9f1be26c}{QCPLayoutElement::scrInnerRect}})}
+\DoxyCodeLine{4019     maxOuter.rwidth() += el-\/>\mbox{\hyperlink{class_q_c_p_layout_element_af4ac9450aa2d60863bf3a8ea0c940c9d}{margins}}().left() + el-\/>\mbox{\hyperlink{class_q_c_p_layout_element_af4ac9450aa2d60863bf3a8ea0c940c9d}{margins}}().right();}
+\DoxyCodeLine{4020   \textcolor{keywordflow}{if} (maxOuter.height() < QWIDGETSIZE\_MAX \&\&}
+\DoxyCodeLine{4021       el-\/>\mbox{\hyperlink{class_q_c_p_layout_element_a66136f121ee3e1c933b748761203cab4}{sizeConstraintRect}}() == \mbox{\hyperlink{class_q_c_p_layout_element_a0afb3e5773529e4bd20e448f81be4d2aa7fa7e25cd23758b9915c64ed9f1be26c}{QCPLayoutElement::scrInnerRect}})}
+\DoxyCodeLine{4022     maxOuter.rheight() += el-\/>\mbox{\hyperlink{class_q_c_p_layout_element_af4ac9450aa2d60863bf3a8ea0c940c9d}{margins}}().top() + el-\/>\mbox{\hyperlink{class_q_c_p_layout_element_af4ac9450aa2d60863bf3a8ea0c940c9d}{margins}}().bottom();}
+\DoxyCodeLine{4023 }
+\DoxyCodeLine{4024   \textcolor{keywordflow}{return} \{maxOuter.width() < QWIDGETSIZE\_MAX ? maxOuter.width()}
+\DoxyCodeLine{4025                                              : maxOuterHint.width(),}
+\DoxyCodeLine{4026           maxOuter.height() < QWIDGETSIZE\_MAX ? maxOuter.height()}
+\DoxyCodeLine{4027                                               : maxOuterHint.height()\};}
+\DoxyCodeLine{4028 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_layout_a864fddc84721f186663faf3683f1fa70}\label{class_q_c_p_layout_a864fddc84721f186663faf3683f1fa70}} 
+\index{QCPLayout@{QCPLayout}!getFinalMinimumOuterSize@{getFinalMinimumOuterSize}}
+\index{getFinalMinimumOuterSize@{getFinalMinimumOuterSize}!QCPLayout@{QCPLayout}}
+\doxysubsubsection{\texorpdfstring{getFinalMinimumOuterSize()}{getFinalMinimumOuterSize()}}
+{\footnotesize\ttfamily QSize QCPLayout\+::get\+Final\+Minimum\+Outer\+Size (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_p_layout_element}{QCPLayout\+Element}} $\ast$}]{el }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3981                                                                     \{}
+\DoxyCodeLine{3982   QSize minOuterHint = el-\/>\mbox{\hyperlink{class_q_c_p_layout_element_a46789036c4fcb190fa374f91321d7c09}{minimumOuterSizeHint}}();}
+\DoxyCodeLine{3983   QSize minOuter =}
+\DoxyCodeLine{3984       el-\/>\mbox{\hyperlink{class_q_c_p_layout_element_a60d4295468a2b57fe91f6f68e20c3993}{minimumSize}}();  \textcolor{comment}{// depending on sizeConstraitRect this might be with}}
+\DoxyCodeLine{3985                           \textcolor{comment}{// respect to inner rect, so possibly add margins in}}
+\DoxyCodeLine{3986                           \textcolor{comment}{// next four lines (preserving unset minimum of 0)}}
+\DoxyCodeLine{3987   \textcolor{keywordflow}{if} (minOuter.width() > 0 \&\&}
+\DoxyCodeLine{3988       el-\/>\mbox{\hyperlink{class_q_c_p_layout_element_a66136f121ee3e1c933b748761203cab4}{sizeConstraintRect}}() == \mbox{\hyperlink{class_q_c_p_layout_element_a0afb3e5773529e4bd20e448f81be4d2aa7fa7e25cd23758b9915c64ed9f1be26c}{QCPLayoutElement::scrInnerRect}})}
+\DoxyCodeLine{3989     minOuter.rwidth() += el-\/>\mbox{\hyperlink{class_q_c_p_layout_element_af4ac9450aa2d60863bf3a8ea0c940c9d}{margins}}().left() + el-\/>\mbox{\hyperlink{class_q_c_p_layout_element_af4ac9450aa2d60863bf3a8ea0c940c9d}{margins}}().right();}
+\DoxyCodeLine{3990   \textcolor{keywordflow}{if} (minOuter.height() > 0 \&\&}
+\DoxyCodeLine{3991       el-\/>\mbox{\hyperlink{class_q_c_p_layout_element_a66136f121ee3e1c933b748761203cab4}{sizeConstraintRect}}() == \mbox{\hyperlink{class_q_c_p_layout_element_a0afb3e5773529e4bd20e448f81be4d2aa7fa7e25cd23758b9915c64ed9f1be26c}{QCPLayoutElement::scrInnerRect}})}
+\DoxyCodeLine{3992     minOuter.rheight() += el-\/>\mbox{\hyperlink{class_q_c_p_layout_element_af4ac9450aa2d60863bf3a8ea0c940c9d}{margins}}().top() + el-\/>\mbox{\hyperlink{class_q_c_p_layout_element_af4ac9450aa2d60863bf3a8ea0c940c9d}{margins}}().bottom();}
+\DoxyCodeLine{3993 }
+\DoxyCodeLine{3994   \textcolor{keywordflow}{return} \{minOuter.width() > 0 ? minOuter.width() : minOuterHint.width(),}
+\DoxyCodeLine{3995           minOuter.height() > 0 ? minOuter.height() : minOuterHint.height()\};}
+\DoxyCodeLine{3996 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_layout_a3e77be8006d39f2aafc1313d6e8fc3fd}\label{class_q_c_p_layout_a3e77be8006d39f2aafc1313d6e8fc3fd}} 
+\index{QCPLayout@{QCPLayout}!getSectionSizes@{getSectionSizes}}
+\index{getSectionSizes@{getSectionSizes}!QCPLayout@{QCPLayout}}
+\doxysubsubsection{\texorpdfstring{getSectionSizes()}{getSectionSizes()}}
+{\footnotesize\ttfamily QVector$<$ int $>$ QCPLayout\+::get\+Section\+Sizes (\begin{DoxyParamCaption}\item[{QVector$<$ int $>$}]{max\+Sizes,  }\item[{QVector$<$ int $>$}]{min\+Sizes,  }\item[{QVector$<$ double $>$}]{stretch\+Factors,  }\item[{int}]{total\+Size }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3840                                                              \{}
+\DoxyCodeLine{3841   \textcolor{keywordflow}{if} (maxSizes.size() != minSizes.size() ||}
+\DoxyCodeLine{3842       minSizes.size() != stretchFactors.size()) \{}
+\DoxyCodeLine{3843     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}Passed vector sizes aren't equal:"{}} << maxSizes}
+\DoxyCodeLine{3844              << minSizes << stretchFactors;}
+\DoxyCodeLine{3845     \textcolor{keywordflow}{return} QVector<int>();}
+\DoxyCodeLine{3846   \}}
+\DoxyCodeLine{3847   \textcolor{keywordflow}{if} (stretchFactors.isEmpty()) \textcolor{keywordflow}{return} QVector<int>();}
+\DoxyCodeLine{3848   \textcolor{keywordtype}{int} sectionCount = stretchFactors.size();}
+\DoxyCodeLine{3849   QVector<double> sectionSizes(sectionCount);}
+\DoxyCodeLine{3850   \textcolor{comment}{// if provided total size is forced smaller than total minimum size, ignore}}
+\DoxyCodeLine{3851   \textcolor{comment}{// minimum sizes (squeeze sections):}}
+\DoxyCodeLine{3852   \textcolor{keywordtype}{int} minSizeSum = 0;}
+\DoxyCodeLine{3853   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < sectionCount; ++i) minSizeSum += minSizes.at(i);}
+\DoxyCodeLine{3854   \textcolor{keywordflow}{if} (totalSize < minSizeSum) \{}
+\DoxyCodeLine{3855     \textcolor{comment}{// new stretch factors are minimum sizes and minimum sizes are set to zero:}}
+\DoxyCodeLine{3856     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < sectionCount; ++i) \{}
+\DoxyCodeLine{3857       stretchFactors[i] = minSizes.at(i);}
+\DoxyCodeLine{3858       minSizes[i] = 0;}
+\DoxyCodeLine{3859     \}}
+\DoxyCodeLine{3860   \}}
+\DoxyCodeLine{3861 }
+\DoxyCodeLine{3862   QList<int> minimumLockedSections;}
+\DoxyCodeLine{3863   QList<int> unfinishedSections;}
+\DoxyCodeLine{3864   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < sectionCount; ++i) unfinishedSections.append(i);}
+\DoxyCodeLine{3865   \textcolor{keywordtype}{double} freeSize = totalSize;}
+\DoxyCodeLine{3866 }
+\DoxyCodeLine{3867   \textcolor{keywordtype}{int} outerIterations = 0;}
+\DoxyCodeLine{3868   \textcolor{keywordflow}{while} (!unfinishedSections.isEmpty() \&\&}
+\DoxyCodeLine{3869          outerIterations <}
+\DoxyCodeLine{3870              sectionCount * 2)  \textcolor{comment}{// the iteration check ist just a failsafe in}}
+\DoxyCodeLine{3871                                 \textcolor{comment}{// case something really strange happens}}
+\DoxyCodeLine{3872   \{}
+\DoxyCodeLine{3873     ++outerIterations;}
+\DoxyCodeLine{3874     \textcolor{keywordtype}{int} innerIterations = 0;}
+\DoxyCodeLine{3875     \textcolor{keywordflow}{while} (!unfinishedSections.isEmpty() \&\&}
+\DoxyCodeLine{3876            innerIterations <}
+\DoxyCodeLine{3877                sectionCount * 2)  \textcolor{comment}{// the iteration check ist just a failsafe in}}
+\DoxyCodeLine{3878                                   \textcolor{comment}{// case something really strange happens}}
+\DoxyCodeLine{3879     \{}
+\DoxyCodeLine{3880       ++innerIterations;}
+\DoxyCodeLine{3881       \textcolor{comment}{// find section that hits its maximum next:}}
+\DoxyCodeLine{3882       \textcolor{keywordtype}{int} nextId = -\/1;}
+\DoxyCodeLine{3883       \textcolor{keywordtype}{double} nextMax = 1e12;}
+\DoxyCodeLine{3884       \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{int} secId, unfinishedSections) \{}
+\DoxyCodeLine{3885         \textcolor{keywordtype}{double} hitsMaxAt = (maxSizes.at(secId) -\/ sectionSizes.at(secId)) /}
+\DoxyCodeLine{3886                            stretchFactors.at(secId);}
+\DoxyCodeLine{3887         \textcolor{keywordflow}{if} (hitsMaxAt < nextMax) \{}
+\DoxyCodeLine{3888           nextMax = hitsMaxAt;}
+\DoxyCodeLine{3889           nextId = secId;}
+\DoxyCodeLine{3890         \}}
+\DoxyCodeLine{3891       \}}
+\DoxyCodeLine{3892       \textcolor{comment}{// check if that maximum is actually within the bounds of the total size}}
+\DoxyCodeLine{3893       \textcolor{comment}{// (i.e. can we stretch all remaining sections so far that the found}}
+\DoxyCodeLine{3894       \textcolor{comment}{// section actually hits its maximum, without exceeding the total size}}
+\DoxyCodeLine{3895       \textcolor{comment}{// when we add up all sections)}}
+\DoxyCodeLine{3896       \textcolor{keywordtype}{double} stretchFactorSum = 0;}
+\DoxyCodeLine{3897       \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{int} secId, unfinishedSections)}
+\DoxyCodeLine{3898         stretchFactorSum += stretchFactors.at(secId);}
+\DoxyCodeLine{3899       \textcolor{keywordtype}{double} nextMaxLimit = freeSize / stretchFactorSum;}
+\DoxyCodeLine{3900       \textcolor{keywordflow}{if} (nextMax <}
+\DoxyCodeLine{3901           nextMaxLimit)  \textcolor{comment}{// next maximum is actually hit, move forward to that}}
+\DoxyCodeLine{3902                          \textcolor{comment}{// point and fix the size of that section}}
+\DoxyCodeLine{3903       \{}
+\DoxyCodeLine{3904         \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{int} secId, unfinishedSections) \{}
+\DoxyCodeLine{3905           sectionSizes[secId] +=}
+\DoxyCodeLine{3906               nextMax * stretchFactors.at(secId);  \textcolor{comment}{// increment all sections}}
+\DoxyCodeLine{3907           freeSize -\/= nextMax * stretchFactors.at(secId);}
+\DoxyCodeLine{3908         \}}
+\DoxyCodeLine{3909         unfinishedSections.removeOne(}
+\DoxyCodeLine{3910             nextId);  \textcolor{comment}{// exclude the section that is now at maximum from further}}
+\DoxyCodeLine{3911                       \textcolor{comment}{// changes}}
+\DoxyCodeLine{3912       \} \textcolor{keywordflow}{else}  \textcolor{comment}{// next maximum isn't hit, just distribute rest of free space on}}
+\DoxyCodeLine{3913               \textcolor{comment}{// remaining sections}}
+\DoxyCodeLine{3914       \{}
+\DoxyCodeLine{3915         \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{int} secId, unfinishedSections)}
+\DoxyCodeLine{3916           sectionSizes[secId] +=}
+\DoxyCodeLine{3917               nextMaxLimit *}
+\DoxyCodeLine{3918               stretchFactors.at(secId);  \textcolor{comment}{// increment all sections}}
+\DoxyCodeLine{3919         unfinishedSections.clear();}
+\DoxyCodeLine{3920       \}}
+\DoxyCodeLine{3921     \}}
+\DoxyCodeLine{3922     \textcolor{keywordflow}{if} (innerIterations == sectionCount * 2)}
+\DoxyCodeLine{3923       qDebug() << Q\_FUNC\_INFO}
+\DoxyCodeLine{3924                << \textcolor{stringliteral}{"{}Exceeded maximum expected inner iteration count, layouting "{}}}
+\DoxyCodeLine{3925                   \textcolor{stringliteral}{"{}aborted. Input was:"{}}}
+\DoxyCodeLine{3926                << maxSizes << minSizes << stretchFactors << totalSize;}
+\DoxyCodeLine{3927 }
+\DoxyCodeLine{3928     \textcolor{comment}{// now check whether the resulting section sizes violate minimum}}
+\DoxyCodeLine{3929     \textcolor{comment}{// restrictions:}}
+\DoxyCodeLine{3930     \textcolor{keywordtype}{bool} foundMinimumViolation = \textcolor{keyword}{false};}
+\DoxyCodeLine{3931     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < sectionSizes.size(); ++i) \{}
+\DoxyCodeLine{3932       \textcolor{keywordflow}{if} (minimumLockedSections.contains(i)) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{3933       \textcolor{keywordflow}{if} (sectionSizes.at(i) < minSizes.at(i))  \textcolor{comment}{// section violates minimum}}
+\DoxyCodeLine{3934       \{}
+\DoxyCodeLine{3935         sectionSizes[i] = minSizes.at(i);  \textcolor{comment}{// set it to minimum}}
+\DoxyCodeLine{3936         foundMinimumViolation =}
+\DoxyCodeLine{3937             \textcolor{keyword}{true};  \textcolor{comment}{// make sure we repeat the whole optimization process}}
+\DoxyCodeLine{3938         minimumLockedSections.append(i);}
+\DoxyCodeLine{3939       \}}
+\DoxyCodeLine{3940     \}}
+\DoxyCodeLine{3941     \textcolor{keywordflow}{if} (foundMinimumViolation) \{}
+\DoxyCodeLine{3942       freeSize = totalSize;}
+\DoxyCodeLine{3943       \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < sectionCount; ++i) \{}
+\DoxyCodeLine{3944         \textcolor{keywordflow}{if} (!minimumLockedSections.contains(}
+\DoxyCodeLine{3945                 i))  \textcolor{comment}{// only put sections that haven't hit their minimum back}}
+\DoxyCodeLine{3946                      \textcolor{comment}{// into the pool}}
+\DoxyCodeLine{3947           unfinishedSections.append(i);}
+\DoxyCodeLine{3948         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{3949           freeSize -\/=}
+\DoxyCodeLine{3950               sectionSizes.at(i);  \textcolor{comment}{// remove size of minimum locked sections}}
+\DoxyCodeLine{3951                                    \textcolor{comment}{// from available space in next round}}
+\DoxyCodeLine{3952       \}}
+\DoxyCodeLine{3953       \textcolor{comment}{// reset all section sizes to zero that are in unfinished sections (all}}
+\DoxyCodeLine{3954       \textcolor{comment}{// others have been set to their minimum):}}
+\DoxyCodeLine{3955       \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{int} secId, unfinishedSections) sectionSizes[secId] = 0;}
+\DoxyCodeLine{3956     \}}
+\DoxyCodeLine{3957   \}}
+\DoxyCodeLine{3958   \textcolor{keywordflow}{if} (outerIterations == sectionCount * 2)}
+\DoxyCodeLine{3959     qDebug() << Q\_FUNC\_INFO}
+\DoxyCodeLine{3960              << \textcolor{stringliteral}{"{}Exceeded maximum expected outer iteration count, layouting "{}}}
+\DoxyCodeLine{3961                 \textcolor{stringliteral}{"{}aborted. Input was:"{}}}
+\DoxyCodeLine{3962              << maxSizes << minSizes << stretchFactors << totalSize;}
+\DoxyCodeLine{3963 }
+\DoxyCodeLine{3964   QVector<int> result(sectionCount);}
+\DoxyCodeLine{3965   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < sectionCount; ++i) result[i] = qRound(sectionSizes.at(i));}
+\DoxyCodeLine{3966   \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{3967 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_layout_a4afbb4bef0071f72f91afdac4433a18e}\label{class_q_c_p_layout_a4afbb4bef0071f72f91afdac4433a18e}} 
+\index{QCPLayout@{QCPLayout}!releaseElement@{releaseElement}}
+\index{releaseElement@{releaseElement}!QCPLayout@{QCPLayout}}
+\doxysubsubsection{\texorpdfstring{releaseElement()}{releaseElement()}}
+{\footnotesize\ttfamily void QCPLayout\+::release\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_layout_element}{QCPLayout\+Element}} $\ast$}]{el }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3791                                                    \{}
+\DoxyCodeLine{3792   \textcolor{keywordflow}{if} (el) \{}
+\DoxyCodeLine{3793     el-\/>\mbox{\hyperlink{class_q_c_p_layout_element_ae7c75c25549608bd688bdb65d4c38066}{mParentLayout}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{3794     el-\/>\mbox{\hyperlink{class_q_c_p_layerable_aa23c893671f1f6744ac235cf2204cf3a}{setParentLayerable}}(\textcolor{keyword}{nullptr});}
+\DoxyCodeLine{3795     el-\/>setParent(\mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}});}
+\DoxyCodeLine{3796     \textcolor{comment}{// Note: Don't initializeParentPlot(0) here, because layout element will}}
+\DoxyCodeLine{3797     \textcolor{comment}{// stay in same parent plot}}
+\DoxyCodeLine{3798   \} \textcolor{keywordflow}{else}}
+\DoxyCodeLine{3799     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}Null element passed"{}};}
+\DoxyCodeLine{3800 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_layout_a6c58f537d8086f352576ab7c5b15d0bc}\label{class_q_c_p_layout_a6c58f537d8086f352576ab7c5b15d0bc}} 
+\index{QCPLayout@{QCPLayout}!remove@{remove}}
+\index{remove@{remove}!QCPLayout@{QCPLayout}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily bool QCPLayout\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_layout_element}{QCPLayout\+Element}} $\ast$}]{element }\end{DoxyParamCaption})}
+
+Removes and deletes the provided {\itshape element}. Returns true on success. If {\itshape element} is not in the layout, returns false.
+
+This function internally uses \mbox{\hyperlink{class_q_c_p_layout_a5a79621fa0a6eabb8b520cfc04fb601a}{take\+At}} to remove the element from the layout and then deletes the element. Note that some layouts don\textquotesingle{}t remove the respective cell right away but leave an empty cell after successful removal of the layout element. To collapse empty cells, use \mbox{\hyperlink{class_q_c_p_layout_a41e6ac049143866e8f8b4964efab01b2}{simplify}}.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_layout_a2403f684fee3ce47132faaeed00bb066}{remove\+At}}, \mbox{\hyperlink{class_q_c_p_layout_ada26cd17e56472b0b4d7fbbc96873e4c}{take}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3702                                                 \{}
+\DoxyCodeLine{3703   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_layout_ada26cd17e56472b0b4d7fbbc96873e4c}{take}}(element)) \{}
+\DoxyCodeLine{3704     \textcolor{keyword}{delete} element;}
+\DoxyCodeLine{3705     \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{3706   \} \textcolor{keywordflow}{else}}
+\DoxyCodeLine{3707     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{3708 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_layout_a2403f684fee3ce47132faaeed00bb066}\label{class_q_c_p_layout_a2403f684fee3ce47132faaeed00bb066}} 
+\index{QCPLayout@{QCPLayout}!removeAt@{removeAt}}
+\index{removeAt@{removeAt}!QCPLayout@{QCPLayout}}
+\doxysubsubsection{\texorpdfstring{removeAt()}{removeAt()}}
+{\footnotesize\ttfamily bool QCPLayout\+::remove\+At (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+Removes and deletes the element at the provided {\itshape index}. Returns true on success. If {\itshape index} is invalid or points to an empty cell, returns false.
+
+This function internally uses \mbox{\hyperlink{class_q_c_p_layout_a5a79621fa0a6eabb8b520cfc04fb601a}{take\+At}} to remove the element from the layout and then deletes the returned element. Note that some layouts don\textquotesingle{}t remove the respective cell right away but leave an empty cell after successful removal of the layout element. To collapse empty cells, use \mbox{\hyperlink{class_q_c_p_layout_a41e6ac049143866e8f8b4964efab01b2}{simplify}}.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_layout_a6c58f537d8086f352576ab7c5b15d0bc}{remove}}, \mbox{\hyperlink{class_q_c_p_layout_a5a79621fa0a6eabb8b520cfc04fb601a}{take\+At}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3683                                   \{}
+\DoxyCodeLine{3684   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_layout_element}{QCPLayoutElement}} *el = \mbox{\hyperlink{class_q_c_p_layout_a5a79621fa0a6eabb8b520cfc04fb601a}{takeAt}}(index)) \{}
+\DoxyCodeLine{3685     \textcolor{keyword}{delete} el;}
+\DoxyCodeLine{3686     \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{3687   \} \textcolor{keywordflow}{else}}
+\DoxyCodeLine{3688     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{3689 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_layout_a41e6ac049143866e8f8b4964efab01b2}\label{class_q_c_p_layout_a41e6ac049143866e8f8b4964efab01b2}} 
+\index{QCPLayout@{QCPLayout}!simplify@{simplify}}
+\index{simplify@{simplify}!QCPLayout@{QCPLayout}}
+\doxysubsubsection{\texorpdfstring{simplify()}{simplify()}}
+{\footnotesize\ttfamily void QCPLayout\+::simplify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Simplifies the layout by collapsing empty cells. The exact behavior depends on subclasses, the default implementation does nothing.
+
+Not all layouts need simplification. For example, \mbox{\hyperlink{class_q_c_p_layout_inset}{QCPLayout\+Inset}} doesn\textquotesingle{}t use explicit simplification while \mbox{\hyperlink{class_q_c_p_layout_grid}{QCPLayout\+Grid}} does. 
+
+Переопределяется в \mbox{\hyperlink{class_q_c_p_layout_inset_a18b7d508f0baa60cc5dcb1343cf7f32a}{QCPLayout\+Inset}} и \mbox{\hyperlink{class_q_c_p_layout_grid_a38621ca7aa633b6a9a88617df7f08672}{QCPLayout\+Grid}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3670 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_layout_aeac66a292f65cf7f8adf94eb92345b3e}\label{class_q_c_p_layout_aeac66a292f65cf7f8adf94eb92345b3e}} 
+\index{QCPLayout@{QCPLayout}!sizeConstraintsChanged@{sizeConstraintsChanged}}
+\index{sizeConstraintsChanged@{sizeConstraintsChanged}!QCPLayout@{QCPLayout}}
+\doxysubsubsection{\texorpdfstring{sizeConstraintsChanged()}{sizeConstraintsChanged()}}
+{\footnotesize\ttfamily void QCPLayout\+::size\+Constraints\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+Subclasses call this method to report changed (minimum/maximum) size constraints.
+
+If the parent of this layout is again a \mbox{\hyperlink{class_q_c_p_layout}{QCPLayout}}, forwards the call to the parent\textquotesingle{}s \mbox{\hyperlink{class_q_c_p_layout_aeac66a292f65cf7f8adf94eb92345b3e}{size\+Constraints\+Changed}}. If the parent is a QWidget (i.\+e. is the \mbox{\hyperlink{class_q_custom_plot_af1a1f1f571237deb7c2bd34a5e9f018f}{QCustom\+Plot\+::plot\+Layout}} of \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}}), calls QWidget\+::update\+Geometry, so if the \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} widget is inside a Qt QLayout, it may update itself and resize cells accordingly. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3733                                              \{}
+\DoxyCodeLine{3734   \textcolor{keywordflow}{if} (QWidget *w = qobject\_cast<QWidget *>(parent()))}
+\DoxyCodeLine{3735     w-\/>updateGeometry();}
+\DoxyCodeLine{3736   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_layout}{QCPLayout}} *l = qobject\_cast<QCPLayout *>(parent()))}
+\DoxyCodeLine{3737     l-\/>sizeConstraintsChanged();}
+\DoxyCodeLine{3738 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_layout_ada26cd17e56472b0b4d7fbbc96873e4c}\label{class_q_c_p_layout_ada26cd17e56472b0b4d7fbbc96873e4c}} 
+\index{QCPLayout@{QCPLayout}!take@{take}}
+\index{take@{take}!QCPLayout@{QCPLayout}}
+\doxysubsubsection{\texorpdfstring{take()}{take()}}
+{\footnotesize\ttfamily bool QCPLayout\+::take (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_layout_element}{QCPLayout\+Element}} $\ast$}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Removes the specified {\itshape element} from the layout and returns true on success.
+
+If the {\itshape element} isn\textquotesingle{}t in this layout, returns false.
+
+Note that some layouts don\textquotesingle{}t remove the respective cell right away but leave an empty cell after successful removal of the layout element. To collapse empty cells, use \mbox{\hyperlink{class_q_c_p_layout_a41e6ac049143866e8f8b4964efab01b2}{simplify}}.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_layout_a5a79621fa0a6eabb8b520cfc04fb601a}{take\+At}} 
+\end{DoxySeeAlso}
+
+
+Замещается в \mbox{\hyperlink{class_q_c_p_layout_inset_af7f13cc369f8190b5e7e17d5f39dfe1c}{QCPLayout\+Inset}} и \mbox{\hyperlink{class_q_c_p_layout_grid_aee961c2eb6cf8a85dcbc5a7d7b6c1a00}{QCPLayout\+Grid}}.
+
+\mbox{\Hypertarget{class_q_c_p_layout_a5a79621fa0a6eabb8b520cfc04fb601a}\label{class_q_c_p_layout_a5a79621fa0a6eabb8b520cfc04fb601a}} 
+\index{QCPLayout@{QCPLayout}!takeAt@{takeAt}}
+\index{takeAt@{takeAt}!QCPLayout@{QCPLayout}}
+\doxysubsubsection{\texorpdfstring{takeAt()}{takeAt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_layout_element}{QCPLayout\+Element}} $\ast$ QCPLayout\+::take\+At (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Removes the element with the given {\itshape index} from the layout and returns it.
+
+If the {\itshape index} is invalid or the cell with that index is empty, returns {\ttfamily nullptr}.
+
+Note that some layouts don\textquotesingle{}t remove the respective cell right away but leave an empty cell after successful removal of the layout element. To collapse empty cells, use \mbox{\hyperlink{class_q_c_p_layout_a41e6ac049143866e8f8b4964efab01b2}{simplify}}.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_layout_afa73ca7d859f8a3ee5c73c9b353d2a56}{element\+At}}, \mbox{\hyperlink{class_q_c_p_layout_ada26cd17e56472b0b4d7fbbc96873e4c}{take}} 
+\end{DoxySeeAlso}
+
+
+Замещается в \mbox{\hyperlink{class_q_c_p_layout_inset_abf2e8233f5b7051220907e62ded490a2}{QCPLayout\+Inset}} и \mbox{\hyperlink{class_q_c_p_layout_grid_a17dd220234d1bbf8835abcc666384d45}{QCPLayout\+Grid}}.
+
+\mbox{\Hypertarget{class_q_c_p_layout_a48ecc9c98ea90b547c3e27a931a8f7bd}\label{class_q_c_p_layout_a48ecc9c98ea90b547c3e27a931a8f7bd}} 
+\index{QCPLayout@{QCPLayout}!update@{update}}
+\index{update@{update}!QCPLayout@{QCPLayout}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void QCPLayout\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_layout_element_a0d83360e05735735aaf6d7983c56374d}{Update\+Phase}}}]{phase }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+If {\itshape phase} is \mbox{\hyperlink{class_q_c_p_layout_element_a0d83360e05735735aaf6d7983c56374da5d1ccf5d79967c232c3c511796860045}{up\+Layout}}, calls \mbox{\hyperlink{class_q_c_p_layout_a165c77f6287ac92e8d03017ad913378b}{update\+Layout}}, which subclasses may reimplement to reposition and resize their cells.
+
+Finally, the call is propagated down to all child \mbox{\hyperlink{class_q_c_p_layout_element}{QCPLayout\+Elements}}.
+
+For details about this method and the update phases, see the documentation of \mbox{\hyperlink{class_q_c_p_layout_element_a929c2ec62e0e0e1d8418eaa802e2af9b}{QCPLayout\+Element\+::update}}. 
+
+Переопределяет метод предка \mbox{\hyperlink{class_q_c_p_layout_element_a929c2ec62e0e0e1d8418eaa802e2af9b}{QCPLayout\+Element}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3634                                         \{}
+\DoxyCodeLine{3635   \mbox{\hyperlink{class_q_c_p_layout_element_a929c2ec62e0e0e1d8418eaa802e2af9b}{QCPLayoutElement::update}}(phase);}
+\DoxyCodeLine{3636 }
+\DoxyCodeLine{3637   \textcolor{comment}{// set child element rects according to layout:}}
+\DoxyCodeLine{3638   \textcolor{keywordflow}{if} (phase == \mbox{\hyperlink{class_q_c_p_layout_element_a0d83360e05735735aaf6d7983c56374da5d1ccf5d79967c232c3c511796860045}{upLayout}}) \mbox{\hyperlink{class_q_c_p_layout_a165c77f6287ac92e8d03017ad913378b}{updateLayout}}();}
+\DoxyCodeLine{3639 }
+\DoxyCodeLine{3640   \textcolor{comment}{// propagate update call to child elements:}}
+\DoxyCodeLine{3641   \textcolor{keyword}{const} \textcolor{keywordtype}{int} elCount = \mbox{\hyperlink{class_q_c_p_layout_a39d3e9ef5d9b82ab1885ba1cb9597e56}{elementCount}}();}
+\DoxyCodeLine{3642   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < elCount; ++i) \{}
+\DoxyCodeLine{3643     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_layout_element}{QCPLayoutElement}} *el = \mbox{\hyperlink{class_q_c_p_layout_afa73ca7d859f8a3ee5c73c9b353d2a56}{elementAt}}(i)) el-\/>update(phase);}
+\DoxyCodeLine{3644   \}}
+\DoxyCodeLine{3645 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_layout_a165c77f6287ac92e8d03017ad913378b}\label{class_q_c_p_layout_a165c77f6287ac92e8d03017ad913378b}} 
+\index{QCPLayout@{QCPLayout}!updateLayout@{updateLayout}}
+\index{updateLayout@{updateLayout}!QCPLayout@{QCPLayout}}
+\doxysubsubsection{\texorpdfstring{updateLayout()}{updateLayout()}}
+{\footnotesize\ttfamily void QCPLayout\+::update\+Layout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Переопределяется в \mbox{\hyperlink{class_q_c_p_layout_inset_a493526b922ea66a75c45ef1842446988}{QCPLayout\+Inset}} и \mbox{\hyperlink{class_q_c_p_layout_grid_a6cf43f14d3fa335fd8758561ccf1f78c}{QCPLayout\+Grid}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3753 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Документация по друзьям класса и функциям, относящимся к классу}
+\mbox{\Hypertarget{class_q_c_p_layout_a0790750c7e7f14fdbd960d172655b42b}\label{class_q_c_p_layout_a0790750c7e7f14fdbd960d172655b42b}} 
+\index{QCPLayout@{QCPLayout}!QCPLayoutElement@{QCPLayoutElement}}
+\index{QCPLayoutElement@{QCPLayoutElement}!QCPLayout@{QCPLayout}}
+\doxysubsubsection{\texorpdfstring{QCPLayoutElement}{QCPLayoutElement}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_q_c_p_layout_element}{QCPLayout\+Element}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Smart\+Calc/\mbox{\hyperlink{qcustomplot_8h}{qcustomplot.\+h}}\item 
+Smart\+Calc/\mbox{\hyperlink{qcustomplot_8cpp}{qcustomplot.\+cpp}}\end{DoxyCompactItemize}

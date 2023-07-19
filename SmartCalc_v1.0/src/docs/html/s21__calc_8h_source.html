@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Smart-Calc: Исходный файл SmartCalc/s21_calc.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Smart-Calc
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c1230508c3556794bf20c1c24f15fc95.html">SmartCalc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">s21_calc.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="s21__calc_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SRC_S21_CALC_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SRC_S21_CALC_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="s21__calc_8h.html#abfc8d2c18d65a6b696664cc78c39c2c5">    7</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="s21__calc_8h.html#abfc8d2c18d65a6b696664cc78c39c2c5">Codes</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="s21__calc_8h.html#abfc8d2c18d65a6b696664cc78c39c2c5a2bc49ec37d6a5715dd23e85f1ff5bb59">    8</a></span>&#160;  <a class="code" href="s21__calc_8h.html#abfc8d2c18d65a6b696664cc78c39c2c5a2bc49ec37d6a5715dd23e85f1ff5bb59">OK</a>,</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="s21__calc_8h.html#abfc8d2c18d65a6b696664cc78c39c2c5a2fd6f336d08340583bd620a7f5694c90">    9</a></span>&#160;  <a class="code" href="s21__calc_8h.html#abfc8d2c18d65a6b696664cc78c39c2c5a2fd6f336d08340583bd620a7f5694c90">ERROR</a>,</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;};</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keywordtype">void</span> <a class="code" href="s21__calc_8h.html#a6667074b192216c2bf8a45ac5248cfc9">get_polish_notation</a>(<span class="keywordtype">char</span> **input, <span class="keywordtype">char</span> **result);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">int</span> <a class="code" href="s21__calc_8h.html#ab3b65ec8106201bd2ffe29d3d3e24d3f">is_digit</a>(<span class="keywordtype">char</span> symbol);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">int</span> <a class="code" href="s21__calc_8h.html#a1af1a8119589bd1881acf16f56d8bf78">priority</a>(<span class="keywordtype">char</span> sign);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">int</span> <a class="code" href="s21__calc_8h.html#a426e7a37f18103788c2ff1fd0b034547">validate_input</a>(<span class="keywordtype">char</span> *input);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">void</span> <a class="code" href="s21__calc_8h.html#aa042b6eb8b60790ff8160a48d15f3507">get_lexems</a>(<span class="keywordtype">char</span> *input, <span class="keywordtype">char</span> **result);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">long</span> <span class="keywordtype">double</span> <a class="code" href="s21__calc_8h.html#ae346379100c9902e9d21514e33f70279">calculate_lexems</a>(<span class="keywordtype">char</span> **input);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">int</span> <a class="code" href="s21__calc_8h.html#a8fa97ec5a7233fb4209e962d4756a2ae">is_binary_operation</a>(<span class="keywordtype">char</span> symbol);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">int</span> <a class="code" href="s21__calc_8h.html#a1d844fdcf4e367747951108a024322f4">is_unary_operation</a>(<span class="keywordtype">char</span> symbol);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">long</span> <span class="keywordtype">double</span> <a class="code" href="s21__calc_8h.html#ad3801123e3a90c817398694fde46c911">calc_binary</a>(<span class="keywordtype">char</span> operation, <span class="keywordtype">long</span> <span class="keywordtype">double</span> a, <span class="keywordtype">long</span> <span class="keywordtype">double</span> b);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keywordtype">long</span> <span class="keywordtype">double</span> <a class="code" href="s21__calc_8h.html#a988e3d80bf1efc9ba6d5fc84085b7c9e">calc_unary</a>(<span class="keywordtype">char</span> operation, <span class="keywordtype">long</span> <span class="keywordtype">double</span> a);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keywordtype">int</span> <a class="code" href="s21__calc_8h.html#a6bc0290fd7bb65ace779387602a2f91c">calc</a>(<span class="keywordtype">char</span> *input, <span class="keywordtype">long</span> <span class="keywordtype">double</span> *result);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keywordtype">void</span> <a class="code" href="s21__calc_8h.html#a801bf9704baae2972fa33c6afe95fa1d">calculate_credit</a>(<span class="keywordtype">long</span> <span class="keywordtype">double</span> total_sum, <span class="keywordtype">long</span> <span class="keywordtype">double</span> persent, <span class="keywordtype">int</span> months,</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                      <span class="keywordtype">char</span> type, <span class="keywordtype">int</span> month, <span class="keywordtype">long</span> <span class="keywordtype">double</span> *monthly_payment,</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                      <span class="keywordtype">long</span> <span class="keywordtype">double</span> *overpayment, <span class="keywordtype">long</span> <span class="keywordtype">double</span> *total_payment);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="as21__calc_8h_html_a1af1a8119589bd1881acf16f56d8bf78"><div class="ttname"><a href="s21__calc_8h.html#a1af1a8119589bd1881acf16f56d8bf78">priority</a></div><div class="ttdeci">int priority(char sign)</div><div class="ttdoc">Вычисление приоритета операции</div><div class="ttdef"><b>Definition:</b> s21_calc.c:110</div></div>
+<div class="ttc" id="as21__calc_8h_html_a1d844fdcf4e367747951108a024322f4"><div class="ttname"><a href="s21__calc_8h.html#a1d844fdcf4e367747951108a024322f4">is_unary_operation</a></div><div class="ttdeci">int is_unary_operation(char symbol)</div><div class="ttdoc">Проверка является ли символ унарной операцией</div><div class="ttdef"><b>Definition:</b> s21_calc.c:358</div></div>
+<div class="ttc" id="as21__calc_8h_html_a426e7a37f18103788c2ff1fd0b034547"><div class="ttname"><a href="s21__calc_8h.html#a426e7a37f18103788c2ff1fd0b034547">validate_input</a></div><div class="ttdeci">int validate_input(char *input)</div><div class="ttdoc">Валидация входного выражения</div><div class="ttdef"><b>Definition:</b> s21_calc.c:141</div></div>
+<div class="ttc" id="as21__calc_8h_html_a6667074b192216c2bf8a45ac5248cfc9"><div class="ttname"><a href="s21__calc_8h.html#a6667074b192216c2bf8a45ac5248cfc9">get_polish_notation</a></div><div class="ttdeci">void get_polish_notation(char **input, char **result)</div><div class="ttdoc">Преобразование инфиксной записи в польскую нотацию</div><div class="ttdef"><b>Definition:</b> s21_calc.c:43</div></div>
+<div class="ttc" id="as21__calc_8h_html_a6bc0290fd7bb65ace779387602a2f91c"><div class="ttname"><a href="s21__calc_8h.html#a6bc0290fd7bb65ace779387602a2f91c">calc</a></div><div class="ttdeci">int calc(char *input, long double *result)</div><div class="ttdoc">Вычисление выражения</div><div class="ttdef"><b>Definition:</b> s21_calc.c:10</div></div>
+<div class="ttc" id="as21__calc_8h_html_a801bf9704baae2972fa33c6afe95fa1d"><div class="ttname"><a href="s21__calc_8h.html#a801bf9704baae2972fa33c6afe95fa1d">calculate_credit</a></div><div class="ttdeci">void calculate_credit(long double total_sum, long double persent, int months, char type, int month, long double *monthly_payment, long double *overpayment, long double *total_payment)</div><div class="ttdoc">Вычисление параметров кредита</div><div class="ttdef"><b>Definition:</b> s21_calc.c:377</div></div>
+<div class="ttc" id="as21__calc_8h_html_a8fa97ec5a7233fb4209e962d4756a2ae"><div class="ttname"><a href="s21__calc_8h.html#a8fa97ec5a7233fb4209e962d4756a2ae">is_binary_operation</a></div><div class="ttdeci">int is_binary_operation(char symbol)</div><div class="ttdoc">Проверка является ли символ бинарной операцией</div><div class="ttdef"><b>Definition:</b> s21_calc.c:343</div></div>
+<div class="ttc" id="as21__calc_8h_html_a988e3d80bf1efc9ba6d5fc84085b7c9e"><div class="ttname"><a href="s21__calc_8h.html#a988e3d80bf1efc9ba6d5fc84085b7c9e">calc_unary</a></div><div class="ttdeci">long double calc_unary(char operation, long double a)</div><div class="ttdoc">Вычисление унарной операции между 2 числами</div><div class="ttdef"><b>Definition:</b> s21_calc.c:306</div></div>
+<div class="ttc" id="as21__calc_8h_html_aa042b6eb8b60790ff8160a48d15f3507"><div class="ttname"><a href="s21__calc_8h.html#aa042b6eb8b60790ff8160a48d15f3507">get_lexems</a></div><div class="ttdeci">void get_lexems(char *input, char **result)</div><div class="ttdoc">Преобработка входного выражения</div><div class="ttdef"><b>Definition:</b> s21_calc.c:184</div></div>
+<div class="ttc" id="as21__calc_8h_html_ab3b65ec8106201bd2ffe29d3d3e24d3f"><div class="ttname"><a href="s21__calc_8h.html#ab3b65ec8106201bd2ffe29d3d3e24d3f">is_digit</a></div><div class="ttdeci">int is_digit(char symbol)</div><div class="ttdoc">Проверка является ли символ числом</div><div class="ttdef"><b>Definition:</b> s21_calc.c:105</div></div>
+<div class="ttc" id="as21__calc_8h_html_abfc8d2c18d65a6b696664cc78c39c2c5"><div class="ttname"><a href="s21__calc_8h.html#abfc8d2c18d65a6b696664cc78c39c2c5">Codes</a></div><div class="ttdeci">Codes</div><div class="ttdoc">Коды ошибок</div><div class="ttdef"><b>Definition:</b> s21_calc.h:7</div></div>
+<div class="ttc" id="as21__calc_8h_html_abfc8d2c18d65a6b696664cc78c39c2c5a2bc49ec37d6a5715dd23e85f1ff5bb59"><div class="ttname"><a href="s21__calc_8h.html#abfc8d2c18d65a6b696664cc78c39c2c5a2bc49ec37d6a5715dd23e85f1ff5bb59">OK</a></div><div class="ttdeci">@ OK</div><div class="ttdef"><b>Definition:</b> s21_calc.h:8</div></div>
+<div class="ttc" id="as21__calc_8h_html_abfc8d2c18d65a6b696664cc78c39c2c5a2fd6f336d08340583bd620a7f5694c90"><div class="ttname"><a href="s21__calc_8h.html#abfc8d2c18d65a6b696664cc78c39c2c5a2fd6f336d08340583bd620a7f5694c90">ERROR</a></div><div class="ttdeci">@ ERROR</div><div class="ttdef"><b>Definition:</b> s21_calc.h:9</div></div>
+<div class="ttc" id="as21__calc_8h_html_ad3801123e3a90c817398694fde46c911"><div class="ttname"><a href="s21__calc_8h.html#ad3801123e3a90c817398694fde46c911">calc_binary</a></div><div class="ttdeci">long double calc_binary(char operation, long double a, long double b)</div><div class="ttdoc">Вычисление бинарной операции между 2 числами</div><div class="ttdef"><b>Definition:</b> s21_calc.c:281</div></div>
+<div class="ttc" id="as21__calc_8h_html_ae346379100c9902e9d21514e33f70279"><div class="ttname"><a href="s21__calc_8h.html#ae346379100c9902e9d21514e33f70279">calculate_lexems</a></div><div class="ttdeci">long double calculate_lexems(char **input)</div><div class="ttdoc">Вычисление выражения в польской нотации</div><div class="ttdef"><b>Definition:</b> s21_calc.c:260</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,611 @@
+\hypertarget{class_q_c_p_axis_ticker}{}\doxysection{Класс QCPAxis\+Ticker}
+\label{class_q_c_p_axis_ticker}\index{QCPAxisTicker@{QCPAxisTicker}}
+
+
+The base class tick generator used by \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} to create tick positions and tick labels.  
+
+
+
+
+{\ttfamily \#include $<$qcustomplot.\+h$>$}
+
+Граф наследования\+:QCPAxis\+Ticker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.181435cm]{class_q_c_p_axis_ticker}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые типы}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_q_c_p_axis_ticker_ab6d2f9d9477821623ac9bc4b21ddf49a}{Tick\+Step\+Strategy}} \{ \mbox{\hyperlink{class_q_c_p_axis_ticker_ab6d2f9d9477821623ac9bc4b21ddf49aa9002aa2fd5633ab5556c71a26fed63a8}{tss\+Readability}}
+, \mbox{\hyperlink{class_q_c_p_axis_ticker_ab6d2f9d9477821623ac9bc4b21ddf49aa770312b6b9b0c64a37ceeba96e0cd7f2}{tss\+Meet\+Tick\+Count}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_c_p_axis_ticker_a8fcf23c79ebd72202fe79253f9f01ea8}{QCPAxis\+Ticker}} ()
+\item 
+virtual \mbox{\hyperlink{class_q_c_p_axis_ticker_a1119d6f09ad720f9c5dfdd2559047161}{$\sim$\+QCPAxis\+Ticker}} ()
+\item 
+\mbox{\hyperlink{class_q_c_p_axis_ticker_ab6d2f9d9477821623ac9bc4b21ddf49a}{Tick\+Step\+Strategy}} \mbox{\hyperlink{class_q_c_p_axis_ticker_a58df76f2ec3eb48401bdd314b0e14ba1}{tick\+Step\+Strategy}} () const
+\item 
+int \mbox{\hyperlink{class_q_c_p_axis_ticker_aaf9edbe4169ce55e216fd067cc139452}{tick\+Count}} () const
+\item 
+double \mbox{\hyperlink{class_q_c_p_axis_ticker_ac0c6e9587c36fdeefb5518c00fe7ab15}{tick\+Origin}} () const
+\item 
+void \mbox{\hyperlink{class_q_c_p_axis_ticker_a73b1d847c1a12159af6bfda4ebebe7d5}{set\+Tick\+Step\+Strategy}} (\mbox{\hyperlink{class_q_c_p_axis_ticker_ab6d2f9d9477821623ac9bc4b21ddf49a}{Tick\+Step\+Strategy}} strategy)
+\item 
+void \mbox{\hyperlink{class_q_c_p_axis_ticker_a47752abba8293e6dc18491501ae34008}{set\+Tick\+Count}} (int count)
+\item 
+void \mbox{\hyperlink{class_q_c_p_axis_ticker_ab509c7e500293bf66a8409f0d7c23943}{set\+Tick\+Origin}} (double origin)
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_axis_ticker_aefbd11725678ca824add8cf926cbc856}{generate}} (const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&range, const QLocale \&locale, QChar format\+Char, int precision, QVector$<$ double $>$ \&ticks, QVector$<$ double $>$ $\ast$sub\+Ticks, QVector$<$ QString $>$ $\ast$tick\+Labels)
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+virtual double \mbox{\hyperlink{class_q_c_p_axis_ticker_a910d69bcec2de37e92d8d4e1ecf201e2}{get\+Tick\+Step}} (const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&range)
+\item 
+virtual int \mbox{\hyperlink{class_q_c_p_axis_ticker_a4ccc403ced7a1457ce6ba293509933c8}{get\+Sub\+Tick\+Count}} (double tick\+Step)
+\item 
+virtual QString \mbox{\hyperlink{class_q_c_p_axis_ticker_a8201eb4aa8be192bf786b126eb5ee089}{get\+Tick\+Label}} (double tick, const QLocale \&locale, QChar format\+Char, int precision)
+\item 
+virtual QVector$<$ double $>$ \mbox{\hyperlink{class_q_c_p_axis_ticker_af4645a824c7bd2ca8fc7e86ebf9055bd}{create\+Tick\+Vector}} (double tick\+Step, const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&range)
+\item 
+virtual QVector$<$ double $>$ \mbox{\hyperlink{class_q_c_p_axis_ticker_a9a6435723fa0bd366d1ea4c2cff7c33f}{create\+Sub\+Tick\+Vector}} (int sub\+Tick\+Count, const QVector$<$ double $>$ \&ticks)
+\item 
+virtual QVector$<$ QString $>$ \mbox{\hyperlink{class_q_c_p_axis_ticker_a804050e408f37a0b9770c6654ebe6aa7}{create\+Label\+Vector}} (const QVector$<$ double $>$ \&ticks, const QLocale \&locale, QChar format\+Char, int precision)
+\item 
+void \mbox{\hyperlink{class_q_c_p_axis_ticker_ab28cc1ab549489be7975f5ce7e717916}{trim\+Ticks}} (const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&range, QVector$<$ double $>$ \&ticks, bool keep\+One\+Outlier) const
+\item 
+double \mbox{\hyperlink{class_q_c_p_axis_ticker_a4ea0a7c4ca1c610f92b9bd5944ab4260}{pick\+Closest}} (double target, const QVector$<$ double $>$ \&candidates) const
+\item 
+double \mbox{\hyperlink{class_q_c_p_axis_ticker_abe99aaaf6c512812869b0a19937c76ff}{get\+Mantissa}} (double input, double $\ast$magnitude=nullptr) const
+\item 
+double \mbox{\hyperlink{class_q_c_p_axis_ticker_ac7df6c72876b7abd67c932663a0b0f6a}{clean\+Mantissa}} (double input) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_c_p_axis_ticker_ab6d2f9d9477821623ac9bc4b21ddf49a}{Tick\+Step\+Strategy}} \mbox{\hyperlink{class_q_c_p_axis_ticker_ac059d6d670b2f6132c593fb4de156701}{m\+Tick\+Step\+Strategy}}
+\item 
+int \mbox{\hyperlink{class_q_c_p_axis_ticker_a14a35b47d1aad11b08d18ea0e25937b8}{m\+Tick\+Count}}
+\item 
+double \mbox{\hyperlink{class_q_c_p_axis_ticker_a560ef9347b1aa599a9bf0e2f29d3ec16}{m\+Tick\+Origin}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+The base class tick generator used by \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} to create tick positions and tick labels. 
+
+Each \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} has an internal \mbox{\hyperlink{class_q_c_p_axis_ticker}{QCPAxis\+Ticker}} (or a subclass) in order to generate tick positions and tick labels for the current axis range. The ticker of an axis can be set via \mbox{\hyperlink{class_q_c_p_axis_a4ee03fcd2c74d05cd1a419b9af5cfbdc}{QCPAxis\+::set\+Ticker}}. Since that method takes a {\ttfamily QShared\+Pointer$<$\+QCPAxis\+Ticker$>$}, multiple axes can share the same ticker instance.
+
+This base class generates normal tick coordinates and numeric labels for linear axes. It picks a reasonable tick step (the separation between ticks) which results in readable tick labels. The number of ticks that should be approximately generated can be set via \mbox{\hyperlink{class_q_c_p_axis_ticker_a47752abba8293e6dc18491501ae34008}{set\+Tick\+Count}}. Depending on the current tick step strategy (\mbox{\hyperlink{class_q_c_p_axis_ticker_a73b1d847c1a12159af6bfda4ebebe7d5}{set\+Tick\+Step\+Strategy}}), the algorithm either sacrifices readability to better match the specified tick count (\mbox{\hyperlink{class_q_c_p_axis_ticker_ab6d2f9d9477821623ac9bc4b21ddf49aa770312b6b9b0c64a37ceeba96e0cd7f2}{QCPAxis\+Ticker\+::tss\+Meet\+Tick\+Count}}) or relaxes the tick count in favor of better tick steps (\mbox{\hyperlink{class_q_c_p_axis_ticker_ab6d2f9d9477821623ac9bc4b21ddf49aa9002aa2fd5633ab5556c71a26fed63a8}{QCPAxis\+Ticker\+::tss\+Readability}}), which is the default.
+
+The following more specialized axis ticker subclasses are available, see details in the respective class documentation\+:
+
+\begin{center} \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\mbox{\hyperlink{class_q_c_p_axis_ticker_fixed}{QCPAxis\+Ticker\+Fixed}}& \\\cline{1-2}
+\mbox{\hyperlink{class_q_c_p_axis_ticker_log}{QCPAxis\+Ticker\+Log}}& axisticker-\/pi.\+png \\\cline{1-2}
+\mbox{\hyperlink{class_q_c_p_axis_ticker_text}{QCPAxis\+Ticker\+Text}}& \\\cline{1-2}
+\mbox{\hyperlink{class_q_c_p_axis_ticker_date_time}{QCPAxis\+Ticker\+Date\+Time}}&\\\cline{1-2}
+\end{longtabu}
+\end{center} 
+
+\doxysubsection{Перечисления}
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_ab6d2f9d9477821623ac9bc4b21ddf49a}\label{class_q_c_p_axis_ticker_ab6d2f9d9477821623ac9bc4b21ddf49a}} 
+\index{QCPAxisTicker@{QCPAxisTicker}!TickStepStrategy@{TickStepStrategy}}
+\index{TickStepStrategy@{TickStepStrategy}!QCPAxisTicker@{QCPAxisTicker}}
+\doxysubsubsection{\texorpdfstring{TickStepStrategy}{TickStepStrategy}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_q_c_p_axis_ticker_ab6d2f9d9477821623ac9bc4b21ddf49a}{QCPAxis\+Ticker\+::\+Tick\+Step\+Strategy}}}
+
+Defines the strategies that the axis ticker may follow when choosing the size of the tick step.
+
+\begin{DoxySeeAlso}{См. также}
+\mbox{\hyperlink{class_q_c_p_axis_ticker_a73b1d847c1a12159af6bfda4ebebe7d5}{set\+Tick\+Step\+Strategy}} 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Элементы перечислений}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{tssReadability@{tssReadability}!QCPAxisTicker@{QCPAxisTicker}}\index{QCPAxisTicker@{QCPAxisTicker}!tssReadability@{tssReadability}}}\mbox{\Hypertarget{class_q_c_p_axis_ticker_ab6d2f9d9477821623ac9bc4b21ddf49aa9002aa2fd5633ab5556c71a26fed63a8}\label{class_q_c_p_axis_ticker_ab6d2f9d9477821623ac9bc4b21ddf49aa9002aa2fd5633ab5556c71a26fed63a8}} 
+tss\+Readability&A nicely readable tick step is prioritized over matching the requested number of ticks (see \mbox{\hyperlink{class_q_c_p_axis_ticker_a47752abba8293e6dc18491501ae34008}{set\+Tick\+Count}}) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{tssMeetTickCount@{tssMeetTickCount}!QCPAxisTicker@{QCPAxisTicker}}\index{QCPAxisTicker@{QCPAxisTicker}!tssMeetTickCount@{tssMeetTickCount}}}\mbox{\Hypertarget{class_q_c_p_axis_ticker_ab6d2f9d9477821623ac9bc4b21ddf49aa770312b6b9b0c64a37ceeba96e0cd7f2}\label{class_q_c_p_axis_ticker_ab6d2f9d9477821623ac9bc4b21ddf49aa770312b6b9b0c64a37ceeba96e0cd7f2}} 
+tss\+Meet\+Tick\+Count&Less readable tick steps are allowed which in turn facilitates getting closer to the requested tick count \\
+\hline
+
+\end{DoxyEnumFields}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1940                         \{}
+\DoxyCodeLine{1941     \mbox{\hyperlink{class_q_c_p_axis_ticker_ab6d2f9d9477821623ac9bc4b21ddf49aa9002aa2fd5633ab5556c71a26fed63a8}{tssReadability}}  }
+\DoxyCodeLine{1944     ,}
+\DoxyCodeLine{1945     \mbox{\hyperlink{class_q_c_p_axis_ticker_ab6d2f9d9477821623ac9bc4b21ddf49aa770312b6b9b0c64a37ceeba96e0cd7f2}{tssMeetTickCount}}  }
+\DoxyCodeLine{1948   \};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_a8fcf23c79ebd72202fe79253f9f01ea8}\label{class_q_c_p_axis_ticker_a8fcf23c79ebd72202fe79253f9f01ea8}} 
+\index{QCPAxisTicker@{QCPAxisTicker}!QCPAxisTicker@{QCPAxisTicker}}
+\index{QCPAxisTicker@{QCPAxisTicker}!QCPAxisTicker@{QCPAxisTicker}}
+\doxysubsubsection{\texorpdfstring{QCPAxisTicker()}{QCPAxisTicker()}}
+{\footnotesize\ttfamily QCPAxis\+Ticker\+::\+QCPAxis\+Ticker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructs the ticker and sets reasonable default values. Axis tickers are commonly created managed by a QShared\+Pointer, which then can be passed to \mbox{\hyperlink{class_q_c_p_axis_a4ee03fcd2c74d05cd1a419b9af5cfbdc}{QCPAxis\+::set\+Ticker}}. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6099     : \mbox{\hyperlink{class_q_c_p_axis_ticker_ac059d6d670b2f6132c593fb4de156701}{mTickStepStrategy}}(\mbox{\hyperlink{class_q_c_p_axis_ticker_ab6d2f9d9477821623ac9bc4b21ddf49aa9002aa2fd5633ab5556c71a26fed63a8}{tssReadability}}), \mbox{\hyperlink{class_q_c_p_axis_ticker_a14a35b47d1aad11b08d18ea0e25937b8}{mTickCount}}(5), \mbox{\hyperlink{class_q_c_p_axis_ticker_a560ef9347b1aa599a9bf0e2f29d3ec16}{mTickOrigin}}(0) \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_a1119d6f09ad720f9c5dfdd2559047161}\label{class_q_c_p_axis_ticker_a1119d6f09ad720f9c5dfdd2559047161}} 
+\index{QCPAxisTicker@{QCPAxisTicker}!````~QCPAxisTicker@{$\sim$QCPAxisTicker}}
+\index{````~QCPAxisTicker@{$\sim$QCPAxisTicker}!QCPAxisTicker@{QCPAxisTicker}}
+\doxysubsubsection{\texorpdfstring{$\sim$QCPAxisTicker()}{~QCPAxisTicker()}}
+{\footnotesize\ttfamily QCPAxis\+Ticker\+::$\sim$\+QCPAxis\+Ticker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6101 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_ac7df6c72876b7abd67c932663a0b0f6a}\label{class_q_c_p_axis_ticker_ac7df6c72876b7abd67c932663a0b0f6a}} 
+\index{QCPAxisTicker@{QCPAxisTicker}!cleanMantissa@{cleanMantissa}}
+\index{cleanMantissa@{cleanMantissa}!QCPAxisTicker@{QCPAxisTicker}}
+\doxysubsubsection{\texorpdfstring{cleanMantissa()}{cleanMantissa()}}
+{\footnotesize\ttfamily double QCPAxis\+Ticker\+::clean\+Mantissa (\begin{DoxyParamCaption}\item[{double}]{input }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6472                                                       \{}
+\DoxyCodeLine{6473   \textcolor{keywordtype}{double} magnitude;}
+\DoxyCodeLine{6474   \textcolor{keyword}{const} \textcolor{keywordtype}{double} mantissa = \mbox{\hyperlink{class_q_c_p_axis_ticker_abe99aaaf6c512812869b0a19937c76ff}{getMantissa}}(input, \&magnitude);}
+\DoxyCodeLine{6475   \textcolor{keywordflow}{switch} (\mbox{\hyperlink{class_q_c_p_axis_ticker_ac059d6d670b2f6132c593fb4de156701}{mTickStepStrategy}}) \{}
+\DoxyCodeLine{6476     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_axis_ticker_ab6d2f9d9477821623ac9bc4b21ddf49aa9002aa2fd5633ab5556c71a26fed63a8}{tssReadability}}: \{}
+\DoxyCodeLine{6477       \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_axis_ticker_a4ea0a7c4ca1c610f92b9bd5944ab4260}{pickClosest}}(mantissa, QVector<double>()}
+\DoxyCodeLine{6478                                        << 1.0 << 2.0 << 2.5 << 5.0 << 10.0) *}
+\DoxyCodeLine{6479              magnitude;}
+\DoxyCodeLine{6480     \}}
+\DoxyCodeLine{6481     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_axis_ticker_ab6d2f9d9477821623ac9bc4b21ddf49aa770312b6b9b0c64a37ceeba96e0cd7f2}{tssMeetTickCount}}: \{}
+\DoxyCodeLine{6482       \textcolor{comment}{// this gives effectively a mantissa}}
+\DoxyCodeLine{6483       \textcolor{comment}{// of 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 6.0, 8.0, 10.0}}
+\DoxyCodeLine{6484       \textcolor{keywordflow}{if} (mantissa <= 5.0)}
+\DoxyCodeLine{6485         \textcolor{keywordflow}{return} int(mantissa * 2) / 2.0 *}
+\DoxyCodeLine{6486                magnitude;  \textcolor{comment}{// round digit after decimal point to 0.5}}
+\DoxyCodeLine{6487       \textcolor{keywordflow}{else}}
+\DoxyCodeLine{6488         \textcolor{keywordflow}{return} int(mantissa / 2.0) * 2.0 *}
+\DoxyCodeLine{6489                magnitude;  \textcolor{comment}{// round to first digit in multiples of 2}}
+\DoxyCodeLine{6490     \}}
+\DoxyCodeLine{6491   \}}
+\DoxyCodeLine{6492   \textcolor{keywordflow}{return} input;}
+\DoxyCodeLine{6493 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_a804050e408f37a0b9770c6654ebe6aa7}\label{class_q_c_p_axis_ticker_a804050e408f37a0b9770c6654ebe6aa7}} 
+\index{QCPAxisTicker@{QCPAxisTicker}!createLabelVector@{createLabelVector}}
+\index{createLabelVector@{createLabelVector}!QCPAxisTicker@{QCPAxisTicker}}
+\doxysubsubsection{\texorpdfstring{createLabelVector()}{createLabelVector()}}
+{\footnotesize\ttfamily QVector$<$ QString $>$ QCPAxis\+Ticker\+::create\+Label\+Vector (\begin{DoxyParamCaption}\item[{const QVector$<$ double $>$ \&}]{ticks,  }\item[{const QLocale \&}]{locale,  }\item[{QChar}]{format\+Char,  }\item[{int}]{precision }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6384                                                                  \{}
+\DoxyCodeLine{6385   QVector<QString> result;}
+\DoxyCodeLine{6386   result.reserve(ticks.size());}
+\DoxyCodeLine{6387   \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{double} tickCoord, ticks)}
+\DoxyCodeLine{6388     result.append(\mbox{\hyperlink{class_q_c_p_axis_ticker_a8201eb4aa8be192bf786b126eb5ee089}{getTickLabel}}(tickCoord, locale, formatChar, precision));}
+\DoxyCodeLine{6389   \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{6390 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_a9a6435723fa0bd366d1ea4c2cff7c33f}\label{class_q_c_p_axis_ticker_a9a6435723fa0bd366d1ea4c2cff7c33f}} 
+\index{QCPAxisTicker@{QCPAxisTicker}!createSubTickVector@{createSubTickVector}}
+\index{createSubTickVector@{createSubTickVector}!QCPAxisTicker@{QCPAxisTicker}}
+\doxysubsubsection{\texorpdfstring{createSubTickVector()}{createSubTickVector()}}
+{\footnotesize\ttfamily QVector$<$ double $>$ QCPAxis\+Ticker\+::create\+Sub\+Tick\+Vector (\begin{DoxyParamCaption}\item[{int}]{sub\+Tick\+Count,  }\item[{const QVector$<$ double $>$ \&}]{ticks }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6322                                                     \{}
+\DoxyCodeLine{6323   QVector<double> result;}
+\DoxyCodeLine{6324   \textcolor{keywordflow}{if} (subTickCount <= 0 || ticks.size() < 2) \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{6325 }
+\DoxyCodeLine{6326   result.reserve((ticks.size() -\/ 1) * subTickCount);}
+\DoxyCodeLine{6327   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i < ticks.size(); ++i) \{}
+\DoxyCodeLine{6328     \textcolor{keywordtype}{double} subTickStep =}
+\DoxyCodeLine{6329         (ticks.at(i) -\/ ticks.at(i -\/ 1)) / \textcolor{keywordtype}{double}(subTickCount + 1);}
+\DoxyCodeLine{6330     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 1; k <= subTickCount; ++k)}
+\DoxyCodeLine{6331       result.append(ticks.at(i -\/ 1) + k * subTickStep);}
+\DoxyCodeLine{6332   \}}
+\DoxyCodeLine{6333   \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{6334 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_af4645a824c7bd2ca8fc7e86ebf9055bd}\label{class_q_c_p_axis_ticker_af4645a824c7bd2ca8fc7e86ebf9055bd}} 
+\index{QCPAxisTicker@{QCPAxisTicker}!createTickVector@{createTickVector}}
+\index{createTickVector@{createTickVector}!QCPAxisTicker@{QCPAxisTicker}}
+\doxysubsubsection{\texorpdfstring{createTickVector()}{createTickVector()}}
+{\footnotesize\ttfamily QVector$<$ double $>$ QCPAxis\+Ticker\+::create\+Tick\+Vector (\begin{DoxyParamCaption}\item[{double}]{tick\+Step,  }\item[{const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Переопределяется в \mbox{\hyperlink{class_q_c_p_axis_ticker_log_af8873a8d1d2b9392d8f7a73218c889ab}{QCPAxis\+Ticker\+Log}}, \mbox{\hyperlink{class_q_c_p_axis_ticker_text_aa195c4fd0364d0393f1798fb495d6a60}{QCPAxis\+Ticker\+Text}} и \mbox{\hyperlink{class_q_c_p_axis_ticker_date_time_a44c2c09a303d281801b69226e243047d}{QCPAxis\+Ticker\+Date\+Time}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6354                                                                        \{}
+\DoxyCodeLine{6355   QVector<double> result;}
+\DoxyCodeLine{6356   \textcolor{comment}{// Generate tick positions according to tickStep:}}
+\DoxyCodeLine{6357   qint64 firstStep = qint64(floor(}
+\DoxyCodeLine{6358       (range.\mbox{\hyperlink{class_q_c_p_range_aa3aca3edb14f7ca0c85d912647b91745}{lower}} -\/ \mbox{\hyperlink{class_q_c_p_axis_ticker_a560ef9347b1aa599a9bf0e2f29d3ec16}{mTickOrigin}}) /}
+\DoxyCodeLine{6359       tickStep));  \textcolor{comment}{// do not use qFloor here, or we'll lose 64 bit precision}}
+\DoxyCodeLine{6360   qint64 lastStep = qint64(}
+\DoxyCodeLine{6361       ceil((range.\mbox{\hyperlink{class_q_c_p_range_ae44eb3aafe1d0e2ed34b499b6d2e074f}{upper}} -\/ \mbox{\hyperlink{class_q_c_p_axis_ticker_a560ef9347b1aa599a9bf0e2f29d3ec16}{mTickOrigin}}) /}
+\DoxyCodeLine{6362            tickStep));  \textcolor{comment}{// do not use qCeil here, or we'll lose 64 bit precision}}
+\DoxyCodeLine{6363   \textcolor{keywordtype}{int} tickcount = int(lastStep -\/ firstStep + 1);}
+\DoxyCodeLine{6364   \textcolor{keywordflow}{if} (tickcount < 0) tickcount = 0;}
+\DoxyCodeLine{6365   result.resize(tickcount);}
+\DoxyCodeLine{6366   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < tickcount; ++i)}
+\DoxyCodeLine{6367     result[i] = \mbox{\hyperlink{class_q_c_p_axis_ticker_a560ef9347b1aa599a9bf0e2f29d3ec16}{mTickOrigin}} + (firstStep + i) * tickStep;}
+\DoxyCodeLine{6368   \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{6369 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_aefbd11725678ca824add8cf926cbc856}\label{class_q_c_p_axis_ticker_aefbd11725678ca824add8cf926cbc856}} 
+\index{QCPAxisTicker@{QCPAxisTicker}!generate@{generate}}
+\index{generate@{generate}!QCPAxisTicker@{QCPAxisTicker}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily void QCPAxis\+Ticker\+::generate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&}]{range,  }\item[{const QLocale \&}]{locale,  }\item[{QChar}]{format\+Char,  }\item[{int}]{precision,  }\item[{QVector$<$ double $>$ \&}]{ticks,  }\item[{QVector$<$ double $>$ $\ast$}]{sub\+Ticks,  }\item[{QVector$<$ QString $>$ $\ast$}]{tick\+Labels }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This is the method called by \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} in order to actually generate tick coordinates ({\itshape ticks}), tick label strings ({\itshape tick\+Labels}) and sub tick coordinates ({\itshape sub\+Ticks}).
+
+The ticks are generated for the specified {\itshape range}. The generated labels typically follow the specified {\itshape locale}, {\itshape format\+Char} and number {\itshape precision}, however this might be different (or even irrelevant) for certain \mbox{\hyperlink{class_q_c_p_axis_ticker}{QCPAxis\+Ticker}} subclasses.
+
+The output parameter {\itshape ticks} is filled with the generated tick positions in axis coordinates. The output parameters {\itshape sub\+Ticks} and {\itshape tick\+Labels} are optional (set them to {\ttfamily nullptr} if not needed) and are respectively filled with sub tick coordinates, and tick label strings belonging to {\itshape ticks} by index. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6158                                                            \{}
+\DoxyCodeLine{6159   \textcolor{comment}{// generate (major) ticks:}}
+\DoxyCodeLine{6160   \textcolor{keywordtype}{double} tickStep = \mbox{\hyperlink{class_q_c_p_axis_ticker_a910d69bcec2de37e92d8d4e1ecf201e2}{getTickStep}}(range);}
+\DoxyCodeLine{6161   ticks = \mbox{\hyperlink{class_q_c_p_axis_ticker_af4645a824c7bd2ca8fc7e86ebf9055bd}{createTickVector}}(tickStep, range);}
+\DoxyCodeLine{6162   \mbox{\hyperlink{class_q_c_p_axis_ticker_ab28cc1ab549489be7975f5ce7e717916}{trimTicks}}(range, ticks,}
+\DoxyCodeLine{6163             \textcolor{keyword}{true});  \textcolor{comment}{// trim ticks to visible range plus one outer tick on each}}
+\DoxyCodeLine{6164                     \textcolor{comment}{// side (incase a subclass createTickVector creates more)}}
+\DoxyCodeLine{6165 }
+\DoxyCodeLine{6166   \textcolor{comment}{// generate sub ticks between major ticks:}}
+\DoxyCodeLine{6167   \textcolor{keywordflow}{if} (subTicks) \{}
+\DoxyCodeLine{6168     \textcolor{keywordflow}{if} (!ticks.isEmpty()) \{}
+\DoxyCodeLine{6169       *subTicks = \mbox{\hyperlink{class_q_c_p_axis_ticker_a9a6435723fa0bd366d1ea4c2cff7c33f}{createSubTickVector}}(\mbox{\hyperlink{class_q_c_p_axis_ticker_a4ccc403ced7a1457ce6ba293509933c8}{getSubTickCount}}(tickStep), ticks);}
+\DoxyCodeLine{6170       \mbox{\hyperlink{class_q_c_p_axis_ticker_ab28cc1ab549489be7975f5ce7e717916}{trimTicks}}(range, *subTicks, \textcolor{keyword}{false});}
+\DoxyCodeLine{6171     \} \textcolor{keywordflow}{else}}
+\DoxyCodeLine{6172       *subTicks = QVector<double>();}
+\DoxyCodeLine{6173   \}}
+\DoxyCodeLine{6174 }
+\DoxyCodeLine{6175   \textcolor{comment}{// finally trim also outliers (no further clipping happens in axis drawing):}}
+\DoxyCodeLine{6176   \mbox{\hyperlink{class_q_c_p_axis_ticker_ab28cc1ab549489be7975f5ce7e717916}{trimTicks}}(range, ticks, \textcolor{keyword}{false});}
+\DoxyCodeLine{6177   \textcolor{comment}{// generate labels for visible ticks if requested:}}
+\DoxyCodeLine{6178   \textcolor{keywordflow}{if} (tickLabels)}
+\DoxyCodeLine{6179     *tickLabels = \mbox{\hyperlink{class_q_c_p_axis_ticker_a804050e408f37a0b9770c6654ebe6aa7}{createLabelVector}}(ticks, locale, formatChar, precision);}
+\DoxyCodeLine{6180 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_abe99aaaf6c512812869b0a19937c76ff}\label{class_q_c_p_axis_ticker_abe99aaaf6c512812869b0a19937c76ff}} 
+\index{QCPAxisTicker@{QCPAxisTicker}!getMantissa@{getMantissa}}
+\index{getMantissa@{getMantissa}!QCPAxisTicker@{QCPAxisTicker}}
+\doxysubsubsection{\texorpdfstring{getMantissa()}{getMantissa()}}
+{\footnotesize\ttfamily double QCPAxis\+Ticker\+::get\+Mantissa (\begin{DoxyParamCaption}\item[{double}]{input,  }\item[{double $\ast$}]{magnitude = {\ttfamily nullptr} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6459                                                                        \{}
+\DoxyCodeLine{6460   \textcolor{keyword}{const} \textcolor{keywordtype}{double} mag = qPow(10.0, qFloor(qLn(input) / qLn(10.0)));}
+\DoxyCodeLine{6461   \textcolor{keywordflow}{if} (magnitude) *magnitude = mag;}
+\DoxyCodeLine{6462   \textcolor{keywordflow}{return} input / mag;}
+\DoxyCodeLine{6463 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_a4ccc403ced7a1457ce6ba293509933c8}\label{class_q_c_p_axis_ticker_a4ccc403ced7a1457ce6ba293509933c8}} 
+\index{QCPAxisTicker@{QCPAxisTicker}!getSubTickCount@{getSubTickCount}}
+\index{getSubTickCount@{getSubTickCount}!QCPAxisTicker@{QCPAxisTicker}}
+\doxysubsubsection{\texorpdfstring{getSubTickCount()}{getSubTickCount()}}
+{\footnotesize\ttfamily int QCPAxis\+Ticker\+::get\+Sub\+Tick\+Count (\begin{DoxyParamCaption}\item[{double}]{tick\+Step }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Переопределяется в \mbox{\hyperlink{class_q_c_p_axis_ticker_log_a352fef7ae68837acd26e35188aa86167}{QCPAxis\+Ticker\+Log}}, \mbox{\hyperlink{class_q_c_p_axis_ticker_pi_a56c90f870da97c8670cfae4d04ff3ac7}{QCPAxis\+Ticker\+Pi}}, \mbox{\hyperlink{class_q_c_p_axis_ticker_text_a9c2488b877776870239abda4c8106052}{QCPAxis\+Ticker\+Text}}, \mbox{\hyperlink{class_q_c_p_axis_ticker_time_acace84c46598176aa53837e147595471}{QCPAxis\+Ticker\+Time}} и \mbox{\hyperlink{class_q_c_p_axis_ticker_date_time_a78dece0d51426a3c310528d413e09193}{QCPAxis\+Ticker\+Date\+Time}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6209                                                   \{}
+\DoxyCodeLine{6210   \textcolor{keywordtype}{int} result = 1;  \textcolor{comment}{// default to 1, if no proper value can be found}}
+\DoxyCodeLine{6211 }
+\DoxyCodeLine{6212   \textcolor{comment}{// separate integer and fractional part of mantissa:}}
+\DoxyCodeLine{6213   \textcolor{keywordtype}{double} epsilon = 0.01;}
+\DoxyCodeLine{6214   \textcolor{keywordtype}{double} intPartf;}
+\DoxyCodeLine{6215   \textcolor{keywordtype}{int} intPart;}
+\DoxyCodeLine{6216   \textcolor{keywordtype}{double} fracPart = modf(\mbox{\hyperlink{class_q_c_p_axis_ticker_abe99aaaf6c512812869b0a19937c76ff}{getMantissa}}(tickStep), \&intPartf);}
+\DoxyCodeLine{6217   intPart = int(intPartf);}
+\DoxyCodeLine{6218 }
+\DoxyCodeLine{6219   \textcolor{comment}{// handle cases with (almost) integer mantissa:}}
+\DoxyCodeLine{6220   \textcolor{keywordflow}{if} (fracPart < epsilon || 1.0 -\/ fracPart < epsilon) \{}
+\DoxyCodeLine{6221     \textcolor{keywordflow}{if} (1.0 -\/ fracPart < epsilon) ++intPart;}
+\DoxyCodeLine{6222     \textcolor{keywordflow}{switch} (intPart) \{}
+\DoxyCodeLine{6223       \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{6224         result = 4;}
+\DoxyCodeLine{6225         \textcolor{keywordflow}{break};  \textcolor{comment}{// 1.0 -\/> 0.2 substep}}
+\DoxyCodeLine{6226       \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{6227         result = 3;}
+\DoxyCodeLine{6228         \textcolor{keywordflow}{break};  \textcolor{comment}{// 2.0 -\/> 0.5 substep}}
+\DoxyCodeLine{6229       \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{6230         result = 2;}
+\DoxyCodeLine{6231         \textcolor{keywordflow}{break};  \textcolor{comment}{// 3.0 -\/> 1.0 substep}}
+\DoxyCodeLine{6232       \textcolor{keywordflow}{case} 4:}
+\DoxyCodeLine{6233         result = 3;}
+\DoxyCodeLine{6234         \textcolor{keywordflow}{break};  \textcolor{comment}{// 4.0 -\/> 1.0 substep}}
+\DoxyCodeLine{6235       \textcolor{keywordflow}{case} 5:}
+\DoxyCodeLine{6236         result = 4;}
+\DoxyCodeLine{6237         \textcolor{keywordflow}{break};  \textcolor{comment}{// 5.0 -\/> 1.0 substep}}
+\DoxyCodeLine{6238       \textcolor{keywordflow}{case} 6:}
+\DoxyCodeLine{6239         result = 2;}
+\DoxyCodeLine{6240         \textcolor{keywordflow}{break};  \textcolor{comment}{// 6.0 -\/> 2.0 substep}}
+\DoxyCodeLine{6241       \textcolor{keywordflow}{case} 7:}
+\DoxyCodeLine{6242         result = 6;}
+\DoxyCodeLine{6243         \textcolor{keywordflow}{break};  \textcolor{comment}{// 7.0 -\/> 1.0 substep}}
+\DoxyCodeLine{6244       \textcolor{keywordflow}{case} 8:}
+\DoxyCodeLine{6245         result = 3;}
+\DoxyCodeLine{6246         \textcolor{keywordflow}{break};  \textcolor{comment}{// 8.0 -\/> 2.0 substep}}
+\DoxyCodeLine{6247       \textcolor{keywordflow}{case} 9:}
+\DoxyCodeLine{6248         result = 2;}
+\DoxyCodeLine{6249         \textcolor{keywordflow}{break};  \textcolor{comment}{// 9.0 -\/> 3.0 substep}}
+\DoxyCodeLine{6250     \}}
+\DoxyCodeLine{6251   \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{6252     \textcolor{comment}{// handle cases with significantly fractional mantissa:}}
+\DoxyCodeLine{6253     \textcolor{keywordflow}{if} (qAbs(fracPart -\/ 0.5) < epsilon)  \textcolor{comment}{// *.5 mantissa}}
+\DoxyCodeLine{6254     \{}
+\DoxyCodeLine{6255       \textcolor{keywordflow}{switch} (intPart) \{}
+\DoxyCodeLine{6256         \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{6257           result = 2;}
+\DoxyCodeLine{6258           \textcolor{keywordflow}{break};  \textcolor{comment}{// 1.5 -\/> 0.5 substep}}
+\DoxyCodeLine{6259         \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{6260           result = 4;}
+\DoxyCodeLine{6261           \textcolor{keywordflow}{break};  \textcolor{comment}{// 2.5 -\/> 0.5 substep}}
+\DoxyCodeLine{6262         \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{6263           result = 4;}
+\DoxyCodeLine{6264           \textcolor{keywordflow}{break};  \textcolor{comment}{// 3.5 -\/> 0.7 substep}}
+\DoxyCodeLine{6265         \textcolor{keywordflow}{case} 4:}
+\DoxyCodeLine{6266           result = 2;}
+\DoxyCodeLine{6267           \textcolor{keywordflow}{break};  \textcolor{comment}{// 4.5 -\/> 1.5 substep}}
+\DoxyCodeLine{6268         \textcolor{keywordflow}{case} 5:}
+\DoxyCodeLine{6269           result = 4;}
+\DoxyCodeLine{6270           \textcolor{keywordflow}{break};  \textcolor{comment}{// 5.5 -\/> 1.1 substep (won't occur with default getTickStep}}
+\DoxyCodeLine{6271                   \textcolor{comment}{// from here on)}}
+\DoxyCodeLine{6272         \textcolor{keywordflow}{case} 6:}
+\DoxyCodeLine{6273           result = 4;}
+\DoxyCodeLine{6274           \textcolor{keywordflow}{break};  \textcolor{comment}{// 6.5 -\/> 1.3 substep}}
+\DoxyCodeLine{6275         \textcolor{keywordflow}{case} 7:}
+\DoxyCodeLine{6276           result = 2;}
+\DoxyCodeLine{6277           \textcolor{keywordflow}{break};  \textcolor{comment}{// 7.5 -\/> 2.5 substep}}
+\DoxyCodeLine{6278         \textcolor{keywordflow}{case} 8:}
+\DoxyCodeLine{6279           result = 4;}
+\DoxyCodeLine{6280           \textcolor{keywordflow}{break};  \textcolor{comment}{// 8.5 -\/> 1.7 substep}}
+\DoxyCodeLine{6281         \textcolor{keywordflow}{case} 9:}
+\DoxyCodeLine{6282           result = 4;}
+\DoxyCodeLine{6283           \textcolor{keywordflow}{break};  \textcolor{comment}{// 9.5 -\/> 1.9 substep}}
+\DoxyCodeLine{6284       \}}
+\DoxyCodeLine{6285     \}}
+\DoxyCodeLine{6286     \textcolor{comment}{// if mantissa fraction isn't 0.0 or 0.5, don't bother finding good sub tick}}
+\DoxyCodeLine{6287     \textcolor{comment}{// marks, leave default}}
+\DoxyCodeLine{6288   \}}
+\DoxyCodeLine{6289 }
+\DoxyCodeLine{6290   \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{6291 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_a8201eb4aa8be192bf786b126eb5ee089}\label{class_q_c_p_axis_ticker_a8201eb4aa8be192bf786b126eb5ee089}} 
+\index{QCPAxisTicker@{QCPAxisTicker}!getTickLabel@{getTickLabel}}
+\index{getTickLabel@{getTickLabel}!QCPAxisTicker@{QCPAxisTicker}}
+\doxysubsubsection{\texorpdfstring{getTickLabel()}{getTickLabel()}}
+{\footnotesize\ttfamily QString QCPAxis\+Ticker\+::get\+Tick\+Label (\begin{DoxyParamCaption}\item[{double}]{tick,  }\item[{const QLocale \&}]{locale,  }\item[{QChar}]{format\+Char,  }\item[{int}]{precision }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Переопределяется в \mbox{\hyperlink{class_q_c_p_axis_ticker_pi_a9a087d931d4344b8a91d5cecceff7109}{QCPAxis\+Ticker\+Pi}}, \mbox{\hyperlink{class_q_c_p_axis_ticker_text_a99247779a9c20bea1f50911117540a71}{QCPAxis\+Ticker\+Text}}, \mbox{\hyperlink{class_q_c_p_axis_ticker_time_a046eb771bdf2a959f570db542b3a0be6}{QCPAxis\+Ticker\+Time}} и \mbox{\hyperlink{class_q_c_p_axis_ticker_date_time_a4dc6a03f7ea5c619477528a683ed5c18}{QCPAxis\+Ticker\+Date\+Time}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6306                                                                      \{}
+\DoxyCodeLine{6307   \textcolor{keywordflow}{return} locale.toString(tick, formatChar.toLatin1(), precision);}
+\DoxyCodeLine{6308 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_a910d69bcec2de37e92d8d4e1ecf201e2}\label{class_q_c_p_axis_ticker_a910d69bcec2de37e92d8d4e1ecf201e2}} 
+\index{QCPAxisTicker@{QCPAxisTicker}!getTickStep@{getTickStep}}
+\index{getTickStep@{getTickStep}!QCPAxisTicker@{QCPAxisTicker}}
+\doxysubsubsection{\texorpdfstring{getTickStep()}{getTickStep()}}
+{\footnotesize\ttfamily double QCPAxis\+Ticker\+::get\+Tick\+Step (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Переопределяется в \mbox{\hyperlink{class_q_c_p_axis_ticker_pi_a55301f0072983bd2d7c131a24e1779e7}{QCPAxis\+Ticker\+Pi}}, \mbox{\hyperlink{class_q_c_p_axis_ticker_text_a628f16c41905e8c95c6622d6757a38c4}{QCPAxis\+Ticker\+Text}}, \mbox{\hyperlink{class_q_c_p_axis_ticker_fixed_a9e99da01ab92a86aed415eef32fed13a}{QCPAxis\+Ticker\+Fixed}}, \mbox{\hyperlink{class_q_c_p_axis_ticker_time_a5615064642090fe193797caea8b98cb4}{QCPAxis\+Ticker\+Time}} и \mbox{\hyperlink{class_q_c_p_axis_ticker_date_time_a0560c14a3f87bb99ab136aca8321b32a}{QCPAxis\+Ticker\+Date\+Time}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6192                                                        \{}
+\DoxyCodeLine{6193   \textcolor{keywordtype}{double} exactStep =}
+\DoxyCodeLine{6194       range.\mbox{\hyperlink{class_q_c_p_range_a62326e7cc4316b96df6a60813230e63f}{size}}() /}
+\DoxyCodeLine{6195       double(\mbox{\hyperlink{class_q_c_p_axis_ticker_a14a35b47d1aad11b08d18ea0e25937b8}{mTickCount}} +}
+\DoxyCodeLine{6196              1e-\/10);  \textcolor{comment}{// mTickCount ticks on average, the small addition is to}}
+\DoxyCodeLine{6197                       \textcolor{comment}{// prevent jitter on exact integers}}
+\DoxyCodeLine{6198   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_axis_ticker_ac7df6c72876b7abd67c932663a0b0f6a}{cleanMantissa}}(exactStep);}
+\DoxyCodeLine{6199 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_a4ea0a7c4ca1c610f92b9bd5944ab4260}\label{class_q_c_p_axis_ticker_a4ea0a7c4ca1c610f92b9bd5944ab4260}} 
+\index{QCPAxisTicker@{QCPAxisTicker}!pickClosest@{pickClosest}}
+\index{pickClosest@{pickClosest}!QCPAxisTicker@{QCPAxisTicker}}
+\doxysubsubsection{\texorpdfstring{pickClosest()}{pickClosest()}}
+{\footnotesize\ttfamily double QCPAxis\+Ticker\+::pick\+Closest (\begin{DoxyParamCaption}\item[{double}]{target,  }\item[{const QVector$<$ double $>$ \&}]{candidates }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6439                                                                            \{}
+\DoxyCodeLine{6440   \textcolor{keywordflow}{if} (candidates.size() == 1) \textcolor{keywordflow}{return} candidates.first();}
+\DoxyCodeLine{6441   QVector<double>::const\_iterator it =}
+\DoxyCodeLine{6442       std::lower\_bound(candidates.constBegin(), candidates.constEnd(), target);}
+\DoxyCodeLine{6443   \textcolor{keywordflow}{if} (it == candidates.constEnd())}
+\DoxyCodeLine{6444     \textcolor{keywordflow}{return} *(it -\/ 1);}
+\DoxyCodeLine{6445   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (it == candidates.constBegin())}
+\DoxyCodeLine{6446     \textcolor{keywordflow}{return} *it;}
+\DoxyCodeLine{6447   \textcolor{keywordflow}{else}}
+\DoxyCodeLine{6448     \textcolor{keywordflow}{return} target -\/ *(it -\/ 1) < *it -\/ target ? *(it -\/ 1) : *it;}
+\DoxyCodeLine{6449 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_a47752abba8293e6dc18491501ae34008}\label{class_q_c_p_axis_ticker_a47752abba8293e6dc18491501ae34008}} 
+\index{QCPAxisTicker@{QCPAxisTicker}!setTickCount@{setTickCount}}
+\index{setTickCount@{setTickCount}!QCPAxisTicker@{QCPAxisTicker}}
+\doxysubsubsection{\texorpdfstring{setTickCount()}{setTickCount()}}
+{\footnotesize\ttfamily void QCPAxis\+Ticker\+::set\+Tick\+Count (\begin{DoxyParamCaption}\item[{int}]{count }\end{DoxyParamCaption})}
+
+Sets how many ticks this ticker shall aim to generate across the axis range. Note that {\itshape count} is not guaranteed to be matched exactly, as generating readable tick intervals may conflict with the requested number of ticks.
+
+Whether the readability has priority over meeting the requested {\itshape count} can be specified with \mbox{\hyperlink{class_q_c_p_axis_ticker_a73b1d847c1a12159af6bfda4ebebe7d5}{set\+Tick\+Step\+Strategy}}. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6120                                           \{}
+\DoxyCodeLine{6121   \textcolor{keywordflow}{if} (count > 0)}
+\DoxyCodeLine{6122     \mbox{\hyperlink{class_q_c_p_axis_ticker_a14a35b47d1aad11b08d18ea0e25937b8}{mTickCount}} = count;}
+\DoxyCodeLine{6123   \textcolor{keywordflow}{else}}
+\DoxyCodeLine{6124     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}tick count must be greater than zero:"{}} << count;}
+\DoxyCodeLine{6125 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_ab509c7e500293bf66a8409f0d7c23943}\label{class_q_c_p_axis_ticker_ab509c7e500293bf66a8409f0d7c23943}} 
+\index{QCPAxisTicker@{QCPAxisTicker}!setTickOrigin@{setTickOrigin}}
+\index{setTickOrigin@{setTickOrigin}!QCPAxisTicker@{QCPAxisTicker}}
+\doxysubsubsection{\texorpdfstring{setTickOrigin()}{setTickOrigin()}}
+{\footnotesize\ttfamily void QCPAxis\+Ticker\+::set\+Tick\+Origin (\begin{DoxyParamCaption}\item[{double}]{origin }\end{DoxyParamCaption})}
+
+Sets the mathematical coordinate (or \char`\"{}offset\char`\"{}) of the zeroth tick. This tick coordinate is just a concept and doesn\textquotesingle{}t need to be inside the currently visible axis range.
+
+By default {\itshape origin} is zero, which for example yields ticks \{-\/5, 0, 5, 10, 15,...\} when the tick step is five. If {\itshape origin} is now set to 1 instead, the correspondingly generated ticks would be \{-\/4, 1, 6, 11, 16,...\}. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6137 \{ \mbox{\hyperlink{class_q_c_p_axis_ticker_a560ef9347b1aa599a9bf0e2f29d3ec16}{mTickOrigin}} = origin; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_a73b1d847c1a12159af6bfda4ebebe7d5}\label{class_q_c_p_axis_ticker_a73b1d847c1a12159af6bfda4ebebe7d5}} 
+\index{QCPAxisTicker@{QCPAxisTicker}!setTickStepStrategy@{setTickStepStrategy}}
+\index{setTickStepStrategy@{setTickStepStrategy}!QCPAxisTicker@{QCPAxisTicker}}
+\doxysubsubsection{\texorpdfstring{setTickStepStrategy()}{setTickStepStrategy()}}
+{\footnotesize\ttfamily void QCPAxis\+Ticker\+::set\+Tick\+Step\+Strategy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_axis_ticker_ab6d2f9d9477821623ac9bc4b21ddf49a}{QCPAxis\+Ticker\+::\+Tick\+Step\+Strategy}}}]{strategy }\end{DoxyParamCaption})}
+
+Sets which strategy the axis ticker follows when choosing the size of the tick step. For the available strategies, see \mbox{\hyperlink{class_q_c_p_axis_ticker_ab6d2f9d9477821623ac9bc4b21ddf49a}{Tick\+Step\+Strategy}}. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6108                                             \{}
+\DoxyCodeLine{6109   \mbox{\hyperlink{class_q_c_p_axis_ticker_ac059d6d670b2f6132c593fb4de156701}{mTickStepStrategy}} = strategy;}
+\DoxyCodeLine{6110 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_aaf9edbe4169ce55e216fd067cc139452}\label{class_q_c_p_axis_ticker_aaf9edbe4169ce55e216fd067cc139452}} 
+\index{QCPAxisTicker@{QCPAxisTicker}!tickCount@{tickCount}}
+\index{tickCount@{tickCount}!QCPAxisTicker@{QCPAxisTicker}}
+\doxysubsubsection{\texorpdfstring{tickCount()}{tickCount()}}
+{\footnotesize\ttfamily int QCPAxis\+Ticker\+::tick\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1956 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_axis_ticker_a14a35b47d1aad11b08d18ea0e25937b8}{mTickCount}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_ac0c6e9587c36fdeefb5518c00fe7ab15}\label{class_q_c_p_axis_ticker_ac0c6e9587c36fdeefb5518c00fe7ab15}} 
+\index{QCPAxisTicker@{QCPAxisTicker}!tickOrigin@{tickOrigin}}
+\index{tickOrigin@{tickOrigin}!QCPAxisTicker@{QCPAxisTicker}}
+\doxysubsubsection{\texorpdfstring{tickOrigin()}{tickOrigin()}}
+{\footnotesize\ttfamily double QCPAxis\+Ticker\+::tick\+Origin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1957 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_axis_ticker_a560ef9347b1aa599a9bf0e2f29d3ec16}{mTickOrigin}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_a58df76f2ec3eb48401bdd314b0e14ba1}\label{class_q_c_p_axis_ticker_a58df76f2ec3eb48401bdd314b0e14ba1}} 
+\index{QCPAxisTicker@{QCPAxisTicker}!tickStepStrategy@{tickStepStrategy}}
+\index{tickStepStrategy@{tickStepStrategy}!QCPAxisTicker@{QCPAxisTicker}}
+\doxysubsubsection{\texorpdfstring{tickStepStrategy()}{tickStepStrategy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_axis_ticker_ab6d2f9d9477821623ac9bc4b21ddf49a}{Tick\+Step\+Strategy}} QCPAxis\+Ticker\+::tick\+Step\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1955 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_axis_ticker_ac059d6d670b2f6132c593fb4de156701}{mTickStepStrategy}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_ab28cc1ab549489be7975f5ce7e717916}\label{class_q_c_p_axis_ticker_ab28cc1ab549489be7975f5ce7e717916}} 
+\index{QCPAxisTicker@{QCPAxisTicker}!trimTicks@{trimTicks}}
+\index{trimTicks@{trimTicks}!QCPAxisTicker@{QCPAxisTicker}}
+\doxysubsubsection{\texorpdfstring{trimTicks()}{trimTicks()}}
+{\footnotesize\ttfamily void QCPAxis\+Ticker\+::trim\+Ticks (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&}]{range,  }\item[{QVector$<$ double $>$ \&}]{ticks,  }\item[{bool}]{keep\+One\+Outlier }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6401                                                          \{}
+\DoxyCodeLine{6402   \textcolor{keywordtype}{bool} lowFound = \textcolor{keyword}{false};}
+\DoxyCodeLine{6403   \textcolor{keywordtype}{bool} highFound = \textcolor{keyword}{false};}
+\DoxyCodeLine{6404   \textcolor{keywordtype}{int} lowIndex = 0;}
+\DoxyCodeLine{6405   \textcolor{keywordtype}{int} highIndex = -\/1;}
+\DoxyCodeLine{6406 }
+\DoxyCodeLine{6407   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < ticks.size(); ++i) \{}
+\DoxyCodeLine{6408     \textcolor{keywordflow}{if} (ticks.at(i) >= range.\mbox{\hyperlink{class_q_c_p_range_aa3aca3edb14f7ca0c85d912647b91745}{lower}}) \{}
+\DoxyCodeLine{6409       lowFound = \textcolor{keyword}{true};}
+\DoxyCodeLine{6410       lowIndex = i;}
+\DoxyCodeLine{6411       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{6412     \}}
+\DoxyCodeLine{6413   \}}
+\DoxyCodeLine{6414   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = ticks.size() -\/ 1; i >= 0; -\/-\/i) \{}
+\DoxyCodeLine{6415     \textcolor{keywordflow}{if} (ticks.at(i) <= range.\mbox{\hyperlink{class_q_c_p_range_ae44eb3aafe1d0e2ed34b499b6d2e074f}{upper}}) \{}
+\DoxyCodeLine{6416       highFound = \textcolor{keyword}{true};}
+\DoxyCodeLine{6417       highIndex = i;}
+\DoxyCodeLine{6418       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{6419     \}}
+\DoxyCodeLine{6420   \}}
+\DoxyCodeLine{6421 }
+\DoxyCodeLine{6422   \textcolor{keywordflow}{if} (highFound \&\& lowFound) \{}
+\DoxyCodeLine{6423     \textcolor{keywordtype}{int} trimFront = qMax(0, lowIndex -\/ (keepOneOutlier ? 1 : 0));}
+\DoxyCodeLine{6424     \textcolor{keywordtype}{int} trimBack = qMax(0, ticks.size() -\/ (keepOneOutlier ? 2 : 1) -\/ highIndex);}
+\DoxyCodeLine{6425     \textcolor{keywordflow}{if} (trimFront > 0 || trimBack > 0)}
+\DoxyCodeLine{6426       ticks = ticks.mid(trimFront, ticks.size() -\/ trimFront -\/ trimBack);}
+\DoxyCodeLine{6427   \} \textcolor{keywordflow}{else}  \textcolor{comment}{// all ticks are either all below or all above the range}}
+\DoxyCodeLine{6428     ticks.clear();}
+\DoxyCodeLine{6429 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_a14a35b47d1aad11b08d18ea0e25937b8}\label{class_q_c_p_axis_ticker_a14a35b47d1aad11b08d18ea0e25937b8}} 
+\index{QCPAxisTicker@{QCPAxisTicker}!mTickCount@{mTickCount}}
+\index{mTickCount@{mTickCount}!QCPAxisTicker@{QCPAxisTicker}}
+\doxysubsubsection{\texorpdfstring{mTickCount}{mTickCount}}
+{\footnotesize\ttfamily int QCPAxis\+Ticker\+::m\+Tick\+Count\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_a560ef9347b1aa599a9bf0e2f29d3ec16}\label{class_q_c_p_axis_ticker_a560ef9347b1aa599a9bf0e2f29d3ec16}} 
+\index{QCPAxisTicker@{QCPAxisTicker}!mTickOrigin@{mTickOrigin}}
+\index{mTickOrigin@{mTickOrigin}!QCPAxisTicker@{QCPAxisTicker}}
+\doxysubsubsection{\texorpdfstring{mTickOrigin}{mTickOrigin}}
+{\footnotesize\ttfamily double QCPAxis\+Ticker\+::m\+Tick\+Origin\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_ac059d6d670b2f6132c593fb4de156701}\label{class_q_c_p_axis_ticker_ac059d6d670b2f6132c593fb4de156701}} 
+\index{QCPAxisTicker@{QCPAxisTicker}!mTickStepStrategy@{mTickStepStrategy}}
+\index{mTickStepStrategy@{mTickStepStrategy}!QCPAxisTicker@{QCPAxisTicker}}
+\doxysubsubsection{\texorpdfstring{mTickStepStrategy}{mTickStepStrategy}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_axis_ticker_ab6d2f9d9477821623ac9bc4b21ddf49a}{Tick\+Step\+Strategy}} QCPAxis\+Ticker\+::m\+Tick\+Step\+Strategy\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Smart\+Calc/\mbox{\hyperlink{qcustomplot_8h}{qcustomplot.\+h}}\item 
+Smart\+Calc/\mbox{\hyperlink{qcustomplot_8cpp}{qcustomplot.\+cpp}}\end{DoxyCompactItemize}

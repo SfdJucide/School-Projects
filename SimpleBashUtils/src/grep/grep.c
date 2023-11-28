@@ -1,6 +1,5 @@
 #include "grep.h"
 
-
 void grep(char *file_name, char *pattern[100], char flags[100], int j,
           int n_files, int ptrns) {
   int count = 0;

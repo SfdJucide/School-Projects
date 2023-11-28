@@ -1,7 +1,6 @@
 #include "cat.h"
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
   char *flags[10];
   char *files[100];
   int flags_counter = 0;

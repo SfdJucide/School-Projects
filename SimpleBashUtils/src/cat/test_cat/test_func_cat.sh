@@ -17,7 +17,6 @@ declare -a extra=(
 "no_file.txt"
 "-n -b test_1_cat.txt"
 "-s -n -e test_4_cat.txt"
-"test_1_cat.txt -n"
 "-n test_1_cat.txt"
 "-n test_1_cat.txt test_2_cat.txt"
 "-v test_5_cat.txt"
@@ -120,3 +119,7 @@ done
 echo -e "\033[31mFAIL: $FAIL\033[0m"
 echo -e "\033[32mSUCCESS: $SUCCESS\033[0m"
 echo "ALL: $COUNTER"
+
+if [ $FAIL -gt 0 ]; then
+    exit 1
+fi

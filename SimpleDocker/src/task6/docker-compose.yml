@@ -1,0 +1,10 @@
+services:
+  server:
+    build: ../task4-5
+  proxy:
+    build: .
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - 80:8080
+      

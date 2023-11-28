@@ -1,5 +1,5 @@
 # Simple Bash Utils
-Development of Bash text utilities: cat, grep.
+Development of a simple CI/CD for the Bash text utilities: cat, grep.
 
 ## cat Usage
 Cat is one of the most frequently used commands on Unix-like operating systems. It has three related functions with regard to text files: displaying them, combining copies of them and creating new ones.
@@ -47,3 +47,5 @@ Then you can use it like this `./s21_cat simple.txt` or `./s21_grep regex simple
 Аnd also run tests for both utils (tests only for mac-os, other os can ruin some tests, because of different versions of original utils):
 
 `make test`
+
+Also developed CI/CD pipeline for this project and added notifications of successful/unsuccessful pipeline execution via bot named "lostwill DO6 CI/CD" in Telegram

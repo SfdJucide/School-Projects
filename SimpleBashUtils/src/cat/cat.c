@@ -1,6 +1,5 @@
 #include "cat.h"
 
-
 void cat(char *file_name, char *flags[10], int flags_count) {
   int e = 0;
   int n = 0;
@@ -28,8 +27,7 @@ void cat(char *file_name, char *flags[10], int flags_count) {
         if ((n || b) && empty_flag < 2) {
           if (b) {
             add_numering(file_out, &line_num, 'b');
-          }
-          else if (n) {
+          } else if (n) {
             add_numering(file_out, &line_num, 'n');
           }
         }
@@ -46,54 +44,46 @@ void cat(char *file_name, char *flags[10], int flags_count) {
         }
 
         clean(file_out);
-      }
-      else {
+      } else {
         break;
       }
     }
     fclose(cat_file);
-  }
-  else {
+  } else {
     fprintf(stderr, "cat: %s: No such file or directory\n", file_name);
   }
 }
 
 void clean(char *str) {
   int i = 0;
-  while (str[i] != '\0')
-  {
+  while (str[i] != '\0') {
     str[i] = '\0';
     i++;
   }
 }
 
-void get_flags(char *flags[10], int flags_count, int *e, int *n, int *b, int *t, int *s,
-               int *v) {
+void get_flags(char *flags[10], int flags_count, int *e, int *n, int *b, int *t,
+               int *s, int *v) {
   for (int i = 0; i < flags_count; i++) {
     if (!strcmp(flags[i], "-e") || !strcmp(flags[i], "-E")) {
       if (!strcmp(flags[i], "-e")) {
         *v = 1;
       }
       *e = 1;
-    }
-    else if (!strcmp(flags[i], "-n") || !strcmp(flags[i], "--number")) {
+    } else if (!strcmp(flags[i], "-n") || !strcmp(flags[i], "--number")) {
       *n = 1;
-    }
-    else if (!strcmp(flags[i], "-b") ||
-             !strcmp(flags[i], "--number-nonblank")) {
+    } else if (!strcmp(flags[i], "-b") ||
+               !strcmp(flags[i], "--number-nonblank")) {
       *b = 1;
-    }
-    else if (!strcmp(flags[i], "-t") || !strcmp(flags[i], "-T")) {
+    } else if (!strcmp(flags[i], "-t") || !strcmp(flags[i], "-T")) {
       if (!strcmp(flags[i], "-t")) {
         *v = 1;
       }
       *t = 1;
-    }
-    else if (!strcmp(flags[i], "-s") ||
-             !strcmp(flags[i], "--squeeze-blank")) {
+    } else if (!strcmp(flags[i], "-s") ||
+               !strcmp(flags[i], "--squeeze-blank")) {
       *s = 1;
-    }
-    else if (!strcmp(flags[i], "-v")) {
+    } else if (!strcmp(flags[i], "-v")) {
       *v = 1;
     }
   }
@@ -102,8 +92,7 @@ void get_flags(char *flags[10], int flags_count, int *e, int *n, int *b, int *t,
 void squeeze_blank(char *file_out, int *empty_flag) {
   if (file_out[0] == '\n') {
     *empty_flag += 1;
-  }
-  else {
+  } else {
     *empty_flag = 0;
   }
 }
@@ -112,29 +101,29 @@ void replace_char(char *file_out, char symb) {
   char *ptr;
   int f = 1;
   switch (symb) {
-  case '\n':
-    ptr = strchr(file_out, '\n');
-    if (ptr) {
-      memset(ptr, '$', 1);
-      memset(++ptr, '\n', 1);
-    }
-    break;
-
-  case '\t':
-    while (ptr || f) {
-      f = 0;
-      ptr = strchr(file_out, '\t');
-      char tmp[N];
+    case '\n':
+      ptr = strchr(file_out, '\n');
       if (ptr) {
-        memset(ptr, '^', 1);
-        ptr++;
-        strcpy(tmp, ptr);
-        memset(ptr, 'I', 1);
-        ptr++;
-        strcpy(ptr, tmp);
+        memset(ptr, '$', 1);
+        memset(++ptr, '\n', 1);
       }
-    }
-    break;
+      break;
+
+    case '\t':
+      while (ptr || f) {
+        f = 0;
+        ptr = strchr(file_out, '\t');
+        char tmp[N];
+        if (ptr) {
+          memset(ptr, '^', 1);
+          ptr++;
+          strcpy(tmp, ptr);
+          memset(ptr, 'I', 1);
+          ptr++;
+          strcpy(ptr, tmp);
+        }
+      }
+      break;
   }
 }
 
@@ -169,13 +158,11 @@ void show_nonprinting(char *file_out) {
       ptr++;
       if ((int)file_out[i] == 127) {
         memset(ptr, (char)(((int)file_out[i] + 64) & 127), 1);
-      }
-      else {
+      } else {
         memset(ptr, (char)((int)file_out[i] + 64), 1);
       }
       ptr++;
-    }
-    else {
+    } else {
       memset(ptr, file_out[i], 1);
       ptr++;
     }
@@ -187,16 +174,16 @@ void get_args(int argc, char *argv[argc], char *flags[10], char *files[100],
               int *flags_counter, int *files_counter) {
   int f_flag = 1;
   for (int i = 1; i < argc; i++) {
-    if (f_flag & (!strcmp(argv[i], "-n") || !strcmp(argv[i], "-b") ||
-                  !strcmp(argv[i], "-e") || !strcmp(argv[i], "-v") ||
-                  !strcmp(argv[i], "-t") || !strcmp(argv[i], "-s") ||
-                  !strcmp(argv[i], "--number") || !strcmp(argv[i], "-T") ||
-                  !strcmp(argv[i], "-E") || !strcmp(argv[i], "--number-nonblank") ||
-                  !strcmp(argv[i], "--squeeze-blank"))) {
+    if (f_flag &
+        (!strcmp(argv[i], "-n") || !strcmp(argv[i], "-b") ||
+         !strcmp(argv[i], "-e") || !strcmp(argv[i], "-v") ||
+         !strcmp(argv[i], "-t") || !strcmp(argv[i], "-s") ||
+         !strcmp(argv[i], "--number") || !strcmp(argv[i], "-T") ||
+         !strcmp(argv[i], "-E") || !strcmp(argv[i], "--number-nonblank") ||
+         !strcmp(argv[i], "--squeeze-blank"))) {
       flags[*flags_counter] = argv[i];
       *flags_counter += 1;
-    }
-    else {
+    } else {
       files[*files_counter] = argv[i];
       *files_counter += 1;
       f_flag = 0;

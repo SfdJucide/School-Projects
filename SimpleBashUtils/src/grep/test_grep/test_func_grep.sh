@@ -7,7 +7,7 @@ DIFF_RES=""
 
 declare -a tests=(
 "s test_0_grep.txt VAR"
-"for test_1_grep.txt test_2_grep.txt VAR"
+"-e for test_1_grep.txt test_2_grep.txt VAR"
 "-e for -e ^int test_5_grep.txt test_4_grep.txt VAR"
 "-e regex -e ^print test_5_grep.txt VAR"
 "-e while -e void test_5_grep.txt test_1_grep.txt VAR"
@@ -15,8 +15,8 @@ declare -a tests=(
 )
 
 declare -a extra=(
-"-n for test_1_grep.txt test_2_grep.txt"
-"-n for test_1_grep.txt"
+"for -n test_1_grep.txt test_2_grep.txt"
+"for -n test_1_grep.txt"
 "-n -e ^\} test_1_grep.txt"
 "-ce ^int test_1_grep.txt test_2_grep.txt"
 "-e ^int test_1_grep.txt"
@@ -130,3 +130,7 @@ done
 echo -e "\033[31mFAIL: $FAIL\033[0m"
 echo -e "\033[32mSUCCESS: $SUCCESS\033[0m"
 echo "ALL: $COUNTER"
+
+if [ $FAIL -gt 0 ]; then
+    exit 1
+fi

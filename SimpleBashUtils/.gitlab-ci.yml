@@ -1,0 +1,51 @@
+stages:
+  - build
+  - codestyle
+  - test
+  - deploy
+
+job_build:
+  stage: build
+  script:
+    - cd src/cat && make
+    - cd ../grep && make
+  artifacts:
+    paths:
+      - src/cat/s21_cat
+      - src/grep/s21_grep
+    expire_in: 30 day
+  after_script:
+    - bash notify.sh 
+
+job_codestyle:
+  stage: codestyle
+  script:
+    - output=$(clang-format -style=Google -n src/cat/*.c && clang-format -style=Google -n src/grep/*.c 2>&1)
+    - if [ -n "$output" ]; then echo "$output" && exit 1; fi
+  allow_failure: false
+  after_script:
+    - bash notify.sh 
+
+job_tests:
+  stage: test
+  dependencies: 
+    - job_build
+  script:
+    - cd src/cat && make test
+    - cd ../grep && make test
+  allow_failure: false
+  after_script:
+    - bash notify.sh 
+
+job_deploy:
+  stage: deploy
+  dependencies: 
+    - job_build
+  when: manual
+  script:
+    - echo "123" | sudo -S chmod +x deploy.sh
+    - bash deploy.sh
+  allow_failure: false
+  after_script:
+    - bash notify.sh 
+  

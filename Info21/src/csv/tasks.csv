@@ -1,0 +1,10 @@
+title;parenttask;maxxp
+C2_SimpleBashUtils;;350
+C3_S21_StringPlus;C2_SimpleBashUtils;700
+C5_s21_decimal;C3_S21_StringPlus;500
+C6_s21_matrix;C5_s21_decimal;200
+D01_Linux;C3_S21_StringPlus;300
+C7_SmartCalc_v1.0;C6_s21_matrix;600
+C8_3DViewer_v1.0;C7_SmartCalc_v1.0;1050
+CPP1_s21_matrixplus;C8_3DViewer_v1.0;300
+C4_s21_math;C2_SimpleBashUtils;300

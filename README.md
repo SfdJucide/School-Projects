@@ -13,3 +13,4 @@ Smart-Calc v1.0 | Implementation of an extended version of the usual calculator.
 Matrix+ | Implementation of the simple matrix.h library in C++.
 SimpleDocker | Developing a simple docker image for my own server.
 PostgresBootcamp | PostgreSQL Bootcamp with a lot of tasks.
+Info21 | Data analysis and statistics for School 21.

@@ -14,3 +14,4 @@ Matrix+ | Implementation of the simple matrix.h library in C++.
 SimpleDocker | Developing a simple docker image for my own server.
 PostgresBootcamp | PostgreSQL Bootcamp with a lot of tasks.
 Info21 | Data analysis and statistics for School 21.
+RetailAnalytics | Scripts with the views and procedures needed to create personal offers for retailers' customers.
